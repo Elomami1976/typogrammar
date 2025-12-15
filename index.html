@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypoGrammar - Learn English the Smart Way</title>
+
+    <!-- Preconnect to external domains for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jotfor.ms">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+
+    <!-- Print Styles -->
+    <style>
+      @media print {
+        /* Hide navigation, sidebar, ads, and interactive elements */
+        header, nav, aside, .print\\:hidden, button, .ad-container, footer, iframe {
+          display: none !important;
+        }
+        
+        /* Optimize content for print */
+        body {
+          font-size: 12pt;
+          line-height: 1.6;
+          color: #000;
+          background: #fff;
+          max-width: 100%;
+          margin: 0;
+          padding: 20px;
+        }
+        
+        /* Remove shadows, backgrounds, and borders for clean print */
+        *, *::before, *::after {
+          box-shadow: none !important;
+          background: transparent !important;
+          border-color: #000 !important;
+        }
+        
+        /* Maintain article structure */
+        article {
+          max-width: 100%;
+          padding: 0;
+          margin: 0;
+        }
+        
+        /* Typography for print */
+        h1 {
+          font-size: 24pt;
+          margin: 0 0 12pt;
+          page-break-after: avoid;
+        }
+        
+        h2, h3 {
+          font-size: 18pt;
+          margin: 18pt 0 6pt;
+          page-break-after: avoid;
+        }
+        
+        h4, h5, h6 {
+          font-size: 14pt;
+          margin: 12pt 0 6pt;
+          page-break-after: avoid;
+        }
+        
+        p, li {
+          margin: 0 0 6pt;
+          orphans: 3;
+          widows: 3;
+        }
+        
+        /* Code blocks */
+        pre, code {
+          background: #f5f5f5 !important;
+          border: 1px solid #ddd !important;
+          padding: 4pt;
+          font-family: 'Courier New', monospace;
+          font-size: 10pt;
+          page-break-inside: avoid;
+        }
+        
+        /* Lists */
+        ul, ol {
+          margin: 6pt 0;
+          padding-left: 20pt;
+        }
+        
+        /* Prevent orphaned elements */
+        img, table, figure {
+          page-break-inside: avoid;
+        }
+        
+        /* Links */
+        a {
+          color: #000;
+          text-decoration: underline;
+        }
+        
+        /* Hide link URLs for cleaner print */
+        a[href]:after {
+          content: none;
+        }
+        
+        /* Example boxes and callouts */
+        .bg-blue-50, .bg-green-50, .bg-yellow-50, .bg-red-50 {
+          background: #f9f9f9 !important;
+          border: 1px solid #ccc !important;
+          padding: 8pt;
+          margin: 6pt 0;
+        }
+        
+        /* Ensure dark mode doesn't affect print */
+        .dark body, .dark * {
+          color: #000 !important;
+          background: #fff !important;
+        }
+      }
+    </style>
+
+    <!-- Preconnect to critical domains for faster DNS resolution -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    
+    <!-- Google Analytics - Delayed load to improve performance -->
+    <script>
+      // Defer Google Analytics until after page load
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=G-58SFTXGWLV';
+          document.head.appendChild(script);
+          
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-58SFTXGWLV');
+        }, 1000);
+      });
+    </script>
+    
+    <!-- Google AdSense - Delayed load to improve performance -->
+    <script>
+      // Defer AdSense until after initial page interaction
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4709657806016589';
+          script.crossOrigin = 'anonymous';
+          document.head.appendChild(script);
+        }, 2000);
+      });
+    </script>
+    
+    <!-- Structured Data (Schema.org JSON-LD) - Enhanced Educational Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "EducationalOrganization",
+          "@id": "https://typogrammar.com/#organization",
+          "name": "TypoGrammar",
+          "url": "https://typogrammar.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://typogrammar.com/assets/favicon.svg"
+          },
+          "description": "Free comprehensive English grammar learning platform offering interactive lessons, quizzes, and resources for mastering grammar, writing skills, and vocabulary.",
+          "sameAs": [
+            "https://www.youtube.com/@TypoGrammar"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer Support",
+            "email": "support@typogrammar.com",
+            "availableLanguage": ["English"]
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://typogrammar.com/#website",
+          "url": "https://typogrammar.com",
+          "name": "TypoGrammar",
+          "publisher": {
+            "@id": "https://typogrammar.com/#organization"
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://typogrammar.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          },
+          "inLanguage": "en"
+        },
+        {
+          "@type": "Course",
+          "@id": "https://typogrammar.com/#course",
+          "name": "Complete English Grammar Course",
+          "description": "Master English grammar with comprehensive lessons covering verb tenses, sentence structure, punctuation, vocabulary, and writing skills.",
+          "provider": {
+            "@id": "https://typogrammar.com/#organization"
+          },
+          "educationalLevel": "Beginner to Advanced",
+          "inLanguage": "en",
+          "isAccessibleForFree": true,
+          "hasCourseInstance": {
+            "@type": "CourseInstance",
+            "courseMode": "online",
+            "courseWorkload": "PT20H"
+          },
+          "teaches": [
+            "English Grammar",
+            "Verb Tenses",
+            "Sentence Structure",
+            "Punctuation Rules",
+            "Writing Skills",
+            "Vocabulary Building",
+            "Reading Comprehension"
+          ]
+        },
+        {
+          "@type": "WebApplication",
+          "name": "TypoGrammar Learning Platform",
+          "url": "https://typogrammar.com",
+          "applicationCategory": "EducationalApplication",
+          "operatingSystem": "Any",
+          "browserRequirements": "Requires JavaScript. Requires HTML5.",
+          "inLanguage": "en",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "1250",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "featureList": [
+            "Interactive Grammar Lessons",
+            "Verb Tense Visualizer",
+            "Reading Comprehension Practice",
+            "Writing Skills Development",
+            "Vocabulary Building Tools",
+            "Progress Tracking",
+            "Quiz System",
+            "Mobile Responsive"
+          ]
+        },
+        {
+          "@type": "LearningResource",
+          "@id": "https://typogrammar.com/#learningresource",
+          "name": "TypoGrammar Free English Learning Hub",
+          "description": "Comprehensive online resource for learning English grammar, improving writing skills, and building vocabulary through interactive lessons and exercises.",
+          "learningResourceType": "Course",
+          "educationalLevel": ["Beginner", "Intermediate", "Advanced"],
+          "inLanguage": "en",
+          "isAccessibleForFree": true,
+          "publisher": {
+            "@id": "https://typogrammar.com/#organization"
+          },
+          "audience": {
+            "@type": "EducationalAudience",
+            "educationalRole": "student"
+          },
+          "about": [
+            {
+              "@type": "Thing",
+              "name": "English Grammar"
+            },
+            {
+              "@type": "Thing",
+              "name": "Writing Skills"
+            },
+            {
+              "@type": "Thing",
+              "name": "English Language Learning"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+    
+    <!-- SEO & Metadata -->
+    <meta name="description" content="Master English grammar interactively with TypoGrammar - your elegant learning hub built with AI." />
+    <meta name="keywords" content="English grammar, learn English, grammar rules, ESL, EFL, writing skills, verb tenses, punctuation, English learning, irregular verbs, phrasal verbs" />
+    <link rel="canonical" href="https://typogrammar.com/" />
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://typogrammar.com/" />
+    <meta property="og:title" content="TypoGrammar - Learn English the Smart Way" />
+    <meta property="og:description" content="Master English grammar interactively with TypoGrammar - your elegant learning hub built with AI." />
+    <meta property="og:image" content="https://typogrammar.com/og-image.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://typogrammar.com/" />
+    <meta property="twitter:title" content="TypoGrammar - Learn English the Smart Way" />
+    <meta property="twitter:description" content="Master English grammar interactively with TypoGrammar - your elegant learning hub built with AI." />
+    <meta property="twitter:image" content="https://typogrammar.com/og-image.png" />
+
+    <!-- Use system fonts for better performance - optional Google Fonts for enhanced typography -->
+    <style>
+      /* System font stack for instant load */
+      :root {
+        --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+        --font-heading: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+      }
+      body {
+        font-family: var(--font-body);
+      }
+    </style>
+    <!-- Optimized font loading with preload for critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Lato:wght@400;700;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Lato:wght@400;700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Lato:wght@400;700;900&display=swap" rel="stylesheet"></noscript>
+    <!-- Font and animation styles moved to index.css -->
+    <script>
+      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+      if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    </script>
+    <style>
+      /* Critical inline styles - prevent FOUC */
+      html {
+        background-color: #f1f5f9;
+      }
+      
+      html.dark {
+        background-color: #0f172a;
+      }
+      
+      /* Hide everything until loaded */
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      
+      body.app-ready {
+        overflow: auto;
+      }
+      
+      /* Fullscreen loader - shows immediately */
+      #initial-loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f1f5f9;
+        z-index: 99999;
+        transition: opacity 0.4s ease-out, visibility 0.4s ease-out;
+      }
+      
+      html.dark #initial-loader {
+        background-color: #0f172a;
+      }
+      
+      #initial-loader.hidden {
+        opacity: 0;
+        visibility: hidden;
+      }
+      
+      /* Animated logo */
+      .init-logo {
+        text-align: center;
+        animation: fadeInUp 0.6s ease-out;
+      }
+      
+      .init-logo h1 {
+        font-family: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin: 0;
+        color: #1e293b;
+        letter-spacing: -0.02em;
+      }
+      
+      html.dark .init-logo h1 {
+        color: #e2e8f0;
+      }
+      
+      .init-logo .grammar-text {
+        color: #2563eb;
+      }
+      
+      html.dark .init-logo .grammar-text {
+        color: #3b82f6;
+      }
+      
+      .init-logo p {
+        font-family: 'Merriweather', Georgia, serif;
+        font-size: 0.875rem;
+        color: #64748b;
+        margin-top: 0.5rem;
+        margin-bottom: 1.5rem;
+      }
+      
+      html.dark .init-logo p {
+        color: #94a3b8;
+      }
+      
+      /* Spinner animation */
+      .init-spinner {
+        width: 40px;
+        height: 40px;
+        margin: 0 auto;
+        border: 3px solid #e2e8f0;
+        border-top-color: #2563eb;
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+      }
+      
+      html.dark .init-spinner {
+        border-color: #1e293b;
+        border-top-color: #3b82f6;
+      }
+      
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+      
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      /* Hide root until ready */
+      #root {
+        opacity: 0;
+        transition: opacity 0.3s ease-in;
+      }
+      
+      #root.ready {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Immediate fullscreen loader -->
+    <div id="initial-loader">
+      <div class="init-logo">
+        <h1>Typo<span class="grammar-text">Grammar</span></h1>
+        <p>From Confused to Confident in English</p>
+        <div class="init-spinner"></div>
+      </div>
+    </div>
+    
+    <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script>
+    
+    <!-- Hide loader when app is ready -->
+    <script>
+      // Wait for React to render before hiding loader
+      var checkReady = setInterval(function() {
+        var root = document.getElementById('root');
+        if (root && root.children.length > 0) {
+          clearInterval(checkReady);
+          var loader = document.getElementById('initial-loader');
+          
+          // Show the root element
+          root.classList.add('ready');
+          document.body.classList.add('app-ready');
+          
+          // Hide the loader
+          if (loader) {
+            loader.classList.add('hidden');
+          }
+        }
+      }, 50);
+      
+      // Fallback: force hide after 3 seconds
+      setTimeout(function() {
+        clearInterval(checkReady);
+        var root = document.getElementById('root');
+        var loader = document.getElementById('initial-loader');
+        
+        root.classList.add('ready');
+        document.body.classList.add('app-ready');
+        
+        if (loader) {
+          loader.classList.add('hidden');
+        }
+      }, 3000);
+    </script>
+
+    <!-- Service Worker Registration - Only for production -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        // Only register service worker in production (not localhost)
+        if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+          window.addEventListener('load', function() {
+            navigator.serviceWorker.register('/sw.js').then(function(registration) {
+              console.log('ServiceWorker registered:', registration.scope);
+            }).catch(function(err) {
+              console.log('ServiceWorker registration failed:', err);
+            });
+          });
+        } else {
+          // Unregister service workers on localhost
+          navigator.serviceWorker.getRegistrations().then(function(registrations) {
+            for(let registration of registrations) {
+              registration.unregister();
+            }
+          });
+        }
+      }
+    </script>
+
+    <!-- Jotform Chatbot Agent - Lazy loaded on interaction -->
+    <script>
+      var chatbotLoaded = false;
+      function loadChatbot() {
+        if (!chatbotLoaded) {
+          chatbotLoaded = true;
+          var script = document.createElement('script');
+          script.src = 'https://cdn.jotfor.ms/agent/embedjs/019b0ee2e6267947a640a8d120b244782b58/embed.js';
+          document.body.appendChild(script);
+        }
+      }
+      window.addEventListener('scroll', loadChatbot, { once: true, passive: true });
+      window.addEventListener('click', loadChatbot, { once: true });
+      window.addEventListener('touchstart', loadChatbot, { once: true, passive: true });
+      setTimeout(loadChatbot, 3000);
+    </script>
+  </body>
+</html>

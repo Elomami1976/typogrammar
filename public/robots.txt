@@ -1,0 +1,11 @@
+# robots.txt for TypoGrammar
+# Allow all search engines to crawl all content
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://typogrammar.com/sitemap.xml
+
+# Crawl delay (optional - helps prevent server overload)
+Crawl-delay: 1
