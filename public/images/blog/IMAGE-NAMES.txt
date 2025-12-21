@@ -1,0 +1,41 @@
+# Blog Post Image File Names
+
+Place images in the `public/images/blog/` folder with these exact names (supported formats: .jpg, .png, .webp, .jpeg):
+
+1. ielts-changes-2026-new-pattern-one-skill-retake.jpg
+2. how-to-introduce-yourself-interview-english.jpg
+3. common-grammar-mistakes-non-native-speakers.jpg
+4. best-websites-free-english-grammar-practice.jpg
+5. mastering-subject-verb-agreement.jpg
+6. punctuation-guide-colons-semicolons.jpg
+7. modal-verbs-guide.jpg
+8. fascinating-origins-english-idioms.jpg
+9. false-friends-english-words.jpg
+10. impact-of-arabic-on-english.jpg
+11. 5-common-grammar-mistakes.jpg
+12. whom-modern-usage.jpg
+13. mastering-the-comma-splice.jpg
+14. stronger-adjectives.jpg
+15. history-of-hello.jpg
+16. phrasal-verbs-native-speaker.jpg
+17. reading-fiction-improves-vocabulary.jpg
+18. active-vs-passive-voice.jpg
+19. english-pronunciation-tips.jpg
+20. the-oxford-comma.jpg
+21. mastering-english-conditionals.jpg
+22. commonly-confused-word-pairs.jpg
+23. writing-strong-topic-sentences.jpg
+24. business-english-expressions-meetings-emails-calls.jpg
+25. how-to-prepare-for-english-language-exam.jpg
+26. daily-english-phrases-work-travel-friends.jpg
+27. improve-english-fluency-without-memorizing.jpg
+28. how-to-achieve-band-9-in-ielts-real-examples.jpg
+29. ielts-vs-toefl-which-test-easier-better-2026.jpg
+
+## Quick Reference
+
+- Image folder: `public/images/blog/`
+- Supported formats: .jpg, .png, .webp, .jpeg
+- Recommended size: 1200x630px
+- Max file size: 500KB
+- The system automatically tries all formats and falls back to external URL if not found

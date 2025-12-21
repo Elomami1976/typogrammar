@@ -1,8 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
   <url>
     <loc>https://typogrammar.com/</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
+  
+  <!-- Main Pages -->
+  <url><loc>https://typogrammar.com/getting-started</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://typogrammar.com/grammar-guide</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://typogrammar.com/blog</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://typogrammar.com/about</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://typogrammar.com/contact</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://typogrammar.com/faq</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://typogrammar.com/progress</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  
+  <!-- Grammar Topics -->
+  <url><loc>https://typogrammar.com/topics/present-simple</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/present-progressive</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/past-simple</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/past-progressive</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/present-perfect</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/present-perfect-progressive</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/past-perfect</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/past-perfect-progressive</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/future-simple</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/future-progressive</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/future-perfect</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/future-perfect-progressive</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/articles</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/countable-uncountable-nouns</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/pronouns</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/adjectives-adverbs</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/comparative-superlative</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/modal-verbs</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/gerunds-infinitives</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/prepositions</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/conjunctions</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/passive-voice</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/subject-verb-agreement</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/question-formation</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/reported-speech</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/direct-and-indirect-speech</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/sentence-fragments</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/simple-and-complex-sentences</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/conditionals</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/relative-clauses</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/commas</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/apostrophes</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/semicolons-colons</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/quotation-marks</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/hyphens</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/subjunctive-mood</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/cleft-sentences</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/inversion</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/ellipsis</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/used-to-vs-would</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/topics/wish-vs-hope</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  
+  <!-- Blog Posts -->
+  <url><loc>https://typogrammar.com/blog/ielts-changes-2026-new-pattern-one-skill-retake</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://typogrammar.com/blog/how-to-introduce-yourself-interview-english</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/blog/common-grammar-mistakes-non-native-speakers</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/blog/best-websites-free-english-grammar-practice</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/blog/mastering-subject-verb-agreement</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/blog/punctuation-guide-colons-semicolons</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/blog/modal-verbs-guide</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/blog/fascinating-origins-english-idioms</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/blog/false-friends-english-words</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/blog/impact-of-arabic-on-english</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://typogrammar.com/blog/5-common-grammar-mistakes</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://typogrammar.com/blog/whom-modern-usage</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://typogrammar.com/blog/mastering-the-comma-splice</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://typogrammar.com/blog/stronger-adjectives</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://typogrammar.com/blog/history-of-hello</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://typogrammar.com/blog/phrasal-verbs-native-speaker</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://typogrammar.com/blog/reading-fiction-improves-vocabulary</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://typogrammar.com/blog/active-vs-passive-voice</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://typogrammar.com/blog/english-pronunciation-tips</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://typogrammar.com/blog/the-oxford-comma</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://typogrammar.com/blog/mastering-english-conditionals</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/blog/commonly-confused-word-pairs</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/blog/writing-strong-topic-sentences</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://typogrammar.com/blog/business-english-expressions-meetings-emails-calls</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/blog/how-to-prepare-for-english-language-exam</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/blog/daily-english-phrases-work-travel-friends</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://typogrammar.com/blog/improve-english-fluency-without-memorizing</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/blog/how-to-achieve-band-9-in-ielts-real-examples</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://typogrammar.com/blog/ielts-vs-toefl-which-test-easier-better-2026</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  
+  <!-- Vocabulary & Reference -->
+  <url><loc>https://typogrammar.com/irregular-verbs</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/phrasal-verbs</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/idioms</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/confused-words</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/vocabulary/prefixes-and-suffixes</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://typogrammar.com/vocabulary/collocations</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://typogrammar.com/vocabulary/homophones-homonyms-homographs</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://typogrammar.com/preposition-combinations</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  
+  <!-- Writing & Skills -->
+  <url><loc>https://typogrammar.com/writing/how-to-write-an-essay</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://typogrammar.com/essay-types</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://typogrammar.com/writing/how-to-write-a-professional-email</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://typogrammar.com/writing/how-to-build-an-argument</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://typogrammar.com/writing/how-to-paraphrase</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://typogrammar.com/writing/how-to-vary-sentence-structure</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://typogrammar.com/reading/how-to-read-efficiently</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://typogrammar.com/reading/reading-comprehension-practice</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://typogrammar.com/reading/how-to-read-critically</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  
+  <!-- Tools & Practice -->
+  <url><loc>https://typogrammar.com/pronunciation</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://typogrammar.com/pronunciation-of-ed</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://typogrammar.com/worksheets</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/practice-tools</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/interactive-exercises</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://typogrammar.com/teacher</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://typogrammar.com/ai-prompts</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://typogrammar.com/glossary</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  
+  <!-- Legal -->
+  <url><loc>https://typogrammar.com/privacy-policy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://typogrammar.com/terms-of-service</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>

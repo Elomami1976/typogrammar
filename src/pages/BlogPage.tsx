@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { BLOG_POSTS } from '../constants/blogPosts';
 import GoogleAd from '../components/GoogleAd';
 import usePageMetadata from '../hooks/usePageMetadata';
+import BlogImage from '../components/BlogImage';
 
 const BlogPage: React.FC = () => {
   usePageMetadata({
@@ -28,16 +29,15 @@ const BlogPage: React.FC = () => {
             to={`/blog/${post.slug}`}
             className="group bg-white rounded-xl shadow-lg shadow-slate-200/50 border border-slate-200 overflow-hidden flex flex-col hover:border-blue-300 hover:shadow-xl transition-all duration-300 dark:bg-slate-800/50 dark:border-slate-700 dark:shadow-slate-900/50 dark:hover:border-blue-500"
           >
-            {post.image && (
-              <div className="w-full h-48 overflow-hidden">
-                <img 
-                  src={post.image} 
-                  alt={post.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  loading="lazy"
-                />
-              </div>
-            )}
+            <div className="w-full h-48 overflow-hidden">
+              <BlogImage
+                slug={post.slug}
+                fallbackUrl={post.image}
+                alt={post.title}
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
             <div className="p-8 flex-grow flex flex-col">
               <p className="font-body text-sm font-semibold text-blue-600 mb-2 dark:text-blue-400">{post.category}</p>
               <h2 className="font-heading text-2xl font-bold text-slate-800 mb-3 flex-grow group-hover:text-blue-700 transition-colors duration-200 dark:text-slate-200 dark:group-hover:text-blue-400">{post.title}</h2>

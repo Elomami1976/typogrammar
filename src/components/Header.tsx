@@ -49,17 +49,6 @@ const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
             </svg>
           </a>
           <LanguageSwitcher />
-          <a
-            href="https://linktr.ee/TypoGrammar"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-2 rounded-full text-slate-600 hover:text-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:text-slate-400 dark:hover:text-green-500 dark:focus:ring-offset-slate-900"
-            aria-label="TypoGrammar Links"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
-            </svg>
-          </a>
         </div>
       </div>
     </header>

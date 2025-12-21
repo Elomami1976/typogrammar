@@ -43,6 +43,66 @@ const prompts = [
   {
     title: "Error Analysis Exercise",
     text: "Generate 8-10 sentences containing common grammatical errors typically made by [Your target proficiency level] English learners. Each sentence should contain one specific error related to [Your chosen grammar area]. Include the corrected versions with brief explanations of the grammar rule violated."
+  },
+  {
+    title: "Lesson Plan Generator",
+    text: "Create a 60-minute English lesson plan for intermediate students on the topic of travel vocabulary. Include learning objectives, warm-up, main activity, and homework suggestions."
+  },
+  {
+    title: "Grammar Explanation and Practice",
+    text: "Explain the difference between the past perfect and past simple tense with simple examples. Then, generate 5 fill-in-the-blank exercises and an answer key for A2-level learners."
+  },
+  {
+    title: "Speaking Practice Prompts",
+    text: "Generate 10 conversation questions for B1-level English learners about daily routines that encourage full-sentence responses and use of present tense verbs."
+  },
+  {
+    title: "Writing Task Creator (IELTS/TOEFL Focus)",
+    text: "Write one IELTS Writing Task 2 question about technology and education. Then, provide a band 8 sample essay and a list of useful vocabulary related to the topic."
+  },
+  {
+    title: "Vocabulary Expansion Activity",
+    text: "Create a short vocabulary list of 15 advanced adjectives for describing people's personalities. Include definitions, example sentences, and a short quiz."
+  },
+  {
+    title: "Reading Comprehension Exercise",
+    text: "Write a 200-word reading passage for B2 learners about the benefits of online learning. Then create 5 comprehension questions and 3 discussion questions."
+  },
+  {
+    title: "Role-Play Scenarios for Speaking Class",
+    text: "Provide 5 short role-play ideas for ESL students to practice customer service English in a restaurant setting. Include role descriptions and example useful phrases."
+  },
+  {
+    title: "Error Correction Practice",
+    text: "Give me 10 sentences with common grammar mistakes made by intermediate English learners. Then, corrected versions with explanations."
+  },
+  {
+    title: "Listening Activity Script",
+    text: "Write a short listening dialogue (around 1 minute long) between two friends planning a weekend trip. Then, provide comprehension questions and vocabulary notes."
+  },
+  {
+    title: "Assessment Rubric Maker",
+    text: "Create a simple rubric (1–5 scale) for assessing students' English speaking performance, focusing on fluency, pronunciation, vocabulary use, and accuracy."
+  },
+  {
+    title: "Story Cube Generator",
+    text: "Create 9 random 'story cubes' for B1 learners: each cube should have a word or image description (e.g. 'key', 'storm', 'clock'). Then give instructions and an example story using at least 5 of them."
+  },
+  {
+    title: "Classroom Debate Kit",
+    text: "Design a classroom debate activity for B2 students on the topic 'Should smartphones be banned in schools?'. Include: roles, useful phrases for agreeing/disagreeing, and 8 discussion questions."
+  },
+  {
+    title: "Email Writing Workshop",
+    text: "Create a mini-lesson for B1–B2 students on writing polite emails in English. Include a short explanation, a model email, a transformation exercise (informal → formal), and an error-correction task."
+  },
+  {
+    title: "Culture & Speaking Activity",
+    text: "Prepare 10 discussion questions about cultural differences in food, festivals, and daily life for mixed-level ESL classes. Include easier versions (A2–B1) and more advanced versions (B2–C1)."
+  },
+  {
+    title: "Gamified Vocabulary Review",
+    text: "Design a vocabulary revision game for online or in-person classes using 20 phrasal verbs with 'get'. Provide the verb list with example sentences, plus clear game rules and scoring."
   }
 ];
 

@@ -44,6 +44,18 @@ const CollocationsPage: React.FC = () => {
         Collocations are words that frequently appear together. They are not fixed rules of grammar, but natural-sounding word combinations that native speakers use all the time. For example, we say <InlineCode>heavy rain</InlineCode> not <InlineCode>strong rain</InlineCode>. Learning collocations is one of the best ways to make your English sound more fluent and natural.
       </ArticleParagraph>
 
+      <div className="my-8">
+        <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+          <iframe
+            className="absolute top-0 left-0 w-full h-full rounded-lg"
+            src="https://www.youtube.com/embed/61FftJIe2SI?rel=0&modestbranding=1"
+            title="Collocations in English"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+      </div>
+
       {COLLOCATION_CATEGORIES.map(category => (
         <section key={category.category}>
           <ArticleHeading>{category.category}</ArticleHeading>

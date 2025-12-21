@@ -191,6 +191,7 @@ const SidebarContent: React.FC<{ onClose: () => void }> = ({ onClose }) => {
                <SidebarLink to="/practice-tools" text="Grammar Flashcards" onClick={onClose} />
                <SidebarLink to="/interactive-exercises" text="Interactive Exercises" onClick={onClose} />
                <SidebarLink to="/worksheets" text="Worksheets & PDFs" onClick={onClose} />
+               <SidebarLink to="/ai-prompts" text="AI Learning Prompts" onClick={onClose} />
                <SidebarLink to="/teacher" text="Prompts for Teachers" onClick={onClose} />
             </SidebarSection>
 

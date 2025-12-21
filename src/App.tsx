@@ -43,6 +43,7 @@ const GlossaryPage = lazy(() => import('./pages/GlossaryPage'));
 const WorksheetsPage = lazy(() => import('./pages/WorksheetsPage'));
 const PracticeToolsPage = lazy(() => import('./pages/PracticeToolsPage'));
 const InteractiveExercisesPage = lazy(() => import('./pages/InteractiveExercisesPage'));
+const AIPromptsPage = lazy(() => import('./pages/AIPromptsPage'));
 
 // Loading fallback component
 const PageLoader = () => (
@@ -94,6 +95,7 @@ const App: React.FC = () => {
             <Route path="blog/:slug" element={<BlogPostPage />} />
             <Route path="faq" element={<FaqPage />} />
             <Route path="teacher" element={<TeacherPage />} />
+            <Route path="ai-prompts" element={<AIPromptsPage />} />
             <Route path="pronunciation-of-ed" element={<PastTensePronunciationPage />} />
             <Route path="pronunciation" element={<PronunciationPage />} />
             <Route path="worksheets" element={<WorksheetsPage />} />

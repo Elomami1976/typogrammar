@@ -5,6 +5,9 @@ import { BLOG_POSTS } from '../constants/blogPosts';
 import usePageMetadata from '../hooks/usePageMetadata';
 import GoogleAd from '../components/GoogleAd';
 import BlogMetadata from '../components/BlogMetadata';
+import BlogImage from '../components/BlogImage';
+import ShareButtons from '../components/ShareButtons';
+import SchemaMarkup from '../components/SchemaMarkup';
 
 const BlogPostPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -43,6 +46,35 @@ const BlogPostPage: React.FC = () => {
         url={`https://typogrammar.com/blog/${post.slug}`}
         imageUrl="https://typogrammar.com/assets/og-image.png"
       />
+      <SchemaMarkup
+        type="Article"
+        data={{
+          headline: post.title,
+          description: post.summary,
+          image: post.image || 'https://typogrammar.com/assets/og-image.png',
+          datePublished: post.date,
+          dateModified: post.date,
+          author: {
+            '@type': 'Organization',
+            name: 'TypoGrammar Team',
+            url: 'https://typogrammar.com'
+          },
+          publisher: {
+            '@type': 'Organization',
+            name: 'TypoGrammar',
+            logo: {
+              '@type': 'ImageObject',
+              url: 'https://typogrammar.com/logo.png'
+            }
+          },
+          mainEntityOfPage: {
+            '@type': 'WebPage',
+            '@id': `https://typogrammar.com/blog/${post.slug}`
+          },
+          articleSection: post.category,
+          keywords: post.category
+        }}
+      />
       <article className="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-xl shadow-lg shadow-slate-200/50 border border-slate-200 dark:bg-slate-800/50 dark:border-slate-700 dark:shadow-slate-900/50">
       <div className="flex justify-between items-start mb-8">
         <div className="text-left">
@@ -52,20 +84,25 @@ const BlogPostPage: React.FC = () => {
         </div>
       </div>
       
-      {post.image && (
-        <div className="mb-8 rounded-xl overflow-hidden">
-          <img 
-            src={post.image} 
-            alt={post.title}
-            className="w-full h-auto object-cover"
-            loading="lazy"
-          />
-        </div>
-      )}
+      <div className="mb-8 rounded-xl overflow-hidden">
+        <BlogImage
+          slug={post.slug}
+          fallbackUrl={post.image}
+          alt={post.title}
+          className="w-full h-auto object-cover"
+          loading="lazy"
+        />
+      </div>
       
       <div className="prose prose-lg max-w-none">
         {post.content}
       </div>
+
+      <ShareButtons 
+        url={`https://typogrammar.com/blog/${post.slug}`}
+        title={post.title}
+        description={post.summary}
+      />
 
       <div className="my-8">
         <GoogleAd adSlot="6406598038" />
