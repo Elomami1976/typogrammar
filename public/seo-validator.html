@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TypoGrammar SEO Validation Tool</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f8fafc;
+      padding: 20px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #1e40af;
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+    .subtitle {
+      color: #64748b;
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+    .section {
+      margin-bottom: 30px;
+      padding: 20px;
+      background: #f8fafc;
+      border-radius: 8px;
+      border: 2px solid #e2e8f0;
+    }
+    .section.success {
+      border-color: #10b981;
+      background: #ecfdf5;
+    }
+    .section.error {
+      border-color: #ef4444;
+      background: #fef2f2;
+    }
+    .section.warning {
+      border-color: #f59e0b;
+      background: #fffbeb;
+    }
+    h2 {
+      color: #0f172a;
+      font-size: 20px;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .badge.success { background: #10b981; color: white; }
+    .badge.error { background: #ef4444; color: white; }
+    .badge.warning { background: #f59e0b; color: white; }
+    .badge.info { background: #3b82f6; color: white; }
+    .result-item {
+      padding: 12px;
+      margin: 8px 0;
+      background: white;
+      border-radius: 6px;
+      border-left: 4px solid #e2e8f0;
+      font-size: 14px;
+    }
+    .result-item.pass {
+      border-left-color: #10b981;
+    }
+    .result-item.fail {
+      border-left-color: #ef4444;
+    }
+    .result-item strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #0f172a;
+    }
+    .result-item code {
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 12px;
+      color: #7c3aed;
+    }
+    button {
+      background: #1e40af;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    button:hover {
+      background: #1e3a8a;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(30, 64, 175, 0.3);
+    }
+    .json-viewer {
+      background: #0f172a;
+      color: #e2e8f0;
+      padding: 15px;
+      border-radius: 6px;
+      overflow-x: auto;
+      font-family: 'Courier New', monospace;
+      font-size: 12px;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+    .test-url {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+      align-items: center;
+    }
+    .test-url input {
+      flex: 1;
+      padding: 10px;
+      border: 2px solid #e2e8f0;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+    .summary-card {
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      border: 2px solid #e2e8f0;
+      text-align: center;
+    }
+    .summary-card .number {
+      font-size: 36px;
+      font-weight: bold;
+      color: #1e40af;
+      margin-bottom: 5px;
+    }
+    .summary-card .label {
+      color: #64748b;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🔍 TypoGrammar SEO Validation Tool</h1>
+    <p class="subtitle">Validate the global SEO implementation on any page</p>
+
+    <div class="test-url">
+      <input type="text" id="urlInput" placeholder="Enter page path (e.g., /topics/present-simple)" value="/">
+      <button onclick="runTests()">Run SEO Validation</button>
+    </div>
+
+    <div id="summary" class="summary" style="display: none;">
+      <div class="summary-card">
+        <div class="number" id="totalChecks">0</div>
+        <div class="label">Total Checks</div>
+      </div>
+      <div class="summary-card">
+        <div class="number" style="color: #10b981;" id="passedChecks">0</div>
+        <div class="label">Passed ✓</div>
+      </div>
+      <div class="summary-card">
+        <div class="number" style="color: #ef4444;" id="failedChecks">0</div>
+        <div class="label">Failed ✗</div>
+      </div>
+    </div>
+
+    <div id="results"></div>
+  </div>
+
+  <script>
+    function runTests() {
+      const path = document.getElementById('urlInput').value || '/';
+      const resultsDiv = document.getElementById('results');
+      const summaryDiv = document.getElementById('summary');
+      
+      resultsDiv.innerHTML = '<p style="text-align: center; padding: 40px; color: #64748b;">Loading validation results...</p>';
+      
+      setTimeout(() => {
+        const results = validateSEO(path);
+        displayResults(results);
+        summaryDiv.style.display = 'grid';
+        
+        const total = results.basic.length + results.og.length + results.twitter.length + results.jsonLd.length;
+        const passed = results.basic.filter(r => r.pass).length + 
+                      results.og.filter(r => r.pass).length + 
+                      results.twitter.filter(r => r.pass).length + 
+                      results.jsonLd.filter(r => r.pass).length;
+        
+        document.getElementById('totalChecks').textContent = total;
+        document.getElementById('passedChecks').textContent = passed;
+        document.getElementById('failedChecks').textContent = total - passed;
+      }, 500);
+    }
+
+    function validateSEO(path) {
+      const results = {
+        basic: [],
+        og: [],
+        twitter: [],
+        jsonLd: [],
+        duplicates: []
+      };
+
+      // Basic Meta Tags
+      const title = document.querySelector('title');
+      results.basic.push({
+        name: 'Page Title',
+        pass: title && title.textContent.includes('TypoGrammar'),
+        value: title ? title.textContent : 'NOT FOUND',
+        expected: 'Should contain "TypoGrammar"'
+      });
+
+      const description = document.querySelector('meta[name="description"]');
+      results.basic.push({
+        name: 'Meta Description',
+        pass: description && description.content.length > 50,
+        value: description ? description.content : 'NOT FOUND',
+        expected: 'Should exist and be > 50 characters'
+      });
+
+      const canonical = document.querySelector('link[rel="canonical"]');
+      results.basic.push({
+        name: 'Canonical URL',
+        pass: canonical && canonical.href.includes('typogrammar.com'),
+        value: canonical ? canonical.href : 'NOT FOUND',
+        expected: 'Should point to typogrammar.com'
+      });
+
+      const robots = document.querySelector('meta[name="robots"]');
+      results.basic.push({
+        name: 'Robots Meta',
+        pass: robots && (robots.content.includes('index') || robots.content.includes('follow')),
+        value: robots ? robots.content : 'NOT FOUND',
+        expected: 'Should contain "index" or "follow"'
+      });
+
+      // Open Graph
+      const ogTags = ['og:title', 'og:description', 'og:url', 'og:image', 'og:site_name'];
+      ogTags.forEach(tag => {
+        const meta = document.querySelector(`meta[property="${tag}"]`);
+        results.og.push({
+          name: tag,
+          pass: meta && meta.content.length > 0,
+          value: meta ? meta.content : 'NOT FOUND',
+          expected: 'Should exist with content'
+        });
+      });
+
+      // Twitter Card
+      const twitterTags = ['twitter:card', 'twitter:title', 'twitter:description', 'twitter:image'];
+      twitterTags.forEach(tag => {
+        const meta = document.querySelector(`meta[name="${tag}"]`);
+        results.twitter.push({
+          name: tag,
+          pass: meta && meta.content.length > 0,
+          value: meta ? meta.content : 'NOT FOUND',
+          expected: 'Should exist with content'
+        });
+      });
+
+      // JSON-LD
+      const scripts = document.querySelectorAll('script[type="application/ld+json"]');
+      results.jsonLd.push({
+        name: 'JSON-LD Scripts',
+        pass: scripts.length >= 2,
+        value: `${scripts.length} schemas found`,
+        expected: 'At least 2 (WebSite + Organization)',
+        details: Array.from(scripts).map(s => {
+          try {
+            const data = JSON.parse(s.textContent);
+            return data['@type'] || 'Unknown';
+          } catch {
+            return 'Invalid JSON';
+          }
+        }).join(', ')
+      });
+
+      // Check for duplicates
+      const descCount = document.querySelectorAll('meta[name="description"]').length;
+      const canonicalCount = document.querySelectorAll('link[rel="canonical"]').length;
+      const titleCount = document.querySelectorAll('title').length;
+
+      results.duplicates.push({
+        name: 'Duplicate Meta Description',
+        pass: descCount === 1,
+        value: `${descCount} found`,
+        expected: 'Should be exactly 1'
+      });
+
+      results.duplicates.push({
+        name: 'Duplicate Canonical',
+        pass: canonicalCount === 1,
+        value: `${canonicalCount} found`,
+        expected: 'Should be exactly 1'
+      });
+
+      results.duplicates.push({
+        name: 'Duplicate Title',
+        pass: titleCount === 1,
+        value: `${titleCount} found`,
+        expected: 'Should be exactly 1'
+      });
+
+      return results;
+    }
+
+    function displayResults(results) {
+      const resultsDiv = document.getElementById('results');
+      let html = '';
+
+      // Basic SEO
+      html += createSection('Basic SEO Meta Tags', results.basic, 'basic');
+      
+      // Open Graph
+      html += createSection('Open Graph (Social Media)', results.og, 'og');
+      
+      // Twitter Card
+      html += createSection('Twitter Card', results.twitter, 'twitter');
+      
+      // JSON-LD
+      html += createSection('JSON-LD Structured Data', results.jsonLd, 'jsonld');
+      
+      // Duplicates
+      html += createSection('Duplicate Check', results.duplicates, 'duplicates');
+
+      resultsDiv.innerHTML = html;
+    }
+
+    function createSection(title, items, type) {
+      const allPass = items.every(item => item.pass);
+      const sectionClass = allPass ? 'success' : (items.some(item => !item.pass) ? 'error' : 'warning');
+      const badgeClass = allPass ? 'success' : 'error';
+      const badgeText = allPass ? `✓ ${items.length}/${items.length} PASS` : `✗ ${items.filter(i => i.pass).length}/${items.length} PASS`;
+
+      let html = `
+        <div class="section ${sectionClass}">
+          <h2>
+            ${title}
+            <span class="badge ${badgeClass}">${badgeText}</span>
+          </h2>
+      `;
+
+      items.forEach(item => {
+        html += `
+          <div class="result-item ${item.pass ? 'pass' : 'fail'}">
+            <strong>${item.pass ? '✓' : '✗'} ${item.name}</strong>
+            <div><code>${item.value}</code></div>
+            <div style="color: #64748b; font-size: 12px; margin-top: 4px;">Expected: ${item.expected}</div>
+            ${item.details ? `<div style="color: #7c3aed; font-size: 12px; margin-top: 4px;">Schemas: ${item.details}</div>` : ''}
+          </div>
+        `;
+      });
+
+      html += '</div>';
+      return html;
+    }
+
+    // Run initial test on page load
+    window.addEventListener('load', () => {
+      runTests();
+    });
+  </script>
+</body>
+</html>

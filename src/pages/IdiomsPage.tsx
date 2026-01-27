@@ -1,6 +1,7 @@
 
 import React, { useState, useMemo, useRef, useLayoutEffect } from 'react';
 import GoogleAd from '../components/GoogleAd';
+import SchemaMarkup from '../components/SchemaMarkup';
 import { IDIOMS_CATEGORIES } from '../constants/idioms';
 import usePageMetadata from '../hooks/usePageMetadata';
 
@@ -12,8 +13,8 @@ const IdiomsPage: React.FC = () => {
   const MAIN_SITE_HEADER_HEIGHT = 69;
 
   usePageMetadata({
-    title: 'Common English Idioms & Expressions | TypoGrammar',
-    description: 'Explore common English idioms organized by category. Learn their meanings and see them used in context to make your speaking more fluent and natural.'
+    title: '250+ Common English Idioms & Expressions with Examples | TypoGrammar',
+    description: 'Discover 250+ English idioms and expressions organized by category. Searchable database with meanings and examples. Learn idioms about time, money, emotions, success, relationships, health, and more to speak like a native.'
   });
 
   useLayoutEffect(() => {
@@ -39,12 +40,40 @@ const IdiomsPage: React.FC = () => {
   }, [searchTerm]);
 
   return (
+    <>
+    <SchemaMarkup
+      type="Article"
+      data={{
+        headline: 'Common English Idioms & Expressions: A Complete Searchable Guide',
+        description: 'Comprehensive collection of 250+ English idioms organized by topic with meanings and example sentences for ESL learners.',
+        author: {
+          '@type': 'Organization',
+          name: 'TypoGrammar'
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'TypoGrammar',
+          url: 'https://typogrammar.com'
+        },
+        datePublished: '2024-01-15',
+        dateModified: '2025-12-25',
+        mainEntityOfPage: {
+          '@type': 'WebPage',
+          '@id': 'https://typogrammar.com/idioms'
+        },
+        keywords: 'English idioms, idiomatic expressions, figurative language, ESL idioms, common phrases, English expressions, native speaker English',
+        educationalLevel: 'Intermediate to Advanced',
+        learningResourceType: 'Reference Guide',
+        interactivityType: 'active'
+      }}
+    />
     <article className="max-w-6xl mx-auto bg-white p-8 md:p-12 rounded-xl shadow-lg shadow-slate-200/50 border border-slate-200 dark:bg-slate-800 dark:border-slate-700 dark:shadow-slate-900/50">
       <div className="flex justify-between items-start">
         <div>
-          <h1 className="font-heading text-5xl font-extrabold text-slate-900 mb-4 tracking-tight dark:text-slate-100">Idioms & Expressions</h1>
+          <p className="font-body text-base font-semibold text-blue-600 mb-4 dark:text-blue-400">Vocabulary • Idioms</p>
+          <h1 className="font-heading text-4xl md:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight dark:text-slate-100">English Idioms & Expressions</h1>
           <p className="font-body text-xl text-slate-600 max-w-3xl mb-8 dark:text-slate-400">
-            Explore common idioms to make your English sound more natural and fluent.
+            Master 250+ common idioms to make your English sound more natural and fluent. Search by phrase or meaning.
           </p>
         </div>
       </div>
@@ -104,6 +133,7 @@ const IdiomsPage: React.FC = () => {
         <GoogleAd adSlot="6406598038" />
       </div>
     </article>
+    </>
   );
 };
 

@@ -2,8 +2,14 @@
 import React from 'react';
 import { ArticleParagraph, ArticleHeading } from '../components/ArticleComponents';
 import GoogleAd from '../components/GoogleAd';
+import usePageMetadata from '../hooks/usePageMetadata';
 
 const AboutPage: React.FC = () => {
+  usePageMetadata({
+    title: 'About TypoGrammar – Free English Grammar Learning Platform',
+    description: 'Learn about TypoGrammar, a free online English grammar resource designed for clarity and beauty. Discover our mission to make grammar learning accessible, intuitive, and effective for everyone.'
+  });
+
   return (
     <article className="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-xl shadow-lg shadow-slate-200/50 border border-slate-200 dark:bg-slate-800/50 dark:border-slate-700 dark:shadow-slate-900/50">
       <div className="flex justify-between items-start">

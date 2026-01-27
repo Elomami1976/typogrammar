@@ -37,27 +37,42 @@ const activeLinkClass = 'bg-blue-50 text-blue-600 font-semibold border-l-4 borde
 const defaultLinkClass = 'text-slate-600 hover:bg-slate-200/60 hover:text-slate-900 border-l-4 border-transparent hover:border-slate-300 dark:text-slate-300 dark:hover:bg-slate-700 dark:hover:text-slate-100 dark:border-l-4 dark:border-transparent dark:hover:border-slate-600';
 
 
+// List of verb tense IDs that should use canonical URLs
+const VERB_TENSE_IDS = [
+  'present-simple', 'present-progressive', 'past-simple', 'past-progressive',
+  'present-perfect', 'present-perfect-progressive', 'past-perfect', 'past-perfect-progressive',
+  'future-simple', 'future-progressive', 'future-perfect', 'future-perfect-progressive'
+];
+
 const SidebarLink: React.FC<{
   to: string;
   text: string;
   onClick: () => void;
   isCompleted?: boolean;
-}> = ({ to, text, onClick, isCompleted }) => (
-  <NavLink
-    to={to}
-    onClick={onClick}
-    className={({ isActive }) =>
-      `flex items-center justify-between py-2.5 px-6 font-body text-[15px] transition-colors duration-150 ${isActive ? activeLinkClass : defaultLinkClass}`
-    }
-  >
-    <span>{text}</span>
-    {isCompleted && (
-       <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500" viewBox="0 0 20 20" fill="currentColor">
-        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-      </svg>
-    )}
-  </NavLink>
-);
+  topicId?: string;
+}> = ({ to, text, onClick, isCompleted, topicId }) => {
+  // Redirect verb tense topics to canonical URLs
+  const finalTo = topicId && VERB_TENSE_IDS.includes(topicId) 
+    ? `/grammar/verb-tenses/${topicId}` 
+    : to;
+
+  return (
+    <NavLink
+      to={finalTo}
+      onClick={onClick}
+      className={({ isActive }) =>
+        `flex items-center justify-between py-2.5 px-6 font-body text-[15px] transition-colors duration-150 ${isActive ? activeLinkClass : defaultLinkClass}`
+      }
+    >
+      <span>{text}</span>
+      {isCompleted && (
+         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+        </svg>
+      )}
+    </NavLink>
+  );
+};
 
 const SidebarSection: React.FC<{ title: string; children: React.ReactNode; defaultOpen?: boolean }> = ({ title, children, defaultOpen = false }) => {
   const [isOpen, setIsOpen] = useState(defaultOpen);
@@ -100,6 +115,7 @@ const SidebarContent: React.FC<{ onClose: () => void }> = ({ onClose }) => {
   const isTopicPage = location.pathname.startsWith('/topics/');
   const isWritingPage = location.pathname.startsWith('/writing/');
   const isVocabularyPage = location.pathname.startsWith('/vocabulary/') || location.pathname.startsWith('/commonly-confused-words') || location.pathname.startsWith('/idioms') || location.pathname.startsWith('/phrasal-verbs') || location.pathname.startsWith('/prefixes-suffixes');
+  const isIELTSPage = location.pathname.startsWith('/ielts/');
 
 
   return (
@@ -147,6 +163,7 @@ const SidebarContent: React.FC<{ onClose: () => void }> = ({ onClose }) => {
                       text={topic.title}
                       onClick={onClose}
                       isCompleted={progress.completedTopics.includes(topic.id)}
+                      topicId={topic.id}
                     />
                   ))}
                 </div>
@@ -171,6 +188,28 @@ const SidebarContent: React.FC<{ onClose: () => void }> = ({ onClose }) => {
               <SidebarLink to="/writing/how-to-vary-sentence-structure" text="Varying Sentence Structure" onClick={onClose} />
             </SidebarSection>
 
+            <SidebarSection title="IELTS Preparation" defaultOpen={isIELTSPage}>
+              <SidebarLink to="/ielts/ielts-writing-task-2-essay-types" text="IELTS Writing Task 2 Hub" onClick={onClose} />
+              <SidebarLink to="/ielts/opinion-essay-ielts-band-7-9" text="Opinion Essays" onClick={onClose} />
+              <SidebarLink to="/ielts/discussion-essay-ielts-band-7-9" text="Discussion Essays" onClick={onClose} />
+              <SidebarLink to="/ielts/advantages-disadvantages-essay-ielts" text="Advantages/Disadvantages" onClick={onClose} />
+              <SidebarLink to="/ielts/problem-solution-essay-ielts" text="Problem/Solution Essays" onClick={onClose} />
+              <SidebarLink to="/ielts/two-part-question-essay-ielts" text="Two-Part Questions" onClick={onClose} />
+              <SidebarLink to="/ielts/mixed-essay-types-ielts" text="Mixed Essay Types" onClick={onClose} />
+              <h4 className="px-6 py-2 pt-4 text-sm font-semibold text-slate-400 dark:text-slate-500">IELTS Vocabulary</h4>
+              <SidebarLink to="/ielts/vocabulary/band-6" text="Band 6 Vocabulary" onClick={onClose} />
+              <SidebarLink to="/ielts/vocabulary/band-7" text="Band 7 Vocabulary" onClick={onClose} />
+              <SidebarLink to="/ielts/vocabulary/band-8" text="Band 8 Vocabulary" onClick={onClose} />
+              <SidebarLink to="/ielts/vocabulary/band-9" text="Band 9 Vocabulary" onClick={onClose} />
+              <h4 className="px-6 py-2 pt-4 text-sm font-semibold text-slate-400 dark:text-slate-500">Free Resources</h4>
+              <SidebarLink to="/ielts/academic-vocabulary-book" text="Free IELTS Vocabulary Book (PDF)" onClick={onClose} />
+              <h4 className="px-6 py-2 pt-4 text-sm font-semibold text-slate-400 dark:text-slate-500">IELTS Tests</h4>
+              <div className="ml-4">
+                <h5 className="px-6 py-2 text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Listening</h5>
+                <SidebarLink to="/ielts/tests/listening/mock-test-1/section-1" text="Mock Test 1 – Section 1" onClick={onClose} />
+              </div>
+            </SidebarSection>
+
             <SidebarSection title="Reading Skills">
               <SidebarLink to="/reading/how-to-read-efficiently" text="How to Read Efficiently" onClick={onClose} />
               <SidebarLink to="/reading/reading-comprehension-practice" text="Comprehension Practice" onClick={onClose} />
@@ -190,6 +229,7 @@ const SidebarContent: React.FC<{ onClose: () => void }> = ({ onClose }) => {
                <SidebarLink to="/grammar-fundamentals/basic-terminology" text="Basic Terminology" onClick={onClose} />
                <SidebarLink to="/practice-tools" text="Grammar Flashcards" onClick={onClose} />
                <SidebarLink to="/interactive-exercises" text="Interactive Exercises" onClick={onClose} />
+               <SidebarLink to="/quizzes/verb-tenses-quiz" text="Verb Tenses Quiz (50 Q)" onClick={onClose} />
                <SidebarLink to="/worksheets" text="Worksheets & PDFs" onClick={onClose} />
                <SidebarLink to="/ai-prompts" text="AI Learning Prompts" onClick={onClose} />
                <SidebarLink to="/teacher" text="Prompts for Teachers" onClick={onClose} />
@@ -217,7 +257,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isMobileOpen, onClose }) => {
     <>
       {/* Mobile overlay */}
       <div
-        className={`fixed inset-0 bg-black/40 z-20 md:hidden transition-opacity ${
+        className={`fixed top-[69px] left-0 right-0 bottom-0 bg-black/40 z-20 md:hidden transition-opacity ${
           isMobileOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
         }`}
         onClick={onClose}
@@ -226,7 +266,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isMobileOpen, onClose }) => {
       
       {/* Sidebar */}
       <aside
-        className={`fixed md:sticky top-0 h-screen md:h-auto md:top-[69px] md:max-h-[calc(100vh-69px)] w-72 md:w-80 flex-shrink-0 bg-white border-r border-slate-200 z-30 transition-transform duration-300 ease-in-out ${
+        className={`fixed md:sticky top-[69px] h-[calc(100vh-69px)] md:h-auto md:top-[69px] md:max-h-[calc(100vh-69px)] w-72 md:w-80 flex-shrink-0 bg-white border-r border-slate-200 z-30 transition-transform duration-300 ease-in-out ${
           isMobileOpen ? 'translate-x-0' : '-translate-x-full'
         } md:translate-x-0 dark:bg-slate-900 dark:border-slate-700`}
       >

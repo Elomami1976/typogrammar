@@ -20,13 +20,16 @@ export default defineConfig({
       },
     },
     // Optimize chunk size
-    chunkSizeWarningLimit: 500,
+    chunkSizeWarningLimit: 1000,
     // Use esbuild for faster minification
     minify: 'esbuild',
     // Enable CSS code splitting
     cssCodeSplit: true,
     // Set target for better browser support
     target: 'es2015',
+    // Optimize assets
+    assetsInlineLimit: 4096, // Inline assets smaller than 4kb
+    reportCompressedSize: false, // Faster builds
   },
   // Handle client-side routing in preview mode
   preview: {

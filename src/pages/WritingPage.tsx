@@ -1,9 +1,15 @@
 import React from 'react';
 import GoogleAd from '../components/GoogleAd';
 import { Link } from 'react-router-dom';
+import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading, InlineCode, CodeBlock, ExampleList, BulletList } from '../components/ArticleComponents';
 
 const WritingPage: React.FC = () => {
+  usePageMetadata({
+    title: 'How to Write a Perfect Essay – Step-by-Step Guide | TypoGrammar',
+    description: 'Master essay writing with our comprehensive guide. Learn how to craft strong thesis statements, develop body paragraphs, and write compelling conclusions. Includes examples and proven techniques.'
+  });
+
   return (
     <>
     <article className="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-xl shadow-lg shadow-slate-200/50 border border-slate-200 dark:bg-slate-800/50 dark:border-slate-700 dark:shadow-slate-900/50">

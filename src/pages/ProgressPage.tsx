@@ -3,6 +3,7 @@ import React, { useMemo, useEffect, useState } from 'react';
 import GoogleAd from '../components/GoogleAd';
 import { Link } from 'react-router-dom';
 import { useProgress } from '../contexts/ProgressContext';
+import usePageMetadata from '../hooks/usePageMetadata';
 import { GRAMMAR_TOPICS } from '../constants/grammarTopics';
 import { ArticleHeading, ArticleParagraph } from '../components/ArticleComponents';
 
@@ -16,6 +17,11 @@ interface Badge {
 }
 
 const ProgressPage: React.FC = () => {
+  usePageMetadata({
+    title: 'My Learning Progress – Track Your Grammar Journey | TypoGrammar',
+    description: 'Track your English grammar learning progress with TypoGrammar. View completed topics, quiz scores, achievement badges, and learning streaks. Monitor your journey to grammar mastery.'
+  });
+
   const { progress } = useProgress();
   const [showConfetti, setShowConfetti] = useState(false);
   

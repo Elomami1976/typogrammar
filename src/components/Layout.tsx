@@ -4,6 +4,7 @@ import { Outlet, useLocation } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import Sidebar from './Sidebar';
+import SEO from './SEO';
 import { useGlobalKeyboardShortcuts } from '../hooks/useKeyboardShortcuts';
 
 const Layout: React.FC = () => {
@@ -34,12 +35,15 @@ const Layout: React.FC = () => {
 
   return (
     <div className="flex flex-col min-h-screen bg-slate-100 text-slate-800">
+      {/* Global SEO - automatically applied to all pages based on current route */}
+      <SEO path={location.pathname} />
+      
       <Header 
         onMenuClick={toggleMobileMenu}
       />
       <div className="flex flex-1 w-full max-w-screen-2xl mx-auto">
         <Sidebar isMobileOpen={isMobileMenuOpen} onClose={closeMobileMenu} />
-        <main className="flex-1 min-w-0 py-6 sm:py-8 md:py-12 px-6 md:px-10">
+        <main className="flex-1 min-w-0 py-4 sm:py-6 md:py-8 lg:py-12 px-4 sm:px-6 md:px-8 lg:px-10">
           <Outlet />
         </main>
       </div>

@@ -1,0 +1,458 @@
+{
+  "slug": "verb-tenses-quiz",
+  "title": "Verb Tenses Quiz (50 Questions) | TypoGrammar",
+  "description": "Test your English verb tenses with this free 50-question quiz. Includes answers and explanations for IELTS, TOEFL, and ESL learners.",
+  "levelBreakdown": { "easy": 20, "medium": 20, "hard": 10 },
+  "questions": [
+    {
+      "id": 1,
+      "tense": "Present Simple",
+      "difficulty": "easy",
+      "sentence": "She ___ to work every day.",
+      "options": { "A": "go", "B": "goes", "C": "is going", "D": "has gone" },
+      "correct": "B",
+      "explanation": "We use the present simple for routines and habits. With 'she', the verb takes -s."
+    },
+    {
+      "id": 2,
+      "tense": "Present Continuous",
+      "difficulty": "easy",
+      "sentence": "Right now, they ___ dinner together.",
+      "options": { "A": "eat", "B": "are eating", "C": "ate", "D": "have eaten" },
+      "correct": "B",
+      "explanation": "Present continuous (am/is/are + -ing) is used for actions happening right now."
+    },
+    {
+      "id": 3,
+      "tense": "Past Simple",
+      "difficulty": "easy",
+      "sentence": "Last week, I ___ my grandmother in the hospital.",
+      "options": { "A": "visit", "B": "visited", "C": "am visiting", "D": "have visited" },
+      "correct": "B",
+      "explanation": "Past simple is used for completed actions at a specific time in the past (last week)."
+    },
+    {
+      "id": 4,
+      "tense": "Future (will)",
+      "difficulty": "easy",
+      "sentence": "Don't worry, I ___ you with your homework later.",
+      "options": { "A": "help", "B": "helped", "C": "will help", "D": "am helping" },
+      "correct": "C",
+      "explanation": "We use 'will' for spontaneous decisions and promises made at the moment of speaking."
+    },
+    {
+      "id": 5,
+      "tense": "Present Perfect",
+      "difficulty": "easy",
+      "sentence": "I ___ never ___ to Japan before.",
+      "options": { "A": "did... go", "B": "have... been", "C": "am... going", "D": "will... go" },
+      "correct": "B",
+      "explanation": "Present perfect (have/has + past participle) is used for life experiences without mentioning when."
+    },
+    {
+      "id": 6,
+      "tense": "Present Simple",
+      "difficulty": "easy",
+      "sentence": "Water ___ at 100 degrees Celsius.",
+      "options": { "A": "boil", "B": "boils", "C": "is boiling", "D": "boiled" },
+      "correct": "B",
+      "explanation": "Present simple is used for facts and general truths. With singular subjects, the verb takes -s."
+    },
+    {
+      "id": 7,
+      "tense": "Past Continuous",
+      "difficulty": "easy",
+      "sentence": "At 8 PM yesterday, we ___ TV.",
+      "options": { "A": "watched", "B": "watch", "C": "were watching", "D": "have watched" },
+      "correct": "C",
+      "explanation": "Past continuous (was/were + -ing) describes an action in progress at a specific time in the past."
+    },
+    {
+      "id": 8,
+      "tense": "Future (going to)",
+      "difficulty": "easy",
+      "sentence": "Look at those dark clouds! It ___ rain soon.",
+      "options": { "A": "will", "B": "is going to", "C": "rains", "D": "rained" },
+      "correct": "B",
+      "explanation": "We use 'going to' for predictions based on present evidence (the dark clouds)."
+    },
+    {
+      "id": 9,
+      "tense": "Present Perfect",
+      "difficulty": "easy",
+      "sentence": "She ___ her keys and can't open the door.",
+      "options": { "A": "loses", "B": "lost", "C": "has lost", "D": "is losing" },
+      "correct": "C",
+      "explanation": "Present perfect shows a past action with a present result (she still can't open the door)."
+    },
+    {
+      "id": 10,
+      "tense": "Present Simple",
+      "difficulty": "easy",
+      "sentence": "My brother ___ in a hospital as a nurse.",
+      "options": { "A": "work", "B": "works", "C": "is working", "D": "worked" },
+      "correct": "B",
+      "explanation": "Present simple describes permanent situations and regular jobs. With 'he/she', add -s."
+    },
+    {
+      "id": 11,
+      "tense": "Past Simple",
+      "difficulty": "easy",
+      "sentence": "They ___ the movie last night.",
+      "options": { "A": "enjoy", "B": "enjoyed", "C": "are enjoying", "D": "have enjoyed" },
+      "correct": "B",
+      "explanation": "Past simple is used for completed actions with a specific past time marker (last night)."
+    },
+    {
+      "id": 12,
+      "tense": "Present Continuous",
+      "difficulty": "easy",
+      "sentence": "Be quiet! The baby ___.",
+      "options": { "A": "sleeps", "B": "slept", "C": "is sleeping", "D": "has slept" },
+      "correct": "C",
+      "explanation": "Present continuous describes an action happening at the moment of speaking."
+    },
+    {
+      "id": 13,
+      "tense": "Future (will)",
+      "difficulty": "easy",
+      "sentence": "I think the team ___ the championship this year.",
+      "options": { "A": "wins", "B": "won", "C": "will win", "D": "is winning" },
+      "correct": "C",
+      "explanation": "We use 'will' for predictions or opinions about the future (I think...)."
+    },
+    {
+      "id": 14,
+      "tense": "Present Perfect",
+      "difficulty": "easy",
+      "sentence": "We ___ here since 2015.",
+      "options": { "A": "live", "B": "lived", "C": "have lived", "D": "are living" },
+      "correct": "C",
+      "explanation": "Present perfect with 'since' describes an action that started in the past and continues now."
+    },
+    {
+      "id": 15,
+      "tense": "Past Continuous",
+      "difficulty": "easy",
+      "sentence": "While I ___ to school, I saw an accident.",
+      "options": { "A": "walked", "B": "was walking", "C": "walk", "D": "have walked" },
+      "correct": "B",
+      "explanation": "Past continuous is used for a background action interrupted by another action (saw)."
+    },
+    {
+      "id": 16,
+      "tense": "Present Simple",
+      "difficulty": "easy",
+      "sentence": "The sun ___ in the east.",
+      "options": { "A": "rise", "B": "rises", "C": "is rising", "D": "rose" },
+      "correct": "B",
+      "explanation": "Present simple is used for permanent facts and natural phenomena. Singular subject takes -s."
+    },
+    {
+      "id": 17,
+      "tense": "Future (going to)",
+      "difficulty": "easy",
+      "sentence": "We ___ visit our grandparents next weekend.",
+      "options": { "A": "will", "B": "are going to", "C": "visited", "D": "visit" },
+      "correct": "B",
+      "explanation": "We use 'going to' for planned future actions or intentions already decided."
+    },
+    {
+      "id": 18,
+      "tense": "Present Perfect",
+      "difficulty": "easy",
+      "sentence": "Have you ___ finished your homework?",
+      "options": { "A": "yet", "B": "already", "C": "still", "D": "just" },
+      "correct": "B",
+      "explanation": "'Already' is used in present perfect questions to ask if something has happened sooner than expected."
+    },
+    {
+      "id": 19,
+      "tense": "Past Simple",
+      "difficulty": "easy",
+      "sentence": "She ___ a beautiful song at the concert yesterday.",
+      "options": { "A": "sings", "B": "sang", "C": "is singing", "D": "has sung" },
+      "correct": "B",
+      "explanation": "Past simple is used for completed past actions with a time marker (yesterday)."
+    },
+    {
+      "id": 20,
+      "tense": "Present Continuous",
+      "difficulty": "easy",
+      "sentence": "My parents ___ their vacation to Spain this summer.",
+      "options": { "A": "plan", "B": "planned", "C": "are planning", "D": "have planned" },
+      "correct": "C",
+      "explanation": "Present continuous can describe temporary actions happening around now or ongoing plans."
+    },
+    {
+      "id": 21,
+      "tense": "Present Perfect",
+      "difficulty": "medium",
+      "sentence": "I ___ three emails to the company, but they haven't replied yet.",
+      "options": { "A": "sent", "B": "have sent", "C": "am sending", "D": "send" },
+      "correct": "B",
+      "explanation": "Present perfect connects past actions to the present situation (still no reply)."
+    },
+    {
+      "id": 22,
+      "tense": "Past Continuous",
+      "difficulty": "medium",
+      "sentence": "When the phone rang, I ___ a shower.",
+      "options": { "A": "took", "B": "take", "C": "was taking", "D": "have taken" },
+      "correct": "C",
+      "explanation": "Past continuous describes an action in progress when another action (phone rang) happened."
+    },
+    {
+      "id": 23,
+      "tense": "Future (Present Continuous)",
+      "difficulty": "medium",
+      "sentence": "We ___ our friends for dinner tomorrow night.",
+      "options": { "A": "meet", "B": "met", "C": "are meeting", "D": "will meet" },
+      "correct": "C",
+      "explanation": "Present continuous can express fixed future arrangements, especially with specific time (tomorrow night)."
+    },
+    {
+      "id": 24,
+      "tense": "Present Perfect Continuous",
+      "difficulty": "medium",
+      "sentence": "How long ___ you ___ for the bus?",
+      "options": { "A": "do... wait", "B": "have... been waiting", "C": "are... waiting", "D": "did... wait" },
+      "correct": "B",
+      "explanation": "Present perfect continuous (have/has been + -ing) emphasizes duration of an action from past to now."
+    },
+    {
+      "id": 25,
+      "tense": "Past Perfect",
+      "difficulty": "medium",
+      "sentence": "By the time we arrived at the cinema, the movie ___ already ___.",
+      "options": { "A": "has... started", "B": "had... started", "C": "was... starting", "D": "will... start" },
+      "correct": "B",
+      "explanation": "Past perfect shows an action completed before another past action (arrived)."
+    },
+    {
+      "id": 26,
+      "tense": "Present Simple",
+      "difficulty": "medium",
+      "sentence": "If it ___ tomorrow, we'll stay home.",
+      "options": { "A": "will rain", "B": "rains", "C": "is raining", "D": "rained" },
+      "correct": "B",
+      "explanation": "In first conditional sentences (if-clause), we use present simple for the condition, not 'will'."
+    },
+    {
+      "id": 27,
+      "tense": "Present Perfect",
+      "difficulty": "medium",
+      "sentence": "This is the first time I ___ sushi.",
+      "options": { "A": "try", "B": "tried", "C": "have tried", "D": "am trying" },
+      "correct": "C",
+      "explanation": "After expressions like 'the first/second time', we use present perfect to show experience."
+    },
+    {
+      "id": 28,
+      "tense": "Past Simple",
+      "difficulty": "medium",
+      "sentence": "When I was young, I ___ to ride a bicycle without training wheels.",
+      "options": { "A": "learned", "B": "have learned", "C": "was learning", "D": "learn" },
+      "correct": "A",
+      "explanation": "Past simple is used for completed actions in a finished time period (when I was young)."
+    },
+    {
+      "id": 29,
+      "tense": "Future (going to)",
+      "difficulty": "medium",
+      "sentence": "Watch out! You ___ fall off that ladder!",
+      "options": { "A": "will", "B": "are going to", "C": "fall", "D": "are falling" },
+      "correct": "B",
+      "explanation": "We use 'going to' for immediate predictions based on present evidence (danger is visible)."
+    },
+    {
+      "id": 30,
+      "tense": "Present Continuous",
+      "difficulty": "medium",
+      "sentence": "My sister ___ harder these days to prepare for her exams.",
+      "options": { "A": "studies", "B": "studied", "C": "is studying", "D": "has studied" },
+      "correct": "C",
+      "explanation": "Present continuous describes temporary situations happening around now (these days)."
+    },
+    {
+      "id": 31,
+      "tense": "Present Perfect",
+      "difficulty": "medium",
+      "sentence": "I can't find my wallet. I think I ___ it somewhere.",
+      "options": { "A": "left", "B": "leave", "C": "have left", "D": "am leaving" },
+      "correct": "C",
+      "explanation": "Present perfect connects a past action (losing wallet) to a present consequence (can't find it)."
+    },
+    {
+      "id": 32,
+      "tense": "Past Continuous",
+      "difficulty": "medium",
+      "sentence": "They ___ about their holiday when I joined the conversation.",
+      "options": { "A": "talked", "B": "were talking", "C": "have talked", "D": "talk" },
+      "correct": "B",
+      "explanation": "Past continuous shows an ongoing action when another action (joined) occurred."
+    },
+    {
+      "id": 33,
+      "tense": "Future (will)",
+      "difficulty": "medium",
+      "sentence": "I promise I ___ late again.",
+      "options": { "A": "am not being", "B": "won't be", "C": "am not", "D": "haven't been" },
+      "correct": "B",
+      "explanation": "We use 'will' (or won't) to make promises about future behavior."
+    },
+    {
+      "id": 34,
+      "tense": "Present Perfect Continuous",
+      "difficulty": "medium",
+      "sentence": "She ___ all morning, so she's exhausted now.",
+      "options": { "A": "worked", "B": "works", "C": "has been working", "D": "is working" },
+      "correct": "C",
+      "explanation": "Present perfect continuous emphasizes the duration of a recent activity that affects the present (exhausted)."
+    },
+    {
+      "id": 35,
+      "tense": "Past Perfect",
+      "difficulty": "medium",
+      "sentence": "I realized I ___ my phone at the restaurant.",
+      "options": { "A": "left", "B": "had left", "C": "have left", "D": "was leaving" },
+      "correct": "B",
+      "explanation": "Past perfect shows the earlier action (leaving phone) before the later realization."
+    },
+    {
+      "id": 36,
+      "tense": "Present Simple",
+      "difficulty": "medium",
+      "sentence": "The train ___ at 6:30 AM every morning.",
+      "options": { "A": "departs", "B": "is departing", "C": "departed", "D": "has departed" },
+      "correct": "A",
+      "explanation": "Present simple is used for scheduled events like timetables, especially with transport."
+    },
+    {
+      "id": 37,
+      "tense": "Present Perfect",
+      "difficulty": "medium",
+      "sentence": "My brother ___ to five different countries so far this year.",
+      "options": { "A": "traveled", "B": "travels", "C": "has traveled", "D": "is traveling" },
+      "correct": "C",
+      "explanation": "Present perfect with 'so far' describes actions in an unfinished time period (this year)."
+    },
+    {
+      "id": 38,
+      "tense": "Past Simple",
+      "difficulty": "medium",
+      "sentence": "The company ___ its employees a bonus last December.",
+      "options": { "A": "gives", "B": "gave", "C": "has given", "D": "is giving" },
+      "correct": "B",
+      "explanation": "Past simple is used for completed actions at a specific finished time (last December)."
+    },
+    {
+      "id": 39,
+      "tense": "Future (Present Continuous)",
+      "difficulty": "medium",
+      "sentence": "I can't come tonight because I ___ my cousin at the airport.",
+      "options": { "A": "pick up", "B": "picked up", "C": "am picking up", "D": "have picked up" },
+      "correct": "C",
+      "explanation": "Present continuous expresses fixed future arrangements already planned."
+    },
+    {
+      "id": 40,
+      "tense": "Present Continuous",
+      "difficulty": "medium",
+      "sentence": "You ___ always ___ your homework at the last minute!",
+      "options": { "A": "do... do", "B": "are... doing", "C": "did... do", "D": "have... done" },
+      "correct": "B",
+      "explanation": "Present continuous with 'always' expresses annoyance about a repeated habit."
+    },
+    {
+      "id": 41,
+      "tense": "Past Perfect",
+      "difficulty": "hard",
+      "sentence": "She didn't recognize me because we ___ each other for ten years.",
+      "options": { "A": "didn't see", "B": "hadn't seen", "C": "haven't seen", "D": "weren't seeing" },
+      "correct": "B",
+      "explanation": "Past perfect shows the earlier state (not seeing) that caused the later result (didn't recognize)."
+    },
+    {
+      "id": 42,
+      "tense": "Present Perfect Continuous",
+      "difficulty": "hard",
+      "sentence": "You look tired. How long ___ you ___?",
+      "options": { "A": "have... been running", "B": "do... run", "C": "are... running", "D": "did... run" },
+      "correct": "A",
+      "explanation": "Present perfect continuous asks about the duration of an activity that explains a present situation (looking tired)."
+    },
+    {
+      "id": 43,
+      "tense": "Past Continuous vs Past Simple",
+      "difficulty": "hard",
+      "sentence": "While the teacher ___ the lesson, a student's phone ___.",
+      "options": { "A": "explained... was ringing", "B": "was explaining... rang", "C": "explained... rang", "D": "was explaining... was ringing" },
+      "correct": "B",
+      "explanation": "Past continuous for the background action (explaining), past simple for the interruption (rang)."
+    },
+    {
+      "id": 44,
+      "tense": "Future Perfect",
+      "difficulty": "hard",
+      "sentence": "By this time next month, I ___ my degree.",
+      "options": { "A": "will finish", "B": "will have finished", "C": "finish", "D": "have finished" },
+      "correct": "B",
+      "explanation": "Future perfect (will have + past participle) describes an action that will be completed before a future time."
+    },
+    {
+      "id": 45,
+      "tense": "Present Perfect vs Past Simple",
+      "difficulty": "hard",
+      "sentence": "I ___ three books this month, but last month I only ___ one.",
+      "options": { "A": "read... read", "B": "have read... read", "C": "read... have read", "D": "am reading... read" },
+      "correct": "B",
+      "explanation": "Use present perfect for unfinished time (this month) and past simple for finished time (last month)."
+    },
+    {
+      "id": 46,
+      "tense": "Past Perfect Continuous",
+      "difficulty": "hard",
+      "sentence": "They were exhausted because they ___ for hours without a break.",
+      "options": { "A": "worked", "B": "had worked", "C": "had been working", "D": "were working" },
+      "correct": "C",
+      "explanation": "Past perfect continuous emphasizes the duration of an action before a past moment (being exhausted)."
+    },
+    {
+      "id": 47,
+      "tense": "Mixed Conditionals",
+      "difficulty": "hard",
+      "sentence": "If I ___ the job offer last year, I ___ in London now.",
+      "options": { "A": "accepted... would live", "B": "had accepted... would be living", "C": "accept... will live", "D": "have accepted... would live" },
+      "correct": "B",
+      "explanation": "Mixed conditional: past perfect in if-clause (past action) and would + be -ing in result (present consequence)."
+    },
+    {
+      "id": 48,
+      "tense": "Present Perfect Continuous vs Present Perfect",
+      "difficulty": "hard",
+      "sentence": "I ___ to contact him all day, but his phone is switched off.",
+      "options": { "A": "tried", "B": "have tried", "C": "have been trying", "D": "am trying" },
+      "correct": "C",
+      "explanation": "Present perfect continuous emphasizes repeated efforts throughout a period (all day)."
+    },
+    {
+      "id": 49,
+      "tense": "Past Perfect",
+      "difficulty": "hard",
+      "sentence": "The house was very quiet when I got home. Everybody ___ to bed.",
+      "options": { "A": "went", "B": "had gone", "C": "has gone", "D": "was going" },
+      "correct": "B",
+      "explanation": "Past perfect shows the earlier action (going to bed) before the later observation (house was quiet)."
+    },
+    {
+      "id": 50,
+      "tense": "Future Continuous",
+      "difficulty": "hard",
+      "sentence": "This time tomorrow, I ___ on a beach in Hawaii.",
+      "options": { "A": "will lie", "B": "lie", "C": "will be lying", "D": "am lying" },
+      "correct": "C",
+      "explanation": "Future continuous (will be + -ing) describes an action that will be in progress at a specific future time."
+    }
+  ]
+}

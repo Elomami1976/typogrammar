@@ -1,5 +1,6 @@
 import React from 'react';
 import GoogleAd from '../components/GoogleAd';
+import SchemaMarkup from '../components/SchemaMarkup';
 import { ArticleParagraph, ArticleHeading, InlineCode } from '../components/ArticleComponents';
 import { HOMOPHONES, HOMONYMS, HOMOGRAPHS } from '../constants/homophones';
 import { WordGroup } from '../types';
@@ -38,20 +39,48 @@ const WordTable: React.FC<{ items: WordGroup[] }> = ({ items }) => (
 
 const HomophonesHomonymsHomographsPage: React.FC = () => {
   usePageMetadata({
-    title: 'Homophones, Homonyms, & Homographs | TypoGrammar',
-    description: 'Understand the difference between words that sound alike or are spelled the same. Clear definitions and examples for homophones, homonyms, and homographs.'
+    title: 'Homophones, Homonyms & Homographs: Complete Guide with 100+ Examples | TypoGrammar',
+    description: 'Master confusing English words that sound or look alike. Complete guide to homophones (their/there), homonyms (bank/bank), and homographs (bow/bow) with pronunciations, meanings, and examples for ESL learners.'
   });
 
   return (
     <>
+    <SchemaMarkup
+      type="Article"
+      data={{
+        headline: 'Homophones, Homonyms, & Homographs: A Complete Guide',
+        description: 'Comprehensive guide explaining the differences between homophones, homonyms, and homographs in English with extensive examples and pronunciations.',
+        author: {
+          '@type': 'Organization',
+          name: 'TypoGrammar'
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'TypoGrammar',
+          url: 'https://typogrammar.com'
+        },
+        datePublished: '2024-01-15',
+        dateModified: '2025-12-25',
+        mainEntityOfPage: {
+          '@type': 'WebPage',
+          '@id': 'https://typogrammar.com/vocabulary/homophones-homonyms-homographs'
+        },
+        keywords: 'homophones, homonyms, homographs, confusing English words, sound alike words, ESL vocabulary, English spelling, pronunciation guide',
+        educationalLevel: 'Beginner to Intermediate',
+        learningResourceType: 'Reference Guide'
+      }}
+    />
     <article className="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-xl shadow-lg shadow-slate-200/50 border border-slate-200 dark:bg-slate-800/50 dark:border-slate-700 dark:shadow-slate-900/50">
       <div>
-        <p className="font-body text-base font-semibold text-blue-600 mb-4 dark:text-blue-400">Vocabulary</p>
-        <h1 className="font-heading text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 tracking-tight dark:text-slate-100">Homophones, Homonyms, & Homographs</h1>
+        <p className="font-body text-base font-semibold text-blue-600 mb-4 dark:text-blue-400">Vocabulary • English Learning</p>
+        <h1 className="font-heading text-4xl md:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight dark:text-slate-100">Homophones, Homonyms, & Homographs</h1>
+        <p className="font-body text-xl text-slate-600 mb-8 dark:text-slate-400">
+          Understanding words that sound alike or look the same but have different meanings
+        </p>
       </div>
 
       <ArticleParagraph>
-        The English language is full of tricky words that look or sound alike but have different meanings. Understanding the distinction between homophones, homonyms, and homographs is key to avoiding confusion in both writing and speaking.
+        The English language is full of tricky words that look or sound alike but have different meanings. Understanding the distinction between homophones, homonyms, and homographs is key to avoiding confusion in both writing and speaking. This guide will help you master these commonly confused word types.
       </ArticleParagraph>
 
       <ArticleHeading>Homophones</ArticleHeading>

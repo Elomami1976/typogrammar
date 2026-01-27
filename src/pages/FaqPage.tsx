@@ -1,6 +1,6 @@
-
 import React, { useState, useMemo } from 'react';
 import GoogleAd from '../components/GoogleAd';
+import usePageMetadata from '../hooks/usePageMetadata';
 
 // FAQ data structure with ReactNode for answers
 const faqItems: { question: string; answer: React.ReactNode }[] = [
@@ -119,6 +119,11 @@ const FaqItem: React.FC<{
 
 
 const FaqPage: React.FC = () => {
+  usePageMetadata({
+    title: 'FAQ – Frequently Asked Questions About TypoGrammar',
+    description: 'Find answers to common questions about TypoGrammar. Learn how to use our platform, track your progress, access quizzes, and improve your English grammar skills. Free and no registration required.'
+  });
+
   const [openIndex, setOpenIndex] = useState<number | null>(0);
   const [searchTerm, setSearchTerm] = useState('');
 

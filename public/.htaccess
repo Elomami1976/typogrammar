@@ -1,8 +1,98 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
+  
+  # Force HTTPS (optional but recommended for SEO)
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+  
+  # Allow access to robots.txt, sitemap.xml, ads.txt, and other important files
+  RewriteRule ^robots\.txt$ - [L]
+  RewriteRule ^sitemap\.xml$ - [L]
+  RewriteRule ^ads\.txt$ - [L]
+  RewriteRule ^llms\.txt$ - [L]
+  
+  # Skip rewrite for actual files and directories
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
+  
+  # Redirect all other requests to index.html for client-side routing
   RewriteRule . /index.html [L]
 </IfModule>
+
+# Prevent directory browsing
+Options -Indexes
+
+# Set proper MIME types
+<IfModule mod_mime.c>
+  AddType text/plain .txt
+  AddType application/xml .xml
+  AddType image/svg+xml .svg
+</IfModule>
+
+# Enable compression for better performance
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json application/xml application/rss+xml font/ttf font/otf font/woff font/woff2 image/svg+xml
+</IfModule>
+
+# Enable HTTP/2 if supported
+<IfModule mod_http2.c>
+  Protocols h2 h2c http/1.1
+</IfModule>
+
+# ========================================
+# CACHE CONTROL HEADERS (Fix for browser caching issues)
+# ========================================
+<IfModule mod_expires.c>
+  ExpiresActive On
+  
+  # HTML files - NO CACHE (so users always get fresh content)
+  <FilesMatch "\.(html|htm)$">
+    ExpiresDefault "access plus 0 seconds"
+    Header set Cache-Control "no-cache, no-store, must-revalidate, max-age=0"
+    Header set Pragma "no-cache"
+  </FilesMatch>
+  
+  # JavaScript and CSS with hashed filenames - cache forever (1 year)
+  # These change filename when content changes, so safe to cache aggressively
+  <FilesMatch "\.(js|css)$">
+    ExpiresDefault "access plus 1 year"
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  
+  # Images - cache for 30 days (blog images don't change often)
+  <FilesMatch "\.(jpg|jpeg|png|gif|svg|webp|ico)$">
+    ExpiresDefault "access plus 30 days"
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+  
+  # Fonts - cache for 1 year
+  <FilesMatch "\.(woff|woff2|ttf|eot)$">
+    ExpiresDefault "access plus 1 year"
+    Header set Cache-Control "public, max-age=31536000"
+  </FilesMatch>
+  
+  # JSON, XML, TXT files - short cache (1 hour)
+  <FilesMatch "\.(json|xml|txt)$">
+    ExpiresDefault "access plus 1 hour"
+    Header set Cache-Control "public, max-age=3600"
+  </FilesMatch>
+</IfModule>
+
+# For servers without mod_expires, use Header directive
+<IfModule mod_headers.c>
+  # Ensure HTML is never cached
+  <FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate, max-age=0"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+  </FilesMatch>
+</IfModule>
+
+# Set proper permissions
+<FilesMatch "\.(html|css|js|json|xml|txt)$">
+  Order allow,deny
+  Allow from all
+  Require all granted
+</FilesMatch>

@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 
 interface SchemaMarkupProps {
-  type: 'Organization' | 'EducationalOrganization' | 'Course' | 'Article' | 'Quiz';
+  type: 'Organization' | 'EducationalOrganization' | 'Course' | 'Article' | 'Quiz' | 'FAQPage';
   data: Record<string, any>;
 }
 

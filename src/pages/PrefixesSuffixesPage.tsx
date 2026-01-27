@@ -1,6 +1,7 @@
 
 import React from 'react';
 import GoogleAd from '../components/GoogleAd';
+import SchemaMarkup from '../components/SchemaMarkup';
 import { ArticleHeading, ArticleParagraph, InlineCode } from '../components/ArticleComponents';
 import { PREFIX_CATEGORIES, SUFFIX_CATEGORIES } from '../constants/affixes';
 import { Affix, AffixCategory } from '../types';
@@ -44,17 +45,45 @@ const Section: React.FC<{ title: string; categories: AffixCategory[] }> = ({ tit
 
 const PrefixesSuffixesPage: React.FC = () => {
   usePageMetadata({
-    title: 'A Guide to Prefixes & Suffixes | TypoGrammar',
-    description: 'Expand your vocabulary by learning the most common English prefixes and suffixes. Understand how they change a word\'s meaning with clear tables and examples.'
+    title: 'English Prefixes & Suffixes: Complete Guide with 200+ Examples | TypoGrammar',
+    description: 'Master 200+ English prefixes and suffixes to expand your vocabulary instantly. Learn word roots, meanings, and examples for un-, re-, -tion, -able, and more. Essential guide for ESL learners and students.'
   });
 
   return (
     <>
+    <SchemaMarkup
+      type="Article"
+      data={{
+        headline: 'Understanding Prefixes & Suffixes: Complete Guide to English Word Formation',
+        description: 'Comprehensive guide to English prefixes and suffixes with extensive examples showing how they modify word meanings.',
+        author: {
+          '@type': 'Organization',
+          name: 'TypoGrammar'
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'TypoGrammar',
+          url: 'https://typogrammar.com'
+        },
+        datePublished: '2024-01-15',
+        dateModified: '2025-12-25',
+        mainEntityOfPage: {
+          '@type': 'WebPage',
+          '@id': 'https://typogrammar.com/prefixes-suffixes'
+        },
+        keywords: 'English prefixes, English suffixes, word formation, vocabulary building, word roots, morphology, ESL vocabulary, affixes',
+        educationalLevel: 'Intermediate to Advanced',
+        learningResourceType: 'Reference Guide'
+      }}
+    />
     <article className="max-w-6xl mx-auto bg-white p-8 md:p-12 rounded-xl shadow-lg shadow-slate-200/50 border border-slate-200 dark:bg-slate-800/50 dark:border-slate-700 dark:shadow-slate-900/50">
       <div className="flex justify-between items-start">
         <div>
-          <p className="font-body text-base font-semibold text-blue-600 mb-4 dark:text-blue-400">Vocabulary</p>
-          <h1 className="font-heading text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 tracking-tight dark:text-slate-100">Understanding Prefixes & Suffixes</h1>
+          <p className="font-body text-base font-semibold text-blue-600 mb-4 dark:text-blue-400">Vocabulary • Word Formation</p>
+          <h1 className="font-heading text-4xl md:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight dark:text-slate-100">Understanding Prefixes & Suffixes</h1>
+          <p className="font-body text-xl text-slate-600 mb-8 dark:text-slate-400">
+            Unlock thousands of words by learning common prefixes and suffixes
+          </p>
         </div>
       </div>
 

@@ -2,6 +2,7 @@
 import React from 'react';
 import GoogleAd from '../components/GoogleAd';
 import { ArticleParagraph, ArticleHeading } from '../components/ArticleComponents';
+import MailchimpForm from '../components/MailchimpForm';
 
 const ContactPage: React.FC = () => {
   return (
@@ -52,6 +53,9 @@ const ContactPage: React.FC = () => {
         We're excited to hear from you and grateful for your support in making TypoGrammar the best free English grammar resource on the web.
       </ArticleParagraph>
     </article>
+        
+        <MailchimpForm />
+        
         <div className="mt-8">
           <GoogleAd adSlot="6406598038" />
         </div>

@@ -5,13 +5,15 @@ import usePageMetadata from '../hooks/usePageMetadata';
 import GoogleAd from '../components/GoogleAd';
 import SchemaMarkup from '../components/SchemaMarkup';
 import { useLanguage } from '../contexts/LanguageContext';
+import MailchimpForm from '../components/MailchimpForm';
 
 const HomePage: React.FC = () => {
   const { t } = useLanguage();
   
   usePageMetadata({
     title: 'TypoGrammar: Master English Grammar, Verb Tenses & Writing Skills | Free Learning Hub',
-    description: 'Learn English grammar online for free. Master verb tenses, sentence structure, punctuation rules, and writing skills with clear explanations, examples, and quizzes. Perfect for ESL/EFL students, professionals, and native speakers.'
+    description: 'Learn English grammar online for free. Master verb tenses, sentence structure, punctuation rules, and writing skills with clear explanations, examples, and quizzes. Perfect for ESL/EFL students, professionals, and native speakers.',
+    canonical: 'https://typogrammar.com/'
   });
 
   return (
@@ -26,16 +28,16 @@ const HomePage: React.FC = () => {
           teaches: 'English Grammar'
         }}
       />
-      <div className="text-center p-8 bg-gradient-to-br from-white to-slate-50 rounded-xl shadow-lg shadow-slate-200/50 border border-slate-200 max-w-3xl mx-auto dark:bg-slate-900 dark:border-slate-700 dark:shadow-slate-900/50">
-        <div className="flex justify-center mb-6">
-          <div className="p-4 bg-blue-100 rounded-full dark:bg-blue-900/40">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+      <div className="text-center p-4 sm:p-6 md:p-8 bg-gradient-to-br from-white to-slate-50 rounded-xl shadow-lg shadow-slate-200/50 border border-slate-200 max-w-3xl mx-auto dark:bg-slate-900 dark:border-slate-700 dark:shadow-slate-900/50">
+        <div className="flex justify-center mb-4 sm:mb-6">
+          <div className="p-3 sm:p-4 bg-blue-100 rounded-full dark:bg-blue-900/40">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 sm:h-16 sm:w-16 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.627 48.627 0 0 1 12 20.904a48.627 48.627 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.57 50.57 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.906 59.906 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
             </svg>
           </div>
         </div>
-        <h2 className="font-heading text-5xl font-extrabold text-slate-800 mb-4 tracking-tight dark:text-white">{t.homeTitle}</h2>
-        <p className="font-body text-xl text-slate-600 max-w-2xl mx-auto mb-8 dark:text-white">
+        <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-800 mb-3 sm:mb-4 tracking-tight dark:text-white">{t.homeTitle}</h2>
+        <p className="font-body text-base sm:text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-6 sm:mb-8 dark:text-white">
           {t.homeSubtitle}{' '}
           <Link to="/topics/present-simple" className="text-blue-600 hover:underline font-semibold dark:text-blue-300">
             {t.presentSimpleTense}
@@ -50,10 +52,10 @@ const HomePage: React.FC = () => {
           </Link>
           .
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center flex-wrap">
           <Link 
             to="/getting-started" 
-            className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors duration-200 shadow-lg hover:shadow-xl dark:bg-blue-500 dark:hover:bg-blue-600"
+            className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-bold text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors duration-200 shadow-lg hover:shadow-xl dark:bg-blue-500 dark:hover:bg-blue-600"
           >
             {t.startLearningNow}
             <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -62,16 +64,36 @@ const HomePage: React.FC = () => {
           </Link>
           <Link 
             to="/grammar-guide" 
-            className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-blue-600 bg-white border-2 border-blue-600 rounded-lg hover:bg-blue-50 transition-colors duration-200 dark:bg-slate-800 dark:text-blue-400 dark:border-blue-400 dark:hover:bg-slate-700"
+            className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-bold text-blue-600 bg-white border-2 border-blue-600 rounded-lg hover:bg-blue-50 transition-colors duration-200 dark:bg-slate-800 dark:text-blue-400 dark:border-blue-400 dark:hover:bg-slate-700"
           >
             {t.browseAllTopics}
           </Link>
+          <Link 
+            to="/quizzes/verb-tenses-quiz" 
+            className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-bold text-white bg-purple-600 rounded-lg hover:bg-purple-700 transition-colors duration-200 shadow-lg hover:shadow-xl dark:bg-purple-500 dark:hover:bg-purple-600"
+          >
+            📝 Take Verb Tenses Quiz
+            <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </Link>
+          <a
+            href="https://kwakwa.com/course/oym21n2s?utm_source=chatgpt.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-bold text-white bg-green-600 rounded-lg hover:bg-green-700 transition-colors duration-200 shadow-lg hover:shadow-xl dark:bg-green-500 dark:hover:bg-green-600"
+          >
+            🌟 IELTS Online Course
+            <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </a>
         </div>
       </div>
 
-      <div className="max-w-4xl mx-auto mt-12 bg-white p-8 md:p-10 rounded-xl shadow-lg shadow-slate-200/50 border border-slate-200 dark:bg-slate-900 dark:border-slate-700 dark:shadow-slate-900/50">
-        <h3 className="font-heading text-3xl font-bold text-slate-900 mb-6 dark:text-white">{t.whatIsTypoGrammar}</h3>
-        <p className="font-body text-lg text-slate-700 leading-relaxed mb-4 dark:text-slate-100">
+      <div className="max-w-4xl mx-auto mt-8 sm:mt-12 bg-white p-4 sm:p-6 md:p-8 lg:p-10 rounded-xl shadow-lg shadow-slate-200/50 border border-slate-200 dark:bg-slate-900 dark:border-slate-700 dark:shadow-slate-900/50">
+        <h3 className="font-heading text-2xl sm:text-3xl font-bold text-slate-900 mb-4 sm:mb-6 dark:text-white">{t.whatIsTypoGrammar}</h3>
+        <p className="font-body text-base sm:text-lg text-slate-700 leading-relaxed mb-4 dark:text-slate-100">
           {t.whatIsTypoGrammarText1}
         </p>
         <p className="font-body text-lg text-slate-700 leading-relaxed mb-4 dark:text-slate-100">
@@ -82,8 +104,8 @@ const HomePage: React.FC = () => {
         </p>
       </div>
 
-      <div className="max-w-4xl mx-auto mt-8 bg-white p-8 md:p-10 rounded-xl shadow-lg shadow-slate-200/50 border border-slate-200 dark:bg-slate-900 dark:border-slate-700 dark:shadow-slate-900/50">
-        <h3 className="font-heading text-3xl font-bold text-slate-900 mb-6 dark:text-white">{t.whatYouCanLearn}</h3>
+      <div className="max-w-4xl mx-auto mt-6 sm:mt-8 bg-white p-4 sm:p-6 md:p-8 lg:p-10 rounded-xl shadow-lg shadow-slate-200/50 border border-slate-200 dark:bg-slate-900 dark:border-slate-700 dark:shadow-slate-900/50">
+        <h3 className="font-heading text-2xl sm:text-3xl font-bold text-slate-900 mb-4 sm:mb-6 dark:text-white">{t.whatYouCanLearn}</h3>
         <div className="space-y-4">
           <div className="flex items-start gap-3">
             <div className="flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mt-1 dark:bg-blue-900/40">
@@ -144,10 +166,10 @@ const HomePage: React.FC = () => {
         </div>
       </div>
 
-      {/* YouTube Video Section */}
-      <div className="max-w-4xl mx-auto mt-8">
-        <div className="bg-white p-6 md:p-8 rounded-xl shadow-lg border border-slate-200 dark:bg-slate-900 dark:border-slate-700">
-          <h3 className="font-heading text-3xl font-bold text-slate-900 mb-6 text-center dark:text-white">{t.learnWithVideo}</h3>
+      {/* YouTube Video Section - Lazy loaded */}
+      <div className="max-w-4xl mx-auto mt-6 sm:mt-8">
+        <div className="bg-white p-4 sm:p-6 md:p-8 rounded-xl shadow-lg border border-slate-200 dark:bg-slate-900 dark:border-slate-700">
+          <h3 className="font-heading text-2xl sm:text-3xl font-bold text-slate-900 mb-4 sm:mb-6 text-center dark:text-white">{t.learnWithVideo}</h3>
           <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
             <iframe
               className="absolute top-0 left-0 w-full h-full rounded-lg"
@@ -156,13 +178,14 @@ const HomePage: React.FC = () => {
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
+              loading="lazy"
             ></iframe>
           </div>
         </div>
       </div>
 
-      <div className="max-w-4xl mx-auto mt-8 bg-gradient-to-br from-blue-50 to-indigo-50 p-8 md:p-10 rounded-xl shadow-lg border border-blue-100 dark:bg-slate-900 dark:border-slate-700">
-        <h3 className="font-heading text-3xl font-bold text-slate-900 mb-6 dark:text-white">{t.whyTypoGrammarFree}</h3>
+      <div className="max-w-4xl mx-auto mt-6 sm:mt-8 bg-gradient-to-br from-blue-50 to-indigo-50 p-4 sm:p-6 md:p-8 lg:p-10 rounded-xl shadow-lg border border-blue-100 dark:bg-slate-900 dark:border-slate-700">
+        <h3 className="font-heading text-2xl sm:text-3xl font-bold text-slate-900 mb-4 sm:mb-6 dark:text-white">{t.whyTypoGrammarFree}</h3>
         <p className="font-body text-lg text-slate-700 leading-relaxed mb-4 dark:text-slate-100">
           {t.whyFreeText1}
         </p>
@@ -185,9 +208,11 @@ const HomePage: React.FC = () => {
         </div>
       </div>
 
-        <div className="max-w-3xl mx-auto mt-8">
+        <div className="max-w-3xl mx-auto mt-6 sm:mt-8">
           <GoogleAd adSlot="6406598038" />
         </div>
+
+        <MailchimpForm />
     </div>
   );
 };

@@ -17,9 +17,18 @@ const BlogPostPage: React.FC = () => {
   const previousPost = postIndex > 0 ? BLOG_POSTS[postIndex - 1] : null;
   const nextPost = postIndex < BLOG_POSTS.length - 1 ? BLOG_POSTS[postIndex + 1] : null;
 
+  // Use custom meta title and description for the TOEFL Practice Online post
+  const metaTitle = post?.slug === 'how-to-use-official-toefl-practice-online' 
+    ? 'How to Use Official TOEFL Practice Online (ETS) to Boost Your Score'
+    : post ? `${post.title} | TypoGrammar Blog` : 'Blog Post | TypoGrammar';
+  
+  const metaDescription = post?.slug === 'how-to-use-official-toefl-practice-online'
+    ? 'Learn how to use official TOEFL Practice Online from ETS correctly. Avoid common mistakes, analyze results properly, and improve your TOEFL iBT score faster.'
+    : post ? post.summary : 'Read articles on grammar, writing, and the quirks of the English language.';
+
   usePageMetadata({
-    title: post ? `${post.title} | TypoGrammar Blog` : 'Blog Post | TypoGrammar',
-    description: post ? post.summary : 'Read articles on grammar, writing, and the quirks of the English language.'
+    title: metaTitle,
+    description: metaDescription
   });
 
   if (!post) {
@@ -38,14 +47,15 @@ const BlogPostPage: React.FC = () => {
 
   return (
     <>
-      <BlogMetadata
+      {/* Removed BlogMetadata - now uses custom SEO from pageSeoMap.json for golden pages */}
+      {/* <BlogMetadata
         title={post.title}
         description={post.summary}
         author="TypoGrammar Team"
         publishedDate={post.date}
         url={`https://typogrammar.com/blog/${post.slug}`}
         imageUrl="https://typogrammar.com/assets/og-image.png"
-      />
+      /> */}
       <SchemaMarkup
         type="Article"
         data={{
@@ -75,12 +85,29 @@ const BlogPostPage: React.FC = () => {
           keywords: post.category
         }}
       />
+      {/* Render custom schema markup if provided */}
+      {(post as any).schemaMarkup && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify((post as any).schemaMarkup)
+          }}
+        />
+      )}
       <article className="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-xl shadow-lg shadow-slate-200/50 border border-slate-200 dark:bg-slate-800/50 dark:border-slate-700 dark:shadow-slate-900/50">
       <div className="flex justify-between items-start mb-8">
         <div className="text-left">
             <p className="font-body text-base font-semibold text-blue-600 mb-2 dark:text-blue-400">{post.category}</p>
             <h1 className="font-heading text-4xl md:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight dark:text-slate-100">{post.title}</h1>
-            <p className="font-body text-slate-500 dark:text-slate-400">By {post.author} on {post.date}</p>
+            <p className="font-body text-slate-500 dark:text-slate-400">
+              By {post.author === 'TypoGrammar Editorial Team' ? (
+                <Link to="/about/editorial-team" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">
+                  {post.author}
+                </Link>
+              ) : (
+                post.author
+              )} on {post.date}
+            </p>
         </div>
       </div>
       
