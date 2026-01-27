@@ -1,103 +1,67 @@
-# TypoGrammar: An English Learning Hub
+# TypoGrammar
 
-This is a React-based web application built with Vite to help users learn English grammar.
+TypoGrammar is an educational website that helps IELTS and TOEFL learners improve academic English grammar, vocabulary, and writing skills.
 
-## Table of Contents
+**TypoGrammar.com** is a free academic English learning platform designed for learners preparing for **IELTS and TOEFL**. The platform focuses on clarity, accuracy, and exam-focused practice to help learners use English naturally and effectively.
 
-- [Running the Project Locally](#running-the-project-locally)
-- [Building for Production](#building-for-production)
-- [Deploying to Hostinger](#deploying-to-hostinger)
+---
 
-## Running the Project Locally
+## What TypoGrammar Offers
 
-To run the application on your local machine for development and testing purposes, follow these steps:
+- Academic English grammar explanations  
+- IELTS vocabulary lists by band (Band 6–9)  
+- Writing guidance for IELTS and TOEFL  
+- Clear examples and structured tables  
+- Free learning resources and downloadable PDFs  
 
-1.  **Install Dependencies:**
-    Open your terminal in the project root and run:
-    ```bash
-    npm install
-    ```
+TypoGrammar is built to answer real learner questions clearly, directly, and without unnecessary complexity.
 
-2.  **Start the Development Server:**
-    Once the dependencies are installed, run:
-    ```bash
-    npm run dev
-    ```
-    This will start the Vite development server. You can view the application by navigating to the local URL provided in the terminal (usually `http://localhost:5173`).
+---
 
-## Building for Production
+## Who TypoGrammar Is For
 
-When you are ready to deploy the application, you need to create a production build. This process compiles and optimizes all the source files into a few static files that can be hosted anywhere.
+- IELTS candidates  
+- TOEFL candidates  
+- Academic English learners  
+- Non-native English speakers  
+- Students preparing for study or work abroad  
 
-1.  **Run the Build Command:**
-    In your terminal, run the following command from the project root:
-    ```bash
-    npm run build
-    ```
+---
 
-2.  **Find the Build Output:**
-    This command will create a new directory named `dist` in your project root. This `dist` folder contains the `index.html` file and all the static CSS, JavaScript, and asset files needed for your application to run.
+## Common Use Cases
 
-## Deploying to Hostinger
+- Learning academic vocabulary by IELTS band  
+- Improving grammar accuracy for writing tasks  
+- Practicing IELTS Writing Task 2 structure  
+- Avoiding common academic English mistakes  
+- Building clarity and coherence in academic sentences  
 
-Hostinger is a great choice for hosting static sites like this one. The process involves uploading the contents of the `dist` folder to your hosting account's file manager.
+---
 
-### Step 1: Prepare the Files
+## Key Topics Covered
 
-It's much faster to upload a single compressed file than many small ones.
+- IELTS Academic Vocabulary  
+- Grammar for Writing Accuracy  
+- IELTS Writing Task 2 support  
+- Common English usage errors  
+- Academic sentence structure  
 
-1.  Navigate into the `dist` folder that was created when you ran `npm run build`.
-2.  Select **all the files and folders inside** `dist` (e.g., `index.html`, the `assets` folder, etc.).
-3.  Compress (or "zip") these selected files into a single `.zip` archive. You can name it something like `website.zip`.
+---
 
-**Important:** Make sure you are zipping the *contents* of the `dist` folder, not the `dist` folder itself. This is a common mistake that causes the site to load at `yourdomain.com/dist/` instead of `yourdomain.com`.
+## Featured Pages
 
-### Step 2: Upload to Hostinger
+- IELTS Vocabulary by Band: https://typogrammar.com/ielts/vocabulary  
 
-1.  Log in to your Hostinger **hPanel**.
-2.  Navigate to **Files** -> **File Manager** for your domain.
-3.  Open the `public_html` directory. This is the root folder for your website.
-4.  If there are any default files inside `public_html` (like `default.php`), you can delete them.
-5.  Click the **Upload Files** icon (usually an upward-pointing arrow) and upload the `website.zip` file you created.
-6.  Once the upload is complete, right-click on `website.zip` in the File Manager and select **Extract**.
-7.  Set the extraction destination to `public_html` and confirm. All your files will be unzipped into the correct location.
-8.  **Verify the `.htaccess` file is present** in `public_html` - this is critical for client-side routing to work correctly. The build process automatically includes this file from the `public/` folder.
-9.  You can now delete the `website.zip` file from the server.
+---
 
-### Step 3: Visit Your Site
+## Website
 
-That's it! Your application is now live. Open your domain in a web browser to see it. If you see an old version, you may need to clear your browser's cache or perform a hard refresh (Ctrl+Shift+R on Windows/Linux, Cmd+Shift+R on Mac).
+🌐 https://typogrammar.com
 
-**Note:** This app uses client-side routing with BrowserRouter, which provides clean URLs without hash symbols. The `.htaccess` file ensures all routes are properly handled by redirecting requests to `index.html`.
-````
+TypoGrammar.com is maintained as an open educational project focused on learner-first content, academic accuracy, and practical exam preparation.
 
-## Google AdSense
+---
 
-To integrate Google AdSense into this Vite + React app:
+## License
 
-- **Add your publisher ID:** Open `index.html` and replace `ca-pub-REPLACE_WITH_YOUR_CLIENT_ID` with your AdSense publisher ID.
-- **Create ad units:** In your AdSense account create ad units and note their `ad slot` IDs.
-- **Use the `GoogleAd` component:** Import and place `src/components/GoogleAd.tsx` where you want ads to appear.
-
-Example usage in a React component:
-
-```tsx
-import GoogleAd from './components/GoogleAd'
-
-function SomePage() {
-    return (
-        <div>
-            <h1>Article title</h1>
-            <p>Content...</p>
-            <GoogleAd adSlot="6406598038" />
-        </div>
-    )
-}
-```
-
-- **Testing locally:** To show test ads while developing, pass the prop `adTest="on"` to the `GoogleAd` component. Example: `<GoogleAd adSlot="1234567890" adTest="on" />`.
-- **Important:** AdSense may not serve real ads on `localhost`. Use a deployed domain that you've added to your AdSense account for real ads.
-
-If you'd like, I can insert example ad slots into specific pages — tell me which pages or components you prefer.
-
-````
+Educational and informational use.
