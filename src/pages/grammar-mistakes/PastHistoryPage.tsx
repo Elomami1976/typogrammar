@@ -1,0 +1,236 @@
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import usePageMetadata from '../../hooks/usePageMetadata';
+import SchemaMarkup from '../../components/SchemaMarkup';
+
+const PastHistoryPage: React.FC = () => {
+  usePageMetadata({
+    title: 'Past History: Is It Redundant? | TypoGrammar',
+    description: 'Is "past history" redundant? Yes! History is already about the past. Just say "history." Learn why and see correct examples.',
+    canonical: 'https://typogrammar.com/grammar-mistakes/past-history'
+  });
+
+  const [showAnswer, setShowAnswer] = useState(false);
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Past History: Is It Redundant?",
+    "description": "'Past history' is redundant because history, by definition, refers to past events. Just use 'history' for clearer, more concise writing.",
+    "author": { "@type": "Organization", "name": "TypoGrammar" },
+    "publisher": { "@type": "Organization", "name": "TypoGrammar", "logo": { "@type": "ImageObject", "url": "https://typogrammar.com/logo.png" } },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://typogrammar.com/grammar-mistakes/past-history" },
+    "datePublished": "2026-03-12",
+    "dateModified": "2026-03-12"
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is 'past history' redundant?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, 'past history' is redundant. History is the study or record of past events. There's no such thing as 'future history.' Just say 'history.'" }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I say instead of 'past history'?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Simply say 'history.' For example, instead of 'The country's past history is complex,' say 'The country's history is complex.'" }
+      }
+    ]
+  };
+
+  return (
+    <>
+      <SchemaMarkup type="Article" data={articleSchema} />
+      <SchemaMarkup type="FAQPage" data={faqSchema} />
+
+      <nav className="mb-6 text-slate-600 dark:text-slate-400">
+        <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
+        {' › '}
+        <Link to="/grammar-mistakes" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
+        {' › '}
+        <span className="text-slate-900 dark:text-slate-100">Past History</span>
+      </nav>
+
+      <article className="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-xl shadow-lg shadow-slate-200/50 border border-slate-200 dark:bg-slate-800/50 dark:border-slate-700 dark:shadow-slate-900/50">
+        <h1 className="font-heading text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight dark:text-slate-100">
+          Past History: Is It Redundant?
+        </h1>
+
+        {/* Quick Answer Box */}
+        <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded-r-lg mb-8 dark:bg-green-900/30 dark:border-green-400">
+          <h2 className="text-xl font-bold text-green-900 dark:text-green-100 mb-2">Quick Answer</h2>
+          <p className="text-lg text-green-800 dark:text-green-200 mb-2">
+            <strong>Yes, "past history" is redundant.</strong>
+          </p>
+          <p className="text-lg text-green-800 dark:text-green-200">
+            History is already about the past. Just say <strong>"history."</strong>
+          </p>
+        </div>
+
+        {/* Explanation Section */}
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
+            Why Is It Redundant?
+          </h2>
+          
+          <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg mb-4">
+            <p className="text-lg text-blue-800 dark:text-blue-200">
+              <strong>History</strong> = the study or record of <em>past</em> events
+            </p>
+          </div>
+
+          <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
+            By its very definition, history only deals with the past. Adding "past" doesn't add any new information—it just repeats what's already contained in the word "history."
+          </p>
+
+          <div className="bg-amber-50 dark:bg-amber-900/20 p-4 rounded-lg">
+            <p className="text-lg text-amber-800 dark:text-amber-200">
+              <strong>Think about it:</strong> Can you have "future history"? No! If it hasn't happened yet, it's not history.
+            </p>
+          </div>
+        </section>
+
+        {/* Examples Section */}
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
+            Examples
+          </h2>
+          <div className="space-y-3">
+            <div className="flex items-start">
+              <span className="text-red-600 dark:text-red-400 mr-3 text-xl">✘</span>
+              <span className="text-lg text-slate-700 dark:text-slate-300 line-through">The patient has a <strong>past history</strong> of heart problems.</span>
+            </div>
+            <div className="flex items-start">
+              <span className="text-green-600 dark:text-green-400 mr-3 text-xl">✔</span>
+              <span className="text-lg text-slate-700 dark:text-slate-300">The patient has a <strong>history</strong> of heart problems.</span>
+            </div>
+            <div className="flex items-start">
+              <span className="text-red-600 dark:text-red-400 mr-3 text-xl">✘</span>
+              <span className="text-lg text-slate-700 dark:text-slate-300 line-through">We must learn from our <strong>past history</strong>.</span>
+            </div>
+            <div className="flex items-start">
+              <span className="text-green-600 dark:text-green-400 mr-3 text-xl">✔</span>
+              <span className="text-lg text-slate-700 dark:text-slate-300">We must learn from our <strong>history</strong>.</span>
+            </div>
+            <div className="flex items-start">
+              <span className="text-red-600 dark:text-red-400 mr-3 text-xl">✘</span>
+              <span className="text-lg text-slate-700 dark:text-slate-300 line-through">The company's <strong>past history</strong> includes several mergers.</span>
+            </div>
+            <div className="flex items-start">
+              <span className="text-green-600 dark:text-green-400 mr-3 text-xl">✔</span>
+              <span className="text-lg text-slate-700 dark:text-slate-300">The company's <strong>history</strong> includes several mergers.</span>
+            </div>
+            <div className="flex items-start">
+              <span className="text-red-600 dark:text-red-400 mr-3 text-xl">✘</span>
+              <span className="text-lg text-slate-700 dark:text-slate-300 line-through">Based on <strong>past history</strong>, we can predict...</span>
+            </div>
+            <div className="flex items-start">
+              <span className="text-green-600 dark:text-green-400 mr-3 text-xl">✔</span>
+              <span className="text-lg text-slate-700 dark:text-slate-300">Based on <strong>history</strong>, we can predict...</span>
+            </div>
+          </div>
+        </section>
+
+        {/* Common Contexts Section */}
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
+            Common Contexts
+          </h2>
+          <div className="bg-slate-100 dark:bg-slate-700 p-4 rounded-lg">
+            <p className="text-slate-700 dark:text-slate-300 mb-3">
+              "Past history" is often heard in:
+            </p>
+            <ul className="text-slate-700 dark:text-slate-300 space-y-2">
+              <li>• <strong>Medical contexts:</strong> "family history" (not "past family history")</li>
+              <li>• <strong>Background checks:</strong> "criminal history" (not "past criminal history")</li>
+              <li>• <strong>Academic discussions:</strong> "the history of..." (not "the past history of...")</li>
+            </ul>
+            <p className="text-slate-600 dark:text-slate-400 mt-3 italic">
+              In all cases, "history" alone is correct and more concise.
+            </p>
+          </div>
+        </section>
+
+        {/* Similar Redundancies Section */}
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
+            Similar Redundancies
+          </h2>
+          <div className="bg-slate-100 dark:bg-slate-700 p-4 rounded-lg">
+            <ul className="text-slate-700 dark:text-slate-300 space-y-2">
+              <li>• <span className="line-through">past experience</span> → <strong>experience</strong></li>
+              <li>• <span className="line-through">past memories</span> → <strong>memories</strong></li>
+              <li>• <span className="line-through">past record</span> → <strong>record</strong></li>
+              <li>• <span className="line-through">previous history</span> → <strong>history</strong></li>
+            </ul>
+          </div>
+        </section>
+
+        {/* Practice Section */}
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
+            Practice
+          </h2>
+          <div className="bg-amber-50 dark:bg-amber-900/20 p-6 rounded-lg">
+            <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
+              <strong>Fix this sentence:</strong>
+            </p>
+            <p className="text-lg text-slate-800 dark:text-slate-200 italic mb-4">
+              "Based on his past history of tardiness, we need to monitor his attendance."
+            </p>
+            <button
+              onClick={() => setShowAnswer(!showAnswer)}
+              className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+            >
+              {showAnswer ? 'Hide Answer' : 'Show Answer'}
+            </button>
+            {showAnswer && (
+              <div className="mt-4 p-4 bg-green-100 dark:bg-green-900/30 rounded-lg">
+                <p className="text-lg text-green-800 dark:text-green-200">
+                  <strong>Corrected:</strong> "Based on his <strong>history</strong> of tardiness, we need to monitor his attendance."
+                </p>
+                <p className="text-green-700 dark:text-green-300 mt-2">
+                  "History" already tells us we're talking about past behavior.
+                </p>
+              </div>
+            )}
+          </div>
+        </section>
+
+        {/* Related Grammar Section */}
+        <section className="mb-6">
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
+            Related Grammar
+          </h2>
+          <ul className="space-y-2 text-lg">
+            <li>
+              <Link to="/grammar-mistakes/advance-planning" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+                → Advance Planning (Redundant?)
+              </Link>
+            </li>
+            <li>
+              <Link to="/grammar-mistakes/close-proximity" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+                → Close Proximity (Redundant?)
+              </Link>
+            </li>
+            <li>
+              <Link to="/grammar-mistakes/end-result" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+                → End Result (Redundant?)
+              </Link>
+            </li>
+            <li>
+              <Link to="/grammar-mistakes" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+                → All Grammar Mistakes
+              </Link>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </>
+  );
+};
+
+export default PastHistoryPage;

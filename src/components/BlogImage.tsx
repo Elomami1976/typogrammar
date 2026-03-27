@@ -65,6 +65,7 @@ const BlogImage: React.FC<BlogImageProps> = ({
       alt={alt}
       className={className}
       loading={loading}
+      decoding="async"
       onError={handleImageError}
     />
   );

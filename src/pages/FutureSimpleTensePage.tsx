@@ -1,290 +1,324 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
-import { ArticleParagraph, ArticleHeading } from '../components/ArticleComponents';
 import SchemaMarkup from '../components/SchemaMarkup';
 
 const FutureSimpleTensePage: React.FC = () => {
   usePageMetadata({
-    title: 'What Is the Future Simple Tense? Definition, Rules & Examples',
-    description: 'Learn what the Future Simple tense is, when to use it, examples, common mistakes, and how it differs from going to.',
+    title: 'Future Simple Tense (Will): Rules, Structure & Examples | TypoGrammar',
+    description: 'Learn the future simple tense with clear rules, structure, examples, signal words, and common mistakes. Easy explanation for English learners.',
     canonical: 'https://typogrammar.com/grammar/verb-tenses/future-simple'
   });
 
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "What Is the Future Simple Tense?",
+    "headline": "Future Simple Tense",
+    "description": "The future simple tense describes actions that will happen in the future. It uses will + base verb.",
     "author": {
       "@type": "Organization",
-      "name": "TypoGrammar Editorial Team",
-      "url": "https://typogrammar.com/about/editorial-team"
+      "name": "TypoGrammar"
     },
     "publisher": {
       "@type": "Organization",
       "name": "TypoGrammar",
-      "url": "https://typogrammar.com"
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://typogrammar.com/logo.png"
+      }
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://typogrammar.com/grammar/verb-tenses/future-simple"
     },
-    "dateModified": "2026-01-27"
-  };
-
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "What is the Future Simple tense?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The Future Simple tense describes actions that will happen in the future. It is formed with will + base verb and is used for predictions, spontaneous decisions, promises, and offers."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "When do you use the Future Simple tense?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Use the Future Simple for: predictions (It will rain tomorrow), spontaneous decisions (I'll help you), promises (I will call you), offers (I'll open the door), and facts about the future (She will be 30 next year)."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How do you form the Future Simple tense?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Form the Future Simple with: Subject + will + base verb. Negative: Subject + will + not/won't + base verb. Question: Will + subject + base verb?"
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What are common time expressions for the Future Simple tense?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Common time expressions include: tomorrow, next week/month/year, in the future, soon, later, tonight, in + time period (in 2 hours)."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What is the difference between will and going to?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Will is used for spontaneous decisions and predictions without evidence (I'll help you). Going to is used for planned actions and predictions with evidence (I'm going to help you / Look at those clouds - it's going to rain)."
-              }
-            }
-          ]
+    "datePublished": "2026-01-27",
+    "dateModified": "2026-06-01"
   };
 
   return (
     <>
       <SchemaMarkup type="Article" data={articleSchema} />
-      <SchemaMarkup type="FAQPage" data={faqSchema} />
 
       <article className="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-xl shadow-lg shadow-slate-200/50 border border-slate-200 dark:bg-slate-800/50 dark:border-slate-700 dark:shadow-slate-900/50">
+        
+        {/* Breadcrumb Navigation */}
+        <nav className="text-sm text-slate-600 dark:text-slate-400 mb-6">
+          <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
+          <span className="mx-2">›</span>
+          <Link to="/grammar" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar</Link>
+          <span className="mx-2">›</span>
+          <Link to="/grammar/verb-tenses" className="hover:text-blue-600 dark:hover:text-blue-400">Verb Tenses</Link>
+          <span className="mx-2">›</span>
+          <span className="text-slate-900 dark:text-slate-100">Future Simple Tense</span>
+        </nav>
+
         <h1 className="font-heading text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight dark:text-slate-100">
           What Is the Future Simple Tense?
         </h1>
 
-        <div className="bg-blue-50 dark:bg-slate-700 border-l-4 border-blue-600 p-6 mb-8">
-          <h2 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-3">Definition</h2>
-          <p className="text-lg text-slate-700 dark:text-slate-300">
-            The Future Simple tense describes actions that will happen in the future. It is formed with will + base verb and is used for predictions, spontaneous decisions, promises, and offers.
-          </p>
+        <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
+          The <strong>future simple tense</strong> describes actions that will happen in the future. It is formed using <strong>will + base verb</strong>. Example: <em>She will travel to London next week.</em>
+        </p>
+
+        <p className="text-lg text-slate-700 dark:text-slate-300 mb-8">
+          The future simple is often compared with the <Link to="/grammar/verb-tenses/future-going-to" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">"going to" future</Link>, which is commonly used for planned future actions.
+        </p>
+
+        {/* Table of Contents */}
+        <div className="bg-slate-50 dark:bg-slate-700 p-6 rounded-lg mb-8">
+          <h2 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-4">Table of Contents</h2>
+          <ul className="space-y-2 text-slate-700 dark:text-slate-300">
+            <li><a href="#structure" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Structure</a></li>
+            <li><a href="#uses" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">When to Use the Future Simple</a></li>
+            <li><a href="#signal" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Signal Words</a></li>
+            <li><a href="#negative" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Negative Form</a></li>
+            <li><a href="#questions" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Question Form</a></li>
+            <li><a href="#examples" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Examples</a></li>
+            <li><a href="#mistakes" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Common Mistakes</a></li>
+            <li><a href="#comparison" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Tense Comparison</a></li>
+            <li><a href="#ielts" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Future Simple in IELTS</a></li>
+            <li><a href="#faq" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">FAQ</a></li>
+          </ul>
         </div>
 
-        <ArticleHeading>When to Use the Future Simple Tense</ArticleHeading>
-        <ul className="list-disc list-inside space-y-3 mb-8 text-lg text-slate-700 dark:text-slate-300">
-          <li><strong>Predictions based on opinion:</strong> I think it will rain tomorrow.</li>
-          <li><strong>Spontaneous decisions:</strong> I'll help you with your homework. (decided right now)</li>
-          <li><strong>Promises:</strong> I will call you later.</li>
-          <li><strong>Offers:</strong> I'll open the door for you.</li>
-          <li><strong>Threats and warnings:</strong> If you don't study, you will fail.</li>
-          <li><strong>Facts about the future:</strong> She will be 30 next year.</li>
-        </ul>
+        {/* Structure Section */}
+        <h2 id="structure" className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-10 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
+          Structure of the Future Simple Tense
+        </h2>
 
-        <ArticleHeading>Future Simple Tense Structure</ArticleHeading>
+        <p className="text-lg font-semibold text-slate-900 dark:text-slate-100 mb-6">Subject + will + base verb</p>
+
         <div className="overflow-x-auto my-6">
           <table className="min-w-full border border-slate-300 dark:border-slate-600">
+            <caption className="text-sm text-slate-600 dark:text-slate-400 mb-2">Future Simple Conjugation</caption>
             <thead>
               <tr className="bg-slate-100 dark:bg-slate-700">
-                <th className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-left font-semibold">Type</th>
-                <th className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-left font-semibold">Formula</th>
+                <th className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-left font-semibold">Subject</th>
                 <th className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-left font-semibold">Example</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Affirmative</td>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">S + will + base verb</td>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">I will go. / She will study.</td>
+                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">I</td>
+                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">I will work</td>
               </tr>
               <tr className="bg-slate-50 dark:bg-slate-800">
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Negative</td>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">S + will not/won't + base verb</td>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">I won't go. / She won't study.</td>
+                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">You</td>
+                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">You will work</td>
               </tr>
               <tr>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Question</td>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Will + S + base verb?</td>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Will you go? / Will she study?</td>
+                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">He / She / It</td>
+                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">She will work</td>
+              </tr>
+              <tr className="bg-slate-50 dark:bg-slate-800">
+                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">We</td>
+                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">We will work</td>
+              </tr>
+              <tr>
+                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">They</td>
+                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">They will work</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <ArticleHeading>Common Time Expressions</ArticleHeading>
-        <ul className="list-disc list-inside space-y-2 mb-8 text-lg text-slate-700 dark:text-slate-300">
-          <li>tomorrow, the day after tomorrow</li>
-          <li>next week, next month, next year</li>
-          <li>in the future, in + time (in 2 hours, in 5 years)</li>
-          <li>soon, later, tonight</li>
-          <li>one day, some day, someday</li>
-          <li>I think, I hope, I believe, probably, maybe</li>
-        </ul>
+        {/* Uses Section */}
+        <h2 id="uses" className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-10 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
+          When to Use the Future Simple
+        </h2>
 
-        <ArticleHeading>Examples</ArticleHeading>
-        
-        <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-8 mb-4">Predictions</h3>
+        <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mt-6 mb-3">Predictions About the Future</h3>
         <ul className="list-disc list-inside space-y-2 mb-6 text-lg text-slate-700 dark:text-slate-300">
           <li>I think it will rain tomorrow.</li>
-          <li>She will probably pass the exam.</li>
-          <li>Technology will change our lives in the future.</li>
-          <li>I don't think they will come to the party.</li>
+          <li>Technology will change education.</li>
         </ul>
 
-        <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-8 mb-4">Spontaneous Decisions, Promises, and Offers</h3>
+        <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mt-6 mb-3">Spontaneous Decisions</h3>
         <ul className="list-disc list-inside space-y-2 mb-6 text-lg text-slate-700 dark:text-slate-300">
-          <li>A: I'm thirsty. B: I'll get you some water. (spontaneous decision)</li>
-          <li>I promise I will help you with your project. (promise)</li>
-          <li>I'll carry your bags for you. (offer)</li>
-          <li>Don't worry, I won't tell anyone. (promise)</li>
+          <li>I will answer the phone.</li>
+          <li>We will help you.</li>
         </ul>
 
-        <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-8 mb-4">Facts About the Future</h3>
+        <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mt-6 mb-3">Promises and Offers</h3>
         <ul className="list-disc list-inside space-y-2 mb-6 text-lg text-slate-700 dark:text-slate-300">
-          <li>The sun will rise tomorrow at 6 AM.</li>
-          <li>She will be 21 next month.</li>
-          <li>The meeting will start at 3 PM.</li>
-          <li>Summer vacation will begin in June.</li>
+          <li>I will call you later.</li>
+          <li>She will help you with your homework.</li>
         </ul>
 
-        <ArticleHeading>Common Mistakes</ArticleHeading>
-        
-        <div className="space-y-4 mb-8">
-          <div className="p-4 bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 rounded">
-            <p className="text-lg mb-2"><strong>Wrong:</strong> I will to go home.</p>
-            <p className="text-lg mb-2"><strong>Correct:</strong> I will go home.</p>
-            <p className="text-slate-700 dark:text-slate-300"><strong>Why:</strong> Don't use "to" after "will." Use the base form of the verb.</p>
-          </div>
+        <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mt-6 mb-3">Future Facts</h3>
+        <ul className="list-disc list-inside space-y-2 mb-6 text-lg text-slate-700 dark:text-slate-300">
+          <li>The meeting will start at 10 AM.</li>
+          <li>The next Olympic Games will take place in four years.</li>
+        </ul>
 
-          <div className="p-4 bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 rounded">
-            <p className="text-lg mb-2"><strong>Wrong:</strong> She will goes to school.</p>
-            <p className="text-lg mb-2"><strong>Correct:</strong> She will go to school.</p>
-            <p className="text-slate-700 dark:text-slate-300"><strong>Why:</strong> Use the base form (go), not the -s form (goes) after "will."</p>
-          </div>
+        {/* Signal Words Section */}
+        <h2 id="signal" className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-10 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
+          Signal Words
+        </h2>
 
-          <div className="p-4 bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 rounded">
-            <p className="text-lg mb-2"><strong>Wrong:</strong> I will call you when I will arrive.</p>
-            <p className="text-lg mb-2"><strong>Correct:</strong> I will call you when I arrive.</p>
-            <p className="text-slate-700 dark:text-slate-300"><strong>Why:</strong> Don't use "will" in time clauses (after when, before, after, as soon as, until). Use Present Simple.</p>
-          </div>
+        <ul className="list-disc list-inside space-y-2 mb-8 text-lg text-slate-700 dark:text-slate-300">
+          <li>tomorrow</li>
+          <li>next week</li>
+          <li>next year</li>
+          <li>soon</li>
+          <li>later</li>
+          <li>in the future</li>
+        </ul>
 
-          <div className="p-4 bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 rounded">
-            <p className="text-lg mb-2"><strong>Wrong:</strong> I think he will to be late.</p>
-            <p className="text-lg mb-2"><strong>Correct:</strong> I think he will be late.</p>
-            <p className="text-slate-700 dark:text-slate-300"><strong>Why:</strong> "Will" is followed by the base verb, not "to + verb."</p>
-          </div>
+        {/* Negative Form Section */}
+        <h2 id="negative" className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-10 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
+          Negative Form
+        </h2>
 
-          <div className="p-4 bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 rounded">
-            <p className="text-lg mb-2"><strong>Wrong:</strong> She not will come.</p>
-            <p className="text-lg mb-2"><strong>Correct:</strong> She will not come. / She won't come.</p>
-            <p className="text-slate-700 dark:text-slate-300"><strong>Why:</strong> Place "not" after "will," not before.</p>
-          </div>
+        <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">Subject + will not (won't) + base verb</p>
+
+        <ul className="list-disc list-inside space-y-2 mb-8 text-lg text-slate-700 dark:text-slate-300">
+          <li>I will not forget this moment.</li>
+          <li>She won't attend the meeting.</li>
+          <li>They will not travel tomorrow.</li>
+        </ul>
+
+        {/* Question Form Section */}
+        <h2 id="questions" className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-10 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
+          Question Form
+        </h2>
+
+        <p className="text-lg font-semibold text-slate-900 dark:text-slate-100 mb-4">Will + subject + base verb?</p>
+
+        <ul className="list-disc list-inside space-y-2 mb-8 text-lg text-slate-700 dark:text-slate-300">
+          <li>Will you come to the party?</li>
+          <li>Will she finish the project?</li>
+          <li>Will they arrive on time?</li>
+        </ul>
+
+        {/* Examples Section */}
+        <h2 id="examples" className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-10 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
+          Examples of Future Simple Sentences
+        </h2>
+
+        <ul className="list-disc list-inside space-y-2 mb-8 text-lg text-slate-700 dark:text-slate-300">
+          <li>She will start a new job next month.</li>
+          <li>They will travel to Spain.</li>
+          <li>I will study tonight.</li>
+          <li>He will buy a new car.</li>
+          <li>We will meet tomorrow.</li>
+          <li>The company will expand next year.</li>
+          <li>I will send you the report.</li>
+          <li>She will complete the task.</li>
+          <li>They will visit their grandparents.</li>
+          <li>He will finish the project soon.</li>
+        </ul>
+
+        {/* Common Mistakes Section */}
+        <h2 id="mistakes" className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-10 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
+          Common Mistakes
+        </h2>
+
+        <div className="overflow-x-auto my-6">
+          <table className="min-w-full border border-slate-300 dark:border-slate-600">
+            <thead>
+              <tr className="bg-slate-100 dark:bg-slate-700">
+                <th className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-left font-semibold">Incorrect</th>
+                <th className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-left font-semibold">Correct</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-red-600 dark:text-red-400">I will goes tomorrow</td>
+                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-green-600 dark:text-green-400">I will go tomorrow</td>
+              </tr>
+              <tr className="bg-slate-50 dark:bg-slate-800">
+                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-red-600 dark:text-red-400">She will to study</td>
+                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-green-600 dark:text-green-400">She will study</td>
+              </tr>
+              <tr>
+                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-red-600 dark:text-red-400">They will going there</td>
+                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-green-600 dark:text-green-400">They will go there</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
-        <ArticleHeading>Future Simple (will) vs. Going to</ArticleHeading>
+        {/* Tense Comparison Section */}
+        <h2 id="comparison" className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-10 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
+          Future Simple vs "Going To" Future
+        </h2>
+
+        <div className="overflow-x-auto my-6">
+          <table className="min-w-full border border-slate-300 dark:border-slate-600">
+            <thead>
+              <tr className="bg-slate-100 dark:bg-slate-700">
+                <th className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-left font-semibold">Future Simple</th>
+                <th className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-left font-semibold">Going To Future</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">I will help you</td>
+                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">I am going to help you</td>
+              </tr>
+              <tr className="bg-slate-50 dark:bg-slate-800">
+                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">She will travel soon</td>
+                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">She is going to travel next week</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        {/* IELTS Section */}
+        <h2 id="ielts" className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-10 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
+          Future Simple in IELTS Writing
+        </h2>
+
         <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
-          The Future Simple with <strong>will</strong> is for spontaneous decisions and predictions without evidence, while <strong>going to</strong> is for planned actions and predictions with evidence.
+          In IELTS Writing and Speaking, the future simple tense is often used to describe predictions and possible future developments.
         </p>
 
-        <ul className="list-disc list-inside space-y-3 mb-6 text-lg text-slate-700 dark:text-slate-300">
-          <li><strong>Use will for spontaneous decisions:</strong> A: The phone is ringing. B: I'll answer it.</li>
-          <li><strong>Use going to for plans:</strong> I'm going to visit my parents next week. (already planned)</li>
-          <li><strong>Use will for predictions without evidence:</strong> I think Brazil will win the World Cup.</li>
-          <li><strong>Use going to for predictions with evidence:</strong> Look at those clouds! It's going to rain.</li>
-          <li><strong>Will = decision made now:</strong> I'll have the chicken. (deciding at restaurant)</li>
-          <li><strong>Going to = decision made before:</strong> I'm going to have chicken. (already decided)</li>
-        </ul>
-
-        <div className="bg-slate-50 dark:bg-slate-700 p-6 rounded-lg mb-8">
-          <h4 className="font-bold text-xl mb-4 text-slate-900 dark:text-slate-100">Side-by-Side Comparison</h4>
-          <div className="space-y-2 text-slate-700 dark:text-slate-300">
-            <p><strong>Will (spontaneous):</strong> A: We need milk. B: I'll buy some. (deciding now)</p>
-            <p><strong>Going to (planned):</strong> I'm going to buy milk. I added it to my list. (already planned)</p>
-            <p className="mt-4"><strong>Will (opinion):</strong> I think it will be sunny tomorrow.</p>
-            <p><strong>Going to (evidence):</strong> Look at the sky! It's going to be sunny.</p>
-          </div>
-        </div>
-
-        <ArticleHeading>Quick Check</ArticleHeading>
-        <div className="space-y-6 mb-8">
-          <div className="p-4 bg-slate-50 dark:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded">
-            <p className="font-semibold text-lg mb-3">1. Choose the correct form: I ___ help you tomorrow.</p>
-            <p>A) will</p>
-            <p>B) will to</p>
-            <p>C) going to</p>
-            <p>D) am will</p>
-            <p className="mt-3 text-green-700 dark:text-green-400 font-semibold">Correct answer: A) will</p>
-          </div>
-
-          <div className="p-4 bg-slate-50 dark:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded">
-            <p className="font-semibold text-lg mb-3">2. Which sentence is WRONG?</p>
-            <p>A) I will call you later.</p>
-            <p>B) She will goes to school.</p>
-            <p>C) They will arrive soon.</p>
-            <p>D) We won't be late.</p>
-            <p className="mt-3 text-green-700 dark:text-green-400 font-semibold">Correct answer: B) She will goes to school. (should be "will go")</p>
-          </div>
-
-          <div className="p-4 bg-slate-50 dark:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded">
-            <p className="font-semibold text-lg mb-3">3. Complete: I'll call you when I ___ home.</p>
-            <p>A) will arrive</p>
-            <p>B) arrive</p>
-            <p>C) am arriving</p>
-            <p>D) will be arriving</p>
-            <p className="mt-3 text-green-700 dark:text-green-400 font-semibold">Correct answer: B) arrive (no "will" in time clauses)</p>
-          </div>
-
-          <div className="p-4 bg-slate-50 dark:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded">
-            <p className="font-semibold text-lg mb-3">4. Which shows a spontaneous decision?</p>
-            <p>A) I'm going to help you. (planned)</p>
-            <p>B) I'll help you. (spontaneous)</p>
-            <p>C) I help you.</p>
-            <p>D) I helped you.</p>
-            <p className="mt-3 text-green-700 dark:text-green-400 font-semibold">Correct answer: B) I'll help you.</p>
-          </div>
-
-          <div className="p-4 bg-slate-50 dark:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded">
-            <p className="font-semibold text-lg mb-3">5. Choose the correct negative: They ___ come to the party.</p>
-            <p>A) will not</p>
-            <p>B) not will</p>
-            <p>C) willn't</p>
-            <p>D) will to not</p>
-            <p className="mt-3 text-green-700 dark:text-green-400 font-semibold">Correct answer: A) will not (or won't)</p>
-          </div>
-        </div>
-
-        <ArticleHeading>Next Steps</ArticleHeading>
         <ul className="list-disc list-inside space-y-2 mb-8 text-lg text-slate-700 dark:text-slate-300">
-          <li><Link to="/grammar/verb-tenses" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">Verb Tenses Overview</Link> - Learn all 12 English verb tenses</li>
-          <li><Link to="/grammar/verb-tenses/future-progressive" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">What Is the Future Progressive Tense?</Link> - Learn about ongoing future actions</li>
-          <li><Link to="/quizzes/verb-tenses-quiz" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">Verb Tenses Quiz</Link> - Test your knowledge of all tenses</li>
+          <li>Technology will continue to improve education.</li>
+          <li>Urban populations will increase in the coming decades.</li>
         </ul>
 
+        {/* FAQ Section */}
+        <h2 id="faq" className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-10 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
+          Frequently Asked Questions
+        </h2>
+
+        <div className="space-y-6 mb-8">
+          <div>
+            <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-2">What is the future simple tense?</h3>
+            <p className="text-lg text-slate-700 dark:text-slate-300">
+              The future simple tense describes actions that will happen in the future.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-2">How do you form the future simple tense?</h3>
+            <p className="text-lg text-slate-700 dark:text-slate-300">
+              Use will plus the base form of the verb.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-2">When do we use the future simple tense?</h3>
+            <p className="text-lg text-slate-700 dark:text-slate-300">
+              It is used for predictions, spontaneous decisions, promises, and future facts.
+            </p>
+          </div>
+        </div>
+
+        {/* Related Verb Tenses */}
+        <div className="bg-slate-50 dark:bg-slate-700 p-6 rounded-lg mb-8">
+          <h2 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-4">Related Verb Tenses</h2>
+          <ul className="space-y-2 text-slate-700 dark:text-slate-300">
+            <li><Link to="/grammar/verb-tenses/future-going-to" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Going To Future</Link></li>
+            <li><Link to="/grammar/verb-tenses/present-progressive" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Present Continuous (Future Arrangements)</Link></li>
+            <li><Link to="/grammar/verb-tenses/past-perfect-progressive" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Past Perfect Continuous</Link></li>
+            <li><Link to="/grammar/verb-tenses" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">All Verb Tenses</Link></li>
+          </ul>
+        </div>
+
+        {/* Editorial Attribution Box */}
         <div className="bg-slate-100 dark:bg-slate-700 border border-slate-300 dark:border-slate-600 p-6 my-8 rounded-lg">
           <p className="text-slate-700 dark:text-slate-300 mb-4">
             By <Link to="/about/editorial-team" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">TypoGrammar Editorial Team</Link>

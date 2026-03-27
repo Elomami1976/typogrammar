@@ -23,6 +23,26 @@ const prompts = [
   {
     title: "Exam Strategy Explainer",
     text: "Explain, in simple English, a step-by-step strategy for IELTS Reading True/False/Not Given questions. Then create 5 practice questions with an answer key and short explanations."
+  },
+  {
+    title: "Grammar Error Correction Coach",
+    text: "I will write 5 sentences with grammar mistakes. For each sentence, identify the error, explain the grammar rule being broken (e.g., subject-verb agreement, article usage, verb tense), provide the corrected sentence, and give one more example of the same rule used correctly."
+  },
+  {
+    title: "Vocabulary Builder by Topic",
+    text: "Give me 15 advanced vocabulary words related to 'environment and climate change'. For each word, provide the definition, part of speech, an example sentence, one synonym, and one collocating phrase. Organize them in a table format."
+  },
+  {
+    title: "Paraphrasing Practice Generator",
+    text: "Give me 5 sentences from academic English. For each sentence, provide 3 paraphrased versions — one using synonyms, one changing the sentence structure, and one combining both techniques. Then explain which version is strongest and why."
+  },
+  {
+    title: "TOEFL Independent Writing Brainstorm",
+    text: "Give me the TOEFL Independent Writing prompt: 'Do you agree or disagree that technology has made our lives easier?' Help me brainstorm: 2 strong reasons with specific examples for each side, a clear thesis statement, topic sentences for each body paragraph, and 5 useful linking phrases I can use."
+  },
+  {
+    title: "Daily English Conversation Simulator",
+    text: "Simulate a natural English conversation between me and a colleague at work. The scenario: we are planning a team event. Guide the conversation turn by turn. After every 3 exchanges, pause and give me feedback on my grammar, vocabulary, and naturalness. Suggest more native-sounding alternatives where needed."
   }
 ];
 
@@ -65,8 +85,8 @@ const PromptCard: React.FC<{
 
 const AIPromptsPage: React.FC = () => {
   usePageMetadata({
-    title: 'AI Learning Prompts - IELTS & TOEFL | TypoGrammar',
-    description: 'A collection of curated AI prompts for English learners to use with ChatGPT and other AI tools. Focused on IELTS and TOEFL exam preparation with speaking, writing, and strategy practice.'
+    title: '10 Best AI Prompts for IELTS & TOEFL Preparation (2026) | TypoGrammar',
+    description: 'Use these 10 AI prompts with ChatGPT to practice IELTS Speaking, TOEFL Writing, grammar correction, vocabulary building, and paraphrasing. Free, copy-ready prompts for English exam prep.'
   });
 
   const [copiedPromptTitle, setCopiedPromptTitle] = useState<string | null>(null);
@@ -83,11 +103,15 @@ const AIPromptsPage: React.FC = () => {
   return (
     <article className="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-xl shadow-lg shadow-slate-200/50 border border-slate-200 dark:bg-slate-800/50 dark:border-slate-700 dark:shadow-slate-900/50">
       <div className="flex justify-between items-start">
-        <h1 className="font-heading text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 tracking-tight dark:text-slate-100">AI Learning Prompts</h1>
+        <h1 className="font-heading text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 tracking-tight dark:text-slate-100">AI Prompts for IELTS & TOEFL Preparation</h1>
       </div>
       
       <ArticleParagraph>
-        These curated prompts are designed for English learners preparing for IELTS and TOEFL exams. Copy and paste these prompts into AI tools like ChatGPT to get personalized practice, feedback, and study materials tailored to your needs.
+        These <strong>10 ready-to-use AI prompts</strong> are designed for English learners preparing for <strong>IELTS</strong>, <strong>TOEFL</strong>, and other English proficiency exams. Copy any prompt below into <strong>ChatGPT, Claude, Gemini</strong>, or your preferred AI tool to get personalized practice, instant feedback, and custom study materials — all tailored to your level and target score.
+      </ArticleParagraph>
+
+      <ArticleParagraph>
+        Whether you need to improve your speaking fluency, practice essay writing, build vocabulary, or master grammar rules, these prompts will turn any AI assistant into your personal English tutor.
       </ArticleParagraph>
 
       <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-6 mb-8 border border-blue-100 dark:border-blue-800/30">
@@ -106,8 +130,11 @@ const AIPromptsPage: React.FC = () => {
 
       <div className="mb-8">
         <h2 className="font-heading text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4">
-          IELTS & TOEFL Focused Prompts
+          IELTS, TOEFL & English Learning Prompts
         </h2>
+        <ArticleParagraph>
+          Each prompt below targets a specific skill — from IELTS Speaking practice and TOEFL Integrated Writing to grammar correction, paraphrasing, and conversation simulation. Click <strong>Copy Prompt</strong> and paste directly into any AI chatbot.
+        </ArticleParagraph>
       </div>
 
       {prompts.map((p) => (
@@ -123,7 +150,7 @@ const AIPromptsPage: React.FC = () => {
       <div className="mt-12 bg-green-50 dark:bg-green-900/20 rounded-lg p-6 border border-green-100 dark:border-green-800/30">
         <h2 className="font-heading text-xl font-bold text-slate-900 dark:text-slate-100 mb-3 flex items-center">
           <span className="text-2xl mr-2">🎯</span>
-          Tips for Effective AI-Assisted Learning
+          Tips for Effective AI-Assisted English Learning
         </h2>
         <ul className="list-disc list-inside space-y-2 text-slate-700 dark:text-slate-300">
           <li><strong>Be specific:</strong> The more detailed your follow-up questions, the better the AI's responses</li>
@@ -133,6 +160,31 @@ const AIPromptsPage: React.FC = () => {
           <li><strong>Combine with real practice:</strong> Use AI for preparation, but also take official practice tests</li>
           <li><strong>Track your progress:</strong> Save useful responses and review them periodically</li>
         </ul>
+      </div>
+
+      {/* FAQ Section for SEO */}
+      <div className="mt-12">
+        <h2 className="font-heading text-2xl font-bold text-slate-900 dark:text-slate-100 mb-6">Frequently Asked Questions</h2>
+        <div className="space-y-6">
+          <div className="bg-slate-50 dark:bg-slate-700/50 p-6 rounded-lg">
+            <h3 className="font-semibold text-lg text-slate-900 dark:text-slate-100 mb-2">Can I use ChatGPT to prepare for IELTS and TOEFL?</h3>
+            <p className="text-slate-700 dark:text-slate-300">
+              Yes. ChatGPT and similar AI tools can simulate speaking practice, generate writing prompts, correct grammar errors, and provide instant feedback. They work best as a supplement to official practice materials and structured study plans.
+            </p>
+          </div>
+          <div className="bg-slate-50 dark:bg-slate-700/50 p-6 rounded-lg">
+            <h3 className="font-semibold text-lg text-slate-900 dark:text-slate-100 mb-2">Which AI tool is best for English exam preparation?</h3>
+            <p className="text-slate-700 dark:text-slate-300">
+              ChatGPT, Claude, and Gemini all work well. The prompts on this page are designed to work with any AI chatbot. Choose whichever tool you're most comfortable with — the key is using detailed, well-structured prompts like the ones above.
+            </p>
+          </div>
+          <div className="bg-slate-50 dark:bg-slate-700/50 p-6 rounded-lg">
+            <h3 className="font-semibold text-lg text-slate-900 dark:text-slate-100 mb-2">How often should I practice with AI prompts?</h3>
+            <p className="text-slate-700 dark:text-slate-300">
+              For best results, use 1–2 prompts daily as part of your study routine. Focus on different skills each day — speaking one day, writing the next, vocabulary after that — to build well-rounded exam readiness.
+            </p>
+          </div>
+        </div>
       </div>
 
       <div className="mt-8">

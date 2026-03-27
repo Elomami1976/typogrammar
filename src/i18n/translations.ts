@@ -165,8 +165,8 @@ export const translations: Record<Language, Translations> = {
     minutes: 'min',
     
     // HomePage
-    homeTitle: 'Learn English Grammar Online – Free & Easy',
-    homeSubtitle: 'Your complete guide to mastering English grammar, understanding verb tenses, improving writing skills, and avoiding common mistakes. Start with essential topics like',
+    homeTitle: 'Master English: Grammar, IELTS & TOEFL Prep – 100% Free',
+    homeSubtitle: 'Your all-in-one platform for English grammar, IELTS & TOEFL test preparation, AI writing tools, vocabulary building, and interactive quizzes. Start learning with topics like',
     homeDescription: '',
     presentSimpleTense: 'Present Simple Tense',
     activePassiveVoice: 'Active vs Passive Voice',
@@ -263,8 +263,8 @@ export const translations: Record<Language, Translations> = {
     minutes: 'min',
     
     // HomePage
-    homeTitle: 'Apprendre la Grammaire Anglaise en Ligne – Gratuit et Facile',
-    homeSubtitle: 'Votre guide complet pour maîtriser la grammaire anglaise, comprendre les temps verbaux, améliorer vos compétences en écriture et éviter les erreurs courantes. Commencez par des sujets essentiels comme',
+    homeTitle: 'Maîtrisez l\'Anglais : Grammaire, Prép IELTS & TOEFL – 100% Gratuit',
+    homeSubtitle: 'Votre plateforme tout-en-un pour la grammaire anglaise, la préparation aux tests IELTS & TOEFL, les outils d\'écriture IA, l\'enrichissement du vocabulaire et les quiz interactifs. Commencez à apprendre avec des sujets comme',
     homeDescription: '',
     presentSimpleTense: 'Le Présent Simple',
     activePassiveVoice: 'Voix Active vs Passive',
@@ -361,8 +361,8 @@ export const translations: Record<Language, Translations> = {
     minutes: 'دقيقة',
     
     // HomePage
-    homeTitle: 'تعلم قواعد اللغة الإنجليزية عبر الإنترنت – مجاناً وسهل',
-    homeSubtitle: 'دليلك الشامل لإتقان قواعد اللغة الإنجليزية، وفهم الأزمنة، وتحسين مهارات الكتابة، وتجنب الأخطاء الشائعة. ابدأ بالمواضيع الأساسية مثل',
+    homeTitle: 'أتقن الإنجليزية: القواعد، التحضير لـ IELTS و TOEFL – مجاناً 100%',
+    homeSubtitle: 'منصتك الشاملة لقواعد اللغة الإنجليزية، والتحضير لاختبارات IELTS و TOEFL، وأدوات الكتابة بالذكاء الاصطناعي، وبناء المفردات، والاختبارات التفاعلية. ابدأ التعلم مع مواضيع مثل',
     homeDescription: '',
     presentSimpleTense: 'زمن المضارع البسيط',
     activePassiveVoice: 'الصوت النشط مقابل المبني للمجهول',
@@ -459,8 +459,8 @@ export const translations: Record<Language, Translations> = {
     minutes: 'min',
     
     // HomePage
-    homeTitle: 'Aprende Gramática Inglesa en Línea – Gratis y Fácil',
-    homeSubtitle: 'Tu guía completa para dominar la gramática inglesa, entender los tiempos verbales, mejorar las habilidades de escritura y evitar errores comunes. Comienza con temas esenciales como',
+    homeTitle: 'Domina el Inglés: Gramática, Prep IELTS & TOEFL – 100% Gratis',
+    homeSubtitle: 'Tu plataforma todo en uno para gramática inglesa, preparación para IELTS & TOEFL, herramientas de escritura con IA, desarrollo de vocabulario y cuestionarios interactivos. Empieza a aprender con temas como',
     homeDescription: '',
     presentSimpleTense: 'Presente Simple',
     activePassiveVoice: 'Voz Activa vs Pasiva',

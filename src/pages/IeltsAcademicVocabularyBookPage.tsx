@@ -57,6 +57,53 @@ const IeltsAcademicVocabularyBookPage: React.FC = () => {
         'Download a free IELTS academic vocabulary book (Band 6–9): 200 high-scoring words with definitions, examples, and usage notes.',
     };
 
+    const faqSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'Is this IELTS vocabulary book free?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes, it is completely free to download. No signup required.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How many words are included?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'The book includes 200 academic vocabulary words organized by band level (6-9).',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Is this for Academic or General Training IELTS?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'These words are useful for both Academic and General Training, especially for Writing and Speaking.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How should I study these words?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Learn 5-10 new words daily, use them in sentences, and review regularly using spaced repetition.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Will these words help improve my band score?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes, using accurate and sophisticated vocabulary is essential for achieving Band 7+ in IELTS Writing and Speaking.',
+          },
+        },
+      ],
+    };
+
     // Create and inject Book schema
     const bookScript = document.createElement('script');
     bookScript.type = 'application/ld+json';
@@ -69,12 +116,21 @@ const IeltsAcademicVocabularyBookPage: React.FC = () => {
     learningScript.text = JSON.stringify(learningResourceSchema);
     document.head.appendChild(learningScript);
 
+    // Create and inject FAQ schema
+    const faqScript = document.createElement('script');
+    faqScript.type = 'application/ld+json';
+    faqScript.text = JSON.stringify(faqSchema);
+    document.head.appendChild(faqScript);
+
     return () => {
       if (bookScript.parentNode) {
         document.head.removeChild(bookScript);
       }
       if (learningScript.parentNode) {
         document.head.removeChild(learningScript);
+      }
+      if (faqScript.parentNode) {
+        document.head.removeChild(faqScript);
       }
     };
   }, []);
@@ -85,6 +141,29 @@ const IeltsAcademicVocabularyBookPage: React.FC = () => {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   };
+
+  const faqItems = [
+    {
+      question: 'Is this IELTS vocabulary book free?',
+      answer: 'Yes, it is completely free to download. No signup required.',
+    },
+    {
+      question: 'How many words are included?',
+      answer: 'The book includes 200 academic vocabulary words organized by band level (6-9).',
+    },
+    {
+      question: 'Is this for Academic or General Training IELTS?',
+      answer: 'These words are useful for both Academic and General Training, especially for Writing and Speaking.',
+    },
+    {
+      question: 'How should I study these words?',
+      answer: 'Learn 5-10 new words daily, use them in sentences, and review regularly using spaced repetition.',
+    },
+    {
+      question: 'Will these words help improve my band score?',
+      answer: 'Yes, using accurate and sophisticated vocabulary is essential for achieving Band 7+ in IELTS Writing and Speaking.',
+    },
+  ];
 
   return (
     <div className="max-w-5xl mx-auto">
@@ -137,6 +216,7 @@ const IeltsAcademicVocabularyBookPage: React.FC = () => {
               alt="IELTS Academic Vocabulary Book Cover (Band 6–9)"
               className="rounded-xl shadow-2xl max-w-full h-auto"
               loading="eager"
+              decoding="async"
             />
           </div>
         </div>
@@ -470,6 +550,23 @@ const IeltsAcademicVocabularyBookPage: React.FC = () => {
               50 expert-level words for maximum scoring
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* FAQ SECTION */}
+      <section className="mb-16">
+        <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-100 mb-8">
+          ❓ Frequently Asked Questions
+        </h2>
+        <div className="space-y-4">
+          {faqItems.map((item, index) => (
+            <div key={index} className="bg-slate-50 dark:bg-slate-800 rounded-lg p-6 border border-slate-200 dark:border-slate-700">
+              <h3 className="font-semibold text-lg text-slate-900 dark:text-slate-100 mb-2">
+                {item.question}
+              </h3>
+              <p className="text-slate-700 dark:text-slate-300">{item.answer}</p>
+            </div>
+          ))}
         </div>
       </section>
 

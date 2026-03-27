@@ -1,13 +1,14 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import GoogleAd from '../components/GoogleAd';
 import { ArticleParagraph, ArticleHeading, InlineCode, BulletList, CodeBlock } from '../components/ArticleComponents';
 import usePageMetadata from '../hooks/usePageMetadata';
 
 const VaryingSentenceStructurePage: React.FC = () => {
   usePageMetadata({
-    title: 'How to Vary Your Sentence Structure | TypoGrammar',
-    description: 'Learn how to make your writing more dynamic and engaging by varying sentence structure. Techniques include changing sentence beginnings and combining sentences.'
+    title: 'How to Vary Sentence Structure: 3 Techniques With Examples | TypoGrammar',
+    description: 'Learn 3 proven techniques to vary your sentence structure and make your writing more engaging: change sentence beginnings, combine ideas, and mix sentence types with before-and-after examples.'
   });
 
   return (
@@ -16,6 +17,11 @@ const VaryingSentenceStructurePage: React.FC = () => {
       <div>
         <p className="font-body text-base font-semibold text-blue-600 mb-4 dark:text-blue-400">Writing Skills</p>
         <h1 className="font-heading text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 tracking-tight dark:text-slate-100">How to Vary Your Sentence Structure</h1>
+      </div>
+
+      <div className="bg-blue-50 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-800 rounded-xl p-5 mb-8">
+        <h2 className="font-heading text-lg font-bold text-blue-800 dark:text-blue-300 mb-2">Quick Summary</h2>
+        <p className="text-blue-900 dark:text-blue-200 text-base">Repetitive sentence patterns make even great ideas feel dull. Fix this with three techniques: <strong>(1)</strong> vary your sentence beginnings (prepositional phrases, adverbs, dependent clauses), <strong>(2)</strong> combine short sentences using conjunctions, semicolons, or subordination, and <strong>(3)</strong> mix the four sentence types (simple, compound, complex, compound-complex).</p>
       </div>
       
       <ArticleParagraph>
@@ -85,6 +91,33 @@ const VaryingSentenceStructurePage: React.FC = () => {
       <ArticleParagraph>
         Varying your sentence structure is a powerful tool. By consciously changing how you begin your sentences and combining ideas in different ways, you can transform your writing from simple and repetitive to sophisticated and engaging. Practice these techniques, and your prose will develop a more natural and compelling rhythm.
       </ArticleParagraph>
+
+      <ArticleHeading>Related Grammar Guides</ArticleHeading>
+      <BulletList items={[
+        <><Link to="/topics/simple-and-complex-sentences" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Simple &amp; Complex Sentences</Link> — Master the four sentence types referenced in this guide.</>,
+        <><Link to="/topics/sentence-fragments" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Sentence Fragments</Link> — Avoid accidentally creating fragments when varying structure.</>,
+        <><Link to="/topics/passive-voice" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Passive Voice</Link> — Another tool for adding variety to your writing.</>,
+        <><Link to="/topics/direct-and-indirect-speech" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Direct &amp; Indirect Speech</Link> — Use quoted and reported speech to break up monotony.</>,
+        <><Link to="/topics/question-formation" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Question Formation</Link> — Rhetorical questions add variety to paragraphs.</>,
+      ]} />
+
+      <div className="bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 rounded-xl p-6 mt-10">
+        <h2 className="font-heading text-xl font-bold text-slate-800 dark:text-slate-200 mb-4">Frequently Asked Questions</h2>
+        <div className="space-y-4">
+          <div>
+            <h3 className="font-semibold text-slate-700 dark:text-slate-300">Why is varying sentence structure important?</h3>
+            <p className="text-slate-600 dark:text-slate-400 mt-1">Varied sentence structure keeps your reader engaged, creates rhythm in your prose, emphasizes key ideas, and demonstrates writing maturity. It prevents the monotony that comes from repeating the same subject-verb-object pattern.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-slate-700 dark:text-slate-300">What are the four sentence types in English?</h3>
+            <p className="text-slate-600 dark:text-slate-400 mt-1">The four types are: simple (one independent clause), compound (two independent clauses joined by a conjunction), complex (one independent + one dependent clause), and compound-complex (two independent + at least one dependent clause).</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-slate-700 dark:text-slate-300">How can I tell if my writing is too repetitive?</h3>
+            <p className="text-slate-600 dark:text-slate-400 mt-1">Read your writing aloud. If it sounds like a list of similar statements, you need more variety. Look at your sentence beginnings — if most start with the subject, try prepositional phrases, adverbs, or dependent clauses instead.</p>
+          </div>
+        </div>
+      </div>
     </article>
         <div className="mt-8">
           <GoogleAd adSlot="6406598038" />

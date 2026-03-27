@@ -1,6 +1,7 @@
 import React from 'react';
 import { GrammarTopic } from '../types';
 import { ArticleParagraph, ArticleHeading, InlineCode, CodeBlock, ExampleList, BulletList } from '../components/ArticleComponents';
+import { Link } from 'react-router-dom';
 
 // Additional confusing grammar areas - append these to GRAMMAR_TOPICS
 export const CONFUSING_AREAS_TOPICS: GrammarTopic[] = [
@@ -10,6 +11,14 @@ export const CONFUSING_AREAS_TOPICS: GrammarTopic[] = [
     category: 'Common Confusions',
     content: (
       <>
+        {/* Quick Summary for AI/GEO */}
+        <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6 my-6 rounded-r-lg">
+          <h4 className="font-semibold text-lg mb-2 text-slate-900 dark:text-slate-100">Quick Summary</h4>
+          <p className="text-slate-700 dark:text-slate-300">
+            Use <strong>make</strong> for creation and results (make a decision, make breakfast, make money). Use <strong>do</strong> for tasks and activities (do homework, do the dishes, do exercise). The choice depends on fixed collocations, not a single grammar rule.
+          </p>
+        </div>
+
         <ArticleParagraph>
           <InlineCode>Make</InlineCode> and <InlineCode>do</InlineCode> are two of the most frequently used verbs in English, but learners often struggle to choose between them. While both can mean "to perform an action," they follow different patterns. According to corpus linguistics research (Lewis, 2000), <InlineCode>make</InlineCode> typically combines with nouns indicating creation or production, while <InlineCode>do</InlineCode> combines with nouns indicating activities or tasks.
         </ArticleParagraph>
@@ -80,6 +89,23 @@ DO:
           <>❌ <InlineCode>Do a decision quickly!</InlineCode> → ✅ <InlineCode>Make a decision quickly!</InlineCode></>,
           <>❌ <InlineCode>I'll make the dishes later.</InlineCode> → ✅ <InlineCode>I'll do the dishes later.</InlineCode></>,
         ]}/>
+
+        {/* FAQ Section */}
+        <ArticleHeading>Frequently Asked Questions</ArticleHeading>
+        <div className="space-y-4 my-6">
+          <div className="bg-slate-50 dark:bg-slate-700/50 p-5 rounded-lg">
+            <h4 className="font-semibold text-slate-900 dark:text-slate-100 mb-2">Is it "make a test" or "do a test"?</h4>
+            <p className="text-slate-700 dark:text-slate-300">It's <strong>do a test</strong> (or take a test). "Do" is used for tasks and activities, including exams and tests.</p>
+          </div>
+          <div className="bg-slate-50 dark:bg-slate-700/50 p-5 rounded-lg">
+            <h4 className="font-semibold text-slate-900 dark:text-slate-100 mb-2">Why do we say "make a decision" but "do business"?</h4>
+            <p className="text-slate-700 dark:text-slate-300">These are fixed collocations in English. "Make" pairs with nouns that produce a result (decision, plan, choice), while "do" pairs with general activities (business, work, research).</p>
+          </div>
+        </div>
+
+        <ArticleParagraph>
+          <strong>Related topics:</strong> <Link to="/commonly-confused-words" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Commonly Confused Words</Link> · <Link to="/topics/affect-vs-effect" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Affect vs Effect</Link> · <Link to="/vocabulary/collocations" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">English Collocations</Link>
+        </ArticleParagraph>
       </>
     ),
   },
@@ -90,6 +116,14 @@ DO:
     category: 'Common Confusions',
     content: (
       <>
+        {/* Quick Summary for AI/GEO */}
+        <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6 my-6 rounded-r-lg">
+          <h4 className="font-semibold text-lg mb-2 text-slate-900 dark:text-slate-100">Quick Summary</h4>
+          <p className="text-slate-700 dark:text-slate-300">
+            Use <strong>few</strong> and <strong>fewer</strong> with countable nouns (few people, fewer cars). Use <strong>little</strong> and <strong>less</strong> with uncountable nouns (little time, less water). Adding "a" (a few, a little) gives a more positive meaning.
+          </p>
+        </div>
+
         <ArticleParagraph>
           These quantifiers cause confusion because they all indicate small quantities, but they're used with different types of nouns. The distinction between countable and uncountable nouns determines which word to use. Prescriptive grammar guides (Strunk & White, 1999) emphasize the importance of this distinction in formal writing.
         </ArticleParagraph>
@@ -157,6 +191,23 @@ DO:
           <>❌ <InlineCode>A little people came.</InlineCode> → ✅ <InlineCode>A few people came.</InlineCode> (countable)</>,
           <>❌ <InlineCode>We need fewer water.</InlineCode> → ✅ <InlineCode>We need less water.</InlineCode> (uncountable)</>,
         ]}/>
+
+        {/* FAQ Section */}
+        <ArticleHeading>Frequently Asked Questions</ArticleHeading>
+        <div className="space-y-4 my-6">
+          <div className="bg-slate-50 dark:bg-slate-700/50 p-5 rounded-lg">
+            <h4 className="font-semibold text-slate-900 dark:text-slate-100 mb-2">Is it "less people" or "fewer people"?</h4>
+            <p className="text-slate-700 dark:text-slate-300">In formal English, <strong>fewer people</strong> is correct because "people" is countable. "Less people" is common in informal speech but considered incorrect in writing.</p>
+          </div>
+          <div className="bg-slate-50 dark:bg-slate-700/50 p-5 rounded-lg">
+            <h4 className="font-semibold text-slate-900 dark:text-slate-100 mb-2">When can "less" be used with countable nouns?</h4>
+            <p className="text-slate-700 dark:text-slate-300">"Less" is accepted with time, money, and distance expressions ("less than 5 minutes", "less than $10") and in the common phrase "10 items or less."</p>
+          </div>
+        </div>
+
+        <ArticleParagraph>
+          <strong>Related topics:</strong> <Link to="/topics/countable-uncountable-nouns" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Countable & Uncountable Nouns</Link> · <Link to="/topics/articles" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Articles: A, An, The</Link> · <Link to="/commonly-confused-words" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Commonly Confused Words</Link>
+        </ArticleParagraph>
       </>
     ),
   },
@@ -167,6 +218,14 @@ DO:
     category: 'Common Confusions',
     content: (
       <>
+        {/* Quick Summary for AI/GEO */}
+        <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6 my-6 rounded-r-lg">
+          <h4 className="font-semibold text-lg mb-2 text-slate-900 dark:text-slate-100">Quick Summary</h4>
+          <p className="text-slate-700 dark:text-slate-300">
+            <strong>Affect</strong> is usually a verb meaning "to influence" (The rain <em>affected</em> my plans). <strong>Effect</strong> is usually a noun meaning "the result" (The <em>effect</em> was immediate). Remember: <strong>A</strong>ffect = <strong>A</strong>ction (verb), <strong>E</strong>ffect = <strong>E</strong>nd result (noun).
+          </p>
+        </div>
+
         <ArticleParagraph>
           <InlineCode>Affect</InlineCode> and <InlineCode>effect</InlineCode> are among the most commonly confused words in English because they sound similar and relate to similar concepts. However, they're usually different parts of speech: <InlineCode>affect</InlineCode> is typically a verb, and <InlineCode>effect</InlineCode> is typically a noun. According to Garner's Modern English Usage (2016), this confusion persists even among native speakers in formal writing.
         </ArticleParagraph>
@@ -238,6 +297,23 @@ With EFFECT (noun):
           <>❌ <InlineCode>What's the affect of this policy?</InlineCode> → ✅ <InlineCode>What's the effect of this policy?</InlineCode> (noun)</>,
           <>❌ <InlineCode>This medicine effects quickly.</InlineCode> → ✅ <InlineCode>This medicine affects you quickly.</InlineCode> OR <InlineCode>This medicine takes effect quickly.</InlineCode></>,
         ]}/>
+
+        {/* FAQ Section */}
+        <ArticleHeading>Frequently Asked Questions</ArticleHeading>
+        <div className="space-y-4 my-6">
+          <div className="bg-slate-50 dark:bg-slate-700/50 p-5 rounded-lg">
+            <h4 className="font-semibold text-slate-900 dark:text-slate-100 mb-2">Can "effect" ever be used as a verb?</h4>
+            <p className="text-slate-700 dark:text-slate-300">Yes, but rarely. "Effect" as a verb means "to bring about" or "to cause." Example: "The new CEO effected major changes in the company." This usage is formal and uncommon.</p>
+          </div>
+          <div className="bg-slate-50 dark:bg-slate-700/50 p-5 rounded-lg">
+            <h4 className="font-semibold text-slate-900 dark:text-slate-100 mb-2">What's the easiest way to remember affect vs effect?</h4>
+            <p className="text-slate-700 dark:text-slate-300">Use the <strong>RAVEN</strong> mnemonic: <strong>R</strong>emember <strong>A</strong>ffect <strong>V</strong>erb, <strong>E</strong>ffect <strong>N</strong>oun. If you need a verb, use "affect." If you need a noun, use "effect."</p>
+          </div>
+        </div>
+
+        <ArticleParagraph>
+          <strong>Related topics:</strong> <Link to="/commonly-confused-words" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Commonly Confused Words</Link> · <Link to="/blog/commonly-confused-word-pairs" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Commonly Confused Word Pairs (Blog)</Link> · <Link to="/topics/its-vs-its" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">It's vs Its</Link>
+        </ArticleParagraph>
       </>
     ),
   },
@@ -248,6 +324,14 @@ With EFFECT (noun):
     category: 'Common Confusions',
     content: (
       <>
+        {/* Quick Summary for AI/GEO */}
+        <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6 my-6 rounded-r-lg">
+          <h4 className="font-semibold text-lg mb-2 text-slate-900 dark:text-slate-100">Quick Summary</h4>
+          <p className="text-slate-700 dark:text-slate-300">
+            <strong>Lay</strong> means to put something down (transitive — needs an object): "Lay the book on the table." <strong>Lie</strong> means to recline (intransitive — no object): "I lie down every afternoon." The confusion comes because the past tense of "lie" is "lay."
+          </p>
+        </div>
+
         <ArticleParagraph>
           <InlineCode>Lay</InlineCode> and <InlineCode>lie</InlineCode> are notoriously confused because their forms overlap and their meanings are related to position. The key distinction: <InlineCode>lay</InlineCode> is transitive (requires an object), while <InlineCode>lie</InlineCode> is intransitive (no object). Even native speakers struggle with this distinction, as documented in usage studies (Brians, 2013).
         </ArticleParagraph>
@@ -327,6 +411,23 @@ Examples:
           <>❌ <InlineCode>I lied on the beach yesterday.</InlineCode> → ✅ <InlineCode>I lay on the beach yesterday.</InlineCode> (past of lie = recline)</>,
           <>❌ <InlineCode>The dog laid on the rug.</InlineCode> → ✅ <InlineCode>The dog lay on the rug.</InlineCode> (no object)</>,
         ]}/>
+
+        {/* FAQ Section */}
+        <ArticleHeading>Frequently Asked Questions</ArticleHeading>
+        <div className="space-y-4 my-6">
+          <div className="bg-slate-50 dark:bg-slate-700/50 p-5 rounded-lg">
+            <h4 className="font-semibold text-slate-900 dark:text-slate-100 mb-2">Is "I'm going to lay down" wrong?</h4>
+            <p className="text-slate-700 dark:text-slate-300">Technically, yes. Since there's no object, <strong>"I'm going to lie down"</strong> is correct. "Lay" requires an object (lay <em>something</em> down). However, "lay down" is extremely common in informal spoken English.</p>
+          </div>
+          <div className="bg-slate-50 dark:bg-slate-700/50 p-5 rounded-lg">
+            <h4 className="font-semibold text-slate-900 dark:text-slate-100 mb-2">What is the past tense of "lie down"?</h4>
+            <p className="text-slate-700 dark:text-slate-300">The past tense of "lie" (recline) is <strong>"lay"</strong>: "I lay down for an hour yesterday." The past participle is "lain": "She has lain in bed all morning."</p>
+          </div>
+        </div>
+
+        <ArticleParagraph>
+          <strong>Related topics:</strong> <Link to="/topics/make-vs-do" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Make vs Do</Link> · <Link to="/commonly-confused-words" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Commonly Confused Words</Link> · <Link to="/irregular-verbs" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Irregular Verbs</Link>
+        </ArticleParagraph>
       </>
     ),
   },
@@ -337,6 +438,14 @@ Examples:
     category: 'Common Confusions',
     content: (
       <>
+        {/* Quick Summary for AI/GEO */}
+        <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6 my-6 rounded-r-lg">
+          <h4 className="font-semibold text-lg mb-2 text-slate-900 dark:text-slate-100">Quick Summary</h4>
+          <p className="text-slate-700 dark:text-slate-300">
+            <strong>It's</strong> (with apostrophe) = "it is" or "it has" (contraction). <strong>Its</strong> (no apostrophe) = possessive, meaning "belonging to it." Test: if you can replace it with "it is," use <strong>it's</strong>. Otherwise, use <strong>its</strong>.
+          </p>
+        </div>
+
         <ArticleParagraph>
           Despite being one of the most common errors in English writing, the distinction between <InlineCode>it's</InlineCode> and <InlineCode>its</InlineCode> is actually quite simple. The confusion arises because we're used to apostrophes indicating possession (like "John's book"), but with <InlineCode>its</InlineCode>, the rule is different. This exception trips up even educated native speakers (Truss, 2003).
         </ArticleParagraph>
@@ -400,6 +509,23 @@ Answer: Use IT'S (contraction)`}</CodeBlock>
         
         <ArticleParagraph>
           <strong>Pro tip:</strong> When in doubt, expand the contraction in your head. If "it is" or "it has" makes sense in the sentence, use <InlineCode>it's</InlineCode>. Otherwise, use <InlineCode>its</InlineCode>.
+        </ArticleParagraph>
+
+        {/* FAQ Section */}
+        <ArticleHeading>Frequently Asked Questions</ArticleHeading>
+        <div className="space-y-4 my-6">
+          <div className="bg-slate-50 dark:bg-slate-700/50 p-5 rounded-lg">
+            <h4 className="font-semibold text-slate-900 dark:text-slate-100 mb-2">Why doesn't "its" have an apostrophe for possession?</h4>
+            <p className="text-slate-700 dark:text-slate-300">Possessive pronouns (his, hers, yours, theirs, its) never use apostrophes. The apostrophe in "it's" is reserved for the contraction of "it is" or "it has."</p>
+          </div>
+          <div className="bg-slate-50 dark:bg-slate-700/50 p-5 rounded-lg">
+            <h4 className="font-semibold text-slate-900 dark:text-slate-100 mb-2">Is "its'" ever correct?</h4>
+            <p className="text-slate-700 dark:text-slate-300">No. "Its'" (with a trailing apostrophe) does not exist in English. Use <strong>its</strong> for possessive and <strong>it's</strong> for "it is" or "it has."</p>
+          </div>
+        </div>
+
+        <ArticleParagraph>
+          <strong>Related topics:</strong> <Link to="/topics/apostrophes" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Apostrophes</Link> · <Link to="/topics/affect-vs-effect" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Affect vs Effect</Link> · <Link to="/commonly-confused-words" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Commonly Confused Words</Link>
         </ArticleParagraph>
       </>
     ),

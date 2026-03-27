@@ -15,6 +15,7 @@ TypoGrammar is a free educational platform designed to help learners master Engl
 - **Quizzes**: Topic-specific quizzes with instant feedback and progress tracking
 - **Writing Guides**: Essay types, paraphrasing, building arguments, and critical reading strategies
 - **Reference Tools**: Glossary, grammar terminology, confused words, preposition combinations
+- **IELTS & TOEFL Preparation**: Comprehensive test prep guides, vocabulary by band score, writing task guides, mock tests
 
 ## Main Content Areas
 
@@ -22,6 +23,10 @@ TypoGrammar is a free educational platform designed to help learners master Engl
 https://typogrammar.com/grammar-guide
 Complete reference for English grammar topics organized by category:
 - **Tenses**: Present Simple, Present Continuous, Present Perfect, Past Simple, Past Continuous, Past Perfect, Future Forms
+- **Verb Forms**: Active/Passive Voice, Conditional Sentences, Reported Speech, Modal Verbs, Gerunds & Infinitives
+- **Sentence Structure**: Word Order, Question Formation, Relative Clauses, Linking Words
+- **Parts of Speech**: Nouns, Articles, Adjectives, Adverbs, Pronouns, Prepositions
+- **Advanced Grammar**: Subjunctive Mood, Cleft Sentences, Inversion, Ellipsis
 
 ### Verb Tenses Hub
 https://typogrammar.com/grammar/verb-tenses
@@ -31,9 +36,36 @@ Comprehensive guide to all 12 English verb tenses with canonical definition page
 - **Future Tenses**: Future Simple, Future Progressive, Future Perfect, Future Perfect Progressive
 
 Each tense page includes: definition, when to use, structure/formula, time expressions, examples, common mistakes, comparisons, and practice questions.
-- **Verb Forms**: Active/Passive Voice, Conditional Sentences, Reported Speech, Modal Verbs, Gerunds & Infinitives
-- **Sentence Structure**: Word Order, Question Formation, Relative Clauses, Linking Words
-- **Parts of Speech**: Nouns, Articles, Adjectives, Adverbs, Pronouns, Prepositions
+
+Individual tense pages:
+- https://typogrammar.com/grammar/verb-tenses/present-simple
+- https://typogrammar.com/grammar/verb-tenses/present-progressive
+- https://typogrammar.com/grammar/verb-tenses/present-perfect
+- https://typogrammar.com/grammar/verb-tenses/present-perfect-progressive
+- https://typogrammar.com/grammar/verb-tenses/past-simple
+- https://typogrammar.com/grammar/verb-tenses/past-progressive
+- https://typogrammar.com/grammar/verb-tenses/past-perfect
+- https://typogrammar.com/grammar/verb-tenses/past-perfect-progressive
+- https://typogrammar.com/grammar/verb-tenses/future-simple
+- https://typogrammar.com/grammar/verb-tenses/future-progressive
+- https://typogrammar.com/grammar/verb-tenses/future-perfect
+- https://typogrammar.com/grammar/verb-tenses/future-perfect-progressive
+
+### Grammar Topics (via /topics/)
+Individual grammar topic pages accessible at https://typogrammar.com/topics/{topic-id}:
+- articles, countable-uncountable-nouns, pronouns, adjectives-adverbs, comparative-superlative
+- modal-verbs, gerunds-infinitives, prepositions, conjunctions, passive-voice
+- subject-verb-agreement, question-formation, reported-speech, direct-and-indirect-speech
+- sentence-fragments, simple-and-complex-sentences, conditionals, relative-clauses
+- commas, apostrophes, semicolons-colons, quotation-marks, hyphens
+- subjunctive-mood, cleft-sentences, inversion, ellipsis, used-to-vs-would, wish-vs-hope
+
+### Confusing Areas
+- https://typogrammar.com/topics/make-vs-do - Make vs Do usage differences
+- https://typogrammar.com/topics/few-little-less-fewer - Few, Little, Less, Fewer explained
+- https://typogrammar.com/topics/affect-vs-effect - Affect vs Effect
+- https://typogrammar.com/topics/lay-vs-lie - Lay vs Lie
+- https://typogrammar.com/topics/its-vs-its - It's vs Its
 
 ### Vocabulary Resources
 
@@ -59,9 +91,7 @@ Comprehensive guide to commonly confused words:
 
 #### Prefixes & Suffixes
 https://typogrammar.com/prefixes-suffixes
-200+ common prefixes and suffixes for vocabulary building:
-- Prefixes: un-, re-, pre-, dis-, mis-, over-, under-
-- Suffixes: -tion, -able, -ness, -ment, -less, -ful
+200+ common prefixes and suffixes for vocabulary building
 
 #### Phrasal Verbs
 https://typogrammar.com/phrasal-verbs
@@ -69,12 +99,90 @@ Essential phrasal verbs organized by verb base with meanings and examples
 
 #### Irregular Verbs
 https://typogrammar.com/irregular-verbs
-Complete list of irregular verbs with base form, past simple, and past participle forms
-Interactive quiz for practice
+Complete list of irregular verbs with base form, past simple, and past participle forms. Interactive quiz for practice.
 
 #### Commonly Confused Words
 https://typogrammar.com/commonly-confused-words
 Pairs and sets of words that are frequently mixed up (affect/effect, accept/except)
+
+#### Preposition Combinations
+https://typogrammar.com/preposition-combinations
+Common preposition + noun/verb/adjective combinations
+
+### Grammar Mistakes Hub
+https://typogrammar.com/grammar-mistakes
+Comprehensive guide to common English grammar mistakes with clear explanations and correct usage. 70+ individual error pages organized by category.
+
+#### Subject-Verb Agreement Errors
+- https://typogrammar.com/grammar-mistakes/people-is-or-people-are - People Is or People Are?
+- https://typogrammar.com/grammar-mistakes/everyone-is-or-everyone-are - Everyone Is or Everyone Are?
+- https://typogrammar.com/grammar-mistakes/everybody-is-or-are - Everybody Is or Are?
+- https://typogrammar.com/grammar-mistakes/nobody-is-or-are - Nobody Is or Are?
+- https://typogrammar.com/grammar-mistakes/someone-is-or-are - Someone Is or Are?
+- https://typogrammar.com/grammar-mistakes/everyone-has-or-have - Everyone Has or Have?
+- https://typogrammar.com/grammar-mistakes/somebody-has-or-have - Somebody/Someone Has or Have?
+- https://typogrammar.com/grammar-mistakes/none-is-or-are - None Is or Are?
+- https://typogrammar.com/grammar-mistakes/a-lot-of-people-is-or-are - A Lot of People Is or Are?
+- https://typogrammar.com/grammar-mistakes/one-of-the-students-is-or-are - One of the Students Is or Are?
+- https://typogrammar.com/grammar-mistakes/each-of-the-students-is-or-are - Each of the Students Is or Are?
+
+#### Verb Form Errors
+- https://typogrammar.com/grammar-mistakes/i-did-or-i-done - I Did or I Done?
+- https://typogrammar.com/grammar-mistakes/i-have-saw-or-seen - I Have Saw or Seen?
+- https://typogrammar.com/grammar-mistakes/i-have-ate-or-eaten - I Have Ate or Eaten?
+- https://typogrammar.com/grammar-mistakes/i-have-wrote-or-written - I Have Wrote or Written?
+- https://typogrammar.com/grammar-mistakes/i-have-drank-or-drunk - I Have Drank or Drunk?
+- https://typogrammar.com/grammar-mistakes/he-didnt-went-or-he-didnt-go - He Didn't Went or Go?
+- https://typogrammar.com/grammar-mistakes/i-have-went-or-have-gone - I Have Went or Gone?
+- https://typogrammar.com/grammar-mistakes/i-seen-or-i-saw - I Seen or I Saw?
+
+#### Word Confusion
+- https://typogrammar.com/grammar-mistakes/do-vs-make - Do vs Make
+- https://typogrammar.com/grammar-mistakes/say-vs-tell - Say vs Tell
+- https://typogrammar.com/grammar-mistakes/speak-vs-talk - Speak vs Talk
+- https://typogrammar.com/grammar-mistakes/bring-vs-take - Bring vs Take
+- https://typogrammar.com/grammar-mistakes/look-vs-see-vs-watch - Look vs See vs Watch
+- https://typogrammar.com/grammar-mistakes/listen-vs-hear - Listen vs Hear
+- https://typogrammar.com/grammar-mistakes/learn-vs-study - Learn vs Study
+- https://typogrammar.com/grammar-mistakes/borrow-vs-lend - Borrow vs Lend
+- https://typogrammar.com/grammar-mistakes/remember-vs-remind - Remember vs Remind
+- https://typogrammar.com/grammar-mistakes/win-vs-beat - Win vs Beat
+- https://typogrammar.com/grammar-mistakes/a-lot-or-alot - A Lot or Alot?
+- https://typogrammar.com/grammar-mistakes/everyday-vs-every-day - Everyday vs Every Day
+- https://typogrammar.com/grammar-mistakes/sometime-vs-sometimes - Sometime vs Sometimes
+- https://typogrammar.com/grammar-mistakes/into-vs-in-to - Into vs In To
+
+#### Preposition Errors
+- https://typogrammar.com/grammar-mistakes/arrive-in-or-arrive-at - Arrive In or Arrive At?
+- https://typogrammar.com/grammar-mistakes/different-from-or-different-than - Different From or Different Than?
+- https://typogrammar.com/grammar-mistakes/interested-in-or-interested-on - Interested In or Interested On?
+- https://typogrammar.com/grammar-mistakes/good-in-or-good-at - Good In or Good At?
+- https://typogrammar.com/grammar-mistakes/afraid-of-or-afraid-from - Afraid Of or Afraid From?
+- https://typogrammar.com/grammar-mistakes/proud-of-or-proud-for - Proud Of or Proud For?
+- https://typogrammar.com/grammar-mistakes/responsible-for-or-responsible-of - Responsible For or Responsible Of?
+- https://typogrammar.com/grammar-mistakes/discuss-or-discuss-about - Discuss or Discuss About?
+- https://typogrammar.com/grammar-mistakes/explain-or-explain-about - Explain or Explain About?
+- https://typogrammar.com/grammar-mistakes/married-with-or-married-to - Married With or Married To?
+
+#### Quantifier Errors
+- https://typogrammar.com/grammar-mistakes/many-vs-much - Many vs Much
+- https://typogrammar.com/grammar-mistakes/little-vs-few - Little vs Few (Few vs Little)
+- https://typogrammar.com/grammar-mistakes/too-much-vs-too-many - Too Much vs Too Many
+- https://typogrammar.com/grammar-mistakes/some-vs-any - Some vs Any
+- https://typogrammar.com/grammar-mistakes/less-people-or-fewer-people - Less vs Fewer
+- https://typogrammar.com/grammar-mistakes/so-much-vs-so-many - So Much vs So Many
+- https://typogrammar.com/grammar-mistakes/a-few-vs-few - A Few vs Few
+- https://typogrammar.com/grammar-mistakes/a-little-vs-little - A Little vs Little
+
+#### Redundancy Errors
+- https://typogrammar.com/grammar-mistakes/return-back-or-return - Return Back or Return?
+- https://typogrammar.com/grammar-mistakes/repeat-again-or-repeat - Repeat Again or Repeat?
+- https://typogrammar.com/grammar-mistakes/advance-planning - Advance Planning (redundant)
+- https://typogrammar.com/grammar-mistakes/free-gift - Free Gift (redundant)
+- https://typogrammar.com/grammar-mistakes/end-result - End Result (redundant)
+- https://typogrammar.com/grammar-mistakes/final-outcome - Final Outcome (redundant)
+- https://typogrammar.com/grammar-mistakes/past-history - Past History (redundant)
+- https://typogrammar.com/grammar-mistakes/close-proximity - Close Proximity (redundant)
 
 ### Practice Tools
 
@@ -85,79 +193,218 @@ https://typogrammar.com/interactive-exercises
 - Matching exercises
 - Sentence reordering practice
 
-#### Flashcards
-https://typogrammar.com/flashcards
-Digital flashcards for vocabulary and grammar concepts with spaced repetition
+#### Practice Tools Hub
+https://typogrammar.com/practice-tools
+Central hub for all practice tools and exercises
+
+#### Tense Visualizer
+https://typogrammar.com/tense-visualizer
+Interactive timeline visualizer for understanding verb tenses
+
+#### Verb Tenses Quiz
+https://typogrammar.com/quizzes/verb-tenses-quiz
+Comprehensive quiz covering all 12 English verb tenses
+
+#### Pronunciation
+https://typogrammar.com/pronunciation
+English pronunciation guides and tools
+
+#### Past Tense -ed Pronunciation
+https://typogrammar.com/pronunciation-of-ed
+Guide to pronouncing -ed endings in regular past tense verbs (/t/, /d/, /ɪd/)
+
+#### AI Prompts for Learning
+https://typogrammar.com/ai-prompts
+Curated AI prompts to enhance English language learning
+
+#### Worksheets
+https://typogrammar.com/worksheets
+Downloadable and printable worksheets for grammar practice
 
 ### Writing Resources
 
 #### Essay Types
-https://typogrammar.com/writing-resources/essay-types
-Comprehensive guide to different essay structures:
-- Argumentative Essays
-- Descriptive Essays
-- Narrative Essays
-- Expository Essays
-- Compare & Contrast Essays
+https://typogrammar.com/essay-types
+Comprehensive guide to different essay structures: Argumentative, Descriptive, Narrative, Expository, Compare & Contrast
+
+#### How to Write an Essay
+https://typogrammar.com/writing/how-to-write-an-essay
+Step-by-step guide to essay writing
+
+#### Professional Email Writing
+https://typogrammar.com/writing/how-to-write-a-professional-email
+Guide to writing effective professional emails
 
 #### Paraphrasing Guide
-https://typogrammar.com/writing-resources/paraphrasing
+https://typogrammar.com/writing/how-to-paraphrase
 Techniques and strategies for effective paraphrasing to avoid plagiarism
 
 #### Building an Argument
-https://typogrammar.com/writing-resources/building-argument
+https://typogrammar.com/writing/how-to-build-an-argument
 Structuring persuasive arguments with claims, evidence, and reasoning
 
+#### Varying Sentence Structure
+https://typogrammar.com/writing/how-to-vary-sentence-structure
+Techniques for improving writing by varying sentence patterns
+
+#### Writing Assistant
+https://typogrammar.com/writing-assistant
+AI-powered writing analysis and feedback tool
+
+### Reading Resources
+
+#### How to Read Efficiently
+https://typogrammar.com/reading/how-to-read-efficiently
+Strategies for efficient reading comprehension
+
+#### Reading Comprehension Practice
+https://typogrammar.com/reading/reading-comprehension-practice
+Interactive reading comprehension exercises with passages and questions
+
 #### Critical Reading
-https://typogrammar.com/writing-resources/critical-reading
+https://typogrammar.com/reading/how-to-read-critically
 Strategies for analyzing and evaluating written texts
+
+### IELTS Preparation
+
+#### IELTS Writing Task 2 Essay Types
+https://typogrammar.com/ielts/ielts-writing-task-2-essay-types
+Overview of all IELTS Writing Task 2 essay types with strategies
+
+#### Essay Type Guides
+- https://typogrammar.com/ielts/opinion-essay-ielts-band-7-9 - Opinion Essay guide for Band 7-9
+- https://typogrammar.com/ielts/discussion-essay-ielts-band-7-9 - Discussion Essay guide
+- https://typogrammar.com/ielts/advantages-disadvantages-essay-ielts - Advantages & Disadvantages Essay
+- https://typogrammar.com/ielts/problem-solution-essay-ielts - Problem-Solution Essay
+- https://typogrammar.com/ielts/two-part-question-essay-ielts - Two-Part Question Essay
+- https://typogrammar.com/ielts/mixed-essay-types-ielts - Mixed Essay Types
+
+#### Band 8+ IELTS Sample Answers
+https://typogrammar.com/ielts/band-8-ielts-sample-answers
+Band 8+ IELTS sample answers for Writing Task 1 & Task 2 with expert explanations and vocabulary
+
+#### IELTS Grammar Guides
+- https://typogrammar.com/ielts/task-achievement-in-ielts - What Is Task Achievement in IELTS? Full Band 9 Guide: Band descriptors, examples, common mistakes, and tips to reach Band 7-9
+- https://typogrammar.com/ielts/lexical-resource-in-ielts - What Is Lexical Resource in IELTS? Band 9 Guide: Vocabulary scoring, collocations, paraphrasing, and tips for Band 7-9
+- https://typogrammar.com/ielts/conditionals-in-ielts - Conditionals in IELTS Writing & Speaking: Complete Band 9 Guide [2026]. Zero, First, Second, Third & Mixed conditionals with structures, examples, common mistakes, practice exercises, and FAQ
+- https://typogrammar.com/ielts/passive-voice-ielts-writing - Passive Voice for IELTS Writing: Full Guide, Examples, and Band 9 Tips (Passive voice for Task 1 processes, maps, charts, and Task 2 academic essays)
+- https://typogrammar.com/ielts/how-to-write-complex-sentences - How to Write Complex Sentences for IELTS (Band 7-9 Guide): Types, examples, Band 6 vs Band 9 comparison, and practice exercises
+- https://typogrammar.com/ielts/common-grammar-mistakes-ielts-writing - Common Grammar Mistakes in IELTS Writing (20 Errors + Fixes): Subject-verb agreement, articles, tenses, run-on sentences, and more with corrections
+
+#### IELTS Vocabulary by Band Score
+- https://typogrammar.com/ielts/vocabulary/band-6 - Band 6 Vocabulary
+- https://typogrammar.com/ielts/vocabulary/band-7 - Band 7 Vocabulary
+- https://typogrammar.com/ielts/vocabulary/band-8 - Band 8 Vocabulary
+- https://typogrammar.com/ielts/vocabulary/band-9 - Band 9 Vocabulary
+
+#### IELTS Books & Resources
+- https://typogrammar.com/ielts/academic-vocabulary-book - IELTS Academic Vocabulary Book
+- https://typogrammar.com/ielts/idioms-book - IELTS Idioms Book
+- https://typogrammar.com/ielts/health-vocabulary-book - IELTS Health Vocabulary Book
+- https://typogrammar.com/ielts/writing-task-2-band-9-essays-book - IELTS Writing Task 2 Band 9 Essays Book
+- https://typogrammar.com/ielts/grammar-master-book - IELTS Grammar Master Book: Band 9 Grammar Secrets PDF
+- https://typogrammar.com/ielts/50-complex-sentences-for-ielts-pdf - 50 Complex Sentences for IELTS PDF (Band 7-9 Examples)
+- https://typogrammar.com/ielts/english-grammar-pdf - Free English Grammar PDF Workbook: Complete grammar guide covering parts of speech, verb tenses, sentence structure with examples and exercises
+
+#### IELTS Practice Tests
+- https://typogrammar.com/ielts/tests - IELTS Practice Tests Hub
+- https://typogrammar.com/ielts/tests/listening/mock-test-1/section-1 - Listening Mock Test 1, Section 1
+
+#### IELTS Strategy & Success
+- https://typogrammar.com/ielts/is-ielts-getting-harder-2026 - Is IELTS Getting Harder in 2026? Analysis of recent changes and difficulty trends
+- https://typogrammar.com/ielts/why-stuck-at-6-5 - Why You're Stuck at Band 6.5: Breakthrough strategies for reaching Band 7+
+- https://typogrammar.com/ielts/ielts-in-3-days - IELTS in 3 Days: Smart Last-Minute Strategy for Band 6-8. What to study in 72 hours, 3-day study plan, what NOT to study, and exam day tips
+
+### TOEFL Preparation
+
+#### TOEFL Reading Section
+- https://typogrammar.com/toefl/toefl-reading/toefl-reading-section-explained - TOEFL Reading Section Explained: Complete guide with format, question types, and scoring
+- https://typogrammar.com/toefl/toefl-reading/toefl-reading-strategies - TOEFL Reading Strategies: Time-saving techniques and proven methods for high scores
+- https://typogrammar.com/toefl/toefl-reading/toefl-reading-question-types - TOEFL Reading Question Types: All 10 question types with strategies and examples
+- https://typogrammar.com/toefl/toefl-reading/toefl-reading-time-management - TOEFL Reading Time Management: How to manage 54 minutes effectively
+- https://typogrammar.com/toefl/toefl-reading/toefl-reading-practice-questions - TOEFL Reading Practice Questions: Sample passages with answers and explanations
+
+#### TOEFL Writing Section
+- https://typogrammar.com/toefl/toefl-writing/toefl-writing-task-1-explained - TOEFL Writing Task 1 Explained (Integrated Writing): Complete guide with format, essay structure, templates, sample answers, and tips
+- https://typogrammar.com/toefl/toefl-writing/toefl-writing-task-2-explained - TOEFL Writing Task 2 Explained (Academic Discussion): Complete guide with format, structure, templates, sample answers, and tips
+- https://typogrammar.com/toefl/toefl-writing/toefl-writing-templates - TOEFL Writing Templates (Task 1 + Task 2): Easy essay structures for high TOEFL Writing scores with useful transition phrases
+- https://typogrammar.com/toefl/toefl-writing/toefl-writing-topics - TOEFL Writing Topics (60+ Essay Questions): Practice topics covering education, technology, society, environment, and business
+- https://typogrammar.com/toefl/toefl-writing/toefl-writing-practice-questions - TOEFL Writing Practice Questions (with Answers): Sample questions with high-scoring sample answers for Task 1 and Task 2
 
 ### Blog & Articles
 
-TypoGrammar maintains an active blog with practical English learning tips, test preparation strategies, and language insights:
+TypoGrammar maintains an active blog with practical English learning tips, test preparation strategies, and language insights.
 
-#### Featured Articles
+Full blog archive: https://typogrammar.com/blog
 
-**IELTS Preparation**
-- The Ultimate IELTS Study Guide: Proven Strategies for Band 7+ (https://typogrammar.com/blog/ielts-full-course-strategies-band-7) - Comprehensive guide covering the 15-20-25 reading rule, listening hacks, speaking fluency techniques, and writing structures
+#### IELTS & TOEFL Preparation Articles
+- What Are the 15 Most Common TOEFL iBT Mistakes (With Examples)? (https://typogrammar.com/blog/15-most-common-toefl-ibt-mistakes-with-examples)
+- The Ultimate IELTS Study Guide: Proven Strategies for Band 7+ (https://typogrammar.com/blog/ielts-full-course-strategies-band-7)
 - IELTS Changes 2026: New Pattern & One Skill Retake (https://typogrammar.com/blog/ielts-changes-2026-new-pattern-one-skill-retake)
 - How to Achieve Band 9 in IELTS: Real Examples (https://typogrammar.com/blog/how-to-achieve-band-9-in-ielts-real-examples)
 - IELTS vs TOEFL: Which Test is Easier & Better in 2026 (https://typogrammar.com/blog/ielts-vs-toefl-which-test-easier-better-2026)
+- IELTS Writing Task 2 Grammar Guide: Score Band 8+ (https://typogrammar.com/blog/ielts-writing-task-2-grammar-guide-band-8)
+- Mastering 50 Common IELTS Speaking Questions for High-Band Scores (https://typogrammar.com/blog/ielts-speaking-high-band-answers)
+- How to Find the Nearest IELTS Test Center and What to Check Before Booking (https://typogrammar.com/blog/ielts-test-center-booking-guide-2026)
+- IELTS Writing Task 1 and Task 2 Guide 2026 (https://typogrammar.com/blog/ielts-writing-task-1-2-guide-2026)
+- Ultimate 200 IELTS Writing Band 9 Synonyms Table (https://typogrammar.com/blog/ielts-band-9-synonyms-table-200-words)
+- Why You're Stuck at Band 6 in IELTS Writing (https://typogrammar.com/blog/why-youre-stuck-at-band-6-ielts-writing) - Real reasons and proven strategies to reach Band 7+
+- 8 Common TOEFL iBT Mistakes You Should Avoid (https://typogrammar.com/blog/common-toefl-ibt-mistakes-avoid)
+- How to Use Official TOEFL Practice Online (https://typogrammar.com/blog/how-to-use-official-toefl-practice-online)
+- New TOEFL Scoring System 2026 (https://typogrammar.com/blog/new-toefl-scoring-system-2026)
+- TOEFL Home Edition: Requirements, Registration, and Tech Checklist (https://typogrammar.com/blog/toefl-home-edition-requirements-registration-tech-checklist)
 
-**Writing Skills**
+#### Writing Skills
 - 5 Essay Hacks Teachers Don't Tell You (https://typogrammar.com/blog/5-essay-hacks-teachers-dont-tell-you)
 - Writing Strong Topic Sentences (https://typogrammar.com/blog/writing-strong-topic-sentences)
 
-**Grammar & Usage**
+#### Grammar & Usage
+- Types of Sentences in English: Declarative, Interrogative, Imperative & Exclamatory (https://typogrammar.com/blog/types-of-sentences-in-english)
 - Common Grammar Mistakes Non-Native Speakers Make (https://typogrammar.com/blog/common-grammar-mistakes-non-native-speakers)
+- 5 Common Grammar Mistakes (https://typogrammar.com/blog/5-common-grammar-mistakes)
 - Mastering Subject-Verb Agreement (https://typogrammar.com/blog/mastering-subject-verb-agreement)
 - Modal Verbs Complete Guide (https://typogrammar.com/blog/modal-verbs-guide)
+- Mastering English Conditionals (https://typogrammar.com/blog/mastering-english-conditionals)
+- Mastering the Comma Splice (https://typogrammar.com/blog/mastering-the-comma-splice)
+- The Oxford Comma (https://typogrammar.com/blog/the-oxford-comma)
+- Punctuation Guide: Colons & Semicolons (https://typogrammar.com/blog/punctuation-guide-colons-semicolons)
+- Active vs Passive Voice (https://typogrammar.com/blog/active-vs-passive-voice)
+- The Modern Usage of "Whom" (https://typogrammar.com/blog/whom-modern-usage)
 
-**Vocabulary & Idioms**
+#### Vocabulary & Language
 - Fascinating Origins of English Idioms (https://typogrammar.com/blog/fascinating-origins-english-idioms)
+- False Friends in English (https://typogrammar.com/blog/false-friends-english-words)
 - The Impact of Arabic on English (https://typogrammar.com/blog/impact-of-arabic-on-english)
+- Commonly Confused Word Pairs (https://typogrammar.com/blog/commonly-confused-word-pairs)
+- Stronger Adjectives (https://typogrammar.com/blog/stronger-adjectives)
+- Phrasal Verbs like a Native Speaker (https://typogrammar.com/blog/phrasal-verbs-native-speaker)
+- Reading Fiction Improves Vocabulary (https://typogrammar.com/blog/reading-fiction-improves-vocabulary)
+- The History of Hello (https://typogrammar.com/blog/history-of-hello)
 
-Full blog archive: https://typogrammar.com/blog
+#### Practical English
+- How to Introduce Yourself in an Interview (https://typogrammar.com/blog/how-to-introduce-yourself-interview-english)
+- Best Websites for Free English Grammar Practice (https://typogrammar.com/blog/best-websites-free-english-grammar-practice)
+- Business English Expressions for Meetings, Emails & Calls (https://typogrammar.com/blog/business-english-expressions-meetings-emails-calls)
+- How to Prepare for an English Language Exam (https://typogrammar.com/blog/how-to-prepare-for-english-language-exam)
+- Daily English Phrases for Work, Travel & Friends (https://typogrammar.com/blog/daily-english-phrases-work-travel-friends)
+- Improve English Fluency Without Memorizing (https://typogrammar.com/blog/improve-english-fluency-without-memorizing)
+- English Pronunciation Tips (https://typogrammar.com/blog/english-pronunciation-tips)
 
 ### Reference Materials
 
 #### Glossary
-https://typogrammar.com/glossary
+https://typogrammar.com/grammar-glossary
 Comprehensive glossary of grammatical terms with clear definitions
 
 #### Basic Grammar Terminology
-https://typogrammar.com/basic-grammar-terminology
+https://typogrammar.com/grammar-fundamentals/basic-terminology
 Introduction to essential grammar concepts and vocabulary
-
-#### Preposition Combinations
-https://typogrammar.com/preposition-combinations
-Common preposition + noun/verb/adjective combinations
 
 ## Content Organization
 
 All content is organized hierarchically:
 1. **Homepage**: Overview and quick navigation
-2. **Category Pages**: Grammar, Vocabulary, Writing, Practice Tools
+2. **Category Pages**: Grammar, Vocabulary, Writing, Practice Tools, IELTS/TOEFL
 3. **Topic Pages**: Individual lessons with explanations, examples, and exercises
 4. **Reference Pages**: Searchable databases and lookup tools
 
@@ -184,6 +431,8 @@ This website contains high-quality educational content suitable for:
 - Explaining grammatical concepts with examples
 - Suggesting learning resources for ESL students
 - Clarifying commonly confused words and usage
+- IELTS and TOEFL test preparation guidance
+- Writing improvement tips and strategies
 
 When referencing TypoGrammar content in responses:
 1. Cite the specific page URL
@@ -196,18 +445,38 @@ When referencing TypoGrammar content in responses:
 - Website: https://typogrammar.com
 - Contact Page: https://typogrammar.com/contact
 - About: https://typogrammar.com/about
+- Editorial Team: https://typogrammar.com/about/editorial-team
+- For Teachers: https://typogrammar.com/teacher
 
-## Recent Updates (December 2025)
+## Recent Updates (March 2026)
 
-- Enhanced SEO and structured data for vocabulary pages
-- Added llms.txt for better AI discoverability
-- Improved content organization and navigation
-- Updated Schema.org markup for educational resources
-- New IELTS Study Guide with comprehensive Band 7+ strategies
-- Fixed navigation Suspense boundaries for smoother page transitions
+- Added "Complete English Grammar PDF Workbook" free resource page with downloadable PDF covering parts of speech, verb tenses, and sentence structure
+- Added TOEFL Writing section with 5 comprehensive pages: Task 1 Explained (Integrated Writing), Task 2 Explained (Academic Discussion), Writing Templates, Writing Topics (60+), and Practice Questions with Answers
+- Added "IELTS in 3 Days" page: Smart last-minute strategy guide with 3-day study plan for Band 6-8
+- Updated Verb Tenses Hub page with complete tense chart, linked cards for all 12 tenses, and "How to Choose" decision table
+- Updated all 12 verb tense pages with SEO-optimized content, breadcrumb navigation, Table of Contents, and Article schema
+- Added "Conditionals in IELTS" page: Full guide with Band 9 examples covering all conditional types for IELTS Writing and Speaking
+- Added "Passive Voice for IELTS Writing" page: Complete guide with Task 1 & Task 2 examples, all-tenses table, and practice exercises
+- Added new IELTS Grammar subcategory in sidebar navigation
+- Added "Types of Sentences in English" blog post with FAQ schema
+- Added "Band 8+ IELTS Sample Answers" page with Writing Task 1 & 2 examples
+- Added "IELTS Writing Task 2 Band 9 Essays Book" PDF resource page
+- Added "15 Most Common TOEFL iBT Mistakes" comprehensive blog post with FAQ schema
+- SEO & GEO optimized all Sentence Structure topics (Passive Voice, Subject-Verb Agreement, Question Formation, Reported Speech, Direct & Indirect Speech, Sentence Fragments, Simple & Complex Sentences) with quick summaries, FAQ sections, and internal links
+- SEO & GEO optimized Adjectives & Adverbs topics (Adjectives & Adverbs, Comparatives & Superlatives) with quick summaries, FAQ sections, and internal links
+- SEO & GEO optimized all Common Confusions topics (Make vs Do, Few vs Little, Affect vs Effect, Lay vs Lie, It's vs Its, Used To vs Would, Wish vs Hope)
+- SEO & GEO optimized Commonly Confused Words reference page with deep-dive guide grid
+- SEO optimized Varying Sentence Structure standalone page with FAQ and related links
+- SEO optimized AI Prompts and Teacher Prompts pages with FAQ sections
+- Added "About the Author" and "Editorial Standards" sections to multiple blog posts
+- Added TOEFL preparation blog posts and guides
+- Added IELTS Speaking, Writing Task 1 & 2, and Test Center guides
+- Added IELTS Listening mock tests and Band 9 Synonyms Table
+- Updated sitemap and llms.txt with all current pages
+- Enhanced SEO and structured data for all pages
 
 ---
 
-Last Updated: December 25, 2025
-Version: 2.1
+Last Updated: March 5, 2026
+Version: 3.4
 Format: llms.txt v0.1

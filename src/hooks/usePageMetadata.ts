@@ -16,9 +16,26 @@ interface PageMetadata {
   twitterImage?: string;
 }
 
+const SITE_URL = 'https://typogrammar.com';
 const DESCRIPTION_SELECTOR = 'meta[name="description"]';
 const ROBOTS_SELECTOR = 'meta[name="robots"]';
 const CANONICAL_SELECTOR = 'link[rel="canonical"]';
+
+/**
+ * Normalize URL path for canonical:
+ * - Remove trailing slashes (except root)
+ * - Remove query parameters and hash fragments
+ * - Ensure consistent format
+ */
+const normalizeCanonicalPath = (path: string): string => {
+  // Remove query params and hash
+  let cleanPath = path.split('?')[0].split('#')[0];
+  // Remove trailing slash (but keep root /)
+  if (cleanPath.length > 1 && cleanPath.endsWith('/')) {
+    cleanPath = cleanPath.slice(0, -1);
+  }
+  return cleanPath;
+};
 
 // Helper function to set or update a meta tag
 const setMetaTag = (property: string, content: string, isProperty = false) => {
@@ -84,15 +101,20 @@ export default function usePageMetadata({
       meta.setAttribute('content', description);
     }
 
-    // Set canonical URL
-    if (canonical) {
-      let link = canonicalEl;
-      if (!link) {
-        link = document.createElement('link');
-        link.setAttribute('rel', 'canonical');
-        document.head.appendChild(link);
-      }
-      link.setAttribute('href', canonical);
+    // Always set canonical URL - use provided value or auto-generate from current path
+    const normalizedPath = normalizeCanonicalPath(window.location.pathname);
+    const canonicalUrl = canonical || `${SITE_URL}${normalizedPath}`;
+    let link = canonicalEl;
+    if (!link) {
+      link = document.createElement('link');
+      link.setAttribute('rel', 'canonical');
+      document.head.appendChild(link);
+    }
+    link.setAttribute('href', canonicalUrl);
+
+    // Also update og:url if not explicitly set
+    if (!ogUrl) {
+      setMetaTag('og:url', canonicalUrl, true);
     }
 
     // Set robots meta tag (default to index,follow if not specified)
@@ -132,15 +154,10 @@ export default function usePageMetadata({
           }
         }
       }
-      if (canonical) {
-        const link = document.querySelector<HTMLLinkElement>(CANONICAL_SELECTOR);
-        if (link) {
-          if (previousCanonical !== undefined) {
-            link.setAttribute('href', previousCanonical);
-          } else {
-            document.head.removeChild(link);
-          }
-        }
+      // Always restore previous canonical (since we always set one now)
+      const link = document.querySelector<HTMLLinkElement>(CANONICAL_SELECTOR);
+      if (link && previousCanonical !== undefined) {
+        link.setAttribute('href', previousCanonical);
       }
       if (robots) {
         const meta = document.querySelector<HTMLMetaElement>(ROBOTS_SELECTOR);

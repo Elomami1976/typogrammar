@@ -11,8 +11,8 @@ const HomePage: React.FC = () => {
   const { t } = useLanguage();
   
   usePageMetadata({
-    title: 'TypoGrammar: Master English Grammar, Verb Tenses & Writing Skills | Free Learning Hub',
-    description: 'Learn English grammar online for free. Master verb tenses, sentence structure, punctuation rules, and writing skills with clear explanations, examples, and quizzes. Perfect for ESL/EFL students, professionals, and native speakers.',
+    title: 'TypoGrammar: Free English Grammar, IELTS & TOEFL Prep, AI Writing Tools',
+    description: 'Master English with free grammar lessons, IELTS & TOEFL test preparation, AI writing tools (grammar checker, paraphraser), vocabulary building, idioms, phrasal verbs, and interactive quizzes. Perfect for ESL students and professionals.',
     canonical: 'https://typogrammar.com/'
   });
 
@@ -54,41 +54,19 @@ const HomePage: React.FC = () => {
         </p>
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center flex-wrap">
           <Link 
-            to="/getting-started" 
-            className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-bold text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors duration-200 shadow-lg hover:shadow-xl dark:bg-blue-500 dark:hover:bg-blue-600"
+            to="/ai-writing-tools" 
+            className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-bold text-white bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105 transform dark:from-blue-500 dark:to-blue-600 dark:hover:from-blue-600 dark:hover:to-blue-700 ring-2 ring-blue-200 dark:ring-blue-900/50"
           >
-            {t.startLearningNow}
+            <svg className="mr-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l-.8.2a16.008 16.008 0 01-7.997 0l-.8-.2M12 15v6m-3-3h6" />
+            </svg>
+            Try Free AI Writing Tools
             <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
           </Link>
-          <Link 
-            to="/grammar-guide" 
-            className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-bold text-blue-600 bg-white border-2 border-blue-600 rounded-lg hover:bg-blue-50 transition-colors duration-200 dark:bg-slate-800 dark:text-blue-400 dark:border-blue-400 dark:hover:bg-slate-700"
-          >
-            {t.browseAllTopics}
-          </Link>
-          <Link 
-            to="/quizzes/verb-tenses-quiz" 
-            className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-bold text-white bg-purple-600 rounded-lg hover:bg-purple-700 transition-colors duration-200 shadow-lg hover:shadow-xl dark:bg-purple-500 dark:hover:bg-purple-600"
-          >
-            📝 Take Verb Tenses Quiz
-            <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-          </Link>
-          <a
-            href="https://kwakwa.com/course/oym21n2s?utm_source=chatgpt.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-bold text-white bg-green-600 rounded-lg hover:bg-green-700 transition-colors duration-200 shadow-lg hover:shadow-xl dark:bg-green-500 dark:hover:bg-green-600"
-          >
-            🌟 IELTS Online Course
-            <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-          </a>
         </div>
+        <p className="text-sm text-slate-500 dark:text-slate-400 mt-3">✨ Powered by AI — Free & Instant</p>
       </div>
 
       <div className="max-w-4xl mx-auto mt-8 sm:mt-12 bg-white p-4 sm:p-6 md:p-8 lg:p-10 rounded-xl shadow-lg shadow-slate-200/50 border border-slate-200 dark:bg-slate-900 dark:border-slate-700 dark:shadow-slate-900/50">
@@ -180,6 +158,39 @@ const HomePage: React.FC = () => {
               allowFullScreen
               loading="lazy"
             ></iframe>
+          </div>
+        </div>
+      </div>
+
+      {/* Action Buttons Section */}
+      <div className="max-w-4xl mx-auto mt-6 sm:mt-8">
+        <div className="bg-white p-4 sm:p-6 md:p-8 rounded-xl shadow-lg border border-slate-200 dark:bg-slate-900 dark:border-slate-700">
+          <h3 className="font-heading text-xl sm:text-2xl font-bold text-slate-900 mb-4 text-center dark:text-white">Ready to Improve Your English?</h3>
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center flex-wrap">
+            <Link 
+              to="/getting-started" 
+              className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-bold text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors duration-200 shadow-lg hover:shadow-xl dark:bg-blue-500 dark:hover:bg-blue-600"
+            >
+              {t.startLearningNow}
+              <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </Link>
+            <Link 
+              to="/grammar-guide" 
+              className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-bold text-blue-600 bg-white border-2 border-blue-600 rounded-lg hover:bg-blue-50 transition-colors duration-200 dark:bg-slate-800 dark:text-blue-400 dark:border-blue-400 dark:hover:bg-slate-700"
+            >
+              {t.browseAllTopics}
+            </Link>
+            <Link 
+              to="/quizzes/verb-tenses-quiz" 
+              className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-bold text-white bg-purple-600 rounded-lg hover:bg-purple-700 transition-colors duration-200 shadow-lg hover:shadow-xl dark:bg-purple-500 dark:hover:bg-purple-600"
+            >
+              📝 Take Verb Tenses Quiz
+              <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </Link>
           </div>
         </div>
       </div>

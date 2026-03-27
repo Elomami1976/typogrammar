@@ -17,13 +17,17 @@ const BlogPostPage: React.FC = () => {
   const previousPost = postIndex > 0 ? BLOG_POSTS[postIndex - 1] : null;
   const nextPost = postIndex < BLOG_POSTS.length - 1 ? BLOG_POSTS[postIndex + 1] : null;
 
-  // Use custom meta title and description for the TOEFL Practice Online post
+  // Use custom meta title and description for specific posts
   const metaTitle = post?.slug === 'how-to-use-official-toefl-practice-online' 
     ? 'How to Use Official TOEFL Practice Online (ETS) to Boost Your Score'
+    : post?.slug === '15-most-common-toefl-ibt-mistakes-with-examples'
+    ? '15 Most Common TOEFL iBT Mistakes (With Examples & Fixes)'
     : post ? `${post.title} | TypoGrammar Blog` : 'Blog Post | TypoGrammar';
   
   const metaDescription = post?.slug === 'how-to-use-official-toefl-practice-online'
     ? 'Learn how to use official TOEFL Practice Online from ETS correctly. Avoid common mistakes, analyze results properly, and improve your TOEFL iBT score faster.'
+    : post?.slug === '15-most-common-toefl-ibt-mistakes-with-examples'
+    ? 'Avoid these 15 common TOEFL iBT mistakes that lower your score. See real examples, explanations, and simple fixes to improve fast.'
     : post ? post.summary : 'Read articles on grammar, writing, and the quirks of the English language.';
 
   usePageMetadata({
@@ -115,7 +119,7 @@ const BlogPostPage: React.FC = () => {
         <BlogImage
           slug={post.slug}
           fallbackUrl={post.image}
-          alt={post.title}
+          alt={post.imageAlt ?? post.title}
           className="w-full h-auto object-cover"
           loading="lazy"
         />

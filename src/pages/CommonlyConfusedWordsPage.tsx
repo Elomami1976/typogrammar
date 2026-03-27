@@ -6,13 +6,14 @@ import { InlineCode } from '../components/ArticleComponents';
 import PronunciationFetcher from '../components/PronunciationFetcher';
 import GoogleAd from '../components/GoogleAd';
 import usePageMetadata from '../hooks/usePageMetadata';
+import { Link } from 'react-router-dom';
 
 const CommonlyConfusedWordsPage: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
   usePageMetadata({
-    title: 'Commonly Confused Words in English | TypoGrammar',
-    description: 'A complete guide to words that look or sound alike but have different meanings, such as affect/effect and their/there/they\'re. Includes quick tips and examples.'
+    title: '100+ Commonly Confused Words in English (With Examples) | TypoGrammar',
+    description: 'Master the most commonly confused words in English: affect vs effect, their vs there, then vs than, and more. Clear definitions, examples, pronunciation, and tips.'
   });
 
   const filteredWords = useMemo(() => {
@@ -30,15 +31,26 @@ const CommonlyConfusedWordsPage: React.FC = () => {
   return (
     <article className="max-w-7xl mx-auto bg-white p-8 md:p-12 rounded-xl shadow-lg shadow-slate-200/50 border border-slate-200 dark:bg-slate-800/50 dark:border-slate-700 dark:shadow-slate-900/50">
       <div className="text-center mb-12">
-        <h1 className="font-heading text-5xl font-extrabold text-slate-900 mb-4 tracking-tight dark:text-slate-100">Commonly Confused Words</h1>
+        <h1 className="font-heading text-5xl font-extrabold text-slate-900 mb-4 tracking-tight dark:text-slate-100">Commonly Confused Words in English</h1>
         <p className="font-body text-xl text-slate-600 max-w-3xl mx-auto dark:text-slate-400">
-          A guide to words that look or sound alike but have different meanings. Use the search to find a specific pair.
+          A complete reference of <strong>100+ English word pairs</strong> that look or sound alike but have different meanings — including affect/effect, their/there/they're, then/than, and more.
+        </p>
+      </div>
+
+      {/* Quick Summary for AI/GEO */}
+      <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6 mb-8 rounded-r-lg">
+        <h2 className="font-semibold text-lg mb-2 text-slate-900 dark:text-slate-100">Quick Summary</h2>
+        <p className="text-slate-700 dark:text-slate-300">
+          Commonly confused words are English word pairs that are similar in spelling, pronunciation, or meaning but have different uses. Examples include <strong>affect vs effect</strong> (verb vs noun), <strong>their vs there vs they're</strong> (possessive vs place vs contraction), and <strong>then vs than</strong> (time vs comparison). This guide covers each pair with definitions, examples, and quick tips.
         </p>
       </div>
 
       <div className="mb-10 sticky top-[80px] z-10 bg-white/80 backdrop-blur-sm py-4 dark:bg-slate-800/80">
         <input
+          id="confused-words-search"
+          name="confused-words-search"
           type="search"
+          autoComplete="off"
           placeholder="Search for a word (e.g., affect, their, then)..."
           className="w-full max-w-2xl mx-auto block px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 font-body text-lg transition-shadow duration-200 shadow-sm dark:bg-slate-700 dark:border-slate-600 dark:text-slate-200 dark:focus:ring-blue-500 dark:placeholder-slate-400"
           value={searchTerm}
@@ -107,6 +119,51 @@ const CommonlyConfusedWordsPage: React.FC = () => {
       </div>
       </>
       )}
+
+      {/* Deep-Dive Topics Section */}
+      <div className="mt-12 mb-8">
+        <h2 className="font-heading text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4">Deep-Dive Guides</h2>
+        <p className="text-slate-600 dark:text-slate-400 mb-6">Want a more detailed explanation? Explore our in-depth lessons on the most commonly confused pairs:</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {[
+            { to: '/topics/affect-vs-effect', label: 'Affect vs Effect' },
+            { to: '/topics/its-vs-its', label: "It's vs Its" },
+            { to: '/topics/lay-vs-lie', label: 'Lay vs Lie' },
+            { to: '/topics/make-vs-do', label: 'Make vs Do' },
+            { to: '/topics/few-little-less-fewer', label: 'Few vs Little, Less vs Fewer' },
+            { to: '/topics/used-to-vs-would', label: 'Used To vs Would' },
+            { to: '/topics/wish-vs-hope', label: 'Wish vs Hope' },
+          ].map((item) => (
+            <Link key={item.to} to={item.to} className="block p-4 bg-slate-50 dark:bg-slate-700/50 border border-slate-200 dark:border-slate-600 rounded-lg hover:bg-blue-50 hover:border-blue-300 dark:hover:bg-slate-700 dark:hover:border-blue-500 transition-colors">
+              <span className="font-semibold text-blue-600 dark:text-blue-400">{item.label}</span>
+              <span className="text-slate-400 ml-2">&rarr;</span>
+            </Link>
+          ))}
+        </div>
+      </div>
+
+      {/* FAQ Section for SEO/GEO */}
+      <div className="mt-8 mb-8">
+        <h2 className="font-heading text-2xl font-bold text-slate-900 dark:text-slate-100 mb-6">Frequently Asked Questions</h2>
+        <div className="space-y-4">
+          <div className="bg-slate-50 dark:bg-slate-700/50 p-6 rounded-lg">
+            <h3 className="font-semibold text-lg text-slate-900 dark:text-slate-100 mb-2">What are commonly confused words?</h3>
+            <p className="text-slate-700 dark:text-slate-300">Commonly confused words are English word pairs (or groups) that are similar in spelling, pronunciation, or meaning but have different definitions and uses. Examples include affect/effect, their/there/they're, and accept/except.</p>
+          </div>
+          <div className="bg-slate-50 dark:bg-slate-700/50 p-6 rounded-lg">
+            <h3 className="font-semibold text-lg text-slate-900 dark:text-slate-100 mb-2">What is the most commonly confused word pair in English?</h3>
+            <p className="text-slate-700 dark:text-slate-300"><strong>Their, there, and they're</strong> is one of the most commonly confused sets. "Their" is possessive, "there" refers to a place, and "they're" is a contraction of "they are."</p>
+          </div>
+          <div className="bg-slate-50 dark:bg-slate-700/50 p-6 rounded-lg">
+            <h3 className="font-semibold text-lg text-slate-900 dark:text-slate-100 mb-2">How can I stop confusing similar English words?</h3>
+            <p className="text-slate-700 dark:text-slate-300">Learn the specific rule or memory trick for each pair, practice with examples, and use context clues. Reading widely and writing regularly also help reinforce correct usage over time.</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-8">
+        <GoogleAd adSlot="6406598038" />
+      </div>
     </article>
   );
 };

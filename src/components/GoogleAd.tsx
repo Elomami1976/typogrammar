@@ -14,9 +14,9 @@ const GoogleAd: React.FC<Props> = ({ adSlot, style, format = 'auto', fullWidthRe
   const location = useLocation()
 
   useEffect(() => {
-    // Delay ad loading to prioritize main content
+    // Delay ad loading significantly to prioritize main content and LCP
     const timer = setTimeout(() => {
-      if (adRef.current) {
+      if (adRef.current && typeof (window as any).adsbygoogle !== 'undefined') {
         try {
           // Check if this element already has an ad initialized
           const hasAdStatus = adRef.current.getAttribute('data-ad-status')
@@ -30,7 +30,7 @@ const GoogleAd: React.FC<Props> = ({ adSlot, style, format = 'auto', fullWidthRe
           // Silently handle AdSense errors (they're usually non-critical)
         }
       }
-    }, 1500) // Increased delay to improve initial page load
+    }, 7000) // Wait 7s for lazy-loaded AdSense script (after LCP)
 
     return () => clearTimeout(timer)
   }, [location.pathname]) // Re-run when route changes

@@ -4,7 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="google-adsense-account" content="ca-pub-4709657806016589">
-    <title>TypoGrammar - Learn English the Smart Way</title>
+    
+    <!-- SEO Meta Tags - Updated dynamically by React -->
+    <meta name="description" content="Master English grammar with free lessons, IELTS & TOEFL prep, vocabulary, quizzes, and AI writing tools. Start free.">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://typogrammar.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://typogrammar.com/">
+    <meta property="og:title" content="TypoGrammar – Free English Grammar, IELTS & TOEFL Prep">
+    <meta property="og:description" content="Master English grammar with free lessons, IELTS & TOEFL prep, vocabulary, quizzes, and AI writing tools. Start free.">
+    <meta property="og:image" content="https://typogrammar.com/og-default.png">
+    <meta property="og:site_name" content="TypoGrammar">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TypoGrammar – Free English Grammar, IELTS & TOEFL Prep">
+    <meta name="twitter:description" content="Master English grammar with free lessons, IELTS & TOEFL prep, vocabulary, quizzes, and AI writing tools. Start free.">
+    <meta name="twitter:image" content="https://typogrammar.com/og-default.png">
+    
+    <!-- Google AdSense loaded lazily after page interaction - see end of body -->
+    
+    <title>TypoGrammar – Free English Grammar, IELTS & TOEFL Prep</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/FAVICON.svg">
@@ -12,9 +35,9 @@
     <!-- Preconnect to external domains for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.youtube.com" crossorigin>
     <link rel="dns-prefetch" href="https://cdn.jotfor.ms">
     <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
-    <link rel="dns-prefetch" href="https://www.youtube.com">
 
     <!-- Print Styles -->
     <style>
@@ -122,42 +145,27 @@
       }
     </style>
 
-    <!-- Preconnect to critical domains for faster DNS resolution -->
-    <link rel="preconnect" href="https://www.googletagmanager.com">
-    <link rel="preconnect" href="https://pagead2.googlesyndication.com">
-    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <!-- Preconnect to critical domains - only fonts needed early -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <!-- Google Analytics - Delayed load to improve performance -->
+    <!-- Google Analytics - Load after 5 seconds to not block LCP -->
     <script>
-      // Defer Google Analytics until after page load
-      window.addEventListener('load', function() {
-        setTimeout(function() {
-          var script = document.createElement('script');
-          script.async = true;
-          script.src = 'https://www.googletagmanager.com/gtag/js?id=G-58SFTXGWLV';
-          document.head.appendChild(script);
-          
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-58SFTXGWLV');
-        }, 1000);
-      });
+      // Defer Google Analytics significantly
+      setTimeout(function() {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-58SFTXGWLV';
+        document.head.appendChild(script);
+        
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-58SFTXGWLV');
+      }, 5000);
     </script>
     
-    <!-- Google AdSense - Delayed load to improve performance -->
-    <script>
-      // Defer AdSense until after initial page interaction
-      window.addEventListener('load', function() {
-        setTimeout(function() {
-          var script = document.createElement('script');
-          script.async = true;
-          script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4709657806016589';
-          script.crossOrigin = 'anonymous';
-          document.head.appendChild(script);
-        }, 2000);
-      });
-    </script>
+    <!-- Google AdSense script is loaded in head section -->
     
     <!-- Structured Data (Schema.org JSON-LD) - Enhanced Educational Schema -->
     <script type="application/ld+json">
@@ -239,13 +247,6 @@
             "priceCurrency": "USD",
             "availability": "https://schema.org/InStock"
           },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "ratingCount": "1250",
-            "bestRating": "5",
-            "worstRating": "1"
-          },
           "featureList": [
             "Interactive Grammar Lessons",
             "Verb Tense Visualizer",
@@ -292,222 +293,29 @@
     }
     </script>
     
-    <!-- SEO & Metadata -->
-    <meta name="description" content="Master English grammar interactively with TypoGrammar - your elegant learning hub built with AI." />
-    <meta name="keywords" content="English grammar, learn English, grammar rules, ESL, EFL, writing skills, verb tenses, punctuation, English learning, irregular verbs, phrasal verbs" />
-    <link rel="canonical" href="https://typogrammar.com/" />
-    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://typogrammar.com/" />
-    <meta property="og:title" content="TypoGrammar - Learn English the Smart Way" />
-    <meta property="og:description" content="Master English grammar interactively with TypoGrammar - your elegant learning hub built with AI." />
-    <meta property="og:image" content="https://typogrammar.com/og-image.png" />
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://typogrammar.com/" />
-    <meta property="twitter:title" content="TypoGrammar - Learn English the Smart Way" />
-    <meta property="twitter:description" content="Master English grammar interactively with TypoGrammar - your elegant learning hub built with AI." />
-    <meta property="twitter:image" content="https://typogrammar.com/og-image.png" />
-
-    <!-- Use system fonts for better performance - optional Google Fonts for enhanced typography -->
+    <!-- Critical inline styles -->
     <style>
-      /* System font stack for instant load */
       :root {
-        --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
-        --font-heading: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+        --font-body: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        --font-heading: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       }
-      body {
-        font-family: var(--font-body);
-      }
+      html { background-color: #f1f5f9; }
+      html.dark { background-color: #0f172a; }
+      body { margin: 0; padding: 0; font-family: var(--font-body); }
+      #root:empty::before { content: ''; display: block; width: 100%; height: 100vh; background: #f1f5f9; }
+      html.dark #root:empty::before { background: #0f172a; }
     </style>
-    <!-- Optimized font loading with font-display swap -->
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Lato:wght@400;700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Lato:wght@400;700;900&display=swap" rel="stylesheet"></noscript>
-    <!-- Font and animation styles moved to index.css -->
+    
+    <!-- Theme detection -->
     <script>
-      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
       if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         document.documentElement.classList.add('dark')
-      } else {
-        document.documentElement.classList.remove('dark')
       }
     </script>
-    <style>
-      /* Critical inline styles - prevent FOUC */
-      html {
-        background-color: #f1f5f9;
-      }
-      
-      html.dark {
-        background-color: #0f172a;
-      }
-      
-      /* Hide everything until loaded */
-      body {
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-      }
-      
-      body.app-ready {
-        overflow: auto;
-      }
-      
-      /* Fullscreen loader - shows immediately */
-      #initial-loader {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #f1f5f9;
-        z-index: 99999;
-        transition: opacity 0.4s ease-out, visibility 0.4s ease-out;
-      }
-      
-      html.dark #initial-loader {
-        background-color: #0f172a;
-      }
-      
-      #initial-loader.hidden {
-        opacity: 0;
-        visibility: hidden;
-      }
-      
-      /* Animated logo */
-      .init-logo {
-        text-align: center;
-        animation: fadeInUp 0.6s ease-out;
-      }
-      
-      .init-logo h1 {
-        font-family: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
-        font-size: 2.5rem;
-        font-weight: 800;
-        margin: 0;
-        color: #1e293b;
-        letter-spacing: -0.02em;
-      }
-      
-      html.dark .init-logo h1 {
-        color: #e2e8f0;
-      }
-      
-      .init-logo .grammar-text {
-        color: #2563eb;
-      }
-      
-      html.dark .init-logo .grammar-text {
-        color: #3b82f6;
-      }
-      
-      .init-logo p {
-        font-family: 'Merriweather', Georgia, serif;
-        font-size: 0.875rem;
-        color: #64748b;
-        margin-top: 0.5rem;
-        margin-bottom: 1.5rem;
-      }
-      
-      html.dark .init-logo p {
-        color: #94a3b8;
-      }
-      
-      /* Spinner animation */
-      .init-spinner {
-        width: 40px;
-        height: 40px;
-        margin: 0 auto;
-        border: 3px solid #e2e8f0;
-        border-top-color: #2563eb;
-        border-radius: 50%;
-        animation: spin 0.8s linear infinite;
-      }
-      
-      html.dark .init-spinner {
-        border-color: #1e293b;
-        border-top-color: #3b82f6;
-      }
-      
-      @keyframes spin {
-        to { transform: rotate(360deg); }
-      }
-      
-      @keyframes fadeInUp {
-        from {
-          opacity: 0;
-          transform: translateY(20px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-      
-      /* Hide root until ready */
-      #root {
-        opacity: 0;
-        transition: opacity 0.3s ease-in;
-      }
-      
-      #root.ready {
-        opacity: 1;
-      }
-    </style>
   </head>
   <body>
-    <!-- Immediate fullscreen loader -->
-    <div id="initial-loader">
-      <div class="init-logo">
-        <h1>Typo<span class="grammar-text">Grammar</span></h1>
-        <p>From Confused to Confident in English</p>
-        <div class="init-spinner"></div>
-      </div>
-    </div>
-    
     <div id="root"></div>
     <script type="module" src="/src/index.tsx"></script>
-    
-    <!-- Hide loader when app is ready -->
-    <script>
-      // Wait for React to render before hiding loader
-      var checkReady = setInterval(function() {
-        var root = document.getElementById('root');
-        if (root && root.children.length > 0) {
-          clearInterval(checkReady);
-          var loader = document.getElementById('initial-loader');
-          
-          // Show the root element
-          root.classList.add('ready');
-          document.body.classList.add('app-ready');
-          
-          // Hide the loader
-          if (loader) {
-            loader.classList.add('hidden');
-          }
-        }
-      }, 50);
-      
-      // Fallback: force hide after 3 seconds
-      setTimeout(function() {
-        clearInterval(checkReady);
-        var root = document.getElementById('root');
-        var loader = document.getElementById('initial-loader');
-        
-        root.classList.add('ready');
-        document.body.classList.add('app-ready');
-        
-        if (loader) {
-          loader.classList.add('hidden');
-        }
-      }, 3000);
-    </script>
 
     <!-- Service Worker Registration - Only for production -->
     <script>
@@ -546,7 +354,47 @@
       window.addEventListener('scroll', loadChatbot, { once: true, passive: true });
       window.addEventListener('click', loadChatbot, { once: true });
       window.addEventListener('touchstart', loadChatbot, { once: true, passive: true });
-      setTimeout(loadChatbot, 3000);
+      setTimeout(loadChatbot, 12000);
+    </script>
+    
+    <!-- Google Fonts - Load after user interaction for better FCP/LCP -->
+    <script>
+      var fontsLoaded = false;
+      function loadFonts() {
+        if (fontsLoaded) return;
+        fontsLoaded = true;
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap';
+        document.head.appendChild(link);
+        document.fonts.ready.then(function() {
+          document.documentElement.style.setProperty('--font-body', "'Inter', system-ui, sans-serif");
+          document.documentElement.style.setProperty('--font-heading', "'Poppins', system-ui, sans-serif");
+        });
+      }
+      window.addEventListener('scroll', loadFonts, { once: true, passive: true });
+      window.addEventListener('click', loadFonts, { once: true });
+      setTimeout(loadFonts, 3000);
+    </script>
+    
+    <!-- Google AdSense - Lazy loaded for better performance -->
+    <script>
+      var adsenseLoaded = false;
+      function loadAdsense() {
+        if (!adsenseLoaded) {
+          adsenseLoaded = true;
+          var script = document.createElement('script');
+          script.async = true;
+          script.crossOrigin = 'anonymous';
+          script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4709657806016589';
+          document.head.appendChild(script);
+        }
+      }
+      // Load AdSense after user interaction or 6 second delay (after LCP)
+      window.addEventListener('scroll', loadAdsense, { once: true, passive: true });
+      window.addEventListener('click', loadAdsense, { once: true });
+      window.addEventListener('touchstart', loadAdsense, { once: true, passive: true });
+      setTimeout(loadAdsense, 6000);
     </script>
   </body>
 </html>

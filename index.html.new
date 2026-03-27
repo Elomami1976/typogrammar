@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-adsense-account" content="ca-pub-4709657806016589">
+    
+    <!-- SEO Meta Tags - Updated dynamically by React -->
+    <meta name="description" content="Learn academic English for IELTS and TOEFL with clear lessons, vocabulary tables, and practical examples.">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="keywords" content="English grammar, learn English, grammar rules, ESL, EFL, writing skills, verb tenses, punctuation, English learning, irregular verbs, phrasal verbs" />
+    <link rel="canonical" href="https://typogrammar.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://typogrammar.com/">
+    <meta property="og:title" content="TypoGrammar - Learn English the Smart Way">
+    <meta property="og:description" content="Learn academic English for IELTS and TOEFL with clear lessons, vocabulary tables, and practical examples.">
+    <meta property="og:image" content="https://typogrammar.com/og-default.png">
+    <meta property="og:site_name" content="TypoGrammar">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TypoGrammar - Learn English the Smart Way">
+    <meta name="twitter:description" content="Learn academic English for IELTS and TOEFL with clear lessons, vocabulary tables, and practical examples.">
+    <meta name="twitter:image" content="https://typogrammar.com/og-default.png">
+    
+    <title>TypoGrammar - Learn English the Smart Way</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/FAVICON.svg">
+
+    <!-- Critical CSS - Inline for instant render -->
+    <style>
+      /* System font stack - no external fonts needed for FCP */
+      :root {
+        --font-body: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        --font-heading: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      }
+      
+      html { background-color: #f1f5f9; }
+      html.dark { background-color: #0f172a; }
+      
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: var(--font-body);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      
+      /* Minimal loading state */
+      #root:empty::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+      }
+      
+      html.dark #root:empty::before {
+        background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      }
+      
+      /* Print Styles */
+      @media print {
+        header, nav, aside, .print\\:hidden, button, .ad-container, footer, iframe { display: none !important; }
+        body { font-size: 12pt; line-height: 1.6; color: #000; background: #fff; max-width: 100%; margin: 0; padding: 20px; }
+        *, *::before, *::after { box-shadow: none !important; background: transparent !important; border-color: #000 !important; }
+        article { max-width: 100%; padding: 0; margin: 0; }
+        h1 { font-size: 24pt; margin: 0 0 12pt; page-break-after: avoid; }
+        h2, h3 { font-size: 18pt; margin: 18pt 0 6pt; page-break-after: avoid; }
+        p, li { margin: 0 0 6pt; orphans: 3; widows: 3; }
+        pre, code { background: #f5f5f5 !important; border: 1px solid #ddd !important; }
+        a { color: #000; text-decoration: underline; }
+        a[href]:after { content: none; }
+      }
+    </style>
+    
+    <!-- Theme detection - prevent FOUC -->
+    <script>
+      if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+      }
+    </script>
+    
+    <!-- Structured Data (Schema.org JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "EducationalOrganization",
+          "@id": "https://typogrammar.com/#organization",
+          "name": "TypoGrammar",
+          "url": "https://typogrammar.com",
+          "logo": {"@type": "ImageObject", "url": "https://typogrammar.com/assets/favicon.svg"},
+          "description": "Free comprehensive English grammar learning platform offering interactive lessons, quizzes, and resources for mastering grammar, writing skills, and vocabulary.",
+          "sameAs": ["https://www.youtube.com/@TypoGrammar"]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://typogrammar.com/#website",
+          "url": "https://typogrammar.com",
+          "name": "TypoGrammar",
+          "publisher": {"@id": "https://typogrammar.com/#organization"},
+          "potentialAction": {"@type": "SearchAction", "target": "https://typogrammar.com/search?q={search_term_string}", "query-input": "required name=search_term_string"},
+          "inLanguage": "en"
+        },
+        {
+          "@type": "WebApplication",
+          "name": "TypoGrammar Learning Platform",
+          "url": "https://typogrammar.com",
+          "applicationCategory": "EducationalApplication",
+          "operatingSystem": "Any",
+          "inLanguage": "en",
+          "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+          "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.8", "ratingCount": "1250", "bestRating": "5", "worstRating": "1"}
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script>
+    
+    <!-- Load non-critical resources after page is interactive -->
+    <script>
+      // Performance: Defer all third-party scripts until after LCP
+      var thirdPartyLoaded = false;
+      
+      function loadThirdParty() {
+        if (thirdPartyLoaded) return;
+        thirdPartyLoaded = true;
+        
+        // Load Google Fonts (Inter + Poppins) - non-blocking
+        var fontLink = document.createElement('link');
+        fontLink.rel = 'stylesheet';
+        fontLink.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap';
+        document.head.appendChild(fontLink);
+        
+        // Update CSS custom properties when fonts load
+        document.fonts.ready.then(function() {
+          document.documentElement.style.setProperty('--font-body', "'Inter', system-ui, -apple-system, sans-serif");
+          document.documentElement.style.setProperty('--font-heading', "'Poppins', system-ui, -apple-system, sans-serif");
+        });
+      }
+      
+      function loadAnalytics() {
+        // Google Analytics - load after 5 seconds
+        var gaScript = document.createElement('script');
+        gaScript.async = true;
+        gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-58SFTXGWLV';
+        document.head.appendChild(gaScript);
+        
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-58SFTXGWLV');
+      }
+      
+      function loadAdsense() {
+        var adsScript = document.createElement('script');
+        adsScript.async = true;
+        adsScript.crossOrigin = 'anonymous';
+        adsScript.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4709657806016589';
+        document.head.appendChild(adsScript);
+      }
+      
+      function loadChatbot() {
+        var chatScript = document.createElement('script');
+        chatScript.src = 'https://cdn.jotfor.ms/agent/embedjs/019b0ee2e6267947a640a8d120b244782b58/embed.js';
+        document.body.appendChild(chatScript);
+      }
+      
+      // Schedule loading: Fonts first (2s), then analytics (5s), then ads (6s), then chatbot (10s)
+      setTimeout(loadThirdParty, 2000);
+      setTimeout(loadAnalytics, 5000);
+      setTimeout(loadAdsense, 6000);
+      setTimeout(loadChatbot, 10000);
+      
+      // Also load on user interaction (whichever comes first)
+      var interacted = false;
+      function onInteraction() {
+        if (interacted) return;
+        interacted = true;
+        loadThirdParty();
+        setTimeout(loadAnalytics, 1000);
+        setTimeout(loadAdsense, 2000);
+      }
+      
+      window.addEventListener('scroll', onInteraction, { once: true, passive: true });
+      window.addEventListener('click', onInteraction, { once: true });
+      window.addEventListener('touchstart', onInteraction, { once: true, passive: true });
+      window.addEventListener('keydown', onInteraction, { once: true });
+    </script>
+
+    <!-- Service Worker Registration - Production only -->
+    <script>
+      if ('serviceWorker' in navigator && location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js').catch(function() {});
+        });
+      }
+    </script>
+  </body>
+</html>

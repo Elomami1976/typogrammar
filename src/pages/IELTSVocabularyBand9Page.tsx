@@ -76,9 +76,17 @@ const quizQuestions: QuizQuestion[] = [
 ];
 
 const IELTSVocabularyBand9Page: React.FC = () => {
+  const pageUrl = 'https://typogrammar.com/ielts/vocabulary/band-9';
+  const lastUpdated = '2026-02-25';
+  const datePublished = '2025-06-15';
+  
   usePageMetadata({
-    title: 'IELTS Vocabulary Band 9: High-Level Words, Examples & Examiner-Style Quiz | TypoGrammar',
-    description: 'Learn 25 sophisticated IELTS Band 9 vocabulary words with precise meanings, academic examples, common errors, and a quiz for top scorers.',
+    title: 'IELTS Band 9 Vocabulary List 2026: 25 Sophisticated Academic Words for Top Scores | Typogrammar',
+    description: 'Free IELTS Band 9 vocabulary list with sophisticated academic words, precise meanings, and expert usage tips. Achieve 9.0 in Lexical Resource with nuanced, examiner-level vocabulary.',
+    ogTitle: 'IELTS Band 9 Vocabulary List 2026: Sophisticated Words for Top Scores',
+    ogDescription: 'Master 25 Band 9 IELTS words showing complete control, nuance, and appropriateness. Learn sophisticated vocabulary used sparingly and precisely for maximum impact.',
+    ogType: 'article',
+    ogUrl: pageUrl,
   });
 
   const { t } = useLanguage();
@@ -128,7 +136,73 @@ const IELTSVocabularyBand9Page: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-slate-900 dark:to-slate-800 py-12 px-4">
+      {/* GEO Meta Tags */}
+      <meta name="geo.region" content="Global" />
+      <meta name="language" content="English" />
+      
+      {/* Article Schema */}
+      <SchemaMarkup
+        type="Article"
+        data={{
+          headline: 'IELTS Band 9 Vocabulary List 2026: 25 Sophisticated Academic Words for Top Scores',
+          description: 'Free IELTS Band 9 vocabulary list with sophisticated academic words, precise meanings, and expert usage tips. Achieve 9.0 in Lexical Resource with nuanced, examiner-level vocabulary.',
+          author: {
+            '@type': 'Organization',
+            name: 'Typogrammar',
+            url: 'https://typogrammar.com/about'
+          },
+          publisher: {
+            '@type': 'Organization',
+            name: 'Typogrammar',
+            url: 'https://typogrammar.com'
+          },
+          datePublished: datePublished,
+          dateModified: lastUpdated,
+          mainEntityOfPage: pageUrl
+        }}
+      />
+      
       <div className="max-w-6xl mx-auto">
+        {/* Featured Snippet Box - Quick Answer */}
+        <div className="bg-gradient-to-r from-emerald-100 to-teal-100 dark:from-slate-700 dark:to-slate-600 border-l-4 border-emerald-600 p-6 rounded-lg mb-8 shadow-md">
+          <h2 className="text-lg font-bold text-slate-900 dark:text-white mb-2">What is IELTS Band 9 Vocabulary?</h2>
+          <p className="text-slate-800 dark:text-slate-200 leading-relaxed mb-4">
+            <strong>Band 9 vocabulary</strong> demonstrates complete control, sophisticated nuance, and perfect appropriateness in formal academic contexts. These words are used sparingly and precisely—quality over quantity—showing examiner-level mastery.
+          </p>
+          <div className="bg-white/50 dark:bg-slate-800/50 p-4 rounded-lg">
+            <h3 className="font-semibold text-slate-900 dark:text-white mb-2">Quick Answer: What does Band 9 Lexical Resource require?</h3>
+            <p className="text-slate-700 dark:text-slate-300">Band 9 requires "full flexibility" and "precision" with "very natural and sophisticated control." You need virtually <strong>no errors</strong> in vocabulary use, with every word choice feeling natural and appropriate to context.</p>
+          </div>
+        </div>
+
+        {/* Long-tail Keyword Section: Band 9 Truth */}
+        <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-6 mb-8">
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">The Truth About Band 9 Vocabulary</h2>
+          <div className="space-y-4 text-slate-700 dark:text-slate-300">
+            <div className="flex items-start gap-3 p-4 bg-emerald-50 dark:bg-slate-700 rounded-lg">
+              <span className="text-emerald-500 text-xl">🎯</span>
+              <div>
+                <h3 className="font-bold text-slate-900 dark:text-white">Band 9 is NOT about using complex words</h3>
+                <p>It's about using <strong>exactly the right word</strong> in every context. A simple word used perfectly scores higher than a complex word used awkwardly.</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-4 bg-emerald-50 dark:bg-slate-700 rounded-lg">
+              <span className="text-emerald-500 text-xl">🔮</span>
+              <div>
+                <h3 className="font-bold text-slate-900 dark:text-white">Less is more at Band 9</h3>
+                <p>Use 2-3 sophisticated words per essay, not 10. Band 9 candidates know when <strong>not</strong> to use advanced vocabulary.</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-4 bg-emerald-50 dark:bg-slate-700 rounded-lg">
+              <span className="text-emerald-500 text-xl">📚</span>
+              <div>
+                <h3 className="font-bold text-slate-900 dark:text-white">Native-speaker intuition</h3>
+                <p>Band 9 vocabulary sounds like it was written by an educated native speaker—natural, flowing, and without any vocabulary "showing off."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
         {/* Header */}
         <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-8 mb-8">
           <div className="flex items-center gap-3 mb-4">
@@ -136,8 +210,24 @@ const IELTSVocabularyBand9Page: React.FC = () => {
               BAND 9
             </div>
             <h1 className="text-4xl font-bold text-slate-900 dark:text-white">
-              IELTS Vocabulary – Band 9
+              IELTS Vocabulary Band 9 List (2026)
             </h1>
+          </div>
+          
+          {/* E-E-A-T Signals */}
+          <div className="flex flex-wrap items-center gap-4 text-sm text-slate-600 dark:text-slate-400 mb-6">
+            <span className="flex items-center gap-1">
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"/></svg>
+              By <Link to="/about" className="text-blue-600 dark:text-blue-400 hover:underline">Typogrammar Team</Link>
+            </span>
+            <span className="flex items-center gap-1">
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd"/></svg>
+              Updated: {lastUpdated}
+            </span>
+            <span className="flex items-center gap-1 text-green-600 dark:text-green-400">
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
+              Reviewed by IELTS Expert
+            </span>
           </div>
           
           <ArticleParagraph>
@@ -148,6 +238,13 @@ const IELTSVocabularyBand9Page: React.FC = () => {
           <ArticleParagraph>
             These words should be used <strong>carefully and sparingly</strong>.
           </ArticleParagraph>
+          
+          {/* GEO Optimization - International Traffic */}
+          <div className="mt-4 p-4 bg-slate-50 dark:bg-slate-700/50 rounded-lg">
+            <p className="text-slate-600 dark:text-slate-400 text-sm">
+              This IELTS vocabulary guide is designed for international test-takers preparing for IELTS exams in the UK, Canada, Australia, UAE, India, and other countries. We use neutral global English suitable for all IELTS regions.
+            </p>
+          </div>
         </div>
 
         {/* Table Context */}
@@ -369,6 +466,46 @@ const IELTSVocabularyBand9Page: React.FC = () => {
           </div>
         </div>
 
+        {/* Visible FAQ Section */}
+        <div className="mt-8 bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-8">
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+            <svg className="w-6 h-6 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            Frequently Asked Questions: IELTS Band 9 Vocabulary
+          </h2>
+          
+          <div className="space-y-6">
+            <div className="border-b border-slate-200 dark:border-slate-700 pb-6">
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">What is Band 9 vocabulary in IELTS?</h3>
+              <p className="text-slate-700 dark:text-slate-300">Band 9 vocabulary demonstrates sophisticated control, nuance, and appropriateness. Words like "exacerbate," "mitigate," "paradigm," and "nuanced" are used sparingly and precisely in formal academic contexts. Band 9 is about quality and natural usage, not complexity.</p>
+            </div>
+            
+            <div className="border-b border-slate-200 dark:border-slate-700 pb-6">
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">How many Band 9 words should I use in my IELTS essay?</h3>
+              <p className="text-slate-700 dark:text-slate-300">Use only 2-3 Band 9 words per IELTS essay. These sophisticated terms should feel natural and appropriate in context. Overusing them sounds forced and unnatural. Focus on precision—one perfectly placed Band 9 word demonstrates true mastery.</p>
+            </div>
+            
+            <div className="border-b border-slate-200 dark:border-slate-700 pb-6">
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">Do I need Band 9 vocabulary to get Band 9 in IELTS?</h3>
+              <p className="text-slate-700 dark:text-slate-300">Not necessarily. Band 9 requires flawless grammar, perfect coherence, full task achievement, and natural language use. You can achieve Band 9 with mostly Band 7-8 vocabulary used perfectly. Band 9 words are bonus points when used appropriately, not requirements.</p>
+            </div>
+            
+            <div className="border-b border-slate-200 dark:border-slate-700 pb-6">
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">What is the difference between Band 8 and Band 9 vocabulary?</h3>
+              <p className="text-slate-700 dark:text-slate-300">Band 8 shows "wide range" with "rare errors," while Band 9 shows "full flexibility" with "no noticeable errors." Band 9 vocabulary feels completely natural—as if written by an educated native speaker. The difference is subtle but involves perfect register awareness and absolute precision.</p>
+            </div>
+            
+            <div className="border-b border-slate-200 dark:border-slate-700 pb-6">
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">How can I learn Band 9 vocabulary naturally?</h3>
+              <p className="text-slate-700 dark:text-slate-300">Read extensively—academic journals, quality newspapers (The Economist, Guardian), and published essays. Note how sophisticated vocabulary is used sparingly. Practice writing and get native speaker feedback. Focus on learning when NOT to use advanced words as much as when to use them.</p>
+            </div>
+            
+            <div className="pb-2">
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">Is Band 9 vocabulary achievable for non-native speakers?</h3>
+              <p className="text-slate-700 dark:text-slate-300">Absolutely! Many non-native speakers achieve Band 9 through extensive reading, practice, and feedback. The key is developing an intuitive sense for natural vocabulary use—this comes from exposure to quality English, not memorizing word lists.</p>
+            </div>
+          </div>
+        </div>
+
         {/* FAQ Schema */}
         <SchemaMarkup
           type="FAQPage"
@@ -379,7 +516,7 @@ const IELTSVocabularyBand9Page: React.FC = () => {
                 name: 'What is Band 9 vocabulary in IELTS?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Band 9 vocabulary demonstrates sophisticated control, nuance, and appropriateness. Words like "exacerbate", "mitigate", "paradigm", and "nuanced" are used sparingly and precisely in formal academic contexts. Band 9 is about quality and natural usage, not complexity.'
+                  text: 'Band 9 vocabulary demonstrates sophisticated control, nuance, and appropriateness. Words like exacerbate, mitigate, paradigm, and nuanced are used sparingly and precisely in formal academic contexts. Band 9 is about quality and natural usage, not complexity.'
                 }
               },
               {
@@ -396,6 +533,30 @@ const IELTSVocabularyBand9Page: React.FC = () => {
                 acceptedAnswer: {
                   '@type': 'Answer',
                   text: 'Not necessarily. Band 9 requires flawless grammar, perfect coherence, full task achievement, and natural language use. You can achieve Band 9 with mostly Band 7-8 vocabulary used perfectly. Band 9 words are bonus points when used appropriately, not requirements.'
+                }
+              },
+              {
+                '@type': 'Question',
+                name: 'What is the difference between Band 8 and Band 9 vocabulary?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Band 8 shows wide range with rare errors, while Band 9 shows full flexibility with no noticeable errors. Band 9 vocabulary feels completely natural—as if written by an educated native speaker. The difference is subtle but involves perfect register awareness and absolute precision.'
+                }
+              },
+              {
+                '@type': 'Question',
+                name: 'How can I learn Band 9 vocabulary naturally?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Read extensively—academic journals, quality newspapers (The Economist, Guardian), and published essays. Note how sophisticated vocabulary is used sparingly. Practice writing and get native speaker feedback. Focus on learning when NOT to use advanced words as much as when to use them.'
+                }
+              },
+              {
+                '@type': 'Question',
+                name: 'Is Band 9 vocabulary achievable for non-native speakers?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Absolutely! Many non-native speakers achieve Band 9 through extensive reading, practice, and feedback. The key is developing an intuitive sense for natural vocabulary use—this comes from exposure to quality English, not memorizing word lists.'
                 }
               }
             ]

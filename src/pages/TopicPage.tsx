@@ -21,9 +21,81 @@ const TopicPage: React.FC = () => {
   const previousTopic = currentIndex > 0 ? GRAMMAR_TOPICS[currentIndex - 1] : null;
   const nextTopic = currentIndex < GRAMMAR_TOPICS.length - 1 ? GRAMMAR_TOPICS[currentIndex + 1] : null;
 
+  // Custom SEO meta for specific topics
+  const topicSeoMap: Record<string, { title: string; description: string }> = {
+    'make-vs-do': {
+      title: 'Make vs Do: Rules, Examples & Common Mistakes | TypoGrammar',
+      description: 'Learn the difference between make and do in English. Clear rules, common collocations, fixed expressions, and mistakes to avoid with examples.'
+    },
+    'few-little-less-fewer': {
+      title: 'Few vs Little, Less vs Fewer: Countable & Uncountable Rules | TypoGrammar',
+      description: 'Understand when to use few, little, less, and fewer in English. Master countable vs uncountable noun rules with examples and common mistakes.'
+    },
+    'affect-vs-effect': {
+      title: 'Affect vs Effect: Simple Rules to Never Confuse Them Again | TypoGrammar',
+      description: 'Learn the difference between affect and effect with the RAVEN rule, examples, common phrases, and mistakes to avoid. Affect = verb, Effect = noun.'
+    },
+    'lay-vs-lie': {
+      title: 'Lay vs Lie: The Complete Guide With All Tense Forms | TypoGrammar',
+      description: 'Master lay vs lie in English. Learn transitive vs intransitive usage, all tense forms (lay/laid/lain), memory tricks, and common mistakes with examples.'
+    },
+    'its-vs-its': {
+      title: "It's vs Its: The Simple Rule You Need to Know | TypoGrammar",
+      description: "Learn the difference between it's (contraction) and its (possessive) with a simple test, examples, and common mistakes. Never confuse them again."
+    },
+    'used-to-vs-would': {
+      title: 'Used To vs Would: Past Habits & States Explained | TypoGrammar',
+      description: 'Learn when to use "used to" vs "would" for past habits and states. Includes key differences, be used to vs used to, and common mistakes with examples.'
+    },
+    'wish-vs-hope': {
+      title: 'Wish vs Hope: When to Use Each (With Examples) | TypoGrammar',
+      description: 'Understand the difference between wish and hope in English. Wish = impossible/unlikely, Hope = possible. Clear grammar rules, structures, and examples.'
+    },
+    // Sentence Structure topics
+    'passive-voice': {
+      title: 'Passive Voice in English: Formation, Uses & Examples | TypoGrammar',
+      description: 'Learn how to form and use the passive voice in English. Covers active vs passive transformation, when to use passive voice, and common mistakes with examples.'
+    },
+    'subject-verb-agreement': {
+      title: 'Subject-Verb Agreement: Rules & Tricky Cases | TypoGrammar',
+      description: 'Master subject-verb agreement in English. Learn the basic rule, compound subjects, collective nouns, indefinite pronouns, and tricky cases with clear examples.'
+    },
+    'question-formation': {
+      title: 'Question Formation in English: Yes/No, Wh-, Tag & Indirect Questions | TypoGrammar',
+      description: 'Learn how to form all types of English questions: yes/no, wh- questions, tag questions, subject questions, and indirect questions with rules and examples.'
+    },
+    'reported-speech': {
+      title: 'Reported Speech (Indirect Speech): Tense Changes & Rules | TypoGrammar',
+      description: 'Master reported speech in English. Learn tense backshift rules, pronoun changes, time expression shifts, and how to convert direct to indirect speech with examples.'
+    },
+    'direct-and-indirect-speech': {
+      title: 'Direct vs Indirect Speech: Rules, Punctuation & Examples | TypoGrammar',
+      description: 'Understand the difference between direct and indirect speech. Learn punctuation rules, how to convert between them, and key grammatical changes with examples.'
+    },
+    'sentence-fragments': {
+      title: 'Sentence Fragments: How to Identify & Fix Them | TypoGrammar',
+      description: 'Learn what sentence fragments are, common types (dependent clause, -ing, missing subject/verb), and how to fix them. Improve your academic and formal writing.'
+    },
+    'simple-and-complex-sentences': {
+      title: 'Simple, Complex & Compound Sentences: Types & Examples | TypoGrammar',
+      description: 'Learn the four sentence types in English: simple, compound, complex, and compound-complex. Includes clauses, punctuation rules, and examples for better writing.'
+    },
+    // Adjectives & Adverbs topics
+    'adjectives-adverbs': {
+      title: 'What Is an Adjective & Adverb? Types, Placement & Examples | TypoGrammar',
+      description: 'What is an adjective and what is an adverb? Learn the difference, types (manner, place, time, frequency), placement rules, good vs well, and comparative forms with clear examples.'
+    },
+    'comparative-superlative': {
+      title: 'What Is a Comparative & Superlative? Rules, Irregular Forms & Examples | TypoGrammar',
+      description: 'What is a comparative and superlative in English? Learn formation rules for short and long adjectives, irregular forms (good/better/best), common mistakes, and when to use than/in/of.'
+    },
+  };
+
+  const seo = topicId && topicSeoMap[topicId] ? topicSeoMap[topicId] : null;
+
   usePageMetadata({
-    title: topic ? `${topic.title} | TypoGrammar` : 'Grammar Topic | TypoGrammar',
-    description: topic ? `Learn all about ${topic.title.toLowerCase()}. This guide covers formation, usage, and examples to help you master this English grammar topic.` : 'Explore English grammar topics on TypoGrammar.'
+    title: seo ? seo.title : (topic ? `${topic.title} | TypoGrammar` : 'Grammar Topic | TypoGrammar'),
+    description: seo ? seo.description : (topic ? `Learn all about ${topic.title.toLowerCase()}. This guide covers formation, usage, and examples to help you master this English grammar topic.` : 'Explore English grammar topics on TypoGrammar.')
   });
 
   if (!topic) {
@@ -49,6 +121,38 @@ const TopicPage: React.FC = () => {
     }
   } : null;
 
+  // Generate FAQ schema for grammar topics
+  const generateFAQs = (topicTitle: string, topicId: string) => {
+    const baseFAQs = [
+      {
+        question: `What is ${topicTitle.toLowerCase()} in English grammar?`,
+        answer: `${topicTitle} is an important concept in English grammar. This lesson explains the rules, formation, and usage with clear examples to help you master it.`
+      },
+      {
+        question: `How do I use ${topicTitle.toLowerCase()} correctly?`,
+        answer: `To use ${topicTitle.toLowerCase()} correctly, follow the rules explained in this lesson. Pay attention to the examples and practice with the quiz at the end of the page.`
+      },
+      {
+        question: `What are common mistakes with ${topicTitle.toLowerCase()}?`,
+        answer: `Common mistakes include incorrect formation and usage in context. Review the examples in this lesson to avoid these errors in your writing and speaking.`
+      }
+    ];
+    return baseFAQs;
+  };
+
+  const faqSchema = topic ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: generateFAQs(topic.title, topic.id).map(faq => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer
+      }
+    }))
+  } : null;
+
   const relatedTopics = GRAMMAR_TOPICS.filter(
     t => t.category === topic.category && t.id !== topicId
   ).slice(0, 3);
@@ -57,6 +161,9 @@ const TopicPage: React.FC = () => {
     <>
       {topicSchema && (
         <SchemaMarkup type="Course" data={topicSchema} />
+      )}
+      {faqSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       )}
     <article className="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-xl shadow-lg shadow-slate-200/50 border border-slate-200 dark:bg-slate-800/50 dark:border-slate-700 dark:shadow-slate-900/50">
       <div className="flex justify-between items-start">

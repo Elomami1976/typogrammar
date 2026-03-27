@@ -51,16 +51,140 @@ const AdvantagesDisadvantagesEssayIELTSPage = lazy(() => import('./pages/Advanta
 const ProblemSolutionEssayIELTSPage = lazy(() => import('./pages/ProblemSolutionEssayIELTSPage'));
 const TwoPartQuestionEssayIELTSPage = lazy(() => import('./pages/TwoPartQuestionEssayIELTSPage'));
 const MixedEssayTypesIELTSPage = lazy(() => import('./pages/MixedEssayTypesIELTSPage'));
+const Band8IELTSSampleAnswersPage = lazy(() => import('./pages/Band8IELTSSampleAnswersPage'));
+const Band9IELTSEssaysPage = lazy(() => import('./pages/Band9IELTSEssaysPage'));
+const ConditionalsInIELTSPage = lazy(() => import('./pages/ConditionalsInIELTSPage'));
+const PassiveVoiceIELTSPage = lazy(() => import('./pages/PassiveVoiceIELTSPage'));
+const ComplexSentencesIELTSPage = lazy(() => import('./pages/ComplexSentencesIELTSPage'));
+const CommonGrammarMistakesIELTSPage = lazy(() => import('./pages/CommonGrammarMistakesIELTSPage'));
+const TaskAchievementIELTSPage = lazy(() => import('./pages/TaskAchievementIELTSPage'));
+const LexicalResourceIELTSPage = lazy(() => import('./pages/LexicalResourceIELTSPage'));
 const IELTSVocabularyBand6Page = lazy(() => import('./pages/IELTSVocabularyBand6Page'));
 const IELTSVocabularyBand7Page = lazy(() => import('./pages/IELTSVocabularyBand7Page'));
 const IELTSVocabularyBand8Page = lazy(() => import('./pages/IELTSVocabularyBand8Page'));
 const IELTSVocabularyBand9Page = lazy(() => import('./pages/IELTSVocabularyBand9Page'));
 const IeltsAcademicVocabularyBookPage = lazy(() => import('./pages/IeltsAcademicVocabularyBookPage'));
+const IeltsIdiomsBookPage = lazy(() => import('./pages/IeltsIdiomsBookPage'));
+const HealthVocabularyBookPage = lazy(() => import('./pages/HealthVocabularyBookPage'));
+const IeltsBand9EssaysBookPage = lazy(() => import('./pages/IeltsBand9EssaysBookPage'));
+const IeltsGrammarMasterBookPage = lazy(() => import('./pages/IeltsGrammarMasterBookPage'));
+const ComplexSentencesPDFPage = lazy(() => import('./pages/ComplexSentencesPDFPage'));
+const EnglishGrammarPDFPage = lazy(() => import('./pages/EnglishGrammarPDFPage'));
+const IsIELTSGettingHarderPage = lazy(() => import('./pages/IsIELTSGettingHarderPage'));
+const WhyStuckAt65Page = lazy(() => import('./pages/WhyStuckAt65Page'));
+const IELTSIn3DaysPage = lazy(() => import('./pages/IELTSIn3DaysPage'));
 const WhatIsTypogrammarPage = lazy(() => import('./pages/WhatIsTypogrammarPage'));
 const EditorialTeamPage = lazy(() => import('./pages/EditorialTeamPage'));
 const VerbTensesQuizPage = lazy(() => import('./pages/quizzes/VerbTensesQuizPage'));
 const IELTSTestsPage = lazy(() => import('./pages/IELTSTestsPage'));
 const IELTSListeningMockTest1Section1Page = lazy(() => import('./pages/IELTSListeningMockTest1Section1Page'));
+const GrammarCheckerPage = lazy(() => import('./pages/GrammarCheckerPage'));
+const ParaphrasingToolPage = lazy(() => import('./pages/ParaphrasingToolPage'));
+const FreeParaphrasingToolWithoutLoginPage = lazy(() => import('./pages/FreeParaphrasingToolWithoutLoginPage'));
+const IELTSBandScoreCalculatorPage = lazy(() => import('./pages/IELTSBandScoreCalculatorPage'));
+const EssayTopicGeneratorPage = lazy(() => import('./pages/EssayTopicGeneratorPage'));
+const AIWritingToolsPage = lazy(() => import('./pages/AIWritingToolsPage'));
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
+
+// TOEFL Preparation Pages
+const TOEFLReadingSectionExplainedPage = lazy(() => import('./pages/TOEFLReadingSectionExplainedPage'));
+const TOEFLReadingStrategiesPage = lazy(() => import('./pages/TOEFLReadingStrategiesPage'));
+const TOEFLReadingQuestionTypesPage = lazy(() => import('./pages/TOEFLReadingQuestionTypesPage'));
+const TOEFLReadingTimeManagementPage = lazy(() => import('./pages/TOEFLReadingTimeManagementPage'));
+const TOEFLReadingPracticeQuestionsPage = lazy(() => import('./pages/TOEFLReadingPracticeQuestionsPage'));
+// TOEFL Free Resources
+const TOEFLReadingPracticePDFPage = lazy(() => import('./pages/TOEFLReadingPracticePDFPage'));
+const TOEFLVocabularyPDFPage = lazy(() => import('./pages/TOEFLVocabularyPDFPage'));
+const TOEFLWritingPDFPage = lazy(() => import('./pages/TOEFLWritingPDFPage'));
+// TOEFL Writing
+const TOEFLWritingTask1ExplainedPage = lazy(() => import('./pages/TOEFLWritingTask1ExplainedPage'));
+const TOEFLWritingTask2ExplainedPage = lazy(() => import('./pages/TOEFLWritingTask2ExplainedPage'));
+const TOEFLWritingTemplatesPage = lazy(() => import('./pages/TOEFLWritingTemplatesPage'));
+const TOEFLWritingTopicsPage = lazy(() => import('./pages/TOEFLWritingTopicsPage'));
+const TOEFLWritingPracticeQuestionsPage = lazy(() => import('./pages/TOEFLWritingPracticeQuestionsPage'));
+
+// Grammar Mistakes Pillar Pages
+const GrammarMistakesPage = lazy(() => import('./pages/GrammarMistakesPage'));
+// Subject-Verb Agreement
+const PeopleIsOrPeopleArePage = lazy(() => import('./pages/grammar-mistakes/PeopleIsOrPeopleArePage'));
+const HeGoOrHeGoesPage = lazy(() => import('./pages/grammar-mistakes/HeGoOrHeGoesPage'));
+const EveryoneIsOrEveryoneArePage = lazy(() => import('./pages/grammar-mistakes/EveryoneIsOrEveryoneArePage'));
+const EachAreOrEachIsPage = lazy(() => import('./pages/grammar-mistakes/EachAreOrEachIsPage'));
+const SomeoneIsOrArePage = lazy(() => import('./pages/grammar-mistakes/SomeoneIsOrArePage'));
+const SomeoneHasOrHavePage = lazy(() => import('./pages/grammar-mistakes/SomeoneHasOrHavePage'));
+const EverybodyHasOrHavePage = lazy(() => import('./pages/grammar-mistakes/EverybodyHasOrHavePage'));
+const NoneIsOrArePage = lazy(() => import('./pages/grammar-mistakes/NoneIsOrArePage'));
+const ANumberOfVsTheNumberOfPage = lazy(() => import('./pages/grammar-mistakes/ANumberOfVsTheNumberOfPage'));
+const ALotOfPeopleIsOrArePage = lazy(() => import('./pages/grammar-mistakes/ALotOfPeopleIsOrArePage'));
+const OneOfTheStudentsIsOrArePage = lazy(() => import('./pages/grammar-mistakes/OneOfTheStudentsIsOrArePage'));
+const EachOfTheStudentsIsOrArePage = lazy(() => import('./pages/grammar-mistakes/EachOfTheStudentsIsOrArePage'));
+const AGroupOfPeopleIsOrArePage = lazy(() => import('./pages/grammar-mistakes/AGroupOfPeopleIsOrArePage'));
+const EverybodyIsOrArePage = lazy(() => import('./pages/grammar-mistakes/EverybodyIsOrArePage'));
+const NobodyIsOrArePage = lazy(() => import('./pages/grammar-mistakes/NobodyIsOrArePage'));
+const EveryoneHasOrHavePage = lazy(() => import('./pages/grammar-mistakes/EveryoneHasOrHavePage'));
+// Verb Form Errors
+const IAmAgreeOrIAgreePage = lazy(() => import('./pages/grammar-mistakes/IAmAgreeOrIAgreePage'));
+const HeDidntWentOrHeDidntGoPage = lazy(() => import('./pages/grammar-mistakes/HeDidntWentOrHeDidntGoPage'));
+const DidYouWentOrDidYouGoPage = lazy(() => import('./pages/grammar-mistakes/DidYouWentOrDidYouGoPage'));
+const IDidOrIDonePage = lazy(() => import('./pages/grammar-mistakes/IDidOrIDonePage'));
+const IHaveSawOrSeenPage = lazy(() => import('./pages/grammar-mistakes/IHaveSawOrSeenPage'));
+const IHaveAteOrEatenPage = lazy(() => import('./pages/grammar-mistakes/IHaveAteOrEatenPage'));
+const IHaveWroteOrWrittenPage = lazy(() => import('./pages/grammar-mistakes/IHaveWroteOrWrittenPage'));
+const IHaveDrankOrDrunkPage = lazy(() => import('./pages/grammar-mistakes/IHaveDrankOrDrunkPage'));
+const IHaveWentOrGonePage = lazy(() => import('./pages/grammar-mistakes/IHaveWentOrGonePage'));
+const HeHasCameOrComePage = lazy(() => import('./pages/grammar-mistakes/HeHasCameOrComePage'));
+const ISeenOrISawPage = lazy(() => import('./pages/grammar-mistakes/ISeenOrISawPage'));
+const SheHasWentOrGonePage = lazy(() => import('./pages/grammar-mistakes/SheHasWentOrGonePage'));
+// Word Confusion
+const AdviceVsAdvisePage = lazy(() => import('./pages/grammar-mistakes/AdviceVsAdvisePage'));
+const DoVsMakePage = lazy(() => import('./pages/grammar-mistakes/DoVsMakePage'));
+const SpeakVsTalkPage = lazy(() => import('./pages/grammar-mistakes/SpeakVsTalkPage'));
+const BringVsTakePage = lazy(() => import('./pages/grammar-mistakes/BringVsTakePage'));
+const ListenVsHearPage = lazy(() => import('./pages/grammar-mistakes/ListenVsHearPage'));
+const SayVsTellPage = lazy(() => import('./pages/grammar-mistakes/SayVsTellPage'));
+const LookVsSeeVsWatchPage = lazy(() => import('./pages/grammar-mistakes/LookVsSeeVsWatchPage'));
+const LearnVsStudyPage = lazy(() => import('./pages/grammar-mistakes/LearnVsStudyPage'));
+const BorrowVsLendPage = lazy(() => import('./pages/grammar-mistakes/BorrowVsLendPage'));
+const RememberVsRemindPage = lazy(() => import('./pages/grammar-mistakes/RememberVsRemindPage'));
+const WinVsBeatPage = lazy(() => import('./pages/grammar-mistakes/WinVsBeatPage'));
+const ALotOrAlotPage = lazy(() => import('./pages/grammar-mistakes/ALotOrAlotPage'));
+const EverydayVsEveryDayPage = lazy(() => import('./pages/grammar-mistakes/EverydayVsEveryDayPage'));
+const SometimeVsSometimesPage = lazy(() => import('./pages/grammar-mistakes/SometimeVsSometimesPage'));
+const IntoVsInToPage = lazy(() => import('./pages/grammar-mistakes/IntoVsInToPage'));
+// Preposition Errors
+const DiscussOrDiscussAboutPage = lazy(() => import('./pages/grammar-mistakes/DiscussOrDiscussAboutPage'));
+const MarriedWithOrMarriedToPage = lazy(() => import('./pages/grammar-mistakes/MarriedWithOrMarriedToPage'));
+const DifferentFromOrDifferentThanPage = lazy(() => import('./pages/grammar-mistakes/DifferentFromOrDifferentThanPage'));
+const InterestedInOrInterestedOnPage = lazy(() => import('./pages/grammar-mistakes/InterestedInOrInterestedOnPage'));
+const GoodInOrGoodAtPage = lazy(() => import('./pages/grammar-mistakes/GoodInOrGoodAtPage'));
+const InTheWeekendOrOnTheWeekendPage = lazy(() => import('./pages/grammar-mistakes/InTheWeekendOrOnTheWeekendPage'));
+const ArriveInOrArriveAtPage = lazy(() => import('./pages/grammar-mistakes/ArriveInOrArriveAtPage'));
+const AfraidOfOrAfraidFromPage = lazy(() => import('./pages/grammar-mistakes/AfraidOfOrAfraidFromPage'));
+const ProudOfOrProudForPage = lazy(() => import('./pages/grammar-mistakes/ProudOfOrProudForPage'));
+const ResponsibleForOrResponsibleOfPage = lazy(() => import('./pages/grammar-mistakes/ResponsibleForOrResponsibleOfPage'));
+const ExplainOrExplainAboutPage = lazy(() => import('./pages/grammar-mistakes/ExplainOrExplainAboutPage'));
+const RequestOrRequestForPage = lazy(() => import('./pages/grammar-mistakes/RequestOrRequestForPage'));
+const EnterOrEnterToPage = lazy(() => import('./pages/grammar-mistakes/EnterOrEnterToPage'));
+const ComplainAboutOrComplainOfPage = lazy(() => import('./pages/grammar-mistakes/ComplainAboutOrComplainOfPage'));
+// Quantifier Errors
+const MuchPeopleOrManyPeoplePage = lazy(() => import('./pages/grammar-mistakes/MuchPeopleOrManyPeoplePage'));
+const LessPeopleOrFewerPeoplePage = lazy(() => import('./pages/grammar-mistakes/LessPeopleOrFewerPeoplePage'));
+const LittleVsFewPage = lazy(() => import('./pages/grammar-mistakes/LittleVsFewPage'));
+const ManyVsMuchPage = lazy(() => import('./pages/grammar-mistakes/ManyVsMuchPage'));
+const TooMuchVsTooManyPage = lazy(() => import('./pages/grammar-mistakes/TooMuchVsTooManyPage'));
+const SomeVsAnyPage = lazy(() => import('./pages/grammar-mistakes/SomeVsAnyPage'));
+const SoMuchVsSoManyPage = lazy(() => import('./pages/grammar-mistakes/SoMuchVsSoManyPage'));
+const AFewVsFewPage = lazy(() => import('./pages/grammar-mistakes/AFewVsFewPage'));
+const ALittleVsLittlePage = lazy(() => import('./pages/grammar-mistakes/ALittleVsLittlePage'));
+// Redundancy Errors
+const ReturnBackOrReturnPage = lazy(() => import('./pages/grammar-mistakes/ReturnBackOrReturnPage'));
+const RepeatAgainOrRepeatPage = lazy(() => import('./pages/grammar-mistakes/RepeatAgainOrRepeatPage'));
+const AdvancePlanningPage = lazy(() => import('./pages/grammar-mistakes/AdvancePlanningPage'));
+const FreeGiftPage = lazy(() => import('./pages/grammar-mistakes/FreeGiftPage'));
+const EndResultPage = lazy(() => import('./pages/grammar-mistakes/EndResultPage'));
+const FinalOutcomePage = lazy(() => import('./pages/grammar-mistakes/FinalOutcomePage'));
+const PastHistoryPage = lazy(() => import('./pages/grammar-mistakes/PastHistoryPage'));
+const CloseProximityPage = lazy(() => import('./pages/grammar-mistakes/CloseProximityPage'));
 
 // Verb Tenses Hub and Individual Tense Pages
 const VerbTensesHubPage = lazy(() => import('./pages/VerbTensesHubPage'));
@@ -150,6 +274,12 @@ const App: React.FC = () => {
             <Route path="worksheets" element={<Suspense fallback={<PageLoader />}><WorksheetsPage /></Suspense>} />
             <Route path="practice-tools" element={<Suspense fallback={<PageLoader />}><PracticeToolsPage /></Suspense>} />
             <Route path="interactive-exercises" element={<Suspense fallback={<PageLoader />}><InteractiveExercisesPage /></Suspense>} />
+            <Route path="ai-writing-tools" element={<Suspense fallback={<PageLoader />}><AIWritingToolsPage /></Suspense>} />
+            <Route path="grammar-checker" element={<Suspense fallback={<PageLoader />}><GrammarCheckerPage /></Suspense>} />
+            <Route path="paraphrasing-tool" element={<Suspense fallback={<PageLoader />}><ParaphrasingToolPage /></Suspense>} />
+            <Route path="free-paraphrasing-tool-without-login" element={<Suspense fallback={<PageLoader />}><FreeParaphrasingToolWithoutLoginPage /></Suspense>} />
+            <Route path="ielts-band-score-calculator" element={<Suspense fallback={<PageLoader />}><IELTSBandScoreCalculatorPage /></Suspense>} />
+            <Route path="essay-topic-generator" element={<Suspense fallback={<PageLoader />}><EssayTopicGeneratorPage /></Suspense>} />
             
             {/* Quizzes Routes */}
             <Route path="quizzes/verb-tenses-quiz" element={<Suspense fallback={<PageLoader />}><VerbTensesQuizPage /></Suspense>} />
@@ -162,6 +292,14 @@ const App: React.FC = () => {
             <Route path="ielts/problem-solution-essay-ielts" element={<Suspense fallback={<PageLoader />}><ProblemSolutionEssayIELTSPage /></Suspense>} />
             <Route path="ielts/two-part-question-essay-ielts" element={<Suspense fallback={<PageLoader />}><TwoPartQuestionEssayIELTSPage /></Suspense>} />
             <Route path="ielts/mixed-essay-types-ielts" element={<Suspense fallback={<PageLoader />}><MixedEssayTypesIELTSPage /></Suspense>} />
+            <Route path="ielts/band-8-ielts-sample-answers" element={<Suspense fallback={<PageLoader />}><Band8IELTSSampleAnswersPage /></Suspense>} />
+            <Route path="ielts/50-band-9-ielts-writing-task-2-sample-essays" element={<Suspense fallback={<PageLoader />}><Band9IELTSEssaysPage /></Suspense>} />
+            <Route path="ielts/conditionals-in-ielts" element={<Suspense fallback={<PageLoader />}><ConditionalsInIELTSPage /></Suspense>} />
+            <Route path="ielts/passive-voice-ielts-writing" element={<Suspense fallback={<PageLoader />}><PassiveVoiceIELTSPage /></Suspense>} />
+            <Route path="ielts/how-to-write-complex-sentences" element={<Suspense fallback={<PageLoader />}><ComplexSentencesIELTSPage /></Suspense>} />
+            <Route path="ielts/common-grammar-mistakes-ielts-writing" element={<Suspense fallback={<PageLoader />}><CommonGrammarMistakesIELTSPage /></Suspense>} />
+            <Route path="ielts/task-achievement-in-ielts" element={<Suspense fallback={<PageLoader />}><TaskAchievementIELTSPage /></Suspense>} />
+            <Route path="ielts/lexical-resource-in-ielts" element={<Suspense fallback={<PageLoader />}><LexicalResourceIELTSPage /></Suspense>} />
             
             {/* IELTS Vocabulary Routes */}
             <Route path="ielts/vocabulary/band-6" element={<Suspense fallback={<PageLoader />}><IELTSVocabularyBand6Page /></Suspense>} />
@@ -171,10 +309,124 @@ const App: React.FC = () => {
             
             {/* IELTS Free Book Route */}
             <Route path="ielts/academic-vocabulary-book" element={<Suspense fallback={<PageLoader />}><IeltsAcademicVocabularyBookPage /></Suspense>} />
+            <Route path="ielts/idioms-book" element={<Suspense fallback={<PageLoader />}><IeltsIdiomsBookPage /></Suspense>} />
+            <Route path="ielts/health-vocabulary-book" element={<Suspense fallback={<PageLoader />}><HealthVocabularyBookPage /></Suspense>} />
+            <Route path="ielts/writing-task-2-band-9-essays-book" element={<Suspense fallback={<PageLoader />}><IeltsBand9EssaysBookPage /></Suspense>} />
+            <Route path="ielts/grammar-master-book" element={<Suspense fallback={<PageLoader />}><IeltsGrammarMasterBookPage /></Suspense>} />
+            <Route path="ielts/50-complex-sentences-for-ielts-pdf" element={<Suspense fallback={<PageLoader />}><ComplexSentencesPDFPage /></Suspense>} />
+            <Route path="ielts/english-grammar-pdf" element={<Suspense fallback={<PageLoader />}><EnglishGrammarPDFPage /></Suspense>} />
+            
+            {/* IELTS Strategy & Success Routes */}
+            <Route path="ielts/is-ielts-getting-harder-2026" element={<Suspense fallback={<PageLoader />}><IsIELTSGettingHarderPage /></Suspense>} />
+            <Route path="ielts/why-stuck-at-6-5" element={<Suspense fallback={<PageLoader />}><WhyStuckAt65Page /></Suspense>} />
+            <Route path="ielts/ielts-in-3-days" element={<Suspense fallback={<PageLoader />}><IELTSIn3DaysPage /></Suspense>} />
             
             {/* IELTS Tests Routes */}
             <Route path="ielts/tests" element={<Suspense fallback={<PageLoader />}><IELTSTestsPage /></Suspense>} />
             <Route path="ielts/tests/listening/mock-test-1/section-1" element={<Suspense fallback={<PageLoader />}><IELTSListeningMockTest1Section1Page /></Suspense>} />
+            
+            {/* TOEFL Preparation Routes */}
+            <Route path="toefl/toefl-reading/toefl-reading-section-explained" element={<Suspense fallback={<PageLoader />}><TOEFLReadingSectionExplainedPage /></Suspense>} />
+            <Route path="toefl/toefl-reading/toefl-reading-strategies" element={<Suspense fallback={<PageLoader />}><TOEFLReadingStrategiesPage /></Suspense>} />
+            <Route path="toefl/toefl-reading/toefl-reading-question-types" element={<Suspense fallback={<PageLoader />}><TOEFLReadingQuestionTypesPage /></Suspense>} />
+            <Route path="toefl/toefl-reading/toefl-reading-time-management" element={<Suspense fallback={<PageLoader />}><TOEFLReadingTimeManagementPage /></Suspense>} />
+            <Route path="toefl/toefl-reading/toefl-reading-practice-questions" element={<Suspense fallback={<PageLoader />}><TOEFLReadingPracticeQuestionsPage /></Suspense>} />
+            {/* TOEFL Writing Routes */}
+            <Route path="toefl/toefl-writing/toefl-writing-task-1-explained" element={<Suspense fallback={<PageLoader />}><TOEFLWritingTask1ExplainedPage /></Suspense>} />
+            <Route path="toefl/toefl-writing/toefl-writing-task-2-explained" element={<Suspense fallback={<PageLoader />}><TOEFLWritingTask2ExplainedPage /></Suspense>} />
+            <Route path="toefl/toefl-writing/toefl-writing-templates" element={<Suspense fallback={<PageLoader />}><TOEFLWritingTemplatesPage /></Suspense>} />
+            <Route path="toefl/toefl-writing/toefl-writing-topics" element={<Suspense fallback={<PageLoader />}><TOEFLWritingTopicsPage /></Suspense>} />
+            <Route path="toefl/toefl-writing/toefl-writing-practice-questions" element={<Suspense fallback={<PageLoader />}><TOEFLWritingPracticeQuestionsPage /></Suspense>} />
+            {/* TOEFL Free Resources Routes */}
+            <Route path="toefl/toefl-reading-practice-pdf" element={<Suspense fallback={<PageLoader />}><TOEFLReadingPracticePDFPage /></Suspense>} />
+            <Route path="toefl/toefl-vocabulary-pdf" element={<Suspense fallback={<PageLoader />}><TOEFLVocabularyPDFPage /></Suspense>} />
+            <Route path="toefl/toefl-writing-pdf" element={<Suspense fallback={<PageLoader />}><TOEFLWritingPDFPage /></Suspense>} />
+            
+            {/* Grammar Mistakes Pillar Routes */}
+            <Route path="grammar-mistakes" element={<Suspense fallback={<PageLoader />}><GrammarMistakesPage /></Suspense>} />
+            {/* Subject-Verb Agreement */}
+            <Route path="grammar-mistakes/people-is-or-people-are" element={<Suspense fallback={<PageLoader />}><PeopleIsOrPeopleArePage /></Suspense>} />
+            <Route path="grammar-mistakes/he-go-or-he-goes" element={<Suspense fallback={<PageLoader />}><HeGoOrHeGoesPage /></Suspense>} />
+            <Route path="grammar-mistakes/everyone-is-or-everyone-are" element={<Suspense fallback={<PageLoader />}><EveryoneIsOrEveryoneArePage /></Suspense>} />
+            <Route path="grammar-mistakes/each-are-or-each-is" element={<Suspense fallback={<PageLoader />}><EachAreOrEachIsPage /></Suspense>} />
+            <Route path="grammar-mistakes/someone-is-or-are" element={<Suspense fallback={<PageLoader />}><SomeoneIsOrArePage /></Suspense>} />
+            <Route path="grammar-mistakes/someone-has-or-have" element={<Suspense fallback={<PageLoader />}><SomeoneHasOrHavePage /></Suspense>} />
+            <Route path="grammar-mistakes/everybody-has-or-have" element={<Suspense fallback={<PageLoader />}><EverybodyHasOrHavePage /></Suspense>} />
+            <Route path="grammar-mistakes/none-is-or-are" element={<Suspense fallback={<PageLoader />}><NoneIsOrArePage /></Suspense>} />
+            <Route path="grammar-mistakes/a-number-of-vs-the-number-of" element={<Suspense fallback={<PageLoader />}><ANumberOfVsTheNumberOfPage /></Suspense>} />
+            <Route path="grammar-mistakes/a-lot-of-people-is-or-are" element={<Suspense fallback={<PageLoader />}><ALotOfPeopleIsOrArePage /></Suspense>} />
+            <Route path="grammar-mistakes/one-of-the-students-is-or-are" element={<Suspense fallback={<PageLoader />}><OneOfTheStudentsIsOrArePage /></Suspense>} />
+            <Route path="grammar-mistakes/each-of-the-students-is-or-are" element={<Suspense fallback={<PageLoader />}><EachOfTheStudentsIsOrArePage /></Suspense>} />
+            <Route path="grammar-mistakes/a-group-of-people-is-or-are" element={<Suspense fallback={<PageLoader />}><AGroupOfPeopleIsOrArePage /></Suspense>} />
+            <Route path="grammar-mistakes/everybody-is-or-are" element={<Suspense fallback={<PageLoader />}><EverybodyIsOrArePage /></Suspense>} />
+            <Route path="grammar-mistakes/nobody-is-or-are" element={<Suspense fallback={<PageLoader />}><NobodyIsOrArePage /></Suspense>} />
+            <Route path="grammar-mistakes/everyone-has-or-have" element={<Suspense fallback={<PageLoader />}><EveryoneHasOrHavePage /></Suspense>} />
+            {/* Verb Form Errors */}
+            <Route path="grammar-mistakes/i-am-agree-or-i-agree" element={<Suspense fallback={<PageLoader />}><IAmAgreeOrIAgreePage /></Suspense>} />
+            <Route path="grammar-mistakes/he-didnt-went-or-he-didnt-go" element={<Suspense fallback={<PageLoader />}><HeDidntWentOrHeDidntGoPage /></Suspense>} />
+            <Route path="grammar-mistakes/did-you-went-or-did-you-go" element={<Suspense fallback={<PageLoader />}><DidYouWentOrDidYouGoPage /></Suspense>} />
+            <Route path="grammar-mistakes/i-did-or-i-done" element={<Suspense fallback={<PageLoader />}><IDidOrIDonePage /></Suspense>} />
+            <Route path="grammar-mistakes/i-have-saw-or-seen" element={<Suspense fallback={<PageLoader />}><IHaveSawOrSeenPage /></Suspense>} />
+            <Route path="grammar-mistakes/i-have-ate-or-eaten" element={<Suspense fallback={<PageLoader />}><IHaveAteOrEatenPage /></Suspense>} />
+            <Route path="grammar-mistakes/i-have-wrote-or-written" element={<Suspense fallback={<PageLoader />}><IHaveWroteOrWrittenPage /></Suspense>} />
+            <Route path="grammar-mistakes/i-have-drank-or-drunk" element={<Suspense fallback={<PageLoader />}><IHaveDrankOrDrunkPage /></Suspense>} />
+            <Route path="grammar-mistakes/i-have-went-or-have-gone" element={<Suspense fallback={<PageLoader />}><IHaveWentOrGonePage /></Suspense>} />
+            <Route path="grammar-mistakes/he-has-came-or-come" element={<Suspense fallback={<PageLoader />}><HeHasCameOrComePage /></Suspense>} />
+            <Route path="grammar-mistakes/i-seen-or-i-saw" element={<Suspense fallback={<PageLoader />}><ISeenOrISawPage /></Suspense>} />
+            <Route path="grammar-mistakes/she-has-went-or-gone" element={<Suspense fallback={<PageLoader />}><SheHasWentOrGonePage /></Suspense>} />
+            {/* Word Confusion */}
+            <Route path="grammar-mistakes/advice-vs-advise" element={<Suspense fallback={<PageLoader />}><AdviceVsAdvisePage /></Suspense>} />
+            <Route path="grammar-mistakes/do-vs-make" element={<Suspense fallback={<PageLoader />}><DoVsMakePage /></Suspense>} />
+            <Route path="grammar-mistakes/speak-vs-talk" element={<Suspense fallback={<PageLoader />}><SpeakVsTalkPage /></Suspense>} />
+            <Route path="grammar-mistakes/bring-vs-take" element={<Suspense fallback={<PageLoader />}><BringVsTakePage /></Suspense>} />
+            <Route path="grammar-mistakes/listen-vs-hear" element={<Suspense fallback={<PageLoader />}><ListenVsHearPage /></Suspense>} />
+            <Route path="grammar-mistakes/say-vs-tell" element={<Suspense fallback={<PageLoader />}><SayVsTellPage /></Suspense>} />
+            <Route path="grammar-mistakes/look-vs-see-vs-watch" element={<Suspense fallback={<PageLoader />}><LookVsSeeVsWatchPage /></Suspense>} />
+            <Route path="grammar-mistakes/learn-vs-study" element={<Suspense fallback={<PageLoader />}><LearnVsStudyPage /></Suspense>} />
+            <Route path="grammar-mistakes/borrow-vs-lend" element={<Suspense fallback={<PageLoader />}><BorrowVsLendPage /></Suspense>} />
+            <Route path="grammar-mistakes/remember-vs-remind" element={<Suspense fallback={<PageLoader />}><RememberVsRemindPage /></Suspense>} />
+            <Route path="grammar-mistakes/win-vs-beat" element={<Suspense fallback={<PageLoader />}><WinVsBeatPage /></Suspense>} />
+            <Route path="grammar-mistakes/a-lot-or-alot" element={<Suspense fallback={<PageLoader />}><ALotOrAlotPage /></Suspense>} />
+            <Route path="grammar-mistakes/everyday-vs-every-day" element={<Suspense fallback={<PageLoader />}><EverydayVsEveryDayPage /></Suspense>} />
+            <Route path="grammar-mistakes/sometime-vs-sometimes" element={<Suspense fallback={<PageLoader />}><SometimeVsSometimesPage /></Suspense>} />
+            <Route path="grammar-mistakes/into-vs-in-to" element={<Suspense fallback={<PageLoader />}><IntoVsInToPage /></Suspense>} />
+            {/* Preposition Errors */}
+            <Route path="grammar-mistakes/discuss-or-discuss-about" element={<Suspense fallback={<PageLoader />}><DiscussOrDiscussAboutPage /></Suspense>} />
+            <Route path="grammar-mistakes/married-with-or-married-to" element={<Suspense fallback={<PageLoader />}><MarriedWithOrMarriedToPage /></Suspense>} />
+            <Route path="grammar-mistakes/different-from-or-different-than" element={<Suspense fallback={<PageLoader />}><DifferentFromOrDifferentThanPage /></Suspense>} />
+            <Route path="grammar-mistakes/interested-in-or-interested-on" element={<Suspense fallback={<PageLoader />}><InterestedInOrInterestedOnPage /></Suspense>} />
+            <Route path="grammar-mistakes/good-in-or-good-at" element={<Suspense fallback={<PageLoader />}><GoodInOrGoodAtPage /></Suspense>} />
+            <Route path="grammar-mistakes/in-the-weekend-or-on-the-weekend" element={<Suspense fallback={<PageLoader />}><InTheWeekendOrOnTheWeekendPage /></Suspense>} />
+            <Route path="grammar-mistakes/arrive-in-or-arrive-at" element={<Suspense fallback={<PageLoader />}><ArriveInOrArriveAtPage /></Suspense>} />
+            <Route path="grammar-mistakes/afraid-of-or-afraid-from" element={<Suspense fallback={<PageLoader />}><AfraidOfOrAfraidFromPage /></Suspense>} />
+            <Route path="grammar-mistakes/proud-of-or-proud-for" element={<Suspense fallback={<PageLoader />}><ProudOfOrProudForPage /></Suspense>} />
+            <Route path="grammar-mistakes/responsible-for-or-responsible-of" element={<Suspense fallback={<PageLoader />}><ResponsibleForOrResponsibleOfPage /></Suspense>} />
+            <Route path="grammar-mistakes/explain-or-explain-about" element={<Suspense fallback={<PageLoader />}><ExplainOrExplainAboutPage /></Suspense>} />
+            <Route path="grammar-mistakes/request-or-request-for" element={<Suspense fallback={<PageLoader />}><RequestOrRequestForPage /></Suspense>} />
+            <Route path="grammar-mistakes/enter-or-enter-to" element={<Suspense fallback={<PageLoader />}><EnterOrEnterToPage /></Suspense>} />
+            <Route path="grammar-mistakes/complain-about-or-complain-of" element={<Suspense fallback={<PageLoader />}><ComplainAboutOrComplainOfPage /></Suspense>} />
+            {/* Quantifier Errors */}
+            <Route path="grammar-mistakes/much-people-or-many-people" element={<Suspense fallback={<PageLoader />}><MuchPeopleOrManyPeoplePage /></Suspense>} />
+            <Route path="grammar-mistakes/less-people-or-fewer-people" element={<Suspense fallback={<PageLoader />}><LessPeopleOrFewerPeoplePage /></Suspense>} />
+            <Route path="grammar-mistakes/little-vs-few" element={<Suspense fallback={<PageLoader />}><LittleVsFewPage /></Suspense>} />
+            <Route path="grammar-mistakes/many-vs-much" element={<Suspense fallback={<PageLoader />}><ManyVsMuchPage /></Suspense>} />
+            <Route path="grammar-mistakes/too-much-vs-too-many" element={<Suspense fallback={<PageLoader />}><TooMuchVsTooManyPage /></Suspense>} />
+            <Route path="grammar-mistakes/some-vs-any" element={<Suspense fallback={<PageLoader />}><SomeVsAnyPage /></Suspense>} />
+            <Route path="grammar-mistakes/so-much-vs-so-many" element={<Suspense fallback={<PageLoader />}><SoMuchVsSoManyPage /></Suspense>} />
+            <Route path="grammar-mistakes/a-few-vs-few" element={<Suspense fallback={<PageLoader />}><AFewVsFewPage /></Suspense>} />
+            <Route path="grammar-mistakes/a-little-vs-little" element={<Suspense fallback={<PageLoader />}><ALittleVsLittlePage /></Suspense>} />
+            {/* Redundancy Errors */}
+            <Route path="grammar-mistakes/return-back-or-return" element={<Suspense fallback={<PageLoader />}><ReturnBackOrReturnPage /></Suspense>} />
+            <Route path="grammar-mistakes/repeat-again-or-repeat" element={<Suspense fallback={<PageLoader />}><RepeatAgainOrRepeatPage /></Suspense>} />
+            <Route path="grammar-mistakes/advance-planning" element={<Suspense fallback={<PageLoader />}><AdvancePlanningPage /></Suspense>} />
+            <Route path="grammar-mistakes/free-gift" element={<Suspense fallback={<PageLoader />}><FreeGiftPage /></Suspense>} />
+            <Route path="grammar-mistakes/end-result" element={<Suspense fallback={<PageLoader />}><EndResultPage /></Suspense>} />
+            <Route path="grammar-mistakes/final-outcome" element={<Suspense fallback={<PageLoader />}><FinalOutcomePage /></Suspense>} />
+            <Route path="grammar-mistakes/past-history" element={<Suspense fallback={<PageLoader />}><PastHistoryPage /></Suspense>} />
+            <Route path="grammar-mistakes/close-proximity" element={<Suspense fallback={<PageLoader />}><CloseProximityPage /></Suspense>} />
+            
+            {/* 404 Catch-all Route */}
+            <Route path="*" element={<Suspense fallback={<PageLoader />}><NotFoundPage /></Suspense>} />
           </Route>
         </Routes>
     </ProgressProvider>

@@ -1,297 +1,309 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
-import { ArticleParagraph, ArticleHeading } from '../components/ArticleComponents';
 import SchemaMarkup from '../components/SchemaMarkup';
 
 const PresentProgressiveTensePage: React.FC = () => {
   usePageMetadata({
-    title: 'What Is the Present Progressive Tense? Definition, Rules & Examples',
-    description: 'Learn what the Present Progressive (Present Continuous) tense is, when to use it, examples, common mistakes, and comparisons.',
+    title: 'Present Progressive (Present Continuous) Tense: Rules & Examples | TypoGrammar',
+    description: 'Learn the present progressive tense (present continuous) with clear rules, structure, examples, spelling rules, signal words, mistakes, and exercises.',
     canonical: 'https://typogrammar.com/grammar/verb-tenses/present-progressive'
   });
 
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "What Is the Present Progressive Tense?",
+    "headline": "Present Progressive (Present Continuous) Tense",
+    "description": "The present progressive tense uses am/is/are + verb-ing to describe actions happening now, temporary situations, and future plans.",
     "author": {
       "@type": "Organization",
-      "name": "TypoGrammar Editorial Team",
-      "url": "https://typogrammar.com/about/editorial-team"
+      "name": "TypoGrammar"
     },
     "publisher": {
       "@type": "Organization",
       "name": "TypoGrammar",
-      "url": "https://typogrammar.com"
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://typogrammar.com/logo.png"
+      }
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://typogrammar.com/grammar/verb-tenses/present-progressive"
     },
-    "dateModified": "2026-01-27"
-  };
-
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "What is the Present Progressive tense?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The Present Progressive tense (also called Present Continuous) is used to describe actions happening right now, temporary situations, and planned future arrangements. It emphasizes the ongoing nature of an action in the present moment."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "When do you use the Present Progressive tense?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Use the Present Progressive for: actions happening now (I am studying right now), temporary situations (She is living in London this month), future arrangements (We are meeting tomorrow at 5), and changing situations (The weather is getting colder)."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How do you form the Present Progressive tense?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Form the Present Progressive with: Subject + am/is/are + verb-ing. Negative: Subject + am/is/are + not + verb-ing. Question: Am/Is/Are + subject + verb-ing?"
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What are common time expressions for the Present Progressive tense?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Common time expressions include: now, right now, at the moment, currently, today, this week, this month, these days, at present, still."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What are common mistakes with the Present Progressive tense?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Common mistakes include: using with stative verbs (I am knowing → I know), wrong -ing spelling (stoping → stopping), forgetting the 'be' verb (She going → She is going), using it for habits instead of Present Simple, and incorrect subject-verb agreement."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What is the difference between Present Progressive and Present Simple?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Present Progressive describes actions happening now or temporary situations (I am working from home today). Present Simple describes habits and permanent situations (I work from home). Progressive = temporary/ongoing, Simple = permanent/habitual."
-              }
-            }
-          ]
+    "datePublished": "2026-01-27",
+    "dateModified": "2026-06-01"
   };
 
   return (
     <>
       <SchemaMarkup type="Article" data={articleSchema} />
-      <SchemaMarkup type="FAQPage" data={faqSchema} />
+
+      {/* Breadcrumb Navigation */}
+      <nav className="mb-6 text-slate-600 dark:text-slate-400">
+        <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
+        {' › '}
+        <Link to="/grammar" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar</Link>
+        {' › '}
+        <Link to="/grammar/verb-tenses" className="hover:text-blue-600 dark:hover:text-blue-400">Verb Tenses</Link>
+        {' › '}
+        <span className="text-slate-900 dark:text-slate-100">Present Progressive Tense</span>
+      </nav>
 
       <article className="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-xl shadow-lg shadow-slate-200/50 border border-slate-200 dark:bg-slate-800/50 dark:border-slate-700 dark:shadow-slate-900/50">
         <h1 className="font-heading text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight dark:text-slate-100">
-          What Is the Present Progressive Tense?
+          What Is the Present Progressive (Present Continuous) Tense?
         </h1>
 
-        <div className="bg-blue-50 dark:bg-slate-700 border-l-4 border-blue-600 p-6 mb-8">
-          <h2 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-3">Definition</h2>
-          <p className="text-lg text-slate-700 dark:text-slate-300">
-            The Present Progressive tense (also called Present Continuous) is used to describe actions happening right now, temporary situations, and planned future arrangements. It emphasizes the ongoing nature of an action in the present moment or near future.
-          </p>
-        </div>
+        <p className="text-lg text-slate-700 dark:text-slate-300 mb-6">
+          The <strong>present progressive tense</strong> (also called the <strong>present continuous tense</strong>) is an English verb tense formed with{' '}
+          <strong>am/is/are + verb-ing</strong>. It describes actions happening right now, temporary situations, future arrangements, and changing trends.
+          Example: <em>She is reading a book.</em>
+        </p>
 
-        <ArticleHeading>When to Use the Present Progressive Tense</ArticleHeading>
-        <ul className="list-disc list-inside space-y-3 mb-8 text-lg text-slate-700 dark:text-slate-300">
-          <li><strong>Actions happening now:</strong> I am studying right now.</li>
-          <li><strong>Temporary situations:</strong> She is living in London this month.</li>
-          <li><strong>Future arrangements:</strong> We are meeting tomorrow at 5 PM.</li>
-          <li><strong>Changing situations:</strong> The weather is getting colder.</li>
-          <li><strong>Annoying repeated actions (with always):</strong> He is always losing his keys.</li>
-          <li><strong>Background actions in storytelling:</strong> The sun is shining and birds are singing.</li>
+        <p className="text-lg text-slate-700 dark:text-slate-300 mb-8">
+          The present progressive is often contrasted with the{' '}
+          <Link to="/grammar/verb-tenses/simple-present" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">simple present tense</Link>,
+          which describes habits and general truths.
+        </p>
+
+        {/* Table of Contents */}
+        <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-10 mb-5 pb-2 border-b border-slate-200 dark:border-slate-700">Table of Contents</h2>
+        <ul className="list-disc list-inside space-y-2 mb-8 text-lg text-slate-700 dark:text-slate-300">
+          <li><a href="#formation" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">How to Form the Present Progressive</a></li>
+          <li><a href="#uses" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">When to Use It</a></li>
+          <li><a href="#signal" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Signal Words</a></li>
+          <li><a href="#spelling" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">-ing Spelling Rules</a></li>
+          <li><a href="#negative" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Negative Form</a></li>
+          <li><a href="#questions" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Questions</a></li>
+          <li><a href="#stative" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Stative Verbs</a></li>
+          <li><a href="#comparison" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Tense Comparisons</a></li>
+          <li><a href="#ielts" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Present Progressive in IELTS</a></li>
+          <li><a href="#mistakes" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Common Mistakes</a></li>
+          <li><a href="#faq" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">FAQ</a></li>
         </ul>
 
-        <ArticleHeading>Present Progressive Tense Structure</ArticleHeading>
+        {/* Formation Section */}
+        <h2 id="formation" className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-10 mb-5 pb-2 border-b border-slate-200 dark:border-slate-700">How to Form the Present Progressive Tense</h2>
+        <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">Structure:</p>
+        <p className="text-lg font-bold text-slate-900 dark:text-slate-100 mb-6">Subject + am/is/are + verb-ing</p>
+
         <div className="overflow-x-auto my-6">
           <table className="min-w-full border border-slate-300 dark:border-slate-600">
+            <caption className="text-left text-lg font-semibold mb-2 text-slate-900 dark:text-slate-100">Present Progressive Conjugation</caption>
             <thead>
               <tr className="bg-slate-100 dark:bg-slate-700">
-                <th className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-left font-semibold">Type</th>
-                <th className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-left font-semibold">Formula</th>
+                <th className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-left font-semibold">Subject</th>
                 <th className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-left font-semibold">Example</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Affirmative</td>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">S + am/is/are + V-ing</td>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">She is working now. / I am studying English.</td>
-              </tr>
-              <tr className="bg-slate-50 dark:bg-slate-800">
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Negative</td>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">S + am/is/are + not + V-ing</td>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">She isn't working today. / I am not sleeping.</td>
-              </tr>
-              <tr>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Question</td>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Am/Is/Are + S + V-ing?</td>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Is she working? / Are you listening to me?</td>
-              </tr>
+              <tr><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">I</td><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">I am working</td></tr>
+              <tr className="bg-slate-50 dark:bg-slate-800"><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">You</td><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">You are working</td></tr>
+              <tr><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">He / She / It</td><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">She is working</td></tr>
+              <tr className="bg-slate-50 dark:bg-slate-800"><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">We</td><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">We are working</td></tr>
+              <tr><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">They</td><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">They are working</td></tr>
             </tbody>
           </table>
         </div>
 
-        <ArticleHeading>Common Time Expressions</ArticleHeading>
-        <ul className="list-disc list-inside space-y-2 mb-8 text-lg text-slate-700 dark:text-slate-300">
-          <li>now, right now, at the moment, at present</li>
-          <li>currently, presently</li>
-          <li>today, this week, this month, this year</li>
-          <li>these days, nowadays</li>
-          <li>still (for actions continuing)</li>
-          <li>Look! Listen! (to draw attention to current actions)</li>
-        </ul>
-
-        <ArticleHeading>Examples</ArticleHeading>
-        
-        <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-8 mb-4">Actions Happening Now</h3>
-        <ul className="list-disc list-inside space-y-2 mb-6 text-lg text-slate-700 dark:text-slate-300">
-          <li>I am writing an email right now.</li>
-          <li>Listen! Someone is playing the piano.</li>
-          <li>The children are sleeping at the moment.</li>
-          <li>Look! It is snowing outside.</li>
-        </ul>
-
-        <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-8 mb-4">Temporary Situations</h3>
-        <ul className="list-disc list-inside space-y-2 mb-6 text-lg text-slate-700 dark:text-slate-300">
-          <li>She is staying with her parents this month.</li>
-          <li>We are studying hard for our exams.</li>
-          <li>He is working on a special project these days.</li>
-          <li>They are living in a hotel while their house is being renovated.</li>
-        </ul>
-
-        <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-8 mb-4">Future Arrangements</h3>
-        <ul className="list-disc list-inside space-y-2 mb-6 text-lg text-slate-700 dark:text-slate-300">
-          <li>I am meeting my friends for dinner tonight.</li>
-          <li>They are flying to Paris next week.</li>
-          <li>We are having a party on Saturday.</li>
-          <li>She is starting her new job next Monday.</li>
-        </ul>
-
-        <ArticleHeading>Common Mistakes</ArticleHeading>
-        
-        <div className="space-y-4 mb-8">
-          <div className="p-4 bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 rounded">
-            <p className="text-lg mb-2"><strong>Wrong:</strong> I am knowing the answer.</p>
-            <p className="text-lg mb-2"><strong>Correct:</strong> I know the answer.</p>
-            <p className="text-slate-700 dark:text-slate-300"><strong>Why:</strong> Stative verbs like "know" describe states, not actions, and aren't used in progressive tenses.</p>
-          </div>
-
-          <div className="p-4 bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 rounded">
-            <p className="text-lg mb-2"><strong>Wrong:</strong> She going to the store.</p>
-            <p className="text-lg mb-2"><strong>Correct:</strong> She is going to the store.</p>
-            <p className="text-slate-700 dark:text-slate-300"><strong>Why:</strong> Present Progressive requires the "be" verb (am/is/are) before the -ing form.</p>
-          </div>
-
-          <div className="p-4 bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 rounded">
-            <p className="text-lg mb-2"><strong>Wrong:</strong> He is stoping the car.</p>
-            <p className="text-lg mb-2"><strong>Correct:</strong> He is stopping the car.</p>
-            <p className="text-slate-700 dark:text-slate-300"><strong>Why:</strong> For verbs ending in consonant-vowel-consonant, double the final consonant before adding -ing.</p>
-          </div>
-
-          <div className="p-4 bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 rounded">
-            <p className="text-lg mb-2"><strong>Wrong:</strong> I am drinking coffee every morning.</p>
-            <p className="text-lg mb-2"><strong>Correct:</strong> I drink coffee every morning.</p>
-            <p className="text-slate-700 dark:text-slate-300"><strong>Why:</strong> For habits and routines, use Present Simple, not Present Progressive.</p>
-          </div>
-
-          <div className="p-4 bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 rounded">
-            <p className="text-lg mb-2"><strong>Wrong:</strong> They is watching TV.</p>
-            <p className="text-lg mb-2"><strong>Correct:</strong> They are watching TV.</p>
-            <p className="text-slate-700 dark:text-slate-300"><strong>Why:</strong> Use "are" with plural subjects, not "is."</p>
-          </div>
+        {/* Spelling Rules Section */}
+        <h2 id="spelling" className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-10 mb-5 pb-2 border-b border-slate-200 dark:border-slate-700">-ing Spelling Rules</h2>
+        <div className="overflow-x-auto my-6">
+          <table className="min-w-full border border-slate-300 dark:border-slate-600">
+            <caption className="text-left text-lg font-semibold mb-2 text-slate-900 dark:text-slate-100">Spelling Rules for -ing</caption>
+            <thead>
+              <tr className="bg-slate-100 dark:bg-slate-700">
+                <th className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-left font-semibold">Rule</th>
+                <th className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-left font-semibold">Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Add -ing</td><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">play → playing</td></tr>
+              <tr className="bg-slate-50 dark:bg-slate-800"><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Drop silent e</td><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">make → making</td></tr>
+              <tr><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Double consonant</td><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">run → running</td></tr>
+              <tr className="bg-slate-50 dark:bg-slate-800"><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">ie → y</td><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">lie → lying</td></tr>
+            </tbody>
+          </table>
         </div>
 
-        <ArticleHeading>Present Progressive vs. Present Simple</ArticleHeading>
+        {/* Uses Section */}
+        <h2 id="uses" className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-10 mb-5 pb-2 border-b border-slate-200 dark:border-slate-700">When to Use the Present Progressive</h2>
+
+        <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mt-8 mb-4">Actions Happening Now</h3>
+        <ul className="list-disc list-inside space-y-2 mb-6 text-lg text-slate-700 dark:text-slate-300">
+          <li>I am writing an email.</li>
+          <li>She is studying.</li>
+          <li>They are watching TV.</li>
+        </ul>
+
+        <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mt-8 mb-4">Temporary Situations</h3>
+        <ul className="list-disc list-inside space-y-2 mb-6 text-lg text-slate-700 dark:text-slate-300">
+          <li>She is living in London this year.</li>
+          <li>We are studying for exams.</li>
+        </ul>
+
+        <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mt-8 mb-4">Future Arrangements</h3>
+        <ul className="list-disc list-inside space-y-2 mb-6 text-lg text-slate-700 dark:text-slate-300">
+          <li>I am flying to Paris tomorrow.</li>
+          <li>We are meeting tonight.</li>
+        </ul>
+
+        <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mt-8 mb-4">Changing Situations</h3>
+        <ul className="list-disc list-inside space-y-2 mb-6 text-lg text-slate-700 dark:text-slate-300">
+          <li>Prices are rising.</li>
+          <li>The weather is getting colder.</li>
+        </ul>
+
+        {/* Signal Words Section */}
+        <h2 id="signal" className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-10 mb-5 pb-2 border-b border-slate-200 dark:border-slate-700">Signal Words</h2>
+        <ul className="list-disc list-inside space-y-2 mb-8 text-lg text-slate-700 dark:text-slate-300">
+          <li>now</li>
+          <li>right now</li>
+          <li>at the moment</li>
+          <li>currently</li>
+          <li>today</li>
+          <li>this week</li>
+          <li>Look!</li>
+          <li>Listen!</li>
+        </ul>
+
+        {/* Negative Form Section */}
+        <h2 id="negative" className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-10 mb-5 pb-2 border-b border-slate-200 dark:border-slate-700">Negative Form</h2>
+        <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">Subject + am/is/are + not + verb-ing</p>
+        <p className="text-lg font-semibold text-slate-900 dark:text-slate-100 mb-4">Examples:</p>
+        <ul className="list-disc list-inside space-y-2 mb-8 text-lg text-slate-700 dark:text-slate-300">
+          <li>I am not working.</li>
+          <li>She isn't sleeping.</li>
+          <li>They aren't coming.</li>
+        </ul>
+
+        {/* Questions Section */}
+        <h2 id="questions" className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-10 mb-5 pb-2 border-b border-slate-200 dark:border-slate-700">Questions in the Present Progressive</h2>
+
+        <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mt-8 mb-4">Yes / No Questions</h3>
+        <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">Am/Is/Are + subject + verb-ing?</p>
+        <ul className="list-disc list-inside space-y-2 mb-6 text-lg text-slate-700 dark:text-slate-300">
+          <li>Are you studying?</li>
+          <li>Is she working?</li>
+        </ul>
+
+        <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mt-8 mb-4">Wh Questions</h3>
+        <ul className="list-disc list-inside space-y-2 mb-8 text-lg text-slate-700 dark:text-slate-300">
+          <li>What are you doing?</li>
+          <li>Where is he going?</li>
+        </ul>
+
+        {/* Stative Verbs Section */}
+        <h2 id="stative" className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-10 mb-5 pb-2 border-b border-slate-200 dark:border-slate-700">Stative Verbs (Not Used in Progressive)</h2>
+        <ul className="list-disc list-inside space-y-2 mb-6 text-lg text-slate-700 dark:text-slate-300">
+          <li>know</li>
+          <li>believe</li>
+          <li>love</li>
+          <li>want</li>
+          <li>need</li>
+          <li>own</li>
+        </ul>
+        <p className="text-lg font-semibold text-slate-900 dark:text-slate-100 mb-2">Example:</p>
+        <div className="space-y-2 mb-8 text-lg text-slate-700 dark:text-slate-300">
+          <p className="text-green-700 dark:text-green-400">Correct: I know the answer.</p>
+          <p className="text-red-600 dark:text-red-400">Incorrect: I am knowing the answer.</p>
+        </div>
+
+        {/* Comparison Section */}
+        <h2 id="comparison" className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-10 mb-5 pb-2 border-b border-slate-200 dark:border-slate-700">Tense Comparisons</h2>
+
+        <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mt-8 mb-4">Present Progressive vs Simple Present</h3>
+        <div className="overflow-x-auto my-6">
+          <table className="min-w-full border border-slate-300 dark:border-slate-600">
+            <thead>
+              <tr className="bg-slate-100 dark:bg-slate-700">
+                <th className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-left font-semibold">Present Progressive</th>
+                <th className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-left font-semibold">Simple Present</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">I am working now</td><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">I work every day</td></tr>
+              <tr className="bg-slate-50 dark:bg-slate-800"><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">She is reading</td><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">She reads daily</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mt-8 mb-4">Present Progressive vs Present Perfect</h3>
+        <div className="overflow-x-auto my-6">
+          <table className="min-w-full border border-slate-300 dark:border-slate-600">
+            <thead>
+              <tr className="bg-slate-100 dark:bg-slate-700">
+                <th className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-left font-semibold">Present Progressive</th>
+                <th className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-left font-semibold">Present Perfect</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">I am working now</td><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">I have worked today</td></tr>
+              <tr className="bg-slate-50 dark:bg-slate-800"><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">She is studying</td><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">She has studied English</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        {/* IELTS Section */}
+        <h2 id="ielts" className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-10 mb-5 pb-2 border-b border-slate-200 dark:border-slate-700">Present Progressive in IELTS Writing</h2>
         <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
-          The Present Progressive describes <strong>temporary actions happening now</strong>, while the Present Simple describes <strong>permanent situations and habits</strong>.
+          In IELTS Writing, the present progressive tense is commonly used to describe trends and changes.
+        </p>
+        <p className="text-lg font-semibold text-slate-900 dark:text-slate-100 mb-2">Examples:</p>
+        <ul className="list-disc list-inside space-y-2 mb-8 text-lg text-slate-700 dark:text-slate-300">
+          <li>The number of students studying abroad is increasing.</li>
+          <li>Technology is changing the way people communicate.</li>
+        </ul>
+
+        {/* Common Mistakes Section */}
+        <h2 id="mistakes" className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-10 mb-5 pb-2 border-b border-slate-200 dark:border-slate-700">Common Mistakes</h2>
+        <div className="overflow-x-auto my-6">
+          <table className="min-w-full border border-slate-300 dark:border-slate-600">
+            <thead>
+              <tr className="bg-slate-100 dark:bg-slate-700">
+                <th className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-left font-semibold">Incorrect</th>
+                <th className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-left font-semibold">Correct</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-red-600 dark:text-red-400">I am knowing</td><td className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-green-700 dark:text-green-400">I know</td></tr>
+              <tr className="bg-slate-50 dark:bg-slate-800"><td className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-red-600 dark:text-red-400">She going</td><td className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-green-700 dark:text-green-400">She is going</td></tr>
+              <tr><td className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-red-600 dark:text-red-400">He is stoping</td><td className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-green-700 dark:text-green-400">He is stopping</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        {/* FAQ Section */}
+        <h2 id="faq" className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-10 mb-5 pb-2 border-b border-slate-200 dark:border-slate-700">Frequently Asked Questions</h2>
+
+        <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mt-8 mb-4">What is the present progressive tense?</h3>
+        <p className="text-lg text-slate-700 dark:text-slate-300 mb-6">
+          The present progressive tense describes actions happening right now using am/is/are + verb-ing.
         </p>
 
-        <ul className="list-disc list-inside space-y-3 mb-6 text-lg text-slate-700 dark:text-slate-300">
-          <li><strong>Use Progressive for now:</strong> I am working from home today. (temporary, right now)</li>
-          <li><strong>Use Simple for habits:</strong> I work from home. (permanent situation)</li>
-          <li><strong>Progressive = temporary:</strong> She is living in London this year.</li>
-          <li><strong>Simple = permanent:</strong> She lives in London.</li>
-          <li><strong>Progressive = ongoing:</strong> He is reading a book right now.</li>
-        </ul>
+        <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mt-8 mb-4">When do we use the present progressive?</h3>
+        <p className="text-lg text-slate-700 dark:text-slate-300 mb-6">
+          We use it for actions happening now, temporary situations, and future arrangements.
+        </p>
 
-        <div className="bg-slate-50 dark:bg-slate-700 p-6 rounded-lg mb-8">
-          <h4 className="font-bold text-xl mb-4 text-slate-900 dark:text-slate-100">Side-by-Side Comparison</h4>
-          <div className="space-y-2 text-slate-700 dark:text-slate-300">
-            <p><strong>Present Progressive:</strong> I am studying English. (right now)</p>
-            <p><strong>Present Simple:</strong> I study English. (general fact/habit)</p>
-            <p className="mt-4"><strong>Present Progressive:</strong> She is working on a project. (temporary)</p>
-            <p><strong>Present Simple:</strong> She works at Google. (permanent)</p>
-          </div>
-        </div>
+        <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mt-8 mb-4">What is the difference between present continuous and simple present?</h3>
+        <p className="text-lg text-slate-700 dark:text-slate-300 mb-8">
+          Present continuous describes actions happening now, while simple present describes habits.
+        </p>
 
-        <ArticleHeading>Quick Check</ArticleHeading>
-        <div className="space-y-6 mb-8">
-          <div className="p-4 bg-slate-50 dark:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded">
-            <p className="font-semibold text-lg mb-3">1. Choose the correct form: She ___ to music right now.</p>
-            <p>A) listens</p>
-            <p>B) is listening</p>
-            <p>C) listen</p>
-            <p>D) listening</p>
-            <p className="mt-3 text-green-700 dark:text-green-400 font-semibold">Correct answer: B) is listening</p>
-          </div>
+        {/* Related Verb Tenses Navigation */}
+        <nav className="mt-10 p-6 bg-slate-50 dark:bg-slate-700 rounded-lg">
+          <h2 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-4">Related Verb Tenses</h2>
+          <ul className="list-disc list-inside space-y-2 text-lg text-slate-700 dark:text-slate-300">
+            <li><Link to="/grammar/verb-tenses/simple-present" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Simple Present</Link></li>
+            <li><Link to="/grammar/verb-tenses/present-perfect" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Present Perfect</Link></li>
+            <li><Link to="/grammar/verb-tenses/past-progressive" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Past Progressive</Link></li>
+            <li><Link to="/grammar/verb-tenses" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">All Verb Tenses</Link></li>
+          </ul>
+        </nav>
 
-          <div className="p-4 bg-slate-50 dark:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded">
-            <p className="font-semibold text-lg mb-3">2. Which sentence is WRONG?</p>
-            <p>A) I am loving this song.</p>
-            <p>B) I am watching TV.</p>
-            <p>C) She is sleeping now.</p>
-            <p>D) They are playing football.</p>
-            <p className="mt-3 text-green-700 dark:text-green-400 font-semibold">Correct answer: A) I am loving this song. (love is a stative verb)</p>
-          </div>
-
-          <div className="p-4 bg-slate-50 dark:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded">
-            <p className="font-semibold text-lg mb-3">3. Choose the correct form: We ___ dinner at 7 PM tomorrow.</p>
-            <p>A) have</p>
-            <p>B) are having</p>
-            <p>C) having</p>
-            <p>D) has</p>
-            <p className="mt-3 text-green-700 dark:text-green-400 font-semibold">Correct answer: B) are having (future arrangement)</p>
-          </div>
-
-          <div className="p-4 bg-slate-50 dark:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded">
-            <p className="font-semibold text-lg mb-3">4. Which expresses a habit?</p>
-            <p>A) I am reading a book right now.</p>
-            <p>B) I read books every day.</p>
-            <p>C) I am always reading books.</p>
-            <p>D) Books are interesting.</p>
-            <p className="mt-3 text-green-700 dark:text-green-400 font-semibold">Correct answer: B) I read books every day.</p>
-          </div>
-
-          <div className="p-4 bg-slate-50 dark:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded">
-            <p className="font-semibold text-lg mb-3">5. Choose the correct negative: They ___ working today.</p>
-            <p>A) isn't</p>
-            <p>B) aren't</p>
-            <p>C) not</p>
-            <p>D) don't</p>
-            <p className="mt-3 text-green-700 dark:text-green-400 font-semibold">Correct answer: B) aren't</p>
-          </div>
-        </div>
-
-        <ArticleHeading>Next Steps</ArticleHeading>
-        <ul className="list-disc list-inside space-y-2 mb-8 text-lg text-slate-700 dark:text-slate-300">
-          <li><Link to="/grammar/verb-tenses" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">Verb Tenses Overview</Link> - Learn all 12 English verb tenses</li>
-          <li><Link to="/grammar/verb-tenses/present-simple" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">What Is the Present Simple Tense?</Link> - Compare with Present Progressive</li>
-          <li><Link to="/quizzes/verb-tenses-quiz" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">Verb Tenses Quiz</Link> - Test your knowledge of all tenses</li>
-        </ul>
-
+        {/* Author Attribution Box */}
         <div className="bg-slate-100 dark:bg-slate-700 border border-slate-300 dark:border-slate-600 p-6 my-8 rounded-lg">
           <p className="text-slate-700 dark:text-slate-300 mb-4">
             By <Link to="/about/editorial-team" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">TypoGrammar Editorial Team</Link>

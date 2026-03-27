@@ -5,8 +5,13 @@ export const ArticleParagraph = ({ children }: { children?: React.ReactNode }) =
   <p className="font-body text-slate-700 leading-relaxed mb-6 text-lg dark:text-slate-300">{children}</p>
 );
 
-export const ArticleHeading = ({ children }: { children?: React.ReactNode }) => (
-  <h3 className="font-heading text-3xl font-bold text-slate-800 mt-10 mb-5 border-b-2 border-slate-200 pb-3 dark:text-slate-200 dark:border-slate-700">{children}</h3>
+interface ArticleHeadingProps {
+  children?: React.ReactNode;
+  id?: string;
+}
+
+export const ArticleHeading: React.FC<ArticleHeadingProps> = ({ children, id }) => (
+  <h3 id={id} className="font-heading text-3xl font-bold text-slate-800 mt-10 mb-5 border-b-2 border-slate-200 pb-3 dark:text-slate-200 dark:border-slate-700">{children}</h3>
 );
 
 export const InlineCode = ({ children }: { children?: React.ReactNode }) => (

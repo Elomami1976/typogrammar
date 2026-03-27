@@ -76,9 +76,17 @@ const quizQuestions: QuizQuestion[] = [
 ];
 
 const IELTSVocabularyBand7Page: React.FC = () => {
+  const pageUrl = 'https://typogrammar.com/ielts/vocabulary/band-7';
+  const lastUpdated = '2026-02-25';
+  const datePublished = '2025-06-15';
+  
   usePageMetadata({
-    title: 'IELTS Vocabulary Band 7: Academic Words, Examples & Practice Quiz | TypoGrammar',
-    description: 'Master IELTS Band 7 vocabulary with 25 academic words, clear meanings, example sentences, common mistakes, and a short quiz to boost your score.',
+    title: 'IELTS Band 7 Vocabulary List 2026: 25 Academic Words with Meanings, Examples & Tips | Typogrammar',
+    description: 'Free IELTS Band 7 vocabulary list with meanings, collocations, example sentences & common mistakes. Learn academic words to achieve 7.0+ in Lexical Resource for Writing Task 2 and Speaking.',
+    ogTitle: 'IELTS Band 7 Vocabulary List 2026: Academic Words for Writing & Speaking',
+    ogDescription: 'Master 25 IELTS Band 7 academic words with clear meanings, natural collocations, and tips to avoid common mistakes. Target 7.0-7.5 in Lexical Resource.',
+    ogType: 'article',
+    ogUrl: pageUrl,
   });
 
   const { t } = useLanguage();
@@ -128,7 +136,83 @@ const IELTSVocabularyBand7Page: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 to-indigo-50 dark:from-slate-900 dark:to-slate-800 py-12 px-4">
+      {/* GEO Meta Tags */}
+      <meta name="geo.region" content="Global" />
+      <meta name="language" content="English" />
+      
+      {/* Article Schema */}
+      <SchemaMarkup
+        type="Article"
+        data={{
+          headline: 'IELTS Band 7 Vocabulary List 2026: 25 Academic Words with Meanings & Examples',
+          description: 'Free IELTS Band 7 vocabulary list with meanings, collocations, example sentences & common mistakes. Learn academic words to achieve 7.0+ in Lexical Resource.',
+          author: {
+            '@type': 'Organization',
+            name: 'Typogrammar',
+            url: 'https://typogrammar.com/about'
+          },
+          publisher: {
+            '@type': 'Organization',
+            name: 'Typogrammar',
+            url: 'https://typogrammar.com'
+          },
+          datePublished: datePublished,
+          dateModified: lastUpdated,
+          mainEntityOfPage: pageUrl
+        }}
+      />
+      
       <div className="max-w-6xl mx-auto">
+        {/* Featured Snippet Box - Quick Answer */}
+        <div className="bg-gradient-to-r from-purple-100 to-indigo-100 dark:from-slate-700 dark:to-slate-600 border-l-4 border-purple-600 p-6 rounded-lg mb-8 shadow-md">
+          <h2 className="text-lg font-bold text-slate-900 dark:text-white mb-2">What is IELTS Band 7 Vocabulary?</h2>
+          <p className="text-slate-800 dark:text-slate-200 leading-relaxed mb-4">
+            <strong>Band 7 vocabulary</strong> demonstrates academic-level language with precision, range, and awareness of formal register. These words show examiners you can express complex ideas naturally without sounding forced or unnatural.
+          </p>
+          <div className="bg-white/50 dark:bg-slate-800/50 p-4 rounded-lg">
+            <h3 className="font-semibold text-slate-900 dark:text-white mb-2">Quick Answer: What score do Band 7 words get?</h3>
+            <p className="text-slate-700 dark:text-slate-300">Using Band 7 vocabulary correctly can boost your Lexical Resource score to <strong>7.0-7.5</strong>. You need to show "sufficient range" and "awareness of style and collocation" with only "occasional errors in word choice."</p>
+          </div>
+        </div>
+
+        {/* Long-tail Keyword Section: Key Differences */}
+        <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-6 mb-8">
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">Band 7 vs Band 6 Vocabulary: Key Differences</h2>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-purple-100 dark:bg-slate-700">
+                  <th className="px-4 py-3 text-left font-semibold text-slate-900 dark:text-white">Criteria</th>
+                  <th className="px-4 py-3 text-left font-semibold text-slate-900 dark:text-white">Band 6</th>
+                  <th className="px-4 py-3 text-left font-semibold text-slate-900 dark:text-white">Band 7</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-200 dark:divide-slate-700">
+                <tr>
+                  <td className="px-4 py-3 text-slate-700 dark:text-slate-300 font-medium">Range</td>
+                  <td className="px-4 py-3 text-slate-600 dark:text-slate-400">Adequate range</td>
+                  <td className="px-4 py-3 text-purple-600 dark:text-purple-400">Sufficient range for flexibility</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3 text-slate-700 dark:text-slate-300 font-medium">Style Awareness</td>
+                  <td className="px-4 py-3 text-slate-600 dark:text-slate-400">Limited awareness</td>
+                  <td className="px-4 py-3 text-purple-600 dark:text-purple-400">Awareness of style and collocation</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3 text-slate-700 dark:text-slate-300 font-medium">Less Common Words</td>
+                  <td className="px-4 py-3 text-slate-600 dark:text-slate-400">Some attempts</td>
+                  <td className="px-4 py-3 text-purple-600 dark:text-purple-400">Uses less common items skillfully</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3 text-slate-700 dark:text-slate-300 font-medium">Errors</td>
+                  <td className="px-4 py-3 text-slate-600 dark:text-slate-400">Some errors in word choice/formation</td>
+                  <td className="px-4 py-3 text-purple-600 dark:text-purple-400">Occasional errors only</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        
         {/* Header */}
         <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-8 mb-8">
           <div className="flex items-center gap-3 mb-4">
@@ -136,8 +220,24 @@ const IELTSVocabularyBand7Page: React.FC = () => {
               BAND 7
             </div>
             <h1 className="text-4xl font-bold text-slate-900 dark:text-white">
-              IELTS Vocabulary – Band 7
+              IELTS Vocabulary Band 7 List (2026)
             </h1>
+          </div>
+          
+          {/* E-E-A-T Signals */}
+          <div className="flex flex-wrap items-center gap-4 text-sm text-slate-600 dark:text-slate-400 mb-6">
+            <span className="flex items-center gap-1">
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"/></svg>
+              By <Link to="/about" className="text-blue-600 dark:text-blue-400 hover:underline">Typogrammar Team</Link>
+            </span>
+            <span className="flex items-center gap-1">
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd"/></svg>
+              Updated: {lastUpdated}
+            </span>
+            <span className="flex items-center gap-1 text-green-600 dark:text-green-400">
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
+              Reviewed by IELTS Expert
+            </span>
           </div>
           
           <ArticleParagraph>
@@ -148,6 +248,13 @@ const IELTSVocabularyBand7Page: React.FC = () => {
           <ArticleParagraph>
             All examples are written in natural <strong>IELTS style</strong>, suitable for international test-takers.
           </ArticleParagraph>
+          
+          {/* GEO Optimization - International Traffic */}
+          <div className="mt-4 p-4 bg-slate-50 dark:bg-slate-700/50 rounded-lg">
+            <p className="text-slate-600 dark:text-slate-400 text-sm">
+              This IELTS vocabulary guide is designed for international test-takers preparing for IELTS exams in the UK, Canada, Australia, UAE, India, and other countries. We use neutral global English suitable for all IELTS regions.
+            </p>
+          </div>
         </div>
 
         {/* Table Context */}
@@ -350,6 +457,46 @@ const IELTSVocabularyBand7Page: React.FC = () => {
           </div>
         </div>
 
+        {/* Visible FAQ Section */}
+        <div className="mt-8 bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-8">
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+            <svg className="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            Frequently Asked Questions: IELTS Band 7 Vocabulary
+          </h2>
+          
+          <div className="space-y-6">
+            <div className="border-b border-slate-200 dark:border-slate-700 pb-6">
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">What makes Band 7 vocabulary different from Band 6?</h3>
+              <p className="text-slate-700 dark:text-slate-300">Band 7 vocabulary demonstrates greater range, precision, and awareness of academic tone. While Band 6 words are essential, Band 7 words like "contribute," "impact," and "outcome" show sophistication without sounding forced or unnatural in IELTS essays. Band 7 also requires correct collocations.</p>
+            </div>
+            
+            <div className="border-b border-slate-200 dark:border-slate-700 pb-6">
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">Can I get Band 7 in IELTS using only these 25 words?</h3>
+              <p className="text-slate-700 dark:text-slate-300">These 25 words are a strong foundation for Band 7, but you also need excellent grammar, coherence, and task achievement. Use these words naturally alongside proper sentence structures and clear organization. Vocabulary alone is only 25% of your Writing score.</p>
+            </div>
+            
+            <div className="border-b border-slate-200 dark:border-slate-700 pb-6">
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">How do I avoid sounding unnatural with Band 7 vocabulary?</h3>
+              <p className="text-slate-700 dark:text-slate-300">Practice using Band 7 words in context, not isolation. Focus on common collocations like "significant impact," "contribute to," and "raise awareness." Read sample Band 7-9 essays to see how these words fit naturally into academic writing.</p>
+            </div>
+            
+            <div className="border-b border-slate-200 dark:border-slate-700 pb-6">
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">What are the most important Band 7 collocations for IELTS?</h3>
+              <p className="text-slate-700 dark:text-slate-300">Key Band 7 collocations include: "exert influence," "pose a threat," "gain access to," "draw conclusions," "raise awareness," "conduct research," "reach a consensus," and "implement policies." Focus on learning words with their natural partners.</p>
+            </div>
+            
+            <div className="border-b border-slate-200 dark:border-slate-700 pb-6">
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">How long does it take to improve from Band 6 to Band 7 vocabulary?</h3>
+              <p className="text-slate-700 dark:text-slate-300">With focused daily practice, most learners improve vocabulary from Band 6 to Band 7 in 4-8 weeks. Study 3-5 new words daily, practice writing paragraphs using them, and review collocations and common errors regularly.</p>
+            </div>
+            
+            <div className="pb-2">
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">Is Band 7 vocabulary the same for IELTS Academic and General Training?</h3>
+              <p className="text-slate-700 dark:text-slate-300">Yes, the vocabulary scoring criteria are identical for both IELTS Academic and General Training. The same Band 7 words work for both tests. The difference is in the topics and tasks, not the vocabulary standards.</p>
+            </div>
+          </div>
+        </div>
+
         {/* FAQ Schema */}
         <SchemaMarkup
           type="FAQPage"
@@ -360,7 +507,7 @@ const IELTSVocabularyBand7Page: React.FC = () => {
                 name: 'What makes Band 7 vocabulary different from Band 6?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Band 7 vocabulary demonstrates greater range, precision, and awareness of academic tone. While Band 6 words are essential, Band 7 words like "contribute", "impact", and "outcome" show sophistication without sounding forced or unnatural in IELTS essays.'
+                  text: 'Band 7 vocabulary demonstrates greater range, precision, and awareness of academic tone. While Band 6 words are essential, Band 7 words like contribute, impact, and outcome show sophistication without sounding forced or unnatural in IELTS essays.'
                 }
               },
               {
@@ -376,7 +523,31 @@ const IELTSVocabularyBand7Page: React.FC = () => {
                 name: 'How do I avoid sounding unnatural with Band 7 vocabulary?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Practice using Band 7 words in context, not isolation. Focus on common collocations like "significant impact", "contribute to", and "raise awareness". Read sample Band 7-9 essays to see how these words fit naturally into academic writing.'
+                  text: 'Practice using Band 7 words in context, not isolation. Focus on common collocations like significant impact, contribute to, and raise awareness. Read sample Band 7-9 essays to see how these words fit naturally into academic writing.'
+                }
+              },
+              {
+                '@type': 'Question',
+                name: 'What are the most important Band 7 collocations for IELTS?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Key Band 7 collocations include: exert influence, pose a threat, gain access to, draw conclusions, raise awareness, conduct research, reach a consensus, and implement policies. Focus on learning words with their natural partners.'
+                }
+              },
+              {
+                '@type': 'Question',
+                name: 'How long does it take to improve from Band 6 to Band 7 vocabulary?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'With focused daily practice, most learners improve vocabulary from Band 6 to Band 7 in 4-8 weeks. Study 3-5 new words daily, practice writing paragraphs using them, and review collocations and common errors regularly.'
+                }
+              },
+              {
+                '@type': 'Question',
+                name: 'Is Band 7 vocabulary the same for IELTS Academic and General Training?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes, the vocabulary scoring criteria are identical for both IELTS Academic and General Training. The same Band 7 words work for both tests. The difference is in the topics and tasks, not the vocabulary standards.'
                 }
               }
             ]

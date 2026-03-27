@@ -70,9 +70,17 @@ const quizQuestions: QuizQuestion[] = [
 ];
 
 const IELTSVocabularyBand6Page: React.FC = () => {
+  const pageUrl = 'https://typogrammar.com/ielts/vocabulary/band-6';
+  const lastUpdated = '2026-02-25';
+  const datePublished = '2025-06-15';
+  
   usePageMetadata({
-    title: 'IELTS Vocabulary Band 6: 25 Essential Words with Examples & Quiz | TypoGrammar',
-    description: 'Learn 25 essential IELTS Band 6 vocabulary words with clear meanings, example sentences, common mistakes, and a short quiz to improve your IELTS score.',
+    title: 'IELTS Band 6 Vocabulary List 2026: 25 Essential Words with Meanings, Examples & PDF | Typogrammar',
+    description: 'Free IELTS Band 6 vocabulary list with meanings, example sentences, common mistakes & upgrade tips. Learn essential academic words to improve lexical resource score from 5.5 to 6.5 in Writing Task 2 and Speaking.',
+    ogTitle: 'IELTS Band 6 Vocabulary List 2026: Essential Words for Writing & Speaking',
+    ogDescription: 'Master 25 essential IELTS Band 6 words with clear meanings, IELTS-style examples, and tips to avoid common mistakes. Free vocabulary list for international test-takers.',
+    ogType: 'article',
+    ogUrl: pageUrl,
   });
 
   const { t } = useLanguage();
@@ -122,7 +130,57 @@ const IELTSVocabularyBand6Page: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-slate-900 dark:to-slate-800 py-12 px-4">
+      {/* GEO Meta Tags */}
+      <meta name="geo.region" content="Global" />
+      <meta name="language" content="English" />
+      
+      {/* Article Schema */}
+      <SchemaMarkup
+        type="Article"
+        data={{
+          headline: 'IELTS Band 6 Vocabulary List 2026: 25 Essential Words with Meanings & Examples',
+          description: 'Free IELTS Band 6 vocabulary list with meanings, example sentences, common mistakes & upgrade tips. Learn essential academic words to improve lexical resource score in Writing and Speaking.',
+          author: {
+            '@type': 'Organization',
+            name: 'Typogrammar',
+            url: 'https://typogrammar.com/about'
+          },
+          publisher: {
+            '@type': 'Organization',
+            name: 'Typogrammar',
+            url: 'https://typogrammar.com'
+          },
+          datePublished: datePublished,
+          dateModified: lastUpdated,
+          mainEntityOfPage: pageUrl
+        }}
+      />
+      
       <div className="max-w-6xl mx-auto">
+        {/* Featured Snippet Box - Quick Answer */}
+        <div className="bg-gradient-to-r from-blue-100 to-indigo-100 dark:from-slate-700 dark:to-slate-600 border-l-4 border-blue-600 p-6 rounded-lg mb-8 shadow-md">
+          <h2 className="text-lg font-bold text-slate-900 dark:text-white mb-2">What is IELTS Band 6 Vocabulary?</h2>
+          <p className="text-slate-800 dark:text-slate-200 leading-relaxed mb-4">
+            <strong>Band 6 vocabulary</strong> consists of essential academic words that demonstrate competent English beyond basic level. These words help you score 6.0-6.5 in IELTS Lexical Resource by avoiding repetition, expressing ideas clearly, and using appropriate academic register.
+          </p>
+          <div className="bg-white/50 dark:bg-slate-800/50 p-4 rounded-lg">
+            <h3 className="font-semibold text-slate-900 dark:text-white mb-2">Quick Answer: How many Band 6 words do I need?</h3>
+            <p className="text-slate-700 dark:text-slate-300">Learn <strong>20-30 Band 6 words</strong> actively (use in writing) and recognize 50+ passively. Focus on accuracy over quantity—correctly using 5-8 Band 6 words per essay is better than forcing 15 incorrectly.</p>
+          </div>
+        </div>
+
+        {/* Long-tail Keyword Section: How to Improve */}
+        <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-6 mb-8">
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">How to Improve IELTS Vocabulary from Band 5.5 to Band 6.5</h2>
+          <ol className="space-y-3 text-slate-700 dark:text-slate-300">
+            <li className="flex gap-3"><span className="bg-blue-500 text-white rounded-full w-7 h-7 flex items-center justify-center font-bold flex-shrink-0">1</span><span><strong>Replace basic words:</strong> Instead of "good," use "beneficial"; instead of "bad," use "harmful" or "detrimental."</span></li>
+            <li className="flex gap-3"><span className="bg-blue-500 text-white rounded-full w-7 h-7 flex items-center justify-center font-bold flex-shrink-0">2</span><span><strong>Learn word families:</strong> Study "effect" (noun), "effective" (adjective), "effectively" (adverb), "effectiveness" (noun).</span></li>
+            <li className="flex gap-3"><span className="bg-blue-500 text-white rounded-full w-7 h-7 flex items-center justify-center font-bold flex-shrink-0">3</span><span><strong>Use collocations:</strong> Learn natural pairs like "raise awareness," "conduct research," "implement policies."</span></li>
+            <li className="flex gap-3"><span className="bg-blue-500 text-white rounded-full w-7 h-7 flex items-center justify-center font-bold flex-shrink-0">4</span><span><strong>Practice in context:</strong> Write 5 sentences daily using new vocabulary in IELTS-style examples.</span></li>
+            <li className="flex gap-3"><span className="bg-blue-500 text-white rounded-full w-7 h-7 flex items-center justify-center font-bold flex-shrink-0">5</span><span><strong>Review mistakes:</strong> Keep a vocabulary error log and review common usage errors weekly.</span></li>
+          </ol>
+        </div>
+        
         {/* Header */}
         <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-8 mb-8">
           <div className="flex items-center gap-3 mb-4">
@@ -130,8 +188,24 @@ const IELTSVocabularyBand6Page: React.FC = () => {
               BAND 6
             </div>
             <h1 className="text-4xl font-bold text-slate-900 dark:text-white">
-              IELTS Vocabulary – Band 6
+              IELTS Vocabulary Band 6 List (2026)
             </h1>
+          </div>
+          
+          {/* E-E-A-T Signals */}
+          <div className="flex flex-wrap items-center gap-4 text-sm text-slate-600 dark:text-slate-400 mb-6">
+            <span className="flex items-center gap-1">
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"/></svg>
+              By <Link to="/about" className="text-blue-600 dark:text-blue-400 hover:underline">Typogrammar Team</Link>
+            </span>
+            <span className="flex items-center gap-1">
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd"/></svg>
+              Updated: {lastUpdated}
+            </span>
+            <span className="flex items-center gap-1 text-green-600 dark:text-green-400">
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
+              Reviewed by IELTS Expert
+            </span>
           </div>
           
           <ArticleParagraph>
@@ -142,6 +216,13 @@ const IELTSVocabularyBand6Page: React.FC = () => {
           <ArticleParagraph>
             This list is suitable for <strong>IELTS Academic and General Training</strong> candidates worldwide.
           </ArticleParagraph>
+          
+          {/* GEO Optimization - International Traffic */}
+          <div className="mt-4 p-4 bg-slate-50 dark:bg-slate-700/50 rounded-lg">
+            <p className="text-slate-600 dark:text-slate-400 text-sm">
+              This IELTS vocabulary guide is designed for international test-takers preparing for IELTS exams in the UK, Canada, Australia, UAE, India, and other countries. We use neutral global English suitable for all IELTS regions.
+            </p>
+          </div>
         </div>
 
         {/* Table Context */}
@@ -336,6 +417,46 @@ const IELTSVocabularyBand6Page: React.FC = () => {
           </div>
         </div>
 
+        {/* Visible FAQ Section */}
+        <div className="mt-8 bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-8">
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+            <svg className="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            Frequently Asked Questions: IELTS Band 6 Vocabulary
+          </h2>
+          
+          <div className="space-y-6">
+            <div className="border-b border-slate-200 dark:border-slate-700 pb-6">
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">What is IELTS Band 6 vocabulary?</h3>
+              <p className="text-slate-700 dark:text-slate-300">IELTS Band 6 vocabulary consists of essential words that demonstrate competent English usage beyond basic level. These words help you avoid repetition, express ideas more clearly, and sound more academic in Writing Task 2 essays and Speaking responses. Examples include "significant," "impact," "contribute," and "provide."</p>
+            </div>
+            
+            <div className="border-b border-slate-200 dark:border-slate-700 pb-6">
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">How many Band 6 words should I use in my IELTS essay?</h3>
+              <p className="text-slate-700 dark:text-slate-300">Focus on using 5-10 Band 6 vocabulary words naturally throughout your IELTS essay. Quality matters more than quantity—use words accurately and in appropriate contexts rather than forcing advanced vocabulary. A well-placed "essential" is better than five misused "advanced" words.</p>
+            </div>
+            
+            <div className="border-b border-slate-200 dark:border-slate-700 pb-6">
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">How long does it take to learn Band 6 vocabulary for IELTS?</h3>
+              <p className="text-slate-700 dark:text-slate-300">Most learners can master Band 6 vocabulary in 2-4 weeks with daily practice. Study 5-7 words per day, practice using them in sentences, and review common mistakes to achieve fluency with these essential IELTS words.</p>
+            </div>
+            
+            <div className="border-b border-slate-200 dark:border-slate-700 pb-6">
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">What is the difference between Band 5.5 and Band 6 vocabulary?</h3>
+              <p className="text-slate-700 dark:text-slate-300">Band 5.5 vocabulary is basic and often repetitive ("very good," "very big"), while Band 6 vocabulary shows more range and accuracy ("beneficial," "considerable"). Band 6 demonstrates you can avoid simple errors and use some less common vocabulary with occasional awkwardness.</p>
+            </div>
+            
+            <div className="border-b border-slate-200 dark:border-slate-700 pb-6">
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">Can I download this IELTS Band 6 vocabulary list as PDF?</h3>
+              <p className="text-slate-700 dark:text-slate-300">You can print this page directly from your browser (Ctrl+P or Cmd+P) and save it as PDF. The vocabulary table and all examples will be included in the printout for offline study.</p>
+            </div>
+            
+            <div className="pb-2">
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">Is Band 6 vocabulary enough for IELTS Academic or General Training?</h3>
+              <p className="text-slate-700 dark:text-slate-300">Band 6 vocabulary is sufficient for many university entry requirements (which often require 6.0-6.5). For higher scores (7.0+), you'll need to also master Band 7-8 vocabulary. Both Academic and General Training use the same vocabulary scoring criteria.</p>
+            </div>
+          </div>
+        </div>
+
         {/* FAQ Schema */}
         <SchemaMarkup
           type="FAQPage"
@@ -346,7 +467,7 @@ const IELTSVocabularyBand6Page: React.FC = () => {
                 name: 'What is IELTS Band 6 vocabulary?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'IELTS Band 6 vocabulary consists of essential words that demonstrate competent English usage beyond basic level. These words help you avoid repetition, express ideas more clearly, and sound more academic in Writing Task 2 essays and Speaking responses.'
+                  text: 'IELTS Band 6 vocabulary consists of essential words that demonstrate competent English usage beyond basic level. These words help you avoid repetition, express ideas more clearly, and sound more academic in Writing Task 2 essays and Speaking responses. Examples include significant, impact, contribute, and provide.'
                 }
               },
               {
@@ -359,10 +480,34 @@ const IELTSVocabularyBand6Page: React.FC = () => {
               },
               {
                 '@type': 'Question',
-                name: 'How long does it take to learn Band 6 vocabulary?',
+                name: 'How long does it take to learn Band 6 vocabulary for IELTS?',
                 acceptedAnswer: {
                   '@type': 'Answer',
                   text: 'Most learners can master Band 6 vocabulary in 2-4 weeks with daily practice. Study 5-7 words per day, practice using them in sentences, and review common mistakes to achieve fluency with these essential IELTS words.'
+                }
+              },
+              {
+                '@type': 'Question',
+                name: 'What is the difference between Band 5.5 and Band 6 vocabulary?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Band 5.5 vocabulary is basic and often repetitive (very good, very big), while Band 6 vocabulary shows more range and accuracy (beneficial, considerable). Band 6 demonstrates you can avoid simple errors and use some less common vocabulary with occasional awkwardness.'
+                }
+              },
+              {
+                '@type': 'Question',
+                name: 'Can I download this IELTS Band 6 vocabulary list as PDF?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'You can print this page directly from your browser (Ctrl+P or Cmd+P) and save it as PDF. The vocabulary table and all examples will be included in the printout for offline study.'
+                }
+              },
+              {
+                '@type': 'Question',
+                name: 'Is Band 6 vocabulary enough for IELTS Academic or General Training?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Band 6 vocabulary is sufficient for many university entry requirements (which often require 6.0-6.5). For higher scores (7.0+), you will need to also master Band 7-8 vocabulary. Both Academic and General Training use the same vocabulary scoring criteria.'
                 }
               }
             ]

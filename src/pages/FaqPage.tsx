@@ -154,7 +154,10 @@ const FaqPage: React.FC = () => {
 
       <div className="mb-10">
         <input
+          id="faq-search"
+          name="faq-search"
           type="search"
+          autoComplete="off"
           placeholder="Search questions..."
           className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 font-body text-lg transition-shadow duration-200 shadow-sm dark:bg-slate-700 dark:border-slate-600 dark:text-slate-200 dark:focus:ring-blue-500 dark:placeholder-slate-400"
           value={searchTerm}

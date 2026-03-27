@@ -33,7 +33,14 @@ export interface BlogPost {
   summary: string;
   category: string;
   image?: string;
+  imageAlt?: string;
   content: React.ReactNode;
+  schemaMarkup?: {
+    '@type'?: string;
+    '@context'?: string;
+    '@graph'?: unknown[];
+    [key: string]: unknown;
+  };
 }
 
 export interface ConfusedWordEntry {

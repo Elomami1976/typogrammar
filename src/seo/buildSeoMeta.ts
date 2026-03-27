@@ -41,6 +41,19 @@ export interface SeoOutput {
 }
 
 /**
+ * Normalize URL path for canonical:
+ * - Remove trailing slashes (except root)
+ * - Remove query parameters and hash fragments
+ */
+const normalizeCanonicalPath = (path: string): string => {
+  let cleanPath = path.split('?')[0].split('#')[0];
+  if (cleanPath.length > 1 && cleanPath.endsWith('/')) {
+    cleanPath = cleanPath.slice(0, -1);
+  }
+  return cleanPath;
+};
+
+/**
  * Build comprehensive SEO metadata for any page
  */
 export function buildSeoMeta(input: SeoInput): SeoOutput {
@@ -49,8 +62,9 @@ export function buildSeoMeta(input: SeoInput): SeoOutput {
   // Check if page has custom overrides in pageSeoMap
   const pageOverrides = (pageSeoMap as Record<string, any>)[path] || {};
 
-  // Build canonical URL
-  const canonicalUrl = seoDefaults.siteUrl + path;
+  // Build canonical URL - normalize to prevent duplicates
+  const normalizedPath = normalizeCanonicalPath(path);
+  const canonicalUrl = seoDefaults.siteUrl + normalizedPath;
 
   // Build title
   let finalTitle = title || pageOverrides.title || humanizeSlug(path);

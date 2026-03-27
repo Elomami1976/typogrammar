@@ -9,27 +9,32 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: {
-          // Split vendor code into separate chunk
+          // Split vendor code into separate chunk - loaded once, cached forever
           'react-vendor': ['react', 'react-dom', 'react-router-dom'],
-          // Split large content files
-          'blog-content': ['./src/constants/blogPosts'],
-          'grammar-content': ['./src/constants/grammarTopics'],
-          'quiz-data': ['./src/constants/quizData', './src/constants/additionalQuizQuestions'],
-          'vocabulary': ['./src/constants/irregularVerbs', './src/constants/phrasalVerbs', './src/constants/idioms', './src/constants/confusedWords'],
         },
+        // Optimize chunk naming for better caching
+        chunkFileNames: 'assets/[name]-[hash].js',
+        entryFileNames: 'assets/[name]-[hash].js',
+        assetFileNames: 'assets/[name]-[hash].[ext]',
       },
     },
     // Optimize chunk size
-    chunkSizeWarningLimit: 1000,
-    // Use esbuild for faster minification
+    chunkSizeWarningLimit: 500,
+    // Use esbuild for faster minification with aggressive settings
     minify: 'esbuild',
     // Enable CSS code splitting
     cssCodeSplit: true,
-    // Set target for better browser support
-    target: 'es2015',
+    // Modern target for smaller bundle
+    target: 'es2020',
     // Optimize assets
     assetsInlineLimit: 4096, // Inline assets smaller than 4kb
     reportCompressedSize: false, // Faster builds
+    // Enable source maps only in development
+    sourcemap: false,
+  },
+  // Optimize development experience
+  optimizeDeps: {
+    include: ['react', 'react-dom', 'react-router-dom'],
   },
   // Handle client-side routing in preview mode
   preview: {

@@ -1,10 +1,11 @@
-
 import React, { useState } from 'react';
 import GoogleAd from '../components/GoogleAd';
 import { READING_PASSAGES } from '../constants/readingComprehensionData';
 import { ReadingPassage, QuizQuestion } from '../types';
-import { ArticleParagraph } from '../components/ArticleComponents';
+import { ArticleParagraph, ArticleHeading } from '../components/ArticleComponents';
 import usePageMetadata from '../hooks/usePageMetadata';
+import { Link } from 'react-router-dom';
+import SchemaMarkup from '../components/SchemaMarkup';
 
 // Self-contained Quiz component for each passage
 const PassageQuiz: React.FC<{ questions: QuizQuestion[] }> = ({ questions }) => {
@@ -128,9 +129,45 @@ const PassageQuiz: React.FC<{ questions: QuizQuestion[] }> = ({ questions }) => 
 
 // Main Page Component
 const ReadingComprehensionPage: React.FC = () => {
+  const pageUrl = 'https://typogrammar.com/reading/reading-comprehension-practice';
+  const lastUpdated = '2026-02-25';
+  const datePublished = '2025-05-01';
+  
+  // FAQ data for schema and display
+  const faqData = [
+    {
+      question: 'What is reading comprehension?',
+      answer: 'Reading comprehension is the ability to understand, interpret, and analyze written text. It involves extracting meaning from passages, identifying main ideas, and making inferences.'
+    },
+    {
+      question: 'How can I improve my reading comprehension?',
+      answer: 'Improve reading comprehension by practicing regularly with varied texts, building vocabulary, asking questions while reading, summarizing passages, and testing yourself with comprehension questions.'
+    },
+    {
+      question: 'What types of questions are in reading comprehension tests?',
+      answer: 'Common question types include main idea questions, detail questions, inference questions, vocabulary in context, author\'s purpose, and tone/attitude questions.'
+    },
+    {
+      question: 'How do I find the main idea of a passage?',
+      answer: 'Find the main idea by: reading the first and last paragraphs carefully, identifying the topic sentence in each paragraph, asking "What is the author\'s overall point?", and looking for repeated concepts or themes throughout the passage.'
+    },
+    {
+      question: 'What is an inference question in reading comprehension?',
+      answer: 'An inference question asks you to draw conclusions that aren\'t directly stated but are implied by the text. You combine explicit information with your own reasoning to determine what the author suggests or what must be true.'
+    },
+    {
+      question: 'How much time should I spend on each reading comprehension passage?',
+      answer: 'For standardized tests like IELTS or TOEFL, spend about 15-20 minutes per passage (for 3 passages in 60 minutes). First skim the passage (2-3 minutes), then answer questions while referring back to the text.'
+    }
+  ];
+  
   usePageMetadata({
-    title: 'Reading Comprehension Practice | TypoGrammar',
-    description: 'Practice your reading comprehension skills with engaging passages and questions. Test your understanding and improve your reading abilities with interactive exercises.'
+    title: 'Reading Comprehension Practice (2026): Free Passages & Quizzes | Typogrammar',
+    description: 'Practice reading comprehension with engaging passages and interactive quizzes. Improve your reading skills with exercises covering science, history, technology, and more.',
+    ogTitle: 'Reading Comprehension Practice (2026): Free Passages & Quizzes',
+    ogDescription: 'Practice reading comprehension with engaging passages and interactive quizzes. Improve your reading skills with exercises covering multiple topics.',
+    ogType: 'article',
+    ogUrl: pageUrl,
   });
 
   const [openPassageId, setOpenPassageId] = useState<string | null>(READING_PASSAGES[0]?.id || null);
@@ -141,11 +178,84 @@ const ReadingComprehensionPage: React.FC = () => {
 
   return (
     <article className="max-w-4xl mx-auto">
-      <div className="text-center mb-12">
-        <h1 className="font-heading text-4xl md:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight dark:text-slate-100">Reading Comprehension Practice</h1>
+      {/* GEO Meta Tags */}
+      <meta name="geo.region" content="Global" />
+      <meta name="language" content="English" />
+      
+      {/* Article Schema */}
+      <SchemaMarkup
+        type="Article"
+        data={{
+          headline: 'Reading Comprehension Practice (2026): Free Passages & Quizzes',
+          description: 'Practice reading comprehension with engaging passages and interactive quizzes. Improve your reading skills with exercises covering multiple topics.',
+          author: {
+            '@type': 'Organization',
+            name: 'Typogrammar',
+            url: 'https://typogrammar.com/about'
+          },
+          publisher: {
+            '@type': 'Organization',
+            name: 'Typogrammar',
+            url: 'https://typogrammar.com'
+          },
+          datePublished: datePublished,
+          dateModified: lastUpdated,
+          mainEntityOfPage: pageUrl
+        }}
+      />
+      
+      {/* FAQ Schema */}
+      <SchemaMarkup
+        type="FAQPage"
+        data={{
+          mainEntity: faqData.map(faq => ({
+            '@type': 'Question',
+            name: faq.question,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: faq.answer
+            }
+          }))
+        }}
+      />
+      
+      {/* AI-Friendly Definition Box */}
+      <div className="bg-gradient-to-r from-green-100 to-teal-100 dark:from-slate-700 dark:to-slate-600 border-l-4 border-green-600 p-6 rounded-lg mb-8 shadow-md">
+        <h2 className="text-lg font-bold text-slate-900 dark:text-white mb-2">Definition:</h2>
+        <p className="text-slate-800 dark:text-slate-200 leading-relaxed">
+          Reading comprehension is the ability to understand, interpret, and extract meaning from written text through active engagement and critical thinking.
+        </p>
+      </div>
+      
+      <div className="text-center mb-8">
+        <h1 className="font-heading text-4xl md:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight dark:text-slate-100">Reading Comprehension Practice (2026)</h1>
+        
+        {/* E-E-A-T Signals */}
+        <div className="flex flex-wrap justify-center items-center gap-4 text-sm text-slate-600 dark:text-slate-400 mb-6">
+          <span className="flex items-center gap-1">
+            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"/></svg>
+            By <Link to="/about" className="text-blue-600 dark:text-blue-400 hover:underline">Typogrammar Team</Link>
+          </span>
+          <span className="flex items-center gap-1">
+            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd"/></svg>
+            Updated: {lastUpdated}
+          </span>
+          <span className="flex items-center gap-1 text-green-600 dark:text-green-400">
+            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
+            Reviewed by Education Expert
+          </span>
+        </div>
+        
         <ArticleParagraph>
           Read the following passages and answer the questions to test your understanding. Click on a topic to begin.
         </ArticleParagraph>
+        
+        {/* GEO Optimization */}
+        <div className="p-4 bg-slate-50 dark:bg-slate-700/50 rounded-lg mb-8 text-left">
+          <p className="text-slate-600 dark:text-slate-400 text-sm">
+            These reading comprehension exercises are designed for learners worldwide, including students in the UK, US, Canada, Australia, India, and other English-speaking regions. We use neutral global English suitable for academic and test preparation contexts.
+          </p>
+        </div>
       </div>
 
       <div className="space-y-4">
@@ -203,6 +313,22 @@ const ReadingComprehensionPage: React.FC = () => {
           </div>
         ))}
       </div>
+      
+      {/* Visible FAQ Section */}
+      <div className="mt-12 pt-8 border-t border-slate-200 dark:border-slate-700 bg-white p-8 md:p-10 rounded-xl shadow-lg shadow-slate-200/50 border border-slate-200 dark:bg-slate-800/50 dark:border-slate-700 dark:shadow-slate-900/50">
+        <ArticleHeading>Frequently Asked Questions About Reading Comprehension</ArticleHeading>
+        <div className="space-y-6 mt-6">
+          {faqData.map((faq, index) => (
+            <div key={index} className="bg-slate-50 dark:bg-slate-700/50 rounded-lg p-6 border border-slate-200 dark:border-slate-600">
+              <h3 className="font-heading text-xl font-bold text-slate-800 dark:text-slate-200 mb-3">
+                {faq.question}
+              </h3>
+              <ArticleParagraph>{faq.answer}</ArticleParagraph>
+            </div>
+          ))}
+        </div>
+      </div>
+      
       <div className="mt-8">
         <GoogleAd adSlot="6406598038" />
       </div>

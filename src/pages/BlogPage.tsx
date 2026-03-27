@@ -33,7 +33,7 @@ const BlogPage: React.FC = () => {
               <BlogImage
                 slug={post.slug}
                 fallbackUrl={post.image}
-                alt={post.title}
+                alt={post.imageAlt ?? post.title}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 loading="lazy"
               />

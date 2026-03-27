@@ -43,8 +43,12 @@ const VerbTensesQuizPage: React.FC = () => {
   const data = quizData as QuizData;
 
   usePageMetadata({
-    title: data.title,
-    description: data.description,
+    title: 'Free Verb Tenses Quiz 2026: 50 Questions with Answers & Explanations | TypoGrammar',
+    description: 'Free English verb tenses quiz with 50 multiple-choice questions, instant scoring, and detailed explanations. Practice all 12 tenses for IELTS, TOEFL, Cambridge exams & ESL learners.',
+    ogTitle: 'Free Verb Tenses Quiz: 50 Questions with Answers for IELTS & ESL',
+    ogDescription: 'Test your English verb tenses with this free 50-question quiz. Includes answers and explanations covering all 12 tenses from present simple to future perfect.',
+    ogType: 'website',
+    ogUrl: 'https://typogrammar.com/quizzes/verb-tenses-quiz'
   });
 
   // Scroll to top on mount
@@ -206,6 +210,17 @@ const VerbTensesQuizPage: React.FC = () => {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-800 dark:to-indigo-800 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
+          {/* Featured Snippet Box */}
+          <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 mb-8 text-left">
+            <h2 className="text-lg font-bold mb-2">What is this verb tenses quiz?</h2>
+            <p className="text-blue-100 mb-3">
+              A <strong className="text-white">free 50-question multiple-choice quiz</strong> testing all 12 English verb tenses from present simple to future perfect continuous. Each question includes detailed explanations to help you learn from mistakes.
+            </p>
+            <div className="bg-white/10 rounded-lg p-3">
+              <p className="text-sm"><strong>Quick Stats:</strong> 20 easy + 20 medium + 10 hard questions • Instant scoring • Suitable for IELTS Band 5-7+ / TOEFL / Cambridge B1-C1</p>
+            </div>
+          </div>
+          
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Verb Tenses Quiz: 50 Questions (Free)
           </h1>
@@ -519,6 +534,46 @@ const VerbTensesQuizPage: React.FC = () => {
               <p>
                 Visit <a href="/what-is-typogrammar" className="text-blue-600 dark:text-blue-400 hover:underline">TypoGrammar</a> regularly for grammar lessons, quizzes, and exercises to strengthen your understanding of English verb tenses.
               </p>
+            </div>
+          </div>
+          
+          {/* Visible FAQ Section */}
+          <div className="bg-white dark:bg-slate-800 rounded-xl p-8 border border-slate-200 dark:border-slate-700 mt-12">
+            <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-6 flex items-center gap-2">
+              <svg className="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              Frequently Asked Questions: Verb Tenses Quiz
+            </h2>
+            
+            <div className="space-y-6 text-left">
+              <div className="border-b border-slate-200 dark:border-slate-700 pb-4">
+                <h3 className="font-semibold text-slate-900 dark:text-white mb-2">What verb tenses are covered in this quiz?</h3>
+                <p className="text-slate-700 dark:text-slate-300">This quiz covers all major English verb tenses including Present Simple, Present Continuous, Past Simple, Past Continuous, Present Perfect, Present Perfect Continuous, Past Perfect, Future (will, going to), and Future Continuous. It includes 50 questions with varying difficulty levels suitable for IELTS, TOEFL, and ESL learners.</p>
+              </div>
+              
+              <div className="border-b border-slate-200 dark:border-slate-700 pb-4">
+                <h3 className="font-semibold text-slate-900 dark:text-white mb-2">Is this verb tenses quiz free?</h3>
+                <p className="text-slate-700 dark:text-slate-300">Yes, this verb tenses quiz is completely free. It includes 50 multiple-choice questions with detailed explanations for each answer. You can take it as many times as you want without any registration or payment required.</p>
+              </div>
+              
+              <div className="border-b border-slate-200 dark:border-slate-700 pb-4">
+                <h3 className="font-semibold text-slate-900 dark:text-white mb-2">How can I improve my verb tense accuracy?</h3>
+                <p className="text-slate-700 dark:text-slate-300">To improve verb tense accuracy: 1) Study the rules and time markers for each tense, 2) Practice regularly with exercises and quizzes, 3) Read English texts and notice how tenses are used in context, 4) Write sentences using different tenses, and 5) Review your mistakes and understand why the correct answer is right.</p>
+              </div>
+              
+              <div className="border-b border-slate-200 dark:border-slate-700 pb-4">
+                <h3 className="font-semibold text-slate-900 dark:text-white mb-2">What level is this verb tenses quiz suitable for?</h3>
+                <p className="text-slate-700 dark:text-slate-300">This quiz is designed for intermediate to advanced English learners. It includes easy (20 questions), medium (20 questions), and hard (10 questions) levels. It's particularly useful for students preparing for IELTS, TOEFL, or other standardized English tests, as well as ESL learners wanting to master verb tenses.</p>
+              </div>
+              
+              <div className="border-b border-slate-200 dark:border-slate-700 pb-4">
+                <h3 className="font-semibold text-slate-900 dark:text-white mb-2">Can I retake the quiz to improve my score?</h3>
+                <p className="text-slate-700 dark:text-slate-300">Yes! You can retake this quiz unlimited times. Each attempt helps reinforce your understanding. We recommend reviewing the explanations for wrong answers before retaking to maximize learning.</p>
+              </div>
+              
+              <div className="pb-2">
+                <h3 className="font-semibold text-slate-900 dark:text-white mb-2">Which tenses are hardest for English learners?</h3>
+                <p className="text-slate-700 dark:text-slate-300">Most learners struggle with Present Perfect vs Past Simple, Past Perfect usage, and distinguishing Future forms (will vs going to vs present continuous for future). This quiz includes targeted questions on these challenging areas with detailed explanations.</p>
+              </div>
             </div>
           </div>
 

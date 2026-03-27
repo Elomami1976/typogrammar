@@ -1,297 +1,260 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
-import { ArticleParagraph, ArticleHeading } from '../components/ArticleComponents';
 import SchemaMarkup from '../components/SchemaMarkup';
 
 const PresentSimpleTensePage: React.FC = () => {
   usePageMetadata({
-    title: 'What Is the Present Simple Tense? Definition, Rules & Examples',
-    description: 'Learn what the Present Simple tense is, when to use it, how to form it, examples, common mistakes, and quick comparisons.',
-    canonical: 'https://typogrammar.com/grammar/verb-tenses/present-simple'
+    title: 'Present Simple Tense: Rules, Structure & Examples | TypoGrammar',
+    description: 'Learn the present simple tense with clear rules, structure, examples, signal words, common mistakes, and exercises. Simple explanation for English learners.',
+    canonical: 'https://typogrammar.com/grammar/verb-tenses/simple-present'
   });
 
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "What Is the Present Simple Tense?",
+    "headline": "Present Simple Tense",
+    "description": "The present simple tense describes habits, general truths, and repeated actions. It uses the base verb and adds -s for third-person singular subjects.",
     "author": {
       "@type": "Organization",
-      "name": "TypoGrammar Editorial Team",
-      "url": "https://typogrammar.com/about/editorial-team"
+      "name": "TypoGrammar"
     },
     "publisher": {
       "@type": "Organization",
       "name": "TypoGrammar",
-      "url": "https://typogrammar.com"
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://typogrammar.com/logo.png"
+      }
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://typogrammar.com/grammar/verb-tenses/present-simple"
+      "@id": "https://typogrammar.com/grammar/verb-tenses/simple-present"
     },
-    "dateModified": "2026-01-27"
-  };
-
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "What is the Present Simple tense?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The Present Simple tense is used to describe habits, routines, general truths, permanent situations, and scheduled future events. It expresses actions that happen regularly or facts that are always true."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "When do you use the Present Simple tense?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Use the Present Simple for: habits and routines (I drink coffee every morning), general truths and facts (The Earth revolves around the Sun), permanent situations (She lives in Paris), and scheduled future events (The train leaves at 7 AM)."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How do you form the Present Simple tense?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Form the Present Simple with: Subject + base verb (for I/you/we/they) or Subject + verb+s/es (for he/she/it). Negative: Subject + do/does + not + base verb. Question: Do/Does + subject + base verb?"
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What are common time expressions for the Present Simple tense?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Common time expressions include: always, usually, often, sometimes, rarely, never, every day/week/month/year, on Mondays/weekends, once/twice a day."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What are common mistakes with the Present Simple tense?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Common mistakes include: forgetting -s/-es with he/she/it (He go → He goes), using do/does with be verb (Does he is → Is he), double negatives (He doesn't knows → He doesn't know), using it for actions happening now instead of Present Progressive, and incorrect third-person spelling."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What is the difference between Present Simple and Present Progressive?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Present Simple describes habits, routines, and permanent situations (I work from home). Present Progressive describes actions happening right now or temporary situations (I am working right now). Simple = regular/permanent, Progressive = temporary/ongoing."
-              }
-            }
-          ]
+    "datePublished": "2026-01-27",
+    "dateModified": "2026-06-01"
   };
 
   return (
     <>
       <SchemaMarkup type="Article" data={articleSchema} />
-      <SchemaMarkup type="FAQPage" data={faqSchema} />
+
+      {/* Breadcrumb Navigation */}
+      <nav className="mb-6 text-slate-600 dark:text-slate-400">
+        <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
+        {' › '}
+        <Link to="/grammar" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar</Link>
+        {' › '}
+        <Link to="/grammar/verb-tenses" className="hover:text-blue-600 dark:hover:text-blue-400">Verb Tenses</Link>
+        {' › '}
+        <span className="text-slate-900 dark:text-slate-100">Present Simple Tense</span>
+      </nav>
 
       <article className="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-xl shadow-lg shadow-slate-200/50 border border-slate-200 dark:bg-slate-800/50 dark:border-slate-700 dark:shadow-slate-900/50">
         <h1 className="font-heading text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight dark:text-slate-100">
           What Is the Present Simple Tense?
         </h1>
 
-        <div className="bg-blue-50 dark:bg-slate-700 border-l-4 border-blue-600 p-6 mb-8">
-          <h2 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-3">Definition</h2>
-          <p className="text-lg text-slate-700 dark:text-slate-300">
-            The Present Simple tense is used to describe habits, routines, general truths, permanent situations, and scheduled future events. It expresses actions that happen regularly or facts that are always true, without emphasizing when exactly they occur.
-          </p>
-        </div>
+        <p className="text-lg text-slate-700 dark:text-slate-300 mb-6">
+          The <strong>present simple tense</strong> is an English verb tense used to describe habits, daily routines, general truths, and repeated actions.
+          It is formed using the base verb, with <strong>-s</strong> added for third-person singular subjects (he, she, it).
+          Example: <em>She works in a hospital.</em>
+        </p>
 
-        <ArticleHeading>When to Use the Present Simple Tense</ArticleHeading>
-        <ul className="list-disc list-inside space-y-3 mb-8 text-lg text-slate-700 dark:text-slate-300">
-          <li><strong>Habits and routines:</strong> I drink coffee every morning.</li>
-          <li><strong>General truths and facts:</strong> The Earth revolves around the Sun.</li>
-          <li><strong>Permanent situations:</strong> She lives in Paris.</li>
-          <li><strong>Scheduled future events:</strong> The train leaves at 7 AM tomorrow.</li>
-          <li><strong>Instructions and directions:</strong> You turn left at the traffic light.</li>
-          <li><strong>Newspaper headlines:</strong> Government announces new policy.</li>
+        <p className="text-lg text-slate-700 dark:text-slate-300 mb-8">
+          The present simple is often compared with the{' '}
+          <Link to="/grammar/verb-tenses/present-progressive" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">present progressive tense</Link>,
+          which describes actions happening right now.
+        </p>
+
+        {/* Table of Contents */}
+        <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-10 mb-5 pb-2 border-b border-slate-200 dark:border-slate-700">Table of Contents</h2>
+        <ul className="list-disc list-inside space-y-2 mb-8 text-lg text-slate-700 dark:text-slate-300">
+          <li><a href="#structure" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Structure</a></li>
+          <li><a href="#uses" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">When to Use the Present Simple</a></li>
+          <li><a href="#signal" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Signal Words</a></li>
+          <li><a href="#negative" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Negative Form</a></li>
+          <li><a href="#questions" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Question Form</a></li>
+          <li><a href="#examples" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Examples</a></li>
+          <li><a href="#mistakes" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Common Mistakes</a></li>
+          <li><a href="#comparison" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Tense Comparison</a></li>
+          <li><a href="#ielts" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Present Simple in IELTS</a></li>
+          <li><a href="#faq" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">FAQ</a></li>
         </ul>
 
-        <ArticleHeading>Present Simple Tense Structure</ArticleHeading>
+        {/* Structure Section */}
+        <h2 id="structure" className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-10 mb-5 pb-2 border-b border-slate-200 dark:border-slate-700">Structure of the Present Simple Tense</h2>
+        <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">Structure:</p>
+        <p className="text-lg font-bold text-slate-900 dark:text-slate-100 mb-6">Subject + base verb (+ s/es for he/she/it)</p>
+
         <div className="overflow-x-auto my-6">
           <table className="min-w-full border border-slate-300 dark:border-slate-600">
+            <caption className="text-left text-lg font-semibold mb-2 text-slate-900 dark:text-slate-100">Present Simple Conjugation</caption>
             <thead>
               <tr className="bg-slate-100 dark:bg-slate-700">
-                <th className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-left font-semibold">Type</th>
-                <th className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-left font-semibold">Formula</th>
+                <th className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-left font-semibold">Subject</th>
                 <th className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-left font-semibold">Example</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Affirmative</td>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">S + V (base/+s/es)</td>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">She works every day. / I work from home.</td>
-              </tr>
-              <tr className="bg-slate-50 dark:bg-slate-800">
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Negative</td>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">S + do/does not + V (base)</td>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">She doesn't work on weekends. / I don't like coffee.</td>
-              </tr>
-              <tr>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Question</td>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Do/Does + S + V (base)?</td>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Does she work here? / Do you speak English?</td>
-              </tr>
+              <tr><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">I</td><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">I work</td></tr>
+              <tr className="bg-slate-50 dark:bg-slate-800"><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">You</td><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">You work</td></tr>
+              <tr><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">He / She / It</td><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">She works</td></tr>
+              <tr className="bg-slate-50 dark:bg-slate-800"><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">We</td><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">We work</td></tr>
+              <tr><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">They</td><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">They work</td></tr>
             </tbody>
           </table>
         </div>
 
-        <ArticleHeading>Common Time Expressions</ArticleHeading>
-        <ul className="list-disc list-inside space-y-2 mb-8 text-lg text-slate-700 dark:text-slate-300">
-          <li>always, usually, often, sometimes, rarely, never</li>
-          <li>every day, every week, every month, every year</li>
-          <li>on Mondays, on weekends</li>
-          <li>once a day, twice a week, three times a month</li>
-          <li>in the morning/afternoon/evening</li>
-          <li>at night, at 7 o'clock</li>
+        {/* Uses Section */}
+        <h2 id="uses" className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-10 mb-5 pb-2 border-b border-slate-200 dark:border-slate-700">When to Use the Present Simple</h2>
+
+        <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mt-8 mb-4">Daily Routines</h3>
+        <ul className="list-disc list-inside space-y-2 mb-6 text-lg text-slate-700 dark:text-slate-300">
+          <li>I wake up at 7 AM.</li>
+          <li>She drinks coffee every morning.</li>
         </ul>
 
-        <ArticleHeading>Examples</ArticleHeading>
-        
-        <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-8 mb-4">Habits and Routines</h3>
+        <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mt-8 mb-4">General Truths</h3>
         <ul className="list-disc list-inside space-y-2 mb-6 text-lg text-slate-700 dark:text-slate-300">
-          <li>I wake up at 6 AM every day.</li>
-          <li>She goes to the gym three times a week.</li>
-          <li>They usually have dinner at 7 PM.</li>
-          <li>He never eats breakfast.</li>
-        </ul>
-
-        <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-8 mb-4">General Truths and Facts</h3>
-        <ul className="list-disc list-inside space-y-2 mb-6 text-lg text-slate-700 dark:text-slate-300">
-          <li>Water boils at 100 degrees Celsius.</li>
           <li>The sun rises in the east.</li>
-          <li>Cats love milk.</li>
-          <li>English is spoken in many countries.</li>
+          <li>Water boils at 100°C.</li>
         </ul>
 
-        <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-8 mb-4">Scheduled Future Events</h3>
+        <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mt-8 mb-4">Repeated Actions</h3>
         <ul className="list-disc list-inside space-y-2 mb-6 text-lg text-slate-700 dark:text-slate-300">
-          <li>The meeting starts at 10 AM tomorrow.</li>
-          <li>The flight departs at 8:30 PM.</li>
-          <li>The semester begins next Monday.</li>
-          <li>The store opens at 9 AM on weekdays.</li>
+          <li>They visit their grandparents every weekend.</li>
+          <li>He plays football on Sundays.</li>
         </ul>
 
-        <ArticleHeading>Common Mistakes</ArticleHeading>
-        
-        <div className="space-y-4 mb-8">
-          <div className="p-4 bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 rounded">
-            <p className="text-lg mb-2"><strong>Wrong:</strong> He go to school every day.</p>
-            <p className="text-lg mb-2"><strong>Correct:</strong> He goes to school every day.</p>
-            <p className="text-slate-700 dark:text-slate-300"><strong>Why:</strong> Third person singular (he/she/it) requires -s or -es ending.</p>
-          </div>
+        <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mt-8 mb-4">Scheduled Events</h3>
+        <ul className="list-disc list-inside space-y-2 mb-6 text-lg text-slate-700 dark:text-slate-300">
+          <li>The train leaves at 9 PM.</li>
+          <li>The meeting starts at noon.</li>
+        </ul>
 
-          <div className="p-4 bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 rounded">
-            <p className="text-lg mb-2"><strong>Wrong:</strong> Does he is a teacher?</p>
-            <p className="text-lg mb-2"><strong>Correct:</strong> Is he a teacher?</p>
-            <p className="text-slate-700 dark:text-slate-300"><strong>Why:</strong> Don't use do/does with the verb "be." Use only the verb "be" in questions.</p>
-          </div>
+        {/* Signal Words Section */}
+        <h2 id="signal" className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-10 mb-5 pb-2 border-b border-slate-200 dark:border-slate-700">Signal Words</h2>
+        <ul className="list-disc list-inside space-y-2 mb-8 text-lg text-slate-700 dark:text-slate-300">
+          <li>always</li>
+          <li>usually</li>
+          <li>often</li>
+          <li>sometimes</li>
+          <li>rarely</li>
+          <li>never</li>
+          <li>every day</li>
+          <li>every week</li>
+        </ul>
 
-          <div className="p-4 bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 rounded">
-            <p className="text-lg mb-2"><strong>Wrong:</strong> He doesn't knows the answer.</p>
-            <p className="text-lg mb-2"><strong>Correct:</strong> He doesn't know the answer.</p>
-            <p className="text-slate-700 dark:text-slate-300"><strong>Why:</strong> After doesn't, use the base form of the verb (no -s).</p>
-          </div>
+        {/* Negative Form Section */}
+        <h2 id="negative" className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-10 mb-5 pb-2 border-b border-slate-200 dark:border-slate-700">Negative Form</h2>
+        <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">Subject + do/does not + base verb</p>
+        <ul className="list-disc list-inside space-y-2 mb-8 text-lg text-slate-700 dark:text-slate-300">
+          <li>I do not like coffee.</li>
+          <li>She does not watch TV.</li>
+          <li>They do not work on Sundays.</li>
+        </ul>
 
-          <div className="p-4 bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 rounded">
-            <p className="text-lg mb-2"><strong>Wrong:</strong> I study right now.</p>
-            <p className="text-lg mb-2"><strong>Correct:</strong> I am studying right now.</p>
-            <p className="text-slate-700 dark:text-slate-300"><strong>Why:</strong> For actions happening at this moment, use Present Progressive, not Present Simple.</p>
-          </div>
+        {/* Questions Section */}
+        <h2 id="questions" className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-10 mb-5 pb-2 border-b border-slate-200 dark:border-slate-700">Question Form</h2>
+        <p className="text-lg font-bold text-slate-900 dark:text-slate-100 mb-4">Do/Does + subject + base verb?</p>
+        <ul className="list-disc list-inside space-y-2 mb-8 text-lg text-slate-700 dark:text-slate-300">
+          <li>Do you work here?</li>
+          <li>Does she speak English?</li>
+          <li>Do they live nearby?</li>
+        </ul>
 
-          <div className="p-4 bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 rounded">
-            <p className="text-lg mb-2"><strong>Wrong:</strong> She studys English.</p>
-            <p className="text-lg mb-2"><strong>Correct:</strong> She studies English.</p>
-            <p className="text-slate-700 dark:text-slate-300"><strong>Why:</strong> For verbs ending in consonant + y, change y to i and add -es.</p>
-          </div>
+        {/* Examples Section */}
+        <h2 id="examples" className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-10 mb-5 pb-2 border-b border-slate-200 dark:border-slate-700">Examples of Present Simple Sentences</h2>
+        <ul className="list-disc list-inside space-y-2 mb-8 text-lg text-slate-700 dark:text-slate-300">
+          <li>She studies English every day.</li>
+          <li>They live in Canada.</li>
+          <li>I read before sleeping.</li>
+          <li>He works in a bank.</li>
+          <li>We watch movies on weekends.</li>
+          <li>My brother plays the guitar.</li>
+          <li>The shop opens at 8 AM.</li>
+          <li>I drink coffee every morning.</li>
+          <li>She teaches mathematics.</li>
+          <li>They travel often.</li>
+        </ul>
+
+        {/* Common Mistakes Section */}
+        <h2 id="mistakes" className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-10 mb-5 pb-2 border-b border-slate-200 dark:border-slate-700">Common Mistakes</h2>
+        <div className="overflow-x-auto my-6">
+          <table className="min-w-full border border-slate-300 dark:border-slate-600">
+            <thead>
+              <tr className="bg-slate-100 dark:bg-slate-700">
+                <th className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-left font-semibold">Incorrect</th>
+                <th className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-left font-semibold">Correct</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-red-600 dark:text-red-400">She go to school</td><td className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-green-700 dark:text-green-400">She goes to school</td></tr>
+              <tr className="bg-slate-50 dark:bg-slate-800"><td className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-red-600 dark:text-red-400">He don't like coffee</td><td className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-green-700 dark:text-green-400">He doesn't like coffee</td></tr>
+              <tr><td className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-red-600 dark:text-red-400">They works here</td><td className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-green-700 dark:text-green-400">They work here</td></tr>
+            </tbody>
+          </table>
         </div>
 
-        <ArticleHeading>Present Simple vs. Present Progressive</ArticleHeading>
+        {/* Comparison Section */}
+        <h2 id="comparison" className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-10 mb-5 pb-2 border-b border-slate-200 dark:border-slate-700">Present Simple vs Present Continuous</h2>
+        <div className="overflow-x-auto my-6">
+          <table className="min-w-full border border-slate-300 dark:border-slate-600">
+            <thead>
+              <tr className="bg-slate-100 dark:bg-slate-700">
+                <th className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-left font-semibold">Present Simple</th>
+                <th className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-left font-semibold">Present Continuous</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">I work every day</td><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">I am working now</td></tr>
+              <tr className="bg-slate-50 dark:bg-slate-800"><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">She lives here</td><td className="border border-slate-300 dark:border-slate-600 px-4 py-2">She is living here temporarily</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        {/* IELTS Section */}
+        <h2 id="ielts" className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-10 mb-5 pb-2 border-b border-slate-200 dark:border-slate-700">Present Simple in IELTS Writing</h2>
         <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
-          The Present Simple describes <strong>habits, routines, and permanent situations</strong>, while the Present Progressive describes <strong>actions happening right now or temporary situations</strong>.
+          In IELTS Writing, the present simple tense is commonly used to describe facts, general trends, and explanations.
+        </p>
+        <p className="text-lg font-semibold text-slate-900 dark:text-slate-100 mb-2">Examples:</p>
+        <ul className="list-disc list-inside space-y-2 mb-8 text-lg text-slate-700 dark:text-slate-300">
+          <li>Many students prefer studying abroad.</li>
+          <li>Technology plays an important role in modern education.</li>
+        </ul>
+
+        {/* FAQ Section */}
+        <h2 id="faq" className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-10 mb-5 pb-2 border-b border-slate-200 dark:border-slate-700">Frequently Asked Questions</h2>
+
+        <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mt-8 mb-4">What is the present simple tense?</h3>
+        <p className="text-lg text-slate-700 dark:text-slate-300 mb-6">
+          The present simple tense describes habits, routines, and general facts. It uses the base verb and adds -s for third-person singular subjects.
         </p>
 
-        <ul className="list-disc list-inside space-y-3 mb-6 text-lg text-slate-700 dark:text-slate-300">
-          <li><strong>Use Simple for habits:</strong> I work from home. (permanent situation)</li>
-          <li><strong>Use Progressive for now:</strong> I am working from home today. (temporary, happening now)</li>
-          <li><strong>Simple = repeated/regular:</strong> She drinks coffee every morning.</li>
-          <li><strong>Progressive = right now:</strong> She is drinking coffee right now.</li>
-          <li><strong>Simple = facts:</strong> He lives in London.</li>
-        </ul>
+        <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mt-8 mb-4">When do we use the present simple tense?</h3>
+        <p className="text-lg text-slate-700 dark:text-slate-300 mb-6">
+          We use it for repeated actions, routines, general truths, and scheduled events.
+        </p>
 
-        <div className="bg-slate-50 dark:bg-slate-700 p-6 rounded-lg mb-8">
-          <h4 className="font-bold text-xl mb-4 text-slate-900 dark:text-slate-100">Side-by-Side Comparison</h4>
-          <div className="space-y-2 text-slate-700 dark:text-slate-300">
-            <p><strong>Present Simple:</strong> I play tennis. (habit)</p>
-            <p><strong>Present Progressive:</strong> I am playing tennis. (right now)</p>
-            <p className="mt-4"><strong>Present Simple:</strong> She studies at the library. (routine)</p>
-            <p><strong>Present Progressive:</strong> She is studying at the library. (happening now)</p>
-          </div>
-        </div>
+        <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mt-8 mb-4">How do you form the present simple tense?</h3>
+        <p className="text-lg text-slate-700 dark:text-slate-300 mb-8">
+          Use the base verb for most subjects and add -s or -es for he, she, or it.
+        </p>
 
-        <ArticleHeading>Quick Check</ArticleHeading>
-        <div className="space-y-6 mb-8">
-          <div className="p-4 bg-slate-50 dark:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded">
-            <p className="font-semibold text-lg mb-3">1. Choose the correct form: He ___ to work by bus every day.</p>
-            <p>A) go</p>
-            <p>B) goes</p>
-            <p>C) going</p>
-            <p>D) is going</p>
-            <p className="mt-3 text-green-700 dark:text-green-400 font-semibold">Correct answer: B) goes</p>
-          </div>
+        {/* Related Verb Tenses Navigation */}
+        <nav className="mt-10 p-6 bg-slate-50 dark:bg-slate-700 rounded-lg">
+          <h2 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-4">Related Verb Tenses</h2>
+          <ul className="list-disc list-inside space-y-2 text-lg text-slate-700 dark:text-slate-300">
+            <li><Link to="/grammar/verb-tenses/present-progressive" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Present Continuous</Link></li>
+            <li><Link to="/grammar/verb-tenses/present-perfect" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Present Perfect</Link></li>
+            <li><Link to="/grammar/verb-tenses/past-simple" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Past Simple</Link></li>
+            <li><Link to="/grammar/verb-tenses" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">All Verb Tenses</Link></li>
+          </ul>
+        </nav>
 
-          <div className="p-4 bg-slate-50 dark:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded">
-            <p className="font-semibold text-lg mb-3">2. Which sentence is correct?</p>
-            <p>A) Water boil at 100 degrees.</p>
-            <p>B) Water boils at 100 degrees.</p>
-            <p>C) Water is boiling at 100 degrees.</p>
-            <p>D) Water boiling at 100 degrees.</p>
-            <p className="mt-3 text-green-700 dark:text-green-400 font-semibold">Correct answer: B) Water boils at 100 degrees.</p>
-          </div>
-
-          <div className="p-4 bg-slate-50 dark:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded">
-            <p className="font-semibold text-lg mb-3">3. Choose the correct negative: She ___ like coffee.</p>
-            <p>A) doesn't</p>
-            <p>B) don't</p>
-            <p>C) isn't</p>
-            <p>D) not</p>
-            <p className="mt-3 text-green-700 dark:text-green-400 font-semibold">Correct answer: A) doesn't</p>
-          </div>
-
-          <div className="p-4 bg-slate-50 dark:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded">
-            <p className="font-semibold text-lg mb-3">4. Which is a Present Simple use? The train ___</p>
-            <p>A) is leaving now</p>
-            <p>B) leaves at 8 AM tomorrow</p>
-            <p>C) has left</p>
-            <p>D) will leave</p>
-            <p className="mt-3 text-green-700 dark:text-green-400 font-semibold">Correct answer: B) leaves at 8 AM tomorrow</p>
-          </div>
-
-          <div className="p-4 bg-slate-50 dark:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded">
-            <p className="font-semibold text-lg mb-3">5. Choose the correct question form:</p>
-            <p>A) Does she works here?</p>
-            <p>B) Do she work here?</p>
-            <p>C) Does she work here?</p>
-            <p>D) Is she work here?</p>
-            <p className="mt-3 text-green-700 dark:text-green-400 font-semibold">Correct answer: C) Does she work here?</p>
-          </div>
-        </div>
-
-        <ArticleHeading>Next Steps</ArticleHeading>
-        <ul className="list-disc list-inside space-y-2 mb-8 text-lg text-slate-700 dark:text-slate-300">
-          <li><Link to="/grammar/verb-tenses" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">Verb Tenses Overview</Link> - Learn all 12 English verb tenses</li>
-          <li><Link to="/grammar/verb-tenses/present-progressive" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">What Is the Present Progressive Tense?</Link> - Compare with Present Simple</li>
-          <li><Link to="/quizzes/verb-tenses-quiz" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">Verb Tenses Quiz</Link> - Test your knowledge of all tenses</li>
-        </ul>
-
+        {/* Author Attribution Box */}
         <div className="bg-slate-100 dark:bg-slate-700 border border-slate-300 dark:border-slate-600 p-6 my-8 rounded-lg">
           <p className="text-slate-700 dark:text-slate-300 mb-4">
             By <Link to="/about/editorial-team" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">TypoGrammar Editorial Team</Link>

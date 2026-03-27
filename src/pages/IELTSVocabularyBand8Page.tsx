@@ -75,9 +75,17 @@ const quizQuestions: QuizQuestion[] = [
 ];
 
 const IELTSVocabularyBand8Page: React.FC = () => {
+  const pageUrl = 'https://typogrammar.com/ielts/vocabulary/band-8';
+  const lastUpdated = '2026-02-25';
+  const datePublished = '2025-06-15';
+  
   usePageMetadata({
-    title: 'IELTS Vocabulary Band 8: Advanced Words with Examples & Mini Quiz | TypoGrammar',
-    description: 'Explore 25 advanced IELTS Band 8 vocabulary words with precise meanings, formal examples, common mistakes, and a quiz for high-scoring candidates.',
+    title: 'IELTS Band 8 Vocabulary List 2026: 25 Advanced Academic Words with Examples | Typogrammar',
+    description: 'Free IELTS Band 8 vocabulary list with advanced academic words, precise definitions, collocations & usage tips. Achieve 8.0+ in Lexical Resource with sophisticated vocabulary for Task 2.',
+    ogTitle: 'IELTS Band 8 Vocabulary List 2026: Advanced Academic Words for High Scores',
+    ogDescription: 'Master 25 advanced IELTS Band 8 words with precision, control, and appropriate register. Learn sophisticated vocabulary to score 8.0+ in IELTS Writing.',
+    ogType: 'article',
+    ogUrl: pageUrl,
   });
 
   const { t } = useLanguage();
@@ -127,7 +135,70 @@ const IELTSVocabularyBand8Page: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 to-amber-50 dark:from-slate-900 dark:to-slate-800 py-12 px-4">
+      {/* GEO Meta Tags */}
+      <meta name="geo.region" content="Global" />
+      <meta name="language" content="English" />
+      
+      {/* Article Schema */}
+      <SchemaMarkup
+        type="Article"
+        data={{
+          headline: 'IELTS Band 8 Vocabulary List 2026: 25 Advanced Academic Words with Examples',
+          description: 'Free IELTS Band 8 vocabulary list with advanced academic words, precise definitions, collocations & usage tips. Achieve 8.0+ in Lexical Resource with sophisticated vocabulary.',
+          author: {
+            '@type': 'Organization',
+            name: 'Typogrammar',
+            url: 'https://typogrammar.com/about'
+          },
+          publisher: {
+            '@type': 'Organization',
+            name: 'Typogrammar',
+            url: 'https://typogrammar.com'
+          },
+          datePublished: datePublished,
+          dateModified: lastUpdated,
+          mainEntityOfPage: pageUrl
+        }}
+      />
+      
       <div className="max-w-6xl mx-auto">
+        {/* Featured Snippet Box - Quick Answer */}
+        <div className="bg-gradient-to-r from-orange-100 to-amber-100 dark:from-slate-700 dark:to-slate-600 border-l-4 border-orange-600 p-6 rounded-lg mb-8 shadow-md">
+          <h2 className="text-lg font-bold text-slate-900 dark:text-white mb-2">What is IELTS Band 8 Vocabulary?</h2>
+          <p className="text-slate-800 dark:text-slate-200 leading-relaxed mb-4">
+            <strong>Band 8 vocabulary</strong> demonstrates precision, control, and sophisticated word choice in formal academic contexts. These words show you can express complex ideas with clarity while maintaining appropriate register throughout your writing.
+          </p>
+          <div className="bg-white/50 dark:bg-slate-800/50 p-4 rounded-lg">
+            <h3 className="font-semibold text-slate-900 dark:text-white mb-2">Quick Answer: How do examiners score Band 8 vocabulary?</h3>
+            <p className="text-slate-700 dark:text-slate-300">Band 8 requires "wide range of vocabulary," "skillful use of uncommon items," and "rare errors in word choice.” You need to demonstrate <strong>precision</strong> (choosing exactly the right word) and <strong>naturalness</strong> (using sophisticated words without sounding forced).</p>
+          </div>
+        </div>
+
+        {/* Long-tail Keyword Section: Band 8 Requirements */}
+        <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-6 mb-8">
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">How to Achieve Band 8 in IELTS Lexical Resource</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-orange-50 dark:bg-slate-700 p-4 rounded-lg">
+              <h3 className="font-bold text-orange-700 dark:text-orange-400 mb-3">What Band 8 Requires</h3>
+              <ul className="space-y-2 text-slate-700 dark:text-slate-300 text-sm">
+                <li className="flex items-start gap-2"><span className="text-green-500">✓</span> Wide range of vocabulary fluently used</li>
+                <li className="flex items-start gap-2"><span className="text-green-500">✓</span> Skillful use of uncommon/idiomatic items</li>
+                <li className="flex items-start gap-2"><span className="text-green-500">✓</span> Only rare errors in word choice</li>
+                <li className="flex items-start gap-2"><span className="text-green-500">✓</span> Effective paraphrasing throughout</li>
+              </ul>
+            </div>
+            <div className="bg-red-50 dark:bg-slate-700 p-4 rounded-lg">
+              <h3 className="font-bold text-red-700 dark:text-red-400 mb-3">Common Band 7.5 Mistakes</h3>
+              <ul className="space-y-2 text-slate-700 dark:text-slate-300 text-sm">
+                <li className="flex items-start gap-2"><span className="text-red-500">✗</span> Forcing advanced words unnaturally</li>
+                <li className="flex items-start gap-2"><span className="text-red-500">✗</span> Wrong collocations ("make a research")</li>
+                <li className="flex items-start gap-2"><span className="text-red-500">✗</span> Overusing the same sophisticated word</li>
+                <li className="flex items-start gap-2"><span className="text-red-500">✗</span> Mismatching register (too informal)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
         {/* Header */}
         <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-8 mb-8">
           <div className="flex items-center gap-3 mb-4">
@@ -135,8 +206,24 @@ const IELTSVocabularyBand8Page: React.FC = () => {
               BAND 8
             </div>
             <h1 className="text-4xl font-bold text-slate-900 dark:text-white">
-              IELTS Vocabulary – Band 8
+              IELTS Vocabulary Band 8 List (2026)
             </h1>
+          </div>
+          
+          {/* E-E-A-T Signals */}
+          <div className="flex flex-wrap items-center gap-4 text-sm text-slate-600 dark:text-slate-400 mb-6">
+            <span className="flex items-center gap-1">
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"/></svg>
+              By <Link to="/about" className="text-blue-600 dark:text-blue-400 hover:underline">Typogrammar Team</Link>
+            </span>
+            <span className="flex items-center gap-1">
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd"/></svg>
+              Updated: {lastUpdated}
+            </span>
+            <span className="flex items-center gap-1 text-green-600 dark:text-green-400">
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
+              Reviewed by IELTS Expert
+            </span>
           </div>
           
           <ArticleParagraph>
@@ -147,6 +234,13 @@ const IELTSVocabularyBand8Page: React.FC = () => {
           <ArticleParagraph>
             These words are not advanced because they are "big", but because they are <strong>used accurately and naturally</strong>.
           </ArticleParagraph>
+          
+          {/* GEO Optimization - International Traffic */}
+          <div className="mt-4 p-4 bg-slate-50 dark:bg-slate-700/50 rounded-lg">
+            <p className="text-slate-600 dark:text-slate-400 text-sm">
+              This IELTS vocabulary guide is designed for international test-takers preparing for IELTS exams in the UK, Canada, Australia, UAE, India, and other countries. We use neutral global English suitable for all IELTS regions.
+            </p>
+          </div>
         </div>
 
         {/* Table Context */}
@@ -349,6 +443,46 @@ const IELTSVocabularyBand8Page: React.FC = () => {
           </div>
         </div>
 
+        {/* Visible FAQ Section */}
+        <div className="mt-8 bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-8">
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+            <svg className="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            Frequently Asked Questions: IELTS Band 8 Vocabulary
+          </h2>
+          
+          <div className="space-y-6">
+            <div className="border-b border-slate-200 dark:border-slate-700 pb-6">
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">What is Band 8 vocabulary in IELTS?</h3>
+              <p className="text-slate-700 dark:text-slate-300">Band 8 vocabulary shows precision, control, and appropriate register. Words like "substantial," "inevitable," "perceive," and "facilitate" are not just "big words"—they are used accurately in formal academic contexts to express complex ideas with clarity and sophistication.</p>
+            </div>
+            
+            <div className="border-b border-slate-200 dark:border-slate-700 pb-6">
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">How many Band 8 words should I use in my IELTS essay?</h3>
+              <p className="text-slate-700 dark:text-slate-300">Use 3-5 Band 8 words naturally per essay. Overusing advanced vocabulary can sound forced. Focus on accuracy and appropriateness—one well-placed Band 8 word is better than several incorrectly used advanced terms.</p>
+            </div>
+            
+            <div className="border-b border-slate-200 dark:border-slate-700 pb-6">
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">Can Band 8 vocabulary alone get me Band 8 in IELTS?</h3>
+              <p className="text-slate-700 dark:text-slate-300">No. Band 8 requires excellent grammar accuracy, coherence, cohesion, and task achievement in addition to vocabulary. Advanced words must be combined with sophisticated sentence structures, logical organization, and fully developed ideas to achieve Band 8 overall.</p>
+            </div>
+            
+            <div className="border-b border-slate-200 dark:border-slate-700 pb-6">
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">What is the difference between Band 7 and Band 8 vocabulary?</h3>
+              <p className="text-slate-700 dark:text-slate-300">Band 7 shows "sufficient range" while Band 8 demonstrates "wide range." Band 8 vocabulary is more sophisticated and precise. For example, instead of "important" (Band 6) or "significant" (Band 7), Band 8 might use "paramount" or "pivotal" when contextually appropriate.</p>
+            </div>
+            
+            <div className="border-b border-slate-200 dark:border-slate-700 pb-6">
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">How do I practice Band 8 vocabulary effectively?</h3>
+              <p className="text-slate-700 dark:text-slate-300">Read Band 8-9 sample essays and highlight vocabulary. Learn words in collocations, not isolation. Write practice paragraphs using 2-3 target words per paragraph. Get feedback on whether your usage sounds natural and appropriate.</p>
+            </div>
+            
+            <div className="pb-2">
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">Are Band 8 words different for IELTS Speaking vs Writing?</h3>
+              <p className="text-slate-700 dark:text-slate-300">Most Band 8 vocabulary works for both, but speaking allows slightly less formal alternatives. In Writing Task 2, use the most formal register. In Speaking, words like "substantial" and "perceive" work well, but ultra-formal academic terms may sound unnatural when spoken.</p>
+            </div>
+          </div>
+        </div>
+
         {/* FAQ Schema */}
         <SchemaMarkup
           type="FAQPage"
@@ -359,7 +493,7 @@ const IELTSVocabularyBand8Page: React.FC = () => {
                 name: 'What is Band 8 vocabulary in IELTS?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Band 8 vocabulary shows precision, control, and appropriate register. Words like "substantial", "inevitable", "perceive", and "facilitate" are not just "big words"—they are used accurately in formal academic contexts to express complex ideas with clarity and sophistication.'
+                  text: 'Band 8 vocabulary shows precision, control, and appropriate register. Words like substantial, inevitable, perceive, and facilitate are not just big words—they are used accurately in formal academic contexts to express complex ideas with clarity and sophistication.'
                 }
               },
               {
@@ -376,6 +510,30 @@ const IELTSVocabularyBand8Page: React.FC = () => {
                 acceptedAnswer: {
                   '@type': 'Answer',
                   text: 'No. Band 8 requires excellent grammar accuracy, coherence, cohesion, and task achievement in addition to vocabulary. Advanced words must be combined with sophisticated sentence structures, logical organization, and fully developed ideas to achieve Band 8 overall.'
+                }
+              },
+              {
+                '@type': 'Question',
+                name: 'What is the difference between Band 7 and Band 8 vocabulary?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Band 7 shows sufficient range while Band 8 demonstrates wide range. Band 8 vocabulary is more sophisticated and precise. For example, instead of important (Band 6) or significant (Band 7), Band 8 might use paramount or pivotal when contextually appropriate.'
+                }
+              },
+              {
+                '@type': 'Question',
+                name: 'How do I practice Band 8 vocabulary effectively?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Read Band 8-9 sample essays and highlight vocabulary. Learn words in collocations, not isolation. Write practice paragraphs using 2-3 target words per paragraph. Get feedback on whether your usage sounds natural and appropriate.'
+                }
+              },
+              {
+                '@type': 'Question',
+                name: 'Are Band 8 words different for IELTS Speaking vs Writing?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Most Band 8 vocabulary works for both, but speaking allows slightly less formal alternatives. In Writing Task 2, use the most formal register. In Speaking, words like substantial and perceive work well, but ultra-formal academic terms may sound unnatural when spoken.'
                 }
               }
             ]
