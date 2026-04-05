@@ -1,18 +1,28 @@
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import LanguageSwitcher from './LanguageSwitcher';
+import DesktopNav from './DesktopNav';
+import GlobalSearch from './GlobalSearch';
 
 interface HeaderProps {
   onMenuClick: () => void;
 }
 
 const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 8);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <header className="bg-white/80 backdrop-blur-sm border-b border-slate-200 sticky top-0 z-20 dark:bg-slate-900/80 dark:border-slate-700">
+    <header className={`bg-white/90 backdrop-blur-sm border-b border-slate-200 sticky top-0 z-20 transition-shadow duration-200 dark:bg-slate-900/90 dark:border-slate-700 ${scrolled ? 'shadow-md shadow-slate-300/40 dark:shadow-slate-900/60' : ''}`}>
       <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-4 flex justify-between items-center h-[69px]">
         <div className="flex items-center gap-4">
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button
               onClick={onMenuClick}
               className="p-2 rounded-md text-slate-600 hover:bg-slate-200/60 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:text-slate-400 dark:hover:bg-slate-800"
@@ -36,7 +46,18 @@ const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
             </div>
           </Link>
         </div>
+        <DesktopNav />
         <div className="flex items-center gap-2">
+          <GlobalSearch />
+          <Link
+            to="/getting-started"
+            className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 bg-blue-600 text-white text-sm font-bold rounded-lg hover:bg-blue-700 transition-colors duration-150 shadow-sm"
+          >
+            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+            Start Here
+          </Link>
           <a
             href="https://buymeacoffee.com/quiztarek2k"
             target="_blank"

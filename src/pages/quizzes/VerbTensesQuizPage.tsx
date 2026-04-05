@@ -265,7 +265,7 @@ const VerbTensesQuizPage: React.FC = () => {
 
         {/* Google Ad */}
         <div className="my-8">
-          <GoogleAd adSlot="1234567890" />
+          <GoogleAd adSlot="6406598038" />
         </div>
 
         {/* Questions */}
@@ -411,7 +411,7 @@ const VerbTensesQuizPage: React.FC = () => {
 
         {/* Google Ad */}
         <div className="my-8">
-          <GoogleAd adSlot="9876543210" />
+          <GoogleAd adSlot="6406598038" />
         </div>
       </section>
 

@@ -92,10 +92,15 @@ const TOEFLReadingStrategiesPage = lazy(() => import('./pages/TOEFLReadingStrate
 const TOEFLReadingQuestionTypesPage = lazy(() => import('./pages/TOEFLReadingQuestionTypesPage'));
 const TOEFLReadingTimeManagementPage = lazy(() => import('./pages/TOEFLReadingTimeManagementPage'));
 const TOEFLReadingPracticeQuestionsPage = lazy(() => import('./pages/TOEFLReadingPracticeQuestionsPage'));
+const TOEFLDailyLifeReadingTaskPage = lazy(() => import('./pages/TOEFLDailyLifeReadingTaskPage'));
 // TOEFL Free Resources
 const TOEFLReadingPracticePDFPage = lazy(() => import('./pages/TOEFLReadingPracticePDFPage'));
 const TOEFLVocabularyPDFPage = lazy(() => import('./pages/TOEFLVocabularyPDFPage'));
 const TOEFLWritingPDFPage = lazy(() => import('./pages/TOEFLWritingPDFPage'));
+// TOEFL Strategy & Success
+const OldTOEFLvsNewTOEFL2026Page = lazy(() => import('./pages/OldTOEFLvsNewTOEFL2026Page'));
+const TOEFLCompleteTheWordsPage = lazy(() => import('./pages/TOEFLCompleteTheWordsPage'));
+const TOEFL2026ScoringPage = lazy(() => import('./pages/TOEFL2026ScoringPage'));
 // TOEFL Writing
 const TOEFLWritingTask1ExplainedPage = lazy(() => import('./pages/TOEFLWritingTask1ExplainedPage'));
 const TOEFLWritingTask2ExplainedPage = lazy(() => import('./pages/TOEFLWritingTask2ExplainedPage'));
@@ -122,6 +127,9 @@ const AGroupOfPeopleIsOrArePage = lazy(() => import('./pages/grammar-mistakes/AG
 const EverybodyIsOrArePage = lazy(() => import('./pages/grammar-mistakes/EverybodyIsOrArePage'));
 const NobodyIsOrArePage = lazy(() => import('./pages/grammar-mistakes/NobodyIsOrArePage'));
 const EveryoneHasOrHavePage = lazy(() => import('./pages/grammar-mistakes/EveryoneHasOrHavePage'));
+// Subject-Verb Agreement (new)
+const EachOfOrEveryOfPage = lazy(() => import('./pages/grammar-mistakes/EachOfOrEveryOfPage'));
+const EitherOfOrNeitherOfPage = lazy(() => import('./pages/grammar-mistakes/EitherOfOrNeitherOfPage'));
 // Verb Form Errors
 const IAmAgreeOrIAgreePage = lazy(() => import('./pages/grammar-mistakes/IAmAgreeOrIAgreePage'));
 const HeDidntWentOrHeDidntGoPage = lazy(() => import('./pages/grammar-mistakes/HeDidntWentOrHeDidntGoPage'));
@@ -166,6 +174,16 @@ const ExplainOrExplainAboutPage = lazy(() => import('./pages/grammar-mistakes/Ex
 const RequestOrRequestForPage = lazy(() => import('./pages/grammar-mistakes/RequestOrRequestForPage'));
 const EnterOrEnterToPage = lazy(() => import('./pages/grammar-mistakes/EnterOrEnterToPage'));
 const ComplainAboutOrComplainOfPage = lazy(() => import('./pages/grammar-mistakes/ComplainAboutOrComplainOfPage'));
+// Preposition Errors (new)
+const CapableOfOrCapableToPage = lazy(() => import('./pages/grammar-mistakes/CapableOfOrCapableToPage'));
+const FondOfOrFondForPage = lazy(() => import('./pages/grammar-mistakes/FondOfOrFondForPage'));
+const AccusedOfOrAccusedForPage = lazy(() => import('./pages/grammar-mistakes/AccusedOfOrAccusedForPage'));
+// Word Confusion (new)
+const SensibleVsSensitivePage = lazy(() => import('./pages/grammar-mistakes/SensibleVsSensitivePage'));
+const EfficientVsEffectivePage = lazy(() => import('./pages/grammar-mistakes/EfficientVsEffectivePage'));
+// Quantifier Errors (new)
+const SeveralVsSomePage = lazy(() => import('./pages/grammar-mistakes/SeveralVsSomePage'));
+const PlentyOfVsALotOfPage = lazy(() => import('./pages/grammar-mistakes/PlentyOfVsALotOfPage'));
 // Quantifier Errors
 const MuchPeopleOrManyPeoplePage = lazy(() => import('./pages/grammar-mistakes/MuchPeopleOrManyPeoplePage'));
 const LessPeopleOrFewerPeoplePage = lazy(() => import('./pages/grammar-mistakes/LessPeopleOrFewerPeoplePage'));
@@ -176,6 +194,10 @@ const SomeVsAnyPage = lazy(() => import('./pages/grammar-mistakes/SomeVsAnyPage'
 const SoMuchVsSoManyPage = lazy(() => import('./pages/grammar-mistakes/SoMuchVsSoManyPage'));
 const AFewVsFewPage = lazy(() => import('./pages/grammar-mistakes/AFewVsFewPage'));
 const ALittleVsLittlePage = lazy(() => import('./pages/grammar-mistakes/ALittleVsLittlePage'));
+// Verb Form Errors (modal perfect)
+const ShouldHaveVsShouldOfPage = lazy(() => import('./pages/grammar-mistakes/ShouldHaveVsShouldOfPage'));
+// Preposition Errors (additional)
+const ByAccidentVsOnAccidentPage = lazy(() => import('./pages/grammar-mistakes/ByAccidentVsOnAccidentPage'));
 // Redundancy Errors
 const ReturnBackOrReturnPage = lazy(() => import('./pages/grammar-mistakes/ReturnBackOrReturnPage'));
 const RepeatAgainOrRepeatPage = lazy(() => import('./pages/grammar-mistakes/RepeatAgainOrRepeatPage'));
@@ -331,6 +353,7 @@ const App: React.FC = () => {
             <Route path="toefl/toefl-reading/toefl-reading-question-types" element={<Suspense fallback={<PageLoader />}><TOEFLReadingQuestionTypesPage /></Suspense>} />
             <Route path="toefl/toefl-reading/toefl-reading-time-management" element={<Suspense fallback={<PageLoader />}><TOEFLReadingTimeManagementPage /></Suspense>} />
             <Route path="toefl/toefl-reading/toefl-reading-practice-questions" element={<Suspense fallback={<PageLoader />}><TOEFLReadingPracticeQuestionsPage /></Suspense>} />
+            <Route path="toefl/toefl-reading/toefl-daily-life-reading-task" element={<Suspense fallback={<PageLoader />}><TOEFLDailyLifeReadingTaskPage /></Suspense>} />
             {/* TOEFL Writing Routes */}
             <Route path="toefl/toefl-writing/toefl-writing-task-1-explained" element={<Suspense fallback={<PageLoader />}><TOEFLWritingTask1ExplainedPage /></Suspense>} />
             <Route path="toefl/toefl-writing/toefl-writing-task-2-explained" element={<Suspense fallback={<PageLoader />}><TOEFLWritingTask2ExplainedPage /></Suspense>} />
@@ -341,6 +364,10 @@ const App: React.FC = () => {
             <Route path="toefl/toefl-reading-practice-pdf" element={<Suspense fallback={<PageLoader />}><TOEFLReadingPracticePDFPage /></Suspense>} />
             <Route path="toefl/toefl-vocabulary-pdf" element={<Suspense fallback={<PageLoader />}><TOEFLVocabularyPDFPage /></Suspense>} />
             <Route path="toefl/toefl-writing-pdf" element={<Suspense fallback={<PageLoader />}><TOEFLWritingPDFPage /></Suspense>} />
+            {/* TOEFL Strategy & Success Routes */}
+            <Route path="toefl/strategy-success/old-toefl-vs-new-toefl" element={<Suspense fallback={<PageLoader />}><OldTOEFLvsNewTOEFL2026Page /></Suspense>} />
+            <Route path="toefl/strategy-success/toefl-complete-the-words" element={<Suspense fallback={<PageLoader />}><TOEFLCompleteTheWordsPage /></Suspense>} />
+            <Route path="toefl/strategy-success/toefl-2026-scoring" element={<Suspense fallback={<PageLoader />}><TOEFL2026ScoringPage /></Suspense>} />
             
             {/* Grammar Mistakes Pillar Routes */}
             <Route path="grammar-mistakes" element={<Suspense fallback={<PageLoader />}><GrammarMistakesPage /></Suspense>} />
@@ -361,6 +388,8 @@ const App: React.FC = () => {
             <Route path="grammar-mistakes/everybody-is-or-are" element={<Suspense fallback={<PageLoader />}><EverybodyIsOrArePage /></Suspense>} />
             <Route path="grammar-mistakes/nobody-is-or-are" element={<Suspense fallback={<PageLoader />}><NobodyIsOrArePage /></Suspense>} />
             <Route path="grammar-mistakes/everyone-has-or-have" element={<Suspense fallback={<PageLoader />}><EveryoneHasOrHavePage /></Suspense>} />
+            <Route path="grammar-mistakes/each-of-or-every-of" element={<Suspense fallback={<PageLoader />}><EachOfOrEveryOfPage /></Suspense>} />
+            <Route path="grammar-mistakes/either-of-or-neither-of" element={<Suspense fallback={<PageLoader />}><EitherOfOrNeitherOfPage /></Suspense>} />
             {/* Verb Form Errors */}
             <Route path="grammar-mistakes/i-am-agree-or-i-agree" element={<Suspense fallback={<PageLoader />}><IAmAgreeOrIAgreePage /></Suspense>} />
             <Route path="grammar-mistakes/he-didnt-went-or-he-didnt-go" element={<Suspense fallback={<PageLoader />}><HeDidntWentOrHeDidntGoPage /></Suspense>} />
@@ -374,6 +403,7 @@ const App: React.FC = () => {
             <Route path="grammar-mistakes/he-has-came-or-come" element={<Suspense fallback={<PageLoader />}><HeHasCameOrComePage /></Suspense>} />
             <Route path="grammar-mistakes/i-seen-or-i-saw" element={<Suspense fallback={<PageLoader />}><ISeenOrISawPage /></Suspense>} />
             <Route path="grammar-mistakes/she-has-went-or-gone" element={<Suspense fallback={<PageLoader />}><SheHasWentOrGonePage /></Suspense>} />
+            <Route path="grammar-mistakes/should-have-vs-should-of" element={<Suspense fallback={<PageLoader />}><ShouldHaveVsShouldOfPage /></Suspense>} />
             {/* Word Confusion */}
             <Route path="grammar-mistakes/advice-vs-advise" element={<Suspense fallback={<PageLoader />}><AdviceVsAdvisePage /></Suspense>} />
             <Route path="grammar-mistakes/do-vs-make" element={<Suspense fallback={<PageLoader />}><DoVsMakePage /></Suspense>} />
@@ -390,6 +420,8 @@ const App: React.FC = () => {
             <Route path="grammar-mistakes/everyday-vs-every-day" element={<Suspense fallback={<PageLoader />}><EverydayVsEveryDayPage /></Suspense>} />
             <Route path="grammar-mistakes/sometime-vs-sometimes" element={<Suspense fallback={<PageLoader />}><SometimeVsSometimesPage /></Suspense>} />
             <Route path="grammar-mistakes/into-vs-in-to" element={<Suspense fallback={<PageLoader />}><IntoVsInToPage /></Suspense>} />
+            <Route path="grammar-mistakes/sensible-vs-sensitive" element={<Suspense fallback={<PageLoader />}><SensibleVsSensitivePage /></Suspense>} />
+            <Route path="grammar-mistakes/efficient-vs-effective" element={<Suspense fallback={<PageLoader />}><EfficientVsEffectivePage /></Suspense>} />
             {/* Preposition Errors */}
             <Route path="grammar-mistakes/discuss-or-discuss-about" element={<Suspense fallback={<PageLoader />}><DiscussOrDiscussAboutPage /></Suspense>} />
             <Route path="grammar-mistakes/married-with-or-married-to" element={<Suspense fallback={<PageLoader />}><MarriedWithOrMarriedToPage /></Suspense>} />
@@ -405,6 +437,10 @@ const App: React.FC = () => {
             <Route path="grammar-mistakes/request-or-request-for" element={<Suspense fallback={<PageLoader />}><RequestOrRequestForPage /></Suspense>} />
             <Route path="grammar-mistakes/enter-or-enter-to" element={<Suspense fallback={<PageLoader />}><EnterOrEnterToPage /></Suspense>} />
             <Route path="grammar-mistakes/complain-about-or-complain-of" element={<Suspense fallback={<PageLoader />}><ComplainAboutOrComplainOfPage /></Suspense>} />
+            <Route path="grammar-mistakes/by-accident-vs-on-accident" element={<Suspense fallback={<PageLoader />}><ByAccidentVsOnAccidentPage /></Suspense>} />
+            <Route path="grammar-mistakes/capable-of-or-capable-to" element={<Suspense fallback={<PageLoader />}><CapableOfOrCapableToPage /></Suspense>} />
+            <Route path="grammar-mistakes/fond-of-or-fond-for" element={<Suspense fallback={<PageLoader />}><FondOfOrFondForPage /></Suspense>} />
+            <Route path="grammar-mistakes/accused-of-or-accused-for" element={<Suspense fallback={<PageLoader />}><AccusedOfOrAccusedForPage /></Suspense>} />
             {/* Quantifier Errors */}
             <Route path="grammar-mistakes/much-people-or-many-people" element={<Suspense fallback={<PageLoader />}><MuchPeopleOrManyPeoplePage /></Suspense>} />
             <Route path="grammar-mistakes/less-people-or-fewer-people" element={<Suspense fallback={<PageLoader />}><LessPeopleOrFewerPeoplePage /></Suspense>} />
@@ -415,6 +451,8 @@ const App: React.FC = () => {
             <Route path="grammar-mistakes/so-much-vs-so-many" element={<Suspense fallback={<PageLoader />}><SoMuchVsSoManyPage /></Suspense>} />
             <Route path="grammar-mistakes/a-few-vs-few" element={<Suspense fallback={<PageLoader />}><AFewVsFewPage /></Suspense>} />
             <Route path="grammar-mistakes/a-little-vs-little" element={<Suspense fallback={<PageLoader />}><ALittleVsLittlePage /></Suspense>} />
+            <Route path="grammar-mistakes/several-vs-some" element={<Suspense fallback={<PageLoader />}><SeveralVsSomePage /></Suspense>} />
+            <Route path="grammar-mistakes/plenty-of-vs-a-lot-of" element={<Suspense fallback={<PageLoader />}><PlentyOfVsALotOfPage /></Suspense>} />
             {/* Redundancy Errors */}
             <Route path="grammar-mistakes/return-back-or-return" element={<Suspense fallback={<PageLoader />}><ReturnBackOrReturnPage /></Suspense>} />
             <Route path="grammar-mistakes/repeat-again-or-repeat" element={<Suspense fallback={<PageLoader />}><RepeatAgainOrRepeatPage /></Suspense>} />

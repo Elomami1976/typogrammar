@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import SchemaMarkup from '../components/SchemaMarkup';
@@ -46,16 +46,48 @@ const GrammarCheckerPage: React.FC = () => {
     canonical: 'https://typogrammar.com/grammar-checker'
   });
 
+  interface HistoryEntry {
+    text: string;
+    result: string;
+    timestamp: number;
+  }
+
+  const HISTORY_KEY = 'tg_grammar_history';
+
   const [text, setText] = useState<string>('');
   const [result, setResult] = useState<string | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
+  const [history, setHistory] = useState<HistoryEntry[]>(() => {
+    try {
+      return JSON.parse(localStorage.getItem(HISTORY_KEY) || '[]');
+    } catch {
+      return [];
+    }
+  });
   const resultRef = useRef<HTMLDivElement>(null);
 
   const CHARACTER_LIMIT = 3000;
   const wordCount = text.trim().split(/\s+/).filter(Boolean).length;
   const characterCount = text.length;
+
+  // Estimate IELTS band from result text
+  const estimateIELTSBand = useCallback((resultText: string): string => {
+    const patterns = [/\bcorrect(?:ion|ed)\b/gi, /\bshould be\b/gi, /\bchange\b/gi, /\bmistake\b/gi, /\berror\b/gi, /\bincorrect\b/gi, /\bfix\b/gi];
+    const total = patterns.reduce((sum, p) => sum + (resultText.match(p)?.length ?? 0), 0);
+    if (total === 0) return '8.0–9.0';
+    if (total <= 2) return '7.0–8.0';
+    if (total <= 5) return '6.0–7.0';
+    if (total <= 9) return '5.5–6.5';
+    return '4.5–5.5';
+  }, []);
+
+  const clearText = () => {
+    setText('');
+    setResult(null);
+    setError(null);
+  };
 
   useEffect(() => {
     if (result && resultRef.current) {
@@ -117,6 +149,13 @@ const GrammarCheckerPage: React.FC = () => {
 
       if (data.result) {
         setResult(data.result);
+        // Save to localStorage history (max 3 entries)
+        setHistory(prev => {
+          const entry: HistoryEntry = { text: text.trim().slice(0, 200), result: data.result as string, timestamp: Date.now() };
+          const updated = [entry, ...prev].slice(0, 3);
+          try { localStorage.setItem(HISTORY_KEY, JSON.stringify(updated)); } catch { /* storage full */ }
+          return updated;
+        });
       } else {
         throw new Error('No result received from server.');
       }
@@ -268,11 +307,11 @@ const GrammarCheckerPage: React.FC = () => {
               onChange={handleTextChange}
               onKeyDown={handleKeyPress}
               placeholder="Type or paste your text here... (Press Ctrl+Enter to check)"
-              className="w-full min-h-48 p-4 border border-slate-300 dark:border-slate-600 rounded-lg 
+              className="w-full min-h-[120px] sm:min-h-[160px] p-4 border border-slate-300 dark:border-slate-600 rounded-lg 
                        focus:ring-2 focus:ring-blue-500 focus:border-blue-500 
                        bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100
                        placeholder-slate-400 dark:placeholder-slate-500
-                       resize-y transition-colors"
+                       resize-y transition-colors text-[17px] leading-relaxed"
               disabled={loading}
             />
             
@@ -283,6 +322,18 @@ const GrammarCheckerPage: React.FC = () => {
                   {characterCount}/{CHARACTER_LIMIT}
                 </span> characters
               </div>
+              {text.trim() && (
+                <button
+                  onClick={clearText}
+                  className="text-slate-500 hover:text-red-600 dark:text-slate-400 dark:hover:text-red-400 text-xs font-semibold flex items-center gap-1 transition-colors"
+                  type="button"
+                >
+                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                  Clear
+                </button>
+              )}
             </div>
 
             <button
@@ -359,10 +410,66 @@ const GrammarCheckerPage: React.FC = () => {
                   Grammar Check Results
                 </h2>
               </div>
+
+              {/* IELTS Band Estimate */}
+              <div className="mb-4 flex items-center gap-3 bg-white/70 dark:bg-slate-800/70 rounded-lg px-4 py-3 border border-green-200 dark:border-green-700">
+                <span className="text-2xl" aria-hidden="true">🎯</span>
+                <div>
+                  <p className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wide mb-0.5">
+                    Estimated IELTS Writing Band
+                  </p>
+                  <p className="text-lg font-extrabold text-blue-700 dark:text-blue-300">
+                    {estimateIELTSBand(result!)}
+                    <span className="ml-2 text-xs font-normal text-slate-500 dark:text-slate-400">(rough estimate – fix errors to improve)</span>
+                  </p>
+                </div>
+              </div>
+
               <div className="bg-white dark:bg-slate-800 rounded-lg p-5 border border-green-200 dark:border-green-700">
                 <pre className="whitespace-pre-wrap font-sans text-slate-800 dark:text-slate-200 leading-relaxed">
                   {result}
                 </pre>
+              </div>
+
+              {/* Check again shortcut */}
+              <div className="mt-4 flex justify-end">
+                <button
+                  onClick={clearText}
+                  className="inline-flex items-center gap-1.5 px-4 py-2 text-sm font-semibold text-blue-700 bg-blue-100 hover:bg-blue-200 dark:bg-blue-900/30 dark:text-blue-300 dark:hover:bg-blue-900/50 rounded-lg transition-colors"
+                  type="button"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                  </svg>
+                  Check another text
+                </button>
+              </div>
+            </div>
+          )}
+
+          {/* Recent Check History */}
+          {history.length > 0 && !result && (
+            <div className="mt-8">
+              <h3 className="text-sm font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-3 flex items-center gap-2">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Recent checks
+              </h3>
+              <div className="space-y-2">
+                {history.map((entry, i) => (
+                  <button
+                    key={entry.timestamp}
+                    onClick={() => { setText(entry.text); setResult(entry.result); }}
+                    className="w-full text-left bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg px-4 py-3 hover:border-blue-300 dark:hover:border-blue-600 transition-colors"
+                    type="button"
+                  >
+                    <p className="text-sm text-slate-700 dark:text-slate-300 truncate">{entry.text}…</p>
+                    <p className="text-xs text-slate-400 dark:text-slate-500 mt-0.5">
+                      {i === 0 ? 'Most recent' : `${Math.round((Date.now() - entry.timestamp) / 60000)} min ago`}
+                    </p>
+                  </button>
+                ))}
               </div>
             </div>
           )}

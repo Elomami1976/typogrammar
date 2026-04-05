@@ -4,12 +4,36 @@
 User-agent: *
 Allow: /
 
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: facebot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
 # Sitemap location
 Sitemap: https://typogrammar.com/sitemap.xml
 
 # AI Language Models - Documentation
 # For AI/LLM context about site content
 # See: https://typogrammar.com/llms.txt
-
-# Crawl delay (optional - helps prevent server overload)
-Crawl-delay: 1

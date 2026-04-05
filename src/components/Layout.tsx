@@ -9,12 +9,26 @@ import { useGlobalKeyboardShortcuts } from '../hooks/useKeyboardShortcuts';
 
 const Layout: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
+  const [showBackTop, setShowBackTop] = useState(false);
   const location = useLocation();
 
   // Force light mode - remove any dark class
   useEffect(() => {
     document.documentElement.classList.remove('dark');
     localStorage.removeItem('theme');
+  }, []);
+
+  // Scroll progress bar + back-to-top visibility
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      setScrollProgress(docHeight > 0 ? (scrollTop / docHeight) * 100 : 0);
+      setShowBackTop(scrollTop > 400);
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   // Close mobile menu on route change
@@ -34,10 +48,19 @@ const Layout: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-slate-100 text-slate-800">
+    <div className="flex flex-col min-h-screen bg-violet-50 text-slate-800">
       {/* Global SEO - automatically applied to all pages based on current route */}
       <SEO path={location.pathname} />
-      
+
+      {/* Reading progress bar */}
+      <div
+        className="fixed top-[69px] left-0 h-0.5 bg-blue-500 z-30 transition-[width] duration-75 ease-out"
+        style={{ width: `${scrollProgress}%` }}
+        role="progressbar"
+        aria-valuenow={Math.round(scrollProgress)}
+        aria-label="Reading progress"
+      />
+
       <Header 
         onMenuClick={toggleMobileMenu}
       />
@@ -48,6 +71,19 @@ const Layout: React.FC = () => {
         </main>
       </div>
       <Footer />
+
+      {/* Back to top button */}
+      {showBackTop && (
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="fixed bottom-6 right-6 z-40 p-3 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 hover:-translate-y-0.5 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+          aria-label="Back to top"
+        >
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+          </svg>
+        </button>
+      )}
     </div>
   );
 };

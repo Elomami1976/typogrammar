@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import GoogleAd from '../components/GoogleAd';
 import { useParams, Link } from 'react-router-dom';
 import { GRAMMAR_TOPICS } from '../constants/grammarTopics';
@@ -20,6 +20,19 @@ const TopicPage: React.FC = () => {
   
   const previousTopic = currentIndex > 0 ? GRAMMAR_TOPICS[currentIndex - 1] : null;
   const nextTopic = currentIndex < GRAMMAR_TOPICS.length - 1 ? GRAMMAR_TOPICS[currentIndex + 1] : null;
+
+  // Track last visited topic for "Continue Learning" on homepage
+  useEffect(() => {
+    if (topic) {
+      try {
+        localStorage.setItem('lastVisitedTopic', JSON.stringify({
+          id: topic.id,
+          title: topic.title,
+          category: topic.category,
+        }));
+      } catch {}
+    }
+  }, [topic]);
 
   // Custom SEO meta for specific topics
   const topicSeoMap: Record<string, { title: string; description: string }> = {

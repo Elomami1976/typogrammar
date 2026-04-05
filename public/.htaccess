@@ -42,9 +42,24 @@ Options -Indexes
   AddType image/svg+xml .svg
 </IfModule>
 
-# Enable compression for better performance
+# Enable Brotli compression (preferred over gzip)
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/xml text/css text/javascript application/javascript application/json application/xml application/rss+xml font/ttf font/otf font/woff2 image/svg+xml
+</IfModule>
+
+# LiteSpeed native compression (Hostinger uses LiteSpeed server)
+<IfModule LiteSpeed>
+  CompressibleTypes text/html text/plain text/xml text/css text/javascript application/javascript application/json application/xml image/svg+xml font/woff2
+</IfModule>
+
+# Enable gzip compression as fallback
 <IfModule mod_deflate.c>
+  # Do not compress if already compressed (Brotli or gzip)
+  SetEnvIfNoCase Request_URI \.(?:gz|br)$ no-gzip dont-vary
+  SetEnvIfNoCase Request_URI \.(?:exe|t?gz|zip|bz2|sit|rar)$ no-gzip dont-vary
   AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json application/xml application/rss+xml font/ttf font/otf font/woff font/woff2 image/svg+xml
+  # Vary header for proxy cache correctness
+  Header append Vary Accept-Encoding
 </IfModule>
 
 # Enable HTTP/2 if supported
@@ -58,10 +73,10 @@ Options -Indexes
 <IfModule mod_expires.c>
   ExpiresActive On
   
-  # HTML files - NO CACHE (so users always get fresh content)
+  # HTML files - Revalidate but allow bfcache (no-store breaks back/forward cache)
   <FilesMatch "\.(html|htm)$">
     ExpiresDefault "access plus 0 seconds"
-    Header set Cache-Control "no-cache, no-store, must-revalidate, max-age=0"
+    Header set Cache-Control "no-cache, must-revalidate, max-age=0"
     Header set Pragma "no-cache"
   </FilesMatch>
   
@@ -110,12 +125,16 @@ Options -Indexes
 
 # For servers without mod_expires, use Header directive
 <IfModule mod_headers.c>
-  # Ensure HTML is never cached
+  # Ensure HTML revalidates but allows bfcache
   <FilesMatch "\.(html|htm)$">
-    Header set Cache-Control "no-cache, no-store, must-revalidate, max-age=0"
+    Header set Cache-Control "no-cache, must-revalidate, max-age=0"
     Header set Pragma "no-cache"
     Header set Expires "0"
   </FilesMatch>
+  # Security headers
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
 </IfModule>
 
 # Set proper permissions (Apache 2.4 syntax)

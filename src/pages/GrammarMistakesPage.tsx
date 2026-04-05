@@ -56,6 +56,8 @@ const GrammarMistakesPage: React.FC = () => {
         { to: "/grammar-mistakes/everybody-is-or-are", text: "Everybody Is or Are?" },
         { to: "/grammar-mistakes/nobody-is-or-are", text: "Nobody Is or Are?" },
         { to: "/grammar-mistakes/everyone-has-or-have", text: "Everyone Has or Have?" },
+        { to: "/grammar-mistakes/each-of-or-every-of", text: "Each of or Every of?" },
+        { to: "/grammar-mistakes/either-of-or-neither-of", text: "Either of / Neither of" },
       ]
     },
     {
@@ -74,6 +76,7 @@ const GrammarMistakesPage: React.FC = () => {
         { to: "/grammar-mistakes/he-has-came-or-come", text: "He Has Came or Come?" },
         { to: "/grammar-mistakes/i-seen-or-i-saw", text: "I Seen or I Saw?" },
         { to: "/grammar-mistakes/she-has-went-or-gone", text: "She Has Went or Gone?" },
+        { to: "/grammar-mistakes/should-have-vs-should-of", text: "Should Have vs. Should Of" },
       ]
     },
     {
@@ -95,6 +98,8 @@ const GrammarMistakesPage: React.FC = () => {
         { to: "/grammar-mistakes/everyday-vs-every-day", text: "Everyday vs. Every Day" },
         { to: "/grammar-mistakes/sometime-vs-sometimes", text: "Sometime vs. Sometimes" },
         { to: "/grammar-mistakes/into-vs-in-to", text: "Into vs. In To" },
+        { to: "/grammar-mistakes/sensible-vs-sensitive", text: "Sensible vs. Sensitive" },
+        { to: "/grammar-mistakes/efficient-vs-effective", text: "Efficient vs. Effective" },
       ]
     },
     {
@@ -115,6 +120,10 @@ const GrammarMistakesPage: React.FC = () => {
         { to: "/grammar-mistakes/request-or-request-for", text: "Request or Request For?" },
         { to: "/grammar-mistakes/enter-or-enter-to", text: "Enter or Enter To?" },
         { to: "/grammar-mistakes/complain-about-or-complain-of", text: "Complain About or Complain Of?" },
+        { to: "/grammar-mistakes/by-accident-vs-on-accident", text: "By Accident vs. On Accident" },
+        { to: "/grammar-mistakes/capable-of-or-capable-to", text: "Capable of or Capable to?" },
+        { to: "/grammar-mistakes/fond-of-or-fond-for", text: "Fond of or Fond for?" },
+        { to: "/grammar-mistakes/accused-of-or-accused-for", text: "Accused of or Accused for?" },
       ]
     },
     {
@@ -130,6 +139,8 @@ const GrammarMistakesPage: React.FC = () => {
         { to: "/grammar-mistakes/so-much-vs-so-many", text: "So Much vs. So Many" },
         { to: "/grammar-mistakes/a-few-vs-few", text: "A Few vs. Few" },
         { to: "/grammar-mistakes/a-little-vs-little", text: "A Little vs. Little" },
+        { to: "/grammar-mistakes/several-vs-some", text: "Several vs. Some" },
+        { to: "/grammar-mistakes/plenty-of-vs-a-lot-of", text: "Plenty of vs. A Lot of" },
       ]
     },
     {

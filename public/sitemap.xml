@@ -5,7 +5,7 @@
     <loc>https://typogrammar.com/</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <lastmod>2026-02-12</lastmod>
+    <lastmod>2026-04-05</lastmod>
   </url>
   
   <!-- Main Pages -->
@@ -73,6 +73,7 @@
   <!-- Blog Posts -->
   <url><loc>https://typogrammar.com/blog/grammatical-range-and-accuracy-ielts</loc><changefreq>monthly</changefreq><priority>0.9</priority><lastmod>2026-02-16</lastmod></url>
   <url><loc>https://typogrammar.com/blog/15-most-common-toefl-ibt-mistakes-with-examples</loc><changefreq>monthly</changefreq><priority>0.9</priority><lastmod>2026-02-12</lastmod></url>
+  <url><loc>https://typogrammar.com/blog/common-toefl-ibt-mistakes-avoid</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-26</lastmod></url>
   <url><loc>https://typogrammar.com/blog/how-to-use-official-toefl-practice-online</loc><changefreq>monthly</changefreq><priority>0.9</priority><lastmod>2026-02-10</lastmod></url>
   <url><loc>https://typogrammar.com/blog/new-toefl-scoring-system-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-02-10</lastmod></url>
   <url><loc>https://typogrammar.com/blog/toefl-home-edition-requirements-registration-tech-checklist</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-02-10</lastmod></url>
@@ -118,6 +119,8 @@
   <url><loc>https://typogrammar.com/blog/english-levels-a1-a2-b1-b2-c1-c2</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-10</lastmod></url>
   <url><loc>https://typogrammar.com/blog/common-grammar-mistakes-in-english</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-21</lastmod></url>
   <url><loc>https://typogrammar.com/blog/academic-vs-general-ielts-full-comparison</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-21</lastmod></url>
+  <url><loc>https://typogrammar.com/blog/academic-vs-general-ielts-differences</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-26</lastmod></url>
+  <url><loc>https://typogrammar.com/llms.txt</loc><changefreq>monthly</changefreq><priority>0.5</priority><lastmod>2026-04-05</lastmod></url>
   
   <!-- Vocabulary & Reference -->
   <url><loc>https://typogrammar.com/irregular-verbs</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -143,6 +146,7 @@
   <url><loc>https://typogrammar.com/writing-assistant</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   
   <!-- Tools & Practice -->
+  <url><loc>https://typogrammar.com/ai-writing-tools</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-29</lastmod></url>
   <url><loc>https://typogrammar.com/grammar-checker</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-02-21</lastmod></url>
   <url><loc>https://typogrammar.com/paraphrasing-tool</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-02-21</lastmod></url>
   <url><loc>https://typogrammar.com/free-paraphrasing-tool-without-login</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-02-27</lastmod></url>
@@ -172,6 +176,7 @@
   <url><loc>https://typogrammar.com/ielts/two-part-question-essay-ielts</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://typogrammar.com/ielts/mixed-essay-types-ielts</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://typogrammar.com/ielts/band-8-ielts-sample-answers</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-02-17</lastmod></url>
+  <url><loc>https://typogrammar.com/ielts/50-band-9-ielts-writing-task-2-sample-essays</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-29</lastmod></url>
   
   <!-- IELTS Grammar -->
   <url><loc>https://typogrammar.com/ielts/task-achievement-in-ielts</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-02</lastmod></url>
@@ -204,6 +209,7 @@
   <url><loc>https://typogrammar.com/ielts/ielts-in-3-days</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-03-05</lastmod></url>
   
   <!-- TOEFL Reading -->
+  <url><loc>https://typogrammar.com/toefl/toefl-reading/toefl-daily-life-reading-task</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-29</lastmod></url>
   <url><loc>https://typogrammar.com/toefl/toefl-reading/toefl-reading-section-explained</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-11</lastmod></url>
   <url><loc>https://typogrammar.com/toefl/toefl-reading/toefl-reading-strategies</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-11</lastmod></url>
   <url><loc>https://typogrammar.com/toefl/toefl-reading/toefl-reading-question-types</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-11</lastmod></url>
@@ -222,6 +228,11 @@
   <url><loc>https://typogrammar.com/toefl/toefl-vocabulary-pdf</loc><changefreq>monthly</changefreq><priority>0.9</priority><lastmod>2026-03-20</lastmod></url>
   <url><loc>https://typogrammar.com/toefl/toefl-writing-pdf</loc><changefreq>monthly</changefreq><priority>0.9</priority><lastmod>2026-03-20</lastmod></url>
   
+  <!-- TOEFL Strategy & Success -->
+  <url><loc>https://typogrammar.com/toefl/strategy-success/old-toefl-vs-new-toefl</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-04-04</lastmod></url>
+  <url><loc>https://typogrammar.com/toefl/strategy-success/toefl-complete-the-words</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-04-04</lastmod></url>
+  <url><loc>https://typogrammar.com/toefl/strategy-success/toefl-2026-scoring</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-04-04</lastmod></url>
+  
   <!-- Grammar Mistakes Hub -->
   <url><loc>https://typogrammar.com/grammar-mistakes</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-03-12</lastmod></url>
   
@@ -236,6 +247,8 @@
   <url><loc>https://typogrammar.com/grammar-mistakes/everybody-is-or-are</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-12</lastmod></url>
   <url><loc>https://typogrammar.com/grammar-mistakes/nobody-is-or-are</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-12</lastmod></url>
   <url><loc>https://typogrammar.com/grammar-mistakes/everyone-has-or-have</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-12</lastmod></url>
+  <url><loc>https://typogrammar.com/grammar-mistakes/each-of-or-every-of</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-30</lastmod></url>
+  <url><loc>https://typogrammar.com/grammar-mistakes/either-of-or-neither-of</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-30</lastmod></url>
   <url><loc>https://typogrammar.com/grammar-mistakes/none-is-or-are</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-12</lastmod></url>
   <url><loc>https://typogrammar.com/grammar-mistakes/a-number-of-vs-the-number-of</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-12</lastmod></url>
   <url><loc>https://typogrammar.com/grammar-mistakes/a-lot-of-people-is-or-are</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-12</lastmod></url>
@@ -244,6 +257,7 @@
   <url><loc>https://typogrammar.com/grammar-mistakes/a-group-of-people-is-or-are</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-12</lastmod></url>
   
   <!-- Verb Form Errors -->
+  <url><loc>https://typogrammar.com/grammar-mistakes/should-have-vs-should-of</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-29</lastmod></url>
   <url><loc>https://typogrammar.com/grammar-mistakes/i-am-agree-or-i-agree</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-12</lastmod></url>
   <url><loc>https://typogrammar.com/grammar-mistakes/he-didnt-went-or-he-didnt-go</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-12</lastmod></url>
   <url><loc>https://typogrammar.com/grammar-mistakes/did-you-went-or-did-you-go</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-12</lastmod></url>
@@ -273,6 +287,8 @@
   <url><loc>https://typogrammar.com/grammar-mistakes/everyday-vs-every-day</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-12</lastmod></url>
   <url><loc>https://typogrammar.com/grammar-mistakes/sometime-vs-sometimes</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-12</lastmod></url>
   <url><loc>https://typogrammar.com/grammar-mistakes/into-vs-in-to</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-12</lastmod></url>
+  <url><loc>https://typogrammar.com/grammar-mistakes/sensible-vs-sensitive</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-30</lastmod></url>
+  <url><loc>https://typogrammar.com/grammar-mistakes/efficient-vs-effective</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-30</lastmod></url>
   
   <!-- Preposition Errors -->
   <url><loc>https://typogrammar.com/grammar-mistakes/discuss-or-discuss-about</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-12</lastmod></url>
@@ -289,6 +305,10 @@
   <url><loc>https://typogrammar.com/grammar-mistakes/request-or-request-for</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-12</lastmod></url>
   <url><loc>https://typogrammar.com/grammar-mistakes/enter-or-enter-to</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-12</lastmod></url>
   <url><loc>https://typogrammar.com/grammar-mistakes/complain-about-or-complain-of</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-12</lastmod></url>
+  <url><loc>https://typogrammar.com/grammar-mistakes/by-accident-vs-on-accident</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-29</lastmod></url>
+  <url><loc>https://typogrammar.com/grammar-mistakes/capable-of-or-capable-to</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-30</lastmod></url>
+  <url><loc>https://typogrammar.com/grammar-mistakes/fond-of-or-fond-for</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-30</lastmod></url>
+  <url><loc>https://typogrammar.com/grammar-mistakes/accused-of-or-accused-for</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-30</lastmod></url>
   
   <!-- Quantifier Errors -->
   <url><loc>https://typogrammar.com/grammar-mistakes/much-people-or-many-people</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-12</lastmod></url>
@@ -300,6 +320,8 @@
   <url><loc>https://typogrammar.com/grammar-mistakes/so-much-vs-so-many</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-12</lastmod></url>
   <url><loc>https://typogrammar.com/grammar-mistakes/a-few-vs-few</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-12</lastmod></url>
   <url><loc>https://typogrammar.com/grammar-mistakes/a-little-vs-little</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-12</lastmod></url>
+  <url><loc>https://typogrammar.com/grammar-mistakes/several-vs-some</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-30</lastmod></url>
+  <url><loc>https://typogrammar.com/grammar-mistakes/plenty-of-vs-a-lot-of</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-30</lastmod></url>
   
   <!-- Redundancy Errors -->
   <url><loc>https://typogrammar.com/grammar-mistakes/return-back-or-return</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-03-12</lastmod></url>
@@ -314,5 +336,4 @@
   <!-- Legal -->
   <url><loc>https://typogrammar.com/privacy-policy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://typogrammar.com/terms-of-service</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://typogrammar.com/llms.txt</loc><changefreq>monthly</changefreq><priority>0.5</priority><lastmod>2026-02-12</lastmod></url>
 </urlset>

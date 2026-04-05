@@ -214,7 +214,7 @@ const CommonGrammarMistakesIELTSPage: React.FC = () => {
         In this guide, you'll discover the <strong>20 most common grammar mistakes in IELTS Writing</strong> — along with clear corrections and explanations.
       </ArticleParagraph>
 
-      <GoogleAd adSlot="1234567890" />
+      <GoogleAd adSlot="6406598038" />
 
       {/* 20 Grammar Mistakes */}
       <ArticleHeading>The 20 Most Common Grammar Mistakes in IELTS Writing</ArticleHeading>
@@ -299,7 +299,7 @@ const CommonGrammarMistakesIELTSPage: React.FC = () => {
         explanation="First conditional: if + present simple, will + infinitive. Don't use 'will' in the if-clause."
       />
 
-      <GoogleAd adSlot="1234567890" />
+      <GoogleAd adSlot="6406598038" />
 
       <GrammarMistake
         number={11}
@@ -404,7 +404,7 @@ const CommonGrammarMistakesIELTSPage: React.FC = () => {
         </p>
       </div>
 
-      <GoogleAd adSlot="1234567890" />
+      <GoogleAd adSlot="6406598038" />
 
       {/* Band 6 vs Band 7 Comparison */}
       <ArticleHeading>📌 Band 6 vs Band 7 Grammar Difference</ArticleHeading>
@@ -475,7 +475,7 @@ const CommonGrammarMistakesIELTSPage: React.FC = () => {
         </ul>
       </div>
 
-      <GoogleAd adSlot="1234567890" />
+      <GoogleAd adSlot="6406598038" />
 
       {/* Visible FAQ Section */}
       <ArticleHeading>Frequently Asked Questions</ArticleHeading>

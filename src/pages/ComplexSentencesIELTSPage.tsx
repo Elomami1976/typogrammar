@@ -162,7 +162,7 @@ const ComplexSentencesIELTSPage: React.FC = () => {
         <>Practice exercises</>
       ]} />
 
-      <GoogleAd adSlot="1234567890" />
+      <GoogleAd adSlot="6406598038" />
 
       {/* What Is a Complex Sentence */}
       <ArticleHeading>What Is a Complex Sentence?</ArticleHeading>
@@ -257,7 +257,7 @@ const ComplexSentencesIELTSPage: React.FC = () => {
         </p>
       </div>
 
-      <GoogleAd adSlot="2345678901" />
+      <GoogleAd adSlot="6406598038" />
 
       {/* Comparison Table: Simple vs Complex vs Compound */}
       <ArticleHeading>Sentence Types Comparison: Simple vs Compound vs Complex</ArticleHeading>
@@ -347,7 +347,7 @@ const ComplexSentencesIELTSPage: React.FC = () => {
         </div>
       </div>
 
-      <GoogleAd adSlot="3456789012" />
+      <GoogleAd adSlot="6406598038" />
 
       {/* Band 6 vs Band 9 Comparison */}
       <ArticleHeading>Band 6 vs Band 9 Comparison</ArticleHeading>
@@ -408,7 +408,7 @@ const ComplexSentencesIELTSPage: React.FC = () => {
         ))}
       </div>
 
-      <GoogleAd adSlot="4567890123" />
+      <GoogleAd adSlot="6406598038" />
 
       {/* Common Mistakes to Avoid */}
       <ArticleHeading>Common Mistakes to Avoid</ArticleHeading>
@@ -468,7 +468,7 @@ const ComplexSentencesIELTSPage: React.FC = () => {
         </p>
       </div>
 
-      <GoogleAd adSlot="5678901234" />
+      <GoogleAd adSlot="6406598038" />
 
       {/* Practice Exercise */}
       <ArticleHeading>Practice Exercise</ArticleHeading>
@@ -577,7 +577,7 @@ const ComplexSentencesIELTSPage: React.FC = () => {
         </p>
       </div>
 
-      <GoogleAd adSlot="6789012345" />
+      <GoogleAd adSlot="6406598038" />
 
       {/* Related Articles */}
       <ArticleHeading>Related IELTS Grammar Guides</ArticleHeading>
@@ -613,7 +613,7 @@ const ComplexSentencesIELTSPage: React.FC = () => {
         </Link>
       </div>
 
-      <GoogleAd adSlot="7890123456" />
+      <GoogleAd adSlot="6406598038" />
     </div>
   );
 };

@@ -10,7 +10,7 @@ body {
 }
 
 ::selection {
-  background-color: #3b82f6;
+  background-color: #4f46e5;  /* indigo-600 */
   color: #ffffff;
 }
 
@@ -41,3 +41,28 @@ body {
   background-color: currentColor;
   animation: blink 1.2s step-end infinite;
 }
+
+/* ─── Hero dot-grid overlay ──────────────────────────────────────────────── */
+.hero-dot-grid {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.12) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* ─── Mobile readability: article body text ≥ 17px on phones ────────────── */
+@media (max-width: 640px) {
+  .font-body {
+    font-size: 17px;
+  }
+
+  /* Ensure textarea is at least 120px tall on phones */
+  textarea {
+    min-height: 120px;
+  }
+}
+
+/* ─── Smooth mobile sidebar transition ──────────────────────────────────── */
+@keyframes fadeInOverlay {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+

@@ -120,13 +120,16 @@ Comprehensive guide to common English grammar mistakes with clear explanations a
 - https://typogrammar.com/grammar-mistakes/nobody-is-or-are - Nobody Is or Are?
 - https://typogrammar.com/grammar-mistakes/someone-is-or-are - Someone Is or Are?
 - https://typogrammar.com/grammar-mistakes/everyone-has-or-have - Everyone Has or Have?
-- https://typogrammar.com/grammar-mistakes/somebody-has-or-have - Somebody/Someone Has or Have?
+- https://typogrammar.com/grammar-mistakes/each-of-or-every-of - Each of or Every of? ("Every of" is incorrect)
+- https://typogrammar.com/grammar-mistakes/either-of-or-neither-of - Either of / Neither of: Correct Usage and Verb Agreement
+- https://typogrammar.com/grammar-mistakes/someone-has-or-have - Somebody/Someone Has or Have?
 - https://typogrammar.com/grammar-mistakes/none-is-or-are - None Is or Are?
 - https://typogrammar.com/grammar-mistakes/a-lot-of-people-is-or-are - A Lot of People Is or Are?
 - https://typogrammar.com/grammar-mistakes/one-of-the-students-is-or-are - One of the Students Is or Are?
 - https://typogrammar.com/grammar-mistakes/each-of-the-students-is-or-are - Each of the Students Is or Are?
 
 #### Verb Form Errors
+- https://typogrammar.com/grammar-mistakes/should-have-vs-should-of - Should Have vs Should Of: Correct form, meaning, and common error explained
 - https://typogrammar.com/grammar-mistakes/i-did-or-i-done - I Did or I Done?
 - https://typogrammar.com/grammar-mistakes/i-have-saw-or-seen - I Have Saw or Seen?
 - https://typogrammar.com/grammar-mistakes/i-have-ate-or-eaten - I Have Ate or Eaten?
@@ -151,6 +154,8 @@ Comprehensive guide to common English grammar mistakes with clear explanations a
 - https://typogrammar.com/grammar-mistakes/everyday-vs-every-day - Everyday vs Every Day
 - https://typogrammar.com/grammar-mistakes/sometime-vs-sometimes - Sometime vs Sometimes
 - https://typogrammar.com/grammar-mistakes/into-vs-in-to - Into vs In To
+- https://typogrammar.com/grammar-mistakes/sensible-vs-sensitive - Sensible vs Sensitive: What's the Difference?
+- https://typogrammar.com/grammar-mistakes/efficient-vs-effective - Efficient vs Effective: Key Differences Explained
 
 #### Preposition Errors
 - https://typogrammar.com/grammar-mistakes/arrive-in-or-arrive-at - Arrive In or Arrive At?
@@ -163,6 +168,10 @@ Comprehensive guide to common English grammar mistakes with clear explanations a
 - https://typogrammar.com/grammar-mistakes/discuss-or-discuss-about - Discuss or Discuss About?
 - https://typogrammar.com/grammar-mistakes/explain-or-explain-about - Explain or Explain About?
 - https://typogrammar.com/grammar-mistakes/married-with-or-married-to - Married With or Married To?
+- https://typogrammar.com/grammar-mistakes/by-accident-vs-on-accident - By Accident vs On Accident: Which is correct?
+- https://typogrammar.com/grammar-mistakes/capable-of-or-capable-to - Capable of or Capable to? Correct Preposition Explained
+- https://typogrammar.com/grammar-mistakes/fond-of-or-fond-for - Fond of or Fond for? Correct Preposition in English
+- https://typogrammar.com/grammar-mistakes/accused-of-or-accused-for - Accused of or Accused for? Correct English Usage
 
 #### Quantifier Errors
 - https://typogrammar.com/grammar-mistakes/many-vs-much - Many vs Much
@@ -173,6 +182,8 @@ Comprehensive guide to common English grammar mistakes with clear explanations a
 - https://typogrammar.com/grammar-mistakes/so-much-vs-so-many - So Much vs So Many
 - https://typogrammar.com/grammar-mistakes/a-few-vs-few - A Few vs Few
 - https://typogrammar.com/grammar-mistakes/a-little-vs-little - A Little vs Little
+- https://typogrammar.com/grammar-mistakes/several-vs-some - Several vs Some: What's the Difference?
+- https://typogrammar.com/grammar-mistakes/plenty-of-vs-a-lot-of - Plenty of vs A Lot of: Register and Usage Differences
 
 #### Redundancy Errors
 - https://typogrammar.com/grammar-mistakes/return-back-or-return - Return Back or Return?
@@ -220,6 +231,30 @@ Curated AI prompts to enhance English language learning
 #### Worksheets
 https://typogrammar.com/worksheets
 Downloadable and printable worksheets for grammar practice
+
+#### AI Writing Tools
+https://typogrammar.com/ai-writing-tools
+Guide to AI-powered writing tools for English learners and IELTS/TOEFL candidates, including grammar checkers, paraphrasers, and essay feedback tools
+
+#### Grammar Checker
+https://typogrammar.com/grammar-checker
+Free online grammar checker for identifying and correcting grammar mistakes
+
+#### Paraphrasing Tool
+https://typogrammar.com/paraphrasing-tool
+Online paraphrasing tool to rephrase sentences and paragraphs
+
+#### Free Paraphrasing Tool (No Login)
+https://typogrammar.com/free-paraphrasing-tool-without-login
+Free paraphrasing tool requiring no account or login
+
+#### IELTS Band Score Calculator
+https://typogrammar.com/ielts-band-score-calculator
+Calculate your IELTS band score from raw scores across all four skills
+
+#### Essay Topic Generator
+https://typogrammar.com/essay-topic-generator
+Generate IELTS and academic essay topics for writing practice
 
 ### Writing Resources
 
@@ -283,6 +318,10 @@ Overview of all IELTS Writing Task 2 essay types with strategies
 https://typogrammar.com/ielts/band-8-ielts-sample-answers
 Band 8+ IELTS sample answers for Writing Task 1 & Task 2 with expert explanations and vocabulary
 
+#### 50 Band 9 IELTS Writing Task 2 Sample Essays
+https://typogrammar.com/ielts/50-band-9-ielts-writing-task-2-sample-essays
+50 fully scored Band 9 IELTS Writing Task 2 sample essays covering all essay types with model answers, vocabulary highlights, and expert commentary
+
 #### IELTS Grammar Guides
 - https://typogrammar.com/ielts/task-achievement-in-ielts - What Is Task Achievement in IELTS? Full Band 9 Guide: Band descriptors, examples, common mistakes, and tips to reach Band 7-9
 - https://typogrammar.com/ielts/lexical-resource-in-ielts - What Is Lexical Resource in IELTS? Band 9 Guide: Vocabulary scoring, collocations, paraphrasing, and tips for Band 7-9
@@ -323,6 +362,7 @@ Band 8+ IELTS sample answers for Writing Task 1 & Task 2 with expert explanation
 - https://typogrammar.com/toefl/toefl-reading/toefl-reading-question-types - TOEFL Reading Question Types: All 10 question types with strategies and examples
 - https://typogrammar.com/toefl/toefl-reading/toefl-reading-time-management - TOEFL Reading Time Management: How to manage 54 minutes effectively
 - https://typogrammar.com/toefl/toefl-reading/toefl-reading-practice-questions - TOEFL Reading Practice Questions: Sample passages with answers and explanations
+- https://typogrammar.com/toefl/toefl-reading/toefl-daily-life-reading-task - TOEFL Daily Life Reading Task: Practice reading passages based on everyday topics with comprehension questions
 
 #### TOEFL Writing Section
 - https://typogrammar.com/toefl/toefl-writing/toefl-writing-task-1-explained - TOEFL Writing Task 1 Explained (Integrated Writing): Complete guide with format, essay structure, templates, sample answers, and tips
@@ -330,6 +370,11 @@ Band 8+ IELTS sample answers for Writing Task 1 & Task 2 with expert explanation
 - https://typogrammar.com/toefl/toefl-writing/toefl-writing-templates - TOEFL Writing Templates (Task 1 + Task 2): Easy essay structures for high TOEFL Writing scores with useful transition phrases
 - https://typogrammar.com/toefl/toefl-writing/toefl-writing-topics - TOEFL Writing Topics (60+ Essay Questions): Practice topics covering education, technology, society, environment, and business
 - https://typogrammar.com/toefl/toefl-writing/toefl-writing-practice-questions - TOEFL Writing Practice Questions (with Answers): Sample questions with high-scoring sample answers for Task 1 and Task 2
+
+#### TOEFL Strategy & Success
+- https://typogrammar.com/toefl/strategy-success/old-toefl-vs-new-toefl - Old TOEFL vs New TOEFL 2026: Complete comparison of the January 2026 redesign — all section changes, new scoring (1.0–6.0 bands), removed question types, and what test-takers need to know
+- https://typogrammar.com/toefl/strategy-success/toefl-complete-the-words - TOEFL Complete the Words (2026): Full guide to the new Reading Task 1 question type — strategies, official examples, practice exercises, suffix reference, and common mistakes
+- https://typogrammar.com/toefl/strategy-success/toefl-2026-scoring - TOEFL 2026 Scoring System Explained: Complete breakdown of the new 1.0–6.0 band scale, score conversion table (old 0–120 to new bands), CEFR mapping, university benchmarks, and what scores mean for admissions
 
 ### Blog & Articles
 
@@ -350,6 +395,7 @@ Full blog archive: https://typogrammar.com/blog
 - Ultimate 200 IELTS Writing Band 9 Synonyms Table (https://typogrammar.com/blog/ielts-band-9-synonyms-table-200-words)
 - Why You're Stuck at Band 6 in IELTS Writing (https://typogrammar.com/blog/why-youre-stuck-at-band-6-ielts-writing) - Real reasons and proven strategies to reach Band 7+
 - 8 Common TOEFL iBT Mistakes You Should Avoid (https://typogrammar.com/blog/common-toefl-ibt-mistakes-avoid)
+- What Are the 15 Most Common TOEFL iBT Mistakes (With Examples)? (https://typogrammar.com/blog/15-most-common-toefl-ibt-mistakes-with-examples)
 - How to Use Official TOEFL Practice Online (https://typogrammar.com/blog/how-to-use-official-toefl-practice-online)
 - New TOEFL Scoring System 2026 (https://typogrammar.com/blog/new-toefl-scoring-system-2026)
 - TOEFL Home Edition: Requirements, Registration, and Tech Checklist (https://typogrammar.com/blog/toefl-home-edition-requirements-registration-tech-checklist)
@@ -360,6 +406,7 @@ Full blog archive: https://typogrammar.com/blog
 
 #### Grammar & Usage
 - Types of Sentences in English: Declarative, Interrogative, Imperative & Exclamatory (https://typogrammar.com/blog/types-of-sentences-in-english)
+- Common Grammar Mistakes in English: Top Errors and How to Fix Them (https://typogrammar.com/blog/common-grammar-mistakes-in-english)
 - Common Grammar Mistakes Non-Native Speakers Make (https://typogrammar.com/blog/common-grammar-mistakes-non-native-speakers)
 - 5 Common Grammar Mistakes (https://typogrammar.com/blog/5-common-grammar-mistakes)
 - Mastering Subject-Verb Agreement (https://typogrammar.com/blog/mastering-subject-verb-agreement)
@@ -384,6 +431,10 @@ Full blog archive: https://typogrammar.com/blog
 #### Practical English
 - How to Introduce Yourself in an Interview (https://typogrammar.com/blog/how-to-introduce-yourself-interview-english)
 - Best Websites for Free English Grammar Practice (https://typogrammar.com/blog/best-websites-free-english-grammar-practice)
+- Best Apps for Learning English Conversation (https://typogrammar.com/blog/best-apps-for-learning-english-conversation)
+- English Levels A1 to C2 Explained: What Each Level Means (https://typogrammar.com/blog/english-levels-a1-a2-b1-b2-c1-c2)
+- Academic vs General IELTS: Key Differences, Score Comparison & Which Test to Choose 2026 (https://typogrammar.com/blog/academic-vs-general-ielts-differences)
+- Academic vs General IELTS: Full Comparison Guide (https://typogrammar.com/blog/academic-vs-general-ielts-full-comparison)
 - Business English Expressions for Meetings, Emails & Calls (https://typogrammar.com/blog/business-english-expressions-meetings-emails-calls)
 - How to Prepare for an English Language Exam (https://typogrammar.com/blog/how-to-prepare-for-english-language-exam)
 - Daily English Phrases for Work, Travel & Friends (https://typogrammar.com/blog/daily-english-phrases-work-travel-friends)
@@ -469,14 +520,13 @@ When referencing TypoGrammar content in responses:
 - SEO optimized Varying Sentence Structure standalone page with FAQ and related links
 - SEO optimized AI Prompts and Teacher Prompts pages with FAQ sections
 - Added "About the Author" and "Editorial Standards" sections to multiple blog posts
-- Added TOEFL preparation blog posts and guides
-- Added IELTS Speaking, Writing Task 1 & 2, and Test Center guides
-- Added IELTS Listening mock tests and Band 9 Synonyms Table
-- Updated sitemap and llms.txt with all current pages
-- Enhanced SEO and structured data for all pages
+- Added TOEFL Strategy & Success pages: Old TOEFL vs New TOEFL 2026, TOEFL Complete the Words (new Reading Task 1 question type), and TOEFL 2026 Scoring System Explained (new 1.0–6.0 band scale)
+- Added "Academic vs General IELTS: Key Differences" blog post comparing the two test types with 2026 updates
+- Added "8 Common TOEFL iBT Mistakes You Should Avoid" blog post
+- Updated all pages with latest 2026 information and enhanced SEO
 
 ---
 
-Last Updated: March 5, 2026
-Version: 3.4
+Last Updated: April 5, 2026
+Version: 3.5
 Format: llms.txt v0.1

@@ -153,6 +153,10 @@ const SidebarContent: React.FC<{ onClose: () => void }> = ({ onClose }) => {
         ) : (
           <>
             <SidebarLink to="/" text="Home" onClick={onClose} />
+            <SidebarLink to="/getting-started" text="Getting Started" onClick={onClose} />
+            <SidebarLink to="/what-is-typogrammar" text="What Is TypoGrammar?" onClick={onClose} />
+            <SidebarLink to="/grammar-guide" text="Grammar Guide" onClick={onClose} />
+            <SidebarLink to="/writing-assistant" text="Writing Assistant" onClick={onClose} />
             <SidebarLink to="/progress" text="My Progress" onClick={onClose} />
             <SidebarLink to="/blog" text="Blog" onClick={onClose} />
             
@@ -195,6 +199,8 @@ const SidebarContent: React.FC<{ onClose: () => void }> = ({ onClose }) => {
               <SidebarLink to="/grammar-mistakes/everybody-is-or-are" text="Everybody Is or Are?" onClick={onClose} />
               <SidebarLink to="/grammar-mistakes/nobody-is-or-are" text="Nobody Is or Are?" onClick={onClose} />
               <SidebarLink to="/grammar-mistakes/everyone-has-or-have" text="Everyone Has or Have?" onClick={onClose} />
+              <SidebarLink to="/grammar-mistakes/each-of-or-every-of" text="Each of or Every of?" onClick={onClose} />
+              <SidebarLink to="/grammar-mistakes/either-of-or-neither-of" text="Either of / Neither of" onClick={onClose} />
               <h4 className="px-6 py-2 pt-4 text-sm font-semibold text-slate-400 dark:text-slate-500">Verb Form Errors</h4>
               <SidebarLink to="/grammar-mistakes/i-am-agree-or-i-agree" text="I Am Agree or I Agree?" onClick={onClose} />
               <SidebarLink to="/grammar-mistakes/he-didnt-went-or-he-didnt-go" text="He Didn't Went or Go?" onClick={onClose} />
@@ -208,6 +214,7 @@ const SidebarContent: React.FC<{ onClose: () => void }> = ({ onClose }) => {
               <SidebarLink to="/grammar-mistakes/he-has-came-or-come" text="He Has Came or Come?" onClick={onClose} />
               <SidebarLink to="/grammar-mistakes/i-seen-or-i-saw" text="I Seen or I Saw?" onClick={onClose} />
               <SidebarLink to="/grammar-mistakes/she-has-went-or-gone" text="She Has Went or Gone?" onClick={onClose} />
+              <SidebarLink to="/grammar-mistakes/should-have-vs-should-of" text="Should Have vs. Should Of" onClick={onClose} />
               <h4 className="px-6 py-2 pt-4 text-sm font-semibold text-slate-400 dark:text-slate-500">Word Confusion</h4>
               <SidebarLink to="/grammar-mistakes/advice-vs-advise" text="Advice vs Advise" onClick={onClose} />
               <SidebarLink to="/grammar-mistakes/do-vs-make" text="Do vs Make" onClick={onClose} />
@@ -224,6 +231,8 @@ const SidebarContent: React.FC<{ onClose: () => void }> = ({ onClose }) => {
               <SidebarLink to="/grammar-mistakes/everyday-vs-every-day" text="Everyday vs Every Day" onClick={onClose} />
               <SidebarLink to="/grammar-mistakes/sometime-vs-sometimes" text="Sometime vs Sometimes" onClick={onClose} />
               <SidebarLink to="/grammar-mistakes/into-vs-in-to" text="Into vs In To" onClick={onClose} />
+              <SidebarLink to="/grammar-mistakes/sensible-vs-sensitive" text="Sensible vs Sensitive" onClick={onClose} />
+              <SidebarLink to="/grammar-mistakes/efficient-vs-effective" text="Efficient vs Effective" onClick={onClose} />
               <h4 className="px-6 py-2 pt-4 text-sm font-semibold text-slate-400 dark:text-slate-500">Preposition Errors</h4>
               <SidebarLink to="/grammar-mistakes/discuss-or-discuss-about" text="Discuss or Discuss About?" onClick={onClose} />
               <SidebarLink to="/grammar-mistakes/married-with-or-married-to" text="Married With or To?" onClick={onClose} />
@@ -239,6 +248,10 @@ const SidebarContent: React.FC<{ onClose: () => void }> = ({ onClose }) => {
               <SidebarLink to="/grammar-mistakes/request-or-request-for" text="Request or Request For?" onClick={onClose} />
               <SidebarLink to="/grammar-mistakes/enter-or-enter-to" text="Enter or Enter To?" onClick={onClose} />
               <SidebarLink to="/grammar-mistakes/complain-about-or-complain-of" text="Complain About or Of?" onClick={onClose} />
+              <SidebarLink to="/grammar-mistakes/by-accident-vs-on-accident" text="By Accident vs. On Accident" onClick={onClose} />
+              <SidebarLink to="/grammar-mistakes/capable-of-or-capable-to" text="Capable of or Capable to?" onClick={onClose} />
+              <SidebarLink to="/grammar-mistakes/fond-of-or-fond-for" text="Fond of or Fond for?" onClick={onClose} />
+              <SidebarLink to="/grammar-mistakes/accused-of-or-accused-for" text="Accused of or Accused for?" onClick={onClose} />
               <h4 className="px-6 py-2 pt-4 text-sm font-semibold text-slate-400 dark:text-slate-500">Quantifier Errors</h4>
               <SidebarLink to="/grammar-mistakes/much-people-or-many-people" text="Much People or Many?" onClick={onClose} />
               <SidebarLink to="/grammar-mistakes/less-people-or-fewer-people" text="Less People or Fewer?" onClick={onClose} />
@@ -249,6 +262,8 @@ const SidebarContent: React.FC<{ onClose: () => void }> = ({ onClose }) => {
               <SidebarLink to="/grammar-mistakes/so-much-vs-so-many" text="So Much vs So Many" onClick={onClose} />
               <SidebarLink to="/grammar-mistakes/a-few-vs-few" text="A Few vs Few" onClick={onClose} />
               <SidebarLink to="/grammar-mistakes/a-little-vs-little" text="A Little vs Little" onClick={onClose} />
+              <SidebarLink to="/grammar-mistakes/several-vs-some" text="Several vs Some" onClick={onClose} />
+              <SidebarLink to="/grammar-mistakes/plenty-of-vs-a-lot-of" text="Plenty of vs A Lot of" onClick={onClose} />
               <h4 className="px-6 py-2 pt-4 text-sm font-semibold text-slate-400 dark:text-slate-500">Redundancy Errors</h4>
               <SidebarLink to="/grammar-mistakes/return-back-or-return" text="Return Back or Return?" onClick={onClose} />
               <SidebarLink to="/grammar-mistakes/repeat-again-or-repeat" text="Repeat Again or Repeat?" onClick={onClose} />
@@ -325,6 +340,8 @@ const SidebarContent: React.FC<{ onClose: () => void }> = ({ onClose }) => {
               <SidebarLink to="/toefl/toefl-reading/toefl-reading-strategies" text="TOEFL Reading Strategies" onClick={onClose} />
               <SidebarLink to="/toefl/toefl-reading/toefl-reading-question-types" text="TOEFL Reading Question Types" onClick={onClose} />
               <SidebarLink to="/toefl/toefl-reading/toefl-reading-time-management" text="TOEFL Reading Time Management" onClick={onClose} />
+              <SidebarLink to="/toefl/toefl-reading/toefl-reading-practice-questions" text="TOEFL Reading Practice Questions" onClick={onClose} />
+              <SidebarLink to="/toefl/toefl-reading/toefl-daily-life-reading-task" text="TOEFL Daily Life Reading Task" onClick={onClose} />
               
               <h4 className="px-6 py-2 text-sm font-semibold text-slate-400 dark:text-slate-500">TOEFL Writing</h4>
               <SidebarLink to="/toefl/toefl-writing/toefl-writing-task-1-explained" text="TOEFL Writing Task 1 Explained" onClick={onClose} />
@@ -337,6 +354,11 @@ const SidebarContent: React.FC<{ onClose: () => void }> = ({ onClose }) => {
               <SidebarLink to="/toefl/toefl-reading-practice-pdf" text="TOEFL Reading Practice PDF" onClick={onClose} />
               <SidebarLink to="/toefl/toefl-vocabulary-pdf" text="TOEFL Vocabulary PDF (500 Words)" onClick={onClose} />
               <SidebarLink to="/toefl/toefl-writing-pdf" text="TOEFL Writing PDF (Task 1 & 2)" onClick={onClose} />
+
+              <h4 className="px-6 py-2 pt-4 text-sm font-semibold text-slate-400 dark:text-slate-500">TOEFL Strategy &amp; Success</h4>
+              <SidebarLink to="/toefl/strategy-success/old-toefl-vs-new-toefl" text="Old TOEFL vs New TOEFL 2026" onClick={onClose} />
+              <SidebarLink to="/toefl/strategy-success/toefl-complete-the-words" text="TOEFL Complete the Words (2026)" onClick={onClose} />
+              <SidebarLink to="/toefl/strategy-success/toefl-2026-scoring" text="TOEFL 2026 Scoring System" onClick={onClose} />
             </SidebarSection>
 
             <SidebarSection title="Reading Skills">
@@ -353,10 +375,12 @@ const SidebarContent: React.FC<{ onClose: () => void }> = ({ onClose }) => {
             <SidebarSection title="Tools & Reference">
                <h4 className="px-6 py-2 text-sm font-semibold text-slate-400 dark:text-slate-500">AI Writing Tools</h4>
                <SidebarLink to="/grammar-checker" text="Grammar Checker" onClick={onClose} />
+               <SidebarLink to="/writing-assistant" text="Writing Assistant" onClick={onClose} />
                <SidebarLink to="/paraphrasing-tool" text="Paraphrasing Tool" onClick={onClose} />
                <SidebarLink to="/free-paraphrasing-tool-without-login" text="Free Paraphrasing (No Login)" onClick={onClose} />
                <SidebarLink to="/essay-topic-generator" text="Essay Topic Generator" onClick={onClose} />
                <SidebarLink to="/ielts-band-score-calculator" text="IELTS Band Calculator" onClick={onClose} />
+               <SidebarLink to="/ai-writing-tools" text="All AI Writing Tools" onClick={onClose} />
                <h4 className="px-6 py-2 pt-4 text-sm font-semibold text-slate-400 dark:text-slate-500">Reference</h4>
                <SidebarLink to="/grammar-glossary" text="Grammar Glossary A-Z" onClick={onClose} />
                <SidebarLink to="/irregular-verbs" text="Irregular Verbs List" onClick={onClose} />
@@ -374,6 +398,7 @@ const SidebarContent: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 
             <div className="py-4 mt-2 border-t border-slate-200 dark:border-slate-700">
                 <SidebarLink to="/about" text="About" onClick={onClose} />
+                <SidebarLink to="/about/editorial-team" text="Editorial Team" onClick={onClose} />
                 <SidebarLink to="/faq" text="FAQ" onClick={onClose} />
                 <SidebarLink to="/contact" text="Contact" onClick={onClose} />
             </div>
@@ -392,20 +417,20 @@ const SidebarContent: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 const Sidebar: React.FC<SidebarProps> = ({ isMobileOpen, onClose }) => {
   return (
     <>
-      {/* Mobile overlay */}
+      {/* Mobile overlay — hidden on desktop */}
       <div
-        className={`fixed top-[69px] left-0 right-0 bottom-0 bg-black/40 z-20 md:hidden transition-opacity ${
+        className={`fixed top-[69px] left-0 right-0 bottom-0 bg-black/40 z-20 lg:hidden transition-opacity ${
           isMobileOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
         }`}
         onClick={onClose}
         aria-hidden="true"
       ></div>
-      
-      {/* Sidebar */}
+
+      {/* Drawer — mobile/tablet only */}
       <aside
-        className={`fixed md:sticky top-[69px] h-[calc(100vh-69px)] md:h-auto md:top-[69px] md:max-h-[calc(100vh-69px)] w-72 md:w-80 flex-shrink-0 bg-white border-r border-slate-200 z-30 transition-transform duration-300 ease-in-out ${
+        className={`fixed top-[69px] h-[calc(100vh-69px)] w-80 max-w-[85vw] flex-shrink-0 bg-white border-r border-slate-200 z-30 lg:hidden transition-transform duration-300 ease-in-out ${
           isMobileOpen ? 'translate-x-0' : '-translate-x-full'
-        } md:translate-x-0 dark:bg-slate-900 dark:border-slate-700`}
+        } dark:bg-slate-900 dark:border-slate-700`}
       >
         <SidebarContent onClose={onClose} />
       </aside>
