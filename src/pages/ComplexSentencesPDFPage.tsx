@@ -1,20 +1,20 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import GoogleAd from '../components/GoogleAd';
 
 const ComplexSentencesPDFPage: React.FC = () => {
   usePageMetadata({
-    title: '50 Complex Sentences for IELTS PDF (Band 7–9 Examples)',
+    title: '50 Complex Sentences for IELTS PDF (Band 7-9 Examples)',
     description: 'Download our free premium PDF with 50 complex sentences for IELTS. Includes Band 6 vs Band 9 comparison, explanations, and practice exercises.',
-    canonical: 'https://typogrammar.com/ielts/50-complex-sentences-for-ielts-pdf',
-    ogTitle: '50 Complex Sentences for IELTS PDF (Band 7–9 Examples)',
+    canonical: 'https://typogrammar.com/ielts/50-complex-sentences-for-ielts-pdf/',
+    ogTitle: '50 Complex Sentences for IELTS PDF (Band 7-9 Examples)',
     ogDescription: 'Download our free premium PDF with 50 complex sentences for IELTS. Includes Band 6 vs Band 9 comparison, explanations, and practice exercises.',
     ogUrl: 'https://typogrammar.com/ielts/50-complex-sentences-for-ielts-pdf',
     ogImage: 'https://typogrammar.com/images/books/50-Complex-Sentences-for-IELTS.jpg',
     ogType: 'book',
     twitterCard: 'summary_large_image',
-    twitterTitle: '50 Complex Sentences for IELTS PDF (Band 7–9 Examples)',
+    twitterTitle: '50 Complex Sentences for IELTS PDF (Band 7-9 Examples)',
     twitterDescription: 'Download our free premium PDF with 50 complex sentences for IELTS. Includes Band 6 vs Band 9 comparison, explanations, and practice exercises.',
     twitterImage: 'https://typogrammar.com/images/books/50-Complex-Sentences-for-IELTS.jpg',
   });
@@ -24,7 +24,7 @@ const ComplexSentencesPDFPage: React.FC = () => {
       '@context': 'https://schema.org',
       '@type': 'CreativeWork',
       name: '50 Complex Sentences for IELTS PDF',
-      description: 'Free premium PDF with 50 advanced complex sentences for IELTS Writing Band 7–9.',
+      description: 'Free premium PDF with 50 advanced complex sentences for IELTS Writing Band 7-9.',
       author: {
         '@type': 'Organization',
         name: 'TypoGrammar',
@@ -136,7 +136,7 @@ const ComplexSentencesPDFPage: React.FC = () => {
               50 Complex Sentences for <span className="text-blue-600 dark:text-blue-400">IELTS</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">
-              Band 7–9 Examples with Explanations
+              Band 7-9 Examples with Explanations
             </p>
             <p className="text-base text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
               If you want to achieve Band 7, 8, or 9 in IELTS Writing, mastering complex sentences is essential. This free premium PDF includes 50 high-quality complex sentence models with Band comparisons and practice exercises.
@@ -171,13 +171,13 @@ const ComplexSentencesPDFPage: React.FC = () => {
               </button>
             </div>
             <p className="text-sm text-slate-500 dark:text-slate-400 italic">
-              Free download — no signup required.
+              Free download, no signup required.
             </p>
           </div>
           <div className="flex justify-center">
             <img
               src="/images/books/50-Complex-Sentences-for-IELTS.jpg"
-              alt="50 Complex Sentences for IELTS PDF Cover - Band 7–9 Examples by TypoGrammar"
+              alt="50 Complex Sentences for IELTS PDF Cover - Band 7-9 Examples by TypoGrammar"
               className="rounded-xl shadow-2xl max-w-full h-auto"
               loading="eager"
               decoding="async"
@@ -217,7 +217,7 @@ const ComplexSentencesPDFPage: React.FC = () => {
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-3">Frequent and mostly error-free complex structures</td>
                 </tr>
                 <tr className="bg-white dark:bg-slate-800">
-                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 font-semibold">Band 8–9</td>
+                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 font-semibold">Band 8-9</td>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-3">Wide variety of natural and advanced structures</td>
                 </tr>
               </tbody>
@@ -297,8 +297,8 @@ const ComplexSentencesPDFPage: React.FC = () => {
           </div>
 
           {/* Practice Section */}
-          <div className="bg-amber-50 dark:bg-amber-900/20 rounded-xl p-6 border border-amber-200 dark:border-amber-700">
-            <h3 className="font-semibold text-xl text-amber-900 dark:text-amber-200 mb-4">
+          <div className="bg-teal-50 dark:bg-teal-900/20 rounded-xl p-6 border border-teal-200 dark:border-teal-700">
+            <h3 className="font-semibold text-xl text-teal-900 dark:text-teal-200 mb-4">
               ✅ Practice Section
             </h3>
             <p className="text-slate-700 dark:text-slate-300">
@@ -383,7 +383,7 @@ const ComplexSentencesPDFPage: React.FC = () => {
             { step: '1', title: 'Study 5 sentences per day', desc: 'Focus on understanding the structure and usage' },
             { step: '2', title: 'Rewrite using different topics', desc: 'Practice adapting sentences to various IELTS themes' },
             { step: '3', title: 'Insert naturally into Task 2 essays', desc: 'Use them in your practice writing' },
-            { step: '4', title: 'Focus on structure, not memorizing', desc: 'Avoid memorizing — understand the patterns' },
+            { step: '4', title: 'Focus on structure, not memorizing', desc: 'Avoid memorizing, understand the patterns' },
           ].map((item, i) => (
             <div key={i} className="flex items-start p-6 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700">
               <div className="flex-shrink-0 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center mr-4 text-xl font-bold">
@@ -426,21 +426,21 @@ const ComplexSentencesPDFPage: React.FC = () => {
         </h2>
         <div className="grid md:grid-cols-3 gap-6">
           <Link
-            to="/ielts/grammar-master-book"
+            to="/ielts/grammar-master-book/"
             className="block p-6 bg-blue-50 dark:bg-blue-900/20 rounded-xl hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors border border-blue-200 dark:border-blue-800"
           >
             <h3 className="font-semibold text-lg text-blue-900 dark:text-blue-200 mb-2">Grammar Master Book (PDF)</h3>
             <p className="text-sm text-blue-700 dark:text-blue-300">Complete IELTS grammar guide with Band 9 secrets.</p>
           </Link>
           <Link
-            to="/ielts/writing-task-2-band-9-essays-book"
+            to="/ielts/writing-task-2-band-9-essays-book/"
             className="block p-6 bg-purple-50 dark:bg-purple-900/20 rounded-xl hover:bg-purple-100 dark:hover:bg-purple-900/30 transition-colors border border-purple-200 dark:border-purple-800"
           >
             <h3 className="font-semibold text-lg text-purple-900 dark:text-purple-200 mb-2">Band 9 Essays Book (PDF)</h3>
             <p className="text-sm text-purple-700 dark:text-purple-300">Collection of Band 9 model essays for Task 2.</p>
           </Link>
           <Link
-            to="/ielts/vocabulary/band-9"
+            to="/ielts/vocabulary/band-9/"
             className="block p-6 bg-green-50 dark:bg-green-900/20 rounded-xl hover:bg-green-100 dark:hover:bg-green-900/30 transition-colors border border-green-200 dark:border-green-800"
           >
             <h3 className="font-semibold text-lg text-green-900 dark:text-green-200 mb-2">Band 9 Vocabulary</h3>

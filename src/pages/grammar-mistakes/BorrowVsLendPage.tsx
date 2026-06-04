@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../../hooks/usePageMetadata';
 import SchemaMarkup from '../../components/SchemaMarkup';
@@ -7,7 +7,7 @@ const BorrowVsLendPage: React.FC = () => {
   usePageMetadata({
     title: 'Borrow vs Lend: What\'s the Difference? | TypoGrammar',
     description: 'Learn the difference between "borrow" and "lend." Borrow = take temporarily. Lend = give temporarily. The direction of the object is key.',
-    canonical: 'https://typogrammar.com/grammar-mistakes/borrow-vs-lend'
+    canonical: 'https://typogrammar.com/grammar-mistakes/borrow-vs-lend/'
   });
 
   const [showAnswer, setShowAnswer] = useState(false);
@@ -49,7 +49,7 @@ const BorrowVsLendPage: React.FC = () => {
       <nav className="mb-6 text-slate-600 dark:text-slate-400">
         <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
         {' › '}
-        <Link to="/grammar-mistakes" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
+        <Link to="/grammar-mistakes/" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
         {' › '}
         <span className="text-slate-900 dark:text-slate-100">Borrow vs Lend</span>
       </nav>
@@ -107,8 +107,8 @@ const BorrowVsLendPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-4 rounded-lg">
-            <p className="text-lg text-amber-800 dark:text-amber-200">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-4 rounded-lg">
+            <p className="text-lg text-teal-800 dark:text-teal-200">
               <strong>Memory tip:</strong> <strong>B</strong>orrow = <strong>B</strong>ring to me. <strong>L</strong>end = <strong>L</strong>eave with you.
             </p>
           </div>
@@ -209,7 +209,7 @@ const BorrowVsLendPage: React.FC = () => {
           <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
             Practice
           </h2>
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-6 rounded-lg">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-6 rounded-lg">
             <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
               <strong>Fill in with "borrow" or "lend":</strong>
             </p>
@@ -242,22 +242,22 @@ const BorrowVsLendPage: React.FC = () => {
           </h2>
           <ul className="space-y-2 text-lg">
             <li>
-              <Link to="/grammar-mistakes/bring-vs-take" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/bring-vs-take/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Bring vs. Take
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/say-vs-tell" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/say-vs-tell/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Say vs. Tell
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/remember-vs-remind" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/remember-vs-remind/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Remember vs. Remind
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → All Grammar Mistakes
               </Link>
             </li>

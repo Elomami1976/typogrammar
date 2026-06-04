@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../../hooks/usePageMetadata';
 import SchemaMarkup from '../../components/SchemaMarkup';
@@ -7,7 +7,7 @@ const LookVsSeeVsWatchPage: React.FC = () => {
   usePageMetadata({
     title: 'Look vs See vs Watch: What\'s the Difference? | TypoGrammar',
     description: 'Learn the difference between look, see, and watch. See = perceive with eyes. Look = direct your eyes. Watch = look at something moving or changing.',
-    canonical: 'https://typogrammar.com/grammar-mistakes/look-vs-see-vs-watch'
+    canonical: 'https://typogrammar.com/grammar-mistakes/look-vs-see-vs-watch/'
   });
 
   const [showAnswer, setShowAnswer] = useState(false);
@@ -49,7 +49,7 @@ const LookVsSeeVsWatchPage: React.FC = () => {
       <nav className="mb-6 text-slate-600 dark:text-slate-400">
         <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
         {' › '}
-        <Link to="/grammar-mistakes" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
+        <Link to="/grammar-mistakes/" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
         {' › '}
         <span className="text-slate-900 dark:text-slate-100">Look vs See vs Watch</span>
       </nav>
@@ -121,8 +121,8 @@ const LookVsSeeVsWatchPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-4 rounded-lg">
-            <p className="text-lg text-amber-800 dark:text-amber-200">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-4 rounded-lg">
+            <p className="text-lg text-teal-800 dark:text-teal-200">
               <strong>Note:</strong> "Look" uses prepositions (look <u>at</u>, look <u>for</u>). "See" and "watch" usually don't need prepositions before the object.
             </p>
           </div>
@@ -189,7 +189,7 @@ const LookVsSeeVsWatchPage: React.FC = () => {
           <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
             Practice
           </h2>
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-6 rounded-lg">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-6 rounded-lg">
             <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
               <strong>Choose look, see, or watch:</strong>
             </p>
@@ -222,22 +222,22 @@ const LookVsSeeVsWatchPage: React.FC = () => {
           </h2>
           <ul className="space-y-2 text-lg">
             <li>
-              <Link to="/grammar-mistakes/listen-vs-hear" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/listen-vs-hear/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Listen vs. Hear
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/say-vs-tell" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/say-vs-tell/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Say vs. Tell
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/speak-vs-talk" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/speak-vs-talk/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Speak vs. Talk
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → All Grammar Mistakes
               </Link>
             </li>

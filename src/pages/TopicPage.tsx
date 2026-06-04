@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import GoogleAd from '../components/GoogleAd';
 import { useParams, Link } from 'react-router-dom';
 import { GRAMMAR_TOPICS } from '../constants/grammarTopics';
@@ -9,6 +9,8 @@ import { useProgress } from '../contexts/ProgressContext';
 import usePageMetadata from '../hooks/usePageMetadata';
 import SchemaMarkup from '../components/SchemaMarkup';
 import PrintButton from '../components/PrintButton';
+import RelatedContent from '../components/RelatedContent';
+import StickyNextCTA from '../components/StickyNextCTA';
 
 const TopicPage: React.FC = () => {
   const { topicId } = useParams<{ topicId: string }>();
@@ -108,7 +110,8 @@ const TopicPage: React.FC = () => {
 
   usePageMetadata({
     title: seo ? seo.title : (topic ? `${topic.title} | TypoGrammar` : 'Grammar Topic | TypoGrammar'),
-    description: seo ? seo.description : (topic ? `Learn all about ${topic.title.toLowerCase()}. This guide covers formation, usage, and examples to help you master this English grammar topic.` : 'Explore English grammar topics on TypoGrammar.')
+    description: seo ? seo.description : (topic ? `Learn all about ${topic.title.toLowerCase()}. This guide covers formation, usage, and examples to help you master this English grammar topic.` : 'Explore English grammar topics on TypoGrammar.'),
+    robots: !topic ? 'noindex, follow' : undefined
   });
 
   if (!topic) {
@@ -278,6 +281,69 @@ const TopicPage: React.FC = () => {
         )}
       </div>
     </article>
+    {/* Continue Learning rail with cross-category recommendations */}
+    <div className="max-w-4xl mx-auto">
+      <RelatedContent
+        title="Keep the Momentum Going"
+        description="Mix up your study with these complementary tools, articles, and practice resources."
+        items={[
+          ...(quizForTopic
+            ? [{
+                to: `/topics/${topic.id}#test-your-knowledge`,
+                title: `Quiz: ${topic.title}`,
+                subtitle: 'Test what you just learned with instant feedback.',
+                badge: 'Quiz',
+                meta: `${quizForTopic.questions.length} questions`,
+              }]
+            : []),
+          {
+            to: '/quizzes/verb-tenses-quiz/',
+            title: 'Free 50-Question Verb Tenses Quiz',
+            subtitle: 'Cover all 12 tenses with instant scoring and explanations.',
+            badge: 'Quiz',
+            meta: '50 questions',
+          },
+          {
+            to: '/grammar-checker/',
+            title: 'Free Grammar Checker',
+            subtitle: 'Paste your writing and catch mistakes instantly.',
+            badge: 'Tool',
+            meta: 'No signup',
+          },
+          {
+            to: '/ielts/english-grammar-pdf/',
+            title: 'Complete English Grammar PDF',
+            subtitle: 'Download the workbook with exercises (free).',
+            badge: 'PDF',
+            meta: 'Free',
+          },
+          {
+            to: '/blog/common-grammar-mistakes-in-english/',
+            title: '50 Common Grammar Mistakes',
+            subtitle: 'See the errors most learners make — and how to fix them.',
+            badge: 'Article',
+            meta: '12 min read',
+          },
+          ...(nextTopic
+            ? [{
+                to: `/topics/${nextTopic.id}`,
+                title: nextTopic.title,
+                subtitle: `Next lesson in ${nextTopic.category}.`,
+                badge: 'Lesson',
+                meta: 'Up next',
+              }]
+            : []),
+        ]}
+      />
+    </div>
+    {nextTopic && (
+      <StickyNextCTA
+        to={`/topics/${nextTopic.id}`}
+        label={nextTopic.title}
+        subtitle="Up next"
+        threshold={55}
+      />
+    )}
         <div className="mt-8">
           <GoogleAd adSlot="6406598038" />
         </div>

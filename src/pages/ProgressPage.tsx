@@ -4,7 +4,7 @@ import GoogleAd from '../components/GoogleAd';
 import { Link } from 'react-router-dom';
 import { useProgress } from '../contexts/ProgressContext';
 import usePageMetadata from '../hooks/usePageMetadata';
-import { GRAMMAR_TOPICS } from '../constants/grammarTopics';
+import { GRAMMAR_TOPICS_META as GRAMMAR_TOPICS } from '../constants/grammarTopicsMeta';
 import { ArticleHeading, ArticleParagraph } from '../components/ArticleComponents';
 
 interface Badge {
@@ -18,8 +18,9 @@ interface Badge {
 
 const ProgressPage: React.FC = () => {
   usePageMetadata({
-    title: 'My Learning Progress – Track Your Grammar Journey | TypoGrammar',
-    description: 'Track your English grammar learning progress with TypoGrammar. View completed topics, quiz scores, achievement badges, and learning streaks. Monitor your journey to grammar mastery.'
+    title: 'My Learning Progress - Track Your Grammar Journey | TypoGrammar',
+    description: 'Track your English grammar learning progress with TypoGrammar. View completed topics, quiz scores, achievement badges, and learning streaks. Monitor your journey to grammar mastery.',
+    robots: 'noindex, follow'
   });
 
   const { progress } = useProgress();
@@ -201,7 +202,7 @@ const ProgressPage: React.FC = () => {
 
       {/* Streak Counter */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="p-6 bg-gradient-to-br from-orange-50 to-red-50 rounded-xl border-2 border-orange-200 dark:from-orange-900/20 dark:to-red-900/20 dark:border-orange-700">
+        <div className="p-6 bg-gradient-to-br from-teal-50 to-red-50 rounded-xl border-2 border-teal-200 dark:from-teal-900/20 dark:to-red-900/20 dark:border-teal-700">
           <div className="flex items-center justify-between">
             <div>
               <h3 className="font-heading text-lg font-bold text-slate-700 dark:text-slate-300 mb-1">Current Streak</h3>
@@ -210,7 +211,7 @@ const ProgressPage: React.FC = () => {
             <div className="text-5xl">🔥</div>
           </div>
           <div className="mt-4">
-            <div className="text-4xl font-extrabold text-orange-600 dark:text-orange-400">{streak.current} {streak.current === 1 ? 'day' : 'days'}</div>
+            <div className="text-4xl font-extrabold text-teal-600 dark:text-teal-400">{streak.current} {streak.current === 1 ? 'day' : 'days'}</div>
           </div>
         </div>
         

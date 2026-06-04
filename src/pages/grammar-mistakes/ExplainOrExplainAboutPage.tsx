@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../../hooks/usePageMetadata';
 import SchemaMarkup from '../../components/SchemaMarkup';
@@ -7,7 +7,7 @@ const ExplainOrExplainAboutPage: React.FC = () => {
   usePageMetadata({
     title: 'Explain or Explain About: Which Is Correct? | TypoGrammar',
     description: 'Is it "explain something" or "explain about something"? Learn the correct usage. "Explain about" is usually unnecessary - just use "explain."',
-    canonical: 'https://typogrammar.com/grammar-mistakes/explain-or-explain-about'
+    canonical: 'https://typogrammar.com/grammar-mistakes/explain-or-explain-about/'
   });
 
   const [showAnswer, setShowAnswer] = useState(false);
@@ -49,7 +49,7 @@ const ExplainOrExplainAboutPage: React.FC = () => {
       <nav className="mb-6 text-slate-600 dark:text-slate-400">
         <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
         {' › '}
-        <Link to="/grammar-mistakes" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
+        <Link to="/grammar-mistakes/" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
         {' › '}
         <span className="text-slate-900 dark:text-slate-100">Explain or Explain About</span>
       </nav>
@@ -88,8 +88,8 @@ const ExplainOrExplainAboutPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-4 rounded-lg mb-4">
-            <p className="text-lg text-amber-800 dark:text-amber-200">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-4 rounded-lg mb-4">
+            <p className="text-lg text-teal-800 dark:text-teal-200">
               <strong>When "explain about" is acceptable:</strong> When introducing a general topic without a specific object: "Let me explain about our services."
             </p>
           </div>
@@ -124,7 +124,7 @@ const ExplainOrExplainAboutPage: React.FC = () => {
               <span className="text-lg text-slate-700 dark:text-slate-300">Let me <strong>explain about</strong> our company. (general topic - OK)</span>
             </div>
             <div className="flex items-start">
-              <span className="text-amber-600 dark:text-amber-400 mr-3 text-xl">△</span>
+              <span className="text-teal-600 dark:text-teal-400 mr-3 text-xl">△</span>
               <span className="text-lg text-slate-700 dark:text-slate-300">Can you explain <strong>about</strong> this word? (unnecessary "about")</span>
             </div>
             <div className="flex items-start">
@@ -178,7 +178,7 @@ const ExplainOrExplainAboutPage: React.FC = () => {
           <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
             Practice
           </h2>
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-6 rounded-lg">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-6 rounded-lg">
             <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
               <strong>Choose the correct sentence:</strong>
             </p>
@@ -210,22 +210,22 @@ const ExplainOrExplainAboutPage: React.FC = () => {
           </h2>
           <ul className="space-y-2 text-lg">
             <li>
-              <Link to="/grammar-mistakes/discuss-or-discuss-about" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/discuss-or-discuss-about/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Discuss or Discuss About?
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/request-or-request-for" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/request-or-request-for/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Request or Request For?
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/say-vs-tell" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/say-vs-tell/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Say vs. Tell
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → All Grammar Mistakes
               </Link>
             </li>

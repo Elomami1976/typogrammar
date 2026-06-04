@@ -9,11 +9,11 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks(id) {
-          // Core React vendor — loaded first, cached forever
+          // Core React vendor, loaded first, cached forever
           if (id.includes('node_modules/react') || id.includes('node_modules/react-dom') || id.includes('node_modules/react-router-dom') || id.includes('node_modules/scheduler')) {
             return 'react-vendor';
           }
-          // Large content constants — only loaded when user navigates to those sections
+          // Large content constants, only loaded when user navigates to those sections
           if (id.includes('src/constants/grammarTopics')) return 'content-grammar';
           if (id.includes('src/constants/quizData') || id.includes('src/constants/additionalQuizQuestions')) return 'content-quiz';
           if (id.includes('src/constants/blogPosts')) return 'content-blog';

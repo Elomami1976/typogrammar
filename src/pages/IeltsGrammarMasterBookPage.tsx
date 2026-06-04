@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import GoogleAd from '../components/GoogleAd';
@@ -7,7 +7,7 @@ const IeltsGrammarMasterBookPage: React.FC = () => {
   usePageMetadata({
     title: 'IELTS Band 9 Grammar Secrets PDF (Free Grammar Master Book)',
     description: 'Download the free IELTS Grammar Master Book PDF. Discover IELTS Band 9 grammar secrets with rules, examples, and exercises to boost your writing score.',
-    canonical: 'https://typogrammar.com/ielts/grammar-master-book',
+    canonical: 'https://typogrammar.com/ielts/grammar-master-book/',
     ogTitle: 'IELTS Band 9 Grammar Secrets PDF (Free Grammar Master Book)',
     ogDescription: 'Download the free IELTS Grammar Master Book PDF. Discover IELTS Band 9 grammar secrets with rules, examples, and exercises to boost your writing score.',
     ogUrl: 'https://typogrammar.com/ielts/grammar-master-book',
@@ -242,7 +242,7 @@ const IeltsGrammarMasterBookPage: React.FC = () => {
               </button>
             </div>
             <p className="text-sm text-slate-500 dark:text-slate-400 italic">
-              Free download — no signup required.
+              Free download, no signup required.
             </p>
           </div>
           <div className="flex justify-center">
@@ -268,7 +268,7 @@ const IeltsGrammarMasterBookPage: React.FC = () => {
             Why Grammar Is the Key to IELTS Band 9
           </h2>
           <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
-            Achieving <strong>IELTS Band 9</strong> in Writing requires more than correct spelling. Examiners assess your <strong>grammatical range and accuracy</strong>—your ability to use varied sentence structures with precision and control.
+            Achieving <strong>IELTS Band 9</strong> in Writing requires more than correct spelling. Examiners assess your <strong>grammatical range and accuracy</strong>-your ability to use varied sentence structures with precision and control.
           </p>
           <p className="text-lg text-slate-700 dark:text-slate-300">
             This free <strong>IELTS Grammar Master Book</strong> reveals the <strong>IELTS Band 9 grammar secrets</strong> that top scorers use: complex conditionals, sophisticated relative clauses, accurate passive constructions, and seamless tense shifts. Master these structures, and you'll write with the grammatical confidence examiners reward with Band 9.
@@ -367,8 +367,8 @@ const IeltsGrammarMasterBookPage: React.FC = () => {
           </div>
 
           {/* Band 9 Examples */}
-          <div className="bg-amber-50 dark:bg-amber-900/20 rounded-xl p-6 border border-amber-200 dark:border-amber-700">
-            <h3 className="font-semibold text-xl text-amber-900 dark:text-amber-200 mb-4">
+          <div className="bg-teal-50 dark:bg-teal-900/20 rounded-xl p-6 border border-teal-200 dark:border-teal-700">
+            <h3 className="font-semibold text-xl text-teal-900 dark:text-teal-200 mb-4">
               ✅ Band 9 Grammar Examples
             </h3>
             <p className="text-slate-700 dark:text-slate-300 mb-3">Real examples showing:</p>
@@ -380,7 +380,7 @@ const IeltsGrammarMasterBookPage: React.FC = () => {
                 'Natural academic phrasing patterns',
               ].map((item, i) => (
                 <li key={i} className="flex items-center text-slate-700 dark:text-slate-300">
-                  <span className="text-amber-600 dark:text-amber-400 mr-2">•</span>
+                  <span className="text-teal-600 dark:text-teal-400 mr-2">•</span>
                   {item}
                 </li>
               ))}
@@ -400,7 +400,7 @@ const IeltsGrammarMasterBookPage: React.FC = () => {
             🔓 IELTS Band 9 Grammar Secrets Revealed
           </h2>
           <p className="text-lg text-slate-700 dark:text-slate-300 mb-6">
-            Top scorers don't just know grammar rules—they apply them strategically:
+            Top scorers don't just know grammar rules-they apply them strategically:
           </p>
           <div className="grid md:grid-cols-2 gap-4">
             {[
@@ -508,7 +508,7 @@ const IeltsGrammarMasterBookPage: React.FC = () => {
             📥 Download the Book
           </h2>
           <p className="text-lg text-blue-100 mb-8">
-            Get the official TypoGrammar IELTS Grammar Master Book — unlock Band 9 grammar secrets today.
+            Get the official TypoGrammar IELTS Grammar Master Book, unlock Band 9 grammar secrets today.
           </p>
           <a
             href="/downloads/IELTS_Grammar_Master_Book.pdf"
@@ -531,7 +531,7 @@ const IeltsGrammarMasterBookPage: React.FC = () => {
             </svg>
             Download IELTS Grammar Master Book (PDF)
           </a>
-          <p className="text-sm text-blue-200 mt-4">PDF, Instant Download — No signup required</p>
+          <p className="text-sm text-blue-200 mt-4">PDF, Instant Download, No signup required</p>
         </div>
       </section>
 
@@ -547,13 +547,13 @@ const IeltsGrammarMasterBookPage: React.FC = () => {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
-              to="/ielts/50-band-9-ielts-writing-task-2-sample-essays"
+              to="/ielts/50-band-9-ielts-writing-task-2-sample-essays/"
               className="inline-block px-6 py-3 bg-white text-green-600 font-semibold rounded-lg hover:bg-green-50 transition-colors"
             >
               50 Band 9 Sample Essays
             </Link>
             <Link
-              to="/ielts/writing-task-2-band-9-essays-book"
+              to="/ielts/writing-task-2-band-9-essays-book/"
               className="inline-block px-6 py-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-400 transition-colors border border-green-400"
             >
               Band 9 Essays Book
@@ -568,17 +568,17 @@ const IeltsGrammarMasterBookPage: React.FC = () => {
           Explore More IELTS Resources
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <Link to="/ielts/50-band-9-ielts-writing-task-2-sample-essays" className="block p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800 hover:border-blue-400 dark:hover:border-blue-600 transition-colors">
+          <Link to="/ielts/50-band-9-ielts-writing-task-2-sample-essays/" className="block p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800 hover:border-blue-400 dark:hover:border-blue-600 transition-colors">
             <h4 className="font-semibold text-blue-900 dark:text-blue-200 mb-1">50 Band 9 Sample Essays</h4>
             <p className="text-sm text-blue-700 dark:text-blue-400">Study real Band 9 essays with detailed analysis.</p>
           </Link>
-          <Link to="/grammar-guide" className="block p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800 hover:border-green-400 dark:hover:border-green-600 transition-colors">
+          <Link to="/grammar-guide/" className="block p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800 hover:border-green-400 dark:hover:border-green-600 transition-colors">
             <h4 className="font-semibold text-green-900 dark:text-green-200 mb-1">Complete Grammar Guide</h4>
             <p className="text-sm text-green-700 dark:text-green-400">Master all English grammar topics.</p>
           </Link>
-          <Link to="/ielts/academic-vocabulary-book" className="block p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800 hover:border-purple-400 dark:hover:border-purple-600 transition-colors">
+          <Link to="/ielts/academic-vocabulary-book/" className="block p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800 hover:border-purple-400 dark:hover:border-purple-600 transition-colors">
             <h4 className="font-semibold text-purple-900 dark:text-purple-200 mb-1">IELTS Vocabulary Book</h4>
-            <p className="text-sm text-purple-700 dark:text-purple-400">200 academic words (Band 6–9) with examples.</p>
+            <p className="text-sm text-purple-700 dark:text-purple-400">200 academic words (Band 6-9) with examples.</p>
           </Link>
         </div>
       </section>

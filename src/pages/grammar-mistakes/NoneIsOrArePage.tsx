@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../../hooks/usePageMetadata';
 import SchemaMarkup from '../../components/SchemaMarkup';
@@ -7,7 +7,7 @@ const NoneIsOrArePage: React.FC = () => {
   usePageMetadata({
     title: 'None Is or None Are? Which One Is Correct | TypoGrammar',
     description: 'Learn whether to say "none is" or "none are." Both can be correct! None takes singular or plural verbs depending on context and intended meaning.',
-    canonical: 'https://typogrammar.com/grammar-mistakes/none-is-or-are'
+    canonical: 'https://typogrammar.com/grammar-mistakes/none-is-or-are/'
   });
 
   const [showAnswer, setShowAnswer] = useState(false);
@@ -49,7 +49,7 @@ const NoneIsOrArePage: React.FC = () => {
       <nav className="mb-6 text-slate-600 dark:text-slate-400">
         <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
         {' › '}
-        <Link to="/grammar-mistakes" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
+        <Link to="/grammar-mistakes/" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
         {' › '}
         <span className="text-slate-900 dark:text-slate-100">None Is or Are</span>
       </nav>
@@ -98,8 +98,8 @@ const NoneIsOrArePage: React.FC = () => {
             </div>
           </div>
 
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-4 rounded-lg">
-            <p className="text-lg text-amber-800 dark:text-amber-200">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-4 rounded-lg">
+            <p className="text-lg text-teal-800 dark:text-teal-200">
               <strong>Tip:</strong> When in doubt, look at what "none" refers to. If it's a plural noun, "none are" is usually more natural.
             </p>
           </div>
@@ -149,7 +149,7 @@ const NoneIsOrArePage: React.FC = () => {
             When Both Are Acceptable
           </h2>
           <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
-            In many cases, both forms are correct—it depends on what you want to emphasize:
+            In many cases, both forms are correct-it depends on what you want to emphasize:
           </p>
           <div className="space-y-4">
             <div className="bg-slate-100 dark:bg-slate-700 p-4 rounded-lg">
@@ -172,7 +172,7 @@ const NoneIsOrArePage: React.FC = () => {
           <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
             Practice
           </h2>
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-6 rounded-lg">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-6 rounded-lg">
             <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
               <strong>Which is better?</strong>
             </p>
@@ -205,22 +205,22 @@ const NoneIsOrArePage: React.FC = () => {
           </h2>
           <ul className="space-y-2 text-lg">
             <li>
-              <Link to="/grammar-mistakes/a-number-of-vs-the-number-of" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/a-number-of-vs-the-number-of/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → A Number Of vs The Number Of
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/everyone-is-or-everyone-are" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/everyone-is-or-everyone-are/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Everyone Is or Everyone Are?
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/each-are-or-each-is" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/each-are-or-each-is/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Each Are or Each Is?
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → All Grammar Mistakes
               </Link>
             </li>

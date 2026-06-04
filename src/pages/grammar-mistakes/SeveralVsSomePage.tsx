@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../../hooks/usePageMetadata';
 import SchemaMarkup from '../../components/SchemaMarkup';
@@ -7,7 +7,7 @@ const SeveralVsSomePage: React.FC = () => {
   usePageMetadata({
     title: 'Several vs Some: What Is the Difference? | TypoGrammar',
     description: 'Learn the difference between "several" and "some." Several means more than two but not a huge number. Some is vaguer and used for unknown or unspecified quantities.',
-    canonical: 'https://typogrammar.com/grammar-mistakes/several-vs-some'
+    canonical: 'https://typogrammar.com/grammar-mistakes/several-vs-some/'
   });
 
   const [showAnswer, setShowAnswer] = useState(false);
@@ -16,7 +16,7 @@ const SeveralVsSomePage: React.FC = () => {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "Several vs Some: What Is the Difference?",
-    "description": "'Several' means more than two but not many (usually 3–7). 'Some' is vaguer — it refers to an unspecified amount and can be used with both countable and uncountable nouns.",
+    "description": "'Several' means more than two but not many (usually 3-7). 'Some' is vaguer, it refers to an unspecified amount and can be used with both countable and uncountable nouns.",
     "author": { "@type": "Organization", "name": "TypoGrammar" },
     "publisher": { "@type": "Organization", "name": "TypoGrammar", "logo": { "@type": "ImageObject", "url": "https://typogrammar.com/logo.png" } },
     "mainEntityOfPage": { "@type": "WebPage", "@id": "https://typogrammar.com/grammar-mistakes/several-vs-some" },
@@ -31,7 +31,7 @@ const SeveralVsSomePage: React.FC = () => {
       {
         "@type": "Question",
         "name": "What is the difference between several and some?",
-        "acceptedAnswer": { "@type": "Answer", "text": "'Several' means more than two but not a huge number (roughly 3–7). 'Some' is vaguer — it means a certain amount without specifying how many, and works with both countable and uncountable nouns." }
+        "acceptedAnswer": { "@type": "Answer", "text": "'Several' means more than two but not a huge number (roughly 3-7). 'Some' is vaguer, it means a certain amount without specifying how many, and works with both countable and uncountable nouns." }
       },
       {
         "@type": "Question",
@@ -41,7 +41,7 @@ const SeveralVsSomePage: React.FC = () => {
       {
         "@type": "Question",
         "name": "Is 'several' more than 'some'?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Generally yes. 'Several' implies a more definite, slightly larger amount (3–7), while 'some' is vaguer and can suggest just a small amount. However, the exact quantity depends on context." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Generally yes. 'Several' implies a more definite, slightly larger amount (3-7), while 'some' is vaguer and can suggest just a small amount. However, the exact quantity depends on context." }
       }
     ]
   };
@@ -54,7 +54,7 @@ const SeveralVsSomePage: React.FC = () => {
       <nav className="mb-6 text-slate-600 dark:text-slate-400">
         <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
         {' › '}
-        <Link to="/grammar-mistakes" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
+        <Link to="/grammar-mistakes/" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
         {' › '}
         <span className="text-slate-900 dark:text-slate-100">Several vs Some</span>
       </nav>
@@ -68,7 +68,7 @@ const SeveralVsSomePage: React.FC = () => {
         <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded-r-lg mb-8 dark:bg-green-900/30 dark:border-green-400">
           <h2 className="text-xl font-bold text-green-900 dark:text-green-100 mb-2">Quick Answer</h2>
           <div className="text-lg text-green-800 dark:text-green-200 space-y-2">
-            <p><strong>"Several"</strong> = more than two but not many (roughly 3–7); countable nouns only.</p>
+            <p><strong>"Several"</strong> = more than two but not many (roughly 3-7); countable nouns only.</p>
             <p><strong>"Some"</strong> = a vague, unspecified amount; works with both countable and uncountable nouns.</p>
           </div>
         </div>
@@ -82,7 +82,7 @@ const SeveralVsSomePage: React.FC = () => {
             <div className="bg-blue-50 dark:bg-blue-900/20 p-5 rounded-lg">
               <h3 className="font-bold text-blue-900 dark:text-blue-100 text-lg mb-3">SEVERAL</h3>
               <ul className="text-blue-800 dark:text-blue-200 space-y-1 text-sm">
-                <li>• Means more than two, but not a lot (3–7)</li>
+                <li>• Means more than two, but not a lot (3-7)</li>
                 <li>• More definite than "some"</li>
                 <li>• Only with countable plural nouns</li>
                 <li>• Implies the speaker has a rough number in mind</li>
@@ -98,9 +98,9 @@ const SeveralVsSomePage: React.FC = () => {
               </ul>
             </div>
           </div>
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-4 rounded-lg">
-            <p className="text-lg text-amber-800 dark:text-amber-200">
-              <strong>Key difference:</strong> "Several" is more specific and always countable. "Some" is flexible — it works with water, advice, money, as well as books and people.
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-4 rounded-lg">
+            <p className="text-lg text-teal-800 dark:text-teal-200">
+              <strong>Key difference:</strong> "Several" is more specific and always countable. "Some" is flexible, it works with water, advice, money, as well as books and people.
             </p>
           </div>
         </section>
@@ -110,7 +110,7 @@ const SeveralVsSomePage: React.FC = () => {
           <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
             Examples
           </h2>
-          <h3 className="text-xl font-semibold text-slate-800 dark:text-slate-200 mb-3">"Several" (countable, roughly 3–7)</h3>
+          <h3 className="text-xl font-semibold text-slate-800 dark:text-slate-200 mb-3">"Several" (countable, roughly 3-7)</h3>
           <div className="space-y-3 mb-6">
             <div className="flex items-start">
               <span className="text-green-600 dark:text-green-400 mr-3 text-xl">✔</span>
@@ -126,7 +126,7 @@ const SeveralVsSomePage: React.FC = () => {
             </div>
             <div className="flex items-start">
               <span className="text-red-600 dark:text-red-400 mr-3 text-xl">✘</span>
-              <span className="text-lg text-slate-700 dark:text-slate-300 line-through">I need <strong>several</strong> water. (uncountable — use "some")</span>
+              <span className="text-lg text-slate-700 dark:text-slate-300 line-through">I need <strong>several</strong> water. (uncountable, use "some")</span>
             </div>
           </div>
 
@@ -168,7 +168,7 @@ const SeveralVsSomePage: React.FC = () => {
               <tbody className="text-slate-700 dark:text-slate-300">
                 <tr>
                   <td className="p-3 border border-slate-200 dark:border-slate-600">Approximate number</td>
-                  <td className="p-3 border border-slate-200 dark:border-slate-600">3–7 (more specific)</td>
+                  <td className="p-3 border border-slate-200 dark:border-slate-600">3-7 (more specific)</td>
                   <td className="p-3 border border-slate-200 dark:border-slate-600">Any amount (vague)</td>
                 </tr>
                 <tr className="bg-slate-50 dark:bg-slate-700/50">
@@ -224,7 +224,7 @@ const SeveralVsSomePage: React.FC = () => {
           <div className="space-y-4">
             <div className="bg-slate-50 dark:bg-slate-700/50 p-5 rounded-lg">
               <h3 className="font-semibold text-slate-900 dark:text-slate-100 mb-2">Is "several" more than "some"?</h3>
-              <p className="text-slate-700 dark:text-slate-300">Generally yes. "Several" implies roughly 3–7, while "some" can mean just 1–2 or more. The exact number depends on context, but "several" always implies a noticeably distinct group.</p>
+              <p className="text-slate-700 dark:text-slate-300">Generally yes. "Several" implies roughly 3-7, while "some" can mean just 1-2 or more. The exact number depends on context, but "several" always implies a noticeably distinct group.</p>
             </div>
             <div className="bg-slate-50 dark:bg-slate-700/50 p-5 rounded-lg">
               <h3 className="font-semibold text-slate-900 dark:text-slate-100 mb-2">Can I use "some" instead of "several" always?</h3>
@@ -238,7 +238,7 @@ const SeveralVsSomePage: React.FC = () => {
           <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
             Practice
           </h2>
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-6 rounded-lg">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-6 rounded-lg">
             <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
               <strong>Choose the correct quantifier:</strong>
             </p>
@@ -271,27 +271,27 @@ const SeveralVsSomePage: React.FC = () => {
           </h2>
           <ul className="space-y-2 text-lg">
             <li>
-              <Link to="/grammar-mistakes/plenty-of-vs-a-lot-of" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/plenty-of-vs-a-lot-of/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Plenty of vs A Lot of
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/some-vs-any" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/some-vs-any/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Some vs Any
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/many-vs-much" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/many-vs-much/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Many vs Much
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/a-few-vs-few" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/a-few-vs-few/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → A Few vs Few
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → All Grammar Mistakes
               </Link>
             </li>

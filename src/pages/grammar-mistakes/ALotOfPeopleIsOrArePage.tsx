@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../../hooks/usePageMetadata';
 import SchemaMarkup from '../../components/SchemaMarkup';
@@ -7,7 +7,7 @@ const ALotOfPeopleIsOrArePage: React.FC = () => {
   usePageMetadata({
     title: 'A Lot of People Is or A Lot of People Are? | TypoGrammar',
     description: 'Learn whether to say "a lot of people is" or "a lot of people are." The correct form is "a lot of people are" because "people" is a plural noun.',
-    canonical: 'https://typogrammar.com/grammar-mistakes/a-lot-of-people-is-or-are'
+    canonical: 'https://typogrammar.com/grammar-mistakes/a-lot-of-people-is-or-are/'
   });
 
   const [showAnswer, setShowAnswer] = useState(false);
@@ -49,7 +49,7 @@ const ALotOfPeopleIsOrArePage: React.FC = () => {
       <nav className="mb-6 text-slate-600 dark:text-slate-400">
         <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
         {' › '}
-        <Link to="/grammar-mistakes" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
+        <Link to="/grammar-mistakes/" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
         {' › '}
         <span className="text-slate-900 dark:text-slate-100">A Lot of People Is or Are</span>
       </nav>
@@ -180,7 +180,7 @@ const ALotOfPeopleIsOrArePage: React.FC = () => {
           <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
             Practice
           </h2>
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-6 rounded-lg">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-6 rounded-lg">
             <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
               <strong>Choose the correct verb:</strong>
             </p>
@@ -213,22 +213,22 @@ const ALotOfPeopleIsOrArePage: React.FC = () => {
           </h2>
           <ul className="space-y-2 text-lg">
             <li>
-              <Link to="/grammar-mistakes/people-is-or-people-are" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/people-is-or-people-are/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → People Is or People Are?
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/a-number-of-vs-the-number-of" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/a-number-of-vs-the-number-of/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → A Number Of vs The Number Of
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/a-group-of-people-is-or-are" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/a-group-of-people-is-or-are/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → A Group of People Is or Are?
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → All Grammar Mistakes
               </Link>
             </li>

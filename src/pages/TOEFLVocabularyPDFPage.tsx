@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading, BulletList } from '../components/ArticleComponents';
 
 const TOEFLVocabularyPDFPage: React.FC = () => {
   usePageMetadata({
-    title: 'TOEFL Vocabulary PDF (500 Academic Words) – Free Download | TypoGrammar',
+    title: 'TOEFL Vocabulary PDF (500 Academic Words) - Free Download | TypoGrammar',
     description: 'Download a free TOEFL Vocabulary PDF with 500 academic words, definitions, and examples. Improve your TOEFL reading, writing, and speaking score fast.'
   });
 
@@ -34,7 +34,7 @@ const TOEFLVocabularyPDFPage: React.FC = () => {
         "name": "How long does it take to learn all 500 words?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "With consistent study, most learners can cover all words in 2–4 weeks."
+          "text": "With consistent study, most learners can cover all words in 2-4 weeks."
         }
       },
       {
@@ -77,7 +77,7 @@ const TOEFLVocabularyPDFPage: React.FC = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
       <h1 className="text-4xl font-bold mb-4 text-slate-900 dark:text-slate-100">
-        TOEFL Vocabulary PDF (500 Academic Word List) – Free Download
+        TOEFL Vocabulary PDF (500 Academic Word List) - Free Download
       </h1>
 
       <p className="text-xl text-blue-600 dark:text-blue-400 font-medium mb-8">
@@ -85,7 +85,7 @@ const TOEFLVocabularyPDFPage: React.FC = () => {
       </p>
 
       <ArticleParagraph>
-        Looking to improve your <strong>TOEFL score fast</strong>? This TOEFL Vocabulary PDF gives you 500 essential academic words with definitions and example sentences — everything you need to understand and use advanced English in the TOEFL iBT exam.
+        Looking to improve your <strong>TOEFL score fast</strong>? This TOEFL Vocabulary PDF gives you 500 essential academic words with definitions and example sentences, everything you need to understand and use advanced English in the TOEFL iBT exam.
       </ArticleParagraph>
 
       <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-4 my-6 rounded-r">
@@ -105,7 +105,7 @@ const TOEFLVocabularyPDFPage: React.FC = () => {
         
         <div className="flex flex-col md:flex-row items-center justify-center gap-6">
           <img 
-            src="/images/books/TOEFL-Vocabulary–500-Academic-Word-List.jpg" 
+            src="/images/books/TOEFL-Vocabulary-500-Academic-Word-List.jpg" 
             alt="TOEFL Vocabulary 500 Academic Words PDF Cover" 
             className="w-48 h-auto rounded-lg shadow-lg"
           />
@@ -156,7 +156,7 @@ const TOEFLVocabularyPDFPage: React.FC = () => {
           'Society & Culture',
           'Technology & Innovation',
           'Health & Medicine',
-          '…and more'
+          '...and more'
         ].map((theme, index) => (
           <span key={index} className="px-4 py-2 bg-purple-100 dark:bg-purple-900/40 text-purple-800 dark:text-purple-200 rounded-full font-medium">
             {theme}
@@ -200,7 +200,7 @@ const TOEFLVocabularyPDFPage: React.FC = () => {
         3. Organized for Faster Learning
       </h3>
       <ArticleParagraph>
-        Instead of random lists, words are grouped by topic — making it easier to:
+        Instead of random lists, words are grouped by topic, making it easier to:
       </ArticleParagraph>
       <BulletList items={[
         'Remember vocabulary',
@@ -308,7 +308,7 @@ const TOEFLVocabularyPDFPage: React.FC = () => {
           <tbody>
             <tr>
               <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300 font-medium">Day 1</td>
-              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">Learn 20–30 new words</td>
+              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">Learn 20-30 new words</td>
             </tr>
             <tr className="bg-slate-50 dark:bg-slate-800/50">
               <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300 font-medium">Day 2</td>
@@ -322,9 +322,9 @@ const TOEFLVocabularyPDFPage: React.FC = () => {
         </table>
       </div>
 
-      <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-lg p-4 my-6">
-        <p className="text-amber-800 dark:text-amber-200 font-medium">
-          In 2–3 weeks, you can master all 500 words.
+      <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-800 rounded-lg p-4 my-6">
+        <p className="text-teal-800 dark:text-teal-200 font-medium">
+          In 2-3 weeks, you can master all 500 words.
         </p>
       </div>
 
@@ -336,16 +336,16 @@ const TOEFLVocabularyPDFPage: React.FC = () => {
       </ArticleParagraph>
 
       <BulletList items={[
-        <Link to="/toefl/toefl-reading-practice-pdf" className="text-blue-600 dark:text-blue-400 hover:underline">TOEFL Reading Practice PDF</Link>,
-        <Link to="/toefl/toefl-reading/toefl-reading-strategies" className="text-blue-600 dark:text-blue-400 hover:underline">TOEFL Reading Strategies</Link>,
-        <Link to="/toefl/toefl-writing/toefl-writing-templates" className="text-blue-600 dark:text-blue-400 hover:underline">TOEFL Writing Templates</Link>,
-        <Link to="/toefl/toefl-writing/toefl-writing-topics" className="text-blue-600 dark:text-blue-400 hover:underline">TOEFL Writing Topics</Link>,
+        <Link to="/toefl/toefl-reading-practice-pdf/" className="text-blue-600 dark:text-blue-400 hover:underline">TOEFL Reading Practice PDF</Link>,
+        <Link to="/toefl/toefl-reading/toefl-reading-strategies/" className="text-blue-600 dark:text-blue-400 hover:underline">TOEFL Reading Strategies</Link>,
+        <Link to="/toefl/toefl-writing/toefl-writing-templates/" className="text-blue-600 dark:text-blue-400 hover:underline">TOEFL Writing Templates</Link>,
+        <Link to="/toefl/toefl-writing/toefl-writing-topics/" className="text-blue-600 dark:text-blue-400 hover:underline">TOEFL Writing Topics</Link>,
       ]} />
 
       {/* Final CTA */}
       <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-xl p-6 my-8 text-center">
         <p className="text-green-800 dark:text-green-200 font-semibold text-lg mb-4">
-          Start building your TOEFL vocabulary today — your target score is within reach.
+          Start building your TOEFL vocabulary today, your target score is within reach.
         </p>
         <a 
           href="/downloads/TOEFL-Vocabulary-500-word.pdf" 
@@ -374,7 +374,7 @@ const TOEFLVocabularyPDFPage: React.FC = () => {
           },
           {
             q: 'How long does it take to learn all 500 words?',
-            a: 'With consistent study, most learners can cover all words in 2–4 weeks.'
+            a: 'With consistent study, most learners can cover all words in 2-4 weeks.'
           },
           {
             q: 'Can beginners use this PDF?',

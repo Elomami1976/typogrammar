@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../../hooks/usePageMetadata';
 import SchemaMarkup from '../../components/SchemaMarkup';
@@ -7,7 +7,7 @@ const SoMuchVsSoManyPage: React.FC = () => {
   usePageMetadata({
     title: 'So Much vs So Many: What\'s the Difference? | TypoGrammar',
     description: 'Learn the difference between "so much" and "so many." So much is for uncountable nouns. So many is for countable nouns.',
-    canonical: 'https://typogrammar.com/grammar-mistakes/so-much-vs-so-many'
+    canonical: 'https://typogrammar.com/grammar-mistakes/so-much-vs-so-many/'
   });
 
   const [showAnswer, setShowAnswer] = useState(false);
@@ -49,7 +49,7 @@ const SoMuchVsSoManyPage: React.FC = () => {
       <nav className="mb-6 text-slate-600 dark:text-slate-400">
         <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
         {' › '}
-        <Link to="/grammar-mistakes" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
+        <Link to="/grammar-mistakes/" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
         {' › '}
         <span className="text-slate-900 dark:text-slate-100">So Much vs So Many</span>
       </nav>
@@ -101,8 +101,8 @@ const SoMuchVsSoManyPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-4 rounded-lg mb-4">
-            <p className="text-lg text-amber-800 dark:text-amber-200">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-4 rounded-lg mb-4">
+            <p className="text-lg text-teal-800 dark:text-teal-200">
               <strong>Usage:</strong> "So much" and "so many" emphasize a large amount - often with positive emotion or surprise. They follow the same countable/uncountable rule as much/many.
             </p>
           </div>
@@ -184,7 +184,7 @@ const SoMuchVsSoManyPage: React.FC = () => {
           <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
             Practice
           </h2>
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-6 rounded-lg">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-6 rounded-lg">
             <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
               <strong>Fill in with "so much" or "so many":</strong>
             </p>
@@ -217,22 +217,22 @@ const SoMuchVsSoManyPage: React.FC = () => {
           </h2>
           <ul className="space-y-2 text-lg">
             <li>
-              <Link to="/grammar-mistakes/too-much-vs-too-many" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/too-much-vs-too-many/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Too Much vs. Too Many
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/many-vs-much" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/many-vs-much/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Many vs. Much
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/little-vs-few" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/little-vs-few/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Little vs. Few
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → All Grammar Mistakes
               </Link>
             </li>

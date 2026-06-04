@@ -172,8 +172,8 @@ export const SentenceDiagram: React.FC<{
           </div>
         )}
         {prepPhrase && (
-           <div className="p-2 px-4 bg-orange-100 text-orange-800 rounded-md text-center dark:bg-orange-900/50 dark:text-orange-300">
-            <span className="text-xs uppercase font-semibold tracking-wider text-orange-500 dark:text-orange-400">Prep. Phrase</span>
+           <div className="p-2 px-4 bg-teal-100 text-teal-800 rounded-md text-center dark:bg-teal-900/50 dark:text-teal-300">
+            <span className="text-xs uppercase font-semibold tracking-wider text-teal-500 dark:text-teal-400">Prep. Phrase</span>
             <p className="text-lg font-semibold">{prepPhrase}</p>
           </div>
         )}

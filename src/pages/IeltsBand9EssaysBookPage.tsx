@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import GoogleAd from '../components/GoogleAd';
@@ -7,7 +7,7 @@ const IeltsBand9EssaysBookPage: React.FC = () => {
   usePageMetadata({
     title: 'IELTS Writing Task 2 Band 9 Essays PDF (10 Sample Essays with Explanations)',
     description: "Download Typogrammar's IELTS Writing Task 2 Band 9 Essays PDF. Includes 10 full essays with explanations to help you achieve Band 7, 8, or 9.",
-    canonical: 'https://typogrammar.com/ielts/writing-task-2-band-9-essays-book',
+    canonical: 'https://typogrammar.com/ielts/writing-task-2-band-9-essays-book/',
     ogTitle: 'IELTS Writing Task 2 Band 9 Essays PDF (10 Sample Essays with Explanations)',
     ogDescription: "Download Typogrammar's IELTS Writing Task 2 Band 9 Essays PDF. Includes 10 full essays with explanations to help you achieve Band 7, 8, or 9.",
     ogUrl: 'https://typogrammar.com/ielts/writing-task-2-band-9-essays-book',
@@ -208,7 +208,7 @@ const IeltsBand9EssaysBookPage: React.FC = () => {
               </button>
             </div>
             <p className="text-sm text-slate-500 dark:text-slate-400 italic">
-              Free download — no signup required.
+              Free download, no signup required.
             </p>
           </div>
           <div className="flex justify-center">
@@ -275,7 +275,7 @@ const IeltsBand9EssaysBookPage: React.FC = () => {
             <ul className="space-y-2">
               {[
                 'Real IELTS-style question',
-                'Full Band 9 model answer (280–320 words)',
+                'Full Band 9 model answer (280-320 words)',
                 'Clear position and arguments',
                 'Professional academic tone',
               ].map((item, i) => (
@@ -319,7 +319,7 @@ const IeltsBand9EssaysBookPage: React.FC = () => {
 
       {/* WHY THIS BOOK IS DIFFERENT */}
       <section className="mb-16">
-        <div className="bg-amber-50 dark:bg-amber-900/20 rounded-2xl p-8 md:p-12 border border-amber-200 dark:border-amber-700">
+        <div className="bg-teal-50 dark:bg-teal-900/20 rounded-2xl p-8 md:p-12 border border-teal-200 dark:border-teal-700">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-100 mb-6">
             🧠 Why This Book Is Different
           </h2>
@@ -334,7 +334,7 @@ const IeltsBand9EssaysBookPage: React.FC = () => {
               'How examiners evaluate writing',
             ].map((item, i) => (
               <div key={i} className="flex items-center bg-white dark:bg-slate-800 rounded-lg p-4 shadow-sm">
-                <span className="text-amber-600 dark:text-amber-400 font-bold text-lg mr-3">✔</span>
+                <span className="text-teal-600 dark:text-teal-400 font-bold text-lg mr-3">✔</span>
                 <span className="text-slate-800 dark:text-slate-200 font-medium">{item}</span>
               </div>
             ))}
@@ -399,7 +399,7 @@ const IeltsBand9EssaysBookPage: React.FC = () => {
             📥 Download the Book
           </h2>
           <p className="text-lg text-blue-100 mb-8">
-            Get the official Typogrammar IELTS Writing Task 2 Band 9 Essays Book — free, instant download.
+            Get the official Typogrammar IELTS Writing Task 2 Band 9 Essays Book, free, instant download.
           </p>
           <a
             href="/downloads/IELTS-BAND9-ESSAYS-BOOK.pdf"
@@ -422,7 +422,7 @@ const IeltsBand9EssaysBookPage: React.FC = () => {
             </svg>
             Download IELTS Band 9 Essays Book (PDF)
           </a>
-          <p className="text-sm text-blue-200 mt-4">PDF, Instant Download — No signup required</p>
+          <p className="text-sm text-blue-200 mt-4">PDF, Instant Download, No signup required</p>
         </div>
       </section>
 
@@ -461,17 +461,17 @@ const IeltsBand9EssaysBookPage: React.FC = () => {
           Explore More IELTS Resources
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <Link to="/ielts/ielts-writing-task-2-essay-types" className="block p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800 hover:border-blue-400 dark:hover:border-blue-600 transition-colors">
+          <Link to="/ielts/ielts-writing-task-2-essay-types/" className="block p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800 hover:border-blue-400 dark:hover:border-blue-600 transition-colors">
             <h4 className="font-semibold text-blue-900 dark:text-blue-200 mb-1">IELTS Writing Task 2 Hub</h4>
             <p className="text-sm text-blue-700 dark:text-blue-400">All essay types with strategies and sample answers.</p>
           </Link>
-          <Link to="/ielts/band-8-ielts-sample-answers" className="block p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800 hover:border-green-400 dark:hover:border-green-600 transition-colors">
+          <Link to="/ielts/band-8-ielts-sample-answers/" className="block p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800 hover:border-green-400 dark:hover:border-green-600 transition-colors">
             <h4 className="font-semibold text-green-900 dark:text-green-200 mb-1">Band 8+ Sample Answers</h4>
             <p className="text-sm text-green-700 dark:text-green-400">Real Band 8+ answers with explanations.</p>
           </Link>
-          <Link to="/ielts/academic-vocabulary-book" className="block p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800 hover:border-purple-400 dark:hover:border-purple-600 transition-colors">
+          <Link to="/ielts/academic-vocabulary-book/" className="block p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800 hover:border-purple-400 dark:hover:border-purple-600 transition-colors">
             <h4 className="font-semibold text-purple-900 dark:text-purple-200 mb-1">Free IELTS Vocabulary Book</h4>
-            <p className="text-sm text-purple-700 dark:text-purple-400">200 academic words (Band 6–9) with examples.</p>
+            <p className="text-sm text-purple-700 dark:text-purple-400">200 academic words (Band 6-9) with examples.</p>
           </Link>
         </div>
       </section>

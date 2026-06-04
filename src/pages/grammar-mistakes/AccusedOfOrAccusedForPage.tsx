@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../../hooks/usePageMetadata';
 import SchemaMarkup from '../../components/SchemaMarkup';
@@ -7,7 +7,7 @@ const AccusedOfOrAccusedForPage: React.FC = () => {
   usePageMetadata({
     title: 'Accused of or Accused for? Which Is Correct? | TypoGrammar',
     description: 'Is it "accused of" or "accused for"? The correct preposition is "of." Learn the rule with clear examples: "He was accused of theft," not "accused for theft."',
-    canonical: 'https://typogrammar.com/grammar-mistakes/accused-of-or-accused-for'
+    canonical: 'https://typogrammar.com/grammar-mistakes/accused-of-or-accused-for/'
   });
 
   const [showAnswer, setShowAnswer] = useState(false);
@@ -54,7 +54,7 @@ const AccusedOfOrAccusedForPage: React.FC = () => {
       <nav className="mb-6 text-slate-600 dark:text-slate-400">
         <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
         {' › '}
-        <Link to="/grammar-mistakes" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
+        <Link to="/grammar-mistakes/" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
         {' › '}
         <span className="text-slate-900 dark:text-slate-100">Accused of or Accused for</span>
       </nav>
@@ -89,9 +89,9 @@ const AccusedOfOrAccusedForPage: React.FC = () => {
           <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
             The verb <strong>"accuse"</strong> is always paired with the preposition <strong>"of."</strong> This applies to both the active form ("accuse someone of") and the passive form ("be accused of"). Using "for" instead of "of" is a very common mistake made by English learners.
           </p>
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-4 rounded-lg">
-            <p className="text-lg text-amber-800 dark:text-amber-200">
-              <strong>Why "for" feels natural:</strong> Learners sometimes think "for" makes sense because punishment follows a crime ("arrested <em>for</em> theft," "fined <em>for</em> speeding"). But "accuse" is different — it specifically uses "of."
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-4 rounded-lg">
+            <p className="text-lg text-teal-800 dark:text-teal-200">
+              <strong>Why "for" feels natural:</strong> Learners sometimes think "for" makes sense because punishment follows a crime ("arrested <em>for</em> theft," "fined <em>for</em> speeding"). But "accuse" is different, it specifically uses "of."
             </p>
           </div>
         </section>
@@ -154,7 +154,7 @@ const AccusedOfOrAccusedForPage: React.FC = () => {
             "Accused of" vs "Charged with" vs "Arrested for"
           </h2>
           <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
-            These related expressions use different prepositions — don't mix them up:
+            These related expressions use different prepositions, don't mix them up:
           </p>
           <div className="overflow-x-auto">
             <table className="w-full text-left border-collapse">
@@ -221,7 +221,7 @@ const AccusedOfOrAccusedForPage: React.FC = () => {
           <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
             Practice
           </h2>
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-6 rounded-lg">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-6 rounded-lg">
             <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
               <strong>Fill in the correct preposition:</strong>
             </p>
@@ -254,27 +254,27 @@ const AccusedOfOrAccusedForPage: React.FC = () => {
           </h2>
           <ul className="space-y-2 text-lg">
             <li>
-              <Link to="/grammar-mistakes/capable-of-or-capable-to" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/capable-of-or-capable-to/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Capable of or Capable to?
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/fond-of-or-fond-for" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/fond-of-or-fond-for/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Fond of or Fond for?
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/responsible-for-or-responsible-of" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/responsible-for-or-responsible-of/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Responsible for or Responsible of?
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/different-from-or-different-than" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/different-from-or-different-than/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Different from or Different than?
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → All Grammar Mistakes
               </Link>
             </li>

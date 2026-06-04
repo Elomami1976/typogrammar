@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading } from '../components/ArticleComponents';
@@ -165,7 +165,7 @@ const IELTSVocabularyBand6Page: React.FC = () => {
           </p>
           <div className="bg-white/50 dark:bg-slate-800/50 p-4 rounded-lg">
             <h3 className="font-semibold text-slate-900 dark:text-white mb-2">Quick Answer: How many Band 6 words do I need?</h3>
-            <p className="text-slate-700 dark:text-slate-300">Learn <strong>20-30 Band 6 words</strong> actively (use in writing) and recognize 50+ passively. Focus on accuracy over quantity—correctly using 5-8 Band 6 words per essay is better than forcing 15 incorrectly.</p>
+            <p className="text-slate-700 dark:text-slate-300">Learn <strong>20-30 Band 6 words</strong> actively (use in writing) and recognize 50+ passively. Focus on accuracy over quantity-correctly using 5-8 Band 6 words per essay is better than forcing 15 incorrectly.</p>
           </div>
         </div>
 
@@ -196,7 +196,7 @@ const IELTSVocabularyBand6Page: React.FC = () => {
           <div className="flex flex-wrap items-center gap-4 text-sm text-slate-600 dark:text-slate-400 mb-6">
             <span className="flex items-center gap-1">
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"/></svg>
-              By <Link to="/about" className="text-blue-600 dark:text-blue-400 hover:underline">Typogrammar Team</Link>
+              By <Link to="/about/" className="text-blue-600 dark:text-blue-400 hover:underline">Typogrammar Team</Link>
             </span>
             <span className="flex items-center gap-1">
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd"/></svg>
@@ -387,7 +387,7 @@ const IELTSVocabularyBand6Page: React.FC = () => {
             Once you master Band 6 vocabulary, challenge yourself with <strong>Band 7 academic words</strong> to improve your score and sound more sophisticated.
           </p>
           <Link
-            to="/ielts/vocabulary/band-7"
+            to="/ielts/vocabulary/band-7/"
             className="inline-block bg-white text-purple-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-purple-50 transition-all shadow-lg hover:shadow-xl"
           >
             Continue to Band 7 Vocabulary →
@@ -398,19 +398,19 @@ const IELTSVocabularyBand6Page: React.FC = () => {
         <div className="mt-8 bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-8">
           <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">Explore More IELTS Resources</h3>
           <div className="grid md:grid-cols-2 gap-4">
-            <Link to="/ielts/vocabulary/band-7" className="p-4 border-2 border-purple-200 dark:border-purple-800 rounded-lg hover:border-purple-400 dark:hover:border-purple-600 transition-colors">
+            <Link to="/ielts/vocabulary/band-7/" className="p-4 border-2 border-purple-200 dark:border-purple-800 rounded-lg hover:border-purple-400 dark:hover:border-purple-600 transition-colors">
               <h4 className="font-bold text-purple-600 dark:text-purple-400 mb-2">Band 7 Vocabulary</h4>
               <p className="text-slate-600 dark:text-slate-400 text-sm">Learn academic words for higher IELTS scores</p>
             </Link>
-            <Link to="/ielts/ielts-writing-task-2-essay-types" className="p-4 border-2 border-blue-200 dark:border-blue-800 rounded-lg hover:border-blue-400 dark:hover:border-blue-600 transition-colors">
+            <Link to="/ielts/ielts-writing-task-2-essay-types/" className="p-4 border-2 border-blue-200 dark:border-blue-800 rounded-lg hover:border-blue-400 dark:hover:border-blue-600 transition-colors">
               <h4 className="font-bold text-blue-600 dark:text-blue-400 mb-2">IELTS Writing Task 2 Guide</h4>
               <p className="text-slate-600 dark:text-slate-400 text-sm">Master essay structures and strategies</p>
             </Link>
-            <Link to="/ielts/opinion-essay-ielts-band-7-9" className="p-4 border-2 border-indigo-200 dark:border-indigo-800 rounded-lg hover:border-indigo-400 dark:hover:border-indigo-600 transition-colors">
+            <Link to="/ielts/opinion-essay-ielts-band-7-9/" className="p-4 border-2 border-indigo-200 dark:border-indigo-800 rounded-lg hover:border-indigo-400 dark:hover:border-indigo-600 transition-colors">
               <h4 className="font-bold text-indigo-600 dark:text-indigo-400 mb-2">Opinion Essays for IELTS</h4>
               <p className="text-slate-600 dark:text-slate-400 text-sm">Write persuasive essays that score Band 7-9</p>
             </Link>
-            <Link to="/grammar-guide" className="p-4 border-2 border-slate-200 dark:border-slate-700 rounded-lg hover:border-slate-400 dark:hover:border-slate-600 transition-colors">
+            <Link to="/grammar-guide/" className="p-4 border-2 border-slate-200 dark:border-slate-700 rounded-lg hover:border-slate-400 dark:hover:border-slate-600 transition-colors">
               <h4 className="font-bold text-slate-600 dark:text-slate-400 mb-2">Grammar Guide</h4>
               <p className="text-slate-600 dark:text-slate-400 text-sm">Comprehensive English grammar lessons</p>
             </Link>
@@ -432,7 +432,7 @@ const IELTSVocabularyBand6Page: React.FC = () => {
             
             <div className="border-b border-slate-200 dark:border-slate-700 pb-6">
               <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">How many Band 6 words should I use in my IELTS essay?</h3>
-              <p className="text-slate-700 dark:text-slate-300">Focus on using 5-10 Band 6 vocabulary words naturally throughout your IELTS essay. Quality matters more than quantity—use words accurately and in appropriate contexts rather than forcing advanced vocabulary. A well-placed "essential" is better than five misused "advanced" words.</p>
+              <p className="text-slate-700 dark:text-slate-300">Focus on using 5-10 Band 6 vocabulary words naturally throughout your IELTS essay. Quality matters more than quantity-use words accurately and in appropriate contexts rather than forcing advanced vocabulary. A well-placed "essential" is better than five misused "advanced" words.</p>
             </div>
             
             <div className="border-b border-slate-200 dark:border-slate-700 pb-6">
@@ -475,7 +475,7 @@ const IELTSVocabularyBand6Page: React.FC = () => {
                 name: 'How many Band 6 words should I use in my IELTS essay?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Focus on using 5-10 Band 6 vocabulary words naturally throughout your IELTS essay. Quality matters more than quantity—use words accurately and in appropriate contexts rather than forcing advanced vocabulary.'
+                  text: 'Focus on using 5-10 Band 6 vocabulary words naturally throughout your IELTS essay. Quality matters more than quantity-use words accurately and in appropriate contexts rather than forcing advanced vocabulary.'
                 }
               },
               {

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading, BulletList, CodeBlock } from '../components/ArticleComponents';
@@ -8,7 +8,7 @@ import SchemaMarkup from '../components/SchemaMarkup';
 const LexicalResourceIELTSPage: React.FC = () => {
   usePageMetadata({
     title: 'What Is Lexical Resource in IELTS? Band 9 Guide',
-    description: 'Learn what Lexical Resource means in IELTS Writing, official band descriptors, examples, common mistakes, and how to reach Band 7–9 easily.'
+    description: 'Learn what Lexical Resource means in IELTS Writing, official band descriptors, examples, common mistakes, and how to reach Band 7-9 easily.'
   });
 
   const faqSchema = {
@@ -46,7 +46,7 @@ const LexicalResourceIELTSPage: React.FC = () => {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "What Is Lexical Resource in IELTS? Band 9 Guide",
-    "description": "Learn what Lexical Resource means in IELTS Writing, official band descriptors, examples, common mistakes, and how to reach Band 7–9 easily.",
+    "description": "Learn what Lexical Resource means in IELTS Writing, official band descriptors, examples, common mistakes, and how to reach Band 7-9 easily.",
     "author": {
       "@type": "Organization",
       "name": "Typogrammar"
@@ -73,7 +73,7 @@ const LexicalResourceIELTSPage: React.FC = () => {
 
       <div className="mb-6">
         <Link
-          to="/ielts/ielts-writing-task-2-essay-types"
+          to="/ielts/ielts-writing-task-2-essay-types/"
           className="text-blue-600 dark:text-blue-400 hover:underline text-sm"
         >
           ← Back to IELTS Writing Task 2 Essay Types
@@ -187,9 +187,9 @@ const LexicalResourceIELTSPage: React.FC = () => {
       </div>
 
       {/* Band 6 */}
-      <div className="bg-orange-50 dark:bg-orange-900/20 border-l-4 border-orange-500 p-4 my-4 rounded-r-lg">
-        <h4 className="text-lg font-semibold text-orange-800 dark:text-orange-200 mb-2">🟠 Band 6</h4>
-        <ul className="list-disc list-inside space-y-1 text-orange-700 dark:text-orange-300">
+      <div className="bg-teal-50 dark:bg-teal-900/20 border-l-4 border-teal-500 p-4 my-4 rounded-r-lg">
+        <h4 className="text-lg font-semibold text-teal-800 dark:text-teal-200 mb-2">🟠 Band 6</h4>
+        <ul className="list-disc list-inside space-y-1 text-teal-700 dark:text-teal-300">
           <li>Adequate vocabulary</li>
           <li>Repetition of basic words</li>
           <li>Noticeable word choice errors</li>
@@ -303,7 +303,7 @@ const LexicalResourceIELTSPage: React.FC = () => {
 
       {/* Weak Vocabulary */}
       <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
-        <h4 className="text-lg font-semibold text-red-800 dark:text-red-200 mb-3">❌ Weak Vocabulary (Band 5–6)</h4>
+        <h4 className="text-lg font-semibold text-red-800 dark:text-red-200 mb-3">❌ Weak Vocabulary (Band 5-6)</h4>
         <ul className="list-disc list-inside space-y-2 text-red-700 dark:text-red-300">
           <li>Repeats "technology" many times</li>
           <li>Uses simple words like "bad," "good," "big problem"</li>
@@ -312,7 +312,7 @@ const LexicalResourceIELTSPage: React.FC = () => {
 
       {/* Strong Vocabulary */}
       <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-6 my-6 rounded-r-lg">
-        <h4 className="text-lg font-semibold text-green-800 dark:text-green-200 mb-3">✅ Strong Vocabulary (Band 8–9)</h4>
+        <h4 className="text-lg font-semibold text-green-800 dark:text-green-200 mb-3">✅ Strong Vocabulary (Band 8-9)</h4>
         <ul className="list-disc list-inside space-y-2 text-green-700 dark:text-green-300">
           <li>Uses variations: <em>innovation, digital devices, technological advancement</em></li>
           <li>Uses precise terms: <em>social isolation, reduced face-to-face interaction</em></li>
@@ -426,7 +426,7 @@ const LexicalResourceIELTSPage: React.FC = () => {
 
       <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-500 p-4 my-6">
         <p className="text-yellow-800 dark:text-yellow-300 font-medium">
-          ⚠️ You can have strong grammar but weak vocabulary — and still lose marks.
+          ⚠️ You can have strong grammar but weak vocabulary, and still lose marks.
         </p>
       </div>
 
@@ -451,7 +451,7 @@ const LexicalResourceIELTSPage: React.FC = () => {
 
         <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg">
           <h4 className="font-semibold text-slate-800 dark:text-slate-200 mb-2">Do I need very advanced vocabulary for Band 7?</h4>
-          <p className="text-slate-600 dark:text-slate-400">No. You need accurate, appropriate, and flexible vocabulary — not extremely difficult words.</p>
+          <p className="text-slate-600 dark:text-slate-400">No. You need accurate, appropriate, and flexible vocabulary, not extremely difficult words.</p>
         </div>
       </div>
 
@@ -485,22 +485,22 @@ const LexicalResourceIELTSPage: React.FC = () => {
         <h3 className="text-lg font-semibold text-blue-900 dark:text-blue-200 mb-4">📚 Related IELTS Resources</h3>
         <ul className="space-y-2">
           <li>
-            <Link to="/ielts/task-achievement-in-ielts" className="text-blue-600 dark:text-blue-400 hover:underline">
+            <Link to="/ielts/task-achievement-in-ielts/" className="text-blue-600 dark:text-blue-400 hover:underline">
               → What Is Task Achievement in IELTS?
             </Link>
           </li>
           <li>
-            <Link to="/blog/why-youre-stuck-at-band-6-ielts-writing" className="text-blue-600 dark:text-blue-400 hover:underline">
+            <Link to="/blog/why-youre-stuck-at-band-6-ielts-writing/" className="text-blue-600 dark:text-blue-400 hover:underline">
               → Why You're Stuck at Band 6 in IELTS Writing
             </Link>
           </li>
           <li>
-            <Link to="/ielts/advantages-disadvantages-essay-ielts" className="text-blue-600 dark:text-blue-400 hover:underline">
+            <Link to="/ielts/advantages-disadvantages-essay-ielts/" className="text-blue-600 dark:text-blue-400 hover:underline">
               → Advantages/Disadvantages Essay IELTS
             </Link>
           </li>
           <li>
-            <Link to="/ielts/common-grammar-mistakes-ielts-writing" className="text-blue-600 dark:text-blue-400 hover:underline">
+            <Link to="/ielts/common-grammar-mistakes-ielts-writing/" className="text-blue-600 dark:text-blue-400 hover:underline">
               → Common Grammar Mistakes in IELTS Writing
             </Link>
           </li>

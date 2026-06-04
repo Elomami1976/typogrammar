@@ -1,4 +1,5 @@
-import React from 'react';
+﻿import React from 'react';
+import AIAnswerBox from '../components/AIAnswerBox';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import SchemaMarkup from '../components/SchemaMarkup';
@@ -7,7 +8,7 @@ const PresentSimpleTensePage: React.FC = () => {
   usePageMetadata({
     title: 'Present Simple Tense: Rules, Structure & Examples | TypoGrammar',
     description: 'Learn the present simple tense with clear rules, structure, examples, signal words, common mistakes, and exercises. Simple explanation for English learners.',
-    canonical: 'https://typogrammar.com/grammar/verb-tenses/simple-present'
+    canonical: 'https://typogrammar.com/grammar/verb-tenses/present-simple/'
   });
 
   const articleSchema = {
@@ -29,7 +30,7 @@ const PresentSimpleTensePage: React.FC = () => {
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://typogrammar.com/grammar/verb-tenses/simple-present"
+      "@id": "https://typogrammar.com/grammar/verb-tenses/present-simple/"
     },
     "datePublished": "2026-01-27",
     "dateModified": "2026-06-01"
@@ -43,9 +44,9 @@ const PresentSimpleTensePage: React.FC = () => {
       <nav className="mb-6 text-slate-600 dark:text-slate-400">
         <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
         {' › '}
-        <Link to="/grammar" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar</Link>
+        <Link to="/grammar/" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar</Link>
         {' › '}
-        <Link to="/grammar/verb-tenses" className="hover:text-blue-600 dark:hover:text-blue-400">Verb Tenses</Link>
+        <Link to="/grammar/verb-tenses/" className="hover:text-blue-600 dark:hover:text-blue-400">Verb Tenses</Link>
         {' › '}
         <span className="text-slate-900 dark:text-slate-100">Present Simple Tense</span>
       </nav>
@@ -63,11 +64,19 @@ const PresentSimpleTensePage: React.FC = () => {
 
         <p className="text-lg text-slate-700 dark:text-slate-300 mb-8">
           The present simple is often compared with the{' '}
-          <Link to="/grammar/verb-tenses/present-progressive" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">present progressive tense</Link>,
+          <Link to="/grammar/verb-tenses/present-progressive/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">present progressive tense</Link>,
           which describes actions happening right now.
         </p>
 
-        {/* Table of Contents */}
+                {/* Quick Answer block — emits DefinedTerm + FAQPage JSON-LD for AI engines */}
+        <AIAnswerBox
+          term={"Present Simple Tense"}
+          answer={"The present simple tense is used for habits, daily routines, general truths, and repeated actions. It is formed with the base verb, adding -s or -es for third-person singular subjects (he, she, it). Example: \"She works in a hospital every day.\""}
+          keyFacts={["Formula: subject + base verb (+ -s for he/she/it)","Use: habits, routines, facts, schedules, general truths","Signal words: always, usually, often, sometimes, every day, never","Negative: do/does + not + base verb","Question: Do/Does + subject + base verb?"]}
+          faqs={[{"q":"What is the difference between present simple and present progressive?","a":"Present simple describes habits and general truths (\"I work in London\"). Present progressive describes actions happening right now (\"I am working on a report\")."},{"q":"When do we add -s or -es to the verb?","a":"Add -s or -es only with third-person singular subjects (he, she, it, or a singular noun). Add -es when the verb ends in -s, -ss, -sh, -ch, -x, or -o (goes, watches, fixes)."},{"q":"Can the present simple talk about the future?","a":"Yes — for fixed schedules and timetables: \"The train leaves at 8 p.m.\" or \"The conference starts on Monday.\""}]}
+        />
+
+{/* Table of Contents */}
         <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-10 mb-5 pb-2 border-b border-slate-200 dark:border-slate-700">Table of Contents</h2>
         <ul className="list-disc list-inside space-y-2 mb-8 text-lg text-slate-700 dark:text-slate-300">
           <li><a href="#structure" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Structure</a></li>
@@ -247,17 +256,17 @@ const PresentSimpleTensePage: React.FC = () => {
         <nav className="mt-10 p-6 bg-slate-50 dark:bg-slate-700 rounded-lg">
           <h2 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-4">Related Verb Tenses</h2>
           <ul className="list-disc list-inside space-y-2 text-lg text-slate-700 dark:text-slate-300">
-            <li><Link to="/grammar/verb-tenses/present-progressive" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Present Continuous</Link></li>
-            <li><Link to="/grammar/verb-tenses/present-perfect" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Present Perfect</Link></li>
-            <li><Link to="/grammar/verb-tenses/past-simple" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Past Simple</Link></li>
-            <li><Link to="/grammar/verb-tenses" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">All Verb Tenses</Link></li>
+            <li><Link to="/grammar/verb-tenses/present-progressive/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Present Continuous</Link></li>
+            <li><Link to="/grammar/verb-tenses/present-perfect/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Present Perfect</Link></li>
+            <li><Link to="/grammar/verb-tenses/past-simple/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Past Simple</Link></li>
+            <li><Link to="/grammar/verb-tenses/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">All Verb Tenses</Link></li>
           </ul>
         </nav>
 
         {/* Author Attribution Box */}
         <div className="bg-slate-100 dark:bg-slate-700 border border-slate-300 dark:border-slate-600 p-6 my-8 rounded-lg">
           <p className="text-slate-700 dark:text-slate-300 mb-4">
-            By <Link to="/about/editorial-team" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">TypoGrammar Editorial Team</Link>
+            By <Link to="/about/editorial-team/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">TypoGrammar Editorial Team</Link>
           </p>
           <p className="text-slate-700 dark:text-slate-300 mb-4">
             TypoGrammar Editorial Team creates independent, grammar-focused educational content to help English learners improve clarity, structure, and accuracy for academic and real-world use.

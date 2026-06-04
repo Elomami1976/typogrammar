@@ -133,8 +133,8 @@ npm run preview
 ## 📊 SEO & Schema Markup Details
 
 ### Meta Tags Implemented:
-- **Title:** "Free IELTS Academic Vocabulary Book (Band 6–9) | TypoGrammar"
-- **Description:** "Download a free IELTS academic vocabulary book (Band 6–9): 200 high-scoring words with definitions, examples, and usage notes."
+- **Title:** "Free IELTS Academic Vocabulary Book (Band 6-9) | TypoGrammar"
+- **Description:** "Download a free IELTS academic vocabulary book (Band 6-9): 200 high-scoring words with definitions, examples, and usage notes."
 - **Canonical URL:** https://typogrammar.com/ielts/academic-vocabulary-book
 
 ### Open Graph Tags:
@@ -196,7 +196,7 @@ typogrammar_-an-english-learning-hub/
 The page includes:
 - **200 words** (50 per band: 6, 7, 8, 9)
 - Each word has: definition + IELTS example + usage note
-- Target audience: Band 6.5–9 candidates
+- Target audience: Band 6.5-9 candidates
 - Focus areas: Writing Task 2 & Speaking
 - Study method: 5-step approach
 

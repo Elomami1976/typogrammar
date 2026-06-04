@@ -14,11 +14,11 @@ const prompts = [
   },
   {
     title: "TOEFL Integrated Writing Simulation",
-    text: "Write a short TOEFL-style reading passage (200–250 words) and a lecture summary that disagrees with it. Then provide a model integrated writing answer and a checklist students can use to self-evaluate."
+    text: "Write a short TOEFL-style reading passage (200-250 words) and a lecture summary that disagrees with it. Then provide a model integrated writing answer and a checklist students can use to self-evaluate."
   },
   {
     title: "TOEFL Speaking Practice with Feedback",
-    text: "Give me 4 TOEFL Independent Speaking questions. Time my response (45 seconds each), then evaluate for fluency, grammar, vocabulary, and coherence, and suggest 2–3 upgraded sentences I could have used."
+    text: "Give me 4 TOEFL Independent Speaking questions. Time my response (45 seconds each), then evaluate for fluency, grammar, vocabulary, and coherence, and suggest 2-3 upgraded sentences I could have used."
   },
   {
     title: "Exam Strategy Explainer",
@@ -34,7 +34,7 @@ const prompts = [
   },
   {
     title: "Paraphrasing Practice Generator",
-    text: "Give me 5 sentences from academic English. For each sentence, provide 3 paraphrased versions — one using synonyms, one changing the sentence structure, and one combining both techniques. Then explain which version is strongest and why."
+    text: "Give me 5 sentences from academic English. For each sentence, provide 3 paraphrased versions, one using synonyms, one changing the sentence structure, and one combining both techniques. Then explain which version is strongest and why."
   },
   {
     title: "TOEFL Independent Writing Brainstorm",
@@ -107,7 +107,7 @@ const AIPromptsPage: React.FC = () => {
       </div>
       
       <ArticleParagraph>
-        These <strong>10 ready-to-use AI prompts</strong> are designed for English learners preparing for <strong>IELTS</strong>, <strong>TOEFL</strong>, and other English proficiency exams. Copy any prompt below into <strong>ChatGPT, Claude, Gemini</strong>, or your preferred AI tool to get personalized practice, instant feedback, and custom study materials — all tailored to your level and target score.
+        These <strong>10 ready-to-use AI prompts</strong> are designed for English learners preparing for <strong>IELTS</strong>, <strong>TOEFL</strong>, and other English proficiency exams. Copy any prompt below into <strong>ChatGPT, Claude, Gemini</strong>, or your preferred AI tool to get personalized practice, instant feedback, and custom study materials, all tailored to your level and target score.
       </ArticleParagraph>
 
       <ArticleParagraph>
@@ -133,7 +133,7 @@ const AIPromptsPage: React.FC = () => {
           IELTS, TOEFL & English Learning Prompts
         </h2>
         <ArticleParagraph>
-          Each prompt below targets a specific skill — from IELTS Speaking practice and TOEFL Integrated Writing to grammar correction, paraphrasing, and conversation simulation. Click <strong>Copy Prompt</strong> and paste directly into any AI chatbot.
+          Each prompt below targets a specific skill, from IELTS Speaking practice and TOEFL Integrated Writing to grammar correction, paraphrasing, and conversation simulation. Click <strong>Copy Prompt</strong> and paste directly into any AI chatbot.
         </ArticleParagraph>
       </div>
 
@@ -175,13 +175,13 @@ const AIPromptsPage: React.FC = () => {
           <div className="bg-slate-50 dark:bg-slate-700/50 p-6 rounded-lg">
             <h3 className="font-semibold text-lg text-slate-900 dark:text-slate-100 mb-2">Which AI tool is best for English exam preparation?</h3>
             <p className="text-slate-700 dark:text-slate-300">
-              ChatGPT, Claude, and Gemini all work well. The prompts on this page are designed to work with any AI chatbot. Choose whichever tool you're most comfortable with — the key is using detailed, well-structured prompts like the ones above.
+              ChatGPT, Claude, and Gemini all work well. The prompts on this page are designed to work with any AI chatbot. Choose whichever tool you're most comfortable with, the key is using detailed, well-structured prompts like the ones above.
             </p>
           </div>
           <div className="bg-slate-50 dark:bg-slate-700/50 p-6 rounded-lg">
             <h3 className="font-semibold text-lg text-slate-900 dark:text-slate-100 mb-2">How often should I practice with AI prompts?</h3>
             <p className="text-slate-700 dark:text-slate-300">
-              For best results, use 1–2 prompts daily as part of your study routine. Focus on different skills each day — speaking one day, writing the next, vocabulary after that — to build well-rounded exam readiness.
+              For best results, use 1-2 prompts daily as part of your study routine. Focus on different skills each day, speaking one day, writing the next, vocabulary after that, to build well-rounded exam readiness.
             </p>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+﻿import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 
@@ -10,7 +10,7 @@ const FreeParaphrasingToolWithoutLoginPage: React.FC = () => {
   usePageMetadata({
     title: 'Free Paraphrasing Tool Without Login (No Sign Up) | TypoGrammar',
     description: 'Use our free paraphrasing tool without login. Rewrite sentences instantly with no sign up, no registration, and no hidden limits.',
-    canonical: 'https://typogrammar.com/free-paraphrasing-tool-without-login'
+    canonical: 'https://typogrammar.com/free-paraphrasing-tool-without-login/'
   });
 
   const [text, setText] = useState<string>('');
@@ -210,7 +210,7 @@ const FreeParaphrasingToolWithoutLoginPage: React.FC = () => {
           <ol className="flex items-center space-x-2 text-sm text-slate-600 dark:text-slate-400">
             <li><Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link></li>
             <li><span className="mx-2">/</span></li>
-            <li><Link to="/ai-writing-tools" className="hover:text-blue-600 dark:hover:text-blue-400">AI Writing Tools</Link></li>
+            <li><Link to="/ai-writing-tools/" className="hover:text-blue-600 dark:hover:text-blue-400">AI Writing Tools</Link></li>
             <li><span className="mx-2">/</span></li>
             <li className="text-slate-900 dark:text-slate-100 font-medium">Free Paraphrasing Tool Without Login</li>
           </ol>
@@ -219,7 +219,7 @@ const FreeParaphrasingToolWithoutLoginPage: React.FC = () => {
         {/* H1 - Main Heading */}
         <header className="text-center mb-10">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-slate-100 mb-4 leading-tight">
-            Free Paraphrasing Tool Without Login <span className="text-blue-600 dark:text-blue-400">– Rewrite Text Instantly</span>
+            Free Paraphrasing Tool Without Login <span className="text-blue-600 dark:text-blue-400">, Rewrite Text Instantly</span>
           </h1>
           
           {/* Intro Section */}
@@ -231,7 +231,7 @@ const FreeParaphrasingToolWithoutLoginPage: React.FC = () => {
               You're in the right place.
             </p>
             <p className="text-lg text-slate-700 dark:text-slate-300 mb-6 leading-relaxed">
-              With TypoGrammar's AI-powered paraphrasing tool, you can rewrite sentences, paragraphs, and essays instantly — <strong>no sign up</strong>, no registration, no email required.
+              With TypoGrammar's AI-powered paraphrasing tool, you can rewrite sentences, paragraphs, and essays instantly, <strong>no sign up</strong>, no registration, no email required.
             </p>
             
             {/* Feature Checkmarks */}
@@ -278,7 +278,7 @@ const FreeParaphrasingToolWithoutLoginPage: React.FC = () => {
               <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
               </svg>
-              Start Paraphrasing – No Login Required
+              Start Paraphrasing - No Login Required
             </button>
           </div>
         </header>
@@ -309,7 +309,7 @@ const FreeParaphrasingToolWithoutLoginPage: React.FC = () => {
             <div className="flex justify-between items-center mt-2 text-sm">
               <div className="text-slate-600 dark:text-slate-400">
                 <span className="font-medium">{wordCount}</span> words · {' '}
-                <span className={characterCount > CHARACTER_LIMIT * 0.9 ? 'text-orange-600 dark:text-orange-400 font-medium' : ''}>
+                <span className={characterCount > CHARACTER_LIMIT * 0.9 ? 'text-teal-600 dark:text-teal-400 font-medium' : ''}>
                   {characterCount}/{CHARACTER_LIMIT}
                 </span> characters
               </div>
@@ -407,7 +407,7 @@ const FreeParaphrasingToolWithoutLoginPage: React.FC = () => {
           </ul>
           
           <p className="text-lg text-slate-700 dark:text-slate-300 font-semibold">
-            You get immediate access — no barriers.
+            You get immediate access, no barriers.
           </p>
         </section>
 
@@ -545,13 +545,13 @@ const FreeParaphrasingToolWithoutLoginPage: React.FC = () => {
           </p>
           
           <div className="flex flex-wrap gap-4">
-            <Link to="/grammar-checker" className="inline-flex items-center px-4 py-2 bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/40 transition-colors font-medium">
+            <Link to="/grammar-checker/" className="inline-flex items-center px-4 py-2 bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/40 transition-colors font-medium">
               Free AI Grammar Checker →
             </Link>
-            <Link to="/essay-topic-generator" className="inline-flex items-center px-4 py-2 bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/40 transition-colors font-medium">
+            <Link to="/essay-topic-generator/" className="inline-flex items-center px-4 py-2 bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/40 transition-colors font-medium">
               Essay Topic Generator →
             </Link>
-            <Link to="/ai-writing-tools" className="inline-flex items-center px-4 py-2 bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/40 transition-colors font-medium">
+            <Link to="/ai-writing-tools/" className="inline-flex items-center px-4 py-2 bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/40 transition-colors font-medium">
               AI Writing Tools Suite →
             </Link>
           </div>

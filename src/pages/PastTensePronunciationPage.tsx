@@ -1,4 +1,4 @@
-
+﻿
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import GoogleAd from '../components/GoogleAd';
@@ -177,8 +177,8 @@ const PastTensePronunciationPage: React.FC = () => {
             </ArticleParagraph>
 
             {/* Key Insight Box */}
-            <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200 dark:bg-amber-900/20 dark:border-amber-800/30">
-                <h3 className="font-heading text-lg font-bold text-amber-800 mb-3 dark:text-amber-200">The Simple Rule</h3>
+            <div className="my-8 p-6 bg-teal-50 rounded-xl border border-teal-200 dark:bg-teal-900/20 dark:border-teal-800/30">
+                <h3 className="font-heading text-lg font-bold text-teal-800 mb-3 dark:text-teal-200">The Simple Rule</h3>
                 <p className="text-slate-700 dark:text-slate-300">
                     <strong>Touch your throat</strong> while saying the last sound of the base verb. If you feel vibration → use <strong>/d/</strong>. No vibration → use <strong>/t/</strong>. If it ends in t or d → use <strong>/ɪd/</strong>.
                 </p>
@@ -276,27 +276,27 @@ const PastTensePronunciationPage: React.FC = () => {
             <section className="mt-12 p-6 bg-slate-50 rounded-xl border border-slate-200 dark:bg-slate-800/50 dark:border-slate-700">
                 <h3 className="font-heading text-xl font-bold text-slate-800 mb-4 dark:text-slate-200">Related Pronunciation & Grammar Resources</h3>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <Link to="/pronunciation" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
+                    <Link to="/pronunciation/" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
                         <h4 className="font-semibold text-slate-800 dark:text-slate-200">Pronunciation Tool</h4>
                         <p className="text-sm text-slate-600 dark:text-slate-400">Look up any word's pronunciation</p>
                     </Link>
-                    <Link to="/irregular-verbs" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
+                    <Link to="/irregular-verbs/" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
                         <h4 className="font-semibold text-slate-800 dark:text-slate-200">Irregular Verbs</h4>
                         <p className="text-sm text-slate-600 dark:text-slate-400">Verbs that don't follow -ed rules</p>
                     </Link>
-                    <Link to="/topics/past-simple" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
+                    <Link to="/topics/past-simple/" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
                         <h4 className="font-semibold text-slate-800 dark:text-slate-200">Past Simple Tense</h4>
                         <p className="text-sm text-slate-600 dark:text-slate-400">When and how to use past tense</p>
                     </Link>
-                    <Link to="/homophones-homonyms-homographs" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
+                    <Link to="/homophones-homonyms-homographs/" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
                         <h4 className="font-semibold text-slate-800 dark:text-slate-200">Homophones</h4>
                         <p className="text-sm text-slate-600 dark:text-slate-400">Words that sound the same</p>
                     </Link>
-                    <Link to="/confused-words" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
+                    <Link to="/commonly-confused-words/" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
                         <h4 className="font-semibold text-slate-800 dark:text-slate-200">Confused Words</h4>
                         <p className="text-sm text-slate-600 dark:text-slate-400">Words that are often mixed up</p>
                     </Link>
-                    <Link to="/basic-grammar-terminology" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
+                    <Link to="/basic-grammar-terminology/" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
                         <h4 className="font-semibold text-slate-800 dark:text-slate-200">Grammar Terminology</h4>
                         <p className="text-sm text-slate-600 dark:text-slate-400">Key terms explained simply</p>
                     </Link>

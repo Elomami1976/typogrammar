@@ -1,0 +1,33 @@
+{
+  "$schema": "https://agentskills.io/schemas/v0.2.0/index.json",
+  "name": "TypoGrammar Agent Skills",
+  "description": "Discovery index of machine-readable skills and documentation exposed by TypoGrammar (https://typogrammar.com), a free English grammar and vocabulary learning hub.",
+  "publisher": {
+    "name": "TypoGrammar",
+    "url": "https://typogrammar.com"
+  },
+  "skills": [
+    {
+      "name": "llms-overview",
+      "type": "documentation",
+      "description": "Site-wide llms.txt overview describing TypoGrammar's structure, main sections, grammar topics, and canonical URLs for AI agents and LLMs.",
+      "url": "https://typogrammar.com/llms.txt",
+      "contentType": "text/markdown",
+      "sha256": "126abe927b1f8c045f34088f1c12d589ae146d6f00a123000057b0d8cf1c3912"
+    },
+    {
+      "name": "sitemap",
+      "type": "sitemap",
+      "description": "XML sitemap listing all crawlable URLs on TypoGrammar, including grammar topics, blog posts, IELTS/TOEFL prep pages, and reference materials.",
+      "url": "https://typogrammar.com/sitemap.xml",
+      "contentType": "application/xml"
+    },
+    {
+      "name": "robots",
+      "type": "policy",
+      "description": "Crawler access policy and Content-Signal declarations (search=yes, ai-train=no, ai-input=no) for TypoGrammar.",
+      "url": "https://typogrammar.com/robots.txt",
+      "contentType": "text/plain"
+    }
+  ]
+}

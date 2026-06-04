@@ -309,7 +309,7 @@ export const AUTHORS = [
 <div className="testimonials">
   <blockquote>
     "TypoGrammar helped me pass my IELTS exam with a band score of 8!"
-    <cite>— Sarah M., Germany</cite>
+    <cite>, Sarah M., Germany</cite>
   </blockquote>
   <!-- Add 5+ testimonials -->
 </div>

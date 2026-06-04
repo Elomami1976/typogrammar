@@ -1,14 +1,15 @@
-import React from 'react';
+﻿import React from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading } from '../components/ArticleComponents';
 import SchemaMarkup from '../components/SchemaMarkup';
+import AIAnswerBox from '../components/AIAnswerBox';
 
 const PastProgressiveTensePage: React.FC = () => {
   usePageMetadata({
     title: 'What Is the Past Progressive Tense? Definition, Rules & Examples',
     description: 'Learn what the Past Progressive (Past Continuous) tense is, when to use it, examples, common mistakes, and comparisons.',
-    canonical: 'https://typogrammar.com/grammar/verb-tenses/past-progressive'
+    canonical: 'https://typogrammar.com/grammar/verb-tenses/past-progressive/'
   });
 
   const articleSchema = {
@@ -89,12 +90,28 @@ const PastProgressiveTensePage: React.FC = () => {
           What Is the Past Progressive Tense?
         </h1>
 
-        <div className="bg-blue-50 dark:bg-slate-700 border-l-4 border-blue-600 p-6 mb-8">
-          <h2 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-3">Definition</h2>
-          <p className="text-lg text-slate-700 dark:text-slate-300">
-            The Past Progressive tense (also called Past Continuous) describes actions that were in progress at a specific time in the past, background actions, or interrupted actions. It emphasizes duration and continuity in past moments.
-          </p>
-        </div>
+        {/* Quick Answer block — emits DefinedTerm + FAQPage JSON-LD for AI engines */}
+        <AIAnswerBox
+          term="Past Progressive Tense (Past Continuous)"
+          answer="The past progressive tense describes an action that was in progress at a specific time in the past, often interrupted by another past action. It is formed with was/were + the -ing form of the verb. Example: 'I was reading when the phone rang.'"
+          keyFacts={[
+            'Formula: subject + was/were + verb-ing',
+            'Use: actions in progress in the past, interrupted actions, background description, parallel past actions',
+            'Signal words: while, as, when, at 5 p.m. yesterday, all day',
+            'Negative: was/were + not + verb-ing',
+            'Question: Was/Were + subject + verb-ing?',
+          ]}
+          faqs={[
+            {
+              q: 'When do we use past simple vs past progressive together?',
+              a: 'Use past progressive for the longer background action and past simple for the shorter interrupting action: "I was cooking dinner when the doorbell rang."',
+            },
+            {
+              q: 'Can stative verbs be used in the past progressive?',
+              a: 'Usually no. Use the past simple instead: "I knew the answer" (not "I was knowing the answer").',
+            },
+          ]}
+        />
 
         <ArticleHeading>When to Use the Past Progressive Tense</ArticleHeading>
         <ul className="list-disc list-inside space-y-3 mb-8 text-lg text-slate-700 dark:text-slate-300">
@@ -279,14 +296,14 @@ const PastProgressiveTensePage: React.FC = () => {
 
         <ArticleHeading>Next Steps</ArticleHeading>
         <ul className="list-disc list-inside space-y-2 mb-8 text-lg text-slate-700 dark:text-slate-300">
-          <li><Link to="/grammar/verb-tenses" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">Verb Tenses Overview</Link> - Learn all 12 English verb tenses</li>
-          <li><Link to="/grammar/verb-tenses/past-simple" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">What Is the Past Simple Tense?</Link> - Compare with Past Progressive</li>
-          <li><Link to="/quizzes/verb-tenses-quiz" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">Verb Tenses Quiz</Link> - Test your knowledge of all tenses</li>
+          <li><Link to="/grammar/verb-tenses/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">Verb Tenses Overview</Link> - Learn all 12 English verb tenses</li>
+          <li><Link to="/grammar/verb-tenses/past-simple/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">What Is the Past Simple Tense?</Link> - Compare with Past Progressive</li>
+          <li><Link to="/quizzes/verb-tenses-quiz/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">Verb Tenses Quiz</Link> - Test your knowledge of all tenses</li>
         </ul>
 
         <div className="bg-slate-100 dark:bg-slate-700 border border-slate-300 dark:border-slate-600 p-6 my-8 rounded-lg">
           <p className="text-slate-700 dark:text-slate-300 mb-4">
-            By <Link to="/about/editorial-team" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">TypoGrammar Editorial Team</Link>
+            By <Link to="/about/editorial-team/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">TypoGrammar Editorial Team</Link>
           </p>
           <p className="text-slate-700 dark:text-slate-300 mb-4">
             TypoGrammar Editorial Team creates independent, grammar-focused educational content to help English learners improve clarity, structure, and accuracy for academic and real-world use.

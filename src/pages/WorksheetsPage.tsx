@@ -203,15 +203,9 @@ const WorksheetsPage: React.FC = () => {
       category: 'Vocabulary'
     },
     {
-      title: 'Toys',
-      description: 'Common toys and playthings',
-      filename: 'toys.pdf',
-      category: 'Vocabulary'
-    },
-    {
-      title: 'Transport',
+      title: 'Transportation',
       description: 'Vehicles and transportation methods',
-      filename: 'transport.pdf',
+      filename: 'transportation.pdf',
       category: 'Vocabulary'
     },
     {

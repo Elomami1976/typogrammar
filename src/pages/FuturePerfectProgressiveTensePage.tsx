@@ -1,4 +1,5 @@
-import React from 'react';
+﻿import React from 'react';
+import AIAnswerBox from '../components/AIAnswerBox';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import SchemaMarkup from '../components/SchemaMarkup';
@@ -7,7 +8,7 @@ const FuturePerfectProgressiveTensePage: React.FC = () => {
   usePageMetadata({
     title: 'Future Perfect Progressive (Future Perfect Continuous) Tense: Rules & Examples | TypoGrammar',
     description: 'Learn the future perfect progressive tense with rules, structure, examples, signal words, and common mistakes. Simple explanation for English learners.',
-    canonical: 'https://typogrammar.com/grammar/verb-tenses/future-perfect-progressive'
+    canonical: 'https://typogrammar.com/grammar/verb-tenses/future-perfect-progressive/'
   });
 
   const articleSchema = {
@@ -45,9 +46,9 @@ const FuturePerfectProgressiveTensePage: React.FC = () => {
         <nav className="text-sm text-slate-600 dark:text-slate-400 mb-6">
           <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
           <span className="mx-2">›</span>
-          <Link to="/grammar" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar</Link>
+          <Link to="/grammar/" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar</Link>
           <span className="mx-2">›</span>
-          <Link to="/grammar/verb-tenses" className="hover:text-blue-600 dark:hover:text-blue-400">Verb Tenses</Link>
+          <Link to="/grammar/verb-tenses/" className="hover:text-blue-600 dark:hover:text-blue-400">Verb Tenses</Link>
           <span className="mx-2">›</span>
           <span className="text-slate-900 dark:text-slate-100">Future Perfect Progressive Tense</span>
         </nav>
@@ -62,7 +63,15 @@ const FuturePerfectProgressiveTensePage: React.FC = () => {
           Example: <em>By next year, she will have been working here for five years.</em>
         </p>
 
-        {/* Table of Contents */}
+                {/* Quick Answer block — emits DefinedTerm + FAQPage JSON-LD for AI engines */}
+        <AIAnswerBox
+          term={"Future Perfect Progressive Tense (Future Perfect Continuous)"}
+          answer={"The future perfect progressive describes the duration of an ongoing action up to a specific moment in the future. It is formed with will have been + the -ing form of the verb. Example: \"By next month, I will have been working here for ten years.\""}
+          keyFacts={["Formula: subject + will + have + been + verb-ing","Use: duration of an action up to a future point, emphasis on continuous activity, predictions about ongoing future situations","Signal words: by, by then, by the time, for, all day","Negative: will + not + have + been + verb-ing","Question: Will + subject + have + been + verb-ing?"]}
+          faqs={[{"q":"What is the difference between future perfect and future perfect progressive?","a":"Future perfect focuses on the completion of an action before a future point (\"I will have written the book by December\"). Future perfect progressive focuses on the duration of an ongoing action up to that future point (\"I will have been writing the book for two years by December\")."}]}
+        />
+
+{/* Table of Contents */}
         <div className="bg-slate-50 dark:bg-slate-700 p-6 rounded-lg mb-8">
           <h2 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-4">Table of Contents</h2>
           <ul className="space-y-2 text-blue-600 dark:text-blue-400">
@@ -289,17 +298,17 @@ const FuturePerfectProgressiveTensePage: React.FC = () => {
         <nav className="bg-slate-50 dark:bg-slate-700 p-6 rounded-lg mb-8">
           <h2 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-4">Related Verb Tenses</h2>
           <ul className="space-y-2">
-            <li><Link to="/grammar/verb-tenses/future-perfect" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Future Perfect</Link></li>
-            <li><Link to="/grammar/verb-tenses/future-progressive" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Future Continuous</Link></li>
-            <li><Link to="/grammar/verb-tenses/present-perfect-progressive" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Present Perfect Continuous</Link></li>
-            <li><Link to="/grammar/verb-tenses" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">All Verb Tenses</Link></li>
+            <li><Link to="/grammar/verb-tenses/future-perfect/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Future Perfect</Link></li>
+            <li><Link to="/grammar/verb-tenses/future-progressive/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Future Continuous</Link></li>
+            <li><Link to="/grammar/verb-tenses/present-perfect-progressive/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Present Perfect Continuous</Link></li>
+            <li><Link to="/grammar/verb-tenses/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">All Verb Tenses</Link></li>
           </ul>
         </nav>
 
         {/* Editorial Attribution */}
         <div className="bg-slate-100 dark:bg-slate-700 border border-slate-300 dark:border-slate-600 p-6 rounded-lg">
           <p className="text-slate-700 dark:text-slate-300 mb-4">
-            By <Link to="/about" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">TypoGrammar</Link>
+            By <Link to="/about/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">TypoGrammar</Link>
           </p>
           <p className="text-slate-700 dark:text-slate-300 mb-4">
             TypoGrammar creates clear, accurate grammar guides for English learners worldwide.

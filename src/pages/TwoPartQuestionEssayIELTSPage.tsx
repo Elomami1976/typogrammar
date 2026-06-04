@@ -1,12 +1,12 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading, CodeBlock, BulletList } from '../components/ArticleComponents';
 
 const TwoPartQuestionEssayIELTSPage: React.FC = () => {
   usePageMetadata({
-    title: 'IELTS Two-Part Question Essay – How to Answer Both Questions | TypoGrammar',
-    description: 'Discover how to answer both questions in IELTS Writing Task 2 with a Band 7–9 model essay and structure tips.'
+    title: 'IELTS Two-Part Question Essay - How to Answer Both Questions | TypoGrammar',
+    description: 'Discover how to answer both questions in IELTS Writing Task 2 with a Band 7-9 model essay and structure tips.'
   });
 
   const faqSchema = {
@@ -70,7 +70,7 @@ const TwoPartQuestionEssayIELTSPage: React.FC = () => {
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="mb-6">
           <Link 
-            to="/ielts/ielts-writing-task-2-essay-types" 
+            to="/ielts/ielts-writing-task-2-essay-types/" 
             className="text-blue-600 dark:text-blue-400 hover:underline text-sm"
           >
             ← Back to IELTS Writing Task 2 Essay Types
@@ -78,7 +78,7 @@ const TwoPartQuestionEssayIELTSPage: React.FC = () => {
         </div>
 
         <h1 className="text-4xl font-bold mb-6 text-slate-900 dark:text-slate-100">
-          IELTS Two-Part Question Essay – How to Answer Both Questions
+          IELTS Two-Part Question Essay - How to Answer Both Questions
         </h1>
 
         {/* Featured Snippet Box */}
@@ -87,7 +87,7 @@ const TwoPartQuestionEssayIELTSPage: React.FC = () => {
             📌 Quick Answer
           </h3>
           <p className="text-slate-800 dark:text-slate-200">
-            Answer both questions equally, usually one paragraph per question. The key is balance—
+            Answer both questions equally, usually one paragraph per question. The key is balance-
             don't spend three sentences on one question and a whole paragraph on another. Each 
             question deserves full development with explanations and examples.
           </p>
@@ -102,7 +102,7 @@ const TwoPartQuestionEssayIELTSPage: React.FC = () => {
         <ArticleHeading>How to Recognize This Essay Type</ArticleHeading>
 
         <ArticleParagraph>
-          Two-part question essays are easy to spot—they literally ask two questions:
+          Two-part question essays are easy to spot-they literally ask two questions:
         </ArticleParagraph>
 
         <BulletList items={[
@@ -127,7 +127,7 @@ const TwoPartQuestionEssayIELTSPage: React.FC = () => {
 
         <div className="bg-slate-100 dark:bg-slate-800 p-6 rounded-lg my-6">
           <h4 className="font-semibold mb-4 text-slate-900 dark:text-slate-100">
-            📐 Recommended Structure (Band 7–9)
+            📐 Recommended Structure (Band 7-9)
           </h4>
           <div className="space-y-4">
             <div>
@@ -142,7 +142,7 @@ const TwoPartQuestionEssayIELTSPage: React.FC = () => {
             </div>
             <div>
               <p className="font-medium text-slate-900 dark:text-slate-100">
-                2. Body Paragraph 1 – Answer Question 1 (5-6 sentences)
+                2. Body Paragraph 1 - Answer Question 1 (5-6 sentences)
               </p>
               <p className="text-sm text-slate-700 dark:text-slate-300 ml-4">
                 • Topic sentence addressing first question<br />
@@ -152,7 +152,7 @@ const TwoPartQuestionEssayIELTSPage: React.FC = () => {
             </div>
             <div>
               <p className="font-medium text-slate-900 dark:text-slate-100">
-                3. Body Paragraph 2 – Answer Question 2 (5-6 sentences)
+                3. Body Paragraph 2 - Answer Question 2 (5-6 sentences)
               </p>
               <p className="text-sm text-slate-700 dark:text-slate-300 ml-4">
                 • Topic sentence addressing second question<br />
@@ -450,7 +450,7 @@ Overall, although longer life expectancy creates challenges, it reflects positiv
           <p className="text-slate-800 dark:text-slate-200">
             📚 <strong>This article is part of our complete</strong>{' '}
             <Link 
-              to="/ielts/ielts-writing-task-2-essay-types" 
+              to="/ielts/ielts-writing-task-2-essay-types/" 
               className="text-green-700 dark:text-green-400 hover:underline font-medium"
             >
               IELTS Writing Task 2 Essay Types guide

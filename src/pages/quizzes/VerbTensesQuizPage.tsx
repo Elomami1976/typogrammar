@@ -1,9 +1,32 @@
-import React, { useState, useEffect } from 'react';
+﻿import React, { useState, useEffect } from 'react';
 import usePageMetadata from '../../hooks/usePageMetadata';
 import { useLanguage } from '../../contexts/LanguageContext';
 import GoogleAd from '../../components/GoogleAd';
 import ShareButtons from '../../components/ShareButtons';
 import quizData from '../../quiz-data/verb-tenses-quiz-50.json';
+import QuizResultsBreakdown from '../../components/QuizResultsBreakdown';
+import RelatedContent from '../../components/RelatedContent';
+
+// Map quiz tense labels → recommended grammar topic page
+const TENSE_TOPIC_MAP: Record<string, { to: string; label: string }> = {
+  'Present Simple': { to: '/topics/present-simple/', label: 'Present Simple Tense' },
+  'Present Continuous': { to: '/topics/present-progressive/', label: 'Present Progressive' },
+  'Past Simple': { to: '/topics/past-simple/', label: 'Past Simple Tense' },
+  'Past Continuous': { to: '/topics/past-progressive/', label: 'Past Progressive' },
+  'Past Continuous vs Past Simple': { to: '/topics/past-progressive/', label: 'Past Progressive' },
+  'Present Perfect': { to: '/topics/present-perfect/', label: 'Present Perfect Tense' },
+  'Present Perfect vs Past Simple': { to: '/topics/present-perfect/', label: 'Present Perfect Tense' },
+  'Present Perfect Continuous': { to: '/topics/present-perfect-progressive/', label: 'Present Perfect Progressive' },
+  'Present Perfect Continuous vs Present Perfect': { to: '/topics/present-perfect-progressive/', label: 'Present Perfect Progressive' },
+  'Past Perfect': { to: '/topics/past-perfect/', label: 'Past Perfect Tense' },
+  'Past Perfect Continuous': { to: '/topics/past-perfect-progressive/', label: 'Past Perfect Progressive' },
+  'Future (will)': { to: '/topics/future-simple/', label: 'Future Simple Tense' },
+  'Future (going to)': { to: '/topics/future-simple/', label: 'Future Simple Tense' },
+  'Future (Present Continuous)': { to: '/topics/present-progressive/', label: 'Present Progressive' },
+  'Future Continuous': { to: '/topics/future-progressive/', label: 'Future Progressive' },
+  'Future Perfect': { to: '/topics/future-perfect/', label: 'Future Perfect Tense' },
+  'Mixed Conditionals': { to: '/grammar-guide/', label: 'Conditionals (Grammar Guide)' },
+};
 
 interface QuizQuestion {
   id: number;
@@ -39,6 +62,7 @@ const VerbTensesQuizPage: React.FC = () => {
   const [showAllAnswers, setShowAllAnswers] = useState(false);
   const [showResults, setShowResults] = useState(false);
   const [score, setScore] = useState(0);
+  const [filterWrongOnly, setFilterWrongOnly] = useState(false);
 
   const data = quizData as QuizData;
 
@@ -268,12 +292,35 @@ const VerbTensesQuizPage: React.FC = () => {
           <GoogleAd adSlot="6406598038" />
         </div>
 
+        {/* Wrong-answer filter banner (shown after results) */}
+        {showResults && (
+          <div className="mb-6 p-4 rounded-xl bg-amber-50 border border-amber-200 dark:bg-amber-900/20 dark:border-amber-800 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+            <p className="text-sm text-amber-900 dark:text-amber-200">
+              <strong>Targeted review mode.</strong>{' '}
+              {filterWrongOnly
+                ? 'Showing only questions you got wrong. Study these to improve fastest.'
+                : 'Hide correct answers and focus only on the questions you missed.'}
+            </p>
+            <button
+              type="button"
+              onClick={() => setFilterWrongOnly((v) => !v)}
+              className="flex-shrink-0 bg-amber-500 hover:bg-amber-600 text-white text-sm font-semibold py-2 px-4 rounded-lg transition-colors"
+            >
+              {filterWrongOnly ? 'Show all questions' : 'Show wrong only'}
+            </button>
+          </div>
+        )}
+
         {/* Questions */}
         <div className="space-y-8">
           {data.questions.map((question, index) => {
             const isChecked = checkedQuestions[question.id];
             const selectedAnswer = selectedAnswers[question.id];
             const isCorrect = selectedAnswer === question.correct;
+            // When in "wrong only" mode after results, hide correct/unanswered questions
+            if (showResults && filterWrongOnly && (isCorrect || !selectedAnswer)) {
+              return null;
+            }
 
             return (
               <div
@@ -418,9 +465,9 @@ const VerbTensesQuizPage: React.FC = () => {
       {/* Results Section */}
       {showResults && (
         <section id="results-section" className="bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-800 dark:to-purple-800 text-white py-16 px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-6">Your Results</h2>
-            <div className="bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 rounded-2xl p-8 shadow-2xl">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl font-bold mb-6 text-center">Your Results</h2>
+            <div className="bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 rounded-2xl p-8 shadow-2xl text-center mb-6">
               <div className="text-6xl font-bold text-indigo-600 dark:text-indigo-400 mb-4">
                 {score} / {data.questions.length}
               </div>
@@ -437,6 +484,7 @@ const VerbTensesQuizPage: React.FC = () => {
                     setCheckedQuestions({});
                     setShowAllAnswers(false);
                     setShowResults(false);
+                    setFilterWrongOnly(false);
                     window.scrollTo({ top: 0, behavior: 'smooth' });
                   }}
                   className="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
@@ -449,9 +497,79 @@ const VerbTensesQuizPage: React.FC = () => {
                 />
               </div>
             </div>
+
+            {/* Per-tense weak-area breakdown */}
+            <QuizResultsBreakdown
+              answers={data.questions.map((q) => ({
+                questionId: q.id,
+                tense: q.tense,
+                difficulty: q.difficulty,
+                correct: selectedAnswers[q.id] === q.correct,
+              }))}
+              topicMap={TENSE_TOPIC_MAP}
+              hasWrong={score < data.questions.length}
+              onReviewWrong={() => {
+                setFilterWrongOnly(true);
+                setTimeout(() => {
+                  document.getElementById('quiz-section')?.scrollIntoView({ behavior: 'smooth' });
+                }, 50);
+              }}
+            />
           </div>
         </section>
       )}
+
+      {/* Continue Learning rail — shown always to maximize engagement */}
+      <div className="max-w-4xl mx-auto px-4">
+        <RelatedContent
+          title="Continue Learning"
+          description="Recommended next steps to lock in everything you just practiced."
+          items={[
+            {
+              to: '/verb-tenses/',
+              title: 'Verb Tenses Hub: All 12 Tenses Explained',
+              subtitle: 'Master each tense with examples, timelines, and rules.',
+              badge: 'Lesson',
+              meta: '15 min',
+            },
+            {
+              to: '/topics/present-perfect/',
+              title: 'Present Perfect Tense',
+              subtitle: 'The #1 tense ESL learners struggle with — clear up the confusion.',
+              badge: 'Lesson',
+              meta: '8 min',
+            },
+            {
+              to: '/ielts/english-grammar-pdf/',
+              title: 'Free English Grammar PDF',
+              subtitle: 'Download the complete workbook with exercises.',
+              badge: 'PDF',
+              meta: 'Free',
+            },
+            {
+              to: '/grammar-checker/',
+              title: 'Free Grammar Checker',
+              subtitle: 'Paste any sentence and get instant corrections.',
+              badge: 'Tool',
+              meta: 'No signup',
+            },
+            {
+              to: '/blog/common-grammar-mistakes-in-english/',
+              title: '50 Common Grammar Mistakes',
+              subtitle: 'See the errors 94% of learners make — and how to fix them.',
+              badge: 'Article',
+              meta: '12 min read',
+            },
+            {
+              to: '/quizzes/verb-tenses-quiz/',
+              title: 'Retake This Quiz',
+              subtitle: 'Try again to beat your score.',
+              badge: 'Quiz',
+              meta: '50 questions',
+            },
+          ]}
+        />
+      </div>
 
       {/* Educational Content Section */}
       <section className="max-w-4xl mx-auto py-16 px-4">
@@ -460,7 +578,7 @@ const VerbTensesQuizPage: React.FC = () => {
             What This Verb Tense Quiz Covers
           </h2>
           <p className="text-lg text-slate-700 dark:text-slate-300 mb-6">
-            This comprehensive quiz tests your understanding of all major English verb tenses. Master these tenses to improve your <a href="/ielts" className="text-blue-600 dark:text-blue-400 hover:underline">IELTS</a> and <a href="/toefl" className="text-blue-600 dark:text-blue-400 hover:underline">TOEFL</a> scores.
+            This comprehensive quiz tests your understanding of all major English verb tenses. Master these tenses to improve your <a href="/ielts/" className="text-blue-600 dark:text-blue-400 hover:underline">IELTS</a> and <a href="/toefl/" className="text-blue-600 dark:text-blue-400 hover:underline">TOEFL</a> scores.
           </p>
           <ul className="space-y-3 text-slate-700 dark:text-slate-300 mb-8">
             <li className="flex items-start">
@@ -532,7 +650,7 @@ const VerbTensesQuizPage: React.FC = () => {
             <div className="border-l-4 border-blue-600 dark:border-blue-400 pl-4">
               <h3 className="font-bold text-xl mb-2">5. Use Online Resources</h3>
               <p>
-                Visit <a href="/what-is-typogrammar" className="text-blue-600 dark:text-blue-400 hover:underline">TypoGrammar</a> regularly for grammar lessons, quizzes, and exercises to strengthen your understanding of English verb tenses.
+                Visit <a href="/what-is-typogrammar/" className="text-blue-600 dark:text-blue-400 hover:underline">TypoGrammar</a> regularly for grammar lessons, quizzes, and exercises to strengthen your understanding of English verb tenses.
               </p>
             </div>
           </div>
@@ -586,19 +704,19 @@ const VerbTensesQuizPage: React.FC = () => {
             </p>
             <div className="flex flex-wrap gap-4">
               <a
-                href="/what-is-typogrammar"
+                href="/what-is-typogrammar/"
                 className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
               >
                 About TypoGrammar
               </a>
               <a
-                href="/ielts/ielts-writing-task-2-essay-types"
+                href="/ielts/ielts-writing-task-2-essay-types/"
                 className="inline-block bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 text-slate-800 dark:text-slate-200 px-6 py-3 rounded-lg font-semibold transition-colors"
               >
                 IELTS Preparation
               </a>
               <a
-                href="/grammar-guide"
+                href="/grammar-guide/"
                 className="inline-block bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 text-slate-800 dark:text-slate-200 px-6 py-3 rounded-lg font-semibold transition-colors"
               >
                 Browse All Topics

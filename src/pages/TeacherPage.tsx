@@ -83,7 +83,7 @@ const prompts = [
   },
   {
     title: "Assessment Rubric Maker",
-    text: "Create a simple rubric (1–5 scale) for assessing students' English speaking performance, focusing on fluency, pronunciation, vocabulary use, and accuracy."
+    text: "Create a simple rubric (1-5 scale) for assessing students' English speaking performance, focusing on fluency, pronunciation, vocabulary use, and accuracy."
   },
   {
     title: "Story Cube Generator",
@@ -95,11 +95,11 @@ const prompts = [
   },
   {
     title: "Email Writing Workshop",
-    text: "Create a mini-lesson for B1–B2 students on writing polite emails in English. Include a short explanation, a model email, a transformation exercise (informal → formal), and an error-correction task."
+    text: "Create a mini-lesson for B1-B2 students on writing polite emails in English. Include a short explanation, a model email, a transformation exercise (informal → formal), and an error-correction task."
   },
   {
     title: "Culture & Speaking Activity",
-    text: "Prepare 10 discussion questions about cultural differences in food, festivals, and daily life for mixed-level ESL classes. Include easier versions (A2–B1) and more advanced versions (B2–C1)."
+    text: "Prepare 10 discussion questions about cultural differences in food, festivals, and daily life for mixed-level ESL classes. Include easier versions (A2-B1) and more advanced versions (B2-C1)."
   },
   {
     title: "Gamified Vocabulary Review",
@@ -115,15 +115,15 @@ const prompts = [
   },
   {
     title: "Flipped Classroom Lesson Designer",
-    text: "Create a flipped classroom lesson on reported speech for B1–B2 learners. Include: a short video script (3 minutes) explaining the grammar rules with examples, 5 pre-class comprehension questions, and an in-class activity plan with pair work, error correction, and a communicative task where students report on a news article."
+    text: "Create a flipped classroom lesson on reported speech for B1-B2 learners. Include: a short video script (3 minutes) explaining the grammar rules with examples, 5 pre-class comprehension questions, and an in-class activity plan with pair work, error correction, and a communicative task where students report on a news article."
   },
   {
     title: "End-of-Term Review Game",
-    text: "Design a Jeopardy-style review game covering 5 grammar topics (tenses, articles, prepositions, conditionals, passive voice) for mixed B1–B2 classes. Create 5 questions per category at increasing difficulty (100–500 points), include answer keys, and provide rules for team play with a scoring sheet."
+    text: "Design a Jeopardy-style review game covering 5 grammar topics (tenses, articles, prepositions, conditionals, passive voice) for mixed B1-B2 classes. Create 5 questions per category at increasing difficulty (100-500 points), include answer keys, and provide rules for team play with a scoring sheet."
   },
   {
     title: "Scaffolded Writing Workshop",
-    text: "Create a step-by-step guided writing workshop for A2–B1 learners on writing a 'for and against' essay about social media. Include: a brainstorming template, useful phrases for each paragraph, a model essay with annotations explaining structure and linking words, a peer review checklist, and a self-editing guide focusing on common errors."
+    text: "Create a step-by-step guided writing workshop for A2-B1 learners on writing a 'for and against' essay about social media. Include: a brainstorming template, useful phrases for each paragraph, a model essay with annotations explaining structure and linking words, a peer review checklist, and a self-editing guide focusing on common errors."
   }
 ];
 
@@ -166,9 +166,9 @@ const PromptCard: React.FC<{
 
 const TeacherPage: React.FC = () => {
   usePageMetadata({
-    title: '30 Free AI Prompts for English Teachers 2026 – ChatGPT Lesson Plans & ESL Activities | TypoGrammar',
+    title: '30 Free AI Prompts for English Teachers 2026 - ChatGPT Lesson Plans & ESL Activities | TypoGrammar',
     description: 'Copy 30 free AI prompts for ESL/EFL teachers. Generate lesson plans, grammar exercises, speaking activities, vocabulary games & assessment rubrics with ChatGPT, Claude, or Gemini in seconds.',
-    ogTitle: '30 Free AI Prompts for English Teachers – ChatGPT Lesson Plans & ESL Activities',
+    ogTitle: '30 Free AI Prompts for English Teachers - ChatGPT Lesson Plans & ESL Activities',
     ogDescription: 'Ready-to-use AI prompts for teachers: lesson plans, worksheets, quizzes, speaking activities, and rubrics. Save hours of prep time with ChatGPT.',
     ogType: 'article',
     ogUrl: 'https://typogrammar.com/teacher'
@@ -191,7 +191,7 @@ const TeacherPage: React.FC = () => {
       <SchemaMarkup
         type="Article"
         data={{
-          headline: '30 Free AI Prompts for English Teachers 2026 – ChatGPT Lesson Plans & ESL Activities',
+          headline: '30 Free AI Prompts for English Teachers 2026 - ChatGPT Lesson Plans & ESL Activities',
           description: 'Copy 30 free AI prompts for ESL/EFL teachers. Generate lesson plans, grammar exercises, speaking activities, vocabulary games & assessment rubrics with ChatGPT, Claude, or Gemini.',
           author: { '@type': 'Organization', name: 'Typogrammar', url: 'https://typogrammar.com/about' },
           publisher: { '@type': 'Organization', name: 'Typogrammar', url: 'https://typogrammar.com' },
@@ -218,7 +218,7 @@ const TeacherPage: React.FC = () => {
       </div>
       
       <ArticleParagraph>
-        These <strong>30 ready-to-use AI prompts</strong> are designed for ESL and English teachers to use with ChatGPT, Gemini, Claude, or any AI language model. Copy any prompt below to instantly generate lesson plans, grammar exercises, speaking activities, writing workshops, vocabulary games, and assessment rubrics — saving hours of preparation time.
+        These <strong>30 ready-to-use AI prompts</strong> are designed for ESL and English teachers to use with ChatGPT, Gemini, Claude, or any AI language model. Copy any prompt below to instantly generate lesson plans, grammar exercises, speaking activities, writing workshops, vocabulary games, and assessment rubrics, saving hours of preparation time.
       </ArticleParagraph>
 
       <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-5 my-6 rounded-r-lg">
@@ -243,7 +243,7 @@ const TeacherPage: React.FC = () => {
       <div className="bg-slate-50 dark:bg-slate-700/50 p-6 my-8 rounded-lg border border-slate-200 dark:border-slate-600">
         <h2 className="font-heading text-2xl font-bold text-slate-900 dark:text-slate-100 mb-3">Why Use AI Prompts for Teaching?</h2>
         <ArticleParagraph>
-          AI tools like ChatGPT can help teachers create differentiated materials, generate practice exercises at multiple levels, and brainstorm fresh activity ideas in minutes. These prompts are starting points — adjust proficiency levels, topics, and formats to fit your students' needs.
+          AI tools like ChatGPT can help teachers create differentiated materials, generate practice exercises at multiple levels, and brainstorm fresh activity ideas in minutes. These prompts are starting points, adjust proficiency levels, topics, and formats to fit your students' needs.
         </ArticleParagraph>
         <ArticleParagraph>
           <strong>Tip:</strong> Combine prompts for richer results. For example, use the <em>Lesson Plan Generator</em> first, then follow up with the <em>Assessment Rubric Maker</em> to create a complete teaching package.

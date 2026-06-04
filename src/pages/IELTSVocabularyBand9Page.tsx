@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading } from '../components/ArticleComponents';
@@ -167,7 +167,7 @@ const IELTSVocabularyBand9Page: React.FC = () => {
         <div className="bg-gradient-to-r from-emerald-100 to-teal-100 dark:from-slate-700 dark:to-slate-600 border-l-4 border-emerald-600 p-6 rounded-lg mb-8 shadow-md">
           <h2 className="text-lg font-bold text-slate-900 dark:text-white mb-2">What is IELTS Band 9 Vocabulary?</h2>
           <p className="text-slate-800 dark:text-slate-200 leading-relaxed mb-4">
-            <strong>Band 9 vocabulary</strong> demonstrates complete control, sophisticated nuance, and perfect appropriateness in formal academic contexts. These words are used sparingly and precisely—quality over quantity—showing examiner-level mastery.
+            <strong>Band 9 vocabulary</strong> demonstrates complete control, sophisticated nuance, and perfect appropriateness in formal academic contexts. These words are used sparingly and precisely-quality over quantity-showing examiner-level mastery.
           </p>
           <div className="bg-white/50 dark:bg-slate-800/50 p-4 rounded-lg">
             <h3 className="font-semibold text-slate-900 dark:text-white mb-2">Quick Answer: What does Band 9 Lexical Resource require?</h3>
@@ -197,7 +197,7 @@ const IELTSVocabularyBand9Page: React.FC = () => {
               <span className="text-emerald-500 text-xl">📚</span>
               <div>
                 <h3 className="font-bold text-slate-900 dark:text-white">Native-speaker intuition</h3>
-                <p>Band 9 vocabulary sounds like it was written by an educated native speaker—natural, flowing, and without any vocabulary "showing off."</p>
+                <p>Band 9 vocabulary sounds like it was written by an educated native speaker-natural, flowing, and without any vocabulary "showing off."</p>
               </div>
             </div>
           </div>
@@ -218,7 +218,7 @@ const IELTSVocabularyBand9Page: React.FC = () => {
           <div className="flex flex-wrap items-center gap-4 text-sm text-slate-600 dark:text-slate-400 mb-6">
             <span className="flex items-center gap-1">
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"/></svg>
-              By <Link to="/about" className="text-blue-600 dark:text-blue-400 hover:underline">Typogrammar Team</Link>
+              By <Link to="/about/" className="text-blue-600 dark:text-blue-400 hover:underline">Typogrammar Team</Link>
             </span>
             <span className="flex items-center gap-1">
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd"/></svg>
@@ -402,7 +402,7 @@ const IELTSVocabularyBand9Page: React.FC = () => {
             </div>
           )}
 
-          <div className="mt-6 p-4 bg-amber-50 dark:bg-amber-900/20 border-l-4 border-amber-500 rounded-lg">
+          <div className="mt-6 p-4 bg-teal-50 dark:bg-teal-900/20 border-l-4 border-teal-500 rounded-lg">
             <p className="text-slate-700 dark:text-slate-300">
               💡 <strong>Band 9 Tip:</strong> Use these words sparingly. Quality over quantity. One well-placed advanced word is better than several forced ones.
             </p>
@@ -410,14 +410,14 @@ const IELTSVocabularyBand9Page: React.FC = () => {
         </div>
 
         {/* Navigation to Previous Band */}
-        <div className="mt-8 bg-gradient-to-r from-orange-500 to-amber-600 rounded-2xl shadow-xl p-8 text-white">
+        <div className="mt-8 bg-gradient-to-r from-teal-500 to-teal-600 rounded-2xl shadow-xl p-8 text-white">
           <h3 className="text-2xl font-bold mb-3">Master the Foundation First</h3>
-          <p className="text-orange-100 mb-6">
+          <p className="text-teal-100 mb-6">
             Before using Band 9 vocabulary, ensure you've mastered <strong>Band 8 precision and control</strong>. Building a strong foundation is essential for natural, sophisticated language use.
           </p>
           <Link
-            to="/ielts/vocabulary/band-8"
-            className="inline-block bg-white text-orange-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-orange-50 transition-all shadow-lg hover:shadow-xl"
+            to="/ielts/vocabulary/band-8/"
+            className="inline-block bg-white text-teal-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-teal-50 transition-all shadow-lg hover:shadow-xl"
           >
             ← Review Band 8 Vocabulary
           </Link>
@@ -428,13 +428,13 @@ const IELTSVocabularyBand9Page: React.FC = () => {
           <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4 text-center">🏆 Complete Your IELTS Vocabulary Journey</h3>
           <p className="text-slate-600 dark:text-slate-400 text-center mb-6">Review all band levels to ensure comprehensive mastery</p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <Link to="/ielts/vocabulary/band-6" className="bg-blue-500 hover:bg-blue-600 text-white p-4 rounded-lg text-center font-bold transition-colors">
+            <Link to="/ielts/vocabulary/band-6/" className="bg-blue-500 hover:bg-blue-600 text-white p-4 rounded-lg text-center font-bold transition-colors">
               Band 6
             </Link>
-            <Link to="/ielts/vocabulary/band-7" className="bg-purple-500 hover:bg-purple-600 text-white p-4 rounded-lg text-center font-bold transition-colors">
+            <Link to="/ielts/vocabulary/band-7/" className="bg-purple-500 hover:bg-purple-600 text-white p-4 rounded-lg text-center font-bold transition-colors">
               Band 7
             </Link>
-            <Link to="/ielts/vocabulary/band-8" className="bg-orange-500 hover:bg-orange-600 text-white p-4 rounded-lg text-center font-bold transition-colors">
+            <Link to="/ielts/vocabulary/band-8/" className="bg-teal-500 hover:bg-teal-600 text-white p-4 rounded-lg text-center font-bold transition-colors">
               Band 8
             </Link>
             <div className="bg-emerald-500 text-white p-4 rounded-lg text-center font-bold opacity-50 cursor-default">
@@ -447,19 +447,19 @@ const IELTSVocabularyBand9Page: React.FC = () => {
         <div className="mt-8 bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-8">
           <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">Expert-Level IELTS Preparation</h3>
           <div className="grid md:grid-cols-2 gap-4">
-            <Link to="/ielts/mixed-essay-types-ielts" className="p-4 border-2 border-emerald-200 dark:border-emerald-800 rounded-lg hover:border-emerald-400 dark:hover:border-emerald-600 transition-colors">
+            <Link to="/ielts/mixed-essay-types-ielts/" className="p-4 border-2 border-emerald-200 dark:border-emerald-800 rounded-lg hover:border-emerald-400 dark:hover:border-emerald-600 transition-colors">
               <h4 className="font-bold text-emerald-600 dark:text-emerald-400 mb-2">Mixed Essay Types</h4>
               <p className="text-slate-600 dark:text-slate-400 text-sm">Handle complex IELTS essay questions</p>
             </Link>
-            <Link to="/ielts/two-part-question-essay-ielts" className="p-4 border-2 border-teal-200 dark:border-teal-800 rounded-lg hover:border-teal-400 dark:hover:border-teal-600 transition-colors">
+            <Link to="/ielts/two-part-question-essay-ielts/" className="p-4 border-2 border-teal-200 dark:border-teal-800 rounded-lg hover:border-teal-400 dark:hover:border-teal-600 transition-colors">
               <h4 className="font-bold text-teal-600 dark:text-teal-400 mb-2">Two-Part Question Essays</h4>
               <p className="text-slate-600 dark:text-slate-400 text-sm">Address multiple prompts effectively</p>
             </Link>
-            <Link to="/writing/how-to-vary-sentence-structure" className="p-4 border-2 border-indigo-200 dark:border-indigo-800 rounded-lg hover:border-indigo-400 dark:hover:border-indigo-600 transition-colors">
+            <Link to="/writing/how-to-vary-sentence-structure/" className="p-4 border-2 border-indigo-200 dark:border-indigo-800 rounded-lg hover:border-indigo-400 dark:hover:border-indigo-600 transition-colors">
               <h4 className="font-bold text-indigo-600 dark:text-indigo-400 mb-2">Varying Sentence Structure</h4>
               <p className="text-slate-600 dark:text-slate-400 text-sm">Create sophisticated, varied sentences</p>
             </Link>
-            <Link to="/essay-types" className="p-4 border-2 border-slate-200 dark:border-slate-700 rounded-lg hover:border-slate-400 dark:hover:border-slate-600 transition-colors">
+            <Link to="/essay-types/" className="p-4 border-2 border-slate-200 dark:border-slate-700 rounded-lg hover:border-slate-400 dark:hover:border-slate-600 transition-colors">
               <h4 className="font-bold text-slate-600 dark:text-slate-400 mb-2">Complete Essay Types Guide</h4>
               <p className="text-slate-600 dark:text-slate-400 text-sm">Master all academic essay formats</p>
             </Link>
@@ -481,7 +481,7 @@ const IELTSVocabularyBand9Page: React.FC = () => {
             
             <div className="border-b border-slate-200 dark:border-slate-700 pb-6">
               <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">How many Band 9 words should I use in my IELTS essay?</h3>
-              <p className="text-slate-700 dark:text-slate-300">Use only 2-3 Band 9 words per IELTS essay. These sophisticated terms should feel natural and appropriate in context. Overusing them sounds forced and unnatural. Focus on precision—one perfectly placed Band 9 word demonstrates true mastery.</p>
+              <p className="text-slate-700 dark:text-slate-300">Use only 2-3 Band 9 words per IELTS essay. These sophisticated terms should feel natural and appropriate in context. Overusing them sounds forced and unnatural. Focus on precision-one perfectly placed Band 9 word demonstrates true mastery.</p>
             </div>
             
             <div className="border-b border-slate-200 dark:border-slate-700 pb-6">
@@ -491,17 +491,17 @@ const IELTSVocabularyBand9Page: React.FC = () => {
             
             <div className="border-b border-slate-200 dark:border-slate-700 pb-6">
               <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">What is the difference between Band 8 and Band 9 vocabulary?</h3>
-              <p className="text-slate-700 dark:text-slate-300">Band 8 shows "wide range" with "rare errors," while Band 9 shows "full flexibility" with "no noticeable errors." Band 9 vocabulary feels completely natural—as if written by an educated native speaker. The difference is subtle but involves perfect register awareness and absolute precision.</p>
+              <p className="text-slate-700 dark:text-slate-300">Band 8 shows "wide range" with "rare errors," while Band 9 shows "full flexibility" with "no noticeable errors." Band 9 vocabulary feels completely natural-as if written by an educated native speaker. The difference is subtle but involves perfect register awareness and absolute precision.</p>
             </div>
             
             <div className="border-b border-slate-200 dark:border-slate-700 pb-6">
               <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">How can I learn Band 9 vocabulary naturally?</h3>
-              <p className="text-slate-700 dark:text-slate-300">Read extensively—academic journals, quality newspapers (The Economist, Guardian), and published essays. Note how sophisticated vocabulary is used sparingly. Practice writing and get native speaker feedback. Focus on learning when NOT to use advanced words as much as when to use them.</p>
+              <p className="text-slate-700 dark:text-slate-300">Read extensively-academic journals, quality newspapers (The Economist, Guardian), and published essays. Note how sophisticated vocabulary is used sparingly. Practice writing and get native speaker feedback. Focus on learning when NOT to use advanced words as much as when to use them.</p>
             </div>
             
             <div className="pb-2">
               <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">Is Band 9 vocabulary achievable for non-native speakers?</h3>
-              <p className="text-slate-700 dark:text-slate-300">Absolutely! Many non-native speakers achieve Band 9 through extensive reading, practice, and feedback. The key is developing an intuitive sense for natural vocabulary use—this comes from exposure to quality English, not memorizing word lists.</p>
+              <p className="text-slate-700 dark:text-slate-300">Absolutely! Many non-native speakers achieve Band 9 through extensive reading, practice, and feedback. The key is developing an intuitive sense for natural vocabulary use-this comes from exposure to quality English, not memorizing word lists.</p>
             </div>
           </div>
         </div>
@@ -524,7 +524,7 @@ const IELTSVocabularyBand9Page: React.FC = () => {
                 name: 'How many Band 9 words should I use in my essay?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Use only 2-3 Band 9 words per IELTS essay. These sophisticated terms should feel natural and appropriate in context. Overusing them sounds forced and unnatural. Focus on precision—one perfectly placed Band 9 word demonstrates true mastery.'
+                  text: 'Use only 2-3 Band 9 words per IELTS essay. These sophisticated terms should feel natural and appropriate in context. Overusing them sounds forced and unnatural. Focus on precision-one perfectly placed Band 9 word demonstrates true mastery.'
                 }
               },
               {
@@ -540,7 +540,7 @@ const IELTSVocabularyBand9Page: React.FC = () => {
                 name: 'What is the difference between Band 8 and Band 9 vocabulary?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Band 8 shows wide range with rare errors, while Band 9 shows full flexibility with no noticeable errors. Band 9 vocabulary feels completely natural—as if written by an educated native speaker. The difference is subtle but involves perfect register awareness and absolute precision.'
+                  text: 'Band 8 shows wide range with rare errors, while Band 9 shows full flexibility with no noticeable errors. Band 9 vocabulary feels completely natural-as if written by an educated native speaker. The difference is subtle but involves perfect register awareness and absolute precision.'
                 }
               },
               {
@@ -548,7 +548,7 @@ const IELTSVocabularyBand9Page: React.FC = () => {
                 name: 'How can I learn Band 9 vocabulary naturally?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Read extensively—academic journals, quality newspapers (The Economist, Guardian), and published essays. Note how sophisticated vocabulary is used sparingly. Practice writing and get native speaker feedback. Focus on learning when NOT to use advanced words as much as when to use them.'
+                  text: 'Read extensively-academic journals, quality newspapers (The Economist, Guardian), and published essays. Note how sophisticated vocabulary is used sparingly. Practice writing and get native speaker feedback. Focus on learning when NOT to use advanced words as much as when to use them.'
                 }
               },
               {
@@ -556,7 +556,7 @@ const IELTSVocabularyBand9Page: React.FC = () => {
                 name: 'Is Band 9 vocabulary achievable for non-native speakers?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Absolutely! Many non-native speakers achieve Band 9 through extensive reading, practice, and feedback. The key is developing an intuitive sense for natural vocabulary use—this comes from exposure to quality English, not memorizing word lists.'
+                  text: 'Absolutely! Many non-native speakers achieve Band 9 through extensive reading, practice, and feedback. The key is developing an intuitive sense for natural vocabulary use-this comes from exposure to quality English, not memorizing word lists.'
                 }
               }
             ]

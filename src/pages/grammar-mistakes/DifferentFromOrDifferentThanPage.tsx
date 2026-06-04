@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../../hooks/usePageMetadata';
 import SchemaMarkup from '../../components/SchemaMarkup';
@@ -7,7 +7,7 @@ const DifferentFromOrDifferentThanPage: React.FC = () => {
   usePageMetadata({
     title: 'Different From or Different Than? Which One Is Correct | TypoGrammar',
     description: 'Learn whether to say "different from" or "different than." "Different from" is standard in British English; "different than" is common in American English.',
-    canonical: 'https://typogrammar.com/grammar-mistakes/different-from-or-different-than'
+    canonical: 'https://typogrammar.com/grammar-mistakes/different-from-or-different-than/'
   });
 
   const [showAnswer, setShowAnswer] = useState(false);
@@ -31,7 +31,7 @@ const DifferentFromOrDifferentThanPage: React.FC = () => {
       <nav className="mb-6 text-slate-600 dark:text-slate-400">
         <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
         {' › '}
-        <Link to="/grammar-mistakes" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
+        <Link to="/grammar-mistakes/" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
         {' › '}
         <span className="text-slate-900 dark:text-slate-100">Different From or Different Than</span>
       </nav>
@@ -66,8 +66,8 @@ const DifferentFromOrDifferentThanPage: React.FC = () => {
               <h3 className="text-lg font-bold text-purple-900 dark:text-purple-100 mb-2">Different THAN (American English)</h3>
               <p className="text-slate-700 dark:text-slate-300">Common in American English, especially before clauses. Considered less formal.</p>
             </div>
-            <div className="bg-amber-50 dark:bg-amber-900/20 p-4 rounded-lg">
-              <h3 className="text-lg font-bold text-amber-900 dark:text-amber-100 mb-2">Different TO (British English)</h3>
+            <div className="bg-teal-50 dark:bg-teal-900/20 p-4 rounded-lg">
+              <h3 className="text-lg font-bold text-teal-900 dark:text-teal-100 mb-2">Different TO (British English)</h3>
               <p className="text-slate-700 dark:text-slate-300">Used in British English but less common than "different from."</p>
             </div>
           </div>
@@ -136,7 +136,7 @@ const DifferentFromOrDifferentThanPage: React.FC = () => {
           <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
             Practice
           </h2>
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-6 rounded-lg">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-6 rounded-lg">
             <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
               <strong>Choose the best answer for formal writing:</strong>
             </p>
@@ -169,22 +169,22 @@ const DifferentFromOrDifferentThanPage: React.FC = () => {
           </h2>
           <ul className="space-y-2 text-lg">
             <li>
-              <Link to="/grammar-mistakes/interested-in-or-interested-on" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/interested-in-or-interested-on/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Interested In or Interested On?
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/good-in-or-good-at" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/good-in-or-good-at/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Good In or Good At?
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/married-with-or-married-to" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/married-with-or-married-to/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Married With or Married To?
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → All Grammar Mistakes
               </Link>
             </li>

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import SchemaMarkup from '../components/SchemaMarkup';
@@ -6,15 +6,15 @@ import SchemaMarkup from '../components/SchemaMarkup';
 const TOEFLDailyLifeReadingTaskPage: React.FC = () => {
   usePageMetadata({
     title: 'TOEFL Daily Life Reading Task: What It Is + How to Ace It | TypoGrammar',
-    description: 'Learn what the TOEFL Read in Daily Life task is, which question types appear, and expert strategies to ace it — updated for the 2026 TOEFL iBT format.',
-    canonical: 'https://typogrammar.com/toefl/toefl-reading/toefl-daily-life-reading-task'
+    description: 'Learn what the TOEFL Read in Daily Life task is, which question types appear, and expert strategies to ace it, updated for the 2026 TOEFL iBT format.',
+    canonical: 'https://typogrammar.com/toefl/toefl-reading/toefl-daily-life-reading-task/'
   });
 
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "TOEFL Daily Life Reading Task: What It Is + How to Ace It",
-    "description": "Learn what the TOEFL Read in Daily Life task is, which question types appear, and expert strategies to ace it — updated for the 2026 TOEFL iBT format.",
+    "description": "Learn what the TOEFL Read in Daily Life task is, which question types appear, and expert strategies to ace it, updated for the 2026 TOEFL iBT format.",
     "author": { "@type": "Organization", "name": "TypoGrammar" },
     "publisher": {
       "@type": "Organization",
@@ -38,7 +38,7 @@ const TOEFLDailyLifeReadingTaskPage: React.FC = () => {
         "name": "What is the TOEFL daily life reading task?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The Read in Daily Life task is one of three reading task types on the 2026 TOEFL iBT. You read short, real-world texts — such as emails, notices, or social media posts — and answer 2 to 3 multiple-choice questions about the main purpose, key details, or inferences."
+          "text": "The Read in Daily Life task is one of three reading task types on the 2026 TOEFL iBT. You read short, real-world texts, such as emails, notices, or social media posts, and answer 2 to 3 multiple-choice questions about the main purpose, key details, or inferences."
         }
       },
       {
@@ -54,7 +54,7 @@ const TOEFLDailyLifeReadingTaskPage: React.FC = () => {
         "name": "How long is the Read in Daily Life text on the TOEFL?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Texts range from 15 to 150 words. Short texts (around 40–50 words) come with 2 questions. Longer texts (around 100–140 words) come with 3 questions."
+          "text": "Texts range from 15 to 150 words. Short texts (around 40-50 words) come with 2 questions. Longer texts (around 100-140 words) come with 3 questions."
         }
       },
       {
@@ -114,7 +114,7 @@ const TOEFLDailyLifeReadingTaskPage: React.FC = () => {
     {
       number: 4,
       name: "Inference",
-      tests: "Reading between the lines — consequences, reasons, or unstated conclusions.",
+      tests: "Reading between the lines, consequences, reasons, or unstated conclusions.",
       signals: '"What will happen if...?" / "What can be inferred from the notice?" / "What is most likely true about...?"',
       example: '"What will happen on test day if the driver has insurance for the state of New York?" → They will not be allowed to take the test.',
       tip: 'The answer is not stated word-for-word. Look for clues in conditions, requirements, or consequences described in the text.'
@@ -125,7 +125,7 @@ const TOEFLDailyLifeReadingTaskPage: React.FC = () => {
       tests: "Why the writer includes a specific piece of information.",
       signals: '"Why does the email mention \'parallel parking\'?" / "The writer includes the deadline in order to..."',
       example: '"Why does the email mention parallel parking and three-point turns?" → These are key maneuvers the test-taker should practice before the exam.',
-      tip: "Think about the writer's goal. Every detail in a short text serves a practical purpose — to inform, warn, remind, or instruct."
+      tip: "Think about the writer's goal. Every detail in a short text serves a practical purpose, to inform, warn, remind, or instruct."
     }
   ];
 
@@ -158,7 +158,7 @@ const TOEFLDailyLifeReadingTaskPage: React.FC = () => {
     {
       number: 6,
       title: "Practice With Real-World Materials",
-      body: "Collect real emails, ads, menus, and social media posts (80–150 words). Write your own questions and practice under timed conditions (3–4 minutes per set). This builds the speed and familiarity you need on test day."
+      body: "Collect real emails, ads, menus, and social media posts (80-150 words). Write your own questions and practice under timed conditions (3-4 minutes per set). This builds the speed and familiarity you need on test day."
     }
   ];
 
@@ -169,7 +169,7 @@ const TOEFLDailyLifeReadingTaskPage: React.FC = () => {
       <nav className="mb-6 text-slate-600 dark:text-slate-400 text-sm">
         <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
         {' › '}
-        <Link to="/toefl/toefl-reading/toefl-reading-section-explained" className="hover:text-blue-600 dark:hover:text-blue-400">TOEFL Reading</Link>
+        <Link to="/toefl/toefl-reading/toefl-reading-section-explained/" className="hover:text-blue-600 dark:hover:text-blue-400">TOEFL Reading</Link>
         {' › '}
         <span className="text-slate-900 dark:text-slate-100">TOEFL Daily Life Reading Task</span>
       </nav>
@@ -185,7 +185,7 @@ const TOEFLDailyLifeReadingTaskPage: React.FC = () => {
         {/* Intro */}
         <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
           The TOEFL iBT changed significantly on <strong>March 29, 2026</strong>. One of the biggest additions
-          is the <strong>Read in Daily Life</strong> task — a new reading task type that tests practical,
+          is the <strong>Read in Daily Life</strong> task, a new reading task type that tests practical,
           real-world English. Whether you are preparing for the first time or retaking under the new format,
           understanding this task is essential to boosting your Reading score.
         </p>
@@ -202,8 +202,8 @@ const TOEFLDailyLifeReadingTaskPage: React.FC = () => {
           </h2>
           <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
             The TOEFL daily life reading task (officially called <strong>"Read in Daily Life"</strong>) is
-            Task 2 in the Reading section of the 2026 TOEFL iBT. It presents short, real-world texts —
-            typically <strong>15 to 150 words</strong> — and asks you to answer <strong>2 to 3 multiple-choice
+            Task 2 in the Reading section of the 2026 TOEFL iBT. It presents short, real-world texts,
+            typically <strong>15 to 150 words</strong>, and asks you to answer <strong>2 to 3 multiple-choice
             questions</strong> about each text.
           </p>
           <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
@@ -214,7 +214,7 @@ const TOEFLDailyLifeReadingTaskPage: React.FC = () => {
           <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-5 rounded-r-lg">
             <p className="text-blue-800 dark:text-blue-200">
               ETS introduced this task on <strong>March 29, 2026</strong>, shifting the exam toward
-              practical, real-world English — measuring whether test-takers can understand the kind of English
+              practical, real-world English, measuring whether test-takers can understand the kind of English
               they encounter daily, not just in a classroom.
             </p>
           </div>
@@ -233,7 +233,7 @@ const TOEFLDailyLifeReadingTaskPage: React.FC = () => {
           </p>
           <p className="text-lg text-slate-700 dark:text-slate-300 mb-6">
             The new scoring scale is <strong>1.0 to 6.0</strong> (CEFR-aligned), reported alongside the
-            traditional 0–120 scale during the 2026–2028 transition. There are three reading task types:
+            traditional 0-120 scale during the 2026-2028 transition. There are three reading task types:
           </p>
           <div className="overflow-x-auto mb-4">
             <table className="w-full border-collapse text-left text-sm md:text-base">
@@ -247,13 +247,13 @@ const TOEFLDailyLifeReadingTaskPage: React.FC = () => {
               <tbody>
                 <tr className="bg-white dark:bg-slate-800/40">
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 font-medium text-slate-800 dark:text-slate-200">Complete the Words</td>
-                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">Fill in missing letters in a 70–100 word academic paragraph</td>
+                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">Fill in missing letters in a 70-100 word academic paragraph</td>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">10 (fill-in-the-blank)</td>
                 </tr>
                 <tr className="bg-slate-50 dark:bg-slate-700/40">
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 font-medium text-blue-700 dark:text-blue-300">Read in Daily Life</td>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">Answer questions about short real-world texts</td>
-                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">2–3 per set (1–2 sets)</td>
+                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">2-3 per set (1-2 sets)</td>
                 </tr>
                 <tr className="bg-white dark:bg-slate-800/40">
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 font-medium text-slate-800 dark:text-slate-200">Read an Academic Passage</td>
@@ -265,7 +265,7 @@ const TOEFLDailyLifeReadingTaskPage: React.FC = () => {
           </div>
           <p className="text-slate-600 dark:text-slate-400 text-sm">
             Read in Daily Life tasks appear in both the routing and the second module. Because the texts are
-            short and the questions are straightforward, this task is a <strong>quick-scoring opportunity</strong> —
+            short and the questions are straightforward, this task is a <strong>quick-scoring opportunity</strong>,
             typically easier than the academic passages.
           </p>
         </section>
@@ -296,10 +296,10 @@ const TOEFLDailyLifeReadingTaskPage: React.FC = () => {
               </div>
             ))}
           </div>
-          <div className="bg-amber-50 dark:bg-amber-900/20 border-l-4 border-amber-400 p-4 rounded-r-lg">
+          <div className="bg-teal-50 dark:bg-teal-900/20 border-l-4 border-teal-400 p-4 rounded-r-lg">
             <p className="text-slate-800 dark:text-slate-200">
-              Text length varies. Short texts (around <strong>40–50 words</strong>) come with 2 questions.
-              Longer texts (around <strong>100–140 words</strong>) come with 3 questions. You will typically
+              Text length varies. Short texts (around <strong>40-50 words</strong>) come with 2 questions.
+              Longer texts (around <strong>100-140 words</strong>) come with 3 questions. You will typically
               encounter 1 to 2 sets (2 to 3 daily life tasks total) on the exam.
             </p>
           </div>
@@ -349,7 +349,7 @@ const TOEFLDailyLifeReadingTaskPage: React.FC = () => {
             <div className="bg-slate-100 dark:bg-slate-800 px-5 py-3 border-b border-slate-300 dark:border-slate-600">
               <p className="text-sm text-slate-600 dark:text-slate-400"><strong>From:</strong> Santa Clara DMV &lt;noreply@dmv.ca.gov&gt;</p>
               <p className="text-sm text-slate-600 dark:text-slate-400"><strong>To:</strong> Li Shen &lt;li.shen@email.com&gt;</p>
-              <p className="text-sm text-slate-600 dark:text-slate-400"><strong>Subject:</strong> Driving Exam Confirmation — August 13, 2025</p>
+              <p className="text-sm text-slate-600 dark:text-slate-400"><strong>Subject:</strong> Driving Exam Confirmation, August 13, 2025</p>
             </div>
             <div className="px-5 py-5">
               <p className="text-slate-700 dark:text-slate-300 mb-3">Dear Li Shen,</p>
@@ -391,7 +391,7 @@ const TOEFLDailyLifeReadingTaskPage: React.FC = () => {
               },
               {
                 q: "Q4 (Inference): What will happen on test day if the driver has insurance for the state of New York?",
-                a: "They will not be allowed to take the test. The email explicitly states that insurance from other states will not be accepted — only valid California driver's insurance."
+                a: "They will not be allowed to take the test. The email explicitly states that insurance from other states will not be accepted, only valid California driver's insurance."
               },
               {
                 q: "Q5 (Rhetorical Purpose): Why does the email mention \"parallel parking and three-point turns\"?",
@@ -480,7 +480,7 @@ const TOEFLDailyLifeReadingTaskPage: React.FC = () => {
           </p>
           <div className="space-y-3">
             {[
-              { mistake: "Overanalyzing simple texts", fix: 'These texts are short and direct. If a flyer says "Sale ends Sunday," the answer is Sunday — no deeper analysis needed.' },
+              { mistake: "Overanalyzing simple texts", fix: 'These texts are short and direct. If a flyer says "Sale ends Sunday," the answer is Sunday, no deeper analysis needed.' },
               { mistake: "Translating word by word", fix: "Translating every word into your native language slows you down. Focus on overall meaning and function instead." },
               { mistake: "Ignoring titles and headings", fix: '"Driving Exam Confirmation" immediately tells you the main purpose. Subject lines and headings contain critical clues.' },
               { mistake: "Skimming too fast and missing key phrases", fix: 'Short texts pack meaning into few words. A phrase like "Insurance from other states will not be accepted" can be the key to a correct answer. Read carefully.' },
@@ -507,9 +507,9 @@ const TOEFLDailyLifeReadingTaskPage: React.FC = () => {
           </p>
           <div className="space-y-3">
             {[
-              { n: 1, text: "Collect real everyday texts. Gather emails, notices, social media posts, and advertisements (80–150 words). The more variety, the better." },
+              { n: 1, text: "Collect real everyday texts. Gather emails, notices, social media posts, and advertisements (80-150 words). The more variety, the better." },
               { n: 2, text: "Write your own questions. For each text, write four questions: one Big Picture, two detail, and one inference. This forces you to think like the test maker." },
-              { n: 3, text: "Practice under timed conditions. Give yourself 3–4 minutes per set. Use a timer. Speed and accuracy matter equally on the TOEFL." },
+              { n: 3, text: "Practice under timed conditions. Give yourself 3-4 minutes per set. Use a timer. Speed and accuracy matter equally on the TOEFL." },
               { n: 4, text: 'Review wording traps. Watch for NOT, EXCEPT, and FALSE in questions. These ask you to find the incorrect or unmentioned answer. Many test-takers lose points by rushing past these qualifiers.' },
             ].map((item) => (
               <div key={item.n} className="flex gap-4 bg-slate-50 dark:bg-slate-700/50 p-4 rounded-lg">
@@ -522,7 +522,7 @@ const TOEFLDailyLifeReadingTaskPage: React.FC = () => {
             For official TOEFL practice materials, visit{' '}
             <a href="https://www.ets.org/toefl.html" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">ets.org/toefl</a>.
             You can also explore our{' '}
-            <Link to="/toefl/toefl-reading/toefl-reading-practice-questions" className="text-blue-600 dark:text-blue-400 hover:underline">TOEFL Reading Practice Questions</Link>{' '}
+            <Link to="/toefl/toefl-reading/toefl-reading-practice-questions/" className="text-blue-600 dark:text-blue-400 hover:underline">TOEFL Reading Practice Questions</Link>{' '}
             for additional sets.
           </p>
         </section>
@@ -545,12 +545,12 @@ const TOEFLDailyLifeReadingTaskPage: React.FC = () => {
                 {[
                   ["Task name", "Read in Daily Life"],
                   ["Task position", "Task 2 in the Reading section"],
-                  ["Text length", "15–150 words"],
-                  ["# of questions", "2–3 per set"],
-                  ["Time budget", "~3–4 minutes per set (~45–60 seconds per question)"],
+                  ["Text length", "15-150 words"],
+                  ["# of questions", "2-3 per set"],
+                  ["Time budget", "~3-4 minutes per set (~45-60 seconds per question)"],
                   ["Text types", "Emails, notices, social media posts, flyers, menus, text message chains, invoices, forms"],
                   ["Question types", "Big Picture, Detail, Vocabulary in Context, Inference, Rhetorical Purpose"],
-                  ["Scoring scale", "1.0–6.0 (2026 TOEFL iBT, CEFR-aligned)"],
+                  ["Scoring scale", "1.0-6.0 (2026 TOEFL iBT, CEFR-aligned)"],
                 ].map(([el, detail], i) => (
                   <tr key={el} className={i % 2 === 0 ? "bg-white dark:bg-slate-800/40" : "bg-slate-50 dark:bg-slate-700/40"}>
                     <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 font-medium text-slate-800 dark:text-slate-200">{el}</td>
@@ -571,7 +571,7 @@ const TOEFLDailyLifeReadingTaskPage: React.FC = () => {
             {[
               {
                 q: "What is the TOEFL daily life reading task?",
-                a: "The Read in Daily Life task is one of three reading task types on the 2026 TOEFL iBT. You read short, real-world texts — such as emails, notices, or social media posts — and answer 2 to 3 multiple-choice questions about the main purpose, key details, or inferences."
+                a: "The Read in Daily Life task is one of three reading task types on the 2026 TOEFL iBT. You read short, real-world texts, such as emails, notices, or social media posts, and answer 2 to 3 multiple-choice questions about the main purpose, key details, or inferences."
               },
               {
                 q: "When was the Read in Daily Life task added to the TOEFL?",
@@ -579,7 +579,7 @@ const TOEFLDailyLifeReadingTaskPage: React.FC = () => {
               },
               {
                 q: "How long is the Read in Daily Life text on the TOEFL?",
-                a: "Texts range from 15 to 150 words. Short texts (around 40–50 words) come with 2 questions. Longer texts (around 100–140 words) come with 3 questions."
+                a: "Texts range from 15 to 150 words. Short texts (around 40-50 words) come with 2 questions. Longer texts (around 100-140 words) come with 3 questions."
               },
               {
                 q: "Is the TOEFL daily life reading task easy?",
@@ -605,16 +605,16 @@ const TOEFLDailyLifeReadingTaskPage: React.FC = () => {
           </h2>
           <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
             The TOEFL daily life reading task is one of the best opportunities to earn quick, confident points
-            on the Reading section. Bookmark this guide and practice with real-world texts daily — even 10
+            on the Reading section. Bookmark this guide and practice with real-world texts daily, even 10
             minutes builds the skills you need.
           </p>
           <p className="text-slate-600 dark:text-slate-400 mb-2">
             For more detailed guidance on the other reading tasks, check out our{' '}
-            <Link to="/toefl/toefl-reading/toefl-reading-question-types" className="text-blue-600 dark:text-blue-400 hover:underline">TOEFL Reading Question Types</Link>{' '}
+            <Link to="/toefl/toefl-reading/toefl-reading-question-types/" className="text-blue-600 dark:text-blue-400 hover:underline">TOEFL Reading Question Types</Link>{' '}
             and{' '}
-            <Link to="/toefl/toefl-reading/toefl-reading-strategies" className="text-blue-600 dark:text-blue-400 hover:underline">TOEFL Reading Strategies</Link>{' '}
+            <Link to="/toefl/toefl-reading/toefl-reading-strategies/" className="text-blue-600 dark:text-blue-400 hover:underline">TOEFL Reading Strategies</Link>{' '}
             guides. You can also explore our{' '}
-            <Link to="/toefl/toefl-reading/toefl-reading-practice-questions" className="text-blue-600 dark:text-blue-400 hover:underline">TOEFL Reading Practice Questions</Link>{' '}
+            <Link to="/toefl/toefl-reading/toefl-reading-practice-questions/" className="text-blue-600 dark:text-blue-400 hover:underline">TOEFL Reading Practice Questions</Link>{' '}
             to simulate the real exam experience.
           </p>
           <p className="text-slate-500 dark:text-slate-500 text-sm mt-4">Good luck on your TOEFL journey!</p>
@@ -631,27 +631,27 @@ const TOEFLDailyLifeReadingTaskPage: React.FC = () => {
           <h2 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-3">Related TOEFL Reading Guides</h2>
           <ul className="space-y-2 text-lg">
             <li>
-              <Link to="/toefl/toefl-reading/toefl-reading-section-explained" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/toefl/toefl-reading/toefl-reading-section-explained/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → TOEFL Reading Section Explained (2026 Format)
               </Link>
             </li>
             <li>
-              <Link to="/toefl/toefl-reading/toefl-reading-question-types" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/toefl/toefl-reading/toefl-reading-question-types/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → TOEFL Reading Question Types
               </Link>
             </li>
             <li>
-              <Link to="/toefl/toefl-reading/toefl-reading-strategies" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/toefl/toefl-reading/toefl-reading-strategies/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → TOEFL Reading Strategies
               </Link>
             </li>
             <li>
-              <Link to="/toefl/toefl-reading/toefl-reading-practice-questions" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/toefl/toefl-reading/toefl-reading-practice-questions/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → TOEFL Reading Practice Questions
               </Link>
             </li>
             <li>
-              <Link to="/toefl/toefl-reading/toefl-reading-time-management" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/toefl/toefl-reading/toefl-reading-time-management/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → TOEFL Reading Time Management
               </Link>
             </li>

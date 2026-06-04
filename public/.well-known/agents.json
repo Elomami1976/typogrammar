@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agents.json/schema/v1.json",
+  "schema_version": "v1",
+  "name_for_human": "TypoGrammar",
+  "name_for_model": "typogrammar",
+  "description_for_human": "Free English grammar, vocabulary, and IELTS/TOEFL preparation hub with lessons, quizzes, exercises, and reference materials.",
+  "description_for_model": "TypoGrammar (https://typogrammar.com) is a free educational website for English grammar, vocabulary, and IELTS/TOEFL preparation. See https://typogrammar.com/agents.json for the full manifest, https://typogrammar.com/llms.txt for the site overview, and https://typogrammar.com/sitemap.xml for canonical URLs.",
+  "canonical_url": "https://typogrammar.com/agents.json"
+}

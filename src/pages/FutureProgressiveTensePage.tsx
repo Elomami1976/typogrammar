@@ -1,4 +1,5 @@
-import React from 'react';
+﻿import React from 'react';
+import AIAnswerBox from '../components/AIAnswerBox';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import SchemaMarkup from '../components/SchemaMarkup';
@@ -7,7 +8,7 @@ const FutureProgressiveTensePage: React.FC = () => {
   usePageMetadata({
     title: 'Future Progressive (Future Continuous) Tense: Rules & Examples | TypoGrammar',
     description: 'Learn the future progressive tense with rules, structure, examples, signal words, and common mistakes. Simple explanation for English learners.',
-    canonical: 'https://typogrammar.com/grammar/verb-tenses/future-progressive'
+    canonical: 'https://typogrammar.com/grammar/verb-tenses/future-progressive/'
   });
 
   const articleSchema = {
@@ -45,9 +46,9 @@ const FutureProgressiveTensePage: React.FC = () => {
         <nav className="text-sm text-slate-600 dark:text-slate-400 mb-6">
           <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
           <span className="mx-2">›</span>
-          <Link to="/grammar" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar</Link>
+          <Link to="/grammar/" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar</Link>
           <span className="mx-2">›</span>
-          <Link to="/grammar/verb-tenses" className="hover:text-blue-600 dark:hover:text-blue-400">Verb Tenses</Link>
+          <Link to="/grammar/verb-tenses/" className="hover:text-blue-600 dark:hover:text-blue-400">Verb Tenses</Link>
           <span className="mx-2">›</span>
           <span className="text-slate-900 dark:text-slate-100">Future Progressive Tense</span>
         </nav>
@@ -61,10 +62,18 @@ const FutureProgressiveTensePage: React.FC = () => {
         </p>
 
         <p className="text-lg text-slate-700 dark:text-slate-300 mb-8">
-          The future progressive tense is often used together with the <Link to="/grammar/verb-tenses/future-simple" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">future simple tense</Link> to describe events that will happen during a longer future action.
+          The future progressive tense is often used together with the <Link to="/grammar/verb-tenses/future-simple/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">future simple tense</Link> to describe events that will happen during a longer future action.
         </p>
 
-        {/* Table of Contents */}
+                {/* Quick Answer block — emits DefinedTerm + FAQPage JSON-LD for AI engines */}
+        <AIAnswerBox
+          term={"Future Progressive Tense (Future Continuous)"}
+          answer={"The future progressive tense describes an ongoing action that will be in progress at a specific moment in the future. It is formed with will be + the -ing form of the verb. Example: \"This time tomorrow, I will be flying to Paris.\""}
+          keyFacts={["Formula: subject + will + be + verb-ing","Use: actions in progress at a future point, polite questions about plans, predicted parallel actions","Signal words: this time tomorrow, at 3 p.m. next Friday, all day, while","Negative: will + not + be + verb-ing","Question: Will + subject + be + verb-ing?"]}
+          faqs={[{"q":"When do we use future progressive instead of future simple?","a":"Use future progressive when you want to emphasize that the action will be in progress at a specific future time: \"At 8 p.m. tonight I will be watching the game\" (not just \"I will watch the game\")."}]}
+        />
+
+{/* Table of Contents */}
         <div className="bg-slate-50 dark:bg-slate-700 p-6 rounded-lg mb-8">
           <h2 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-4">Table of Contents</h2>
           <ul className="space-y-2 text-slate-700 dark:text-slate-300">
@@ -304,17 +313,17 @@ const FutureProgressiveTensePage: React.FC = () => {
         <div className="bg-slate-50 dark:bg-slate-700 p-6 rounded-lg mb-8">
           <h2 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-4">Related Verb Tenses</h2>
           <ul className="space-y-2 text-slate-700 dark:text-slate-300">
-            <li><Link to="/grammar/verb-tenses/future-simple" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Future Simple</Link></li>
-            <li><Link to="/grammar/verb-tenses/future-perfect" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Future Perfect</Link></li>
-            <li><Link to="/grammar/verb-tenses/present-progressive" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Present Continuous</Link></li>
-            <li><Link to="/grammar/verb-tenses" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">All Verb Tenses</Link></li>
+            <li><Link to="/grammar/verb-tenses/future-simple/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Future Simple</Link></li>
+            <li><Link to="/grammar/verb-tenses/future-perfect/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Future Perfect</Link></li>
+            <li><Link to="/grammar/verb-tenses/present-progressive/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Present Continuous</Link></li>
+            <li><Link to="/grammar/verb-tenses/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">All Verb Tenses</Link></li>
           </ul>
         </div>
 
         {/* Editorial Attribution Box */}
         <div className="bg-slate-100 dark:bg-slate-700 border border-slate-300 dark:border-slate-600 p-6 my-8 rounded-lg">
           <p className="text-slate-700 dark:text-slate-300 mb-4">
-            By <Link to="/about/editorial-team" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">TypoGrammar Editorial Team</Link>
+            By <Link to="/about/editorial-team/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">TypoGrammar Editorial Team</Link>
           </p>
           <p className="text-slate-700 dark:text-slate-300 mb-4">
             TypoGrammar Editorial Team creates independent, grammar-focused educational content to help English learners improve clarity, structure, and accuracy for academic and real-world use.

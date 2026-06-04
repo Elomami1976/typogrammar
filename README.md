@@ -9,7 +9,7 @@ TypoGrammar is an educational website that helps IELTS and TOEFL learners improv
 ## What TypoGrammar Offers
 
 - Academic English grammar explanations  
-- IELTS vocabulary lists by band (Band 6–9)  
+- IELTS vocabulary lists by band (Band 6-9)  
 - Writing guidance for IELTS and TOEFL  
 - Clear examples and structured tables  
 - Free learning resources and downloadable PDFs  

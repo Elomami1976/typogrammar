@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading, BulletList, CodeBlock } from '../components/ArticleComponents';
@@ -7,8 +7,8 @@ import SchemaMarkup from '../components/SchemaMarkup';
 
 const ComplexSentencesIELTSPage: React.FC = () => {
   usePageMetadata({
-    title: 'How to Write Complex Sentences for IELTS (Band 7–9 Guide)',
-    description: 'Learn how to write complex sentences for IELTS Writing Task 1 & 2. Includes Band 7–9 examples, structures, mistakes, and practice exercises.'
+    title: 'How to Write Complex Sentences for IELTS (Band 7-9 Guide)',
+    description: 'Learn how to write complex sentences for IELTS Writing Task 1 & 2. Includes Band 7-9 examples, structures, mistakes, and practice exercises.'
   });
 
   const faqSchema = {
@@ -53,8 +53,8 @@ const ComplexSentencesIELTSPage: React.FC = () => {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "How to Write Complex Sentences for IELTS (Band 7–9 Guide)",
-    "description": "Learn how to write complex sentences for IELTS Writing Task 1 & 2. Includes Band 7–9 examples, structures, mistakes, and exercises.",
+    "headline": "How to Write Complex Sentences for IELTS (Band 7-9 Guide)",
+    "description": "Learn how to write complex sentences for IELTS Writing Task 1 & 2. Includes Band 7-9 examples, structures, mistakes, and exercises.",
     "author": {
       "@type": "Organization",
       "name": "TypoGrammar"
@@ -127,7 +127,7 @@ const ComplexSentencesIELTSPage: React.FC = () => {
           </li>
           <li className="text-slate-400">/</li>
           <li>
-            <Link to="/ielts/ielts-writing-task-2-essay-types" className="text-blue-600 dark:text-blue-400 hover:underline">IELTS Writing Task 2</Link>
+            <Link to="/ielts/ielts-writing-task-2-essay-types/" className="text-blue-600 dark:text-blue-400 hover:underline">IELTS Writing Task 2</Link>
           </li>
           <li className="text-slate-400">/</li>
           <li className="text-slate-600 dark:text-slate-400">Complex Sentences</li>
@@ -135,7 +135,7 @@ const ComplexSentencesIELTSPage: React.FC = () => {
       </nav>
 
       <h1 className="text-4xl font-bold mb-6 text-slate-900 dark:text-slate-100">
-        How to Write Complex Sentences for IELTS (Band 7–9 Guide)
+        How to Write Complex Sentences for IELTS (Band 7-9 Guide)
       </h1>
 
       {/* Quick Summary for AI Snippets */}
@@ -233,7 +233,7 @@ const ComplexSentencesIELTSPage: React.FC = () => {
               <td className="border border-slate-300 dark:border-slate-600 px-4 py-3">Frequent error-free complex sentences</td>
             </tr>
             <tr className="bg-white dark:bg-slate-800">
-              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 font-semibold">Band 8–9</td>
+              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 font-semibold">Band 8-9</td>
               <td className="border border-slate-300 dark:border-slate-600 px-4 py-3">Wide variety of complex structures used naturally</td>
             </tr>
           </tbody>
@@ -276,19 +276,19 @@ const ComplexSentencesIELTSPage: React.FC = () => {
               <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 font-semibold">Simple</td>
               <td className="border border-slate-300 dark:border-slate-600 px-4 py-3">One independent clause</td>
               <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 italic">Many people use cars.</td>
-              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3">Basic – Band 5–6</td>
+              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3">Basic - Band 5-6</td>
             </tr>
             <tr className="bg-slate-50 dark:bg-slate-700">
               <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 font-semibold">Compound</td>
               <td className="border border-slate-300 dark:border-slate-600 px-4 py-3">Two independent clauses + coordinating conjunction (and, but, or)</td>
               <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 italic">Many people use cars, and this causes pollution.</td>
-              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3">Good – Band 6–7</td>
+              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3">Good - Band 6-7</td>
             </tr>
             <tr className="bg-white dark:bg-slate-800">
               <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 font-semibold">Complex</td>
               <td className="border border-slate-300 dark:border-slate-600 px-4 py-3">Independent clause + subordinate clause</td>
               <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 italic">Although many people use cars, this causes pollution.</td>
-              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3">Best – Band 7–9</td>
+              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3">Best - Band 7-9</td>
             </tr>
           </tbody>
         </table>
@@ -458,7 +458,7 @@ const ComplexSentencesIELTSPage: React.FC = () => {
         There is no exact number, but ideally:
       </ArticleParagraph>
       <BulletList items={[
-        <>At least 1–2 complex sentences per paragraph</>,
+        <>At least 1-2 complex sentences per paragraph</>,
         <>A mix of simple, compound, and complex sentences</>,
         <>Natural variation, not forced complexity</>
       ]} />
@@ -553,7 +553,7 @@ const ComplexSentencesIELTSPage: React.FC = () => {
           >
             IELTS scoring criteria
           </a>{' '}
-          and years of teaching experience helping students achieve Band 7–9 scores.
+          and years of teaching experience helping students achieve Band 7-9 scores.
         </p>
         <p className="text-slate-700 dark:text-slate-300">
           All examples follow the band descriptors published by the{' '}
@@ -584,32 +584,32 @@ const ComplexSentencesIELTSPage: React.FC = () => {
 
       <div className="grid md:grid-cols-2 gap-4 mb-8">
         <Link
-          to="/ielts/passive-voice-ielts-writing"
+          to="/ielts/passive-voice-ielts-writing/"
           className="block p-6 bg-blue-50 dark:bg-blue-900/20 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors"
         >
           <h4 className="font-semibold text-blue-900 dark:text-blue-200 mb-1">Passive Voice for IELTS</h4>
           <p className="text-sm text-blue-700 dark:text-blue-300">Learn how to use passive voice effectively in IELTS Writing.</p>
         </Link>
         <Link
-          to="/ielts/conditionals-in-ielts"
+          to="/ielts/conditionals-in-ielts/"
           className="block p-6 bg-purple-50 dark:bg-purple-900/20 rounded-lg hover:bg-purple-100 dark:hover:bg-purple-900/30 transition-colors"
         >
           <h4 className="font-semibold text-purple-900 dark:text-purple-200 mb-1">Conditionals in IELTS</h4>
           <p className="text-sm text-purple-700 dark:text-purple-300">Master zero, first, second, and third conditionals for Band 9.</p>
         </Link>
         <Link
-          to="/ielts/ielts-writing-task-2-essay-types"
+          to="/ielts/ielts-writing-task-2-essay-types/"
           className="block p-6 bg-green-50 dark:bg-green-900/20 rounded-lg hover:bg-green-100 dark:hover:bg-green-900/30 transition-colors"
         >
           <h4 className="font-semibold text-green-900 dark:text-green-200 mb-1">IELTS Writing Task 2 Essay Types</h4>
           <p className="text-sm text-green-700 dark:text-green-300">Complete guide to all essay types with structures and examples.</p>
         </Link>
         <Link
-          to="/ielts/band-8-ielts-sample-answers"
-          className="block p-6 bg-amber-50 dark:bg-amber-900/20 rounded-lg hover:bg-amber-100 dark:hover:bg-amber-900/30 transition-colors"
+          to="/ielts/band-8-ielts-sample-answers/"
+          className="block p-6 bg-teal-50 dark:bg-teal-900/20 rounded-lg hover:bg-teal-100 dark:hover:bg-teal-900/30 transition-colors"
         >
-          <h4 className="font-semibold text-amber-900 dark:text-amber-200 mb-1">Band 8+ Sample Answers</h4>
-          <p className="text-sm text-amber-700 dark:text-amber-300">Analyze real Band 8 and 9 essays with complex sentences highlighted.</p>
+          <h4 className="font-semibold text-teal-900 dark:text-teal-200 mb-1">Band 8+ Sample Answers</h4>
+          <p className="text-sm text-teal-700 dark:text-teal-300">Analyze real Band 8 and 9 essays with complex sentences highlighted.</p>
         </Link>
       </div>
 

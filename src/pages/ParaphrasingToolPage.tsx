@@ -1,9 +1,9 @@
-import React, { useState, useRef, useEffect } from 'react';
+﻿import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 
 // SEO Meta:
-// Title: Free AI Paraphrasing Tool – Rewrite Sentences Instantly | Typogrammar
+// Title: Free AI Paraphrasing Tool - Rewrite Sentences Instantly | Typogrammar
 // Description: Paraphrase text instantly with our free AI paraphrasing tool. Perfect for IELTS, academic essays, and plagiarism prevention. No sign-up required. Rewrite sentences online now.
 
 // FAQ Data for SEO and rendering
@@ -34,7 +34,7 @@ const faqData = [
   },
   {
     question: "Can I paraphrase in different writing styles?",
-    answer: "Our AI paraphraser maintains the academic tone suitable for formal writing. It focuses on clarity, precision, and proper academic register—perfect for essays, research papers, and exam preparation."
+    answer: "Our AI paraphraser maintains the academic tone suitable for formal writing. It focuses on clarity, precision, and proper academic register-perfect for essays, research papers, and exam preparation."
   },
   {
     question: "What is the character limit for paraphrasing?",
@@ -44,9 +44,9 @@ const faqData = [
 
 const ParaphrasingToolPage: React.FC = () => {
   usePageMetadata({
-    title: 'Free AI Paraphrasing Tool – Rewrite Sentences Instantly | Typogrammar',
+    title: 'Free AI Paraphrasing Tool - Rewrite Sentences Instantly | Typogrammar',
     description: 'Paraphrase text instantly with our free AI paraphrasing tool. Perfect for IELTS, academic essays, and plagiarism prevention. No sign-up required. Rewrite sentences online now.',
-    canonical: 'https://typogrammar.com/paraphrasing-tool'
+    canonical: 'https://typogrammar.com/paraphrasing-tool/'
   });
 
   const [text, setText] = useState<string>('');
@@ -229,14 +229,14 @@ const ParaphrasingToolPage: React.FC = () => {
           
           {/* Intro Paragraph - 150-200 words */}
           <p className="text-lg text-slate-700 dark:text-slate-300 max-w-3xl mx-auto leading-relaxed mb-6">
-            Welcome to Typogrammar's <strong>free AI paraphrasing tool</strong>—your instant solution for rewriting sentences, 
+            Welcome to Typogrammar's <strong>free AI paraphrasing tool</strong>-your instant solution for rewriting sentences, 
             improving academic essays, and avoiding plagiarism. Whether you're preparing for <strong>IELTS</strong>, working on 
             university assignments, or polishing professional documents, our advanced AI technology helps you express ideas 
             in fresh, original language while preserving the original meaning.
           </p>
           <p className="text-base text-slate-600 dark:text-slate-400 max-w-3xl mx-auto mb-8">
             Paraphrasing is a critical skill in academic writing. It demonstrates your understanding of source material and helps 
-            you integrate research into your own work. Our <strong>AI paraphraser</strong> generates natural, fluent rewrites instantly—perfect 
+            you integrate research into your own work. Our <strong>AI paraphraser</strong> generates natural, fluent rewrites instantly-perfect 
             for students, researchers, and professionals. <strong>No sign-up required</strong>. Simply paste your text below and get 
             instant paraphrased content. It's <strong>100% free</strong> and processes your text securely without storing any data.
           </p>
@@ -249,7 +249,7 @@ const ParaphrasingToolPage: React.FC = () => {
             <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
             </svg>
-            Start Paraphrasing Now – It's Free
+            Start Paraphrasing Now - It's Free
             <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
             </svg>
@@ -282,7 +282,7 @@ const ParaphrasingToolPage: React.FC = () => {
             <div className="flex justify-between items-center mt-2 text-sm">
               <div className="text-slate-600 dark:text-slate-400">
                 <span className="font-medium">{wordCount}</span> words · {' '}
-                <span className={characterCount > CHARACTER_LIMIT * 0.9 ? 'text-orange-600 dark:text-orange-400 font-medium' : ''}>
+                <span className={characterCount > CHARACTER_LIMIT * 0.9 ? 'text-teal-600 dark:text-teal-400 font-medium' : ''}>
                   {characterCount}/{CHARACTER_LIMIT}
                 </span> characters
               </div>
@@ -430,7 +430,7 @@ const ParaphrasingToolPage: React.FC = () => {
             {[
               { title: "Academic Essays & Research Papers", desc: "Integrate source material into your writing while demonstrating understanding. Paraphrasing shows you can explain concepts in your own words." },
               { title: "IELTS Writing Task 2", desc: "Paraphrase the essay question in your introduction to show lexical resource. IELTS examiners reward candidates who can express ideas using varied vocabulary." },
-              { title: "Avoiding Plagiarism", desc: "Rewrite information from sources to avoid direct copying. Always remember to cite your sources even when paraphrasing—it's about integrity, not just avoiding detection." },
+              { title: "Avoiding Plagiarism", desc: "Rewrite information from sources to avoid direct copying. Always remember to cite your sources even when paraphrasing-it's about integrity, not just avoiding detection." },
               { title: "Improving Clarity", desc: "Sometimes your first draft isn't as clear as it could be. Paraphrasing helps you find better ways to express complex ideas." },
               { title: "Learning English", desc: "See how the same idea can be expressed differently. This expands your vocabulary and understanding of English sentence structures." }
             ].map((item, index) => (
@@ -455,7 +455,7 @@ const ParaphrasingToolPage: React.FC = () => {
             onClick={scrollToTool}
             className="inline-flex items-center px-6 py-3 bg-white text-purple-700 font-bold rounded-lg hover:bg-purple-50 transition-colors shadow-lg"
           >
-            Paraphrase Now – It's Free
+            Paraphrase Now - It's Free
             <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
             </svg>
@@ -475,7 +475,7 @@ const ParaphrasingToolPage: React.FC = () => {
           <p className="text-slate-700 dark:text-slate-300 leading-relaxed mb-4">
             <strong>For IELTS candidates:</strong> Paraphrasing the question in your introduction is a proven technique for 
             demonstrating lexical resource (vocabulary range). Our tool helps you practice this skill and see various ways to 
-            express the same ideas—essential for achieving Band 7+ scores.
+            express the same ideas-essential for achieving Band 7+ scores.
           </p>
           <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
             <strong>Important:</strong> While our tool helps you learn paraphrasing techniques, in actual exams you must 
@@ -540,27 +540,27 @@ const ParaphrasingToolPage: React.FC = () => {
             Paraphrasing is just one skill in academic writing. Explore our comprehensive learning resources to master English writing:
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <Link to="/grammar-checker" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
+            <Link to="/grammar-checker/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
               <h3 className="font-bold text-slate-900 dark:text-slate-100 mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Grammar Checker</h3>
               <p className="text-sm text-slate-600 dark:text-slate-400">Check your paraphrased text for grammar errors instantly.</p>
             </Link>
-            <Link to="/ielts/ielts-writing-task-2-essay-types" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
+            <Link to="/ielts/ielts-writing-task-2-essay-types/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
               <h3 className="font-bold text-slate-900 dark:text-slate-100 mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">IELTS Writing Task 2</h3>
               <p className="text-sm text-slate-600 dark:text-slate-400">Master all IELTS essay types with sample answers.</p>
             </Link>
-            <Link to="/commonly-confused-words" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
+            <Link to="/commonly-confused-words/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
               <h3 className="font-bold text-slate-900 dark:text-slate-100 mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Common Grammar Mistakes</h3>
               <p className="text-sm text-slate-600 dark:text-slate-400">Avoid frequently confused words in your writing.</p>
             </Link>
-            <Link to="/ielts/vocabulary/band-7" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
+            <Link to="/ielts/vocabulary/band-7/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
               <h3 className="font-bold text-slate-900 dark:text-slate-100 mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">IELTS Vocabulary</h3>
               <p className="text-sm text-slate-600 dark:text-slate-400">Expand your vocabulary for better paraphrasing.</p>
             </Link>
-            <Link to="/writing/how-to-paraphrase" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
+            <Link to="/writing/how-to-paraphrase/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
               <h3 className="font-bold text-slate-900 dark:text-slate-100 mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Paraphrasing Guide</h3>
               <p className="text-sm text-slate-600 dark:text-slate-400">Learn manual paraphrasing techniques step by step.</p>
             </Link>
-            <Link to="/grammar/verb-tenses" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
+            <Link to="/grammar/verb-tenses/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
               <h3 className="font-bold text-slate-900 dark:text-slate-100 mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Master Verb Tenses</h3>
               <p className="text-sm text-slate-600 dark:text-slate-400">Essential for accurate paraphrasing and writing.</p>
             </Link>
@@ -576,7 +576,7 @@ const ParaphrasingToolPage: React.FC = () => {
             Explore more free tools to enhance your English writing and learning:
           </p>
           <div className="grid sm:grid-cols-2 gap-4">
-            <Link to="/grammar-checker" className="flex items-center gap-4 p-4 bg-gradient-to-r from-green-50 to-green-100 dark:from-green-900/30 dark:to-green-800/30 rounded-lg border border-green-200 dark:border-green-700 hover:border-green-400 dark:hover:border-green-500 transition-colors">
+            <Link to="/grammar-checker/" className="flex items-center gap-4 p-4 bg-gradient-to-r from-green-50 to-green-100 dark:from-green-900/30 dark:to-green-800/30 rounded-lg border border-green-200 dark:border-green-700 hover:border-green-400 dark:hover:border-green-500 transition-colors">
               <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center flex-shrink-0">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -587,7 +587,7 @@ const ParaphrasingToolPage: React.FC = () => {
                 <p className="text-sm text-green-700 dark:text-green-300">Check grammar, spelling, and punctuation instantly.</p>
               </div>
             </Link>
-            <Link to="/ielts/ielts-writing-task-2-essay-types" className="flex items-center gap-4 p-4 bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/30 rounded-lg border border-blue-200 dark:border-blue-700 hover:border-blue-400 dark:hover:border-blue-500 transition-colors">
+            <Link to="/ielts/ielts-writing-task-2-essay-types/" className="flex items-center gap-4 p-4 bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/30 rounded-lg border border-blue-200 dark:border-blue-700 hover:border-blue-400 dark:hover:border-blue-500 transition-colors">
               <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -633,7 +633,7 @@ const ParaphrasingToolPage: React.FC = () => {
           <h3 className="text-2xl font-bold text-white mb-3">Start Paraphrasing Better Today</h3>
           <p className="text-slate-300 mb-6 max-w-2xl mx-auto">
             Our free AI paraphrasing tool has helped thousands of students and professionals improve their writing. 
-            No sign-up, no fees—just instant, natural paraphrases in seconds.
+            No sign-up, no fees-just instant, natural paraphrases in seconds.
           </p>
           <button
             onClick={scrollToTool}
@@ -642,7 +642,7 @@ const ParaphrasingToolPage: React.FC = () => {
             <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
             </svg>
-            Paraphrase Your Text Now – It's 100% Free
+            Paraphrase Your Text Now - It's 100% Free
           </button>
         </section>
 
@@ -650,7 +650,7 @@ const ParaphrasingToolPage: React.FC = () => {
         <section className="text-center">
           <p className="text-sm text-slate-500 dark:text-slate-400">
             <strong>Trusted by students worldwide</strong> · Used for IELTS, TOEFL, and academic writing preparation · 
-            Built by <Link to="/about/editorial-team" className="text-blue-600 dark:text-blue-400 hover:underline">language experts</Link> at Typogrammar
+            Built by <Link to="/about/editorial-team/" className="text-blue-600 dark:text-blue-400 hover:underline">language experts</Link> at Typogrammar
           </p>
         </section>
       </article>

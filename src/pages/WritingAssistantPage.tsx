@@ -72,7 +72,7 @@ const WritingAssistantPage: React.FC = () => {
 
       <h4 className="font-heading text-2xl font-bold text-slate-800 mt-6 mb-4 dark:text-slate-200">Key Characteristics of Descriptive Writing:</h4>
       <BulletList items={[
-        <><strong>Sensory Details:</strong> Appeals to the five senses—sight, sound, smell, taste, and touch.</>,
+        <><strong>Sensory Details:</strong> Appeals to the five senses-sight, sound, smell, taste, and touch.</>,
         <><strong>Figurative Language:</strong> Uses metaphors, similes, personification, and other literary devices to create comparisons and deeper meaning.</>,
         <><strong>Specific and Concrete Language:</strong> Avoids vague or general words in favor of precise, vivid descriptions.</>,
         <><strong>Adjectives and Adverbs:</strong> Carefully chosen modifiers that enhance nouns and verbs without overwhelming the prose.</>,
@@ -184,7 +184,7 @@ const WritingAssistantPage: React.FC = () => {
       ]} />
 
       <ArticleParagraph>
-        Your answers will guide you toward the most appropriate writing style. Remember that many pieces of writing combine multiple styles—for example, a persuasive essay might include narrative anecdotes and descriptive passages to support its argument.
+        Your answers will guide you toward the most appropriate writing style. Remember that many pieces of writing combine multiple styles-for example, a persuasive essay might include narrative anecdotes and descriptive passages to support its argument.
       </ArticleParagraph>
 
       <ArticleHeading>Blending Writing Styles for Greater Impact</ArticleHeading>
@@ -257,7 +257,7 @@ const WritingAssistantPage: React.FC = () => {
 
       <h4 className="font-heading text-2xl font-bold text-slate-800 mt-6 mb-4 dark:text-slate-200">3. Know Your Audience</h4>
       <ArticleParagraph>
-        Effective style isn't about impressing readers with fancy words—it's about connecting with them. Consider who you're writing for and adjust your vocabulary, tone, and complexity accordingly. Writing for children requires different choices than writing for academics.
+        Effective style isn't about impressing readers with fancy words-it's about connecting with them. Consider who you're writing for and adjust your vocabulary, tone, and complexity accordingly. Writing for children requires different choices than writing for academics.
       </ArticleParagraph>
 
       <h4 className="font-heading text-2xl font-bold text-slate-800 mt-6 mb-4 dark:text-slate-200">4. Revise and Refine</h4>
@@ -278,7 +278,7 @@ const WritingAssistantPage: React.FC = () => {
       <BulletList items={[
         <><strong>Sentence Structure:</strong> Do you prefer short, punchy sentences or longer, flowing ones? Variety creates rhythm and emphasis.</>,
         <><strong>Word Choice (Diction):</strong> Formal or informal? Simple or sophisticated? Your vocabulary choices reveal your style and affect your tone.</>,
-        <><strong>Tone:</strong> The attitude you convey through writing—serious, humorous, sarcastic, compassionate, authoritative, conversational.</>,
+        <><strong>Tone:</strong> The attitude you convey through writing-serious, humorous, sarcastic, compassionate, authoritative, conversational.</>,
         <><strong>Voice:</strong> Your unique personality and perspective that comes through in your writing.</>,
         <><strong>Literary Devices:</strong> Your use of metaphors, alliteration, repetition, and other techniques.</>,
         <><strong>Paragraph Length:</strong> Long, detailed paragraphs create different effects than short, impactful ones.</>,
@@ -345,12 +345,12 @@ const WritingAssistantPage: React.FC = () => {
       
       <h4 className="font-heading text-2xl font-bold text-slate-800 mt-6 mb-4 dark:text-slate-200">Strengthen Your Vocabulary</h4>
       <ArticleParagraph>
-        A rich vocabulary gives you more options for precise expression. However, use sophisticated words only when they're the best choice—never to show off. The goal is clarity and precision, not complexity.
+        A rich vocabulary gives you more options for precise expression. However, use sophisticated words only when they're the best choice-never to show off. The goal is clarity and precision, not complexity.
       </ArticleParagraph>
 
       <h4 className="font-heading text-2xl font-bold text-slate-800 mt-6 mb-4 dark:text-slate-200">Vary Sentence Structure</h4>
       <ArticleParagraph>
-        Mix short, medium, and long sentences to create rhythm and maintain reader interest. Start sentences in different ways—with subjects, prepositional phrases, adverbs, or subordinate clauses. This variation prevents monotony.
+        Mix short, medium, and long sentences to create rhythm and maintain reader interest. Start sentences in different ways-with subjects, prepositional phrases, adverbs, or subordinate clauses. This variation prevents monotony.
       </ArticleParagraph>
 
       <h4 className="font-heading text-2xl font-bold text-slate-800 mt-6 mb-4 dark:text-slate-200">Use Strong Verbs</h4>
@@ -380,7 +380,7 @@ const WritingAssistantPage: React.FC = () => {
 
       <h4 className="font-heading text-2xl font-bold text-slate-800 mt-6 mb-4 dark:text-slate-200">Voice</h4>
       <ArticleParagraph>
-        Voice is your unique personality as a writer—what makes your writing distinctly yours. While tone can change depending on the situation, your voice remains relatively consistent. It's shaped by your values, experiences, sense of humor, and worldview. Developing a strong, authentic voice takes time but makes your writing memorable and distinctive.
+        Voice is your unique personality as a writer-what makes your writing distinctly yours. While tone can change depending on the situation, your voice remains relatively consistent. It's shaped by your values, experiences, sense of humor, and worldview. Developing a strong, authentic voice takes time but makes your writing memorable and distinctive.
       </ArticleParagraph>
 
       <ArticleHeading>Writing Style Across Different Mediums</ArticleHeading>
@@ -401,11 +401,11 @@ const WritingAssistantPage: React.FC = () => {
       </ArticleParagraph>
 
       <ArticleParagraph>
-        Start by mastering the four fundamental writing styles—narrative, descriptive, expository, and persuasive. Understand when each is appropriate and practice writing in each style. As you gain confidence, begin blending styles strategically and developing your unique voice.
+        Start by mastering the four fundamental writing styles-narrative, descriptive, expository, and persuasive. Understand when each is appropriate and practice writing in each style. As you gain confidence, begin blending styles strategically and developing your unique voice.
       </ArticleParagraph>
 
       <ArticleParagraph>
-        Remember that effective writing style serves your message and your readers. It's not about following rigid rules or showing off your vocabulary—it's about connecting with your audience and communicating your ideas clearly, powerfully, and authentically. With dedication and practice, you'll develop a writing style that is both effective and uniquely yours.
+        Remember that effective writing style serves your message and your readers. It's not about following rigid rules or showing off your vocabulary-it's about connecting with your audience and communicating your ideas clearly, powerfully, and authentically. With dedication and practice, you'll develop a writing style that is both effective and uniquely yours.
       </ArticleParagraph>
 
     </article>

@@ -1,20 +1,20 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import usePageMetadata from '../hooks/usePageMetadata';
 
 const IeltsAcademicVocabularyBookPage: React.FC = () => {
   // SEO Metadata with Open Graph and Twitter Card support
   usePageMetadata({
-    title: 'Free IELTS Academic Vocabulary Book (Band 6–9) | TypoGrammar',
-    description: 'Download a free IELTS academic vocabulary book (Band 6–9): 200 high-scoring words with definitions, examples, and usage notes.',
-    canonical: 'https://typogrammar.com/ielts/academic-vocabulary-book',
-    ogTitle: 'Free IELTS Academic Vocabulary Book (Band 6–9) | TypoGrammar',
-    ogDescription: 'Download a free IELTS academic vocabulary book (Band 6–9): 200 high-scoring words with definitions, examples, and usage notes.',
+    title: 'Free IELTS Academic Vocabulary Book (Band 6-9) | TypoGrammar',
+    description: 'Download a free IELTS academic vocabulary book (Band 6-9): 200 high-scoring words with definitions, examples, and usage notes.',
+    canonical: 'https://typogrammar.com/ielts/academic-vocabulary-book/',
+    ogTitle: 'Free IELTS Academic Vocabulary Book (Band 6-9) | TypoGrammar',
+    ogDescription: 'Download a free IELTS academic vocabulary book (Band 6-9): 200 high-scoring words with definitions, examples, and usage notes.',
     ogUrl: 'https://typogrammar.com/ielts/academic-vocabulary-book',
     ogImage: 'https://typogrammar.com/images/books/ielts-academic-vocab-cover.jpg',
     ogType: 'book',
     twitterCard: 'summary_large_image',
-    twitterTitle: 'Free IELTS Academic Vocabulary Book (Band 6–9) | TypoGrammar',
-    twitterDescription: 'Download a free IELTS academic vocabulary book (Band 6–9): 200 high-scoring words with definitions, examples, and usage notes.',
+    twitterTitle: 'Free IELTS Academic Vocabulary Book (Band 6-9) | TypoGrammar',
+    twitterDescription: 'Download a free IELTS academic vocabulary book (Band 6-9): 200 high-scoring words with definitions, examples, and usage notes.',
     twitterImage: 'https://typogrammar.com/images/books/ielts-academic-vocab-cover.jpg',
   });
 
@@ -23,7 +23,7 @@ const IeltsAcademicVocabularyBookPage: React.FC = () => {
     const bookSchema = {
       '@context': 'https://schema.org',
       '@type': 'Book',
-      name: 'IELTS Academic Vocabulary (Band 6–9)',
+      name: 'IELTS Academic Vocabulary (Band 6-9)',
       author: {
         '@type': 'Organization',
         name: 'TypoGrammar',
@@ -37,7 +37,7 @@ const IeltsAcademicVocabularyBookPage: React.FC = () => {
       url: 'https://typogrammar.com/ielts/academic-vocabulary-book',
       image: 'https://typogrammar.com/images/books/ielts-academic-vocab-cover.jpg',
       description:
-        'Download a free IELTS academic vocabulary book (Band 6–9): 200 high-scoring words with definitions, examples, and usage notes.',
+        'Download a free IELTS academic vocabulary book (Band 6-9): 200 high-scoring words with definitions, examples, and usage notes.',
       offers: {
         '@type': 'Offer',
         price: '0',
@@ -49,12 +49,12 @@ const IeltsAcademicVocabularyBookPage: React.FC = () => {
     const learningResourceSchema = {
       '@context': 'https://schema.org',
       '@type': 'LearningResource',
-      name: 'IELTS Academic Vocabulary (Band 6–9)',
+      name: 'IELTS Academic Vocabulary (Band 6-9)',
       learningResourceType: 'ebook',
       about: ['IELTS vocabulary', 'IELTS Writing Task 2', 'Academic English'],
       url: 'https://typogrammar.com/ielts/academic-vocabulary-book',
       description:
-        'Download a free IELTS academic vocabulary book (Band 6–9): 200 high-scoring words with definitions, examples, and usage notes.',
+        'Download a free IELTS academic vocabulary book (Band 6-9): 200 high-scoring words with definitions, examples, and usage notes.',
     };
 
     const faqSchema = {
@@ -172,7 +172,7 @@ const IeltsAcademicVocabularyBookPage: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 dark:text-slate-100 mb-6 leading-tight">
-              IELTS Academic Vocabulary <span className="text-blue-600 dark:text-blue-400">(Band 6–9)</span>
+              IELTS Academic Vocabulary <span className="text-blue-600 dark:text-blue-400">(Band 6-9)</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
               Free PDF: 200 academic words with definitions, IELTS-style examples, and usage notes.
@@ -207,13 +207,13 @@ const IeltsAcademicVocabularyBookPage: React.FC = () => {
               </button>
             </div>
             <p className="text-sm text-slate-500 dark:text-slate-400 italic">
-              Free download — no signup required.
+              Free download, no signup required.
             </p>
           </div>
           <div className="flex justify-center">
             <img
               src="/images/books/ielts-academic-vocab-cover.jpg"
-              alt="IELTS Academic Vocabulary Book Cover (Band 6–9)"
+              alt="IELTS Academic Vocabulary Book Cover (Band 6-9)"
               className="rounded-xl shadow-2xl max-w-full h-auto"
               loading="eager"
               decoding="async"
@@ -361,7 +361,7 @@ const IeltsAcademicVocabularyBookPage: React.FC = () => {
               IELTS Candidates
             </h3>
             <p className="text-slate-600 dark:text-slate-400">
-              Candidates aiming for Band 6.5–9 in Academic or General IELTS
+              Candidates aiming for Band 6.5-9 in Academic or General IELTS
             </p>
           </div>
 
@@ -430,7 +430,7 @@ const IeltsAcademicVocabularyBookPage: React.FC = () => {
               </div>
               <div className="pt-1">
                 <h3 className="font-semibold text-xl text-slate-900 dark:text-slate-100 mb-2">
-                  Study 5–10 words daily
+                  Study 5-10 words daily
                 </h3>
                 <p className="text-slate-600 dark:text-slate-400">
                   Start with your target band level and work through the words systematically. Consistency is key.
@@ -539,9 +539,9 @@ const IeltsAcademicVocabularyBookPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="bg-gradient-to-br from-amber-50 to-yellow-50 dark:from-amber-900/20 dark:to-yellow-900/20 rounded-xl p-8 shadow-md border-2 border-amber-200 dark:border-amber-700">
+          <div className="bg-gradient-to-br from-teal-50 to-yellow-50 dark:from-teal-900/20 dark:to-yellow-900/20 rounded-xl p-8 shadow-md border-2 border-teal-200 dark:border-teal-700">
             <div className="flex items-center mb-4">
-              <div className="w-12 h-12 bg-amber-600 text-white rounded-lg flex items-center justify-center font-bold text-xl mr-4">
+              <div className="w-12 h-12 bg-teal-600 text-white rounded-lg flex items-center justify-center font-bold text-xl mr-4">
                 9
               </div>
               <h3 className="font-semibold text-2xl text-slate-900 dark:text-slate-100">Band 9 Vocabulary</h3>
@@ -593,7 +593,7 @@ const IeltsAcademicVocabularyBookPage: React.FC = () => {
               Visit Homepage
             </a>
             <a
-              href="/ielts/ielts-writing-task-2-essay-types"
+              href="/ielts/ielts-writing-task-2-essay-types/"
               className="inline-flex items-center px-6 py-3 bg-white dark:bg-slate-700 text-blue-600 dark:text-blue-400 font-semibold rounded-lg border-2 border-blue-600 dark:border-blue-500 hover:bg-blue-50 dark:hover:bg-slate-600 transition-colors duration-200"
             >
               Explore IELTS Resources

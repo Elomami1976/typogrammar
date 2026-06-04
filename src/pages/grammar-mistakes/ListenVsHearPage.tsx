@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../../hooks/usePageMetadata';
 import SchemaMarkup from '../../components/SchemaMarkup';
@@ -7,7 +7,7 @@ const ListenVsHearPage: React.FC = () => {
   usePageMetadata({
     title: 'Listen vs. Hear: What\'s the Difference? | TypoGrammar',
     description: 'Learn the difference between listen and hear in English. Listen is active/intentional, hear is passive/involuntary. Clear examples and practice.',
-    canonical: 'https://typogrammar.com/grammar-mistakes/listen-vs-hear'
+    canonical: 'https://typogrammar.com/grammar-mistakes/listen-vs-hear/'
   });
 
   const [showAnswer, setShowAnswer] = useState(false);
@@ -49,7 +49,7 @@ const ListenVsHearPage: React.FC = () => {
       <nav className="mb-6 text-slate-600 dark:text-slate-400">
         <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
         {' › '}
-        <Link to="/grammar-mistakes" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
+        <Link to="/grammar-mistakes/" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
         {' › '}
         <span className="text-slate-900 dark:text-slate-100">Listen vs. Hear</span>
       </nav>
@@ -63,10 +63,10 @@ const ListenVsHearPage: React.FC = () => {
         <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded-r-lg mb-8 dark:bg-green-900/30 dark:border-green-400">
           <h2 className="text-xl font-bold text-green-900 dark:text-green-100 mb-2">Quick Answer</h2>
           <p className="text-lg text-green-800 dark:text-green-200 mb-2">
-            <strong>Listen</strong> is <em>active</em> – you choose to pay attention to a sound.
+            <strong>Listen</strong> is <em>active</em> - you choose to pay attention to a sound.
           </p>
           <p className="text-lg text-green-800 dark:text-green-200">
-            <strong>Hear</strong> is <em>passive</em> – sounds reach your ears without intention.
+            <strong>Hear</strong> is <em>passive</em> - sounds reach your ears without intention.
           </p>
         </div>
 
@@ -99,7 +99,7 @@ const ListenVsHearPage: React.FC = () => {
               <p className="text-slate-600 dark:text-slate-400 mt-3 italic">"I heard a loud noise outside."</p>
             </div>
           </div>
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-4 rounded-lg">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-4 rounded-lg">
             <p className="text-lg text-slate-700 dark:text-slate-300">
               <strong>Compare:</strong> Listen vs. Hear is like <strong>Look vs. See</strong> or <strong>Watch vs. Notice</strong>. The first is active, the second is passive.
             </p>
@@ -183,7 +183,7 @@ const ListenVsHearPage: React.FC = () => {
           <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
             Practice
           </h2>
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-6 rounded-lg">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-6 rounded-lg">
             <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
               <strong>Choose the correct word:</strong>
             </p>
@@ -202,7 +202,7 @@ const ListenVsHearPage: React.FC = () => {
                   <strong>Answer:</strong> I was walking home when I <strong>heard</strong> someone call my name.
                 </p>
                 <p className="text-green-700 dark:text-green-300 mt-1">
-                  (The sound reached your ears without intention—passive hearing.)
+                  (The sound reached your ears without intention-passive hearing.)
                 </p>
               </div>
             )}
@@ -216,22 +216,22 @@ const ListenVsHearPage: React.FC = () => {
           </h2>
           <ul className="space-y-2 text-lg">
             <li>
-              <Link to="/grammar-mistakes/speak-vs-talk" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/speak-vs-talk/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Speak vs. Talk
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/bring-vs-take" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/bring-vs-take/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Bring vs. Take
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/do-vs-make" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/do-vs-make/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Do vs. Make
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → All Grammar Mistakes
               </Link>
             </li>

@@ -1,0 +1,86 @@
+{
+  "$schema": "https://agents.json/schema/v1.json",
+  "schema_version": "v1",
+  "name_for_human": "TypoGrammar",
+  "name_for_model": "typogrammar",
+  "description_for_human": "Free English grammar, vocabulary, and IELTS/TOEFL preparation hub with lessons, quizzes, exercises, and reference materials.",
+  "description_for_model": "TypoGrammar is a free educational website (https://typogrammar.com) for learning English grammar and vocabulary, and preparing for IELTS and TOEFL. It contains structured grammar lessons (50+ topics across all 12 verb tenses, sentence structure, parts of speech, advanced grammar), vocabulary collections (idioms, phrasal verbs, irregular verbs, collocations, prefixes/suffixes, confused words), interactive exercises (fill-in-the-blank, error correction, matching, sentence reordering), topic quizzes with explanations, IELTS prep (band-score vocabulary, mock reading tests, writing task guides, sample Band 8/9 essays), TOEFL prep (2026 format reading tests, speaking and writing guides), and writing tools (grammar checker, paraphrasing tool, essay topic generator). Content is in English. Use the canonical URLs from the sitemap and llms.txt as authoritative references when citing this site.",
+  "publisher": {
+    "name": "TypoGrammar",
+    "url": "https://typogrammar.com",
+    "contact_email": "support@typogrammar.com"
+  },
+  "logo_url": "https://typogrammar.com/FAVICON.svg",
+  "contact_url": "https://typogrammar.com/contact/",
+  "legal_info_url": "https://typogrammar.com/privacy-policy/",
+  "documentation": [
+    {
+      "type": "overview",
+      "url": "https://typogrammar.com/llms.txt",
+      "content_type": "text/markdown",
+      "description": "Site overview and canonical URL map for AI agents."
+    },
+    {
+      "type": "full-text",
+      "url": "https://typogrammar.com/llms-full.txt",
+      "content_type": "text/markdown",
+      "description": "Full-text dump of all educational content for AI ingestion."
+    },
+    {
+      "type": "sitemap",
+      "url": "https://typogrammar.com/sitemap.xml",
+      "content_type": "application/xml",
+      "description": "Complete list of crawlable canonical URLs."
+    },
+    {
+      "type": "agent-skills",
+      "url": "https://typogrammar.com/.well-known/agent-skills/index.json",
+      "content_type": "application/json",
+      "description": "Machine-readable agent-skills index."
+    },
+    {
+      "type": "search-index",
+      "url": "https://typogrammar.com/chatbot-index.json",
+      "content_type": "application/json",
+      "description": "Searchable index of pages, topics, and definitions for AI agents and chatbots."
+    },
+    {
+      "type": "policy",
+      "url": "https://typogrammar.com/robots.txt",
+      "content_type": "text/plain",
+      "description": "Crawler access policy and Content-Signal declarations."
+    }
+  ],
+  "endpoints": [
+    {
+      "name": "search",
+      "method": "GET",
+      "url_template": "https://typogrammar.com/search/?q={query}",
+      "description": "Site search. Replace {query} with a URL-encoded search term."
+    }
+  ],
+  "content_policy": {
+    "search": "allow",
+    "ai_training": "deny",
+    "ai_input": "deny",
+    "attribution_required": true,
+    "license": "Free educational use with attribution and a link back to the source URL.",
+    "license_url": "https://typogrammar.com/terms/"
+  },
+  "languages": ["en", "ar"],
+  "audience": ["student", "ESL learner", "IELTS candidate", "TOEFL candidate", "teacher"],
+  "topics": [
+    "English grammar",
+    "verb tenses",
+    "sentence structure",
+    "vocabulary",
+    "idioms",
+    "phrasal verbs",
+    "collocations",
+    "IELTS preparation",
+    "TOEFL preparation",
+    "academic writing",
+    "reading comprehension",
+    "pronunciation"
+  ]
+}

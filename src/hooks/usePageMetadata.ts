@@ -20,21 +20,56 @@ const SITE_URL = 'https://typogrammar.com';
 const DESCRIPTION_SELECTOR = 'meta[name="description"]';
 const ROBOTS_SELECTOR = 'meta[name="robots"]';
 const CANONICAL_SELECTOR = 'link[rel="canonical"]';
+const MAX_DESCRIPTION_LENGTH = 160;
+
+// Truncate at the last word boundary before the limit so descriptions stay
+// readable and SEO/AI-agent validators don't flag "Meta description too long".
+const truncateDescription = (text: string): string => {
+  const trimmed = text.trim().replace(/\s+/g, ' ');
+  if (trimmed.length <= MAX_DESCRIPTION_LENGTH) return trimmed;
+  const cut = trimmed.slice(0, MAX_DESCRIPTION_LENGTH - 1);
+  const lastSpace = cut.lastIndexOf(' ');
+  const base = lastSpace > 100 ? cut.slice(0, lastSpace) : cut;
+  return base.replace(/[\s,;:.\-]+$/, '') + '…';
+};
 
 /**
  * Normalize URL path for canonical:
- * - Remove trailing slashes (except root)
+ * - Add trailing slash (except root)
  * - Remove query parameters and hash fragments
- * - Ensure consistent format
+ * - Ensure consistent format (matches buildSeoMeta.ts convention)
  */
 const normalizeCanonicalPath = (path: string): string => {
   // Remove query params and hash
   let cleanPath = path.split('?')[0].split('#')[0];
-  // Remove trailing slash (but keep root /)
-  if (cleanPath.length > 1 && cleanPath.endsWith('/')) {
-    cleanPath = cleanPath.slice(0, -1);
+  // Add trailing slash (but keep root / as-is)
+  if (cleanPath === '/') return cleanPath;
+  if (!cleanPath.endsWith('/')) {
+    cleanPath = cleanPath + '/';
   }
   return cleanPath;
+};
+
+/**
+ * Normalize a full canonical URL: strip query/hash and ensure trailing slash
+ * on the path. This keeps all canonicals consistent with the sitemap and avoids
+ * "Alternate page with proper canonical tag" issues in Google Search Console.
+ */
+const normalizeCanonicalUrl = (rawUrl: string): string => {
+  try {
+    const u = new URL(rawUrl);
+    u.search = '';
+    u.hash = '';
+    if (u.pathname !== '/' && !u.pathname.endsWith('/')) {
+      u.pathname = u.pathname + '/';
+    }
+    return u.toString();
+  } catch {
+    // Fallback for non-absolute URLs: strip query/hash and append slash
+    const noQuery = rawUrl.split('?')[0].split('#')[0];
+    if (noQuery.endsWith('/')) return noQuery;
+    return noQuery + '/';
+  }
 };
 
 // Helper function to set or update a meta tag
@@ -98,12 +133,16 @@ export default function usePageMetadata({
         meta.setAttribute('name', 'description');
         document.head.appendChild(meta);
       }
-      meta.setAttribute('content', description);
+      meta.setAttribute('content', truncateDescription(description));
     }
 
-    // Always set canonical URL - use provided value or auto-generate from current path
+    // Always set canonical URL - use provided value or auto-generate from current path.
+    // Always normalize to a trailing-slash form so it matches the sitemap URLs
+    // and prevents "Alternate page with proper canonical tag" duplicates in GSC.
     const normalizedPath = normalizeCanonicalPath(window.location.pathname);
-    const canonicalUrl = canonical || `${SITE_URL}${normalizedPath}`;
+    const canonicalUrl = canonical
+      ? normalizeCanonicalUrl(canonical)
+      : `${SITE_URL}${normalizedPath}`;
     let link = canonicalEl;
     if (!link) {
       link = document.createElement('link');
@@ -129,15 +168,15 @@ export default function usePageMetadata({
 
     // Set Open Graph meta tags
     if (ogTitle) setMetaTag('og:title', ogTitle, true);
-    if (ogDescription) setMetaTag('og:description', ogDescription, true);
-    if (ogUrl) setMetaTag('og:url', ogUrl, true);
+    if (ogDescription) setMetaTag('og:description', truncateDescription(ogDescription), true);
+    if (ogUrl) setMetaTag('og:url', normalizeCanonicalUrl(ogUrl), true);
     if (ogImage) setMetaTag('og:image', ogImage, true);
     if (ogType) setMetaTag('og:type', ogType, true);
 
     // Set Twitter Card meta tags
     if (twitterCard) setMetaTag('twitter:card', twitterCard);
     if (twitterTitle) setMetaTag('twitter:title', twitterTitle);
-    if (twitterDescription) setMetaTag('twitter:description', twitterDescription);
+    if (twitterDescription) setMetaTag('twitter:description', truncateDescription(twitterDescription));
     if (twitterImage) setMetaTag('twitter:image', twitterImage);
 
     return () => {

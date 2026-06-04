@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Link } from 'react-router-dom';
 import GoogleAd from '../components/GoogleAd';
 import usePageMetadata from '../hooks/usePageMetadata';
@@ -14,40 +14,40 @@ const GettingStartedPage: React.FC = () => {
       level: 'Absolute Beginner',
       description: 'Just starting to learn English grammar',
       topics: [
-        { name: 'Basic Grammar Terminology', slug: '/basic-grammar-terminology', description: 'Learn essential grammar terms' },
-        { name: 'Present Simple Tense', slug: '/topics/present-simple', description: 'Your first verb tense' },
-        { name: 'Articles (A, An, The)', slug: '/topics/articles', description: 'When to use a, an, and the' },
-        { name: 'Basic Pronouns', slug: '/topics/pronouns', description: 'I, you, he, she, it, we, they' }
+        { name: 'Basic Grammar Terminology', slug: '/basic-grammar-terminology/', description: 'Learn essential grammar terms' },
+        { name: 'Present Simple Tense', slug: '/topics/present-simple/', description: 'Your first verb tense' },
+        { name: 'Articles (A, An, The)', slug: '/topics/articles/', description: 'When to use a, an, and the' },
+        { name: 'Basic Pronouns', slug: '/topics/pronouns/', description: 'I, you, he, she, it, we, they' }
       ]
     },
     {
       level: 'Elementary',
       description: 'You know the basics and want to build on them',
       topics: [
-        { name: 'Past Simple Tense', slug: '/topics/past-simple', description: 'Talk about past actions' },
-        { name: 'Future Simple Tense', slug: '/topics/future-simple', description: 'Express future plans' },
-        { name: 'Adjectives & Adverbs', slug: '/topics/adjectives-adverbs', description: 'Describe nouns and verbs' },
-        { name: 'Prepositions', slug: '/topics/prepositions', description: 'In, on, at, by, with, etc.' }
+        { name: 'Past Simple Tense', slug: '/topics/past-simple/', description: 'Talk about past actions' },
+        { name: 'Future Simple Tense', slug: '/topics/future-simple/', description: 'Express future plans' },
+        { name: 'Adjectives & Adverbs', slug: '/topics/adjectives-adverbs/', description: 'Describe nouns and verbs' },
+        { name: 'Prepositions', slug: '/topics/prepositions/', description: 'In, on, at, by, with, etc.' }
       ]
     },
     {
       level: 'Intermediate',
       description: 'Ready to tackle more complex grammar',
       topics: [
-        { name: 'Present Perfect Tense', slug: '/topics/present-perfect', description: 'Connect past and present' },
-        { name: 'Passive Voice', slug: '/topics/passive-voice', description: 'Focus on the action, not the doer' },
-        { name: 'Conditionals', slug: '/topics/conditionals', description: 'If-clauses and hypotheticals' },
-        { name: 'Reported Speech', slug: '/topics/reported-speech', description: 'Quote what others said' }
+        { name: 'Present Perfect Tense', slug: '/topics/present-perfect/', description: 'Connect past and present' },
+        { name: 'Passive Voice', slug: '/topics/passive-voice/', description: 'Focus on the action, not the doer' },
+        { name: 'Conditionals', slug: '/topics/conditionals/', description: 'If-clauses and hypotheticals' },
+        { name: 'Reported Speech', slug: '/topics/reported-speech/', description: 'Quote what others said' }
       ]
     },
     {
       level: 'Advanced',
       description: 'Polish your skills and master nuances',
       topics: [
-        { name: 'Phrasal Verbs', slug: '/phrasal-verbs', description: 'Master idiomatic verb expressions' },
-        { name: 'Idioms', slug: '/idioms', description: 'Understand figurative language' },
-        { name: 'Academic Writing', slug: '/essay-types', description: 'Write sophisticated essays' },
-        { name: 'Advanced Punctuation', slug: '/blog/punctuation-guide-colons-semicolons', description: 'Colons, semicolons, and more' }
+        { name: 'Phrasal Verbs', slug: '/phrasal-verbs/', description: 'Master idiomatic verb expressions' },
+        { name: 'Idioms', slug: '/idioms/', description: 'Understand figurative language' },
+        { name: 'Academic Writing', slug: '/essay-types/', description: 'Write sophisticated essays' },
+        { name: 'Advanced Punctuation', slug: '/blog/punctuation-guide-colons-semicolons/', description: 'Colons, semicolons, and more' }
       ]
     }
   ];
@@ -94,7 +94,7 @@ const GettingStartedPage: React.FC = () => {
               <div className="text-3xl font-bold text-blue-600 mb-2 dark:text-blue-400">3</div>
               <h3 className="font-heading text-xl font-bold text-slate-900 mb-2 dark:text-slate-100">Track Progress</h3>
               <p className="font-body text-slate-600 dark:text-slate-400">
-                Use our <Link to="/progress" className="text-blue-600 hover:underline dark:text-blue-400">Progress Tracker</Link> to monitor completed topics.
+                Use our <Link to="/progress/" className="text-blue-600 hover:underline dark:text-blue-400">Progress Tracker</Link> to monitor completed topics.
               </p>
             </div>
           </div>
@@ -207,7 +207,7 @@ const GettingStartedPage: React.FC = () => {
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
             <Link
-              to="/grammar-guide"
+              to="/grammar-guide/"
               className="bg-white p-6 rounded-lg border border-slate-200 hover:border-purple-400 hover:shadow-md transition-all duration-200 dark:bg-slate-800/50 dark:border-slate-700 dark:hover:border-purple-500"
             >
               <h3 className="font-heading text-xl font-bold text-slate-900 mb-2 dark:text-slate-100">📚 Grammar Guide</h3>
@@ -216,7 +216,7 @@ const GettingStartedPage: React.FC = () => {
               </p>
             </Link>
             <Link
-              to="/tense-visualizer"
+              to="/tense-visualizer/"
               className="bg-white p-6 rounded-lg border border-slate-200 hover:border-purple-400 hover:shadow-md transition-all duration-200 dark:bg-slate-800/50 dark:border-slate-700 dark:hover:border-purple-500"
             >
               <h3 className="font-heading text-xl font-bold text-slate-900 mb-2 dark:text-slate-100">⏱️ Tense Visualizer</h3>
@@ -225,7 +225,7 @@ const GettingStartedPage: React.FC = () => {
               </p>
             </Link>
             <Link
-              to="/writing-assistant"
+              to="/writing-assistant/"
               className="bg-white p-6 rounded-lg border border-slate-200 hover:border-purple-400 hover:shadow-md transition-all duration-200 dark:bg-slate-800/50 dark:border-slate-700 dark:hover:border-purple-500"
             >
               <h3 className="font-heading text-xl font-bold text-slate-900 mb-2 dark:text-slate-100">✍️ Writing Assistant</h3>
@@ -234,7 +234,7 @@ const GettingStartedPage: React.FC = () => {
               </p>
             </Link>
             <Link
-              to="/blog"
+              to="/blog/"
               className="bg-white p-6 rounded-lg border border-slate-200 hover:border-purple-400 hover:shadow-md transition-all duration-200 dark:bg-slate-800/50 dark:border-slate-700 dark:hover:border-purple-500"
             >
               <h3 className="font-heading text-xl font-bold text-slate-900 mb-2 dark:text-slate-100">📝 Blog</h3>

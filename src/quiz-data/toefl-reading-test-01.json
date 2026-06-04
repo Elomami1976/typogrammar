@@ -1,0 +1,355 @@
+{
+  "test_id": "toefl-reading-test-01",
+  "exam": "TOEFL iBT",
+  "section": "Reading",
+  "format_year": 2026,
+  "title": "TOEFL Reading Practice Test 1 (2026 Format)",
+  "description": "Full TOEFL Reading section in the 2026 format: one Complete the Words task, two Daily Life reading tasks, and three Academic passages on urban bees, the rise of paper money, and the science of sleep.",
+  "time_limit_seconds": 2100,
+  "total_questions": 30,
+  "instructions": "You have 35 minutes to complete all six tasks. You may navigate freely between tasks before submitting. Once you submit, the test will be scored automatically and you will see explanations.",
+  "tasks": [
+    {
+      "task_id": "t1",
+      "type": "complete_words",
+      "title": "Task 1 — Complete the Words",
+      "directions": "Read the short paragraph. Some words have missing letters, shown as a token with the first few letters given. Type the complete word for each blank.",
+      "passage": "Cities are often imagined as the opposite of nature, but biologists are increasingly {{w1}} how much wildlife actually {{w2}} there. Parks, gardens and even rooftops can {{w3}} a surprising number of species. Insects in particular {{w4}} well in urban areas, partly because temperatures are slightly warmer and partly because there are fewer large {{w5}}. In recent years, bees have become the most studied example. {{w6}} have shown that some city neighborhoods support more bee species than nearby farmland, where heavy use of {{w7}} can reduce {{w8}}. Planting native flowers along streets and leaving small patches of {{w9}} grass appear to help. The lesson, {{w10}} say, is that even ordinary urban choices can shape biodiversity.",
+      "items": [
+        { "item_id": "w1", "given": "disc", "answer": "discovering", "blanks": 7 },
+        { "item_id": "w2", "given": "th", "answer": "thrives", "blanks": 5 },
+        { "item_id": "w3", "given": "sup", "answer": "support", "blanks": 4 },
+        { "item_id": "w4", "given": "do", "answer": "do", "blanks": 0 },
+        { "item_id": "w5", "given": "pred", "answer": "predators", "blanks": 5 },
+        { "item_id": "w6", "given": "Stud", "answer": "Studies", "blanks": 3 },
+        { "item_id": "w7", "given": "pest", "answer": "pesticides", "blanks": 6 },
+        { "item_id": "w8", "given": "div", "answer": "diversity", "blanks": 6 },
+        { "item_id": "w9", "given": "wi", "answer": "wild", "blanks": 2 },
+        { "item_id": "w10", "given": "res", "answer": "researchers", "blanks": 8 }
+      ]
+    },
+    {
+      "task_id": "t2",
+      "type": "daily_life",
+      "title": "Task 2 — Daily Life Reading: Office Email",
+      "context_label": "Email to all staff",
+      "passage": "From: Maya Tran, Office Manager\nTo: All Staff\nSubject: Building works next week\n\nHi everyone,\n\nThe landlord will repaint the main stairwell from Monday 14 April to Wednesday 16 April. During those three days, the stairs from the lobby to the third floor will be closed all day. Please use the lift at the rear of the building instead. The lift is small, so please be patient at peak times.\n\nA reminder: the meeting room on the second floor is unavailable on Tuesday afternoon for the same reason. If you booked it, your booking has been moved to Room 3B at the same time.\n\nThanks for your flexibility.\nMaya",
+      "questions": [
+        {
+          "question_id": "t2q1",
+          "type": "factual",
+          "prompt": "What does Maya ask staff to do while the stairs are closed?",
+          "options": [
+            { "key": "A", "text": "Work from home for three days." },
+            { "key": "B", "text": "Use the lift at the back of the building." },
+            { "key": "C", "text": "Avoid the third floor entirely." },
+            { "key": "D", "text": "Take a different staircase on the south side." }
+          ],
+          "correct": ["B"],
+          "explanation": "The email states clearly: 'Please use the lift at the rear of the building instead.' That matches B exactly. A is never suggested; C overstates the impact — only the stairs, not the floor, are closed; D invents a south staircase that the email does not mention."
+        },
+        {
+          "question_id": "t2q2",
+          "type": "inference",
+          "prompt": "What can be inferred about the meeting room on the second floor?",
+          "options": [
+            { "key": "A", "text": "It will be permanently relocated to Room 3B." },
+            { "key": "B", "text": "It is being repainted along with the stairwell." },
+            { "key": "C", "text": "It is unavailable for only part of one day." },
+            { "key": "D", "text": "Staff must cancel any meeting held inside it." }
+          ],
+          "correct": ["C"],
+          "explanation": "The email says the room is 'unavailable on Tuesday afternoon' — that is one part of one day, so C is correct. A misreads the temporary booking move as permanent; B is not stated (the room is closed 'for the same reason' but that just refers to the works, not that it is being painted); D is wrong because affected bookings have already been moved, not cancelled."
+        },
+        {
+          "question_id": "t2q3",
+          "type": "rhetorical_purpose",
+          "prompt": "Why does Maya mention that 'the lift is small'?",
+          "options": [
+            { "key": "A", "text": "To suggest that staff should use the stairs instead." },
+            { "key": "B", "text": "To warn that the lift may break down." },
+            { "key": "C", "text": "To prepare staff for short waits during busy periods." },
+            { "key": "D", "text": "To explain why a larger lift has been ordered." }
+          ],
+          "correct": ["C"],
+          "explanation": "The size comment is followed immediately by 'please be patient at peak times', so the purpose is to manage expectations about waiting — that is C. A contradicts the email, which has just told them to use the lift; B and D add new information (breakdowns, new lift) that the email does not contain."
+        }
+      ]
+    },
+    {
+      "task_id": "t3",
+      "type": "daily_life",
+      "title": "Task 3 — Daily Life Reading: Library Notice",
+      "context_label": "Public notice in a community library",
+      "passage": "NEW: Self-service printing\nFrom 1 May, all printing in the library will be self-service from any of the three new machines near the main desk.\n\n- Black and white: 10 cents per page\n- Colour: 30 cents per page\n- Maximum 50 pages per job\n\nPay at the machine using coins or by tapping a debit card. Receipts are available on request.\n\nStaff can no longer print documents on your behalf, but they are happy to walk you through the machine on your first visit. Please ask at the front desk.",
+      "questions": [
+        {
+          "question_id": "t3q1",
+          "type": "negative_factual",
+          "prompt": "According to the notice, which of the following is NOT true?",
+          "options": [
+            { "key": "A", "text": "Library staff will demonstrate the new machines to first-time users." },
+            { "key": "B", "text": "Black-and-white pages cost less than colour pages." },
+            { "key": "C", "text": "Library staff will print documents for visitors on request." },
+            { "key": "D", "text": "Users can pay by card or by coin." }
+          ],
+          "correct": ["C"],
+          "explanation": "The notice explicitly says 'Staff can no longer print documents on your behalf' — so C is the statement that is NOT true and is therefore the answer. A is true: staff will 'walk you through the machine on your first visit'. B and D are both directly stated in the notice."
+        },
+        {
+          "question_id": "t3q2",
+          "type": "factual",
+          "prompt": "What is the maximum length of a single print job?",
+          "options": [
+            { "key": "A", "text": "10 pages" },
+            { "key": "B", "text": "30 pages" },
+            { "key": "C", "text": "50 pages" },
+            { "key": "D", "text": "100 pages" }
+          ],
+          "correct": ["C"],
+          "explanation": "The notice lists 'Maximum 50 pages per job' as one of the bullet points. A and B are prices in cents, not page counts; D is not mentioned anywhere."
+        }
+      ]
+    },
+    {
+      "task_id": "t4",
+      "type": "academic",
+      "title": "Task 4 — Academic Reading: Bees in the City",
+      "passage": "For a long time, biologists assumed that cities were poor places for pollinators. Concrete and traffic seemed unlikely to support the wildflowers that bees depend on. [[1]] More recent surveys, however, have produced an unexpected picture. In several European and North American studies, city neighborhoods with diverse gardens and weedy patches were found to host more species of wild bee than nearby farmland. [[2]] One reason is that intensive agriculture often relies on single crops sprayed heavily with pesticides, while urban green spaces tend to contain a wider variety of flowering plants and use fewer chemicals.\n\nTemperature also plays a role. Cities are typically a few degrees warmer than surrounding countryside, a phenomenon known as the urban heat island effect. [[3]] For cold-sensitive species this can extend the foraging season by several weeks. Researchers caution, however, that not all bees benefit equally: large-bodied species and specialists that depend on a single plant family often decline, while smaller, more flexible generalists prosper. [[4]] The lesson is that biodiversity in cities is real but uneven, and that ordinary garden choices have measurable consequences for the insects that live alongside us.",
+      "questions": [
+        {
+          "question_id": "t4q1",
+          "type": "vocabulary",
+          "prompt": "The word \"intensive\" in the passage is closest in meaning to",
+          "target_word": "intensive",
+          "options": [
+            { "key": "A", "text": "occasional" },
+            { "key": "B", "text": "small-scale" },
+            { "key": "C", "text": "very concentrated" },
+            { "key": "D", "text": "experimental" }
+          ],
+          "correct": ["C"],
+          "explanation": "In context, 'intensive agriculture' refers to farming that uses land very heavily — large single crops, heavy chemical use. C ('very concentrated') captures this. A and B are the opposite. D is unrelated to how the word is used here."
+        },
+        {
+          "question_id": "t4q2",
+          "type": "factual",
+          "prompt": "According to the passage, why might urban areas support more bee species than nearby farmland?",
+          "options": [
+            { "key": "A", "text": "Cities are cleaner than agricultural areas." },
+            { "key": "B", "text": "Urban gardens contain a wider variety of flowering plants and use fewer pesticides." },
+            { "key": "C", "text": "Most farmland in Europe no longer grows flowering crops." },
+            { "key": "D", "text": "City bees have evolved to feed on fewer plants." }
+          ],
+          "correct": ["B"],
+          "explanation": "The passage states urban green spaces 'contain a wider variety of flowering plants and use fewer chemicals.' That is essentially option B. A is never claimed; C overstates the text; D contradicts the passage, which says urban winners are 'flexible generalists' — they are flexible because of the food on offer, not because of evolutionary specialisation."
+        },
+        {
+          "question_id": "t4q3",
+          "type": "inference",
+          "prompt": "What can be inferred about specialist bee species that rely on a single plant family?",
+          "options": [
+            { "key": "A", "text": "They are usually the first to recover after habitat loss." },
+            { "key": "B", "text": "They are more likely than generalists to disappear from urban environments." },
+            { "key": "C", "text": "They benefit most from the urban heat island effect." },
+            { "key": "D", "text": "They are unaffected by changes in the variety of flowering plants." }
+          ],
+          "correct": ["B"],
+          "explanation": "The passage notes that 'large-bodied species and specialists ... often decline, while smaller, more flexible generalists prosper.' From this we can infer specialists are more likely to disappear — B. A and C reverse the implication. D contradicts the logic of the passage, since specialists depend on specific plants."
+        },
+        {
+          "question_id": "t4q4",
+          "type": "insert_text",
+          "prompt": "Where in the passage would the following sentence best fit?\n\n\"This warming can allow flowers to bloom earlier and stay in bloom longer.\"",
+          "options": [
+            { "key": "A", "text": "Position [[1]]" },
+            { "key": "B", "text": "Position [[2]]" },
+            { "key": "C", "text": "Position [[3]]" },
+            { "key": "D", "text": "Position [[4]]" }
+          ],
+          "correct": ["C"],
+          "explanation": "The inserted sentence is about warming and flowering. It needs to follow the introduction of the 'urban heat island effect' and precede the consequence for cold-sensitive species. Position [[3]] sits exactly between those two ideas. The other positions are in the wrong context — [[1]] and [[2]] are before warming is introduced, and [[4]] interrupts the discussion of specialists versus generalists."
+        },
+        {
+          "question_id": "t4q5",
+          "type": "prose_summary",
+          "prompt": "Select the THREE statements that best summarize the most important ideas in the passage.",
+          "select_count": 3,
+          "options": [
+            { "key": "A", "text": "Recent research has overturned the older assumption that cities are poor habitats for pollinators." },
+            { "key": "B", "text": "Urban areas can support diverse bee populations partly because they offer varied flowering plants and less pesticide exposure than farmland." },
+            { "key": "C", "text": "The urban heat island effect makes cities unsuitable for cold-sensitive bee species." },
+            { "key": "D", "text": "All bee species benefit equally from urban living, regardless of body size or diet." },
+            { "key": "E", "text": "Specialist bees often struggle in cities, while flexible generalist species tend to do well." },
+            { "key": "F", "text": "Pesticide regulation in European cities has eliminated the threat to urban bee populations." }
+          ],
+          "correct": ["A", "B", "E"],
+          "explanation": "A captures the central reversal of the older assumption. B summarises the main mechanism (plant variety + less pesticide). E captures the important nuance about winners and losers among species. C contradicts the passage — warming extends the foraging season for cold-sensitive species. D is the opposite of what the passage says. F invents a policy claim not made in the text."
+        }
+      ]
+    },
+    {
+      "task_id": "t5",
+      "type": "academic",
+      "title": "Task 5 — Academic Reading: The Origins of Paper Money",
+      "passage": "For most of human history, money meant something tangible — grain, cattle, salt, or, most commonly, lumps of precious metal. The shift to paper, an apparently worthless slip of material whose value depended entirely on trust, was one of the most radical financial innovations ever made. [[1]] It began not in Europe but in China, during the Tang dynasty in the seventh and eighth centuries. Merchants travelling long distances grew tired of carrying heavy strings of copper coins. [[2]] They began depositing coins with trusted firms in major cities and accepting paper receipts that could be redeemed elsewhere for the same sum.\n\nBy the Song dynasty, the government had taken over this system. Officials issued standardized notes backed initially by metal reserves, and for a time the system worked smoothly. [[3]] Later emperors, however, discovered that they could simply print more notes whenever the treasury was empty. The result was the world's first recorded inflation crisis. By the fourteenth century, paper money in China had collapsed so completely that the practice was abandoned for almost three centuries. [[4]] Europe, learning the lesson slowly, did not adopt paper currency on a national scale until the late seventeenth century.",
+      "questions": [
+        {
+          "question_id": "t5q1",
+          "type": "vocabulary",
+          "prompt": "The word \"tangible\" in the passage is closest in meaning to",
+          "target_word": "tangible",
+          "options": [
+            { "key": "A", "text": "expensive" },
+            { "key": "B", "text": "physical" },
+            { "key": "C", "text": "imaginary" },
+            { "key": "D", "text": "shared" }
+          ],
+          "correct": ["B"],
+          "explanation": "The contrast in the sentence is between tangible money (grain, cattle, metal) and paper, whose value depends entirely on trust. 'Tangible' here therefore means physical or touchable — B. A and D shift the meaning; C is the opposite."
+        },
+        {
+          "question_id": "t5q2",
+          "type": "factual",
+          "prompt": "According to the passage, what originally motivated Chinese merchants to use paper receipts?",
+          "options": [
+            { "key": "A", "text": "Government regulations required them to do so." },
+            { "key": "B", "text": "Copper coins had become too valuable to spend." },
+            { "key": "C", "text": "Carrying large quantities of copper coins was inconvenient." },
+            { "key": "D", "text": "Foreign traders refused to accept Chinese coins." }
+          ],
+          "correct": ["C"],
+          "explanation": "The passage says merchants 'grew tired of carrying heavy strings of copper coins' and began depositing them in exchange for paper receipts — that is C. A is the opposite (government regulation came later, under the Song). B and D are not mentioned anywhere in the passage."
+        },
+        {
+          "question_id": "t5q3",
+          "type": "negative_factual",
+          "prompt": "All of the following are stated in the passage EXCEPT:",
+          "options": [
+            { "key": "A", "text": "Paper money first appeared during the Tang dynasty." },
+            { "key": "B", "text": "Song emperors eventually printed more notes than their reserves could support." },
+            { "key": "C", "text": "Chinese paper money survived without interruption from the Tang dynasty to modern times." },
+            { "key": "D", "text": "Europe adopted paper currency much later than China." }
+          ],
+          "correct": ["C"],
+          "explanation": "C contradicts the passage, which says paper money in China 'collapsed so completely that the practice was abandoned for almost three centuries.' That makes C the EXCEPT answer. A, B and D are all directly supported by the text."
+        },
+        {
+          "question_id": "t5q4",
+          "type": "rhetorical_purpose",
+          "prompt": "Why does the author describe paper money as 'an apparently worthless slip of material whose value depended entirely on trust'?",
+          "options": [
+            { "key": "A", "text": "To suggest that paper money was a poor invention." },
+            { "key": "B", "text": "To emphasize how unusual and bold the shift away from metal money was." },
+            { "key": "C", "text": "To argue that modern currencies should return to gold." },
+            { "key": "D", "text": "To explain why China eventually abandoned paper money." }
+          ],
+          "correct": ["B"],
+          "explanation": "The phrase sets up the next clause: 'one of the most radical financial innovations ever made.' The author is stressing how dramatic the conceptual leap was — B. A is too critical; the author calls the innovation radical, not bad. C is a modern argument the passage does not make. D wrongly links this opening description to the later collapse."
+        },
+        {
+          "question_id": "t5q5",
+          "type": "inference",
+          "prompt": "What can be inferred about the role of the Song government in the development of paper money?",
+          "options": [
+            { "key": "A", "text": "It invented paper money for the first time." },
+            { "key": "B", "text": "It took over and standardized a system that had already begun among private merchants." },
+            { "key": "C", "text": "It opposed the use of paper notes for several decades." },
+            { "key": "D", "text": "It guaranteed paper notes with foreign reserves." }
+          ],
+          "correct": ["B"],
+          "explanation": "The passage shows the merchant system existed first; then 'By the Song dynasty, the government had taken over this system' and issued 'standardized notes'. That is exactly B. A is wrong because the Tang merchants had paper receipts first. C contradicts the active government role. D invents foreign reserves; the passage says 'metal reserves'."
+        }
+      ]
+    },
+    {
+      "task_id": "t6",
+      "type": "academic",
+      "title": "Task 6 — Academic Reading: Why Animals Sleep",
+      "passage": "Sleep is one of the most puzzling features of animal life. [[1]] From the standpoint of evolution it looks costly: a sleeping animal cannot eat, mate, or escape predators. Yet sleep, in some form, appears throughout the animal kingdom, from mammals and birds down to insects and even tiny worms. [[2]] The fact that it has not been eliminated by natural selection suggests that whatever sleep does, the benefit must be very large.\n\nFor many decades the dominant theory was simply that sleep conserves energy. [[3]] Recent research, however, points to a more specific role inside the brain. During deep sleep, networks of supporting cells expand the spaces between brain neurons, allowing fluid to wash away waste products that build up during waking hours. Animals deprived of sleep show a rapid accumulation of these molecules, along with measurable declines in memory and reaction time. Sleep also seems essential for consolidating new memories: replaying recent experiences appears to strengthen the brain connections that store them. [[4]] None of this fully explains why sleep evolved, but it suggests that an animal which gave up sleep entirely would be sacrificing not just rest but the ongoing maintenance of its own mind.",
+      "questions": [
+        {
+          "question_id": "t6q1",
+          "type": "vocabulary",
+          "prompt": "The word \"costly\" in the passage is closest in meaning to",
+          "target_word": "costly",
+          "options": [
+            { "key": "A", "text": "rare" },
+            { "key": "B", "text": "disadvantageous" },
+            { "key": "C", "text": "expensive in money" },
+            { "key": "D", "text": "irreversible" }
+          ],
+          "correct": ["B"],
+          "explanation": "In an evolutionary discussion, 'costly' means imposing a fitness disadvantage — the animal cannot eat, mate, or escape predators. B captures this. C is the literal financial meaning that does not fit a discussion of animal evolution. A and D are unrelated."
+        },
+        {
+          "question_id": "t6q2",
+          "type": "reference",
+          "prompt": "In the passage, the word \"it\" in the phrase \"The fact that it has not been eliminated by natural selection\" refers to",
+          "target_word": "it",
+          "options": [
+            { "key": "A", "text": "natural selection" },
+            { "key": "B", "text": "sleep" },
+            { "key": "C", "text": "evolution" },
+            { "key": "D", "text": "the animal kingdom" }
+          ],
+          "correct": ["B"],
+          "explanation": "The sentence reads 'The fact that it has not been eliminated by natural selection ...' In context, 'it' refers back to sleep, which is the behaviour that has not been eliminated. The other options either do the eliminating (A) or are background concepts (C, D)."
+        },
+        {
+          "question_id": "t6q3",
+          "type": "factual",
+          "prompt": "According to the passage, what happens in the brain during deep sleep?",
+          "options": [
+            { "key": "A", "text": "Neurons grow new connections to replace damaged ones." },
+            { "key": "B", "text": "Supporting cells widen the spaces between neurons so fluid can clear waste." },
+            { "key": "C", "text": "All brain activity stops to conserve energy." },
+            { "key": "D", "text": "Body temperature rises to break down stored proteins." }
+          ],
+          "correct": ["B"],
+          "explanation": "The passage describes 'networks of supporting cells expand the spaces between brain neurons, allowing fluid to wash away waste products' — that is B almost word for word. A and D invent biology that the passage does not mention. C contradicts the passage, which describes active processes during sleep."
+        },
+        {
+          "question_id": "t6q4",
+          "type": "sentence_simplification",
+          "prompt": "Which of the following best expresses the essential information in the sentence: \"None of this fully explains why sleep evolved, but it suggests that an animal which gave up sleep entirely would be sacrificing not just rest but the ongoing maintenance of its own mind.\"",
+          "options": [
+            { "key": "A", "text": "Sleep evolved purely so that animals could rest their muscles." },
+            { "key": "B", "text": "Scientists now fully understand why sleep evolved and have ruled out other explanations." },
+            { "key": "C", "text": "Although the evolution of sleep is not yet fully understood, the evidence indicates that giving up sleep would damage the brain itself." },
+            { "key": "D", "text": "Animals that sleep less than other species tend to live shorter lives." }
+          ],
+          "correct": ["C"],
+          "explanation": "The original sentence makes two points: the evolutionary question is not fully answered, and giving up sleep would harm the brain's maintenance. C captures both. A loses the second point and is contradicted by the passage. B is the opposite of 'None of this fully explains'. D adds a lifespan claim not in the sentence."
+        },
+        {
+          "question_id": "t6q5",
+          "type": "prose_summary",
+          "prompt": "Select the THREE statements that best summarize the passage.",
+          "select_count": 3,
+          "options": [
+            { "key": "A", "text": "Sleep is found in animals as different as mammals and worms, suggesting that it provides an important benefit." },
+            { "key": "B", "text": "Recent research suggests that sleep helps clear waste from the brain and supports memory consolidation." },
+            { "key": "C", "text": "The main purpose of sleep is to allow muscles to grow during the night." },
+            { "key": "D", "text": "Although the evolutionary origin of sleep remains unclear, giving it up would damage essential brain functions." },
+            { "key": "E", "text": "Sleep is unique to mammals and a few species of birds." },
+            { "key": "F", "text": "Animals deprived of sleep quickly develop higher reaction times and stronger memories." }
+          ],
+          "correct": ["A", "B", "D"],
+          "explanation": "A captures the wide distribution of sleep across species and the evolutionary argument. B captures the modern view of what sleep does in the brain. D captures the careful conclusion. C invents a muscle-growth theory; E contradicts the passage, which lists insects and worms; F reverses the actual effect of sleep deprivation."
+        }
+      ]
+    }
+  ],
+  "scoring": {
+    "max_raw_score": 30,
+    "band_estimate": [
+      { "min_raw": 28, "label": "Advanced", "approx_band": "C1 / TOEFL 27–30" },
+      { "min_raw": 23, "label": "Upper-Intermediate", "approx_band": "B2+ / TOEFL 23–26" },
+      { "min_raw": 17, "label": "Intermediate", "approx_band": "B2 / TOEFL 18–22" },
+      { "min_raw": 11, "label": "Pre-Intermediate", "approx_band": "B1 / TOEFL 12–17" },
+      { "min_raw": 6, "label": "Elementary", "approx_band": "A2 / TOEFL 6–11" },
+      { "min_raw": 0, "label": "Beginner", "approx_band": "A1 / TOEFL 0–5" }
+    ]
+  }
+}

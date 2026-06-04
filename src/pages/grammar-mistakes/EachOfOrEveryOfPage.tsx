@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../../hooks/usePageMetadata';
 import SchemaMarkup from '../../components/SchemaMarkup';
@@ -7,7 +7,7 @@ const EachOfOrEveryOfPage: React.FC = () => {
   usePageMetadata({
     title: 'Each of vs Every: Can You Say "Every of"? | TypoGrammar',
     description: '"Each of" is correct English. "Every of" is NOT grammatical. Learn when to use "each of" vs "every" with clear grammar rules and examples.',
-    canonical: 'https://typogrammar.com/grammar-mistakes/each-of-or-every-of'
+    canonical: 'https://typogrammar.com/grammar-mistakes/each-of-or-every-of/'
   });
 
   const [showAnswer, setShowAnswer] = useState(false);
@@ -54,7 +54,7 @@ const EachOfOrEveryOfPage: React.FC = () => {
       <nav className="mb-6 text-slate-600 dark:text-slate-400">
         <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
         {' › '}
-        <Link to="/grammar-mistakes" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
+        <Link to="/grammar-mistakes/" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
         {' › '}
         <span className="text-slate-900 dark:text-slate-100">Each of or Every of</span>
       </nav>
@@ -68,8 +68,8 @@ const EachOfOrEveryOfPage: React.FC = () => {
         <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded-r-lg mb-8 dark:bg-green-900/30 dark:border-green-400">
           <h2 className="text-xl font-bold text-green-900 dark:text-green-100 mb-2">Quick Answer</h2>
           <div className="text-lg text-green-800 dark:text-green-200 space-y-2">
-            <p><strong>"Each of"</strong> ✔ — correct and grammatical.</p>
-            <p><strong>"Every of"</strong> ✘ — does NOT exist in English. Never use it.</p>
+            <p><strong>"Each of"</strong> ✔, correct and grammatical.</p>
+            <p><strong>"Every of"</strong> ✘, does NOT exist in English. Never use it.</p>
             <p>Use <strong>"every"</strong> alone before a singular noun: "every student," "every day."</p>
           </div>
         </div>
@@ -100,9 +100,9 @@ const EachOfOrEveryOfPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-4 rounded-lg">
-            <p className="text-lg text-amber-800 dark:text-amber-200">
-              <strong>Memory tip:</strong> Only <strong>EACH</strong> can precede "of." <strong>EVERY</strong> goes directly before a singular noun — no "of."
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-4 rounded-lg">
+            <p className="text-lg text-teal-800 dark:text-teal-200">
+              <strong>Memory tip:</strong> Only <strong>EACH</strong> can precede "of." <strong>EVERY</strong> goes directly before a singular noun, no "of."
             </p>
           </div>
         </section>
@@ -156,7 +156,7 @@ const EachOfOrEveryOfPage: React.FC = () => {
             </div>
           </div>
 
-          <h3 className="text-xl font-semibold text-slate-800 dark:text-slate-200 mb-3">"Every of" (WRONG — never use)</h3>
+          <h3 className="text-xl font-semibold text-slate-800 dark:text-slate-200 mb-3">"Every of" (WRONG, never use)</h3>
           <div className="space-y-3">
             <div className="flex items-start">
               <span className="text-red-600 dark:text-red-400 mr-3 text-xl">✘</span>
@@ -176,17 +176,17 @@ const EachOfOrEveryOfPage: React.FC = () => {
           </h2>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
-              <p className="font-bold text-blue-900 dark:text-blue-100 mb-2">EACH — individual focus</p>
+              <p className="font-bold text-blue-900 dark:text-blue-100 mb-2">EACH, individual focus</p>
               <p className="text-blue-800 dark:text-blue-200 text-sm mb-2">Looks at members one by one</p>
               <p className="text-blue-700 dark:text-blue-300 italic text-sm">"Each student received a certificate." (one by one)</p>
             </div>
             <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg">
-              <p className="font-bold text-purple-900 dark:text-purple-100 mb-2">EVERY — group focus</p>
+              <p className="font-bold text-purple-900 dark:text-purple-100 mb-2">EVERY, group focus</p>
               <p className="text-purple-800 dark:text-purple-200 text-sm mb-2">Views group as a collective whole</p>
               <p className="text-purple-700 dark:text-purple-300 italic text-sm">"Every student received a certificate." (all of them)</p>
             </div>
           </div>
-          <p className="text-slate-600 dark:text-slate-400 mt-4 text-sm">In many contexts these are interchangeable. The distinction becomes important with larger groups — "every" is more natural for hundreds of people, while "each" implies a smaller, more counted group.</p>
+          <p className="text-slate-600 dark:text-slate-400 mt-4 text-sm">In many contexts these are interchangeable. The distinction becomes important with larger groups, "every" is more natural for hundreds of people, while "each" implies a smaller, more counted group.</p>
         </section>
 
         {/* Common Mistakes */}
@@ -219,7 +219,7 @@ const EachOfOrEveryOfPage: React.FC = () => {
           <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
             Practice
           </h2>
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-6 rounded-lg">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-6 rounded-lg">
             <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
               <strong>Choose the correct form:</strong>
             </p>
@@ -252,27 +252,27 @@ const EachOfOrEveryOfPage: React.FC = () => {
           </h2>
           <ul className="space-y-2 text-lg">
             <li>
-              <Link to="/grammar-mistakes/either-of-or-neither-of" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/either-of-or-neither-of/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Either of / Neither of
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/each-are-or-each-is" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/each-are-or-each-is/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Each Are or Each Is?
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/a-number-of-vs-the-number-of" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/a-number-of-vs-the-number-of/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → A Number of vs The Number of
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/everyone-is-or-everyone-are" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/everyone-is-or-everyone-are/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Everyone Is or Everyone Are?
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → All Grammar Mistakes
               </Link>
             </li>

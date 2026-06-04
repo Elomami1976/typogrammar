@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../../hooks/usePageMetadata';
 import SchemaMarkup from '../../components/SchemaMarkup';
@@ -6,8 +6,8 @@ import SchemaMarkup from '../../components/SchemaMarkup';
 const PlentyOfVsALotOfPage: React.FC = () => {
   usePageMetadata({
     title: 'Plenty of vs A Lot of: What Is the Difference? | TypoGrammar',
-    description: 'Learn the difference between "plenty of" and "a lot of." Both mean a large quantity, but "plenty of" implies more than enough — a sense of abundance or sufficiency.',
-    canonical: 'https://typogrammar.com/grammar-mistakes/plenty-of-vs-a-lot-of'
+    description: 'Learn the difference between "plenty of" and "a lot of." Both mean a large quantity, but "plenty of" implies more than enough, a sense of abundance or sufficiency.',
+    canonical: 'https://typogrammar.com/grammar-mistakes/plenty-of-vs-a-lot-of/'
   });
 
   const [showAnswer, setShowAnswer] = useState(false);
@@ -16,7 +16,7 @@ const PlentyOfVsALotOfPage: React.FC = () => {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "Plenty of vs A Lot of: What Is the Difference?",
-    "description": "Both 'plenty of' and 'a lot of' express large quantities. 'Plenty of' suggests more than enough — abundance or sufficiency. 'A lot of' is more neutral and simply means a large amount.",
+    "description": "Both 'plenty of' and 'a lot of' express large quantities. 'Plenty of' suggests more than enough, abundance or sufficiency. 'A lot of' is more neutral and simply means a large amount.",
     "author": { "@type": "Organization", "name": "TypoGrammar" },
     "publisher": { "@type": "Organization", "name": "TypoGrammar", "logo": { "@type": "ImageObject", "url": "https://typogrammar.com/logo.png" } },
     "mainEntityOfPage": { "@type": "WebPage", "@id": "https://typogrammar.com/grammar-mistakes/plenty-of-vs-a-lot-of" },
@@ -54,7 +54,7 @@ const PlentyOfVsALotOfPage: React.FC = () => {
       <nav className="mb-6 text-slate-600 dark:text-slate-400">
         <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
         {' › '}
-        <Link to="/grammar-mistakes" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
+        <Link to="/grammar-mistakes/" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
         {' › '}
         <span className="text-slate-900 dark:text-slate-100">Plenty of vs A Lot of</span>
       </nav>
@@ -82,7 +82,7 @@ const PlentyOfVsALotOfPage: React.FC = () => {
             <div className="bg-blue-50 dark:bg-blue-900/20 p-5 rounded-lg">
               <h3 className="font-bold text-blue-900 dark:text-blue-100 text-lg mb-3">A LOT OF</h3>
               <ul className="text-blue-800 dark:text-blue-200 space-y-1 text-sm">
-                <li>• Neutral — just states a large amount</li>
+                <li>• Neutral, just states a large amount</li>
                 <li>• Very common in spoken English</li>
                 <li>• Countable and uncountable nouns</li>
                 <li>• No emotional tone of surplus</li>
@@ -91,7 +91,7 @@ const PlentyOfVsALotOfPage: React.FC = () => {
             <div className="bg-purple-50 dark:bg-purple-900/20 p-5 rounded-lg">
               <h3 className="font-bold text-purple-900 dark:text-purple-100 text-lg mb-3">PLENTY OF</h3>
               <ul className="text-purple-800 dark:text-purple-200 space-y-1 text-sm">
-                <li>• Implies abundance — more than enough</li>
+                <li>• Implies abundance, more than enough</li>
                 <li>• Slightly more formal than "a lot of"</li>
                 <li>• Countable and uncountable nouns</li>
                 <li>• Often used reassuringly</li>
@@ -99,9 +99,9 @@ const PlentyOfVsALotOfPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-4 rounded-lg">
-            <p className="text-lg text-amber-800 dark:text-amber-200">
-              <strong>Key difference:</strong> "There is <strong>a lot of</strong> food" just says there's much food. "There is <strong>plenty of</strong> food" says there's more than enough — no one will go hungry.
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-4 rounded-lg">
+            <p className="text-lg text-teal-800 dark:text-teal-200">
+              <strong>Key difference:</strong> "There is <strong>a lot of</strong> food" just says there's much food. "There is <strong>plenty of</strong> food" says there's more than enough, no one will go hungry.
             </p>
           </div>
         </section>
@@ -132,7 +132,7 @@ const PlentyOfVsALotOfPage: React.FC = () => {
           <div className="space-y-3">
             <div className="flex items-start">
               <span className="text-green-600 dark:text-green-400 mr-3 text-xl">✔</span>
-              <span className="text-lg text-slate-700 dark:text-slate-300">Don't rush — there's <strong>plenty of</strong> time.</span>
+              <span className="text-lg text-slate-700 dark:text-slate-300">Don't rush, there's <strong>plenty of</strong> time.</span>
             </div>
             <div className="flex items-start">
               <span className="text-green-600 dark:text-green-400 mr-3 text-xl">✔</span>
@@ -140,7 +140,7 @@ const PlentyOfVsALotOfPage: React.FC = () => {
             </div>
             <div className="flex items-start">
               <span className="text-green-600 dark:text-green-400 mr-3 text-xl">✔</span>
-              <span className="text-lg text-slate-700 dark:text-slate-300">Help yourself — there's <strong>plenty of</strong> food.</span>
+              <span className="text-lg text-slate-700 dark:text-slate-300">Help yourself, there's <strong>plenty of</strong> food.</span>
             </div>
             <div className="flex items-start">
               <span className="text-green-600 dark:text-green-400 mr-3 text-xl">✔</span>
@@ -192,10 +192,10 @@ const PlentyOfVsALotOfPage: React.FC = () => {
           <div className="space-y-4">
             <div>
               <div className="bg-red-50 dark:bg-red-900/20 p-4 rounded-lg mb-2">
-                <p className="text-lg text-red-800 dark:text-red-200"><strong>Incorrect:</strong> There is plenty of students in the hall. (missing "of" variation — it's fine grammatically but often misused)</p>
+                <p className="text-lg text-red-800 dark:text-red-200"><strong>Incorrect:</strong> There is plenty of students in the hall. (missing "of" variation, it's fine grammatically but often misused)</p>
               </div>
               <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg">
-                <p className="text-lg text-green-800 dark:text-green-200"><strong>Note:</strong> "Plenty of students" is grammatically correct. The mistake is using "plenty" alone without "of" — never say "plenty students."</p>
+                <p className="text-lg text-green-800 dark:text-green-200"><strong>Note:</strong> "Plenty of students" is grammatically correct. The mistake is using "plenty" alone without "of", never say "plenty students."</p>
               </div>
             </div>
             <div>
@@ -203,7 +203,7 @@ const PlentyOfVsALotOfPage: React.FC = () => {
                 <p className="text-lg text-red-800 dark:text-red-200"><strong>Incorrect (IELTS/academic):</strong> There are a lot of evidences supporting this view.</p>
               </div>
               <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg">
-                <p className="text-lg text-green-800 dark:text-green-200"><strong>Correct:</strong> There is <strong>a lot of evidence</strong> / <strong>plenty of evidence</strong> supporting this view. ("Evidence" is uncountable — no plural.)</p>
+                <p className="text-lg text-green-800 dark:text-green-200"><strong>Correct:</strong> There is <strong>a lot of evidence</strong> / <strong>plenty of evidence</strong> supporting this view. ("Evidence" is uncountable, no plural.)</p>
               </div>
             </div>
           </div>
@@ -231,12 +231,12 @@ const PlentyOfVsALotOfPage: React.FC = () => {
           <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
             Practice
           </h2>
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-6 rounded-lg">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-6 rounded-lg">
             <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
               <strong>Choose the best option:</strong>
             </p>
             <p className="text-lg text-slate-800 dark:text-slate-200 italic mb-4">
-              "Relax — we have _____ time before the train leaves." (a lot of / plenty of)
+              "Relax, we have _____ time before the train leaves." (a lot of / plenty of)
             </p>
             <button
               onClick={() => setShowAnswer(!showAnswer)}
@@ -247,7 +247,7 @@ const PlentyOfVsALotOfPage: React.FC = () => {
             {showAnswer && (
               <div className="mt-4 p-4 bg-green-100 dark:bg-green-900/30 rounded-lg">
                 <p className="text-lg text-green-800 dark:text-green-200">
-                  <strong>Best Answer:</strong> "Relax — we have <strong>plenty of</strong> time before the train leaves."
+                  <strong>Best Answer:</strong> "Relax, we have <strong>plenty of</strong> time before the train leaves."
                 </p>
                 <p className="text-green-700 dark:text-green-300 mt-1">
                   "Plenty of" is better here because the speaker is reassuring someone that there's more than enough time.
@@ -264,22 +264,22 @@ const PlentyOfVsALotOfPage: React.FC = () => {
           </h2>
           <ul className="space-y-2 text-lg">
             <li>
-              <Link to="/grammar-mistakes/several-vs-some" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/several-vs-some/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Several vs Some
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/many-vs-much" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/many-vs-much/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Many vs Much
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/too-much-vs-too-many" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/too-much-vs-too-many/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Too Much vs Too Many
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → All Grammar Mistakes
               </Link>
             </li>

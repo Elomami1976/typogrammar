@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading, BulletList } from '../components/ArticleComponents';
@@ -27,7 +27,7 @@ const TOEFLCompleteTheWordsPage: React.FC = () => {
         name: 'What happens if I can read the word in context but cannot spell it on TOEFL Complete the Words?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'You will not receive credit. There is no partial credit on the TOEFL Complete the Words task — the spelling must be exact. This is why building an academic spelling drill practice alongside your reading preparation is so important.',
+          text: 'You will not receive credit. There is no partial credit on the TOEFL Complete the Words task, the spelling must be exact. This is why building an academic spelling drill practice alongside your reading preparation is so important.',
         },
       },
       {
@@ -35,7 +35,7 @@ const TOEFLCompleteTheWordsPage: React.FC = () => {
         name: 'Are the words in TOEFL Complete the Words obscure academic vocabulary or common words?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Based on the ETS official example and the structure of the task, the words are drawn from standard academic English — the kind of vocabulary you would encounter in introductory university textbooks. Think words like estimate, significant, process, evidence, cultural, development. You will not be tested on rare technical jargon, but you should be comfortable with the full Academic Word List.',
+          text: 'Based on the ETS official example and the structure of the task, the words are drawn from standard academic English, the kind of vocabulary you would encounter in introductory university textbooks. Think words like estimate, significant, process, evidence, cultural, development. You will not be tested on rare technical jargon, but you should be comfortable with the full Academic Word List.',
         },
       },
       {
@@ -51,7 +51,7 @@ const TOEFLCompleteTheWordsPage: React.FC = () => {
         name: 'How does the TOEFL Complete the Words task fit into the overall TOEFL iBT Reading score?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'The Complete the Words task is scored as part of the overall TOEFL Reading section score. Each correct blank earns you a point. Since there are 10 blanks per paragraph and up to 5 paragraphs (2–5 per test), there is meaningful raw score weight attached to this task type.',
+          text: 'The Complete the Words task is scored as part of the overall TOEFL Reading section score. Each correct blank earns you a point. Since there are 10 blanks per paragraph and up to 5 paragraphs (2-5 per test), there is meaningful raw score weight attached to this task type.',
         },
       },
       {
@@ -67,7 +67,7 @@ const TOEFLCompleteTheWordsPage: React.FC = () => {
         name: 'How many TOEFL Complete the Words tasks are on the 2026 TOEFL iBT?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'There are 2 to 5 Complete the Words tasks on any given 2026 TOEFL iBT test. Each paragraph contains 10 blanks, and you have approximately 60 seconds per paragraph (roughly 6–10 seconds per blank).',
+          text: 'There are 2 to 5 Complete the Words tasks on any given 2026 TOEFL iBT test. Each paragraph contains 10 blanks, and you have approximately 60 seconds per paragraph (roughly 6-10 seconds per blank).',
         },
       },
       {
@@ -75,7 +75,7 @@ const TOEFLCompleteTheWordsPage: React.FC = () => {
         name: 'What does TOEFL Complete the Words test?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'TOEFL Complete the Words tests five integrated skills: vocabulary recognition from partial spelling, use of context clues, accurate spelling of academic words, reading comprehension, and grammar knowledge (recognizing the correct word form — noun, verb, adjective, or adverb).',
+          text: 'TOEFL Complete the Words tests five integrated skills: vocabulary recognition from partial spelling, use of context clues, accurate spelling of academic words, reading comprehension, and grammar knowledge (recognizing the correct word form, noun, verb, adjective, or adverb).',
         },
       },
     ],
@@ -124,24 +124,24 @@ const TOEFLCompleteTheWordsPage: React.FC = () => {
 
       {/* Last updated */}
       <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">
-        Last updated: <strong>April 2026</strong> — All information reflects the TOEFL iBT format in effect as of January 21, 2026.
+        Last updated: <strong>April 2026</strong>, All information reflects the TOEFL iBT format in effect as of January 21, 2026.
       </p>
 
       <h1 className="text-4xl font-bold mb-6 text-slate-900 dark:text-slate-100">
         TOEFL Complete the Words: Spelling Strategies That Actually Work (2026)
       </h1>
 
-      {/* Key Takeaways — Featured Snippet block */}
+      {/* Key Takeaways, Featured Snippet block */}
       <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-5 my-6 rounded-r-lg">
         <p className="font-bold text-slate-800 dark:text-slate-100 mb-3 text-lg">Key Takeaways</p>
         <ul className="space-y-2 text-slate-700 dark:text-slate-300 text-[15px]">
           <li>✅ <strong>TOEFL Complete the Words</strong> is a brand-new task introduced in the 2026 TOEFL iBT Reading section (Task 1).</li>
-          <li>✅ Each paragraph has <strong>10 blanks</strong> where the second half of every second word is hidden — you must type the missing letters exactly.</li>
-          <li>✅ Each underscore represents <strong>one missing letter</strong> — use this to count and narrow down your answer.</li>
-          <li>✅ Spelling must be <strong>100% exact</strong> — there is no partial credit.</li>
-          <li>✅ You have roughly <strong>60 seconds per paragraph</strong> (~6–10 seconds per blank), so speed and accuracy both matter.</li>
-          <li>✅ You <strong>cannot skip a blank</strong> and return to it later — commit and move on.</li>
-          <li>✅ The <strong>first sentence is always shown in full</strong> — use it to set up context before you attempt any blanks.</li>
+          <li>✅ Each paragraph has <strong>10 blanks</strong> where the second half of every second word is hidden, you must type the missing letters exactly.</li>
+          <li>✅ Each underscore represents <strong>one missing letter</strong>, use this to count and narrow down your answer.</li>
+          <li>✅ Spelling must be <strong>100% exact</strong>, there is no partial credit.</li>
+          <li>✅ You have roughly <strong>60 seconds per paragraph</strong> (~6-10 seconds per blank), so speed and accuracy both matter.</li>
+          <li>✅ You <strong>cannot skip a blank</strong> and return to it later, commit and move on.</li>
+          <li>✅ The <strong>first sentence is always shown in full</strong>, use it to set up context before you attempt any blanks.</li>
         </ul>
       </div>
 
@@ -149,7 +149,7 @@ const TOEFLCompleteTheWordsPage: React.FC = () => {
         If you're preparing for the 2026 TOEFL iBT, you've probably heard about the new <strong>TOEFL Complete the Words
         task</strong>. This is one of the most talked-about changes to the test, and for good reason: it's unlike anything
         that appeared on previous versions of the TOEFL. Instead of choosing from multiple-choice options, you actually
-        have to type the missing letters of words in an academic paragraph — from memory, under time pressure, with no
+        have to type the missing letters of words in an academic paragraph, from memory, under time pressure, with no
         room for spelling errors.
       </ArticleParagraph>
 
@@ -166,14 +166,14 @@ const TOEFLCompleteTheWordsPage: React.FC = () => {
       </h2>
 
       <ArticleParagraph>
-        The <strong>TOEFL Complete the Words task</strong> is Task 1 in the 2026 TOEFL iBT Reading section — also
+        The <strong>TOEFL Complete the Words task</strong> is Task 1 in the 2026 TOEFL iBT Reading section, also
         referred to as the <strong>TOEFL 2026 Reading Task 1</strong>. It was introduced as part of ETS's significant
         redesign of the TOEFL for 2026, which added several new task types aimed at testing more integrated and authentic
         language skills.
       </ArticleParagraph>
 
       <ArticleParagraph>
-        In this task, you read a short academic paragraph — the kind of text you'd find in a university textbook or
+        In this task, you read a short academic paragraph, the kind of text you'd find in a university textbook or
         research article. Some of the words in the paragraph have their second half removed, replaced by underscores.
         Your job is to figure out what the full word is and type the missing letters into the blank.
       </ArticleParagraph>
@@ -195,15 +195,15 @@ const TOEFLCompleteTheWordsPage: React.FC = () => {
       <div className="bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg p-5 my-6">
         <ul className="space-y-2 text-slate-700 dark:text-slate-300 text-[15px]">
           {[
-            'One short academic paragraph of approximately 70–100 words',
-            'The first sentence is always shown in full — no blanks, no missing letters',
+            'One short academic paragraph of approximately 70-100 words',
+            'The first sentence is always shown in full, no blanks, no missing letters',
             'Starting from the second sentence, the second half of every second word is replaced with underscores',
             '10 blanks per paragraph, each representing one missing word (each underscore = one missing letter)',
             'You type the missing letters directly into the blank',
-            'Spelling must be exact — no partial credit is awarded',
+            'Spelling must be exact, no partial credit is awarded',
             'The task is case-insensitive (you do not need to capitalize correctly)',
-            'You cannot skip a blank and return to it later — once you move past a blank, it is done',
-            'You have approximately 60 seconds per paragraph — roughly 6–10 seconds per blank',
+            'You cannot skip a blank and return to it later, once you move past a blank, it is done',
+            'You have approximately 60 seconds per paragraph, roughly 6-10 seconds per blank',
           ].map((item, i) => (
             <li key={i} className="flex gap-2">
               <span className="text-blue-500 font-bold flex-shrink-0">→</span>
@@ -213,11 +213,11 @@ const TOEFLCompleteTheWordsPage: React.FC = () => {
         </ul>
       </div>
 
-      <div className="bg-amber-50 dark:bg-amber-900/20 border-l-4 border-amber-500 p-4 my-5 rounded-r-lg">
+      <div className="bg-teal-50 dark:bg-teal-900/20 border-l-4 border-teal-500 p-4 my-5 rounded-r-lg">
         <p className="font-semibold text-slate-800 dark:text-slate-100 mb-1">Critical timing note:</p>
         <p className="text-slate-700 dark:text-slate-300 text-[15px]">
           Sixty seconds sounds tight, and it is. There's no time to second-guess yourself or run through long lists of
-          possible words. You need a systematic approach — which is exactly what the seven strategies below provide.
+          possible words. You need a systematic approach, which is exactly what the seven strategies below provide.
         </p>
       </div>
 
@@ -270,7 +270,7 @@ const TOEFLCompleteTheWordsPage: React.FC = () => {
 
       <ArticleParagraph>
         ETS has published the following example to illustrate the <strong>TOEFL fill in missing letters</strong> format.
-        Study it carefully — this is one of the best ways to understand what the actual test looks like.
+        Study it carefully, this is one of the best ways to understand what the actual test looks like.
       </ArticleParagraph>
 
       <div className="bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-lg p-5 my-5 font-mono text-[15px] text-slate-700 dark:text-slate-300">
@@ -324,10 +324,10 @@ const TOEFLCompleteTheWordsPage: React.FC = () => {
       <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-4 my-5 rounded-r-lg">
         <p className="font-semibold text-slate-800 dark:text-slate-100 mb-2">Notice from this official example:</p>
         <ul className="list-disc list-inside text-slate-700 dark:text-slate-300 space-y-1 text-[15px]">
-          <li>The words tested are <strong>common academic and functional words</strong> — not obscure vocabulary.</li>
+          <li>The words tested are <strong>common academic and functional words</strong>, not obscure vocabulary.</li>
           <li><strong>Context matters:</strong> "prehistoric peo___" clearly signals <em>people</em> because of the verb that follows.</li>
           <li><strong>Counting underscores helps:</strong> <em>on__</em> has two underscores, making <em>only</em> a perfect fit.</li>
-          <li>The first sentence gives you the topic — ancient human dances — which frames everything that follows.</li>
+          <li>The first sentence gives you the topic, ancient human dances, which frames everything that follows.</li>
         </ul>
       </div>
 
@@ -347,7 +347,7 @@ const TOEFLCompleteTheWordsPage: React.FC = () => {
           body: (
             <>
               This is your most important move before touching a single blank. The first sentence is always shown in full
-              — use those 5–10 seconds to absorb the topic, the academic register, and the key vocabulary. Everything
+             , use those 5-10 seconds to absorb the topic, the academic register, and the key vocabulary. Everything
               that follows builds on that sentence. In the ETS example above, knowing the paragraph is about early human
               dancing immediately helps you predict that <em>prehistoric</em> and <em>people</em> are natural words for
               the context.
@@ -363,10 +363,10 @@ const TOEFLCompleteTheWordsPage: React.FC = () => {
           body: (
             <>
               The words directly before and after a blank are your best friends. Look at what the sentence is trying to
-              say. Academic paragraphs follow predictable logical structures — cause and effect, contrast, example,
+              say. Academic paragraphs follow predictable logical structures, cause and effect, contrast, example,
               elaboration. Use that structure to predict the missing word. For example, if you see{' '}
               <strong>"the process of photo___"</strong>, the words around it and the academic context make{' '}
-              <em>photosynthesis</em> a very strong candidate — even if you only see the first five letters.
+              <em>photosynthesis</em> a very strong candidate, even if you only see the first five letters.
               <div className="mt-3 bg-slate-100 dark:bg-slate-700 rounded p-3 text-[14px]">
                 <strong>Action:</strong> Read the full sentence (with the blank as a placeholder) before committing to an answer.
               </div>
@@ -400,7 +400,7 @@ const TOEFLCompleteTheWordsPage: React.FC = () => {
                 <li>Before a noun → likely an <strong>adjective</strong></li>
                 <li>After a verb → could be an <strong>adverb or object noun</strong></li>
               </ul>
-              If you know the blank needs a noun, you can instantly eliminate verb forms — even if the letters could theoretically match both.
+              If you know the blank needs a noun, you can instantly eliminate verb forms, even if the letters could theoretically match both.
               <div className="mt-3 bg-slate-100 dark:bg-slate-700 rounded p-3 text-[14px]">
                 <strong>Action:</strong> Ask "What part of speech fits here?" before generating word candidates.
               </div>
@@ -412,8 +412,8 @@ const TOEFLCompleteTheWordsPage: React.FC = () => {
           title: 'Know Your Common Word Endings',
           body: (
             <>
-              Academic English is full of predictable suffixes. Memorizing the most common ones — and what they signal
-              — gives you a huge advantage on the TOEFL spelling task.
+              Academic English is full of predictable suffixes. Memorizing the most common ones, and what they signal
+             , gives you a huge advantage on the TOEFL spelling task.
               <div className="overflow-x-auto my-4">
                 <table className="w-full text-sm border-collapse rounded-lg overflow-hidden shadow-sm">
                   <thead>
@@ -470,10 +470,10 @@ const TOEFLCompleteTheWordsPage: React.FC = () => {
         },
         {
           num: '7',
-          title: "Don't Overthink — Commit and Move On",
+          title: "Don't Overthink, Commit and Move On",
           body: (
             <>
-              The most damaging mistake on this task is not a spelling error — it's <strong>losing time</strong>. You
+              The most damaging mistake on this task is not a spelling error, it's <strong>losing time</strong>. You
               cannot go back to a blank once you've passed it, and 60 seconds is not long. If you've applied the
               strategies above and still aren't sure, make your best guess and move forward. A wrong answer costs you
               one point. Losing time costs you several.
@@ -549,13 +549,13 @@ const TOEFLCompleteTheWordsPage: React.FC = () => {
                   ['1', 'esti___', 'estimate', 'mate', 'Verb needed: "Scientists estimate"'],
                   ['2', 'th__', 'the', 'e', 'Determiner before "region"'],
                   ['3', 'con___', 'contains', 'tains', 'Verb: "the region contains"'],
-                  ['4', 'ten__', 'tens', 's', '"tens of all" — plural noun; 4 letters'],
+                  ['4', 'ten__', 'tens', 's', '"tens of all", plural noun; 4 letters'],
                   ['5', 'kno___', 'known', 'wn', 'Adjective: "known plant"; past participle modifier'],
-                  ['6', 'ani___', 'animal', 'mal', 'Parallel to "plant" — noun modifier'],
+                  ['6', 'ani___', 'animal', 'mal', 'Parallel to "plant", noun modifier'],
                   ['7', 'for___', 'forest', 'est', 'Subject referring back to rainforest'],
                   ['8', 'cru___', 'crucial', 'cial', 'Adjective: "plays a crucial role"'],
                   ['9', 'regu___', 'regulating', 'lating', 'Gerund after "role in"'],
-                  ['10', 'cli___', 'climate', 'mate', '"global climate" — fixed academic phrase'],
+                  ['10', 'cli___', 'climate', 'mate', '"global climate", fixed academic phrase'],
                 ].map(([blank, shown, full, missing, why], i) => (
                   <tr key={blank} className={i % 2 === 0 ? 'bg-white dark:bg-slate-800' : 'bg-slate-50 dark:bg-slate-700/50'}>
                     <td className="px-3 py-2 font-bold text-slate-800 dark:text-slate-200">{blank}</td>
@@ -625,7 +625,7 @@ const TOEFLCompleteTheWordsPage: React.FC = () => {
                   ['7', 'rec___', 'recent', 'ent', 'Adjective: "recent experiences"'],
                   ['8', 'trans___', 'transfers', 'fers', 'Verb parallel to "replays"'],
                   ['9', 'long-____', 'long-term', 'term', 'Fixed collocation: "long-term memory"'],
-                  ['10', '(storage — shown fully)', '—', '—', '—'],
+                  ['10', '(storage, shown fully)', '-', '-', '-'],
                 ].map(([blank, shown, full, missing, why], i) => (
                   <tr key={blank} className={i % 2 === 0 ? 'bg-white dark:bg-slate-800' : 'bg-slate-50 dark:bg-slate-700/50'}>
                     <td className="px-3 py-2 font-bold text-slate-800 dark:text-slate-200">{blank}</td>
@@ -640,7 +640,7 @@ const TOEFLCompleteTheWordsPage: React.FC = () => {
           </div>
 
           <div className="mt-4 bg-emerald-50 dark:bg-emerald-900/20 border-l-4 border-emerald-400 p-4 rounded-r-lg text-[14px] text-slate-700 dark:text-slate-300">
-            <strong>Study tip:</strong> Blank 9 tests knowledge of a fixed academic collocation —{' '}
+            <strong>Study tip:</strong> Blank 9 tests knowledge of a fixed academic collocation,{' '}
             <em>long-term memory</em>. Building familiarity with common academic phrase pairs
             (short-term/long-term, cause/effect, significant/insignificant) is excellent preparation.
           </div>
@@ -663,7 +663,7 @@ const TOEFLCompleteTheWordsPage: React.FC = () => {
               of a pro<span className="bg-yellow-200 dark:bg-yellow-700 px-0.5 rounded">____</span>{' '}
               falls, its pri<span className="bg-yellow-200 dark:bg-yellow-700 px-0.5 rounded">__</span>{' '}
               typically ri<span className="bg-yellow-200 dark:bg-yellow-700 px-0.5 rounded">___</span>{' '}
-              — assu<span className="bg-yellow-200 dark:bg-yellow-700 px-0.5 rounded">____</span>{' '}
+             , assu<span className="bg-yellow-200 dark:bg-yellow-700 px-0.5 rounded">____</span>{' '}
               that dem<span className="bg-yellow-200 dark:bg-yellow-700 px-0.5 rounded">____</span>{' '}
               remains con<span className="bg-yellow-200 dark:bg-yellow-700 px-0.5 rounded">_____</span>.{' '}
               This rela<span className="bg-yellow-200 dark:bg-yellow-700 px-0.5 rounded">________</span>{' '}
@@ -688,7 +688,7 @@ const TOEFLCompleteTheWordsPage: React.FC = () => {
               <tbody className="divide-y divide-slate-200 dark:divide-slate-700">
                 {[
                   ['1', 'sup___', 'supply', 'ply', 'Subject noun: "the supply of"'],
-                  ['2', 'pro____', 'product', 'duct', '"supply of a product" — core economics term'],
+                  ['2', 'pro____', 'product', 'duct', '"supply of a product", core economics term'],
                   ['3', 'pri__', 'price', 'ce', 'Subject: "its price typically rises"'],
                   ['4', 'ri___', 'rises', 'ses', 'Verb: third-person singular present'],
                   ['5', 'assu____', 'assuming', 'ming', 'Participial phrase: "assuming that"'],
@@ -696,7 +696,7 @@ const TOEFLCompleteTheWordsPage: React.FC = () => {
                   ['7', 'con_____', 'constant', 'stant', 'Adjective: "remains constant"'],
                   ['8', 'rela________', 'relationship', 'tionship', 'Noun: "this relationship between"'],
                   ['9', 'pri__', 'price', 'ce', '"between price and quantity"'],
-                  ['10', 'quan____', 'quantity', 'tity', 'Noun: "price and quantity" — economics pair'],
+                  ['10', 'quan____', 'quantity', 'tity', 'Noun: "price and quantity", economics pair'],
                 ].map(([blank, shown, full, missing, why], i) => (
                   <tr key={blank} className={i % 2 === 0 ? 'bg-white dark:bg-slate-800' : 'bg-slate-50 dark:bg-slate-700/50'}>
                     <td className="px-3 py-2 font-bold text-slate-800 dark:text-slate-200">{blank}</td>
@@ -741,12 +741,12 @@ const TOEFLCompleteTheWordsPage: React.FC = () => {
           {
             icon: '❌',
             title: 'Spending too long on one blank',
-            body: 'Eight seconds is your limit. Staring at a blank for 20 seconds while the clock runs down is the single most costly mistake on this task. A wrong answer loses 1 point. Running out of time can cost you 3–5 points.',
+            body: 'Eight seconds is your limit. Staring at a blank for 20 seconds while the clock runs down is the single most costly mistake on this task. A wrong answer loses 1 point. Running out of time can cost you 3-5 points.',
           },
           {
             icon: '❌',
             title: 'Not reading the first sentence',
-            body: 'Some test-takers dive straight into the blanks to save time. This almost always backfires. Without the context from the first sentence, you\'re guessing blind. Those 5–10 seconds of reading pay dividends on every blank that follows.',
+            body: 'Some test-takers dive straight into the blanks to save time. This almost always backfires. Without the context from the first sentence, you\'re guessing blind. Those 5-10 seconds of reading pay dividends on every blank that follows.',
           },
           {
             icon: '❌',
@@ -780,12 +780,12 @@ const TOEFLCompleteTheWordsPage: React.FC = () => {
         {
           num: '2',
           title: 'Run timed spelling drills on academic vocabulary',
-          body: 'Use the Academic Word List (AWL) — a widely used list of the 570 word families most common in academic English — as your spelling drill source. Write each word from memory, check it, and repeat any you missed. Focus especially on words with tricky endings: -ence vs. -ance, -ible vs. -able, -tion vs. -sion.',
+          body: 'Use the Academic Word List (AWL), a widely used list of the 570 word families most common in academic English, as your spelling drill source. Write each word from memory, check it, and repeat any you missed. Focus especially on words with tricky endings: -ence vs. -ance, -ible vs. -able, -tion vs. -sion.',
         },
         {
           num: '3',
           title: 'Read academic texts daily',
-          body: 'The more academic English you read, the more natural academic vocabulary feels. News sources like The Economist, Scientific American, or university press releases are excellent. The goal is to build word recognition so that when you see "signi___", your brain fills in significant or significantly immediately — without conscious effort.',
+          body: 'The more academic English you read, the more natural academic vocabulary feels. News sources like The Economist, Scientific American, or university press releases are excellent. The goal is to build word recognition so that when you see "signi___", your brain fills in significant or significantly immediately, without conscious effort.',
         },
         {
           num: '4',
@@ -822,11 +822,11 @@ const TOEFLCompleteTheWordsPage: React.FC = () => {
           },
           {
             q: "What happens if I can read the word in context but can't spell it?",
-            a: "You won't receive credit. There is no partial credit on the TOEFL Complete the Words task — the spelling must be exact. This is why building an academic spelling drill practice alongside your reading preparation is so important. Knowing a word's meaning is not enough; you must be able to reproduce it letter-perfect.",
+            a: "You won't receive credit. There is no partial credit on the TOEFL Complete the Words task, the spelling must be exact. This is why building an academic spelling drill practice alongside your reading preparation is so important. Knowing a word's meaning is not enough; you must be able to reproduce it letter-perfect.",
           },
           {
             q: 'Are the words tested obscure academic vocabulary or common words?',
-            a: "Based on the ETS official example and the structure of the task, the words are drawn from standard academic English — the kind of vocabulary you'd encounter in introductory university textbooks. Think words like estimate, significant, process, evidence, cultural, development. You won't be tested on rare technical jargon, but you should be comfortable with the full Academic Word List.",
+            a: "Based on the ETS official example and the structure of the task, the words are drawn from standard academic English, the kind of vocabulary you'd encounter in introductory university textbooks. Think words like estimate, significant, process, evidence, cultural, development. You won't be tested on rare technical jargon, but you should be comfortable with the full Academic Word List.",
           },
           {
             q: "Can I go back and change a blank I've already submitted?",
@@ -838,7 +838,7 @@ const TOEFLCompleteTheWordsPage: React.FC = () => {
           },
           {
             q: 'Is the task case-sensitive?',
-            a: "No. Whether you type Climate, climate, or CLIMATE, the response will be marked correct as long as the letters are right. This removes one source of anxiety — you don't need to think about capitalization at all.",
+            a: "No. Whether you type Climate, climate, or CLIMATE, the response will be marked correct as long as the letters are right. This removes one source of anxiety, you don't need to think about capitalization at all.",
           },
           {
             q: 'How many Complete the Words tasks appear on the 2026 TOEFL?',
@@ -875,8 +875,8 @@ const TOEFLCompleteTheWordsPage: React.FC = () => {
             'Read the full first sentence to anchor your understanding of the topic.',
             'Use context clues, part-of-speech awareness, and suffix knowledge to identify the word.',
             'Count the underscores to verify your answer length before typing.',
-            "Spell every word exactly right — there's no partial credit.",
-            'Keep moving — 8 seconds per blank, no going back.',
+            "Spell every word exactly right, there's no partial credit.",
+            'Keep moving, 8 seconds per blank, no going back.',
             'Practice with timed exercises and academic vocabulary spelling drills before test day.',
           ].map((item, i) => (
             <li key={i} className="flex gap-3">
@@ -894,27 +894,27 @@ const TOEFLCompleteTheWordsPage: React.FC = () => {
         <p className="font-semibold text-slate-800 dark:text-slate-100 mb-3">Continue your TOEFL preparation:</p>
         <ul className="space-y-2 text-[15px]">
           <li>
-            <Link to="/toefl/toefl-reading/toefl-reading-question-types" className="text-blue-600 dark:text-blue-400 hover:underline">
+            <Link to="/toefl/toefl-reading/toefl-reading-question-types/" className="text-blue-600 dark:text-blue-400 hover:underline">
               → TOEFL Reading Question Types (all 2026 task types explained)
             </Link>
           </li>
           <li>
-            <Link to="/toefl/toefl-reading/toefl-reading-strategies" className="text-blue-600 dark:text-blue-400 hover:underline">
+            <Link to="/toefl/toefl-reading/toefl-reading-strategies/" className="text-blue-600 dark:text-blue-400 hover:underline">
               → TOEFL Reading Strategies (comprehension skills for every task)
             </Link>
           </li>
           <li>
-            <Link to="/toefl/toefl-reading/toefl-reading-section-explained" className="text-blue-600 dark:text-blue-400 hover:underline">
+            <Link to="/toefl/toefl-reading/toefl-reading-section-explained/" className="text-blue-600 dark:text-blue-400 hover:underline">
               → TOEFL Reading Section Explained (how the 2026 section works)
             </Link>
           </li>
           <li>
-            <Link to="/toefl/strategy-success/old-toefl-vs-new-toefl" className="text-blue-600 dark:text-blue-400 hover:underline">
+            <Link to="/toefl/strategy-success/old-toefl-vs-new-toefl/" className="text-blue-600 dark:text-blue-400 hover:underline">
               → Old TOEFL vs New TOEFL 2026: Every Change Explained
             </Link>
           </li>
           <li>
-            <Link to="/toefl/toefl-writing/toefl-writing-task-1-explained" className="text-blue-600 dark:text-blue-400 hover:underline">
+            <Link to="/toefl/toefl-writing/toefl-writing-task-1-explained/" className="text-blue-600 dark:text-blue-400 hover:underline">
               → TOEFL Writing Task 1 Explained
             </Link>
           </li>

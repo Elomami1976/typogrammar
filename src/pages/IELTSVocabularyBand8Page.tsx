@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading } from '../components/ArticleComponents';
@@ -16,7 +16,7 @@ interface VocabularyItem {
 const vocabularyData: VocabularyItem[] = [
   { word: 'substantial', meaning: 'large or important', example: 'A substantial amount was invested.', commonMistake: 'Overuse', upgradeTip: 'Use selectively' },
   { word: 'inevitable', meaning: 'unavoidable', example: 'Automation is inevitable.', commonMistake: 'Wrong context', upgradeTip: 'Use logically' },
-  { word: 'perspective', meaning: 'a way of thinking', example: 'From a global perspective…', commonMistake: 'Informal use', upgradeTip: 'Use academically' },
+  { word: 'perspective', meaning: 'a way of thinking', example: 'From a global perspective...', commonMistake: 'Informal use', upgradeTip: 'Use academically' },
   { word: 'allocate', meaning: 'distribute resources', example: 'Funds were allocated efficiently.', commonMistake: 'Wrong object', upgradeTip: 'Money/time' },
   { word: 'perceive', meaning: 'see or understand', example: 'This is perceived as unfair.', commonMistake: 'Tense misuse', upgradeTip: 'Use passive' },
   { word: 'reinforce', meaning: 'strengthen', example: 'This reinforces social inequality.', commonMistake: 'Vague subject', upgradeTip: 'Specify' },
@@ -26,7 +26,7 @@ const vocabularyData: VocabularyItem[] = [
   { word: 'prevalent', meaning: 'common', example: 'This issue is prevalent in cities.', commonMistake: 'Wrong context', upgradeTip: 'Formal only' },
   { word: 'advocate', meaning: 'support publicly', example: 'Experts advocate reform.', commonMistake: 'Informal speaking', upgradeTip: 'Writing only' },
   { word: 'allocate', meaning: 'assign', example: 'Resources are allocated fairly.', commonMistake: 'Repetition', upgradeTip: 'Vary verbs' },
-  { word: 'notion', meaning: 'idea or belief', example: 'This challenges the notion that…', commonMistake: 'Too abstract', upgradeTip: 'Explain briefly' },
+  { word: 'notion', meaning: 'idea or belief', example: 'This challenges the notion that...', commonMistake: 'Too abstract', upgradeTip: 'Explain briefly' },
   { word: 'undermine', meaning: 'weaken', example: 'This may undermine trust.', commonMistake: 'Wrong object', upgradeTip: 'Abstract nouns' },
   { word: 'facilitate', meaning: 'make easier', example: 'Technology facilitates learning.', commonMistake: 'Overuse', upgradeTip: 'Use when precise' },
   { word: 'discrepancy', meaning: 'difference', example: 'There is a discrepancy between data.', commonMistake: 'Countability', upgradeTip: 'Singular/plural' },
@@ -134,7 +134,7 @@ const IELTSVocabularyBand8Page: React.FC = () => {
   const score = calculateScore();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 to-amber-50 dark:from-slate-900 dark:to-slate-800 py-12 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-teal-50 to-teal-50 dark:from-slate-900 dark:to-slate-800 py-12 px-4">
       {/* GEO Meta Tags */}
       <meta name="geo.region" content="Global" />
       <meta name="language" content="English" />
@@ -163,14 +163,14 @@ const IELTSVocabularyBand8Page: React.FC = () => {
       
       <div className="max-w-6xl mx-auto">
         {/* Featured Snippet Box - Quick Answer */}
-        <div className="bg-gradient-to-r from-orange-100 to-amber-100 dark:from-slate-700 dark:to-slate-600 border-l-4 border-orange-600 p-6 rounded-lg mb-8 shadow-md">
+        <div className="bg-gradient-to-r from-teal-100 to-teal-100 dark:from-slate-700 dark:to-slate-600 border-l-4 border-teal-600 p-6 rounded-lg mb-8 shadow-md">
           <h2 className="text-lg font-bold text-slate-900 dark:text-white mb-2">What is IELTS Band 8 Vocabulary?</h2>
           <p className="text-slate-800 dark:text-slate-200 leading-relaxed mb-4">
             <strong>Band 8 vocabulary</strong> demonstrates precision, control, and sophisticated word choice in formal academic contexts. These words show you can express complex ideas with clarity while maintaining appropriate register throughout your writing.
           </p>
           <div className="bg-white/50 dark:bg-slate-800/50 p-4 rounded-lg">
             <h3 className="font-semibold text-slate-900 dark:text-white mb-2">Quick Answer: How do examiners score Band 8 vocabulary?</h3>
-            <p className="text-slate-700 dark:text-slate-300">Band 8 requires "wide range of vocabulary," "skillful use of uncommon items," and "rare errors in word choice.” You need to demonstrate <strong>precision</strong> (choosing exactly the right word) and <strong>naturalness</strong> (using sophisticated words without sounding forced).</p>
+            <p className="text-slate-700 dark:text-slate-300">Band 8 requires "wide range of vocabulary," "skillful use of uncommon items," and "rare errors in word choice." You need to demonstrate <strong>precision</strong> (choosing exactly the right word) and <strong>naturalness</strong> (using sophisticated words without sounding forced).</p>
           </div>
         </div>
 
@@ -178,8 +178,8 @@ const IELTSVocabularyBand8Page: React.FC = () => {
         <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-6 mb-8">
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">How to Achieve Band 8 in IELTS Lexical Resource</h2>
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-orange-50 dark:bg-slate-700 p-4 rounded-lg">
-              <h3 className="font-bold text-orange-700 dark:text-orange-400 mb-3">What Band 8 Requires</h3>
+            <div className="bg-teal-50 dark:bg-slate-700 p-4 rounded-lg">
+              <h3 className="font-bold text-teal-700 dark:text-teal-400 mb-3">What Band 8 Requires</h3>
               <ul className="space-y-2 text-slate-700 dark:text-slate-300 text-sm">
                 <li className="flex items-start gap-2"><span className="text-green-500">✓</span> Wide range of vocabulary fluently used</li>
                 <li className="flex items-start gap-2"><span className="text-green-500">✓</span> Skillful use of uncommon/idiomatic items</li>
@@ -202,7 +202,7 @@ const IELTSVocabularyBand8Page: React.FC = () => {
         {/* Header */}
         <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-8 mb-8">
           <div className="flex items-center gap-3 mb-4">
-            <div className="bg-gradient-to-r from-orange-500 to-amber-600 text-white px-4 py-2 rounded-lg font-bold text-sm">
+            <div className="bg-gradient-to-r from-teal-500 to-teal-600 text-white px-4 py-2 rounded-lg font-bold text-sm">
               BAND 8
             </div>
             <h1 className="text-4xl font-bold text-slate-900 dark:text-white">
@@ -214,7 +214,7 @@ const IELTSVocabularyBand8Page: React.FC = () => {
           <div className="flex flex-wrap items-center gap-4 text-sm text-slate-600 dark:text-slate-400 mb-6">
             <span className="flex items-center gap-1">
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"/></svg>
-              By <Link to="/about" className="text-blue-600 dark:text-blue-400 hover:underline">Typogrammar Team</Link>
+              By <Link to="/about/" className="text-blue-600 dark:text-blue-400 hover:underline">Typogrammar Team</Link>
             </span>
             <span className="flex items-center gap-1">
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd"/></svg>
@@ -244,7 +244,7 @@ const IELTSVocabularyBand8Page: React.FC = () => {
         </div>
 
         {/* Table Context */}
-        <div className="bg-orange-50 dark:bg-slate-700 border-l-4 border-orange-500 p-6 rounded-lg mb-8">
+        <div className="bg-teal-50 dark:bg-slate-700 border-l-4 border-teal-500 p-6 rounded-lg mb-8">
           <p className="text-slate-700 dark:text-slate-200 leading-relaxed mb-3">
             📊 <strong>The vocabulary below helps you:</strong>
           </p>
@@ -260,7 +260,7 @@ const IELTSVocabularyBand8Page: React.FC = () => {
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead>
-                <tr className="bg-gradient-to-r from-orange-500 to-amber-600 text-white">
+                <tr className="bg-gradient-to-r from-teal-500 to-teal-600 text-white">
                   <th className="px-6 py-4 text-left font-semibold">Word</th>
                   <th className="px-6 py-4 text-left font-semibold">Meaning (English)</th>
                   <th className="px-6 py-4 text-left font-semibold">Example</th>
@@ -272,9 +272,9 @@ const IELTSVocabularyBand8Page: React.FC = () => {
                 {vocabularyData.map((item, index) => (
                   <tr
                     key={index}
-                    className="border-b border-slate-200 dark:border-slate-700 hover:bg-orange-50 dark:hover:bg-slate-700 transition-colors"
+                    className="border-b border-slate-200 dark:border-slate-700 hover:bg-teal-50 dark:hover:bg-slate-700 transition-colors"
                   >
-                    <td className="px-6 py-4 font-bold text-orange-600 dark:text-orange-400">
+                    <td className="px-6 py-4 font-bold text-teal-600 dark:text-teal-400">
                       {item.word}
                     </td>
                     <td className="px-6 py-4 text-slate-700 dark:text-slate-300">
@@ -314,8 +314,8 @@ const IELTSVocabularyBand8Page: React.FC = () => {
                         key={oIndex}
                         className={`flex items-center gap-3 p-4 rounded-lg border-2 cursor-pointer transition-all ${
                           quizAnswers[qIndex] === oIndex
-                            ? 'border-orange-500 bg-orange-50 dark:bg-orange-900/20'
-                            : 'border-slate-200 dark:border-slate-700 hover:border-orange-300 dark:hover:border-orange-600'
+                            ? 'border-teal-500 bg-teal-50 dark:bg-teal-900/20'
+                            : 'border-slate-200 dark:border-slate-700 hover:border-teal-300 dark:hover:border-teal-600'
                         } ${
                           showResults && oIndex === q.correctAnswer
                             ? 'border-green-500 bg-green-50 dark:bg-green-900/20'
@@ -332,7 +332,7 @@ const IELTSVocabularyBand8Page: React.FC = () => {
                           checked={quizAnswers[qIndex] === oIndex}
                           onChange={() => handleMultipleChoice(qIndex, oIndex)}
                           disabled={showResults}
-                          className="w-5 h-5 text-orange-500"
+                          className="w-5 h-5 text-teal-500"
                         />
                         <span className="text-slate-700 dark:text-slate-300 font-medium">
                           {String.fromCharCode(65 + oIndex)}) {option}
@@ -349,7 +349,7 @@ const IELTSVocabularyBand8Page: React.FC = () => {
                       onChange={(e) => handleFillBlank(qIndex, e.target.value)}
                       disabled={showResults}
                       placeholder="Type your answer here..."
-                      className="w-full px-4 py-3 border-2 border-slate-300 dark:border-slate-600 rounded-lg bg-white dark:bg-slate-700 text-slate-900 dark:text-white placeholder-slate-400 focus:border-orange-500 focus:outline-none disabled:bg-slate-100 dark:disabled:bg-slate-800"
+                      className="w-full px-4 py-3 border-2 border-slate-300 dark:border-slate-600 rounded-lg bg-white dark:bg-slate-700 text-slate-900 dark:text-white placeholder-slate-400 focus:border-teal-500 focus:outline-none disabled:bg-slate-100 dark:disabled:bg-slate-800"
                     />
                     {showResults && (
                       <p className={`mt-2 font-medium ${
@@ -371,13 +371,13 @@ const IELTSVocabularyBand8Page: React.FC = () => {
           {!showResults ? (
             <button
               onClick={handleSubmit}
-              className="mt-8 w-full bg-gradient-to-r from-orange-500 to-amber-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:from-orange-600 hover:to-amber-700 transition-all shadow-lg hover:shadow-xl"
+              className="mt-8 w-full bg-gradient-to-r from-teal-500 to-teal-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:from-teal-600 hover:to-teal-700 transition-all shadow-lg hover:shadow-xl"
             >
               Submit Quiz
             </button>
           ) : (
             <div className="mt-8">
-              <div className="bg-gradient-to-r from-orange-50 to-amber-50 dark:from-slate-700 dark:to-slate-600 p-6 rounded-xl mb-4">
+              <div className="bg-gradient-to-r from-teal-50 to-teal-50 dark:from-slate-700 dark:to-slate-600 p-6 rounded-xl mb-4">
                 <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">
                   Your Score: {score} / {quizQuestions.length}
                 </h3>
@@ -402,7 +402,7 @@ const IELTSVocabularyBand8Page: React.FC = () => {
         {/* Navigation to Other Bands */}
         <div className="mt-8 grid md:grid-cols-2 gap-6">
           <Link
-            to="/ielts/vocabulary/band-7"
+            to="/ielts/vocabulary/band-7/"
             className="bg-gradient-to-r from-purple-500 to-indigo-600 rounded-2xl shadow-xl p-6 text-white hover:from-purple-600 hover:to-indigo-700 transition-all"
           >
             <div className="text-sm font-semibold mb-2 opacity-90">← Previous Level</div>
@@ -411,7 +411,7 @@ const IELTSVocabularyBand8Page: React.FC = () => {
           </Link>
           
           <Link
-            to="/ielts/vocabulary/band-9"
+            to="/ielts/vocabulary/band-9/"
             className="bg-gradient-to-r from-emerald-500 to-teal-600 rounded-2xl shadow-xl p-6 text-white hover:from-emerald-600 hover:to-teal-700 transition-all"
           >
             <div className="text-sm font-semibold mb-2 opacity-90 text-right">Next Level →</div>
@@ -424,19 +424,19 @@ const IELTSVocabularyBand8Page: React.FC = () => {
         <div className="mt-8 bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-8">
           <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">Advanced IELTS Resources</h3>
           <div className="grid md:grid-cols-2 gap-4">
-            <Link to="/ielts/vocabulary/band-9" className="p-4 border-2 border-emerald-200 dark:border-emerald-800 rounded-lg hover:border-emerald-400 dark:hover:border-emerald-600 transition-colors">
+            <Link to="/ielts/vocabulary/band-9/" className="p-4 border-2 border-emerald-200 dark:border-emerald-800 rounded-lg hover:border-emerald-400 dark:hover:border-emerald-600 transition-colors">
               <h4 className="font-bold text-emerald-600 dark:text-emerald-400 mb-2">Band 9 Sophisticated Vocabulary</h4>
               <p className="text-slate-600 dark:text-slate-400 text-sm">Master the highest level words</p>
             </Link>
-            <Link to="/ielts/advantages-disadvantages-essay-ielts" className="p-4 border-2 border-orange-200 dark:border-orange-800 rounded-lg hover:border-orange-400 dark:hover:border-orange-600 transition-colors">
-              <h4 className="font-bold text-orange-600 dark:text-orange-400 mb-2">Advantages/Disadvantages Essays</h4>
+            <Link to="/ielts/advantages-disadvantages-essay-ielts/" className="p-4 border-2 border-teal-200 dark:border-teal-800 rounded-lg hover:border-teal-400 dark:hover:border-teal-600 transition-colors">
+              <h4 className="font-bold text-teal-600 dark:text-teal-400 mb-2">Advantages/Disadvantages Essays</h4>
               <p className="text-slate-600 dark:text-slate-400 text-sm">Write balanced analytical essays</p>
             </Link>
-            <Link to="/writing/how-to-build-an-argument" className="p-4 border-2 border-indigo-200 dark:border-indigo-800 rounded-lg hover:border-indigo-400 dark:hover:border-indigo-600 transition-colors">
+            <Link to="/writing/how-to-build-an-argument/" className="p-4 border-2 border-indigo-200 dark:border-indigo-800 rounded-lg hover:border-indigo-400 dark:hover:border-indigo-600 transition-colors">
               <h4 className="font-bold text-indigo-600 dark:text-indigo-400 mb-2">Building Strong Arguments</h4>
               <p className="text-slate-600 dark:text-slate-400 text-sm">Structure persuasive academic arguments</p>
             </Link>
-            <Link to="/reading/how-to-read-critically" className="p-4 border-2 border-slate-200 dark:border-slate-700 rounded-lg hover:border-slate-400 dark:hover:border-slate-600 transition-colors">
+            <Link to="/reading/how-to-read-critically/" className="p-4 border-2 border-slate-200 dark:border-slate-700 rounded-lg hover:border-slate-400 dark:hover:border-slate-600 transition-colors">
               <h4 className="font-bold text-slate-600 dark:text-slate-400 mb-2">Critical Reading Skills</h4>
               <p className="text-slate-600 dark:text-slate-400 text-sm">Analyze texts for deeper understanding</p>
             </Link>
@@ -446,19 +446,19 @@ const IELTSVocabularyBand8Page: React.FC = () => {
         {/* Visible FAQ Section */}
         <div className="mt-8 bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-8">
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
-            <svg className="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            <svg className="w-6 h-6 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
             Frequently Asked Questions: IELTS Band 8 Vocabulary
           </h2>
           
           <div className="space-y-6">
             <div className="border-b border-slate-200 dark:border-slate-700 pb-6">
               <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">What is Band 8 vocabulary in IELTS?</h3>
-              <p className="text-slate-700 dark:text-slate-300">Band 8 vocabulary shows precision, control, and appropriate register. Words like "substantial," "inevitable," "perceive," and "facilitate" are not just "big words"—they are used accurately in formal academic contexts to express complex ideas with clarity and sophistication.</p>
+              <p className="text-slate-700 dark:text-slate-300">Band 8 vocabulary shows precision, control, and appropriate register. Words like "substantial," "inevitable," "perceive," and "facilitate" are not just "big words"-they are used accurately in formal academic contexts to express complex ideas with clarity and sophistication.</p>
             </div>
             
             <div className="border-b border-slate-200 dark:border-slate-700 pb-6">
               <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">How many Band 8 words should I use in my IELTS essay?</h3>
-              <p className="text-slate-700 dark:text-slate-300">Use 3-5 Band 8 words naturally per essay. Overusing advanced vocabulary can sound forced. Focus on accuracy and appropriateness—one well-placed Band 8 word is better than several incorrectly used advanced terms.</p>
+              <p className="text-slate-700 dark:text-slate-300">Use 3-5 Band 8 words naturally per essay. Overusing advanced vocabulary can sound forced. Focus on accuracy and appropriateness-one well-placed Band 8 word is better than several incorrectly used advanced terms.</p>
             </div>
             
             <div className="border-b border-slate-200 dark:border-slate-700 pb-6">
@@ -493,7 +493,7 @@ const IELTSVocabularyBand8Page: React.FC = () => {
                 name: 'What is Band 8 vocabulary in IELTS?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Band 8 vocabulary shows precision, control, and appropriate register. Words like substantial, inevitable, perceive, and facilitate are not just big words—they are used accurately in formal academic contexts to express complex ideas with clarity and sophistication.'
+                  text: 'Band 8 vocabulary shows precision, control, and appropriate register. Words like substantial, inevitable, perceive, and facilitate are not just big words-they are used accurately in formal academic contexts to express complex ideas with clarity and sophistication.'
                 }
               },
               {
@@ -501,7 +501,7 @@ const IELTSVocabularyBand8Page: React.FC = () => {
                 name: 'How many Band 8 words should I use in IELTS Writing?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Use 3-5 Band 8 words naturally per essay. Overusing advanced vocabulary can sound forced. Focus on accuracy and appropriateness—one well-placed Band 8 word is better than several incorrectly used advanced terms.'
+                  text: 'Use 3-5 Band 8 words naturally per essay. Overusing advanced vocabulary can sound forced. Focus on accuracy and appropriateness-one well-placed Band 8 word is better than several incorrectly used advanced terms.'
                 }
               },
               {

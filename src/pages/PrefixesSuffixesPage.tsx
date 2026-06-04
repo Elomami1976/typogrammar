@@ -1,4 +1,4 @@
-
+﻿
 import React, { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import GoogleAd from '../components/GoogleAd';
@@ -209,19 +209,19 @@ const PrefixesSuffixesPage: React.FC = () => {
       </ArticleParagraph>
 
       {/* How Affixes Work */}
-      <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200 dark:bg-amber-900/20 dark:border-amber-800/30">
-        <h3 className="font-heading text-lg font-bold text-amber-800 mb-3 dark:text-amber-200">How Affixes Transform Words</h3>
+      <div className="my-8 p-6 bg-teal-50 rounded-xl border border-teal-200 dark:bg-teal-900/20 dark:border-teal-800/30">
+        <h3 className="font-heading text-lg font-bold text-teal-800 mb-3 dark:text-teal-200">How Affixes Transform Words</h3>
         <div className="grid md:grid-cols-2 gap-4 text-sm">
           <div>
-            <p className="font-semibold text-amber-700 dark:text-amber-300 mb-2">Prefix Example:</p>
+            <p className="font-semibold text-teal-700 dark:text-teal-300 mb-2">Prefix Example:</p>
             <p className="text-slate-700 dark:text-slate-300">
-              <span className="font-mono bg-amber-100 px-1 rounded dark:bg-amber-900/40">un-</span> + happy = <strong>unhappy</strong> (opposite meaning)
+              <span className="font-mono bg-teal-100 px-1 rounded dark:bg-teal-900/40">un-</span> + happy = <strong>unhappy</strong> (opposite meaning)
             </p>
           </div>
           <div>
-            <p className="font-semibold text-amber-700 dark:text-amber-300 mb-2">Suffix Example:</p>
+            <p className="font-semibold text-teal-700 dark:text-teal-300 mb-2">Suffix Example:</p>
             <p className="text-slate-700 dark:text-slate-300">
-              happy + <span className="font-mono bg-amber-100 px-1 rounded dark:bg-amber-900/40">-ness</span> = <strong>happiness</strong> (adjective → noun)
+              happy + <span className="font-mono bg-teal-100 px-1 rounded dark:bg-teal-900/40">-ness</span> = <strong>happiness</strong> (adjective → noun)
             </p>
           </div>
         </div>
@@ -241,7 +241,7 @@ const PrefixesSuffixesPage: React.FC = () => {
         <ul className="space-y-3 text-slate-700 dark:text-slate-300">
           <li className="flex items-start gap-3">
             <span className="text-green-500 mt-1">✓</span>
-            <span><strong>Start with the most common:</strong> Focus on un-, re-, dis-, -tion, -ness, -able first—they appear in thousands of words.</span>
+            <span><strong>Start with the most common:</strong> Focus on un-, re-, dis-, -tion, -ness, -able first-they appear in thousands of words.</span>
           </li>
           <li className="flex items-start gap-3">
             <span className="text-green-500 mt-1">✓</span>
@@ -290,27 +290,27 @@ const PrefixesSuffixesPage: React.FC = () => {
       <section className="mt-12 p-6 bg-slate-50 rounded-xl border border-slate-200 dark:bg-slate-800/50 dark:border-slate-700">
         <h3 className="font-heading text-xl font-bold text-slate-800 mb-4 dark:text-slate-200">Continue Building Your Vocabulary</h3>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <Link to="/collocations" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
+          <Link to="/collocations/" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
             <h4 className="font-semibold text-slate-800 dark:text-slate-200">Collocations</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">Natural word combinations</p>
           </Link>
-          <Link to="/idioms" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
+          <Link to="/idioms/" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
             <h4 className="font-semibold text-slate-800 dark:text-slate-200">Idioms</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">Common English expressions</p>
           </Link>
-          <Link to="/phrasal-verbs" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
+          <Link to="/phrasal-verbs/" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
             <h4 className="font-semibold text-slate-800 dark:text-slate-200">Phrasal Verbs</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">Verbs with particles</p>
           </Link>
-          <Link to="/homophones-homonyms-homographs" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
+          <Link to="/homophones-homonyms-homographs/" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
             <h4 className="font-semibold text-slate-800 dark:text-slate-200">Homophones & Homonyms</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">Similar sounding words</p>
           </Link>
-          <Link to="/confused-words" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
+          <Link to="/commonly-confused-words/" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
             <h4 className="font-semibold text-slate-800 dark:text-slate-200">Confused Words</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">Commonly mixed-up words</p>
           </Link>
-          <Link to="/irregular-verbs" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
+          <Link to="/irregular-verbs/" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
             <h4 className="font-semibold text-slate-800 dark:text-slate-200">Irregular Verbs</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">Master verb forms</p>
           </Link>

@@ -1,0 +1,329 @@
+{
+  "test_id": "toefl-reading-test-03",
+  "exam": "TOEFL iBT",
+  "section": "Reading",
+  "format_year": 2026,
+  "title": "TOEFL Reading Practice Test 3 (2026 Format)",
+  "description": "Full TOEFL Reading section in the 2026 format: one Complete the Words task, two Daily Life reading tasks, and three Academic passages with all 2026 question types.",
+  "time_limit_seconds": 2100,
+  "total_questions": 30,
+  "instructions": "You have 35 minutes to complete all six tasks. You may navigate freely between tasks before submitting. Once you submit, the test will be scored automatically and you will see explanations.",
+  "tasks": [
+    {
+      "task_id": "t1",
+      "type": "complete_words",
+      "title": "Task 1 — Complete the Words",
+      "directions": "Read the short paragraph. Some words have missing letters, shown as a token with the first few letters given. Type the complete word for each blank.",
+      "passage": "Geologists examine the {{w1}} that form the Earth's crust and search for {{w2}} of past climates. By studying {{w3}} embedded in stone, they can {{w4}} how ancient creatures lived. Volcanic {{w5}} reveal the {{w6}} of deep heat beneath our feet, while slow {{w7}} of the continents reshapes the {{w8}} over millions of years. Each {{w9}} they collect helps build a {{w10}} of the planet's long and dramatic history.",
+      "items": [
+        { "item_id": "w1", "given": "roc", "answer": "rocks", "blanks": 2 },
+        { "item_id": "w2", "given": "evi", "answer": "evidence", "blanks": 5 },
+        { "item_id": "w3", "given": "fos", "answer": "fossils", "blanks": 4 },
+        { "item_id": "w4", "given": "rec", "answer": "reconstruct", "blanks": 8 },
+        { "item_id": "w5", "given": "eru", "answer": "eruptions", "blanks": 6 },
+        { "item_id": "w6", "given": "pow", "answer": "power", "blanks": 2 },
+        { "item_id": "w7", "given": "mov", "answer": "movement", "blanks": 5 },
+        { "item_id": "w8", "given": "lan", "answer": "landscape", "blanks": 6 },
+        { "item_id": "w9", "given": "sam", "answer": "sample", "blanks": 3 },
+        { "item_id": "w10", "given": "pic", "answer": "picture", "blanks": 4 }
+      ]
+    },
+    {
+      "task_id": "t2",
+      "type": "daily_life",
+      "title": "Task 2 — Daily Life Reading",
+      "context_label": "Museum visitor information card",
+      "passage": "WELCOME TO THE WESTBROOK NATURAL HISTORY MUSEUM\n\nWe are open from Tuesday to Sunday, 10:00 a.m. to 5:30 p.m. The museum is closed every Monday for cleaning and research. General admission is $12 for adults, $7 for students, and free for children under 6 and museum members.\n\nGuided tours of the main exhibition halls begin at 11:00 a.m. and 2:00 p.m. each day and last about 60 minutes. Tours are included with admission, but space is limited and tickets must be picked up from the front desk on the day of your visit. Photography without flash is allowed everywhere except in the Fossil Gallery on the second floor, where flash and tripods of any kind are not permitted. Backpacks larger than a standard school bag must be left in the free lockers near the main entrance.",
+      "questions": [
+        {
+          "question_id": "t2q1",
+          "type": "factual",
+          "prompt": "On which day is the museum closed?",
+          "options": { "A": "Sunday", "B": "Saturday", "C": "Monday", "D": "Friday" },
+          "correct": ["C"],
+          "explanation": "The card states: 'The museum is closed every Monday.'"
+        },
+        {
+          "question_id": "t2q2",
+          "type": "negative_factual",
+          "prompt": "Which of the following is NOT allowed in the Fossil Gallery?",
+          "options": {
+            "A": "Photography without flash",
+            "B": "Flash photography",
+            "C": "Talking quietly",
+            "D": "Carrying a small bag"
+          },
+          "correct": ["B"],
+          "explanation": "The Fossil Gallery does not permit flash or tripods; only flash is mentioned among the choices as prohibited."
+        },
+        {
+          "question_id": "t2q3",
+          "type": "inference",
+          "prompt": "What can be inferred about the guided tours?",
+          "options": {
+            "A": "They may fill up before all visitors can join.",
+            "B": "They cost an extra $5 per person.",
+            "C": "They are offered only on weekends.",
+            "D": "They take place outside the museum building."
+          },
+          "correct": ["A"],
+          "explanation": "The card says space is limited and tickets must be picked up the day of your visit — implying tours can fill up."
+        }
+      ]
+    },
+    {
+      "task_id": "t3",
+      "type": "daily_life",
+      "title": "Task 3 — Daily Life Reading",
+      "context_label": "Tutoring service advertisement",
+      "passage": "NEED HELP WITH MATH OR SCIENCE? — BRIGHTPATH TUTORING\n\nBrightPath Tutoring offers one-on-one online lessons for middle school and high school students. Our tutors are current university students in science, engineering, and mathematics, and all of them have at least two years of teaching experience.\n\nA single 60-minute lesson costs $25. If you book a package of ten lessons in advance, the price drops to $20 per lesson. New students can also try a free 30-minute trial lesson before committing to anything. Lessons are available every day between 4:00 p.m. and 9:00 p.m., and they can be rescheduled at no charge if you cancel at least 12 hours in advance. To get started, visit our website and fill out the short request form; a tutor will contact you within 24 hours.",
+      "questions": [
+        {
+          "question_id": "t3q1",
+          "type": "factual",
+          "prompt": "How much does each lesson cost if you buy a package of ten?",
+          "options": { "A": "$25", "B": "$20", "C": "$15", "D": "It is free." },
+          "correct": ["B"],
+          "explanation": "The ad states the price drops to $20 per lesson when buying a ten-lesson package."
+        },
+        {
+          "question_id": "t3q2",
+          "type": "rhetorical_purpose",
+          "prompt": "Why does the ad mention the free 30-minute trial lesson?",
+          "options": {
+            "A": "To warn that trial lessons are usually low quality",
+            "B": "To encourage new students to try the service with no risk",
+            "C": "To prove that all the tutors are professional teachers",
+            "D": "To explain why lessons last only 30 minutes"
+          },
+          "correct": ["B"],
+          "explanation": "The trial lesson is offered 'before committing to anything,' which is a no-risk way to attract new students."
+        }
+      ]
+    },
+    {
+      "task_id": "t4",
+      "type": "academic",
+      "title": "Task 4 — Academic Reading: How Mountains Are Born",
+      "passage": "The great mountain ranges of the world are not as permanent as they look. [[1]] Geologists now know that the Earth's outer shell is broken into massive sections called tectonic plates, and these plates are constantly, if very slowly, in motion. Where two plates push against each other, the ground between them can be squeezed, folded, and lifted upward over millions of years. The Himalayas, for example, are still rising today because the Indian plate continues to press northward into Asia.\n\nMountain building, or 'orogeny,' is rarely a quick or peaceful process. [[2]] As plates collide, layers of rock that were originally laid down flat at the bottom of an ancient sea may be tilted, cracked, and even turned completely upside down. The intense pressure and heat deep underground can transform one type of rock into another, producing the dramatic patterns visible in many cliff faces. Earthquakes are a natural side effect of this activity, since the plates do not always slide smoothly past one another.\n\nNo sooner has a mountain risen than other forces begin tearing it down. [[3]] Wind, ice, and especially flowing water gradually wear away even the hardest stone. Rivers cut deep valleys, glaciers carve U-shaped basins, and rainfall washes loose particles down to the lowlands and oceans. Geologists estimate that some old mountain ranges, such as the Appalachians in eastern North America, were once as tall as the Himalayas are today, but tens of millions of years of erosion have reduced them to their present, gentler form. [[4]] In this sense, every mountain range we see is just a snapshot of an extremely slow battle between the forces lifting the land and those wearing it down.",
+      "questions": [
+        {
+          "question_id": "t4q1",
+          "type": "vocabulary",
+          "prompt": "The word 'collide' in paragraph 2 is closest in meaning to",
+          "target_word": "collide",
+          "options": { "A": "separate", "B": "crash together", "C": "melt", "D": "rotate" },
+          "correct": ["B"],
+          "explanation": "To collide means to crash or hit together — describing the plates pushing into each other."
+        },
+        {
+          "question_id": "t4q2",
+          "type": "factual",
+          "prompt": "Why are the Himalayas still rising today, according to the passage?",
+          "options": {
+            "A": "Because heavy rainfall pushes the rocks upward",
+            "B": "Because volcanoes continually erupt beneath them",
+            "C": "Because the Indian plate continues to press northward into Asia",
+            "D": "Because earthquakes lift the land each year"
+          },
+          "correct": ["C"],
+          "explanation": "Paragraph 1 explicitly states this as the reason."
+        },
+        {
+          "question_id": "t4q3",
+          "type": "sentence_simplification",
+          "prompt": "Which of the following best expresses the essential information in the highlighted sentence? \"In this sense, every mountain range we see is just a snapshot of an extremely slow battle between the forces lifting the land and those wearing it down.\"",
+          "options": {
+            "A": "Mountains exist because the forces lifting the land are always stronger than erosion.",
+            "B": "Every mountain range we see is a temporary stage in a long, slow contest between uplift and erosion.",
+            "C": "Photographs of mountains cannot capture how slowly they really change.",
+            "D": "Geologists prefer to study only mountains that are still growing."
+          },
+          "correct": ["B"],
+          "explanation": "B preserves both ideas: mountains are temporary, and there is an ongoing balance between uplift and erosion."
+        },
+        {
+          "question_id": "t4q4",
+          "type": "insert_text",
+          "prompt": "Where would the following sentence best fit? \"Erosion begins as soon as the new peaks are exposed to the air.\"",
+          "options": {
+            "A": "Position [[1]]",
+            "B": "Position [[2]]",
+            "C": "Position [[3]]",
+            "D": "Position [[4]]"
+          },
+          "correct": ["C"],
+          "explanation": "Position [[3]] introduces the discussion of how mountains are worn down, which is exactly about erosion beginning."
+        },
+        {
+          "question_id": "t4q5",
+          "type": "prose_summary",
+          "prompt": "An introductory sentence for a brief summary is provided below. Complete the summary by selecting the THREE answer choices that express the most important ideas in the passage.\n\nIntroductory sentence: Mountain ranges are shaped over long timescales by competing geological forces.",
+          "select_count": 3,
+          "options": {
+            "A": "The collision of tectonic plates folds and lifts rock layers to form mountains.",
+            "B": "Once mountains exist, erosion by wind, water, and ice gradually wears them down.",
+            "C": "Some ranges, like the Appalachians, were once much taller than they are today.",
+            "D": "Most mountains form from the eruption of underwater volcanoes only.",
+            "E": "Earthquakes are deliberately caused by geologists studying tectonic plates.",
+            "F": "The Himalayas are the only mountain range still in motion."
+          },
+          "correct": ["A", "B", "C"],
+          "explanation": "A, B, and C cover plate collision, erosion, and a concrete example. D, E, and F contradict the passage."
+        }
+      ]
+    },
+    {
+      "task_id": "t5",
+      "type": "academic",
+      "title": "Task 5 — Academic Reading: The Quiet Revolution of the Printing Press",
+      "passage": "Before the middle of the fifteenth century, almost every book in Europe was copied by hand. [[1]] The work was done mostly by trained scribes in monasteries, and producing a single Bible could take a skilled worker more than a year. As a result, books were rare and extremely expensive, and reading was largely limited to clergy, scholars, and the wealthy.\n\nIn the 1450s, a German craftsman named Johannes Gutenberg developed a new way of printing that would change Europe forever. [[2]] His press used small metal letters that could be rearranged to form any text, then pressed against paper with ink. The key advantage of this 'movable type' was speed: once a page had been set up, hundreds of identical copies could be produced in the time it had previously taken a scribe to write just one. Within fifty years, printing shops had appeared in most major European cities, and millions of books were in circulation.\n\nThe cultural effects of this change were enormous. [[3]] Cheaper books meant that more people learned to read, and ideas could travel much faster than before. Scientific discoveries, political pamphlets, and religious writings reached audiences that earlier authors could never have imagined. Some historians argue that the Reformation, the Scientific Revolution, and the rise of modern universities all depended in part on the printing press. [[4]] Yet for ordinary readers at the time, the change may have felt simple: books they once could only dream of owning were suddenly within reach.",
+      "questions": [
+        {
+          "question_id": "t5q1",
+          "type": "reference",
+          "prompt": "The word 'his' in paragraph 2 refers to",
+          "target_word": "His",
+          "options": { "A": "the reader", "B": "Johannes Gutenberg", "C": "the scribe", "D": "the craftsman's father" },
+          "correct": ["B"],
+          "explanation": "'His press' refers back to Gutenberg, named in the previous sentence."
+        },
+        {
+          "question_id": "t5q2",
+          "type": "factual",
+          "prompt": "According to paragraph 1, why were books rare and expensive before the 1450s?",
+          "options": {
+            "A": "Because paper was very difficult to find",
+            "B": "Because each book had to be copied by hand, often taking more than a year",
+            "C": "Because only the Church was allowed to own books",
+            "D": "Because most Europeans were not interested in reading"
+          },
+          "correct": ["B"],
+          "explanation": "Paragraph 1 explains that copying a single Bible could take a skilled scribe more than a year."
+        },
+        {
+          "question_id": "t5q3",
+          "type": "inference",
+          "prompt": "What can be inferred about literacy in Europe after the spread of the printing press?",
+          "options": {
+            "A": "It declined because books became less respected.",
+            "B": "It increased as books became more available and affordable.",
+            "C": "It remained limited to clergy and scholars.",
+            "D": "It depended entirely on government education programs."
+          },
+          "correct": ["B"],
+          "explanation": "Paragraph 3 says cheaper books meant more people learned to read."
+        },
+        {
+          "question_id": "t5q4",
+          "type": "rhetorical_purpose",
+          "prompt": "Why does the author mention the Reformation, the Scientific Revolution, and modern universities?",
+          "options": {
+            "A": "To list events that happened before the printing press was invented",
+            "B": "To show major historical movements that depended in part on the press",
+            "C": "To explain why Gutenberg became a wealthy man",
+            "D": "To argue that printing technology is no longer important today"
+          },
+          "correct": ["B"],
+          "explanation": "These are offered as examples of the press's large-scale cultural effects."
+        },
+        {
+          "question_id": "t5q5",
+          "type": "insert_text",
+          "prompt": "Where would the following sentence best fit? \"This made even short books a major investment.\"",
+          "options": {
+            "A": "Position [[1]]",
+            "B": "Position [[2]]",
+            "C": "Position [[3]]",
+            "D": "Position [[4]]"
+          },
+          "correct": ["A"],
+          "explanation": "Position [[1]] follows the description of slow, expensive hand-copying, which fits the idea of books being a major investment."
+        }
+      ]
+    },
+    {
+      "task_id": "t6",
+      "type": "academic",
+      "title": "Task 6 — Academic Reading: Why Coral Reefs Matter",
+      "passage": "Coral reefs cover less than one percent of the ocean floor, but they are home to roughly a quarter of all marine species. [[1]] These dense ecosystems are built by tiny animals called coral polyps, which secrete a hard outer skeleton of calcium carbonate. Over thousands of years, the skeletons of countless generations accumulate to form the rock-like structures we recognize as reefs.\n\nReefs are remarkable in part because they thrive in waters that are otherwise relatively poor in nutrients. [[2]] The secret to this productivity is a partnership between the coral polyps and microscopic algae called zooxanthellae that live inside their tissues. The algae use sunlight to produce sugars through photosynthesis and share most of them with their coral hosts; in return, the coral provides shelter and the small amount of nutrients the algae need. This close cooperation is what gives healthy reefs their bright colors and supports the vast food web that depends on them.\n\nUnfortunately, coral reefs are also among the most fragile ecosystems on the planet. [[3]] When ocean temperatures rise even a few degrees above normal for too long, stressed corals expel the algae and turn ghostly white — a phenomenon known as 'bleaching.' Without their algal partners, the corals quickly weaken, and if conditions do not improve, large areas can die. Pollution, overfishing, and the gradual acidification of seawater caused by absorbed carbon dioxide add further pressure. [[4]] Protecting reefs is therefore not only a matter of saving beautiful underwater landscapes, but also of safeguarding the food, coastal protection, and tourism income that millions of people around the world depend on.",
+      "questions": [
+        {
+          "question_id": "t6q1",
+          "type": "vocabulary",
+          "prompt": "The word 'thrive' in paragraph 2 is closest in meaning to",
+          "target_word": "thrive",
+          "options": { "A": "appear briefly", "B": "grow successfully", "C": "disappear", "D": "remain still" },
+          "correct": ["B"],
+          "explanation": "To thrive means to grow or develop successfully."
+        },
+        {
+          "question_id": "t6q2",
+          "type": "factual",
+          "prompt": "According to paragraph 2, what do the zooxanthellae provide to coral polyps?",
+          "options": {
+            "A": "Hard skeletons of calcium carbonate",
+            "B": "Sugars produced through photosynthesis",
+            "C": "Protection from predators",
+            "D": "Cooler water temperatures"
+          },
+          "correct": ["B"],
+          "explanation": "The algae share sugars made by photosynthesis with the coral."
+        },
+        {
+          "question_id": "t6q3",
+          "type": "negative_factual",
+          "prompt": "All of the following threats to coral reefs are mentioned EXCEPT",
+          "options": {
+            "A": "Rising ocean temperatures",
+            "B": "Pollution",
+            "C": "Overfishing",
+            "D": "Underwater earthquakes"
+          },
+          "correct": ["D"],
+          "explanation": "Temperature, pollution, overfishing, and acidification are mentioned, but earthquakes are not."
+        },
+        {
+          "question_id": "t6q4",
+          "type": "insert_text",
+          "prompt": "Where would the following sentence best fit? \"This bright white color is often the first visible sign of serious trouble on a reef.\"",
+          "options": {
+            "A": "Position [[1]]",
+            "B": "Position [[2]]",
+            "C": "Position [[3]]",
+            "D": "Position [[4]]"
+          },
+          "correct": ["D"],
+          "explanation": "Position [[4]] follows the explanation of bleaching and naturally comments on the white color as a warning sign."
+        },
+        {
+          "question_id": "t6q5",
+          "type": "prose_summary",
+          "prompt": "An introductory sentence for a brief summary is provided below. Complete the summary by selecting the THREE answer choices that express the most important ideas in the passage.\n\nIntroductory sentence: Coral reefs are biologically rich but extremely vulnerable ecosystems.",
+          "select_count": 3,
+          "options": {
+            "A": "Reefs are built over time by coral polyps and shelter about a quarter of marine species.",
+            "B": "A partnership between coral polyps and algae allows reefs to flourish in nutrient-poor waters.",
+            "C": "Warming oceans, pollution, and acidification are pushing many reefs toward collapse.",
+            "D": "Coral polyps can survive indefinitely without algae if the water is clean enough.",
+            "E": "Most coral reefs are found in the deep, cold parts of the ocean.",
+            "F": "Tourism is the only reason scientists are interested in protecting reefs."
+          },
+          "correct": ["A", "B", "C"],
+          "explanation": "A, B, and C summarize structure, function, and threats. D, E, and F are contradicted by or absent from the passage."
+        }
+      ]
+    }
+  ],
+  "scoring": {
+    "max_raw_score": 30,
+    "band_estimate": [
+      { "min_raw": 28, "label": "Excellent", "approx_band": "6 / Advanced (C1+)" },
+      { "min_raw": 23, "label": "Very Good", "approx_band": "5 / Upper-Intermediate (B2+)" },
+      { "min_raw": 17, "label": "Good", "approx_band": "4 / Intermediate (B2)" },
+      { "min_raw": 11, "label": "Developing", "approx_band": "3 / Lower-Intermediate (B1)" },
+      { "min_raw": 6, "label": "Basic", "approx_band": "2 / Elementary (A2)" },
+      { "min_raw": 0, "label": "Beginner", "approx_band": "1 / Beginner (A1)" }
+    ]
+  }
+}

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../../hooks/usePageMetadata';
 import SchemaMarkup from '../../components/SchemaMarkup';
@@ -7,7 +7,7 @@ const EitherOfOrNeitherOfPage: React.FC = () => {
   usePageMetadata({
     title: 'Either of / Neither of: Singular or Plural Verb? | TypoGrammar',
     description: 'Learn how to use "either of" and "neither of" correctly. Both take a singular verb in formal English. Understand the grammar rules with examples and practice.',
-    canonical: 'https://typogrammar.com/grammar-mistakes/either-of-or-neither-of'
+    canonical: 'https://typogrammar.com/grammar-mistakes/either-of-or-neither-of/'
   });
 
   const [showAnswer, setShowAnswer] = useState(false);
@@ -54,7 +54,7 @@ const EitherOfOrNeitherOfPage: React.FC = () => {
       <nav className="mb-6 text-slate-600 dark:text-slate-400">
         <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
         {' › '}
-        <Link to="/grammar-mistakes" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
+        <Link to="/grammar-mistakes/" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
         {' › '}
         <span className="text-slate-900 dark:text-slate-100">Either of / Neither of</span>
       </nav>
@@ -96,8 +96,8 @@ const EitherOfOrNeitherOfPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-4 rounded-lg">
-            <p className="text-lg text-amber-800 dark:text-amber-200">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-4 rounded-lg">
+            <p className="text-lg text-teal-800 dark:text-teal-200">
               <strong>Key rule:</strong> Although "either of" and "neither of" are followed by a plural noun, the verb that follows must agree with "either/neither," which are grammatically singular.
             </p>
           </div>
@@ -144,7 +144,7 @@ const EitherOfOrNeitherOfPage: React.FC = () => {
             </div>
             <div className="flex items-start">
               <span className="text-red-600 dark:text-red-400 mr-3 text-xl">✘</span>
-              <span className="text-lg text-slate-700 dark:text-slate-300 line-through"><strong>Neither of</strong> the answers <strong>are</strong> not correct. (double negative — wrong)</span>
+              <span className="text-lg text-slate-700 dark:text-slate-300 line-through"><strong>Neither of</strong> the answers <strong>are</strong> not correct. (double negative, wrong)</span>
             </div>
           </div>
         </section>
@@ -238,7 +238,7 @@ const EitherOfOrNeitherOfPage: React.FC = () => {
           <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
             Practice
           </h2>
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-6 rounded-lg">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-6 rounded-lg">
             <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
               <strong>Choose the correct verb (formal English):</strong>
             </p>
@@ -271,27 +271,27 @@ const EitherOfOrNeitherOfPage: React.FC = () => {
           </h2>
           <ul className="space-y-2 text-lg">
             <li>
-              <Link to="/grammar-mistakes/each-of-or-every-of" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/each-of-or-every-of/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Each of or Every of?
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/a-number-of-vs-the-number-of" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/a-number-of-vs-the-number-of/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → A Number of vs The Number of
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/none-is-or-are" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/none-is-or-are/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → None Is or Are?
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/each-are-or-each-is" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/each-are-or-each-is/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Each Are or Each Is?
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → All Grammar Mistakes
               </Link>
             </li>

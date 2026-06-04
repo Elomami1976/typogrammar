@@ -1,4 +1,4 @@
-
+﻿
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import LanguageSwitcher from './LanguageSwitcher';
@@ -33,13 +33,13 @@ const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
               </svg>
             </button>
           </div>
-          <Link to="/" className="logo-link group">
+          <Link to="/" className="logo-link group" aria-label="TypoGrammar home">
             <div>
-              <h1 className="font-heading text-3xl font-extrabold text-slate-800 tracking-tight dark:text-slate-200">
+              <span className="font-heading text-3xl font-extrabold text-slate-800 tracking-tight dark:text-slate-200 block">
                 <span className="relative inline-block transition-transform duration-300 group-hover:scale-105">
                   Typo<span className="text-blue-600 dark:text-blue-500 transition-colors duration-300 group-hover:text-blue-700 dark:group-hover:text-blue-400">Grammar</span>
                 </span>
-              </h1>
+              </span>
               <p className="font-body text-xs text-slate-500 dark:text-slate-400 mt-1 hidden sm:block transition-colors duration-300 group-hover:text-blue-600 dark:group-hover:text-blue-400">
                 From Confused to Confident in English
               </p>
@@ -50,7 +50,7 @@ const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
         <div className="flex items-center gap-2">
           <GlobalSearch />
           <Link
-            to="/getting-started"
+            to="/getting-started/"
             className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 bg-blue-600 text-white text-sm font-bold rounded-lg hover:bg-blue-700 transition-colors duration-150 shadow-sm"
           >
             <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

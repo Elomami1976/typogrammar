@@ -1,19 +1,19 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import usePageMetadata from '../hooks/usePageMetadata';
 
 const HealthVocabularyBookPage: React.FC = () => {
   // SEO Metadata with Open Graph and Twitter Card support
   usePageMetadata({
-    title: 'Health Vocabulary Book – 50 Essential Medical Words (Free PDF) | TypoGrammar',
+    title: 'Health Vocabulary Book - 50 Essential Medical Words (Free PDF) | TypoGrammar',
     description: 'Download the Health Vocabulary PDF (50 essential medical and health words) for IELTS, TOEFL, and academic writing. Improve your writing score today.',
-    canonical: 'https://typogrammar.com/ielts/health-vocabulary-book',
-    ogTitle: 'Health Vocabulary Book – 50 Essential Medical Words (Free PDF) | TypoGrammar',
+    canonical: 'https://typogrammar.com/ielts/health-vocabulary-book/',
+    ogTitle: 'Health Vocabulary Book - 50 Essential Medical Words (Free PDF) | TypoGrammar',
     ogDescription: 'Download the Health Vocabulary PDF (50 essential medical and health words) for IELTS, TOEFL, and academic writing. Improve your writing score today.',
     ogUrl: 'https://typogrammar.com/ielts/health-vocabulary-book',
     ogImage: 'https://typogrammar.com/images/books/health-vocabulary-cover.jpg',
     ogType: 'book',
     twitterCard: 'summary_large_image',
-    twitterTitle: 'Health Vocabulary Book – 50 Essential Medical Words (Free PDF) | TypoGrammar',
+    twitterTitle: 'Health Vocabulary Book - 50 Essential Medical Words (Free PDF) | TypoGrammar',
     twitterDescription: 'Download the Health Vocabulary PDF (50 essential medical and health words) for IELTS, TOEFL, and academic writing. Improve your writing score today.',
     twitterImage: 'https://typogrammar.com/images/books/health-vocabulary-cover.jpg',
   });
@@ -23,7 +23,7 @@ const HealthVocabularyBookPage: React.FC = () => {
     const bookSchema = {
       '@context': 'https://schema.org',
       '@type': 'Book',
-      name: 'Health Vocabulary – 50 Essential Words',
+      name: 'Health Vocabulary - 50 Essential Words',
       author: {
         '@type': 'Organization',
         name: 'TypoGrammar',
@@ -49,7 +49,7 @@ const HealthVocabularyBookPage: React.FC = () => {
     const learningResourceSchema = {
       '@context': 'https://schema.org',
       '@type': 'LearningResource',
-      name: 'Health Vocabulary – 50 Essential Words',
+      name: 'Health Vocabulary - 50 Essential Words',
       learningResourceType: 'ebook',
       about: ['Health vocabulary', 'Medical English', 'IELTS Writing', 'TOEFL Writing', 'Academic English'],
       url: 'https://typogrammar.com/ielts/health-vocabulary-book',
@@ -168,13 +168,13 @@ const HealthVocabularyBookPage: React.FC = () => {
               </button>
             </div>
             <p className="text-sm text-slate-500 dark:text-slate-400 italic">
-              Free download — no signup required.
+              Free download, no signup required.
             </p>
           </div>
           <div className="flex justify-center">
             <img
               src="/images/books/health-vocabulary-cover.jpg"
-              alt="Health Vocabulary Book Cover – 50 Essential Words"
+              alt="Health Vocabulary Book Cover - 50 Essential Words"
               className="rounded-xl shadow-2xl max-w-full h-auto"
               loading="eager"
               decoding="async"
@@ -233,7 +233,7 @@ const HealthVocabularyBookPage: React.FC = () => {
                   Practical Usage Tips
                 </h3>
                 <p className="text-slate-600 dark:text-slate-400">
-                  Learn when, where, and how to use each word correctly — avoid common mistakes
+                  Learn when, where, and how to use each word correctly, avoid common mistakes
                 </p>
               </div>
             </div>
@@ -385,7 +385,7 @@ const HealthVocabularyBookPage: React.FC = () => {
         </h2>
         <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 md:p-12 shadow-lg">
           <p className="text-lg text-slate-700 dark:text-slate-300 mb-6 leading-relaxed">
-            Health is one of the most common exam topics — this vocabulary gives you a major advantage. Using topic-specific vocabulary helps you:
+            Health is one of the most common exam topics, this vocabulary gives you a major advantage. Using topic-specific vocabulary helps you:
           </p>
           <div className="grid md:grid-cols-2 gap-4">
             {[
@@ -422,7 +422,7 @@ const HealthVocabularyBookPage: React.FC = () => {
               </div>
               <div className="pt-1">
                 <h3 className="font-semibold text-xl text-slate-900 dark:text-slate-100 mb-2">
-                  Study 5–10 words daily
+                  Study 5-10 words daily
                 </h3>
                 <p className="text-slate-600 dark:text-slate-400">
                   Work through the word list systematically. Read the definition, explanation, and usage tip for each word.
@@ -570,14 +570,14 @@ const HealthVocabularyBookPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="md:col-span-2 lg:col-span-2 bg-gradient-to-br from-amber-50 to-yellow-50 dark:from-amber-900/20 dark:to-yellow-900/20 rounded-xl p-6 shadow-md border-2 border-amber-200 dark:border-amber-700">
+          <div className="md:col-span-2 lg:col-span-2 bg-gradient-to-br from-teal-50 to-yellow-50 dark:from-teal-900/20 dark:to-yellow-900/20 rounded-xl p-6 shadow-md border-2 border-teal-200 dark:border-teal-700">
             <div className="flex items-center mb-4">
-              <div className="w-10 h-10 bg-amber-500 text-white rounded-lg flex items-center justify-center mr-3">
+              <div className="w-10 h-10 bg-teal-500 text-white rounded-lg flex items-center justify-center mr-3">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                 </svg>
               </div>
-              <h3 className="font-semibold text-xl text-slate-900 dark:text-slate-100">…and many more</h3>
+              <h3 className="font-semibold text-xl text-slate-900 dark:text-slate-100">...and many more</h3>
             </div>
             <p className="text-slate-600 dark:text-slate-400 text-lg">
               All 50 words are commonly used in IELTS Task 2 (health topics), TOEFL Integrated &amp; Independent Writing, academic essays, research writing, and public health discussions.
@@ -604,7 +604,7 @@ const HealthVocabularyBookPage: React.FC = () => {
               <span className="text-2xl mr-3">📘</span>
               <div>
                 <p className="text-sm text-slate-500 dark:text-slate-400">Title</p>
-                <p className="font-semibold text-slate-900 dark:text-slate-100">Health Vocabulary – 50 Essential Words</p>
+                <p className="font-semibold text-slate-900 dark:text-slate-100">Health Vocabulary - 50 Essential Words</p>
               </div>
             </div>
             <div className="flex items-center">
@@ -681,18 +681,18 @@ const HealthVocabularyBookPage: React.FC = () => {
         </h2>
         <div className="grid md:grid-cols-2 gap-6">
           <a
-            href="/ielts/academic-vocabulary-book"
+            href="/ielts/academic-vocabulary-book/"
             className="block bg-white dark:bg-slate-800 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-200 border border-slate-200 dark:border-slate-700"
           >
             <h3 className="font-semibold text-xl text-blue-600 dark:text-blue-400 mb-2">
-              IELTS Academic Vocabulary Book (Band 6–9)
+              IELTS Academic Vocabulary Book (Band 6-9)
             </h3>
             <p className="text-slate-600 dark:text-slate-400">
               200 academic words with definitions, examples, and usage notes for all IELTS band levels.
             </p>
           </a>
           <a
-            href="/ielts/idioms-book"
+            href="/ielts/idioms-book/"
             className="block bg-white dark:bg-slate-800 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-200 border border-slate-200 dark:border-slate-700"
           >
             <h3 className="font-semibold text-xl text-blue-600 dark:text-blue-400 mb-2">
@@ -728,7 +728,7 @@ const HealthVocabularyBookPage: React.FC = () => {
               Visit Homepage
             </a>
             <a
-              href="/ielts/ielts-writing-task-2-essay-types"
+              href="/ielts/ielts-writing-task-2-essay-types/"
               className="inline-flex items-center px-6 py-3 bg-white dark:bg-slate-700 text-blue-600 dark:text-blue-400 font-semibold rounded-lg border-2 border-blue-600 dark:border-blue-500 hover:bg-blue-50 dark:hover:bg-slate-600 transition-colors duration-200"
             >
               Explore IELTS Resources

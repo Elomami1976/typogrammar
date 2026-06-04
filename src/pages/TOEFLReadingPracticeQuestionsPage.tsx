@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+﻿import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading, BulletList } from '../components/ArticleComponents';
@@ -64,7 +64,7 @@ const TOEFLReadingPracticeQuestionsPage: React.FC = () => {
         "name": "How often should I practice TOEFL Reading?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "For best results, try to practice reading exercises 3–5 times per week."
+          "text": "For best results, try to practice reading exercises 3-5 times per week."
         }
       }
     ]
@@ -235,7 +235,7 @@ Protecting forests is therefore essential for preserving ecosystems and maintain
       <nav className="text-sm mb-6 text-slate-600 dark:text-slate-400">
         <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
         <span className="mx-2">›</span>
-        <Link to="/toefl/toefl-reading/toefl-reading-section-explained" className="hover:text-blue-600 dark:hover:text-blue-400">TOEFL Reading</Link>
+        <Link to="/toefl/toefl-reading/toefl-reading-section-explained/" className="hover:text-blue-600 dark:hover:text-blue-400">TOEFL Reading</Link>
         <span className="mx-2">›</span>
         <span className="text-slate-900 dark:text-slate-100">Practice Questions</span>
       </nav>
@@ -290,7 +290,7 @@ Protecting forests is therefore essential for preserving ecosystems and maintain
             </tr>
             <tr>
               <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">Score range</td>
-              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">0–30</td>
+              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">0-30</td>
             </tr>
           </tbody>
         </table>
@@ -392,7 +392,7 @@ Protecting forests is therefore essential for preserving ecosystems and maintain
           Learn more about each question type:
         </p>
         <Link 
-          to="/toefl/toefl-reading/toefl-reading-question-types" 
+          to="/toefl/toefl-reading/toefl-reading-question-types/" 
           className="text-blue-600 dark:text-blue-400 hover:underline"
         >
           → Complete Guide to TOEFL Reading Question Types
@@ -448,7 +448,7 @@ Protecting forests is therefore essential for preserving ecosystems and maintain
       <ArticleHeading id="frequency">How Often Should You Practice TOEFL Reading?</ArticleHeading>
 
       <ArticleParagraph>
-        For best results, try to practice reading exercises <strong>3–5 times per week</strong>.
+        For best results, try to practice reading exercises <strong>3-5 times per week</strong>.
       </ArticleParagraph>
 
       <ArticleParagraph>
@@ -511,28 +511,28 @@ Protecting forests is therefore essential for preserving ecosystems and maintain
         </h4>
         <div className="grid md:grid-cols-2 gap-4">
           <Link 
-            to="/toefl/toefl-reading/toefl-reading-section-explained"
+            to="/toefl/toefl-reading/toefl-reading-section-explained/"
             className="block p-4 bg-white dark:bg-slate-900 rounded-lg hover:shadow-md transition-shadow border border-slate-200 dark:border-slate-700"
           >
             <p className="font-semibold text-blue-600 dark:text-blue-400">TOEFL Reading Section Explained</p>
             <p className="text-sm text-slate-600 dark:text-slate-400 mt-1">Complete overview of the reading section</p>
           </Link>
           <Link 
-            to="/toefl/toefl-reading/toefl-reading-strategies"
+            to="/toefl/toefl-reading/toefl-reading-strategies/"
             className="block p-4 bg-white dark:bg-slate-900 rounded-lg hover:shadow-md transition-shadow border border-slate-200 dark:border-slate-700"
           >
             <p className="font-semibold text-blue-600 dark:text-blue-400">TOEFL Reading Strategies</p>
             <p className="text-sm text-slate-600 dark:text-slate-400 mt-1">Proven strategies to score higher</p>
           </Link>
           <Link 
-            to="/toefl/toefl-reading/toefl-reading-question-types"
+            to="/toefl/toefl-reading/toefl-reading-question-types/"
             className="block p-4 bg-white dark:bg-slate-900 rounded-lg hover:shadow-md transition-shadow border border-slate-200 dark:border-slate-700"
           >
             <p className="font-semibold text-blue-600 dark:text-blue-400">TOEFL Reading Question Types</p>
             <p className="text-sm text-slate-600 dark:text-slate-400 mt-1">Master all question formats</p>
           </Link>
           <Link 
-            to="/toefl/toefl-reading/toefl-reading-time-management"
+            to="/toefl/toefl-reading/toefl-reading-time-management/"
             className="block p-4 bg-white dark:bg-slate-900 rounded-lg hover:shadow-md transition-shadow border border-slate-200 dark:border-slate-700"
           >
             <p className="font-semibold text-blue-600 dark:text-blue-400">TOEFL Reading Time Management</p>

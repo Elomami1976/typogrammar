@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../../hooks/usePageMetadata';
 import SchemaMarkup from '../../components/SchemaMarkup';
@@ -7,7 +7,7 @@ const CloseProximityPage: React.FC = () => {
   usePageMetadata({
     title: 'Close Proximity: Is It Redundant? | TypoGrammar',
     description: 'Is "close proximity" redundant? Yes! Proximity already means closeness. Just say "proximity" or "nearby." Learn why and see correct examples.',
-    canonical: 'https://typogrammar.com/grammar-mistakes/close-proximity'
+    canonical: 'https://typogrammar.com/grammar-mistakes/close-proximity/'
   });
 
   const [showAnswer, setShowAnswer] = useState(false);
@@ -49,7 +49,7 @@ const CloseProximityPage: React.FC = () => {
       <nav className="mb-6 text-slate-600 dark:text-slate-400">
         <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
         {' › '}
-        <Link to="/grammar-mistakes" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
+        <Link to="/grammar-mistakes/" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
         {' › '}
         <span className="text-slate-900 dark:text-slate-100">Close Proximity</span>
       </nav>
@@ -83,11 +83,11 @@ const CloseProximityPage: React.FC = () => {
           </div>
 
           <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
-            Since proximity inherently means "closeness," saying "close proximity" is like saying "close closeness"—unnecessarily repetitive.
+            Since proximity inherently means "closeness," saying "close proximity" is like saying "close closeness"-unnecessarily repetitive.
           </p>
 
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-4 rounded-lg">
-            <p className="text-lg text-amber-800 dark:text-amber-200">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-4 rounded-lg">
+            <p className="text-lg text-teal-800 dark:text-teal-200">
               <strong>Etymology:</strong> "Proximity" comes from Latin <em>proximus</em>, meaning "nearest" or "very near."
             </p>
           </div>
@@ -177,7 +177,7 @@ const CloseProximityPage: React.FC = () => {
           <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
             Practice
           </h2>
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-6 rounded-lg">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-6 rounded-lg">
             <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
               <strong>Fix this sentence:</strong>
             </p>
@@ -225,22 +225,22 @@ const CloseProximityPage: React.FC = () => {
           </h2>
           <ul className="space-y-2 text-lg">
             <li>
-              <Link to="/grammar-mistakes/past-history" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/past-history/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Past History (Redundant?)
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/advance-planning" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/advance-planning/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Advance Planning (Redundant?)
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/free-gift" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/free-gift/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Free Gift (Redundant?)
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → All Grammar Mistakes
               </Link>
             </li>

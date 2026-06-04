@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../../hooks/usePageMetadata';
 import SchemaMarkup from '../../components/SchemaMarkup';
@@ -7,7 +7,7 @@ const EveryoneHasOrHavePage: React.FC = () => {
   usePageMetadata({
     title: 'Everyone Has or Have? Which Is Correct? | TypoGrammar',
     description: 'Is it "everyone has" or "everyone have"? Learn why "everyone has" is correct. Everyone is singular and takes singular verbs.',
-    canonical: 'https://typogrammar.com/grammar-mistakes/everyone-has-or-have'
+    canonical: 'https://typogrammar.com/grammar-mistakes/everyone-has-or-have/'
   });
 
   const [showAnswer, setShowAnswer] = useState(false);
@@ -49,7 +49,7 @@ const EveryoneHasOrHavePage: React.FC = () => {
       <nav className="mb-6 text-slate-600 dark:text-slate-400">
         <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
         {' › '}
-        <Link to="/grammar-mistakes" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
+        <Link to="/grammar-mistakes/" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
         {' › '}
         <span className="text-slate-900 dark:text-slate-100">Everyone Has or Have</span>
       </nav>
@@ -83,8 +83,8 @@ const EveryoneHasOrHavePage: React.FC = () => {
             Although "everyone" refers to multiple people, it treats them as individuals rather than a group. It emphasizes "every single one" - one person at a time.
           </p>
 
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-4 rounded-lg">
-            <p className="text-lg text-amber-800 dark:text-amber-200">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-4 rounded-lg">
+            <p className="text-lg text-teal-800 dark:text-teal-200">
               <strong>Rule:</strong> Use <strong>"has"</strong> (not "have") with everyone, everybody, someone, somebody, anyone, anybody, no one, nobody.
             </p>
           </div>
@@ -180,7 +180,7 @@ const EveryoneHasOrHavePage: React.FC = () => {
           <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
             Practice
           </h2>
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-6 rounded-lg">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-6 rounded-lg">
             <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
               <strong>Choose the correct verb:</strong>
             </p>
@@ -213,22 +213,22 @@ const EveryoneHasOrHavePage: React.FC = () => {
           </h2>
           <ul className="space-y-2 text-lg">
             <li>
-              <Link to="/grammar-mistakes/everyone-is-or-everyone-are" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/everyone-is-or-everyone-are/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Everyone Is or Are?
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/everybody-has-or-have" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/everybody-has-or-have/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Everybody Has or Have?
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/someone-has-or-have" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/someone-has-or-have/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Someone Has or Have?
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → All Grammar Mistakes
               </Link>
             </li>

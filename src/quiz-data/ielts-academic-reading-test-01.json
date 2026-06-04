@@ -1,0 +1,632 @@
+{
+  "id": "ielts-academic-reading-test-01",
+  "exam": "IELTS",
+  "module": "academic",
+  "section": "reading",
+  "title": "IELTS Academic Reading Practice Test 1",
+  "topic_summary": "Coral reef recovery, the history of cartography, behavioural economics",
+  "time_limit_seconds": 3600,
+  "passages": [
+    {
+      "passage_id": "p1",
+      "order": 1,
+      "title": "The Comeback of the Coral Reef",
+      "context_label": "Reading Passage 1",
+      "instructions": "You should spend about 20 minutes on Questions 1–13, which are based on Reading Passage 1 below.",
+      "body": "[A] Coral reefs cover less than one per cent of the ocean floor, yet they sustain roughly a quarter of all marine species. For most of the past forty years, the news from these vivid ecosystems has been bleak: warming seas, acidifying water, and runoff from coastal farms have all driven decline. In 2017, a global assessment concluded that more than half of the world's shallow reefs had lost significant coral cover since the 1980s. Few biologists, looking at that data, would have predicted a recovery story. And yet, in pockets across the Indian and Pacific Oceans, reefs are doing what once seemed impossible — they are coming back.\n\n[B] One of the clearest examples lies off the north-eastern coast of Australia, where a stretch of reef known locally as Heron Bommie suffered a severe bleaching event in 2016. Bleaching occurs when corals, stressed by heat, expel the algae that give them colour and most of their food. Without those algae, corals starve. At Heron Bommie, more than seventy per cent of the corals turned white within a single summer. Yet by 2024, surveys showed that hard-coral cover on the same reef had returned to roughly its pre-bleaching level. The driver, researchers argue, was not luck. In the years between, sugar-cane farmers along the adjacent coast had cut their fertiliser use by almost a third, sharply reducing the nutrient runoff that smothers young corals. With cleaner water, larvae drifting in from healthier reefs found surfaces they could settle on.\n\n[C] Heron Bommie is far from unique. In the Philippines, several reefs inside community-managed marine reserves rebounded within eight years of fishing bans being introduced and enforced. Off the coast of Kenya, no-take zones established in the late 1990s now support fish populations three to five times larger than nearby fished areas, and the structural complexity of the reefs — the nooks and overhangs in which juvenile fish hide — has measurably increased. None of this means the reefs are pristine. But the rate of recovery has surprised even the scientists who designed the studies.\n\n[D] What makes recovery possible? Marine ecologist Dr Lina Okeyo argues that three conditions matter most: a steady supply of healthy larvae from neighbouring reefs, the removal of chronic local stressors such as overfishing or pollution, and the absence of a second major heat shock within roughly a decade. Where all three line up, even badly damaged reefs can rebuild themselves. Where any one is missing — particularly the third — recovery stalls. \"Reefs are not as fragile as we used to think,\" Okeyo says, \"but they are not infinitely tough either. Give them a window, and many will use it.\"\n\n[E] The economic stakes are substantial. Healthy reefs act as a natural breakwater, blunting the force of storm waves before they reach the shore. A 2020 modelling study estimated that the world's coral reefs prevent more than four billion dollars in flood damage every year. They also underpin tourism and small-scale fishing for hundreds of millions of people. When a reef collapses, those services collapse with it; when it returns, they return too, though sometimes in altered form. In several recovered Kenyan reserves, for instance, the species mix is now different from what older fishers remember, with fast-growing corals dominating where slower, branching species once did.\n\n[F] Active restoration is also playing a larger role. In Indonesia, conservation groups have spent a decade attaching fragments of broken coral to steel frames anchored on the seabed. Within a few years, the frames disappear under a crust of living tissue, and fish return. Critics once dismissed such projects as ornamental — too small to matter at the scale of the ocean. But newer evidence suggests that even modest restoration sites can act as nurseries, sending out larvae that seed recovery on reefs many kilometres away. The technique is no substitute for tackling climate change, restoration biologists insist, but it can buy time.\n\n[G] Time is the operative word. Every reef ecologist interviewed for this article stressed that current recoveries are happening in the gap between marine heatwaves, and that the gap is shrinking. If global emissions continue on their present trajectory, the windows in which reefs can rebuild themselves will close faster than the corals can grow. The lesson from places like Heron Bommie, then, is not that reefs will save themselves. It is that, given even a modest reprieve, they will try.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "type": "matching_headings",
+          "prompt": "Choose the correct heading for Paragraph B from the list of headings below.",
+          "heading_bank": [
+            { "key": "i", "text": "A familiar threat with an unfamiliar outcome" },
+            { "key": "ii", "text": "Why some reefs may never recover" },
+            { "key": "iii", "text": "The conditions that allow a reef to rebuild" },
+            { "key": "iv", "text": "Evidence that recovery is widespread" },
+            { "key": "v", "text": "Restoration as a stopgap measure" },
+            { "key": "vi", "text": "The hidden cost of bleached reefs" },
+            { "key": "vii", "text": "The financial value of living reefs" },
+            { "key": "viii", "text": "A narrowing chance for natural recovery" },
+            { "key": "ix", "text": "New methods for monitoring reef health" }
+          ],
+          "target_paragraph": "B",
+          "correct": ["i"],
+          "explanation": "Paragraph B opens with severe bleaching at Heron Bommie ('more than seventy per cent... turned white') — a familiar disaster — but the outcome is unusual: by 2024 coral cover had returned to pre-bleaching levels. Heading (i) 'A familiar threat with an unfamiliar outcome' captures both halves of the paragraph exactly."
+        },
+        {
+          "question_id": "q2",
+          "type": "matching_headings",
+          "prompt": "Choose the correct heading for Paragraph C from the list of headings.",
+          "heading_bank": [
+            { "key": "i", "text": "A familiar threat with an unfamiliar outcome" },
+            { "key": "ii", "text": "Why some reefs may never recover" },
+            { "key": "iii", "text": "The conditions that allow a reef to rebuild" },
+            { "key": "iv", "text": "Evidence that recovery is widespread" },
+            { "key": "v", "text": "Restoration as a stopgap measure" },
+            { "key": "vi", "text": "The hidden cost of bleached reefs" },
+            { "key": "vii", "text": "The financial value of living reefs" },
+            { "key": "viii", "text": "A narrowing chance for natural recovery" },
+            { "key": "ix", "text": "New methods for monitoring reef health" }
+          ],
+          "target_paragraph": "C",
+          "correct": ["iv"],
+          "explanation": "Paragraph C begins 'Heron Bommie is far from unique' and lists recovering reefs in the Philippines and Kenya. The point is geographic spread, so heading (iv) 'Evidence that recovery is widespread' is the best match."
+        },
+        {
+          "question_id": "q3",
+          "type": "matching_headings",
+          "prompt": "Choose the correct heading for Paragraph D from the list of headings.",
+          "heading_bank": [
+            { "key": "i", "text": "A familiar threat with an unfamiliar outcome" },
+            { "key": "ii", "text": "Why some reefs may never recover" },
+            { "key": "iii", "text": "The conditions that allow a reef to rebuild" },
+            { "key": "iv", "text": "Evidence that recovery is widespread" },
+            { "key": "v", "text": "Restoration as a stopgap measure" },
+            { "key": "vi", "text": "The hidden cost of bleached reefs" },
+            { "key": "vii", "text": "The financial value of living reefs" },
+            { "key": "viii", "text": "A narrowing chance for natural recovery" },
+            { "key": "ix", "text": "New methods for monitoring reef health" }
+          ],
+          "target_paragraph": "D",
+          "correct": ["iii"],
+          "explanation": "Paragraph D sets out Dr Okeyo's three conditions for recovery (healthy larvae supply, removal of local stressors, no second heat shock). Heading (iii) 'The conditions that allow a reef to rebuild' is a direct paraphrase."
+        },
+        {
+          "question_id": "q4",
+          "type": "matching_headings",
+          "prompt": "Choose the correct heading for Paragraph E from the list of headings.",
+          "heading_bank": [
+            { "key": "i", "text": "A familiar threat with an unfamiliar outcome" },
+            { "key": "ii", "text": "Why some reefs may never recover" },
+            { "key": "iii", "text": "The conditions that allow a reef to rebuild" },
+            { "key": "iv", "text": "Evidence that recovery is widespread" },
+            { "key": "v", "text": "Restoration as a stopgap measure" },
+            { "key": "vi", "text": "The hidden cost of bleached reefs" },
+            { "key": "vii", "text": "The financial value of living reefs" },
+            { "key": "viii", "text": "A narrowing chance for natural recovery" },
+            { "key": "ix", "text": "New methods for monitoring reef health" }
+          ],
+          "target_paragraph": "E",
+          "correct": ["vii"],
+          "explanation": "Paragraph E begins 'The economic stakes are substantial' and quantifies flood damage prevented, tourism and fishing supported. Heading (vii) 'The financial value of living reefs' matches this economic framing."
+        },
+        {
+          "question_id": "q5",
+          "type": "matching_headings",
+          "prompt": "Choose the correct heading for Paragraph F from the list of headings.",
+          "heading_bank": [
+            { "key": "i", "text": "A familiar threat with an unfamiliar outcome" },
+            { "key": "ii", "text": "Why some reefs may never recover" },
+            { "key": "iii", "text": "The conditions that allow a reef to rebuild" },
+            { "key": "iv", "text": "Evidence that recovery is widespread" },
+            { "key": "v", "text": "Restoration as a stopgap measure" },
+            { "key": "vi", "text": "The hidden cost of bleached reefs" },
+            { "key": "vii", "text": "The financial value of living reefs" },
+            { "key": "viii", "text": "A narrowing chance for natural recovery" },
+            { "key": "ix", "text": "New methods for monitoring reef health" }
+          ],
+          "target_paragraph": "F",
+          "correct": ["v"],
+          "explanation": "Paragraph F describes coral-restoration frames and ends with the explicit claim that the technique 'is no substitute for tackling climate change... but it can buy time'. Heading (v) 'Restoration as a stopgap measure' captures that buy-time framing exactly."
+        },
+        {
+          "question_id": "q6",
+          "type": "matching_headings",
+          "prompt": "Choose the correct heading for Paragraph G from the list of headings.",
+          "heading_bank": [
+            { "key": "i", "text": "A familiar threat with an unfamiliar outcome" },
+            { "key": "ii", "text": "Why some reefs may never recover" },
+            { "key": "iii", "text": "The conditions that allow a reef to rebuild" },
+            { "key": "iv", "text": "Evidence that recovery is widespread" },
+            { "key": "v", "text": "Restoration as a stopgap measure" },
+            { "key": "vi", "text": "The hidden cost of bleached reefs" },
+            { "key": "vii", "text": "The financial value of living reefs" },
+            { "key": "viii", "text": "A narrowing chance for natural recovery" },
+            { "key": "ix", "text": "New methods for monitoring reef health" }
+          ],
+          "target_paragraph": "G",
+          "correct": ["viii"],
+          "explanation": "Paragraph G stresses that 'the gap is shrinking' between heatwaves and that the windows for recovery will close. Heading (viii) 'A narrowing chance for natural recovery' is the natural paraphrase."
+        },
+        {
+          "question_id": "q7",
+          "type": "true_false_notgiven",
+          "prompt": "The 2017 global assessment found that most shallow reefs had gained coral cover since the 1980s.",
+          "options": [
+            { "key": "TRUE", "text": "True" },
+            { "key": "FALSE", "text": "False" },
+            { "key": "NG", "text": "Not Given" }
+          ],
+          "correct": ["FALSE"],
+          "explanation": "Paragraph A says the assessment concluded that 'more than half of the world's shallow reefs had LOST significant coral cover since the 1980s'. The statement reverses this, so it is False — the information is given and directly contradicted, not merely absent."
+        },
+        {
+          "question_id": "q8",
+          "type": "true_false_notgiven",
+          "prompt": "The recovery of Heron Bommie was helped by a reduction in fertiliser runoff from nearby farms.",
+          "options": [
+            { "key": "TRUE", "text": "True" },
+            { "key": "FALSE", "text": "False" },
+            { "key": "NG", "text": "Not Given" }
+          ],
+          "correct": ["TRUE"],
+          "explanation": "Paragraph B states that 'sugar-cane farmers along the adjacent coast had cut their fertiliser use by almost a third, sharply reducing the nutrient runoff'. This directly supports the claim, so the answer is True."
+        },
+        {
+          "question_id": "q9",
+          "type": "true_false_notgiven",
+          "prompt": "Recovered Kenyan reefs now contain exactly the same species mix as before they were damaged.",
+          "options": [
+            { "key": "TRUE", "text": "True" },
+            { "key": "FALSE", "text": "False" },
+            { "key": "NG", "text": "Not Given" }
+          ],
+          "correct": ["FALSE"],
+          "explanation": "Paragraph E explicitly contradicts this: in recovered Kenyan reserves 'the species mix is now different from what older fishers remember, with fast-growing corals dominating'. Because the passage directly states the opposite, the answer is False, not Not Given."
+        },
+        {
+          "question_id": "q10",
+          "type": "true_false_notgiven",
+          "prompt": "Indonesian coral-restoration projects are more cost-effective than similar projects in other countries.",
+          "options": [
+            { "key": "TRUE", "text": "True" },
+            { "key": "FALSE", "text": "False" },
+            { "key": "NG", "text": "Not Given" }
+          ],
+          "correct": ["NG"],
+          "explanation": "Paragraph F describes the Indonesian frame technique and its biological success, but says nothing about cost or comparing it to projects elsewhere. Because there is no information either way in the passage, the answer is Not Given — the writer simply does not discuss cost-effectiveness."
+        },
+        {
+          "question_id": "q11",
+          "type": "sentence_completion",
+          "prompt": "Healthy reefs act as a natural ________ that protects coastlines from storm waves.",
+          "word_limit": "NO MORE THAN TWO WORDS",
+          "correct": ["breakwater", "barrier"],
+          "explanation": "Paragraph E says reefs 'act as a natural breakwater, blunting the force of storm waves'. The exact word from the passage is 'breakwater'; the synonym 'barrier' is also accepted as IELTS marks valid one-word equivalents drawn from the passage's meaning. Both fit within the two-word limit."
+        },
+        {
+          "question_id": "q12",
+          "type": "sentence_completion",
+          "prompt": "Dr Okeyo argues that recovery depends on three conditions, the first of which is a steady supply of healthy ________ from neighbouring reefs.",
+          "word_limit": "ONE WORD ONLY",
+          "correct": ["larvae"],
+          "explanation": "Paragraph D lists 'a steady supply of healthy larvae from neighbouring reefs' as the first of three conditions. The answer is the single word 'larvae'."
+        },
+        {
+          "question_id": "q13",
+          "type": "sentence_completion",
+          "prompt": "Critics initially dismissed coral-restoration projects as merely ________.",
+          "word_limit": "ONE WORD ONLY",
+          "correct": ["ornamental"],
+          "explanation": "Paragraph F says 'Critics once dismissed such projects as ornamental — too small to matter at the scale of the ocean.' The single missing word from the passage is 'ornamental'."
+        }
+      ]
+    },
+    {
+      "passage_id": "p2",
+      "order": 2,
+      "title": "Charting the World: A Brief History of Cartography",
+      "context_label": "Reading Passage 2",
+      "instructions": "You should spend about 20 minutes on Questions 14–26, which are based on Reading Passage 2 below.",
+      "body": "[A] The earliest surviving maps are not, strictly speaking, maps of the world. A clay tablet from southern Mesopotamia, dated to around 600 BCE, shows the city of Babylon at the centre of a flat disc encircled by ocean. Beyond the ocean lie triangles of land marked with brief, almost mythological annotations: 'where the sun is hidden', 'where a horned bull lives'. For its maker, the map was less a navigational tool than a statement about the place of the known world within an unknown surrounding cosmos.\n\n[B] Greek and Roman geographers, working a few centuries later, began to ask different questions. Eratosthenes of Cyrene, librarian at Alexandria in the third century BCE, calculated the circumference of the Earth to within a few per cent of its modern value by comparing the lengths of shadows cast at midday in two distant cities. He drew the world divided by parallels and meridians, anchoring places to fixed coordinates rather than to legends. Two hundred years later, Ptolemy compiled an atlas of more than eight thousand named locations, each with latitude and longitude, accompanied by instructions for how to project the curved Earth onto a flat sheet. Much of Ptolemy's data was wrong — he underestimated the size of the Earth and exaggerated the eastward extent of Asia — but his framework would shape European mapmaking for the next fourteen centuries.\n\n[C] Through the medieval period, European maps drifted away from Ptolemy's rigour and back towards the symbolic. The mappa mundi of the thirteenth century placed Jerusalem at the centre, Asia at the top, and decorated the margins with biblical scenes and creatures from travellers' tales. They were not intended to guide a journey. Practical seafarers used a different tradition altogether — the portolan chart, a working document covered in spider-webs of compass lines, showing coastlines in remarkable detail but ignoring the interior of continents entirely. A captain crossing the Mediterranean needed harbours, headlands, and bearings; he had no use for a depiction of Eden.\n\n[D] The recovery of Ptolemy's text in Renaissance Italy, around 1410, marked a turning point. Suddenly, scholars had a system into which fresh information could be slotted. As Portuguese ships pushed down the African coast and Columbus crossed the Atlantic, mapmakers redrew the world almost decade by decade. The German cartographer Martin Waldseemüller, in 1507, produced a vast wall map that for the first time labelled the new western continent 'America'. He later regretted the choice — believing it should have honoured Columbus rather than Amerigo Vespucci — but by then the name had spread beyond his control.\n\n[E] The next great problem was mathematical. A sphere cannot be flattened without distortion, yet sailors needed a flat chart on which a constant compass bearing appeared as a straight line. In 1569, the Flemish geographer Gerardus Mercator devised a projection that stretched the spacing of parallels towards the poles in just the right way to solve this. Mercator's projection made navigation far easier, but it grossly inflated the apparent size of high-latitude regions: on his map, Greenland appears as large as Africa, though in reality Africa is fourteen times larger. The trade-off has been debated ever since.\n\n[F] National surveys transformed cartography again in the eighteenth and nineteenth centuries. France began the painstaking triangulation of its territory in the 1740s, a project that took four generations to complete. Britain's Ordnance Survey, established in 1791 originally for military purposes, eventually produced maps of such detail that hikers still rely on their descendants today. These were maps as instruments of the state: they made it possible to tax land, raise armies, build railways, and draw borders that no traveller could dispute.\n\n[G] In the twentieth century, the aeroplane and then the satellite turned mapping into a continuous, almost automatic activity. By the 1980s, the United States Geological Survey was producing topographic maps of the entire country from aerial photographs. By the 2000s, services like Google Maps had placed an interactive atlas in the pocket of anyone with a phone. Yet the older questions have not gone away. Whose coastline is being shown, and at what date? Which border is recognised, and by whom? Every map, the historian J. B. Harley once wrote, is a kind of argument. The technology has changed; the argument has not.",
+      "questions": [
+        {
+          "question_id": "q14",
+          "type": "multiple_choice",
+          "prompt": "According to paragraph A, the main purpose of the Babylonian clay-tablet map was to:",
+          "options": [
+            { "key": "A", "text": "guide trade routes across Mesopotamia." },
+            { "key": "B", "text": "record astronomical observations." },
+            { "key": "C", "text": "express a worldview rather than to enable travel." },
+            { "key": "D", "text": "warn travellers about dangerous lands." }
+          ],
+          "correct": ["C"],
+          "explanation": "Paragraph A concludes that the tablet 'was less a navigational tool than a statement about the place of the known world within an unknown surrounding cosmos.' That is essentially option C — expressing a worldview rather than enabling travel. Options A and B are never mentioned; D misreads the mythological annotations as warnings."
+        },
+        {
+          "question_id": "q15",
+          "type": "multiple_choice",
+          "prompt": "According to paragraph B, Eratosthenes' major contribution to geography was to:",
+          "options": [
+            { "key": "A", "text": "produce the first detailed atlas of named places." },
+            { "key": "B", "text": "calculate the circumference of the Earth using shadow measurements." },
+            { "key": "C", "text": "invent the system of latitude and longitude." },
+            { "key": "D", "text": "correct earlier errors made by Ptolemy." }
+          ],
+          "correct": ["B"],
+          "explanation": "Paragraph B states Eratosthenes 'calculated the circumference of the Earth to within a few per cent of its modern value by comparing the lengths of shadows cast at midday in two distant cities.' Option A describes Ptolemy's later atlas. Option D is chronologically impossible — Ptolemy lived after Eratosthenes."
+        },
+        {
+          "question_id": "q16",
+          "type": "multiple_choice",
+          "prompt": "Portolan charts, as described in paragraph C, were valued by sailors mainly because they:",
+          "options": [
+            { "key": "A", "text": "depicted biblical scenes alongside coastlines." },
+            { "key": "B", "text": "covered both coasts and continental interiors in equal detail." },
+            { "key": "C", "text": "provided accurate coastal detail and compass bearings." },
+            { "key": "D", "text": "were based on Ptolemy's mathematical framework." }
+          ],
+          "correct": ["C"],
+          "explanation": "Paragraph C describes portolan charts as 'covered in spider-webs of compass lines, showing coastlines in remarkable detail' and says a captain 'needed harbours, headlands, and bearings'. Option B is the opposite of the text ('ignoring the interior of continents entirely'). Option A confuses portolans with the symbolic mappa mundi."
+        },
+        {
+          "question_id": "q17",
+          "type": "multiple_choice",
+          "prompt": "The writer suggests that Mercator's 1569 projection (paragraph E):",
+          "options": [
+            { "key": "A", "text": "solved the problem of distortion entirely." },
+            { "key": "B", "text": "was abandoned by most navigators within a century." },
+            { "key": "C", "text": "helped sailors at the cost of misrepresenting the relative size of regions." },
+            { "key": "D", "text": "was rejected at the time it was published." }
+          ],
+          "correct": ["C"],
+          "explanation": "Paragraph E says Mercator's projection 'made navigation far easier, but it grossly inflated the apparent size of high-latitude regions' — exactly a navigational benefit at the cost of distortion. Option A is contradicted by the Greenland/Africa example; B and D are unsupported."
+        },
+        {
+          "question_id": "q18",
+          "type": "matching_features",
+          "prompt": "Match the achievement with the correct person from the list below. The list of people is shared with questions 19–22.",
+          "feature_bank": [
+            { "key": "A", "text": "Eratosthenes" },
+            { "key": "B", "text": "Ptolemy" },
+            { "key": "C", "text": "Martin Waldseemüller" },
+            { "key": "D", "text": "Gerardus Mercator" },
+            { "key": "E", "text": "The makers of the medieval mappa mundi" },
+            { "key": "F", "text": "J. B. Harley" }
+          ],
+          "statement": "Compiled an atlas listing the coordinates of more than eight thousand places.",
+          "correct": ["B"],
+          "explanation": "Paragraph B credits Ptolemy with compiling 'an atlas of more than eight thousand named locations, each with latitude and longitude'. Eratosthenes worked with coordinates but is not described as producing such an atlas."
+        },
+        {
+          "question_id": "q19",
+          "type": "matching_features",
+          "prompt": "Match the achievement with the correct person.",
+          "feature_bank": [
+            { "key": "A", "text": "Eratosthenes" },
+            { "key": "B", "text": "Ptolemy" },
+            { "key": "C", "text": "Martin Waldseemüller" },
+            { "key": "D", "text": "Gerardus Mercator" },
+            { "key": "E", "text": "The makers of the medieval mappa mundi" },
+            { "key": "F", "text": "J. B. Harley" }
+          ],
+          "statement": "Designed a projection on which a constant compass bearing forms a straight line.",
+          "correct": ["D"],
+          "explanation": "Paragraph E says Mercator 'devised a projection that stretched the spacing of parallels towards the poles' precisely so that a constant compass bearing appeared as a straight line."
+        },
+        {
+          "question_id": "q20",
+          "type": "matching_features",
+          "prompt": "Match the achievement with the correct person.",
+          "feature_bank": [
+            { "key": "A", "text": "Eratosthenes" },
+            { "key": "B", "text": "Ptolemy" },
+            { "key": "C", "text": "Martin Waldseemüller" },
+            { "key": "D", "text": "Gerardus Mercator" },
+            { "key": "E", "text": "The makers of the medieval mappa mundi" },
+            { "key": "F", "text": "J. B. Harley" }
+          ],
+          "statement": "Argued that every map should be understood as a form of argument.",
+          "correct": ["F"],
+          "explanation": "Paragraph G quotes J. B. Harley directly: 'Every map... is a kind of argument.'"
+        },
+        {
+          "question_id": "q21",
+          "type": "matching_features",
+          "prompt": "Match the achievement with the correct person.",
+          "feature_bank": [
+            { "key": "A", "text": "Eratosthenes" },
+            { "key": "B", "text": "Ptolemy" },
+            { "key": "C", "text": "Martin Waldseemüller" },
+            { "key": "D", "text": "Gerardus Mercator" },
+            { "key": "E", "text": "The makers of the medieval mappa mundi" },
+            { "key": "F", "text": "J. B. Harley" }
+          ],
+          "statement": "First applied the name 'America' to the new western continent on a printed map.",
+          "correct": ["C"],
+          "explanation": "Paragraph D states that Waldseemüller's 1507 wall map 'for the first time labelled the new western continent America'."
+        },
+        {
+          "question_id": "q22",
+          "type": "matching_features",
+          "prompt": "Match the achievement with the correct person.",
+          "feature_bank": [
+            { "key": "A", "text": "Eratosthenes" },
+            { "key": "B", "text": "Ptolemy" },
+            { "key": "C", "text": "Martin Waldseemüller" },
+            { "key": "D", "text": "Gerardus Mercator" },
+            { "key": "E", "text": "The makers of the medieval mappa mundi" },
+            { "key": "F", "text": "J. B. Harley" }
+          ],
+          "statement": "Placed Jerusalem at the centre of the known world.",
+          "correct": ["E"],
+          "explanation": "Paragraph C says the thirteenth-century mappa mundi 'placed Jerusalem at the centre, Asia at the top'. The makers of these maps, as a group, are the correct match."
+        },
+        {
+          "question_id": "q23",
+          "type": "summary_completion",
+          "prompt": "Complete the summary of paragraphs F and G using words from the word bank. From the eighteenth century onwards, mapping became an instrument of government. France began a massive (Q23) ________ of its territory in the 1740s, while Britain's Ordnance Survey was set up in 1791 originally for (Q24) ________ purposes. In the twentieth century, mapping became almost continuous: by the 1980s the US Geological Survey was producing detailed maps from (Q25) ________, and by the 2000s interactive atlases were available on any phone. Even so, the historian J. B. Harley insisted that every map is essentially an (Q26) ________.",
+          "word_limit": "ONE WORD OR PHRASE FROM THE WORD BANK",
+          "word_bank": [
+            "triangulation",
+            "taxation",
+            "military",
+            "scientific",
+            "satellite images",
+            "aerial photographs",
+            "argument",
+            "illustration",
+            "settlement",
+            "border"
+          ],
+          "correct": ["triangulation"],
+          "explanation": "Paragraph F: 'France began the painstaking triangulation of its territory in the 1740s.' The exact word from the bank is 'triangulation'."
+        },
+        {
+          "question_id": "q24",
+          "type": "summary_completion",
+          "prompt": "See question 23 for the summary text. Choose the correct word from the bank for gap (Q24).",
+          "word_limit": "ONE WORD OR PHRASE FROM THE WORD BANK",
+          "word_bank": [
+            "triangulation",
+            "taxation",
+            "military",
+            "scientific",
+            "satellite images",
+            "aerial photographs",
+            "argument",
+            "illustration",
+            "settlement",
+            "border"
+          ],
+          "correct": ["military"],
+          "explanation": "Paragraph F: the Ordnance Survey was 'established in 1791 originally for military purposes'. The matching word in the bank is 'military'."
+        },
+        {
+          "question_id": "q25",
+          "type": "summary_completion",
+          "prompt": "See question 23 for the summary text. Choose the correct word from the bank for gap (Q25).",
+          "word_limit": "ONE WORD OR PHRASE FROM THE WORD BANK",
+          "word_bank": [
+            "triangulation",
+            "taxation",
+            "military",
+            "scientific",
+            "satellite images",
+            "aerial photographs",
+            "argument",
+            "illustration",
+            "settlement",
+            "border"
+          ],
+          "correct": ["aerial photographs"],
+          "explanation": "Paragraph G states that 'By the 1980s, the United States Geological Survey was producing topographic maps of the entire country from aerial photographs.' Note 'satellite images' is a distractor — the writer mentions satellites in general but pins the 1980s USGS output specifically to aerial photographs."
+        },
+        {
+          "question_id": "q26",
+          "type": "summary_completion",
+          "prompt": "See question 23 for the summary text. Choose the correct word from the bank for gap (Q26).",
+          "word_limit": "ONE WORD OR PHRASE FROM THE WORD BANK",
+          "word_bank": [
+            "triangulation",
+            "taxation",
+            "military",
+            "scientific",
+            "satellite images",
+            "aerial photographs",
+            "argument",
+            "illustration",
+            "settlement",
+            "border"
+          ],
+          "correct": ["argument"],
+          "explanation": "Paragraph G quotes Harley: 'Every map... is a kind of argument.' The matching word in the bank is 'argument'."
+        }
+      ]
+    },
+    {
+      "passage_id": "p3",
+      "order": 3,
+      "title": "Why We Choose What We Choose: A Short Tour of Behavioural Economics",
+      "context_label": "Reading Passage 3",
+      "instructions": "You should spend about 20 minutes on Questions 27–40, which are based on Reading Passage 3 below.",
+      "body": "[A] For most of the twentieth century, economics rested on a tidy assumption: that the people whose behaviour it sought to predict were broadly rational. They knew their preferences, weighed costs and benefits, and chose the option that best served their interests. The assumption was useful — it made the maths tractable — but it sat uneasily with anyone who had ever bought a gym membership in January or eaten a second slice of cake. Behavioural economics, the field that emerged in the 1970s and 1980s, is the long correction to that uneasiness.\n\n[B] The foundational work was done by two Israeli psychologists, Daniel Kahneman and Amos Tversky, who showed that human judgment systematically deviates from the predictions of rational-choice theory in ways that could be measured in the laboratory. People, they found, are not bad at probability in random ways; they are bad at it in predictable ways. Asked to estimate how many words on a page of English end in '-ing' versus contain 'n' as the second-to-last letter, they typically guess the first to be more common, because such words come to mind more readily. Kahneman and Tversky called this the availability heuristic. It is one of dozens of mental shortcuts they catalogued, each of which can be useful in everyday life and disastrous in the wrong setting.\n\n[C] Among their most influential ideas was prospect theory, set out in 1979. Classical economics assumes that a gain of one hundred dollars and an avoided loss of one hundred dollars are equivalent — a hundred dollars, after all, is a hundred dollars. Kahneman and Tversky showed experimentally that people treat losses as roughly twice as painful as equivalent gains are pleasurable. This asymmetry, known as loss aversion, helps explain why investors cling to falling stocks, why drivers refuse a route they have never tried even when it is faster, and why home-owners overprice properties they have grown attached to. The economist Richard Thaler, building on this work, later argued that loss aversion shapes everyday consumer behaviour even when no money is on the table.\n\n[D] Thaler also introduced one of the field's most quoted ideas: the nudge. A nudge is a small change to the way choices are presented that steers behaviour in a particular direction without removing any options or significantly changing incentives. The classic example is the cafeteria that places fruit at eye level and pastries on a low shelf. No one is forbidden from reaching for a doughnut, and the price is unchanged; yet sales of fruit reliably rise. Governments from Britain to Singapore have set up dedicated 'nudge units' to apply such design tricks to public policy, with mixed but often encouraging results: enrolment in pension schemes, for instance, rises sharply when employees are signed up by default and must opt out, rather than being asked to opt in.\n\n[E] Not everyone is persuaded. Critics argue that the effects measured in laboratories often shrink or vanish in real life, where stakes are larger and people pay more attention. A 2022 review of fifty published nudge experiments found that, while most reported statistically significant effects, the average size of those effects was small enough that whole programmes built around them might fail to deliver promised savings. The author of the review, behavioural economist Maya Lindqvist, did not conclude that nudges are useless; she concluded that they have been oversold. The truth, she suggested, is that good nudges work modestly and bad ones not at all.\n\n[F] A deeper objection is ethical. If governments and companies know how to bias your choices without your noticing, are they manipulating you? Defenders of the approach respond that any choice is presented in some way — a menu has to list dishes in some order, a form has to ask questions in some sequence — and that designing those presentations carelessly is no more neutral than designing them thoughtfully. The honest task, in their view, is not to refuse to nudge but to nudge transparently and in directions the chooser themselves would endorse on reflection.\n\n[G] Behavioural economics has, in any case, changed the conversation. Central banks now stress-test policies against the assumption that households panic, hoard, and follow the herd. Doctors design vaccination reminders that work with patients' biases rather than against them. Even economic textbooks, once committed to the rational agent, now devote whole chapters to systematic error. The reasonable person of classical economics has not disappeared, but he keeps stranger and more interesting company than he used to.",
+      "questions": [
+        {
+          "question_id": "q27",
+          "type": "yes_no_notgiven",
+          "prompt": "The writer believes that twentieth-century economic models accurately captured the way ordinary people make decisions.",
+          "options": [
+            { "key": "YES", "text": "Yes" },
+            { "key": "NO", "text": "No" },
+            { "key": "NG", "text": "Not Given" }
+          ],
+          "correct": ["NO"],
+          "explanation": "Paragraph A describes the rational-agent assumption as 'useful' but says it 'sat uneasily with anyone who had ever bought a gym membership in January or eaten a second slice of cake.' The writer's view is clearly that these models did NOT capture real behaviour well — the claim contradicts the writer's view, so the answer is No, not Not Given."
+        },
+        {
+          "question_id": "q28",
+          "type": "yes_no_notgiven",
+          "prompt": "The writer agrees that Kahneman and Tversky's findings showed human judgment errors follow predictable patterns.",
+          "options": [
+            { "key": "YES", "text": "Yes" },
+            { "key": "NO", "text": "No" },
+            { "key": "NG", "text": "Not Given" }
+          ],
+          "correct": ["YES"],
+          "explanation": "Paragraph B states directly: 'People, they found, are not bad at probability in random ways; they are bad at it in predictable ways.' The writer endorses this finding, so the answer is Yes."
+        },
+        {
+          "question_id": "q29",
+          "type": "yes_no_notgiven",
+          "prompt": "The writer claims that loss aversion helps investors achieve higher long-term returns.",
+          "options": [
+            { "key": "YES", "text": "Yes" },
+            { "key": "NO", "text": "No" },
+            { "key": "NG", "text": "Not Given" }
+          ],
+          "correct": ["NG"],
+          "explanation": "Paragraph C says loss aversion explains why 'investors cling to falling stocks' — implying a behavioural bias, not a benefit. But the writer never says anything about whether this raises or lowers long-term returns. Because the question's claim is not asserted or denied in the text, the answer is Not Given."
+        },
+        {
+          "question_id": "q30",
+          "type": "yes_no_notgiven",
+          "prompt": "Maya Lindqvist believes that nudge policies should be abandoned.",
+          "options": [
+            { "key": "YES", "text": "Yes" },
+            { "key": "NO", "text": "No" },
+            { "key": "NG", "text": "Not Given" }
+          ],
+          "correct": ["NO"],
+          "explanation": "Paragraph E explicitly states: 'Lindqvist did not conclude that nudges are useless; she concluded that they have been oversold.' Her view is clearly given — so the statement contradicts what the passage tells us, and the answer is No rather than Not Given."
+        },
+        {
+          "question_id": "q31",
+          "type": "matching_sentence_endings",
+          "prompt": "Complete the sentence by choosing the correct ending. According to prospect theory, losses are treated as...",
+          "ending_bank": [
+            { "key": "A", "text": "...will eliminate the need for traditional policy tools." },
+            { "key": "B", "text": "...is itself a form of design." },
+            { "key": "C", "text": "...roughly twice as painful as equivalent gains feel pleasurable." },
+            { "key": "D", "text": "...without taking any option away from the chooser." },
+            { "key": "E", "text": "...can improve public outcomes when carefully applied." },
+            { "key": "F", "text": "...is the only way to ensure rational choice." },
+            { "key": "G", "text": "...is rarely effective in any real-world setting." }
+          ],
+          "correct": ["C"],
+          "explanation": "Paragraph C says people 'treat losses as roughly twice as painful as equivalent gains are pleasurable' — exactly ending C."
+        },
+        {
+          "question_id": "q32",
+          "type": "matching_sentence_endings",
+          "prompt": "Complete the sentence by choosing the correct ending. The cafeteria example shows that a nudge can change behaviour...",
+          "ending_bank": [
+            { "key": "A", "text": "...will eliminate the need for traditional policy tools." },
+            { "key": "B", "text": "...is itself a form of design." },
+            { "key": "C", "text": "...roughly twice as painful as equivalent gains feel pleasurable." },
+            { "key": "D", "text": "...without taking any option away from the chooser." },
+            { "key": "E", "text": "...can improve public outcomes when carefully applied." },
+            { "key": "F", "text": "...is the only way to ensure rational choice." },
+            { "key": "G", "text": "...is rarely effective in any real-world setting." }
+          ],
+          "correct": ["D"],
+          "explanation": "Paragraph D explains that nudges work 'without removing any options' — 'No one is forbidden from reaching for a doughnut'. Ending D matches this 'without taking any option away' framing."
+        },
+        {
+          "question_id": "q33",
+          "type": "matching_sentence_endings",
+          "prompt": "Complete the sentence by choosing the correct ending. Governments have set up nudge units because they expect such techniques...",
+          "ending_bank": [
+            { "key": "A", "text": "...will eliminate the need for traditional policy tools." },
+            { "key": "B", "text": "...is itself a form of design." },
+            { "key": "C", "text": "...roughly twice as painful as equivalent gains feel pleasurable." },
+            { "key": "D", "text": "...without taking any option away from the chooser." },
+            { "key": "E", "text": "...can improve public outcomes when carefully applied." },
+            { "key": "F", "text": "...is the only way to ensure rational choice." },
+            { "key": "G", "text": "...is rarely effective in any real-world setting." }
+          ],
+          "correct": ["E"],
+          "explanation": "Paragraph D notes that government nudge units have produced 'mixed but often encouraging results' (e.g. pension enrolment). The motivation matches ending E — improving public outcomes when carefully applied. Ending A overstates the case and is contradicted by paragraph E's qualification."
+        },
+        {
+          "question_id": "q34",
+          "type": "matching_sentence_endings",
+          "prompt": "Complete the sentence by choosing the correct ending. Defenders of nudging argue that any way of presenting choices...",
+          "ending_bank": [
+            { "key": "A", "text": "...will eliminate the need for traditional policy tools." },
+            { "key": "B", "text": "...is itself a form of design." },
+            { "key": "C", "text": "...roughly twice as painful as equivalent gains feel pleasurable." },
+            { "key": "D", "text": "...without taking any option away from the chooser." },
+            { "key": "E", "text": "...can improve public outcomes when carefully applied." },
+            { "key": "F", "text": "...is the only way to ensure rational choice." },
+            { "key": "G", "text": "...is rarely effective in any real-world setting." }
+          ],
+          "correct": ["B"],
+          "explanation": "Paragraph F argues that 'any choice is presented in some way' and that careless and thoughtful design are equally non-neutral — i.e. presentation 'is itself a form of design'. Ending B captures this."
+        },
+        {
+          "question_id": "q35",
+          "type": "multiple_choice",
+          "prompt": "According to paragraph B, the 'availability heuristic' describes a tendency to:",
+          "options": [
+            { "key": "A", "text": "avoid options that involve any risk of loss." },
+            { "key": "B", "text": "judge how common something is by how easily examples come to mind." },
+            { "key": "C", "text": "prefer choices that are presented first in a list." },
+            { "key": "D", "text": "underestimate the importance of recent events." }
+          ],
+          "correct": ["B"],
+          "explanation": "Paragraph B says people overestimate '-ing' words 'because such words come to mind more readily', and Kahneman and Tversky labelled this 'the availability heuristic'. That is exactly option B. Option A confuses this with loss aversion."
+        },
+        {
+          "question_id": "q36",
+          "type": "multiple_choice",
+          "prompt": "Maya Lindqvist's 2022 review (paragraph E) concluded that:",
+          "options": [
+            { "key": "A", "text": "nudges have no measurable effect on behaviour." },
+            { "key": "B", "text": "nudges have been promoted as more powerful than they really are." },
+            { "key": "C", "text": "nudges work best in small communities." },
+            { "key": "D", "text": "nudges should replace conventional regulation." }
+          ],
+          "correct": ["B"],
+          "explanation": "Paragraph E says effects were 'small enough that whole programmes built around them might fail to deliver promised savings' and that Lindqvist's conclusion was that nudges 'have been oversold'. Option B paraphrases 'oversold' precisely. Option A is too strong — she did NOT say they are useless."
+        },
+        {
+          "question_id": "q37",
+          "type": "multiple_choice",
+          "prompt": "The writer's overall view of behavioural economics is that it has:",
+          "options": [
+            { "key": "A", "text": "completely overturned classical economic theory." },
+            { "key": "B", "text": "proved less useful than its founders predicted." },
+            { "key": "C", "text": "broadened, rather than replaced, the picture of human decision-making." },
+            { "key": "D", "text": "been most successful in the field of medicine." }
+          ],
+          "correct": ["C"],
+          "explanation": "Paragraph G says 'The reasonable person of classical economics has not disappeared, but he keeps stranger and more interesting company than he used to' — i.e. the field is added to, not replaced. Option A overstates the change; B contradicts the positive examples in paragraph G."
+        },
+        {
+          "question_id": "q38",
+          "type": "short_answer",
+          "prompt": "What name did Kahneman and Tversky give to the mental shortcut by which people judge frequency from how easily examples come to mind?",
+          "word_limit": "NO MORE THAN THREE WORDS",
+          "correct": ["availability heuristic", "the availability heuristic"],
+          "explanation": "Paragraph B: 'Kahneman and Tversky called this the availability heuristic.' Either 'availability heuristic' (two words) or 'the availability heuristic' (three words) is within the limit and correct."
+        },
+        {
+          "question_id": "q39",
+          "type": "short_answer",
+          "prompt": "In which decade was prospect theory first set out?",
+          "word_limit": "ONE WORD AND/OR A NUMBER",
+          "correct": ["1970s", "the 1970s"],
+          "explanation": "Paragraph C states prospect theory was 'set out in 1979', which falls in the 1970s decade. '1970s' is a single number-word and fits the one-word/number limit."
+        },
+        {
+          "question_id": "q40",
+          "type": "short_answer",
+          "prompt": "What kind of unit have governments such as Britain's and Singapore's set up to apply behavioural insights to public policy?",
+          "word_limit": "NO MORE THAN TWO WORDS",
+          "correct": ["nudge units", "nudge unit"],
+          "explanation": "Paragraph D: 'Governments from Britain to Singapore have set up dedicated nudge units...'. Either the plural ('nudge units') or singular ('nudge unit') is accepted within the two-word limit."
+        }
+      ]
+    }
+  ],
+  "scoring": {
+    "total_items": 40,
+    "module": "academic",
+    "band_estimate": [
+      { "min_correct": 39, "band": 9.0 },
+      { "min_correct": 37, "band": 8.5 },
+      { "min_correct": 35, "band": 8.0 },
+      { "min_correct": 33, "band": 7.5 },
+      { "min_correct": 30, "band": 7.0 },
+      { "min_correct": 27, "band": 6.5 },
+      { "min_correct": 23, "band": 6.0 },
+      { "min_correct": 19, "band": 5.5 },
+      { "min_correct": 15, "band": 5.0 },
+      { "min_correct": 13, "band": 4.5 },
+      { "min_correct": 10, "band": 4.0 },
+      { "min_correct": 0,  "band": 3.5 }
+    ]
+  }
+}

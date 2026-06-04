@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+﻿import React, { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import GoogleAd from '../components/GoogleAd';
 import SchemaMarkup from '../components/SchemaMarkup';
@@ -222,7 +222,7 @@ const HomophonesHomonymsHomographsPage: React.FC = () => {
               <tr className="bg-white dark:bg-slate-800/50">
                 <td className="px-6 py-4 font-semibold text-purple-600 dark:text-purple-400">Homograph</td>
                 <td className="px-6 py-4 text-green-500">✓ Yes</td>
-                <td className="px-6 py-4 text-amber-500">Sometimes</td>
+                <td className="px-6 py-4 text-teal-500">Sometimes</td>
                 <td className="px-6 py-4 text-slate-600 dark:text-slate-400">bow /boʊ/ / bow /baʊ/</td>
               </tr>
             </tbody>
@@ -237,9 +237,9 @@ const HomophonesHomonymsHomographsPage: React.FC = () => {
           <div>
             <h3 className="font-semibold text-slate-800 mb-2 dark:text-slate-200">✅ Memory Tricks</h3>
             <ul className="space-y-2 text-slate-700 dark:text-slate-300">
-              <li>• <strong>"There"</strong> contains "here" – both refer to places</li>
-              <li>• <strong>"Their"</strong> contains "heir" – both imply ownership</li>
-              <li>• <strong>"You're"</strong> = "you are" – if you can't substitute, use "your"</li>
+              <li>• <strong>"There"</strong> contains "here" - both refer to places</li>
+              <li>• <strong>"Their"</strong> contains "heir" - both imply ownership</li>
+              <li>• <strong>"You're"</strong> = "you are" - if you can't substitute, use "your"</li>
               <li>• <strong>"It's"</strong> always means "it is" or "it has"</li>
             </ul>
           </div>
@@ -287,22 +287,22 @@ const HomophonesHomonymsHomographsPage: React.FC = () => {
       <aside className="mt-12 p-6 bg-blue-50 rounded-xl border border-blue-100 dark:bg-slate-700/50 dark:border-slate-600">
         <h2 className="font-heading text-xl font-bold text-slate-800 mb-4 dark:text-slate-200">Related Vocabulary Resources</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          <Link to="/confused-words" className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow dark:bg-slate-800 dark:hover:bg-slate-700">
+          <Link to="/commonly-confused-words/" className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow dark:bg-slate-800 dark:hover:bg-slate-700">
             <span className="text-2xl">🔄</span>
             <h3 className="font-semibold text-slate-800 mt-2 dark:text-slate-200">Confused Words</h3>
             <p className="text-sm text-slate-600 dark:text-slate-400">Affect vs. Effect & more</p>
           </Link>
-          <Link to="/vocabulary/collocations" className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow dark:bg-slate-800 dark:hover:bg-slate-700">
+          <Link to="/vocabulary/collocations/" className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow dark:bg-slate-800 dark:hover:bg-slate-700">
             <span className="text-2xl">🔗</span>
             <h3 className="font-semibold text-slate-800 mt-2 dark:text-slate-200">Collocations</h3>
             <p className="text-sm text-slate-600 dark:text-slate-400">Natural word combinations</p>
           </Link>
-          <Link to="/prefixes-suffixes" className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow dark:bg-slate-800 dark:hover:bg-slate-700">
+          <Link to="/prefixes-suffixes/" className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow dark:bg-slate-800 dark:hover:bg-slate-700">
             <span className="text-2xl">🧩</span>
             <h3 className="font-semibold text-slate-800 mt-2 dark:text-slate-200">Prefixes & Suffixes</h3>
             <p className="text-sm text-slate-600 dark:text-slate-400">Word formation guide</p>
           </Link>
-          <Link to="/idioms" className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow dark:bg-slate-800 dark:hover:bg-slate-700">
+          <Link to="/idioms/" className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow dark:bg-slate-800 dark:hover:bg-slate-700">
             <span className="text-2xl">💬</span>
             <h3 className="font-semibold text-slate-800 mt-2 dark:text-slate-200">English Idioms</h3>
             <p className="text-sm text-slate-600 dark:text-slate-400">300+ expressions</p>

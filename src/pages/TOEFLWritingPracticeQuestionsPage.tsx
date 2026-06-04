@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading, BulletList } from '../components/ArticleComponents';
@@ -275,7 +275,7 @@ const TOEFLWritingPracticeQuestionsPage: React.FC = () => {
         </div>
 
         {/* FAQ Section */}
-        <ArticleHeading>TOEFL Writing Practice Questions – FAQ</ArticleHeading>
+        <ArticleHeading>TOEFL Writing Practice Questions - FAQ</ArticleHeading>
 
         <div className="space-y-6 mb-8">
           <div className="border-b border-slate-200 dark:border-slate-700 pb-4">
@@ -285,7 +285,7 @@ const TOEFLWritingPracticeQuestionsPage: React.FC = () => {
 
           <div className="border-b border-slate-200 dark:border-slate-700 pb-4">
             <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">How many TOEFL writing questions should I practice?</h3>
-            <p className="text-slate-600 dark:text-slate-400">Practicing 20–50 writing prompts can significantly improve your TOEFL writing skills.</p>
+            <p className="text-slate-600 dark:text-slate-400">Practicing 20-50 writing prompts can significantly improve your TOEFL writing skills.</p>
           </div>
 
           <div className="border-b border-slate-200 dark:border-slate-700 pb-4">
@@ -303,22 +303,22 @@ const TOEFLWritingPracticeQuestionsPage: React.FC = () => {
         <ArticleHeading>Related TOEFL Writing Resources</ArticleHeading>
         
         <div className="grid md:grid-cols-2 gap-4 mb-8">
-          <Link to="/toefl/toefl-writing/toefl-writing-task-1-explained" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
+          <Link to="/toefl/toefl-writing/toefl-writing-task-1-explained/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">TOEFL Writing Task 1 Explained</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">Complete guide to the Integrated Writing Task.</p>
           </Link>
           
-          <Link to="/toefl/toefl-writing/toefl-writing-task-2-explained" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
+          <Link to="/toefl/toefl-writing/toefl-writing-task-2-explained/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">TOEFL Writing Task 2 Explained</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">Master the Academic Discussion Task with examples.</p>
           </Link>
           
-          <Link to="/toefl/toefl-writing/toefl-writing-templates" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
+          <Link to="/toefl/toefl-writing/toefl-writing-templates/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">TOEFL Writing Templates</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">Ready-to-use templates for both Task 1 and Task 2.</p>
           </Link>
           
-          <Link to="/toefl/toefl-writing/toefl-writing-topics" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
+          <Link to="/toefl/toefl-writing/toefl-writing-topics/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">TOEFL Writing Topics</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">60+ essay questions organized by category for practice.</p>
           </Link>

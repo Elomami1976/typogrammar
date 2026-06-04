@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../../hooks/usePageMetadata';
 import SchemaMarkup from '../../components/SchemaMarkup';
@@ -7,7 +7,7 @@ const ShouldHaveVsShouldOfPage: React.FC = () => {
   usePageMetadata({
     title: 'Should Have vs. Should Of: Which Is Correct? | TypoGrammar',
     description: 'Learn why "should have" is correct and "should of" is wrong. "Should of" is a common writing error caused by the sound of the contraction "should\'ve". Clear examples and explanations.',
-    canonical: 'https://typogrammar.com/grammar-mistakes/should-have-vs-should-of'
+    canonical: 'https://typogrammar.com/grammar-mistakes/should-have-vs-should-of/'
   });
 
   const [showAnswer, setShowAnswer] = useState(false);
@@ -70,7 +70,7 @@ const ShouldHaveVsShouldOfPage: React.FC = () => {
       <nav className="mb-6 text-slate-600 dark:text-slate-400">
         <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
         {' › '}
-        <Link to="/grammar-mistakes" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
+        <Link to="/grammar-mistakes/" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
         {' › '}
         <span className="text-slate-900 dark:text-slate-100">Should Have vs. Should Of</span>
       </nav>
@@ -87,7 +87,7 @@ const ShouldHaveVsShouldOfPage: React.FC = () => {
             <strong>Should have</strong> is always correct.
           </p>
           <p className="text-lg text-green-800 dark:text-green-200">
-            <strong>Should of</strong> is always incorrect — it is a spelling error caused by the sound of <em>should've</em>.
+            <strong>Should of</strong> is always incorrect, it is a spelling error caused by the sound of <em>should've</em>.
           </p>
         </div>
 
@@ -112,7 +112,7 @@ const ShouldHaveVsShouldOfPage: React.FC = () => {
             contracted to <em>should've</em>, which sounds exactly like <em>"should of"</em> when spoken quickly.
             Writers who aren't aware of this contraction mistakenly write <em>"of"</em> instead of <em>"have"</em>.
           </p>
-          <div className="bg-amber-50 dark:bg-amber-900/20 border-l-4 border-amber-400 p-5 rounded-r-lg">
+          <div className="bg-teal-50 dark:bg-teal-900/20 border-l-4 border-teal-400 p-5 rounded-r-lg">
             <p className="font-semibold text-slate-800 dark:text-slate-200 mb-2">The sound chain:</p>
             <p className="text-lg text-slate-700 dark:text-slate-300">
               <strong>should have</strong> → contracted to <strong>should've</strong> → sounds like <strong>"should of"</strong>
@@ -188,7 +188,7 @@ const ShouldHaveVsShouldOfPage: React.FC = () => {
           </div>
         </section>
 
-        {/* The Same Rule — Other Modals */}
+        {/* The Same Rule, Other Modals */}
         <section className="mb-10">
           <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
             The Same Rule Applies to All Modal Verbs
@@ -291,7 +291,7 @@ const ShouldHaveVsShouldOfPage: React.FC = () => {
           <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
             Practice
           </h2>
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-6 rounded-lg">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-6 rounded-lg">
             <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
               <strong>Choose the correct word:</strong>
             </p>
@@ -324,22 +324,22 @@ const ShouldHaveVsShouldOfPage: React.FC = () => {
           </h2>
           <ul className="space-y-2 text-lg">
             <li>
-              <Link to="/grammar-mistakes/i-have-went-or-have-gone" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/i-have-went-or-have-gone/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → I Have Went or Have Gone?
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/he-didnt-went-or-he-didnt-go" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/he-didnt-went-or-he-didnt-go/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → He Didn't Went or He Didn't Go?
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/by-accident-vs-on-accident" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/by-accident-vs-on-accident/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → By Accident vs. On Accident
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → All Grammar Mistakes
               </Link>
             </li>

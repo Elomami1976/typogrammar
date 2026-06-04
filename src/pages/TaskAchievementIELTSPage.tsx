@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading, BulletList, CodeBlock } from '../components/ArticleComponents';
@@ -8,7 +8,7 @@ import SchemaMarkup from '../components/SchemaMarkup';
 const TaskAchievementIELTSPage: React.FC = () => {
   usePageMetadata({
     title: 'What Is Task Achievement in IELTS? Full Band 9 Guide',
-    description: 'Learn what Task Achievement means in IELTS Writing, how examiners score it, band descriptors, examples, and tips to reach Band 7–9 easily.'
+    description: 'Learn what Task Achievement means in IELTS Writing, how examiners score it, band descriptors, examples, and tips to reach Band 7-9 easily.'
   });
 
   const faqSchema = {
@@ -46,7 +46,7 @@ const TaskAchievementIELTSPage: React.FC = () => {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "What Is Task Achievement in IELTS? Full Band 9 Guide",
-    "description": "Learn what Task Achievement means in IELTS Writing, how examiners score it, band descriptors, examples, and tips to reach Band 7–9 easily.",
+    "description": "Learn what Task Achievement means in IELTS Writing, how examiners score it, band descriptors, examples, and tips to reach Band 7-9 easily.",
     "author": {
       "@type": "Organization",
       "name": "Typogrammar"
@@ -73,7 +73,7 @@ const TaskAchievementIELTSPage: React.FC = () => {
 
       <div className="mb-6">
         <Link
-          to="/ielts/ielts-writing-task-2-essay-types"
+          to="/ielts/ielts-writing-task-2-essay-types/"
           className="text-blue-600 dark:text-blue-400 hover:underline text-sm"
         >
           ← Back to IELTS Writing Task 2 Essay Types
@@ -235,9 +235,9 @@ const TaskAchievementIELTSPage: React.FC = () => {
       </div>
 
       {/* Band 6 */}
-      <div className="bg-orange-50 dark:bg-orange-900/20 border-l-4 border-orange-500 p-4 my-4 rounded-r-lg">
-        <h4 className="text-lg font-semibold text-orange-800 dark:text-orange-200 mb-2">🟠 Band 6</h4>
-        <ul className="list-disc list-inside space-y-1 text-orange-700 dark:text-orange-300">
+      <div className="bg-teal-50 dark:bg-teal-900/20 border-l-4 border-teal-500 p-4 my-4 rounded-r-lg">
+        <h4 className="text-lg font-semibold text-teal-800 dark:text-teal-200 mb-2">🟠 Band 6</h4>
+        <ul className="list-disc list-inside space-y-1 text-teal-700 dark:text-teal-300">
           <li>Addresses the task but not fully</li>
           <li>Some ideas are unclear or underdeveloped</li>
           <li>May miss a part of the question</li>
@@ -289,7 +289,7 @@ const TaskAchievementIELTSPage: React.FC = () => {
 
       {/* Weak Response */}
       <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
-        <h4 className="text-lg font-semibold text-red-800 dark:text-red-200 mb-3">❌ Weak Response (Band 5–6)</h4>
+        <h4 className="text-lg font-semibold text-red-800 dark:text-red-200 mb-3">❌ Weak Response (Band 5-6)</h4>
         <ul className="list-disc list-inside space-y-2 text-red-700 dark:text-red-300">
           <li>Talks about education in general</li>
           <li>Does not clearly say agree or disagree</li>
@@ -301,7 +301,7 @@ const TaskAchievementIELTSPage: React.FC = () => {
 
       {/* Strong Response */}
       <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-6 my-6 rounded-r-lg">
-        <h4 className="text-lg font-semibold text-green-800 dark:text-green-200 mb-3">✅ Strong Response (Band 8–9)</h4>
+        <h4 className="text-lg font-semibold text-green-800 dark:text-green-200 mb-3">✅ Strong Response (Band 8-9)</h4>
         <ul className="list-disc list-inside space-y-2 text-green-700 dark:text-green-300">
           <li>Clearly states position: "I strongly agree"</li>
           <li>Gives 2 fully developed reasons</li>
@@ -491,22 +491,22 @@ const TaskAchievementIELTSPage: React.FC = () => {
         <h3 className="text-lg font-semibold text-blue-900 dark:text-blue-200 mb-4">📚 Related IELTS Resources</h3>
         <ul className="space-y-2">
           <li>
-            <Link to="/ielts/band-8-ielts-sample-answers" className="text-blue-600 dark:text-blue-400 hover:underline">
+            <Link to="/ielts/band-8-ielts-sample-answers/" className="text-blue-600 dark:text-blue-400 hover:underline">
               → Band 8+ IELTS Sample Answers
             </Link>
           </li>
           <li>
-            <Link to="/ielts/conditionals-in-ielts" className="text-blue-600 dark:text-blue-400 hover:underline">
+            <Link to="/ielts/conditionals-in-ielts/" className="text-blue-600 dark:text-blue-400 hover:underline">
               → Conditionals in IELTS Writing
             </Link>
           </li>
           <li>
-            <Link to="/ielts/passive-voice-ielts-writing" className="text-blue-600 dark:text-blue-400 hover:underline">
+            <Link to="/ielts/passive-voice-ielts-writing/" className="text-blue-600 dark:text-blue-400 hover:underline">
               → Passive Voice for IELTS Writing
             </Link>
           </li>
           <li>
-            <Link to="/ielts/50-complex-sentences-for-ielts-pdf" className="text-blue-600 dark:text-blue-400 hover:underline">
+            <Link to="/ielts/50-complex-sentences-for-ielts-pdf/" className="text-blue-600 dark:text-blue-400 hover:underline">
               → 50 Complex Sentences for IELTS (PDF)
             </Link>
           </li>

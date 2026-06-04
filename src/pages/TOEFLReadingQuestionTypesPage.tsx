@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import SchemaMarkup from '../components/SchemaMarkup';
@@ -6,15 +6,15 @@ import SchemaMarkup from '../components/SchemaMarkup';
 const TOEFLReadingQuestionTypesPage: React.FC = () => {
   usePageMetadata({
     title: 'TOEFL Reading Question Types Explained (With Examples) | TypoGrammar',
-    description: 'Discover all TOEFL reading question types for the 2026 iBT format — with real examples, strategies, and tips to answer every type correctly.',
-    canonical: 'https://typogrammar.com/toefl/toefl-reading/toefl-reading-question-types'
+    description: 'Discover all TOEFL reading question types for the 2026 iBT format, with real examples, strategies, and tips to answer every type correctly.',
+    canonical: 'https://typogrammar.com/toefl/toefl-reading/toefl-reading-question-types/'
   });
 
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "TOEFL Reading Question Types Explained (With Examples)",
-    "description": "Discover all TOEFL reading question types for the 2026 iBT format — with real examples, strategies, and tips to answer every type correctly.",
+    "description": "Discover all TOEFL reading question types for the 2026 iBT format, with real examples, strategies, and tips to answer every type correctly.",
     "author": { "@type": "Organization", "name": "TypoGrammar" },
     "publisher": {
       "@type": "Organization",
@@ -98,72 +98,72 @@ const TOEFLReadingQuestionTypesPage: React.FC = () => {
     {
       number: 1,
       name: "Main Purpose (Big Picture)",
-      tests: "Why the text was written — to inform, warn, invite, promote, confirm, or instruct.",
+      tests: "Why the text was written, to inform, warn, invite, promote, confirm, or instruct.",
       signals: ['"What is the main purpose of this email?"', '"What is this notice mainly about?"', '"Why did [person] write to [person]?"'],
-      strategy: "Check the title, subject line, or opening sentence. These almost always reveal the purpose. Choose the answer that best summarizes the whole text — not just one detail.",
+      strategy: "Check the title, subject line, or opening sentence. These almost always reveal the purpose. Choose the answer that best summarizes the whole text, not just one detail.",
       example: {
         text: "A municipal bank notice inviting customers to switch to paperless billing via their mobile app.",
         question: '"What type of business posted this notice?"',
         options: ["A) Internet provider", "B) Computer manufacturer", "C) Paper supplier", "D) Bank"],
-        answer: "D) Bank — the notice mentions savings accounts and monthly statements."
+        answer: "D) Bank, the notice mentions savings accounts and monthly statements."
       },
       tip: 'The purpose is almost never hidden. If the email subject says "Driving Exam Confirmation," the purpose is to confirm a driving exam.'
     },
     {
       number: 2,
       name: "Detail",
-      tests: "Whether you can locate specific facts — dates, times, prices, names, locations, steps, or requirements.",
+      tests: "Whether you can locate specific facts, dates, times, prices, names, locations, steps, or requirements.",
       signals: ['"What time should the test taker arrive?"', '"What is Mr. Davis asked to provide?"', '"How can customers sign up for paperless billing?"'],
-      strategy: 'Do not re-read the whole text. Scan for the keyword from the question (a name, number, date, or place), then read one sentence before and after it to confirm. Watch for conditions — "must arrive 15 minutes early" means 8:45, not 9:00.',
+      strategy: 'Do not re-read the whole text. Scan for the keyword from the question (a name, number, date, or place), then read one sentence before and after it to confirm. Watch for conditions, "must arrive 15 minutes early" means 8:45, not 9:00.',
       example: {
         text: "An email from the DMV confirming a driving exam at 9:00 AM, with a requirement to arrive 15 minutes early.",
         question: '"What time should the test taker arrive?"',
         options: ["A) 8:30 AM", "B) 8:45 AM", "C) 9:00 AM", "D) 9:15 AM"],
-        answer: "B) 8:45 AM — because 9:00 minus 15 minutes = 8:45."
+        answer: "B) 8:45 AM, because 9:00 minus 15 minutes = 8:45."
       },
       tip: "The answer is always in the text but is often paraphrased. Never pick an option just because it uses the same word from the text."
     },
     {
       number: 3,
       name: "Vocabulary in Context",
-      tests: "The meaning of a specific word or phrase as used in the passage — not its dictionary definition.",
-      signals: ['"What does \'[word]\' most likely mean in this email?"', '"The word \'[word]\' is closest in meaning to…"'],
-      strategy: 'Cover the word in question and read the surrounding sentences. What would make sense there? Use contrast clues — if the text says "first-time drivers and those with expired licenses must complete this; renewals are not required," you can infer "renew" means to extend something before it expires.',
+      tests: "The meaning of a specific word or phrase as used in the passage, not its dictionary definition.",
+      signals: ['"What does \'[word]\' most likely mean in this email?"', '"The word \'[word]\' is closest in meaning to..."'],
+      strategy: 'Cover the word in question and read the surrounding sentences. What would make sense there? Use contrast clues, if the text says "first-time drivers and those with expired licenses must complete this; renewals are not required," you can infer "renew" means to extend something before it expires.',
       example: {
         text: 'DMV email stating the test is required for "first-time drivers and those with expired licenses" but not for "renewals."',
         question: '"What does \'renew\' most likely mean in the email?"',
         options: ["A) Cancel a license", "B) Apply for a new license", "C) Extend or update something that is expiring", "D) Transfer a license to another state"],
-        answer: "C — the context of \"expired licenses vs renewals\" shows renew means extending something."
+        answer: "C, the context of \"expired licenses vs renewals\" shows renew means extending something."
       },
       tip: "The correct answer is always supported by context clues in the text. Never choose based on what you think the word normally means."
     },
     {
       number: 4,
       name: "Inference",
-      tests: "Something that is implied but not directly stated — a logical conclusion based on what the text says.",
-      signals: ['"What will most likely happen if…?"', '"What can be inferred about…?"', '"What is most likely [person]\'s job?"'],
-      strategy: "Find the relevant part of the text. Ask: if this condition is true, what follows logically? Do not guess — stay close to what the text actually says. Eliminate options that go beyond the text.",
+      tests: "Something that is implied but not directly stated, a logical conclusion based on what the text says.",
+      signals: ['"What will most likely happen if...?"', '"What can be inferred about...?"', '"What is most likely [person]\'s job?"'],
+      strategy: "Find the relevant part of the text. Ask: if this condition is true, what follows logically? Do not guess, stay close to what the text actually says. Eliminate options that go beyond the text.",
       example: {
         text: 'DMV email states the driver "must hold valid driver\'s insurance in the state of California."',
         question: '"What will happen on test day if the driver has insurance for the state of New York?"',
         options: ["A) They will be allowed to take the test", "B) They will receive a one-day exception", "C) They will not be allowed to take the test", "D) They can reschedule for free"],
-        answer: "C — California insurance is required; New York insurance does not qualify."
+        answer: "C, California insurance is required; New York insurance does not qualify."
       },
-      tip: "Inference answers are supported by the text — they are never wild guesses. If you cannot find support, eliminate and choose the closest option."
+      tip: "Inference answers are supported by the text, they are never wild guesses. If you cannot find support, eliminate and choose the closest option."
     },
     {
       number: 5,
       name: "Rhetorical Purpose",
-      tests: "Why the writer included a specific detail, phrase, or example — the communicative function.",
+      tests: "Why the writer included a specific detail, phrase, or example, the communicative function.",
       signals: ['"Why does the email mention \'[phrase]\'?"', '"Why does the author include information about [topic]?"'],
       strategy: "Ask yourself: what role does this detail play in the text? Is it an example? A warning? A requirement? A clarification? Then choose the option that describes that role accurately.",
       example: {
         text: 'DMV email advising the test taker to "practice key maneuvers, such as parallel parking and three-point turns."',
         question: '"Why does the email mention \'parallel parking and three-point turns\'?"',
         options: ["A) These are challenging maneuvers the test taker should practice", "B) These are the only maneuvers tested in California", "C) The test taker already knows how to do these", "D) These are optional skills for experienced drivers"],
-        answer: "A — they are given as examples of what the test taker should practice before the exam."
+        answer: "A, they are given as examples of what the test taker should practice before the exam."
       },
-      tip: "The answer always matches the function of the phrase in the text — not what you know about the topic from outside."
+      tip: "The answer always matches the function of the phrase in the text, not what you know about the topic from outside."
     }
   ];
 
@@ -173,13 +173,13 @@ const TOEFLReadingQuestionTypesPage: React.FC = () => {
       name: "Factual Information",
       isNew: false,
       tests: "Information directly stated in the passage.",
-      signals: ['"According to the passage…"', '"The passage states that…"', '"What is one way…?"'],
-      strategy: "Find the relevant section by scanning for keywords from the question. Read carefully — the answer is stated directly. Watch out for distractors that use words from the passage but distort the meaning.",
+      signals: ['"According to the passage..."', '"The passage states that..."', '"What is one way...?"'],
+      strategy: "Find the relevant section by scanning for keywords from the question. Read carefully, the answer is stated directly. Watch out for distractors that use words from the passage but distort the meaning.",
       example: {
         text: "About urban trees and their environmental benefits.",
         question: '"According to the passage, what is one way urban trees contribute to public health?"',
         options: ["A) By reducing temperatures near roads", "B) By preventing erosion on farmland", "C) By removing pollutants", "D) By displacing concrete and asphalt"],
-        answer: "C) By removing pollutants — directly stated. Option A is tricky: the passage says trees help people cope with temperatures, not that they lower temperatures."
+        answer: "C) By removing pollutants, directly stated. Option A is tricky: the passage says trees help people cope with temperatures, not that they lower temperatures."
       }
     },
     {
@@ -187,13 +187,13 @@ const TOEFLReadingQuestionTypesPage: React.FC = () => {
       name: "Negative Factual Information (NOT/EXCEPT)",
       isNew: false,
       tests: "Which answer option is NOT mentioned or NOT true according to the passage.",
-      signals: ['"Which of the following is NOT mentioned…?"', '"All of the following are true EXCEPT…"'],
-      strategy: "Check each answer option against the passage. Eliminate the three options that are supported by the text. The one left — not mentioned or contradicted — is the answer. These take more time, so budget a few extra seconds.",
+      signals: ['"Which of the following is NOT mentioned...?"', '"All of the following are true EXCEPT..."'],
+      strategy: "Check each answer option against the passage. Eliminate the three options that are supported by the text. The one left, not mentioned or contradicted, is the answer. These take more time, so budget a few extra seconds.",
       example: {
         text: "About urban trees and their social/psychological benefits.",
         question: '"Which of the following is NOT mentioned as a social or psychological benefit of trees?"',
         options: ["A) Reduced crime rates", "B) Lower stress levels", "C) Higher income levels", "D) More community involvement"],
-        answer: "C) Higher income levels — A, B, and D are all mentioned; higher income levels are not."
+        answer: "C) Higher income levels, A, B, and D are all mentioned; higher income levels are not."
       }
     },
     {
@@ -201,27 +201,27 @@ const TOEFLReadingQuestionTypesPage: React.FC = () => {
       name: "Vocabulary in Context",
       isNew: false,
       tests: "The meaning of a word or phrase as used in the academic passage.",
-      signals: ['"The word \'[word]\' in the passage is closest in meaning to…"'],
-      strategy: "Read the full sentence and the sentences around the target word. Try to guess the meaning before looking at the options. These are usually quick — do not overthink them.",
+      signals: ['"The word \'[word]\' in the passage is closest in meaning to..."'],
+      strategy: "Read the full sentence and the sentences around the target word. Try to guess the meaning before looking at the options. These are usually quick, do not overthink them.",
       example: {
         text: "About bioplastics and their resistance to environmental degradation.",
         question: '"The word \'resist\' in the passage is closest in meaning to which word?"',
         options: ["A) capture", "B) prevent", "C) withstand", "D) measure"],
-        answer: "C) withstand — resist in context means to hold up against something."
+        answer: "C) withstand, resist in context means to hold up against something."
       }
     },
     {
       number: 4,
       name: "Rhetorical Purpose",
       isNew: false,
-      tests: "Why the author included a specific piece of information — its role or function in the argument.",
+      tests: "Why the author included a specific piece of information, its role or function in the argument.",
       signals: ['"Why does the author discuss [topic]?"', '"Why does the author mention [detail]?"'],
       strategy: "Identify what the author is doing with that information. Is it providing an example? Giving a contrast? Explaining a consequence? Choose the option that matches the function, not the content.",
       example: {
         text: "About urban trees and the threats they face.",
         question: '"Why does the author discuss construction projects?"',
         options: ["A) To explain why cities need more parks", "B) To show how urban development can unintentionally harm trees", "C) To demonstrate how tree coverage can be increased", "D) To highlight the effect of global warming on trees"],
-        answer: "B — construction projects are mentioned to show how development threatens trees, not to promote parks or discuss climate."
+        answer: "B, construction projects are mentioned to show how development threatens trees, not to promote parks or discuss climate."
       }
     },
     {
@@ -229,7 +229,7 @@ const TOEFLReadingQuestionTypesPage: React.FC = () => {
       name: "Inference",
       isNew: false,
       tests: "A conclusion that logically follows from the passage but is not directly stated.",
-      signals: ['"What can be inferred from the passage…?"', '"The author implies that…"', '"What would most likely happen if…?"'],
+      signals: ['"What can be inferred from the passage...?"', '"The author implies that..."', '"What would most likely happen if...?"'],
       strategy: "Find the relevant part of the passage and reason carefully. The answer must be supported by evidence in the text. Eliminate options that require information not in the passage.",
       example: null
     },
@@ -237,14 +237,14 @@ const TOEFLReadingQuestionTypesPage: React.FC = () => {
       number: 6,
       name: "Important Idea (Select the Sentence)",
       isNew: true,
-      tests: "Your ability to identify which sentence expresses a specific idea. This is NOT multiple-choice — you click directly on a sentence in the passage.",
+      tests: "Your ability to identify which sentence expresses a specific idea. This is NOT multiple-choice, you click directly on a sentence in the passage.",
       signals: ['"Click the sentence that expresses [specific idea]."'],
       strategy: "Read the description carefully. Then read the passage looking for the sentence that best matches that description. Often it is the sentence that most closely paraphrases the idea given in the question.",
       example: {
         text: "About urban trees and their benefits.",
         question: '"Click the sentence that expresses the reason why people who live in areas with many trees might be happier than people who do not."',
         options: [],
-        answer: "Paragraph 2, sentence 3 — which explains the psychological/social benefits of tree-lined areas."
+        answer: "Paragraph 2, sentence 3, which explains the psychological/social benefits of tree-lined areas."
       }
     },
     {
@@ -258,7 +258,7 @@ const TOEFLReadingQuestionTypesPage: React.FC = () => {
         text: "About bioplastics (3 paragraphs).",
         question: '"How does paragraph 3 relate to paragraphs 1 and 2?"',
         options: ["A) It highlights weaknesses in the argument", "B) It describes possible objections to the claims", "C) It contradicts the claims", "D) It gives an example of the benefits mentioned"],
-        answer: "D — paragraph 3 illustrates the benefits of bioplastics mentioned in the earlier paragraphs."
+        answer: "D, paragraph 3 illustrates the benefits of bioplastics mentioned in the earlier paragraphs."
       }
     }
   ];
@@ -287,7 +287,7 @@ const TOEFLReadingQuestionTypesPage: React.FC = () => {
     {
       n: 5,
       title: "Never Rely on Outside Knowledge",
-      body: "Every correct answer is supported by something in the text. If you cannot find textual support, the answer is wrong — no matter how correct it seems from your own knowledge. The TOEFL tests reading comprehension, not general knowledge."
+      body: "Every correct answer is supported by something in the text. If you cannot find textual support, the answer is wrong, no matter how correct it seems from your own knowledge. The TOEFL tests reading comprehension, not general knowledge."
     }
   ];
 
@@ -298,7 +298,7 @@ const TOEFLReadingQuestionTypesPage: React.FC = () => {
       <nav className="mb-6 text-slate-600 dark:text-slate-400 text-sm">
         <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
         {' › '}
-        <Link to="/toefl/toefl-reading/toefl-reading-section-explained" className="hover:text-blue-600 dark:hover:text-blue-400">TOEFL Reading</Link>
+        <Link to="/toefl/toefl-reading/toefl-reading-section-explained/" className="hover:text-blue-600 dark:hover:text-blue-400">TOEFL Reading</Link>
         {' › '}
         <span className="text-slate-900 dark:text-slate-100">Question Types</span>
       </nav>
@@ -313,7 +313,7 @@ const TOEFLReadingQuestionTypesPage: React.FC = () => {
         {/* Intro */}
         <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
           The TOEFL iBT reading section changed completely on <strong>March 29, 2026</strong>. Gone are the long
-          700-word academic passages. In their place, you now face three distinct reading task types — each with
+          700-word academic passages. In their place, you now face three distinct reading task types, each with
           its own set of question types.
         </p>
         <p className="text-lg text-slate-700 dark:text-slate-300 mb-8">
@@ -334,17 +334,17 @@ const TOEFLReadingQuestionTypesPage: React.FC = () => {
             types that test a wider range of reading skills. Together they contain approximately{' '}
             <strong>50 items in about 30 minutes</strong>.
           </p>
-          <div className="bg-amber-50 dark:bg-amber-900/20 border-l-4 border-amber-400 p-5 rounded-r-lg mb-6">
+          <div className="bg-teal-50 dark:bg-teal-900/20 border-l-4 border-teal-400 p-5 rounded-r-lg mb-6">
             <p className="text-slate-800 dark:text-slate-200 font-semibold mb-1">Adaptive Format</p>
             <p className="text-slate-700 dark:text-slate-300">
               The section uses a multistage adaptive format. The first routing module is the same for everyone.
-              Based on performance, the system routes you to a harder or easier second module — so no two
+              Based on performance, the system routes you to a harder or easier second module, so no two
               test-takers see the exact same questions.
             </p>
           </div>
           <p className="text-lg text-slate-700 dark:text-slate-300 mb-6">
-            The new scoring scale is <strong>1.0–6.0</strong> (CEFR-aligned), with the traditional 0–120 scale
-            also reported during the 2026–2028 transition. Traditional question types only exist in{' '}
+            The new scoring scale is <strong>1.0-6.0</strong> (CEFR-aligned), with the traditional 0-120 scale
+            also reported during the 2026-2028 transition. Traditional question types only exist in{' '}
             <strong>Task 2</strong> (Read in Daily Life) and <strong>Task 3</strong> (Read an Academic Passage).
             Task 1 (Complete the Words) is strictly fill-in-the-blank spelling.
           </p>
@@ -361,8 +361,8 @@ const TOEFLReadingQuestionTypesPage: React.FC = () => {
               </thead>
               <tbody>
                 {[
-                  ["Complete the Words", "70–100 word academic paragraph", "10 fill-in-the-blank letters", "Spelling, grammar, word structure"],
-                  ["Read in Daily Life", "Short real-world texts (15–150 words)", "2–3 per set (1–2 sets)", "Practical comprehension, purpose, details, inference"],
+                  ["Complete the Words", "70-100 word academic paragraph", "10 fill-in-the-blank letters", "Spelling, grammar, word structure"],
+                  ["Read in Daily Life", "Short real-world texts (15-150 words)", "2-3 per set (1-2 sets)", "Practical comprehension, purpose, details, inference"],
                   ["Read an Academic Passage", "Short academic texts (~200 words)", "5 per passage", "Main ideas, details, vocabulary, inference, paragraph relationships"],
                 ].map(([task, type, q, skills], i) => (
                   <tr key={task} className={i % 2 === 0 ? "bg-white dark:bg-slate-800/40" : "bg-slate-50 dark:bg-slate-700/40"}>
@@ -410,7 +410,7 @@ const TOEFLReadingQuestionTypesPage: React.FC = () => {
                   <tr key={type} className={i % 2 === 0 ? "bg-white dark:bg-slate-800/40" : "bg-slate-50 dark:bg-slate-700/40"}>
                     <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 font-medium text-slate-800 dark:text-slate-200">
                       {type.includes('★') ? (
-                        <>{type.replace(' ★ New', '')} <span className="text-xs font-bold text-amber-600 dark:text-amber-400 ml-1">★ NEW</span></>
+                        <>{type.replace(' ★ New', '')} <span className="text-xs font-bold text-teal-600 dark:text-teal-400 ml-1">★ NEW</span></>
                       ) : type}
                     </td>
                     <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">{appears}</td>
@@ -428,8 +428,8 @@ const TOEFLReadingQuestionTypesPage: React.FC = () => {
             Read in Daily Life Question Types (Task 2)
           </h2>
           <p className="text-slate-600 dark:text-slate-400 mb-6">
-            Short everyday texts — emails, notices, social media posts, text message chains, menus, flyers,
-            advertisements, and invoices. Each text is 15–150 words with 2–3 multiple-choice questions.
+            Short everyday texts, emails, notices, social media posts, text message chains, menus, flyers,
+            advertisements, and invoices. Each text is 15-150 words with 2-3 multiple-choice questions.
             Once you submit an answer, you cannot change it.
           </p>
           <div className="space-y-6">
@@ -484,19 +484,19 @@ const TOEFLReadingQuestionTypesPage: React.FC = () => {
             Read an Academic Passage Question Types (Task 3)
           </h2>
           <p className="text-slate-600 dark:text-slate-400 mb-6">
-            Academic passages are about <strong>200 words</strong> long — much shorter than the old 700-word
+            Academic passages are about <strong>200 words</strong> long, much shorter than the old 700-word
             passages. Topics include science, history, business, art, or social studies. Background knowledge is
-            never required. Each passage has 5 questions and no paragraph indicators — you must search the whole
+            never required. Each passage has 5 questions and no paragraph indicators, you must search the whole
             passage.
           </p>
           <div className="space-y-6">
             {academicTypes.map((qt) => (
               <div key={qt.number} className="border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden">
-                <div className={`px-5 py-3 flex items-center gap-3 ${qt.isNew ? 'bg-amber-600 dark:bg-amber-700' : 'bg-slate-700 dark:bg-slate-600'}`}>
-                  <span className={`w-7 h-7 rounded-full font-bold text-sm flex items-center justify-center flex-shrink-0 ${qt.isNew ? 'bg-white text-amber-700' : 'bg-white text-slate-700'}`}>{qt.number}</span>
+                <div className={`px-5 py-3 flex items-center gap-3 ${qt.isNew ? 'bg-teal-600 dark:bg-teal-700' : 'bg-slate-700 dark:bg-slate-600'}`}>
+                  <span className={`w-7 h-7 rounded-full font-bold text-sm flex items-center justify-center flex-shrink-0 ${qt.isNew ? 'bg-white text-teal-700' : 'bg-white text-slate-700'}`}>{qt.number}</span>
                   <h3 className="text-white font-bold text-lg">
                     {qt.name}
-                    {qt.isNew && <span className="ml-2 text-xs bg-white text-amber-700 px-2 py-0.5 rounded-full font-bold">NEW 2026</span>}
+                    {qt.isNew && <span className="ml-2 text-xs bg-white text-teal-700 px-2 py-0.5 rounded-full font-bold">NEW 2026</span>}
                   </h3>
                 </div>
                 <div className="p-5 space-y-3">
@@ -550,19 +550,19 @@ const TOEFLReadingQuestionTypesPage: React.FC = () => {
               </thead>
               <tbody>
                 {[
-                  ["Main Purpose / Big Picture", "✓", "—", "Easy"],
-                  ["Detail", "✓", "✓", "Easy–Medium"],
+                  ["Main Purpose / Big Picture", "✓", "-", "Easy"],
+                  ["Detail", "✓", "✓", "Easy-Medium"],
                   ["Vocabulary in Context", "✓", "✓", "Medium"],
-                  ["Inference", "✓", "✓", "Medium–Hard"],
+                  ["Inference", "✓", "✓", "Medium-Hard"],
                   ["Rhetorical Purpose", "✓", "✓", "Medium"],
-                  ["Negative Factual (NOT/EXCEPT)", "✓", "✓", "Medium–Hard"],
-                  ["Important Idea ★ New", "—", "✓", "Hard (New)"],
-                  ["Paragraph Relationship ★ New", "—", "✓", "Hard (New)"],
+                  ["Negative Factual (NOT/EXCEPT)", "✓", "✓", "Medium-Hard"],
+                  ["Important Idea ★ New", "-", "✓", "Hard (New)"],
+                  ["Paragraph Relationship ★ New", "-", "✓", "Hard (New)"],
                 ].map(([type, daily, academic, diff], i) => (
                   <tr key={type} className={i % 2 === 0 ? "bg-white dark:bg-slate-800/40" : "bg-slate-50 dark:bg-slate-700/40"}>
                     <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 font-medium text-slate-800 dark:text-slate-200">
                       {type.includes('★') ? (
-                        <>{type.replace(' ★ New', '')} <span className="text-xs font-bold text-amber-600 dark:text-amber-400 ml-1">★ NEW</span></>
+                        <>{type.replace(' ★ New', '')} <span className="text-xs font-bold text-teal-600 dark:text-teal-400 ml-1">★ NEW</span></>
                       ) : type}
                     </td>
                     <td className={`border border-slate-300 dark:border-slate-600 px-4 py-3 text-center font-semibold ${daily === '✓' ? 'text-green-600 dark:text-green-400' : 'text-slate-400'}`}>{daily}</td>
@@ -612,7 +612,7 @@ const TOEFLReadingQuestionTypesPage: React.FC = () => {
                   ["Main Purpose", "Choosing a detail instead of the overall purpose", "Read the whole text first, then choose"],
                   ["Detail", "Picking the option that uses the same words as the passage (but wrong meaning)", "Check context, not just keywords"],
                   ["Vocabulary in Context", "Using the dictionary definition instead of context meaning", "Read the surrounding sentences first"],
-                  ["Inference", "Going too far — choosing options not supported by the text", "Stay close to what the text actually says"],
+                  ["Inference", "Going too far, choosing options not supported by the text", "Stay close to what the text actually says"],
                   ["Rhetorical Purpose", "Choosing the content of the detail, not its function", 'Ask "why is this here?" not "what is this?"'],
                   ["NOT/EXCEPT", "Forgetting to flip the logic", "Eliminate what IS mentioned; what's left is the answer"],
                   ["Important Idea", "Clicking too fast without checking the whole passage", "Read all candidate sentences before clicking"],
@@ -651,19 +651,19 @@ const TOEFLReadingQuestionTypesPage: React.FC = () => {
                 label: "Q1 (Main Purpose)",
                 q: "What is the main purpose of the post?",
                 options: ["A) To explain the health benefits of organic farming", "B) To describe the variety of products at the market", "C) To compare several markets in the area", "D) To give advice on starting a market stall"],
-                answer: "B — The post describes many different stalls, showing the variety of what the market offers."
+                answer: "B, The post describes many different stalls, showing the variety of what the market offers."
               },
               {
                 label: "Q2 (Detail)",
                 q: "Why is the Thompson family's stall especially popular?",
                 options: ["A) They give cooking tips and recipes", "B) They sell items at the lowest prices", "C) They offer excellent organic produce and friendly service", "D) Their stall design is especially beautiful"],
-                answer: "C — The post describes the stall as a \"must-visit\" for high-quality produce and cordial service."
+                answer: "C, The post describes the stall as a \"must-visit\" for high-quality produce and cordial service."
               },
               {
                 label: "Q3 (Inference)",
                 q: "Why do customers visit the bakery stall early?",
                 options: ["A) To get free samples in the morning", "B) To buy freshly baked goods before they sell out", "C) To meet a famous baker", "D) To receive early-morning discounts"],
-                answer: "B — The post says the treats \"disappear quickly,\" implying they sell out."
+                answer: "B, The post says the treats \"disappear quickly,\" implying they sell out."
               }
             ].map((item) => (
               <div key={item.label} className="bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-slate-700 rounded-lg p-4">
@@ -684,17 +684,17 @@ const TOEFLReadingQuestionTypesPage: React.FC = () => {
               Urban trees provide significant environmental, health, social, and psychological benefits. They remove
               pollutants from the air and help city residents cope with rising temperatures. Research shows that
               neighborhoods with mature trees have lower crime rates, stronger community involvement, and residents
-              who report lower stress levels. However, urban development often harms trees — construction projects
+              who report lower stress levels. However, urban development often harms trees, construction projects
               compact soil, damage roots, and cut off water supply, threatening long-term tree health.
             </p>
           </div>
           <div className="space-y-3">
             {[
-              { label: "Q1 (Factual)", q: "According to the passage, what is one way urban trees contribute to public health?", answer: "C) By removing pollutants — directly stated. (Not \"reducing temperatures\" — they help people cope, not lower temps.)" },
-              { label: "Q2 (Negative Factual)", q: "Which is NOT mentioned as a social or psychological benefit?", answer: "C) Higher income levels — crime rates, stress, and community involvement are all mentioned; income is not." },
+              { label: "Q1 (Factual)", q: "According to the passage, what is one way urban trees contribute to public health?", answer: "C) By removing pollutants, directly stated. (Not \"reducing temperatures\", they help people cope, not lower temps.)" },
+              { label: "Q2 (Negative Factual)", q: "Which is NOT mentioned as a social or psychological benefit?", answer: "C) Higher income levels, crime rates, stress, and community involvement are all mentioned; income is not." },
               { label: "Q3 (Rhetorical Purpose)", q: "Why does the author discuss construction projects?", answer: "B) To show how urban development can unintentionally harm trees." },
               { label: "Q4 (Vocabulary)", q: '"Compounded" is closest in meaning to:', answer: "C) intensified" },
-              { label: "Q5 (Important Idea ★)", q: "Click the sentence that expresses why people in tree-lined areas might be happier.", answer: "Paragraph 2, sentence 3 — the sentence about lower stress and community connection." },
+              { label: "Q5 (Important Idea ★)", q: "Click the sentence that expresses why people in tree-lined areas might be happier.", answer: "Paragraph 2, sentence 3, the sentence about lower stress and community connection." },
             ].map((item) => (
               <div key={item.label} className="bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-slate-700 rounded-lg p-4">
                 <p className="font-semibold text-slate-800 dark:text-slate-200 mb-1">{item.label}: {item.q}</p>
@@ -732,11 +732,11 @@ const TOEFLReadingQuestionTypesPage: React.FC = () => {
             Explore these related guides:
           </p>
           <ul className="mt-3 space-y-2 text-lg">
-            <li><Link to="/toefl/toefl-reading/toefl-reading-section-explained" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">→ TOEFL Reading Section Explained (2026 Format)</Link></li>
-            <li><Link to="/toefl/toefl-reading/toefl-reading-strategies" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">→ TOEFL Reading Strategies</Link></li>
-            <li><Link to="/toefl/toefl-reading/toefl-daily-life-reading-task" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">→ TOEFL Daily Life Reading Task Guide</Link></li>
-            <li><Link to="/toefl/toefl-reading/toefl-reading-practice-questions" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">→ TOEFL Reading Practice Questions</Link></li>
-            <li><Link to="/toefl/toefl-reading/toefl-reading-time-management" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">→ TOEFL Reading Time Management</Link></li>
+            <li><Link to="/toefl/toefl-reading/toefl-reading-section-explained/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">→ TOEFL Reading Section Explained (2026 Format)</Link></li>
+            <li><Link to="/toefl/toefl-reading/toefl-reading-strategies/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">→ TOEFL Reading Strategies</Link></li>
+            <li><Link to="/toefl/toefl-reading/toefl-daily-life-reading-task/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">→ TOEFL Daily Life Reading Task Guide</Link></li>
+            <li><Link to="/toefl/toefl-reading/toefl-reading-practice-questions/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">→ TOEFL Reading Practice Questions</Link></li>
+            <li><Link to="/toefl/toefl-reading/toefl-reading-time-management/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">→ TOEFL Reading Time Management</Link></li>
           </ul>
         </section>
 

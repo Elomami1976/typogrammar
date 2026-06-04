@@ -1,10 +1,3271 @@
-
+﻿
 import React from 'react';
 import { BlogPost } from '../types';
-import { ArticleParagraph, ArticleHeading, InlineCode, BulletList, ExampleList } from '../components/ArticleComponents';
+import { ArticleParagraph, ArticleHeading, InlineCode, BulletList, ExampleList, TipBox, NoteBox } from '../components/ArticleComponents';
 import { Link } from 'react-router-dom';
+import RedditEmbed from '../components/RedditEmbed';
+import BlogQuiz from '../components/BlogQuiz';
 
 export const BLOG_POSTS: BlogPost[] = [
+  // --- BEST TOEFL PREPARATION COURSES 2026 ---------------------------------
+  {
+    slug: 'best-toefl-preparation-courses-2026',
+    title: 'Best TOEFL Preparation Courses in 2026: Top Online Courses for Every Budget and Score Goal',
+    author: 'TypoGrammar Editorial Team',
+    date: 'May 20, 2026',
+    summary: 'Discover the best TOEFL preparation courses in 2026. Compare Magoosh, ETS Official, Udemy, TST Prep, and Coursera to find the right course for your score goals and budget.',
+    category: 'Test Preparation',
+    image: '/images/blog/best-toefl-preparation-courses-2026.png',
+    imageAlt: 'Best TOEFL preparation courses in 2026 featuring Magoosh, ETS Official TOEFL, Udemy, TST Prep, and Coursera for TOEFL speaking, writing, listening, and reading practice.',
+    schemaMarkup: {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'What is the best TOEFL preparation course?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Magoosh is considered one of the best overall TOEFL preparation courses because it offers complete lessons, practice questions, and flexible study plans at an affordable price.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Are TOEFL preparation courses worth it?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes, TOEFL courses can help students improve test strategies, time management, grammar, vocabulary, and speaking confidence, especially for high target scores.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Which TOEFL course is best for high scores?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'TST Prep is highly recommended for students aiming for TOEFL scores above 100 due to its advanced strategies and speaking templates.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'What is the best free TOEFL course?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'ETS offers official free TOEFL resources, including practice questions and study materials. YouTube channels and free online lessons can also help beginners.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'How long should I study for TOEFL?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Most students study for 1 to 3 months for moderate improvement and 3 to 6 months for major score increases. Daily practice is more effective than occasional long study sessions.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'What is a good TOEFL score?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'A good TOEFL score depends on university requirements. Generally, 80+ is acceptable for many universities, 100+ is considered strong, and 110+ is excellent.'
+          }
+        }
+      ]
+    },
+    content: (
+      <>
+        {/* Quick Answer */}
+        <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6 my-6 rounded-r-lg">
+          <h2 className="text-lg font-semibold mb-2 text-blue-900 dark:text-blue-200">Quick Answer</h2>
+          <p className="text-blue-800 dark:text-blue-300">
+            The best <strong>TOEFL preparation courses in 2026</strong> include <strong>Magoosh</strong> for complete self-paced learning, <strong>ETS Official</strong> for authentic practice, <strong>Udemy</strong> for budget-friendly options, <strong>TST Prep</strong> for high scores, and <strong>Coursera</strong> for academic English improvement. Choosing the right course depends on your target score, budget, and study style.
+          </p>
+        </div>
+
+        {/* Table of Contents */}
+        <nav className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg p-6 my-8">
+          <h2 className="text-lg font-semibold mb-4 text-slate-800 dark:text-slate-200">Table of Contents</h2>
+          <ul className="space-y-2 text-blue-600 dark:text-blue-400 text-sm">
+            <li><a href="#best-courses" className="hover:underline">Best TOEFL Preparation Courses for 2026</a></li>
+            <li><a href="#comparison-table" className="hover:underline">Best TOEFL Courses for Different Needs</a></li>
+            <li><a href="#free-vs-paid" className="hover:underline">Free vs Paid TOEFL Preparation Courses</a></li>
+            <li><a href="#how-to-choose" className="hover:underline">How to Choose the Best TOEFL Preparation Course</a></li>
+            <li><a href="#tips" className="hover:underline">Tips to Improve Your TOEFL Score Faster</a></li>
+            <li><a href="#final-thoughts" className="hover:underline">Final Thoughts</a></li>
+            <li><a href="#faq" className="hover:underline">Frequently Asked Questions</a></li>
+          </ul>
+        </nav>
+
+        {/* Best Courses */}
+        <section id="best-courses">
+          <ArticleHeading>Best TOEFL Preparation Courses for 2026</ArticleHeading>
+
+          {/* Course 1: Magoosh */}
+          <h3 className="font-heading text-2xl font-bold mt-10 mb-4 text-slate-800 dark:text-slate-100">
+            1. <a href="https://magoosh.com/toefl/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline dark:text-blue-400">Magoosh TOEFL Prep</a> — Best Overall TOEFL Course
+          </h3>
+          <ArticleParagraph>
+            Magoosh is one of the most popular <strong>TOEFL preparation courses</strong> because it combines affordability with high-quality lessons.
+          </ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Key Features</h4>
+          <BulletList items={[
+            'Complete TOEFL video lessons',
+            'Practice questions',
+            'Study schedules',
+            'Score prediction tools',
+            'Mobile app access',
+          ]} />
+
+          <ArticleParagraph>The course covers TOEFL Reading, Listening, Speaking, and Writing.</ArticleParagraph>
+
+          <div className="grid md:grid-cols-2 gap-4 my-6">
+            <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-4">
+              <h4 className="font-semibold text-green-800 dark:text-green-300 mb-2">Pros</h4>
+              <ul className="text-sm text-green-700 dark:text-green-400 space-y-1 list-disc list-inside">
+                <li>Beginner-friendly</li>
+                <li>Affordable pricing</li>
+                <li>Flexible study plans</li>
+                <li>Excellent explanations</li>
+              </ul>
+            </div>
+            <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4">
+              <h4 className="font-semibold text-red-800 dark:text-red-300 mb-2">Cons</h4>
+              <ul className="text-sm text-red-700 dark:text-red-400 space-y-1 list-disc list-inside">
+                <li>Limited live interaction</li>
+              </ul>
+            </div>
+          </div>
+          <TipBox>Best For: Students looking for a complete self-paced TOEFL course.</TipBox>
+
+          {/* Course 2: ETS */}
+          <h3 className="font-heading text-2xl font-bold mt-10 mb-4 text-slate-800 dark:text-slate-100">
+            2. <a href="https://www.ets.org/toefl.html" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline dark:text-blue-400">ETS Official TOEFL Course</a> — Best Official TOEFL Preparation
+          </h3>
+          <ArticleParagraph>
+            Since ETS creates the TOEFL exam, their official preparation materials are extremely valuable for understanding the actual test format.
+          </ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Key Features</h4>
+          <BulletList items={[
+            'Official TOEFL materials',
+            'Real exam-style questions',
+            'Authentic practice tests',
+            'Writing and speaking samples',
+          ]} />
+
+          <div className="grid md:grid-cols-2 gap-4 my-6">
+            <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-4">
+              <h4 className="font-semibold text-green-800 dark:text-green-300 mb-2">Pros</h4>
+              <ul className="text-sm text-green-700 dark:text-green-400 space-y-1 list-disc list-inside">
+                <li>Realistic TOEFL practice</li>
+                <li>Trusted official content</li>
+                <li>Accurate scoring standards</li>
+              </ul>
+            </div>
+            <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4">
+              <h4 className="font-semibold text-red-800 dark:text-red-300 mb-2">Cons</h4>
+              <ul className="text-sm text-red-700 dark:text-red-400 space-y-1 list-disc list-inside">
+                <li>Less interactive than modern platforms</li>
+              </ul>
+            </div>
+          </div>
+          <TipBox>Best For: Students who want authentic TOEFL exam preparation.</TipBox>
+
+          {/* Course 3: Udemy */}
+          <h3 className="font-heading text-2xl font-bold mt-10 mb-4 text-slate-800 dark:text-slate-100">
+            3. <a href="https://www.udemy.com/topic/toefl" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline dark:text-blue-400">Udemy TOEFL Courses</a> — Best Budget TOEFL Courses
+          </h3>
+          <ArticleParagraph>
+            Udemy offers a wide range of TOEFL preparation courses for different skill levels and budgets.
+          </ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Key Features</h4>
+          <BulletList items={[
+            'Affordable one-time payment',
+            'Multiple instructors',
+            'Lifetime access',
+            'Flexible learning',
+          ]} />
+
+          <div className="grid md:grid-cols-2 gap-4 my-6">
+            <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-4">
+              <h4 className="font-semibold text-green-800 dark:text-green-300 mb-2">Pros</h4>
+              <ul className="text-sm text-green-700 dark:text-green-400 space-y-1 list-disc list-inside">
+                <li>Low cost</li>
+                <li>Large course selection</li>
+                <li>Self-paced learning</li>
+              </ul>
+            </div>
+            <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4">
+              <h4 className="font-semibold text-red-800 dark:text-red-300 mb-2">Cons</h4>
+              <ul className="text-sm text-red-700 dark:text-red-400 space-y-1 list-disc list-inside">
+                <li>Course quality varies by instructor</li>
+              </ul>
+            </div>
+          </div>
+          <TipBox>Best For: Students looking for affordable TOEFL courses.</TipBox>
+
+          {/* Course 4: TST Prep */}
+          <h3 className="font-heading text-2xl font-bold mt-10 mb-4 text-slate-800 dark:text-slate-100">
+            4. <a href="https://tstprep.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline dark:text-blue-400">TST Prep TOEFL Course</a> — Best for High TOEFL Scores
+          </h3>
+          <ArticleParagraph>
+            TST Prep is highly recommended for students targeting <strong>TOEFL scores above 100</strong>.
+          </ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Key Features</h4>
+          <BulletList items={[
+            'TOEFL strategies',
+            'Speaking templates',
+            'Writing feedback',
+            'Advanced preparation techniques',
+          ]} />
+
+          <div className="grid md:grid-cols-2 gap-4 my-6">
+            <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-4">
+              <h4 className="font-semibold text-green-800 dark:text-green-300 mb-2">Pros</h4>
+              <ul className="text-sm text-green-700 dark:text-green-400 space-y-1 list-disc list-inside">
+                <li>Strong test-taking strategies</li>
+                <li>Excellent speaking guidance</li>
+                <li>Helpful writing structures</li>
+              </ul>
+            </div>
+            <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4">
+              <h4 className="font-semibold text-red-800 dark:text-red-300 mb-2">Cons</h4>
+              <ul className="text-sm text-red-700 dark:text-red-400 space-y-1 list-disc list-inside">
+                <li>Premium plans can be expensive</li>
+              </ul>
+            </div>
+          </div>
+          <TipBox>Best For: Advanced TOEFL students aiming for top scores.</TipBox>
+
+          {/* Course 5: Coursera */}
+          <h3 className="font-heading text-2xl font-bold mt-10 mb-4 text-slate-800 dark:text-slate-100">
+            5. <a href="https://www.coursera.org" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline dark:text-blue-400">Coursera English Courses</a> — Best for Academic English
+          </h3>
+          <ArticleParagraph>
+            While not exclusively TOEFL-focused, Coursera courses can significantly improve academic English skills.
+          </ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Key Features</h4>
+          <BulletList items={[
+            'University-level English courses',
+            'Academic writing lessons',
+            'Listening and speaking practice',
+            'Certificates available',
+          ]} />
+
+          <div className="grid md:grid-cols-2 gap-4 my-6">
+            <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-4">
+              <h4 className="font-semibold text-green-800 dark:text-green-300 mb-2">Pros</h4>
+              <ul className="text-sm text-green-700 dark:text-green-400 space-y-1 list-disc list-inside">
+                <li>High-quality university content</li>
+                <li>Strong academic focus</li>
+                <li>Flexible schedules</li>
+              </ul>
+            </div>
+            <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4">
+              <h4 className="font-semibold text-red-800 dark:text-red-300 mb-2">Cons</h4>
+              <ul className="text-sm text-red-700 dark:text-red-400 space-y-1 list-disc list-inside">
+                <li>Some courses require subscriptions</li>
+              </ul>
+            </div>
+          </div>
+          <TipBox>Best For: Students needing stronger academic English foundations.</TipBox>
+        </section>
+
+        {/* Comparison Table */}
+        <section id="comparison-table">
+          <ArticleHeading>Best TOEFL Courses for Different Needs</ArticleHeading>
+          <div className="overflow-x-auto my-6">
+            <table className="w-full border-collapse text-left">
+              <thead className="bg-slate-100 dark:bg-slate-800">
+                <tr>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-3 font-semibold">Goal</th>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-3 font-semibold">Recommended Course</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-700 dark:text-slate-300">
+                <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+                  <td className="border border-slate-300 dark:border-slate-700 px-4 py-3">Complete TOEFL Preparation</td>
+                  <td className="border border-slate-300 dark:border-slate-700 px-4 py-3">Magoosh</td>
+                </tr>
+                <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+                  <td className="border border-slate-300 dark:border-slate-700 px-4 py-3">Official TOEFL Practice</td>
+                  <td className="border border-slate-300 dark:border-slate-700 px-4 py-3">ETS Official Course</td>
+                </tr>
+                <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+                  <td className="border border-slate-300 dark:border-slate-700 px-4 py-3">Budget-Friendly Learning</td>
+                  <td className="border border-slate-300 dark:border-slate-700 px-4 py-3">Udemy</td>
+                </tr>
+                <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+                  <td className="border border-slate-300 dark:border-slate-700 px-4 py-3">High TOEFL Scores</td>
+                  <td className="border border-slate-300 dark:border-slate-700 px-4 py-3">TST Prep</td>
+                </tr>
+                <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+                  <td className="border border-slate-300 dark:border-slate-700 px-4 py-3">Academic English Improvement</td>
+                  <td className="border border-slate-300 dark:border-slate-700 px-4 py-3">Coursera</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* Free vs Paid */}
+        <section id="free-vs-paid">
+          <ArticleHeading>Free vs Paid TOEFL Preparation Courses</ArticleHeading>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Free TOEFL Courses</h4>
+          <ArticleParagraph>Free TOEFL resources can help students:</ArticleParagraph>
+          <BulletList items={[
+            'Learn basic TOEFL structure',
+            'Practice vocabulary',
+            'Improve grammar',
+            'Study independently',
+          ]} />
+          <ArticleParagraph>However, free courses may lack:</ArticleParagraph>
+          <BulletList items={[
+            'Personalized feedback',
+            'Advanced analytics',
+            'Detailed speaking evaluation',
+            'Structured study plans',
+          ]} />
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Paid TOEFL Courses</h4>
+          <ArticleParagraph>Paid courses often include:</ArticleParagraph>
+          <BulletList items={[
+            'Mock exams',
+            'AI scoring',
+            'Instructor support',
+            'Speaking correction',
+            'Writing reviews',
+            'Score improvement strategies',
+          ]} />
+          <ArticleParagraph>
+            Students aiming for competitive university admissions may benefit from premium preparation courses.
+          </ArticleParagraph>
+        </section>
+
+        {/* How to Choose */}
+        <section id="how-to-choose">
+          <ArticleHeading>How to Choose the Best TOEFL Preparation Course</ArticleHeading>
+          <ArticleParagraph>Before selecting a TOEFL course, consider:</ArticleParagraph>
+          <BulletList items={[
+            'Your target score',
+            'Your budget',
+            'Your weakest TOEFL section',
+            'Available study time',
+            'Learning style preferences',
+          ]} />
+          <ArticleParagraph>For example:</ArticleParagraph>
+          <BulletList items={[
+            'Beginners may prefer structured lessons',
+            'Advanced students may focus on mock tests',
+            'Speaking-focused learners may need pronunciation coaching',
+          ]} />
+        </section>
+
+        {/* Tips */}
+        <section id="tips">
+          <ArticleHeading>Tips to Improve Your TOEFL Score Faster</ArticleHeading>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Practice Every Day</h4>
+          <ArticleParagraph>Consistent study improves retention and fluency.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Focus on Weak Areas</h4>
+          <ArticleParagraph>Spend more time on your lowest-scoring TOEFL section.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Take Full Practice Tests</h4>
+          <ArticleParagraph>Timed mock exams improve speed and confidence.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Improve Academic Vocabulary</h4>
+          <ArticleParagraph>Academic English vocabulary is essential for high TOEFL scores.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Use AI Writing Tools</h4>
+          <ArticleParagraph>Grammar and writing tools can help improve essay quality and sentence structure.</ArticleParagraph>
+        </section>
+
+        {/* Final Thoughts */}
+        <section id="final-thoughts">
+          <ArticleHeading>Final Thoughts</ArticleHeading>
+          <ArticleParagraph>
+            The best <strong>TOEFL preparation courses</strong> can help students study more efficiently, improve weak skills, and achieve higher TOEFL scores. Whether you choose a budget-friendly online course, an official ETS program, or a premium TOEFL coaching platform, consistent practice remains the key to success.
+          </ArticleParagraph>
+          <ArticleParagraph>
+            For many students, combining a TOEFL preparation course, vocabulary practice, speaking exercises, and AI grammar tools creates the most effective study strategy.
+          </ArticleParagraph>
+        </section>
+
+        {/* Related */}
+        <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-600 p-6 my-8 rounded">
+          <h3 className="font-bold text-lg mb-3 text-blue-900 dark:text-blue-200">Recommended Reading</h3>
+          <BulletList items={[
+            <><Link to="/blog/best-toefl-preparation-apps-2026/" className="text-blue-600 hover:underline dark:text-blue-400">Best TOEFL Preparation Apps in 2026</Link></>,
+            <><Link to="/blog/how-ai-is-transforming-ielts-and-toefl-preparation/" className="text-blue-600 hover:underline dark:text-blue-400">How AI Is Transforming IELTS and TOEFL Preparation</Link></>,
+            <><Link to="/blog/15-most-common-toefl-ibt-mistakes-with-examples/" className="text-blue-600 hover:underline dark:text-blue-400">15 Most Common TOEFL iBT Mistakes (With Examples)</Link></>,
+            <><Link to="/blog/new-toefl-scoring-system-2026/" className="text-blue-600 hover:underline dark:text-blue-400">New TOEFL Scoring System 2026</Link></>,
+          ]} />
+        </div>
+
+        {/* FAQ */}
+        <section id="faq">
+          <ArticleHeading>Frequently Asked Questions About TOEFL Preparation Courses</ArticleHeading>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">What is the best TOEFL preparation course?</h4>
+          <ArticleParagraph>Magoosh is considered one of the best overall TOEFL preparation courses because it offers complete lessons, practice questions, and flexible study plans at an affordable price.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Are TOEFL preparation courses worth it?</h4>
+          <ArticleParagraph>Yes, TOEFL courses can help students improve test strategies, time management, grammar, vocabulary, and speaking confidence, especially for high target scores.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">What is the best free TOEFL course?</h4>
+          <ArticleParagraph>ETS offers official free TOEFL resources, including practice questions and study materials. YouTube channels and free online lessons can also help beginners.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Which TOEFL course is best for beginners?</h4>
+          <ArticleParagraph>Magoosh and Udemy TOEFL courses are beginner-friendly because they provide structured lessons and easy-to-follow explanations.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Which TOEFL course is best for high scores?</h4>
+          <ArticleParagraph>TST Prep is highly recommended for students aiming for TOEFL scores above 100 due to its advanced strategies and speaking templates.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">How long should I study for TOEFL?</h4>
+          <ArticleParagraph>Most students study for 1 to 3 months for moderate improvement and 3 to 6 months for major score increases. Daily practice is more effective than occasional long study sessions.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Can I prepare for TOEFL online?</h4>
+          <ArticleParagraph>Yes, many students prepare entirely online using TOEFL apps, courses, mock tests, and AI-powered English learning tools.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">What is a good TOEFL score?</h4>
+          <ArticleParagraph>A good TOEFL score depends on university requirements. Generally, 80+ is acceptable for many universities, 100+ is considered strong, and 110+ is excellent.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Are TOEFL preparation courses expensive?</h4>
+          <ArticleParagraph>TOEFL course prices vary widely. Free resources are available, budget courses can be found under $50, and premium coaching programs can cost hundreds of dollars. Students can choose based on their goals and budget.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Do TOEFL courses include speaking practice?</h4>
+          <ArticleParagraph>Many premium TOEFL courses include speaking exercises, pronunciation feedback, speaking templates, and mock speaking tests. Speaking practice is essential for improving TOEFL fluency and confidence.</ArticleParagraph>
+        </section>
+      </>
+    )
+  },
+
+  // --- BEST TOEFL PREPARATION APPS 2026 ------------------------------------
+  {
+    slug: 'best-toefl-preparation-apps-2026',
+    title: 'Best TOEFL Preparation Apps in 2026: Top Apps for Reading, Speaking, Writing, and Vocabulary',
+    author: 'TypoGrammar Editorial Team',
+    date: 'May 20, 2026',
+    summary: 'Discover the best TOEFL preparation apps in 2026 for speaking, writing, vocabulary, grammar, and full mock tests. Compare Grammarly, Magoosh, Quizlet, ELSA Speak, and TOEFL Go to find the right app for your score goals.',
+    category: 'Test Preparation',
+    image: '/images/blog/best-toefl-preparation-apps-2026.png',
+    imageAlt: 'Best TOEFL preparation apps in 2026 including Grammarly, Magoosh, Quizlet, ELSA Speak, and TOEFL Go for speaking, writing, vocabulary, and listening practice.',
+    schemaMarkup: {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'What is the best TOEFL preparation app?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'The best TOEFL preparation app depends on your goals. Magoosh TOEFL Prep is one of the best all-in-one apps for complete TOEFL preparation, while Grammarly is excellent for TOEFL writing and ELSA Speak is ideal for speaking practice.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Are TOEFL preparation apps free?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Many TOEFL apps offer free versions with limited features. Apps like Quizlet and TOEFL Go! provide free study materials, while premium plans usually include mock tests, AI feedback, and advanced lessons.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Which app is best for TOEFL speaking practice?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'ELSA Speak is considered one of the best TOEFL speaking apps because it provides AI-powered pronunciation analysis and speaking feedback.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Which app is best for TOEFL vocabulary?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Quizlet is one of the best apps for TOEFL vocabulary building. It uses flashcards, spaced repetition, and memory exercises to help students remember academic English words.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'What is the best app for TOEFL writing improvement?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Grammarly is one of the best TOEFL writing tools because it helps students improve grammar, sentence structure, clarity, and academic writing style.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'What is a good TOEFL score?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'A good TOEFL score depends on your university requirements. Generally, 80+ is acceptable for many universities, 100+ is considered a strong TOEFL score, and 110+ is excellent.'
+          }
+        }
+      ]
+    },
+    content: (
+      <>
+        {/* Quick Answer */}
+        <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6 my-6 rounded-r-lg">
+          <h2 className="text-lg font-semibold mb-2 text-blue-900 dark:text-blue-200">Quick Answer</h2>
+          <p className="text-blue-800 dark:text-blue-300">
+            The best <strong>TOEFL preparation apps in 2026</strong> include <strong>Magoosh</strong> for complete preparation, <strong>Grammarly</strong> for writing improvement, <strong>ELSA Speak</strong> for speaking practice, <strong>Quizlet</strong> for vocabulary building, and <strong>TOEFL Go!</strong> for official practice tests. Using a combination of these apps gives you the strongest preparation strategy.
+          </p>
+        </div>
+
+        {/* Table of Contents */}
+        <nav className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg p-6 my-8">
+          <h2 className="text-lg font-semibold mb-4 text-slate-800 dark:text-slate-200">Table of Contents</h2>
+          <ul className="space-y-2 text-blue-600 dark:text-blue-400 text-sm">
+            <li><a href="#why-apps" className="hover:underline">Why Use TOEFL Preparation Apps?</a></li>
+            <li><a href="#best-apps" className="hover:underline">Best TOEFL Preparation Apps for 2026</a></li>
+            <li><a href="#comparison-table" className="hover:underline">Best TOEFL Apps for Different Goals</a></li>
+            <li><a href="#how-to-choose" className="hover:underline">How to Choose the Best TOEFL Preparation App</a></li>
+            <li><a href="#tips" className="hover:underline">Tips to Improve Your TOEFL Score Faster</a></li>
+            <li><a href="#final-thoughts" className="hover:underline">Final Thoughts</a></li>
+            <li><a href="#faq" className="hover:underline">Frequently Asked Questions</a></li>
+          </ul>
+        </nav>
+
+        <ArticleParagraph>
+          Preparing for the TOEFL exam is no longer limited to expensive courses or heavy textbooks. Today, the best <strong>TOEFL preparation apps</strong> can help you improve your English skills anywhere, whether you are studying at home, commuting, or practicing during short daily sessions.
+        </ArticleParagraph>
+
+        <ArticleParagraph>
+          In this guide, we compare the top TOEFL apps for:
+        </ArticleParagraph>
+
+        <BulletList items={[
+          'TOEFL speaking practice',
+          'TOEFL writing improvement',
+          'Vocabulary building',
+          'Grammar correction',
+          'Listening exercises',
+          'Full TOEFL mock tests',
+        ]} />
+
+        <ArticleParagraph>
+          We also explain which apps are best for beginners, advanced students, and high TOEFL score goals.
+        </ArticleParagraph>
+
+        {/* Why Apps */}
+        <section id="why-apps">
+          <ArticleHeading>Why Use TOEFL Preparation Apps?</ArticleHeading>
+          <ArticleParagraph>The best TOEFL study apps offer several advantages over traditional learning methods:</ArticleParagraph>
+          <BulletList items={[
+            'Flexible study schedules',
+            'AI-powered grammar correction',
+            'Real TOEFL-style questions',
+            'Speaking feedback',
+            'Vocabulary tracking',
+            'Personalized study plans',
+            'Mobile learning on Android and iPhone',
+          ]} />
+          <ArticleParagraph>
+            Many students now combine TOEFL apps with online practice tests and grammar tools to improve their scores faster.
+          </ArticleParagraph>
+        </section>
+
+        {/* Best Apps */}
+        <section id="best-apps">
+          <ArticleHeading>Best TOEFL Preparation Apps for 2026</ArticleHeading>
+
+          {/* App 1: Grammarly */}
+          <h3 className="font-heading text-2xl font-bold mt-10 mb-4 text-slate-800 dark:text-slate-100">
+            1. <a href="https://www.grammarly.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline dark:text-blue-400">Grammarly</a> — Best for TOEFL Writing and Grammar
+          </h3>
+          <ArticleParagraph>
+            Grammarly is one of the best tools for <strong>TOEFL writing preparation</strong>. It helps students identify grammar mistakes, awkward sentences, and weak vocabulary.
+          </ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Best Features</h4>
+          <BulletList items={[
+            'AI grammar correction',
+            'Academic writing suggestions',
+            'Sentence clarity improvement',
+            'Vocabulary enhancement',
+            'Tone detection',
+          ]} />
+
+          <ArticleParagraph>If you struggle with TOEFL essays, integrated writing tasks, grammar mistakes, or sentence structure, Grammarly can significantly improve your writing quality.</ArticleParagraph>
+
+          <div className="grid md:grid-cols-2 gap-4 my-6">
+            <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-4">
+              <h4 className="font-semibold text-green-800 dark:text-green-300 mb-2">Pros</h4>
+              <ul className="text-sm text-green-700 dark:text-green-400 space-y-1 list-disc list-inside">
+                <li>Excellent grammar feedback</li>
+                <li>Easy to use</li>
+                <li>Great for non-native speakers</li>
+                <li>Browser extension available</li>
+              </ul>
+            </div>
+            <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4">
+              <h4 className="font-semibold text-red-800 dark:text-red-300 mb-2">Cons</h4>
+              <ul className="text-sm text-red-700 dark:text-red-400 space-y-1 list-disc list-inside">
+                <li>Advanced features require premium subscription</li>
+              </ul>
+            </div>
+          </div>
+          <TipBox>Best For: Students preparing for TOEFL Writing and academic English.</TipBox>
+
+          {/* App 2: Magoosh */}
+          <h3 className="font-heading text-2xl font-bold mt-10 mb-4 text-slate-800 dark:text-slate-100">
+            2. <a href="https://magoosh.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline dark:text-blue-400">Magoosh TOEFL Prep</a> — Best Overall TOEFL App
+          </h3>
+          <ArticleParagraph>
+            Magoosh is widely considered one of the best <strong>TOEFL prep apps</strong> because it combines lessons, quizzes, and practice tests in one platform.
+          </ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Best Features</h4>
+          <BulletList items={[
+            'Video lessons',
+            'Practice questions',
+            'TOEFL study schedules',
+            'Score prediction',
+            'Mobile app support',
+          ]} />
+
+          <ArticleParagraph>The app covers all four TOEFL sections: Reading, Listening, Speaking, and Writing.</ArticleParagraph>
+
+          <div className="grid md:grid-cols-2 gap-4 my-6">
+            <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-4">
+              <h4 className="font-semibold text-green-800 dark:text-green-300 mb-2">Pros</h4>
+              <ul className="text-sm text-green-700 dark:text-green-400 space-y-1 list-disc list-inside">
+                <li>Beginner-friendly</li>
+                <li>Structured lessons</li>
+                <li>Affordable compared to courses</li>
+              </ul>
+            </div>
+            <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4">
+              <h4 className="font-semibold text-red-800 dark:text-red-300 mb-2">Cons</h4>
+              <ul className="text-sm text-red-700 dark:text-red-400 space-y-1 list-disc list-inside">
+                <li>Some advanced students may need additional mock tests</li>
+              </ul>
+            </div>
+          </div>
+          <TipBox>Best For: Complete TOEFL preparation across all four sections.</TipBox>
+
+          {/* App 3: Quizlet */}
+          <h3 className="font-heading text-2xl font-bold mt-10 mb-4 text-slate-800 dark:text-slate-100">
+            3. <a href="https://quizlet.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline dark:text-blue-400">Quizlet</a> — Best for TOEFL Vocabulary
+          </h3>
+          <ArticleParagraph>
+            Vocabulary plays a major role in TOEFL success. Quizlet helps students memorize academic words, TOEFL expressions, phrasal verbs, and common reading vocabulary.
+          </ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Best Features</h4>
+          <BulletList items={[
+            'Flashcards',
+            'TOEFL vocabulary sets',
+            'Spaced repetition learning',
+            'Audio pronunciation',
+            'Memory games',
+          ]} />
+
+          <div className="grid md:grid-cols-2 gap-4 my-6">
+            <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-4">
+              <h4 className="font-semibold text-green-800 dark:text-green-300 mb-2">Pros</h4>
+              <ul className="text-sm text-green-700 dark:text-green-400 space-y-1 list-disc list-inside">
+                <li>Excellent for memorization</li>
+                <li>Free version available</li>
+                <li>Large community vocabulary sets</li>
+              </ul>
+            </div>
+            <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4">
+              <h4 className="font-semibold text-red-800 dark:text-red-300 mb-2">Cons</h4>
+              <ul className="text-sm text-red-700 dark:text-red-400 space-y-1 list-disc list-inside">
+                <li>Limited grammar practice</li>
+              </ul>
+            </div>
+          </div>
+          <TipBox>Best For: Building TOEFL vocabulary quickly with spaced repetition.</TipBox>
+
+          {/* App 4: ELSA Speak */}
+          <h3 className="font-heading text-2xl font-bold mt-10 mb-4 text-slate-800 dark:text-slate-100">
+            4. <a href="https://elsaspeak.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline dark:text-blue-400">ELSA Speak</a> — Best TOEFL Speaking App
+          </h3>
+          <ArticleParagraph>
+            Many TOEFL students struggle with pronunciation and fluency. ELSA Speak uses AI to analyze your speech and identify pronunciation mistakes.
+          </ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Best Features</h4>
+          <BulletList items={[
+            'AI pronunciation correction',
+            'Speaking fluency practice',
+            'Accent improvement',
+            'Real-time speech analysis',
+          ]} />
+
+          <div className="grid md:grid-cols-2 gap-4 my-6">
+            <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-4">
+              <h4 className="font-semibold text-green-800 dark:text-green-300 mb-2">Pros</h4>
+              <ul className="text-sm text-green-700 dark:text-green-400 space-y-1 list-disc list-inside">
+                <li>Accurate pronunciation feedback</li>
+                <li>Daily speaking exercises</li>
+                <li>Helpful for TOEFL Speaking section</li>
+              </ul>
+            </div>
+            <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4">
+              <h4 className="font-semibold text-red-800 dark:text-red-300 mb-2">Cons</h4>
+              <ul className="text-sm text-red-700 dark:text-red-400 space-y-1 list-disc list-inside">
+                <li>Focused mainly on speaking skills</li>
+              </ul>
+            </div>
+          </div>
+          <TipBox>Best For: Improving TOEFL speaking confidence and pronunciation.</TipBox>
+
+          {/* App 5: TOEFL Go! */}
+          <h3 className="font-heading text-2xl font-bold mt-10 mb-4 text-slate-800 dark:text-slate-100">
+            5. <a href="https://www.ets.org" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline dark:text-blue-400">TOEFL Go! Official App</a> — Best Official TOEFL App
+          </h3>
+          <ArticleParagraph>
+            Created by ETS, the organization behind the TOEFL exam, this app provides realistic preparation materials directly from the test makers.
+          </ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Best Features</h4>
+          <BulletList items={[
+            'Official ETS questions',
+            'Authentic TOEFL practice',
+            'Speaking scoring',
+            'Writing samples',
+          ]} />
+
+          <div className="grid md:grid-cols-2 gap-4 my-6">
+            <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-4">
+              <h4 className="font-semibold text-green-800 dark:text-green-300 mb-2">Pros</h4>
+              <ul className="text-sm text-green-700 dark:text-green-400 space-y-1 list-disc list-inside">
+                <li>Official practice content</li>
+                <li>Reliable scoring</li>
+                <li>Free resources available</li>
+              </ul>
+            </div>
+            <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4">
+              <h4 className="font-semibold text-red-800 dark:text-red-300 mb-2">Cons</h4>
+              <ul className="text-sm text-red-700 dark:text-red-400 space-y-1 list-disc list-inside">
+                <li>Limited advanced analytics</li>
+              </ul>
+            </div>
+          </div>
+          <TipBox>Best For: Real TOEFL exam simulation with official ETS content.</TipBox>
+        </section>
+
+        {/* Comparison Table */}
+        <section id="comparison-table">
+          <ArticleHeading>Best TOEFL Apps for Different Goals</ArticleHeading>
+          <div className="overflow-x-auto my-6">
+            <table className="w-full border-collapse text-left">
+              <thead className="bg-slate-100 dark:bg-slate-800">
+                <tr>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-3 font-semibold">Goal</th>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-3 font-semibold">Recommended App</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-700 dark:text-slate-300">
+                <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+                  <td className="border border-slate-300 dark:border-slate-700 px-4 py-3">TOEFL Writing</td>
+                  <td className="border border-slate-300 dark:border-slate-700 px-4 py-3">Grammarly</td>
+                </tr>
+                <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+                  <td className="border border-slate-300 dark:border-slate-700 px-4 py-3">TOEFL Speaking</td>
+                  <td className="border border-slate-300 dark:border-slate-700 px-4 py-3">ELSA Speak</td>
+                </tr>
+                <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+                  <td className="border border-slate-300 dark:border-slate-700 px-4 py-3">TOEFL Vocabulary</td>
+                  <td className="border border-slate-300 dark:border-slate-700 px-4 py-3">Quizlet</td>
+                </tr>
+                <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+                  <td className="border border-slate-300 dark:border-slate-700 px-4 py-3">Full TOEFL Preparation</td>
+                  <td className="border border-slate-300 dark:border-slate-700 px-4 py-3">Magoosh</td>
+                </tr>
+                <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+                  <td className="border border-slate-300 dark:border-slate-700 px-4 py-3">Official Practice Tests</td>
+                  <td className="border border-slate-300 dark:border-slate-700 px-4 py-3">TOEFL Go!</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <ArticleParagraph>
+            Many TOEFL apps offer free plans, but premium subscriptions often include full mock tests, AI feedback, advanced grammar checking, and personalized learning plans. If your TOEFL target score is above 90 or 100, investing in premium tools may help improve your preparation speed.
+          </ArticleParagraph>
+        </section>
+
+        {/* How to Choose */}
+        <section id="how-to-choose">
+          <ArticleHeading>How to Choose the Best TOEFL Preparation App</ArticleHeading>
+          <ArticleParagraph>Before choosing an app, consider:</ArticleParagraph>
+          <BulletList items={[
+            'Your target TOEFL score',
+            'Weak skill areas',
+            'Study budget',
+            'Daily study time',
+            'Preferred learning style',
+          ]} />
+          <ArticleParagraph>For example:</ArticleParagraph>
+          <BulletList items={[
+            'Grammar-focused learners may prefer Grammarly',
+            'Speaking-focused students may prefer ELSA Speak',
+            'Full preparation learners may choose Magoosh',
+          ]} />
+        </section>
+
+        {/* Tips */}
+        <section id="tips">
+          <ArticleHeading>Tips to Improve Your TOEFL Score Faster</ArticleHeading>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Practice Daily</h4>
+          <ArticleParagraph>Even 30 minutes daily can improve vocabulary and fluency over time.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Use Multiple Apps</h4>
+          <ArticleParagraph>Combining grammar, vocabulary, and speaking apps creates better overall preparation.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Focus on Weak Skills</h4>
+          <ArticleParagraph>Spend more time improving your lowest TOEFL section score.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Take Mock Tests</h4>
+          <ArticleParagraph>Full TOEFL practice exams help improve time management and reduce exam anxiety.</ArticleParagraph>
+        </section>
+
+        {/* Final Thoughts */}
+        <section id="final-thoughts">
+          <ArticleHeading>Final Thoughts</ArticleHeading>
+          <ArticleParagraph>
+            The best <strong>TOEFL preparation apps</strong> can make studying more flexible, personalized, and effective. Whether you want to improve your grammar, speaking, vocabulary, or writing skills, modern TOEFL apps provide powerful tools to help you achieve a higher score.
+          </ArticleParagraph>
+          <ArticleParagraph>
+            For most students, combining a TOEFL course app, a vocabulary app, and an AI grammar checker creates the best preparation strategy. If used consistently, these apps can help you improve your English skills and perform more confidently on test day.
+          </ArticleParagraph>
+        </section>
+
+        {/* Related */}
+        <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-600 p-6 my-8 rounded">
+          <h3 className="font-bold text-lg mb-3 text-blue-900 dark:text-blue-200">Recommended Reading</h3>
+          <BulletList items={[
+            <><Link to="/blog/how-ai-is-transforming-ielts-and-toefl-preparation/" className="text-blue-600 hover:underline dark:text-blue-400">How AI Is Transforming IELTS and TOEFL Preparation</Link></>,
+            <><Link to="/blog/15-most-common-toefl-ibt-mistakes-with-examples/" className="text-blue-600 hover:underline dark:text-blue-400">15 Most Common TOEFL iBT Mistakes (With Examples)</Link></>,
+            <><Link to="/blog/new-toefl-scoring-system-2026/" className="text-blue-600 hover:underline dark:text-blue-400">New TOEFL Scoring System 2026</Link></>,
+            <><Link to="/blog/best-apps-for-learning-english-conversation/" className="text-blue-600 hover:underline dark:text-blue-400">Best Apps for Learning English Conversation Skills</Link></>,
+          ]} />
+        </div>
+
+        {/* FAQ */}
+        <section id="faq">
+          <ArticleHeading>Frequently Asked Questions About TOEFL Preparation Apps</ArticleHeading>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">What is the best TOEFL preparation app?</h4>
+          <ArticleParagraph>The best TOEFL preparation app depends on your goals. Magoosh TOEFL Prep is one of the best all-in-one apps, while Grammarly is excellent for writing and ELSA Speak is ideal for speaking practice.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Are TOEFL preparation apps free?</h4>
+          <ArticleParagraph>Many TOEFL apps offer free versions with limited features. Apps like Quizlet and TOEFL Go! provide free study materials, while premium plans usually include mock tests, AI feedback, and advanced lessons.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Which app is best for TOEFL speaking practice?</h4>
+          <ArticleParagraph>ELSA Speak is considered one of the best TOEFL speaking apps because it provides AI-powered pronunciation analysis and speaking feedback.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Which app is best for TOEFL vocabulary?</h4>
+          <ArticleParagraph>Quizlet is one of the best apps for TOEFL vocabulary building. It uses flashcards, spaced repetition, and memory exercises to help students remember academic English words.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Can I prepare for TOEFL using only mobile apps?</h4>
+          <ArticleParagraph>Yes, many students successfully prepare for TOEFL using mobile apps combined with online practice tests and study materials. However, using multiple resources usually produces better results.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">What is the best app for TOEFL writing improvement?</h4>
+          <ArticleParagraph>Grammarly is one of the best TOEFL writing tools because it helps students improve grammar, sentence structure, clarity, and academic writing style.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Are official TOEFL apps better than third-party apps?</h4>
+          <ArticleParagraph>Official TOEFL apps like TOEFL Go! provide authentic ETS practice materials, while third-party apps often offer additional features such as AI feedback, study plans, and advanced analytics. Using both types together is often the best strategy.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">How long should I study for TOEFL each day?</h4>
+          <ArticleParagraph>Most TOEFL experts recommend 1 to 2 hours daily for consistent improvement and a minimum of 30 minutes for vocabulary and speaking practice. Daily practice is more effective than studying only once or twice a week.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Which TOEFL apps help improve grammar?</h4>
+          <ArticleParagraph>Grammar-focused apps include Grammarly, QuillBot, and Ginger Software. These tools help students correct grammar mistakes and improve academic English writing.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">What is a good TOEFL score?</h4>
+          <ArticleParagraph>A good TOEFL score depends on your university requirements. Generally, 80+ is acceptable for many universities, 100+ is considered a strong TOEFL score, and 110+ is excellent.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Do TOEFL apps provide practice tests?</h4>
+          <ArticleParagraph>Yes, many TOEFL preparation apps include full mock exams, timed practice tests, section-based quizzes, and score predictions. Magoosh and TOEFL Go! are especially popular for practice testing.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Are AI tools useful for TOEFL preparation?</h4>
+          <ArticleParagraph>Yes, AI-powered tools can help students improve grammar, writing clarity, pronunciation, speaking fluency, and vocabulary usage. AI writing assistants are becoming increasingly popular among TOEFL students.</ArticleParagraph>
+        </section>
+      </>
+    )
+  },
+
+  // --- CUSTOMER SERVICE ENGLISH ----------------------------------------------
+  {
+    slug: 'english-phrases-for-customer-service-jobs',
+    title: 'English Phrases for Customer Service Jobs',
+    author: 'TypoGrammar Editorial Team',
+    date: 'May 14, 2026',
+    summary: 'Learn the most useful English phrases for customer service jobs with simple examples. Improve your speaking skills for calls, shops, hotels, restaurants, and support roles.',
+    category: 'Business English',
+    image: '/images/blog/english-phrases-customer-service-jobs.png',
+    imageAlt: 'Customer service employee speaking English with a customer in a professional workplace.',
+    schemaMarkup: {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'What level of English do I need for customer service jobs?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Basic to intermediate English is enough for many customer service jobs. You mainly need clear pronunciation, polite expressions, and confidence in common phrases used for greetings, helping customers, and handling complaints.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'How can I improve my customer service speaking skills?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Practice common phrases daily, listen to native speakers, watch customer service training videos, and role-play conversations with a friend or in front of a mirror.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Is polite English important in customer service?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Polite communication creates a better customer experience and builds trust. Words like "please", "thank you", and "I apologize" are essential in every interaction.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'What is the most common customer service phrase?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: '"How can I help you today?" is one of the most common phrases used by customer service agents in shops, hotels, restaurants, and call centers around the world.'
+          }
+        }
+      ]
+    },
+    content: (
+      <>
+        {/* Quick Answer */}
+        <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6 my-6 rounded-r-lg">
+          <h2 className="text-lg font-semibold mb-2 text-blue-900 dark:text-blue-200">Quick Answer</h2>
+          <p className="text-blue-800 dark:text-blue-300">
+            The most useful <strong>English phrases for customer service jobs</strong> include greetings like <em>"How can I help you today?"</em>, offers of help like <em>"Let me look into that for you"</em>, and polite complaint-handling phrases like <em>"I apologize for the inconvenience"</em>. Learning these phrases helps you sound professional in hotels, restaurants, stores, and call centers.
+          </p>
+        </div>
+
+        {/* Table of Contents */}
+        <nav className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg p-6 my-8">
+          <h2 className="text-lg font-semibold mb-4 text-slate-800 dark:text-slate-200">Table of Contents</h2>
+          <ul className="space-y-2 text-blue-600 dark:text-blue-400 text-sm">
+            <li><a href="#why-important" className="hover:underline">Why Customer Service English Is Important</a></li>
+            <li><a href="#greetings" className="hover:underline">Common Greeting Phrases</a></li>
+            <li><a href="#offering-help" className="hover:underline">Phrases for Offering Help</a></li>
+            <li><a href="#phone-support" className="hover:underline">Phrases for Phone Support</a></li>
+            <li><a href="#complaints" className="hover:underline">Phrases for Handling Complaints</a></li>
+            <li><a href="#restaurants-hotels" className="hover:underline">Phrases for Restaurants and Hotels</a></li>
+            <li><a href="#cashiers-stores" className="hover:underline">Phrases for Cashiers and Stores</a></li>
+            <li><a href="#professional-words" className="hover:underline">Professional Words You Should Know</a></li>
+            <li><a href="#conversation" className="hover:underline">Example Customer Service Conversation</a></li>
+            <li><a href="#tips" className="hover:underline">Tips to Improve Customer Service English</a></li>
+            <li><a href="#best-jobs" className="hover:underline">Best Jobs That Need Customer Service English</a></li>
+            <li><a href="#faq" className="hover:underline">Frequently Asked Questions</a></li>
+          </ul>
+        </nav>
+
+        <ArticleParagraph>
+          Working in customer service requires good communication skills. Whether you work in a hotel, restaurant, store, call center, or online support team, using polite and professional English can help you succeed.
+        </ArticleParagraph>
+        <ArticleParagraph>
+          In this guide, you will learn common <strong>English phrases for customer service jobs</strong>, with simple explanations and real examples you can start using right away.
+        </ArticleParagraph>
+
+        {/* Why */}
+        <section id="why-important">
+          <ArticleHeading>Why Customer Service English Is Important</ArticleHeading>
+          <ArticleParagraph>Good communication helps you:</ArticleParagraph>
+          <BulletList items={[
+            'Speak professionally',
+            'Solve customer problems faster',
+            'Create a positive experience',
+            'Build confidence at work',
+            'Improve your chances of getting hired',
+          ]} />
+          <ArticleParagraph>
+            Many companies look for employees who can communicate clearly and politely in English.
+          </ArticleParagraph>
+        </section>
+
+        {/* Greetings */}
+        <section id="greetings">
+          <ArticleHeading>Common Greeting Phrases</ArticleHeading>
+          <ArticleParagraph>These phrases are used when welcoming customers.</ArticleParagraph>
+          <div className="overflow-x-auto my-6">
+            <table className="w-full border-collapse text-left">
+              <thead className="bg-slate-100 dark:bg-slate-800">
+                <tr>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Phrase</th>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Example</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-700 dark:text-slate-300">
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Hello, how can I help you today?</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Hello, how can I help you today?</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Welcome to our store.</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Welcome to our store.</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Good morning, sir/madam.</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Good morning, sir.</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Thank you for contacting us.</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Thank you for contacting customer support.</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">How may I assist you?</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">How may I assist you today?</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <TipBox>Always speak politely and smile if you are talking face to face with customers.</TipBox>
+        </section>
+
+        {/* Offering help */}
+        <section id="offering-help">
+          <ArticleHeading>Phrases for Offering Help</ArticleHeading>
+          <div className="overflow-x-auto my-6">
+            <table className="w-full border-collapse text-left">
+              <thead className="bg-slate-100 dark:bg-slate-800">
+                <tr>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Phrase</th>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Example</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-700 dark:text-slate-300">
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Let me help you with that.</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Let me help you with your order.</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">I'd be happy to assist you.</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">I'd be happy to assist you today.</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Could you please give me more details?</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Could you please give me more details about the issue?</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">One moment, please.</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">One moment, please while I check.</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">I will look into this for you.</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">I will look into this immediately.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* Phone */}
+        <section id="phone-support">
+          <ArticleHeading>Phrases for Phone Support</ArticleHeading>
+          <ArticleParagraph>Phone communication is common in customer service jobs.</ArticleParagraph>
+          <div className="overflow-x-auto my-6">
+            <table className="w-full border-collapse text-left">
+              <thead className="bg-slate-100 dark:bg-slate-800">
+                <tr>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Phrase</th>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Example</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-700 dark:text-slate-300">
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Thank you for calling.</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Thank you for calling our company.</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">May I have your name, please?</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">May I have your name, please?</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Could you repeat that, please?</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Could you repeat that more slowly?</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Please hold for a moment.</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Please hold while I check your account.</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">I'll transfer your call.</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">I'll transfer your call to the manager.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* Complaints */}
+        <section id="complaints">
+          <ArticleHeading>Phrases for Handling Complaints</ArticleHeading>
+          <ArticleParagraph>Sometimes customers are upset. These phrases help you stay professional.</ArticleParagraph>
+          <div className="overflow-x-auto my-6">
+            <table className="w-full border-collapse text-left">
+              <thead className="bg-slate-100 dark:bg-slate-800">
+                <tr>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Phrase</th>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Example</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-700 dark:text-slate-300">
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">I apologize for the inconvenience.</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">I apologize for the delay.</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">I understand your frustration.</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">I understand your frustration completely.</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Let's find a solution.</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Let's find a solution together.</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Thank you for your patience.</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Thank you for your patience today.</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">We will fix this as soon as possible.</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">We will fix this immediately.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <NoteBox title="Important Tip">Never argue with angry customers. Stay calm and polite.</NoteBox>
+        </section>
+
+        {/* Restaurants/Hotels */}
+        <section id="restaurants-hotels">
+          <ArticleHeading>Phrases for Restaurants and Hotels</ArticleHeading>
+          <div className="overflow-x-auto my-6">
+            <table className="w-full border-collapse text-left">
+              <thead className="bg-slate-100 dark:bg-slate-800">
+                <tr>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Phrase</th>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Example</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-700 dark:text-slate-300">
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Your table is ready.</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Your table is ready now.</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Would you like anything else?</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Would you like dessert?</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Enjoy your meal.</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Enjoy your meal.</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Your room is on the second floor.</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Your room is ready.</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Check-out time is at 11 AM.</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Check-out time is at 11 AM.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* Cashiers */}
+        <section id="cashiers-stores">
+          <ArticleHeading>Phrases for Cashiers and Stores</ArticleHeading>
+          <div className="overflow-x-auto my-6">
+            <table className="w-full border-collapse text-left">
+              <thead className="bg-slate-100 dark:bg-slate-800">
+                <tr>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Phrase</th>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Example</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-700 dark:text-slate-300">
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Cash or card?</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Cash or card today?</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Would you like a receipt?</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Would you like a printed receipt?</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">This item is on sale.</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">This item is on sale today.</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">The fitting room is over there.</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">The fitting room is on the left.</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Have a nice day.</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Thank you and have a nice day.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* Professional words */}
+        <section id="professional-words">
+          <ArticleHeading>Professional Words You Should Know</ArticleHeading>
+          <div className="overflow-x-auto my-6">
+            <table className="w-full border-collapse text-left">
+              <thead className="bg-slate-100 dark:bg-slate-800">
+                <tr>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Word</th>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Meaning</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-700 dark:text-slate-300">
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Refund</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Returning money</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Exchange</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Changing a product</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Receipt</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Proof of payment</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Reservation</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Booking a room or table</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Complaint</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Customer problem</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Support</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Help for customers</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Manager</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Person in charge</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* Conversation */}
+        <section id="conversation">
+          <ArticleHeading>Example Customer Service Conversation</ArticleHeading>
+          <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg p-6 my-6 space-y-3 text-slate-700 dark:text-slate-300">
+            <p><strong className="text-blue-700 dark:text-blue-300">Customer:</strong> Hello, I received the wrong product.</p>
+            <p><strong className="text-green-700 dark:text-green-300">Employee:</strong> I'm sorry for the inconvenience. Could you please give me your order number?</p>
+            <p><strong className="text-blue-700 dark:text-blue-300">Customer:</strong> Yes, it is 45821.</p>
+            <p><strong className="text-green-700 dark:text-green-300">Employee:</strong> Thank you. Let me check that for you.</p>
+            <p><strong className="text-blue-700 dark:text-blue-300">Customer:</strong> Okay.</p>
+            <p><strong className="text-green-700 dark:text-green-300">Employee:</strong> We apologize for the mistake. We will send the correct product today.</p>
+            <p><strong className="text-blue-700 dark:text-blue-300">Customer:</strong> Thank you very much.</p>
+            <p><strong className="text-green-700 dark:text-green-300">Employee:</strong> You're welcome. Have a great day.</p>
+          </div>
+        </section>
+
+        {/* Tips */}
+        <section id="tips">
+          <ArticleHeading>Tips to Improve Customer Service English</ArticleHeading>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">1. Practice Speaking Daily</h4>
+          <ArticleParagraph>Try reading customer service dialogues aloud.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">2. Watch English Customer Service Videos</h4>
+          <ArticleParagraph>YouTube videos can improve pronunciation and listening skills. Check our list of the <Link to="/blog/best-english-teachers-on-youtube-2026/" className="text-blue-600 hover:underline dark:text-blue-400">best English teachers on YouTube</Link>.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">3. Learn Polite Expressions</h4>
+          <ArticleParagraph>Words like <InlineCode>please</InlineCode>, <InlineCode>thank you</InlineCode>, and <InlineCode>sorry</InlineCode> are very important.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">4. Practice Phone Conversations</h4>
+          <ArticleParagraph>Speaking on the phone is harder because you cannot see the customer.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">5. Use Simple English</h4>
+          <ArticleParagraph>Clear and simple communication is better than difficult vocabulary.</ArticleParagraph>
+        </section>
+
+        {/* Best Jobs */}
+        <section id="best-jobs">
+          <ArticleHeading>Best Jobs That Need Customer Service English</ArticleHeading>
+          <ArticleParagraph>These jobs often require English communication skills:</ArticleParagraph>
+          <BulletList items={[
+            'Hotel receptionist',
+            'Call center agent',
+            'Restaurant waiter',
+            'Store cashier',
+            'Technical support agent',
+            'Flight attendant',
+            'Sales representative',
+          ]} />
+        </section>
+
+        {/* Related */}
+        <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-600 p-6 my-8 rounded">
+          <h3 className="font-bold text-lg mb-3 text-blue-900 dark:text-blue-200">Recommended Reading</h3>
+          <BulletList items={[
+            <><Link to="/blog/how-to-introduce-yourself-interview-english/" className="text-blue-600 hover:underline dark:text-blue-400">How to Introduce Yourself in an English Interview</Link></>,
+            <><Link to="/blog/common-english-mistakes-arabic-speakers/" className="text-blue-600 hover:underline dark:text-blue-400">Common English Mistakes Arabic Speakers Make</Link></>,
+            <><Link to="/blog/phrasal-verbs-native-speaker/" className="text-blue-600 hover:underline dark:text-blue-400">Phrasal Verbs Used by Native Speakers</Link></>,
+            <><Link to="/idioms/" className="text-blue-600 hover:underline dark:text-blue-400">Most Common English Idioms</Link></>,
+          ]} />
+        </div>
+
+        {/* FAQ */}
+        <section id="faq">
+          <ArticleHeading>Frequently Asked Questions</ArticleHeading>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">What level of English do I need for customer service jobs?</h4>
+          <ArticleParagraph>Basic to intermediate English is enough for many customer service jobs.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">How can I improve my customer service speaking skills?</h4>
+          <ArticleParagraph>Practice common phrases daily and listen to native speakers.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Is polite English important in customer service?</h4>
+          <ArticleParagraph>Yes. Polite communication creates a better customer experience.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">What is the most common customer service phrase?</h4>
+          <ArticleParagraph><em>"How can I help you today?"</em> is one of the most common phrases.</ArticleParagraph>
+        </section>
+
+        <ArticleHeading>Final Thoughts</ArticleHeading>
+        <ArticleParagraph>
+          Learning customer service English can help you get better job opportunities and communicate professionally with customers. Start by practicing simple phrases every day and use them in real conversations.
+        </ArticleParagraph>
+        <ArticleParagraph>
+          The more you practice, the more confident you will become.
+        </ArticleParagraph>
+      </>
+    )
+  },
+  // --- ARABIC SPEAKERS -------------------------------------------------------
+  {
+    slug: 'common-english-mistakes-arabic-speakers',
+    title: 'Common English Mistakes Arabic Speakers Make, With Easy Examples',
+    author: 'TypoGrammar Editorial Team',
+    date: 'May 14, 2026',
+    summary: 'Discover the most common English mistakes Arabic speakers make, with simple explanations, examples, tables, and easy tips to improve your English speaking and writing skills.',
+    category: 'Grammar',
+    image: '/images/blog/common-english-mistakes-arabic-speakers.png',
+    imageAlt: 'Common English mistakes Arabic speakers make with grammar examples',
+    schemaMarkup: {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'Why do Arabic speakers struggle with English articles?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Because Arabic grammar uses articles differently from English, especially "the". Arabic nouns often need "ال" (al-), but English uses "the" only for specific, identifiable things — not for general ideas.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'What is the hardest English sound for Arabic speakers?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            'text': 'Many learners struggle with the sounds P, V, and CH because these sounds do not exist in some Arabic dialects. Daily practice with minimal pairs (pat/bat, very/berry) helps a lot.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'How can Arabic speakers improve English pronunciation?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Listening daily to native speakers, repeating what they say, and practicing minimal pairs (P/B, V/F, CH/SH) are the fastest ways to improve English pronunciation for Arabic learners.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Is translating from Arabic a bad habit?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Direct translation from Arabic to English often creates grammar mistakes and unnatural sentences. Try to think in English with simple sentences instead of translating word-for-word.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'How long does it take to improve English fluency?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'With daily practice — even 10–20 minutes of reading, listening, and speaking — most Arabic-speaking learners notice clear improvement within a few months.'
+          }
+        }
+      ]
+    },
+    content: (
+      <>
+        {/* Quick Answer */}
+        <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6 my-6 rounded-r-lg">
+          <h2 className="text-lg font-semibold mb-2 text-blue-900 dark:text-blue-200">Quick Answer</h2>
+          <p className="text-blue-800 dark:text-blue-300">
+            The <strong>most common English mistakes Arabic speakers make</strong> include overusing <strong>"the"</strong>, missing <strong>"a"/"an"</strong>, dropping the verb <strong>"to be"</strong>, confusing <strong>he/she</strong>, pronouncing <strong>P like B</strong>, and translating expressions like <em>"open the TV"</em> directly from Arabic. All of these are fixable with simple rules and daily practice.
+          </p>
+        </div>
+
+        {/* Table of Contents */}
+        <nav className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg p-6 my-8">
+          <h2 className="text-lg font-semibold mb-4 text-slate-800 dark:text-slate-200">Table of Contents</h2>
+          <ul className="space-y-2 text-blue-600 dark:text-blue-400 text-sm">
+            <li><a href="#the-overuse" className="hover:underline">1. Using "the" Too Much</a></li>
+            <li><a href="#a-an" className="hover:underline">2. Missing "a" and "an"</a></li>
+            <li><a href="#he-she" className="hover:underline">3. Confusing "He" and "She"</a></li>
+            <li><a href="#continuous" className="hover:underline">4. Using Present Continuous Incorrectly</a></li>
+            <li><a href="#to-be" className="hover:underline">5. Problems With Verb "To Be"</a></li>
+            <li><a href="#p-b" className="hover:underline">6. Pronouncing "P" Like "B"</a></li>
+            <li><a href="#open-close" className="hover:underline">7. Using "Open" and "Close" Incorrectly</a></li>
+            <li><a href="#do-make" className="hover:underline">8. Confusing "Do" and "Make"</a></li>
+            <li><a href="#age" className="hover:underline">9. Saying "I Have 20 Years"</a></li>
+            <li><a href="#word-order" className="hover:underline">10. Word Order Mistakes</a></li>
+            <li><a href="#since-for" className="hover:underline">11. Using "Since" and "For" Incorrectly</a></li>
+            <li><a href="#false-friends" className="hover:underline">12. False Friends Between Arabic and English</a></li>
+            <li><a href="#summary" className="hover:underline">Most Common Grammar Problems Summary</a></li>
+            <li><a href="#improve" className="hover:underline">How Arabic Speakers Can Improve Faster</a></li>
+            <li><a href="#faq" className="hover:underline">Frequently Asked Questions</a></li>
+          </ul>
+        </nav>
+
+        <ArticleParagraph>
+          Learning English can be difficult for Arabic speakers because Arabic and English are very different languages. Many learners make the same grammar, pronunciation, and vocabulary mistakes. The good news is that these mistakes are normal and easy to fix with practice.
+        </ArticleParagraph>
+        <ArticleParagraph>
+          In this guide, you will learn the <strong>most common English mistakes Arabic speakers make</strong>, along with simple explanations and examples.
+        </ArticleParagraph>
+
+        {/* 1 */}
+        <section id="the-overuse">
+          <ArticleHeading>1. Using "the" Too Much</ArticleHeading>
+          <ArticleParagraph>
+            Many Arabic speakers use <strong>"the"</strong> before every noun because Arabic uses <strong>"ال"</strong> very often.
+          </ArticleParagraph>
+          <div className="overflow-x-auto my-6">
+            <table className="w-full border-collapse text-left">
+              <thead className="bg-slate-100 dark:bg-slate-800">
+                <tr>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Incorrect</th>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Correct</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-700 dark:text-slate-300">
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">The life is beautiful</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Life is beautiful</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">The people are friendly</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">People are friendly</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">I like the football</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">I like football</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <ArticleParagraph><strong>Why this happens:</strong> In Arabic, nouns often need <strong>"ال"</strong>. In English, general ideas usually do not use <strong>"the"</strong>.</ArticleParagraph>
+          <TipBox>Do not use <strong>"the"</strong> when speaking generally about things.</TipBox>
+        </section>
+
+        {/* 2 */}
+        <section id="a-an">
+          <ArticleHeading>2. Missing "a" and "an"</ArticleHeading>
+          <ArticleParagraph>
+            Arabic does not have articles like <strong>"a"</strong> or <strong>"an"</strong>, so learners often forget them.
+          </ArticleParagraph>
+          <div className="overflow-x-auto my-6">
+            <table className="w-full border-collapse text-left">
+              <thead className="bg-slate-100 dark:bg-slate-800">
+                <tr>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Incorrect</th>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Correct</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-700 dark:text-slate-300">
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">I bought car</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">I bought a car</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">She is engineer</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">She is an engineer</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">He has big house</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">He has a big house</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <NoteBox title="Simple Rule">
+            Use <strong>"a"</strong> before consonant sounds. Use <strong>"an"</strong> before vowel sounds.
+          </NoteBox>
+          <BulletList items={[
+            <><InlineCode>a teacher</InlineCode></>,
+            <><InlineCode>a university</InlineCode> (sounds like "you")</>,
+            <><InlineCode>an apple</InlineCode></>,
+            <><InlineCode>an hour</InlineCode> (silent "h")</>,
+          ]} />
+        </section>
+
+        {/* 3 */}
+        <section id="he-she">
+          <ArticleHeading>3. Confusing "He" and "She"</ArticleHeading>
+          <ArticleParagraph>This is a very common mistake, especially in speaking.</ArticleParagraph>
+          <div className="overflow-x-auto my-6">
+            <table className="w-full border-collapse text-left">
+              <thead className="bg-slate-100 dark:bg-slate-800">
+                <tr>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Incorrect</th>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Correct</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-700 dark:text-slate-300">
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">My sister, he is smart</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">My sister, she is smart</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">My father, she works here</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">My father, he works here</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <ArticleParagraph><strong>Why it happens:</strong> Arabic pronouns work differently, and learners sometimes translate directly from Arabic.</ArticleParagraph>
+          <TipBox>
+            Practice using pronouns daily:
+            <BulletList items={[<><strong>He</strong> = رجل / man</>, <><strong>She</strong> = امرأة / woman</>]} />
+          </TipBox>
+        </section>
+
+        {/* 4 */}
+        <section id="continuous">
+          <ArticleHeading>4. Using Present Continuous Incorrectly</ArticleHeading>
+          <ArticleParagraph>Arabic speakers sometimes say:</ArticleParagraph>
+          <div className="overflow-x-auto my-6">
+            <table className="w-full border-collapse text-left">
+              <thead className="bg-slate-100 dark:bg-slate-800">
+                <tr>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Incorrect</th>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Correct</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-700 dark:text-slate-300">
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">I am knowing him</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">I know him</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">She is understanding</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">She understands</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">We are liking pizza</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">We like pizza</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <ArticleParagraph>Some verbs (called <strong>stative verbs</strong>) are not normally used with <strong>-ing</strong>. These include:</ArticleParagraph>
+          <BulletList items={[<>know</>, <>understand</>, <>believe</>, <>like</>, <>love</>]} />
+        </section>
+
+        {/* 5 */}
+        <section id="to-be">
+          <ArticleHeading>5. Problems With Verb "To Be"</ArticleHeading>
+          <ArticleParagraph>
+            Arabic sentences often do not use <strong>is</strong>, <strong>am</strong>, or <strong>are</strong> in the present tense.
+          </ArticleParagraph>
+          <div className="overflow-x-auto my-6">
+            <table className="w-full border-collapse text-left">
+              <thead className="bg-slate-100 dark:bg-slate-800">
+                <tr>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Incorrect</th>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Correct</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-700 dark:text-slate-300">
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">He happy</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">He is happy</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">I tired</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">I am tired</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">They students</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">They are students</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <NoteBox title="Quick Reminder">
+            Always use <strong>am / is / are</strong> in present tense English sentences.
+          </NoteBox>
+        </section>
+
+        {/* 6 */}
+        <section id="p-b">
+          <ArticleHeading>6. Pronouncing "P" Like "B"</ArticleHeading>
+          <ArticleParagraph>Arabic does not have the <strong>"P"</strong> sound in many dialects.</ArticleParagraph>
+          <div className="overflow-x-auto my-6">
+            <table className="w-full border-collapse text-left">
+              <thead className="bg-slate-100 dark:bg-slate-800">
+                <tr>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Incorrect Pronunciation</th>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Correct Pronunciation</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-700 dark:text-slate-300">
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Bizza</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Pizza</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Baper</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Paper</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Barking</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Parking</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <ArticleParagraph><strong>Practice words:</strong></ArticleParagraph>
+          <ExampleList items={["people", "problem", "pencil", "passport"]} />
+          <TipBox>Put your hand near your mouth when saying <strong>"P"</strong>. You should feel a small puff of air coming out — that's the difference between P and B.</TipBox>
+        </section>
+
+        {/* 7 */}
+        <section id="open-close">
+          <ArticleHeading>7. Using "Open" and "Close" Incorrectly</ArticleHeading>
+          <ArticleParagraph>Arabic speakers sometimes translate expressions directly.</ArticleParagraph>
+          <div className="overflow-x-auto my-6">
+            <table className="w-full border-collapse text-left">
+              <thead className="bg-slate-100 dark:bg-slate-800">
+                <tr>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Incorrect</th>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Correct</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-700 dark:text-slate-300">
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Open the TV</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Turn on the TV</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Close the light</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Turn off the light</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <ArticleParagraph><strong>Correct expressions:</strong></ArticleParagraph>
+          <ExampleList items={["Turn on the light", "Turn off the computer", "Open the door", "Close the window"]} />
+        </section>
+
+        {/* 8 */}
+        <section id="do-make">
+          <ArticleHeading>8. Confusing "Do" and "Make"</ArticleHeading>
+          <ArticleParagraph>This is one of the most common vocabulary mistakes.</ArticleParagraph>
+          <div className="overflow-x-auto my-6">
+            <table className="w-full border-collapse text-left">
+              <thead className="bg-slate-100 dark:bg-slate-800">
+                <tr>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Use "Do"</th>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Use "Make"</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-700 dark:text-slate-300">
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">do homework</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">make food</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">do work</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">make coffee</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">do exercise</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">make money</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <ArticleParagraph><strong>Example sentences:</strong></ArticleParagraph>
+          <ExampleList items={["I need to do my homework.", "My mother makes delicious cake."]} />
+        </section>
+
+        {/* 9 */}
+        <section id="age">
+          <ArticleHeading>9. Saying "I Have 20 Years"</ArticleHeading>
+          <ArticleParagraph>Arabic speakers often translate directly from Arabic.</ArticleParagraph>
+          <div className="overflow-x-auto my-6">
+            <table className="w-full border-collapse text-left">
+              <thead className="bg-slate-100 dark:bg-slate-800">
+                <tr>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Incorrect</th>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Correct</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-700 dark:text-slate-300">
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">I have 20 years</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">I am 20 years old</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">She has 15 years</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">She is 15 years old</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <NoteBox title="Correct Structure">
+            Use <strong>I am</strong> / <strong>He is</strong> / <strong>She is</strong> + age + <strong>years old</strong>.
+          </NoteBox>
+        </section>
+
+        {/* 10 */}
+        <section id="word-order">
+          <ArticleHeading>10. Word Order Mistakes</ArticleHeading>
+          <ArticleParagraph>
+            Arabic sentence structure can be flexible, but English word order is very important.
+          </ArticleParagraph>
+          <div className="overflow-x-auto my-6">
+            <table className="w-full border-collapse text-left">
+              <thead className="bg-slate-100 dark:bg-slate-800">
+                <tr>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Incorrect</th>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Correct</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-700 dark:text-slate-300">
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Very I like football</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">I like football very much</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Always he comes late</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">He always comes late</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <NoteBox title="Basic English Order">
+            <strong>Subject + Verb + Object</strong>
+          </NoteBox>
+          <ExampleList items={["Ahmed eats pizza.", "Sarah studies English."]} />
+        </section>
+
+        {/* 11 */}
+        <section id="since-for">
+          <ArticleHeading>11. Using "Since" and "For" Incorrectly</ArticleHeading>
+          <div className="overflow-x-auto my-6">
+            <table className="w-full border-collapse text-left">
+              <thead className="bg-slate-100 dark:bg-slate-800">
+                <tr>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Incorrect</th>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Correct</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-700 dark:text-slate-300">
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">I live here since 2 years</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">I have lived here for 2 years</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">She works here since Monday</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">She has worked here since Monday</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <TipBox title="Easy Rule">
+            <strong>For</strong> = duration (a length of time).<br />
+            <strong>Since</strong> = starting point (a specific moment).
+          </TipBox>
+          <ExampleList items={["for 3 years", "for 10 minutes", "since 2020", "since Monday"]} />
+        </section>
+
+        {/* 12 */}
+        <section id="false-friends">
+          <ArticleHeading>12. False Friends Between Arabic and English</ArticleHeading>
+          <ArticleParagraph>Some English words look easy but have different meanings.</ArticleParagraph>
+          <div className="overflow-x-auto my-6">
+            <table className="w-full border-collapse text-left">
+              <thead className="bg-slate-100 dark:bg-slate-800">
+                <tr>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Word</th>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Common Mistake</th>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Correct Meaning</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-700 dark:text-slate-300">
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Sensitive</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">means sensible</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">easily affected emotionally</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Library</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">confused with bookstore</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">place for borrowing books</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Sympathetic</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">confused with nice</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">understanding others' feelings</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <ArticleParagraph>
+            You can also read our guide on <Link to="/blog/false-friends-english-words/" className="text-blue-600 hover:underline dark:text-blue-400">false friends in English words</Link> for more tricky vocabulary.
+          </ArticleParagraph>
+        </section>
+
+        {/* Summary */}
+        <section id="summary">
+          <ArticleHeading>Most Common Grammar Problems Summary</ArticleHeading>
+          <div className="overflow-x-auto my-6">
+            <table className="w-full border-collapse text-left">
+              <thead className="bg-slate-100 dark:bg-slate-800">
+                <tr>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Problem</th>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Example Mistake</th>
+                  <th className="border border-slate-300 dark:border-slate-700 px-4 py-2">Correct Form</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-700 dark:text-slate-300">
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Missing articles</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">I bought car</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">I bought a car</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Missing "to be"</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">He tired</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">He is tired</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Wrong pronouns</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">My mother, he works</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">My mother, she works</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Wrong verb form</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">I am knowing</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">I know</td></tr>
+                <tr><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Wrong word order</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Always he late</td><td className="border border-slate-300 dark:border-slate-700 px-4 py-2">He is always late</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* Improve */}
+        <section id="improve">
+          <ArticleHeading>How Arabic Speakers Can Improve Faster</ArticleHeading>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">1. Think in English</h4>
+          <ArticleParagraph>Do not translate every sentence from Arabic. Start with short, simple English thoughts.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">2. Read Simple English Daily</h4>
+          <ArticleParagraph>Read short stories, blog posts, and news for beginners. Just 10 minutes a day adds up fast.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">3. Listen to Native Speakers</h4>
+          <ArticleParagraph>Watch YouTube videos, podcasts, and interviews. See our list of the <Link to="/blog/best-english-teachers-on-youtube-2026/" className="text-blue-600 hover:underline dark:text-blue-400">best English teachers on YouTube</Link>.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">4. Practice Speaking Every Day</h4>
+          <ArticleParagraph>Even 10 minutes daily helps a lot. Talk to yourself, record voice notes, or use language exchange apps.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">5. Learn Common Patterns</h4>
+          <ArticleParagraph>Instead of learning single words, learn full expressions:</ArticleParagraph>
+          <ExampleList items={["How are you?", "Nice to meet you.", "I'm looking forward to it."]} />
+        </section>
+
+        {/* Related */}
+        <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-600 p-6 my-8 rounded">
+          <h3 className="font-bold text-lg mb-3 text-blue-900 dark:text-blue-200">Recommended Reading</h3>
+          <BulletList items={[
+            <><Link to="/blog/common-grammar-mistakes-in-english/" className="text-blue-600 hover:underline dark:text-blue-400">50 Common Grammar Mistakes in English</Link></>,
+            <><Link to="/blog/common-grammar-mistakes-non-native-speakers/" className="text-blue-600 hover:underline dark:text-blue-400">Common Grammar Mistakes for Non-Native Speakers</Link></>,
+            <><Link to="/blog/false-friends-english-words/" className="text-blue-600 hover:underline dark:text-blue-400">False Friends Between English and Other Languages</Link></>,
+            <><Link to="/blog/impact-of-arabic-on-english/" className="text-blue-600 hover:underline dark:text-blue-400">The Impact of Arabic on the English Language</Link></>,
+            <><Link to="/idioms/" className="text-blue-600 hover:underline dark:text-blue-400">Most Common English Idioms</Link></>,
+          ]} />
+        </div>
+
+        {/* FAQ */}
+        <section id="faq">
+          <ArticleHeading>Frequently Asked Questions</ArticleHeading>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Why do Arabic speakers struggle with English articles?</h4>
+          <ArticleParagraph>Because Arabic grammar uses articles differently from English, especially <strong>"the"</strong>. Arabic nouns often need <strong>"ال"</strong>, while English uses <strong>"the"</strong> only for specific, identifiable things.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">What is the hardest English sound for Arabic speakers?</h4>
+          <ArticleParagraph>Many learners struggle with <strong>P</strong>, <strong>V</strong>, and <strong>CH</strong> because these sounds do not exist in some Arabic dialects.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">How can Arabic speakers improve English pronunciation?</h4>
+          <ArticleParagraph>Listening daily, repeating native speakers, and practicing minimal pairs (P/B, V/F) can help a lot.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">Is translating from Arabic a bad habit?</h4>
+          <ArticleParagraph>Yes. Direct translation often creates grammar mistakes and unnatural sentences.</ArticleParagraph>
+
+          <h4 className="font-heading text-xl font-semibold mt-6 mb-2 text-slate-800 dark:text-slate-200">How long does it take to improve English fluency?</h4>
+          <ArticleParagraph>With daily practice, many learners see improvement within a few months.</ArticleParagraph>
+        </section>
+
+        <ArticleHeading>Final Thoughts</ArticleHeading>
+        <ArticleParagraph>
+          Making mistakes is a normal part of learning English. Most Arabic speakers struggle with the same grammar and pronunciation problems at the beginning. The key is <strong>practice, consistency, and learning from your mistakes</strong>.
+        </ArticleParagraph>
+        <ArticleParagraph>
+          Focus on small improvements every day, and your English will become much more natural over time.
+        </ArticleParagraph>
+      </>
+    )
+  },
+  // --- YOUTUBE / LEARNING RESOURCES -------------------------------------------
+  {
+    slug: 'best-english-teachers-on-youtube-2026',
+    title: 'Best English Teachers on YouTube for Beginners in 2026',
+    author: 'TypoGrammar Editorial Team',
+    date: 'May 12, 2026',
+    summary: 'Discover the best English teachers on YouTube for beginners and intermediate learners in 2026. Find free channels for grammar, pronunciation, IELTS, speaking practice, and everyday English.',
+    category: 'Learning Resources',
+    image: '/images/blog/best-english-teachers-on-youtube-2026.png',
+    imageAlt: 'Best English teachers on YouTube for beginners in 2026 — collage of popular English learning channels including BBC Learning English, VOA Learning English, EngVid, Lucy Bella Earl, JenniferESL, and Rachel\'s English',
+    schemaMarkup: {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who is the best English teacher on YouTube?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many learners recommend Lucy Bella Earl, Vanessa Ray (Speak English With Vanessa), and BBC Learning English because of their beginner-friendly lessons, clear explanations, and consistent upload schedules."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which YouTube channel is best for spoken English?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Speak English With Vanessa and Rachel's English are excellent for improving spoken English and pronunciation. Both channels focus on natural conversation and clear pronunciation training."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can beginners learn English from YouTube?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Many YouTube channels create lessons specifically for beginners with slow speech, simple vocabulary, and easy step-by-step explanations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is YouTube enough to become fluent in English?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "YouTube is a great free resource, but true fluency also requires speaking practice, writing, and grammar work. Combining YouTube with tools like grammar checkers and writing practice will help you improve faster."
+          }
+        }
+      ]
+    },
+    content: (
+      <>
+        {/* Quick Answer box */}
+        <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6 my-6 rounded-r-lg">
+          <h2 className="text-lg font-semibold mb-2 text-blue-900 dark:text-blue-200">Quick Answer</h2>
+          <p className="text-blue-800 dark:text-blue-300">
+            The <strong>best English teachers on YouTube for beginners</strong> include <strong>BBC Learning English</strong>, <strong>VOA Learning English</strong>, <strong>EngVid</strong>, <strong>Lucy Bella Earl</strong>, <strong>JenniferESL</strong>, <strong>Rachel's English</strong>, and <strong>Speak English With Vanessa</strong>. Each channel focuses on a different skill — from grammar and pronunciation to IELTS preparation and daily speaking practice.
+          </p>
+        </div>
+
+        {/* Table of Contents */}
+        <nav className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg p-6 my-8">
+          <h2 className="text-lg font-semibold mb-4 text-slate-800 dark:text-slate-200">Table of Contents</h2>
+          <ul className="space-y-2 text-blue-600 dark:text-blue-400 text-sm">
+            <li><a href="#why-youtube" className="hover:underline">Why Learn English on YouTube?</a></li>
+            <li><a href="#bbc" className="hover:underline">1. BBC Learning English</a></li>
+            <li><a href="#voa" className="hover:underline">2. VOA Learning English</a></li>
+            <li><a href="#engvid" className="hover:underline">3. EngVid</a></li>
+            <li><a href="#lucy" className="hover:underline">4. Lucy Bella Earl</a></li>
+            <li><a href="#jennifer" className="hover:underline">5. JenniferESL</a></li>
+            <li><a href="#rachel" className="hover:underline">6. Rachel's English</a></li>
+            <li><a href="#vanessa" className="hover:underline">7. Speak English With Vanessa</a></li>
+            <li><a href="#comparison" className="hover:underline">Which Channel Is Best for You?</a></li>
+            <li><a href="#tips" className="hover:underline">How to Learn English Faster Using YouTube</a></li>
+            <li><a href="#faq" className="hover:underline">Frequently Asked Questions</a></li>
+          </ul>
+        </nav>
+
+        <ArticleParagraph>
+          Learning English has never been easier. Thanks to YouTube, millions of learners around the world can improve their <strong>speaking</strong>, <strong>grammar</strong>, <strong>listening</strong>, <strong>pronunciation</strong>, and <strong>vocabulary</strong> for free.
+        </ArticleParagraph>
+        <ArticleParagraph>
+          But with thousands of English learning channels online, choosing the right teacher can feel overwhelming. In this guide, we share the <strong>best English teachers on YouTube for beginners and intermediate learners</strong>, including channels for grammar, speaking, IELTS, TOEFL, pronunciation, and everyday English conversations.
+        </ArticleParagraph>
+
+        {/* Section: Why YouTube */}
+        <section id="why-youtube">
+          <ArticleHeading>Why Learn English on YouTube?</ArticleHeading>
+          <ArticleParagraph>
+            YouTube is one of the best free platforms for learning English because it offers:
+          </ArticleParagraph>
+          <BulletList items={[
+            'Free lessons available anytime',
+            'Native English teachers from around the world',
+            'Real conversations and pronunciation examples',
+            'Grammar explanations for beginners',
+            'Listening practice with subtitles',
+            'Short, focused, and easy lessons',
+          ]} />
+          <div className="bg-teal-50 dark:bg-teal-900/20 border-l-4 border-teal-500 p-5 my-6 rounded-r-lg">
+            <p className="text-teal-800 dark:text-teal-300 font-medium">
+              The best part is that you can learn at your own pace from anywhere in the world — completely free.
+            </p>
+          </div>
+        </section>
+
+        {/* 1. BBC */}
+        <section id="bbc">
+          <ArticleHeading>1. BBC Learning English</ArticleHeading>
+          <ArticleParagraph>
+            One of the most trusted English learning platforms in the world, <strong>BBC Learning English</strong> provides high-quality lessons for beginners and advanced learners. Their videos focus on grammar, vocabulary, pronunciation, and real-life English conversations.
+          </ArticleParagraph>
+          <div className="grid sm:grid-cols-2 gap-4 my-4">
+            <div className="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-4 border border-slate-200 dark:border-slate-700">
+              <p className="font-semibold text-slate-800 dark:text-slate-200 mb-2">Best For</p>
+              <BulletList items={['British English', 'Grammar', 'Listening skills', 'Daily English']} />
+            </div>
+            <div className="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-4 border border-slate-200 dark:border-slate-700">
+              <p className="font-semibold text-slate-800 dark:text-slate-200 mb-2">Why Beginners Love It</p>
+              <BulletList items={['Clear explanations', 'Professional teachers', 'Short and easy lessons', 'Subtitles available']} />
+            </div>
+          </div>
+        </section>
+
+        {/* 2. VOA */}
+        <section id="voa">
+          <ArticleHeading>2. VOA Learning English</ArticleHeading>
+          <ArticleParagraph>
+            <strong>VOA Learning English</strong> is perfect for beginners because the teachers speak slowly and clearly. The channel uses simple English to help learners improve listening and vocabulary step by step.
+          </ArticleParagraph>
+          <div className="grid sm:grid-cols-2 gap-4 my-4">
+            <div className="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-4 border border-slate-200 dark:border-slate-700">
+              <p className="font-semibold text-slate-800 dark:text-slate-200 mb-2">Best For</p>
+              <BulletList items={['Beginners', 'American English', 'Listening practice', 'Vocabulary building']} />
+            </div>
+            <div className="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-4 border border-slate-200 dark:border-slate-700">
+              <p className="font-semibold text-slate-800 dark:text-slate-200 mb-2">Why It\'s Great</p>
+              <BulletList items={['Slow, clear pronunciation', 'News-based learning', 'Easy sentence structures']} />
+            </div>
+          </div>
+        </section>
+
+        {/* 3. EngVid */}
+        <section id="engvid">
+          <ArticleHeading>3. EngVid</ArticleHeading>
+          <ArticleParagraph>
+            <strong>EngVid</strong> is one of the most popular YouTube platforms for learning English. The channel features multiple English teachers, each with different teaching styles and accents.
+          </ArticleParagraph>
+          <div className="grid sm:grid-cols-2 gap-4 my-4">
+            <div className="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-4 border border-slate-200 dark:border-slate-700">
+              <p className="font-semibold text-slate-800 dark:text-slate-200 mb-2">Best For</p>
+              <BulletList items={['Grammar', 'IELTS preparation', 'Speaking skills', 'Intermediate learners']} />
+            </div>
+            <div className="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-4 border border-slate-200 dark:border-slate-700">
+              <p className="font-semibold text-slate-800 dark:text-slate-200 mb-2">Popular Teachers</p>
+              <BulletList items={['Emma', 'Ronnie', 'Adam', 'Jade']} />
+            </div>
+          </div>
+          <ArticleParagraph>
+            Students love EngVid because of the huge variety of lessons, fun teaching styles, and detailed grammar explanations.
+          </ArticleParagraph>
+        </section>
+
+        {/* 4. Lucy */}
+        <section id="lucy">
+          <ArticleHeading>4. Lucy Bella Earl</ArticleHeading>
+          <ArticleParagraph>
+            <strong>Lucy Bella Earl</strong> is one of the most famous English teachers on YouTube. Her lessons are clear, modern, and beginner-friendly. She focuses mainly on British English pronunciation and speaking confidence.
+          </ArticleParagraph>
+          <div className="grid sm:grid-cols-2 gap-4 my-4">
+            <div className="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-4 border border-slate-200 dark:border-slate-700">
+              <p className="font-semibold text-slate-800 dark:text-slate-200 mb-2">Best For</p>
+              <BulletList items={['British pronunciation', 'Speaking naturally', 'Vocabulary', 'Confidence building']} />
+            </div>
+            <div className="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-4 border border-slate-200 dark:border-slate-700">
+              <p className="font-semibold text-slate-800 dark:text-slate-200 mb-2">Why Her Channel Stands Out</p>
+              <BulletList items={['Professional video quality', 'Easy explanations', 'Practical English tips']} />
+            </div>
+          </div>
+        </section>
+
+        {/* 5. Jennifer */}
+        <section id="jennifer">
+          <ArticleHeading>5. JenniferESL</ArticleHeading>
+          <ArticleParagraph>
+            <strong>JenniferESL</strong> is known for a calm teaching style and beginner-friendly lessons. Her videos are simple, detailed, and easy to follow.
+          </ArticleParagraph>
+          <div className="grid sm:grid-cols-2 gap-4 my-4">
+            <div className="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-4 border border-slate-200 dark:border-slate-700">
+              <p className="font-semibold text-slate-800 dark:text-slate-200 mb-2">Best For</p>
+              <BulletList items={['Beginners', 'Grammar basics', 'Pronunciation', 'Everyday English']} />
+            </div>
+            <div className="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-4 border border-slate-200 dark:border-slate-700">
+              <p className="font-semibold text-slate-800 dark:text-slate-200 mb-2">Why Learners Recommend Her</p>
+              <BulletList items={['Patient teaching style', 'Organized lessons', 'Clear pronunciation']} />
+            </div>
+          </div>
+        </section>
+
+        {/* 6. Rachel */}
+        <section id="rachel">
+          <ArticleHeading>6. Rachel\'s English</ArticleHeading>
+          <ArticleParagraph>
+            <strong>Rachel's English</strong> is one of the best channels for improving American pronunciation. She teaches learners how native speakers really speak in daily conversations.
+          </ArticleParagraph>
+          <div className="grid sm:grid-cols-2 gap-4 my-4">
+            <div className="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-4 border border-slate-200 dark:border-slate-700">
+              <p className="font-semibold text-slate-800 dark:text-slate-200 mb-2">Best For</p>
+              <BulletList items={['American accent', 'Pronunciation', 'Speaking naturally', 'Connected speech']} />
+            </div>
+            <div className="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-4 border border-slate-200 dark:border-slate-700">
+              <p className="font-semibold text-slate-800 dark:text-slate-200 mb-2">Why It\'s Popular</p>
+              <BulletList items={['Real pronunciation training', 'Mouth movement explanations', 'Natural conversation examples']} />
+            </div>
+          </div>
+        </section>
+
+        {/* 7. Vanessa */}
+        <section id="vanessa">
+          <ArticleHeading>7. Speak English With Vanessa</ArticleHeading>
+          <ArticleParagraph>
+            <strong>Vanessa's channel</strong> focuses on helping learners speak English confidently in real-life situations. Her videos are friendly, practical, and motivating.
+          </ArticleParagraph>
+          <div className="grid sm:grid-cols-2 gap-4 my-4">
+            <div className="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-4 border border-slate-200 dark:border-slate-700">
+              <p className="font-semibold text-slate-800 dark:text-slate-200 mb-2">Best For</p>
+              <BulletList items={['Speaking confidence', 'Daily conversations', 'Listening practice', 'American English']} />
+            </div>
+            <div className="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-4 border border-slate-200 dark:border-slate-700">
+              <p className="font-semibold text-slate-800 dark:text-slate-200 mb-2">Why Students Enjoy Her</p>
+              <BulletList items={['Relaxed teaching style', 'Real-life examples', 'Easy English explanations']} />
+            </div>
+          </div>
+        </section>
+
+        {/* Comparison */}
+        <section id="comparison">
+          <ArticleHeading>Which English Teacher on YouTube Is Best for Beginners?</ArticleHeading>
+          <ArticleParagraph>
+            If you are just starting, here is a quick guide to choosing the right channel based on your goal:
+          </ArticleParagraph>
+          <div className="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-700 my-6">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-slate-100 dark:bg-slate-800">
+                  <th className="text-left px-4 py-3 font-semibold text-slate-700 dark:text-slate-300">Your Goal</th>
+                  <th className="px-4 py-3 font-semibold text-teal-700 dark:text-teal-400 text-left">Recommended Channel</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-200 dark:divide-slate-700">
+                {[
+                  ['Grammar Basics', 'BBC Learning English'],
+                  ['Easy Listening', 'VOA Learning English'],
+                  ['Speaking Practice', 'Speak English With Vanessa'],
+                  ['Pronunciation', "Rachel's English"],
+                  ['British English', 'Lucy Bella Earl'],
+                  ['IELTS Preparation', 'EngVid'],
+                ].map(([goal, channel]) => (
+                  <tr key={goal} className="bg-white dark:bg-slate-900 even:bg-slate-50 dark:even:bg-slate-800/50">
+                    <td className="px-4 py-3 text-slate-700 dark:text-slate-300 font-medium">{goal}</td>
+                    <td className="px-4 py-3 text-teal-700 dark:text-teal-400">{channel}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* Tips */}
+        <section id="tips">
+          <ArticleHeading>How to Learn English Faster Using YouTube</ArticleHeading>
+          <ArticleParagraph>
+            Watching videos alone is not enough. Here are some tips to improve faster:
+          </ArticleParagraph>
+
+          <div className="space-y-4 my-6">
+            {[
+              { n: '1', title: 'Watch English Videos Daily', body: 'Even 15 to 20 minutes per day can significantly improve your listening skills over time.' },
+              { n: '2', title: 'Repeat Sentences Out Loud', body: 'This helps improve pronunciation and speaking confidence through active repetition.' },
+              { n: '3', title: 'Turn On English Subtitles', body: 'Subtitles help you connect spoken words with their written form, building vocabulary and structure.' },
+              { n: '4', title: 'Practice Shadowing', body: 'Listen to a sentence and repeat it immediately, copying the speaker\'s rhythm, stress, and tone.' },
+              { n: '5', title: 'Focus on One Teacher First', body: 'Switching between too many teachers can confuse beginners. Pick one channel and stay consistent.' },
+            ].map(({ n, title, body }) => (
+              <div key={n} className="flex gap-4 bg-slate-50 dark:bg-slate-800/50 rounded-xl p-4 border border-slate-200 dark:border-slate-700">
+                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-teal-600 text-white font-bold flex items-center justify-center text-sm">{n}</span>
+                <div>
+                  <p className="font-semibold text-slate-800 dark:text-slate-200 mb-1">{title}</p>
+                  <p className="text-sm text-slate-600 dark:text-slate-400">{body}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="bg-amber-50 dark:bg-amber-900/20 border-l-4 border-amber-500 p-5 my-6 rounded-r-lg">
+            <p className="text-amber-800 dark:text-amber-300 font-medium">
+              Can you really learn English from YouTube? <strong>Yes</strong>, but consistency is key. Combine listening, speaking, reading, and grammar practice for the fastest progress.
+            </p>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section id="faq">
+          <ArticleHeading>Frequently Asked Questions</ArticleHeading>
+
+          <div className="space-y-4">
+            {[
+              {
+                q: 'Who is the best English teacher on YouTube?',
+                a: 'Many learners recommend Lucy Bella Earl, Vanessa Ray (Speak English With Vanessa), and BBC Learning English because of their beginner-friendly lessons, clear explanations, and consistent content.',
+              },
+              {
+                q: 'Which YouTube channel is best for spoken English?',
+                a: "Speak English With Vanessa and Rachel's English are excellent for improving spoken English and pronunciation.",
+              },
+              {
+                q: 'Can beginners learn English from YouTube?',
+                a: 'Yes. Many YouTube channels create lessons specifically for beginners with slow speech and easy explanations.',
+              },
+              {
+                q: 'Is YouTube enough to become fluent in English?',
+                a: 'YouTube can help a lot, but you should also practice speaking and writing regularly for full fluency.',
+              },
+            ].map(({ q, a }) => (
+              <div key={q} className="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-5 border border-slate-200 dark:border-slate-700">
+                <p className="font-semibold text-slate-800 dark:text-slate-200 mb-2">{q}</p>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">{a}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* CTA */}
+        <div className="bg-gradient-to-br from-teal-50 to-blue-50 dark:from-teal-900/20 dark:to-blue-900/20 rounded-2xl p-8 my-10 border border-teal-200 dark:border-teal-800 text-center">
+          <p className="text-lg font-semibold text-slate-800 dark:text-slate-100 mb-2">
+            Practice Your Grammar While You Learn
+          </p>
+          <p className="text-slate-600 dark:text-slate-300 mb-5 text-sm max-w-xl mx-auto">
+            YouTube helps you listen and speak. TypoGrammar helps you write correctly. Use both together for faster improvement.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <Link to="/grammar-guide/" className="inline-flex items-center justify-center px-6 py-3 bg-teal-600 hover:bg-teal-700 text-white font-semibold rounded-full transition-colors text-sm">
+              Explore Grammar Lessons
+            </Link>
+            <Link to="/grammar-checker/" className="inline-flex items-center justify-center px-6 py-3 border border-teal-300 dark:border-teal-700 text-teal-700 dark:text-teal-300 hover:bg-teal-600 hover:text-white rounded-full transition-colors text-sm font-semibold">
+              Try Grammar Checker
+            </Link>
+          </div>
+        </div>
+      </>
+    ),
+  },
+
+  // --- AI & TEST PREP ----------------------------------------------------------
+  {
+    slug: 'how-ai-is-transforming-ielts-and-toefl-preparation',
+    title: 'How AI Is Transforming IELTS and TOEFL Preparation: 7 Smart Ways Students Are Studying Better',
+    author: 'TypoGrammar Editorial Team',
+    date: 'April 25, 2026',
+    summary: 'Discover how AI is transforming IELTS and TOEFL preparation with instant writing feedback, speaking simulations, personalized study plans, and adaptive practice. Learn 7 smart, evidence-based ways students use AI to study faster, score higher, and prepare more efficiently in 2026.',
+    category: 'Test Preparation',
+    image: '/images/blog/ai-transforming-ielts-toefl-preparation-blueprint-poster.png',
+    imageAlt: 'Blueprint style infographic showing how AI is transforming IELTS and TOEFL preparation through writing feedback, speaking practice, personalized study plans, mock tests, vocabulary building, and AI powered learning strategies.',
+    schemaMarkup: {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can AI help improve IELTS scores?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, AI can help improve International English Language Testing System scores by providing instant writing feedback, speaking practice, vocabulary building, and personalized study plans. Many students use AI to strengthen weak areas and practice more efficiently."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is AI good for TOEFL preparation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. AI can support Educational Testing Service (ETS) TOEFL preparation through mock speaking practice, essay feedback, reading drills, and adaptive study guidance. It is especially useful for self-study and daily consistency."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the best ways to use AI for IELTS writing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Students use AI to get grammar corrections, improve essay structure, practice Task 2 arguments, receive band-style feedback, and learn stronger vocabulary and paraphrasing. The best approach is to use AI for feedback, not for writing essays for you."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can AI help with IELTS speaking practice?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. AI can simulate speaking interviews, ask Part 1, Part 2, and Part 3 follow-up questions, support pronunciation work, and improve fluency through daily conversation practice."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is AI better than a human English tutor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AI is excellent for daily practice and instant feedback, but it does not fully replace experienced teachers. The best approach for most learners is combining AI tools with human guidance, especially at advanced levels."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can ChatGPT help with IELTS and TOEFL preparation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Tools like OpenAI's ChatGPT can help students practice writing, simulate speaking tests, generate vocabulary exercises, and create study plans. Used correctly, ChatGPT can be a strong supplement for IELTS and TOEFL exam prep."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can beginners use AI to learn English faster?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Beginners can use AI to practice conversations, correct grammar mistakes, learn vocabulary in context, improve pronunciation, and follow personalized study routines. This makes English learning more interactive and accessible."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Google value AI-related education content?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, especially when content provides original insights, practical advice, and demonstrates expertise. High-quality educational content about AI in learning can perform well in search and in AI-generated answers."
+          }
+        }
+      ]
+    },
+    content: (
+      <>
+        {/* Quick Answer / Featured Snippet Box */}
+        <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6 my-6 rounded-r-lg">
+          <h2 className="text-lg font-semibold mb-2 text-blue-900 dark:text-blue-200">Quick Answer</h2>
+          <p className="text-blue-800 dark:text-blue-300">
+            <strong>Can AI improve your IELTS and TOEFL scores?</strong> Yes, when used strategically. AI gives <strong>instant writing feedback</strong>, simulates <strong>speaking practice</strong> on demand, builds <strong>personalized study plans</strong>, accelerates <strong>vocabulary learning</strong>, runs <strong>mock tests under exam conditions</strong>, and pinpoints <strong>weaknesses</strong> faster than traditional prep. The students seeing the biggest score gains in 2026 are not studying harder. They are using AI to study smarter.
+          </p>
+        </div>
+
+        {/* Table of Contents */}
+        <nav className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg p-6 my-8">
+          <h2 className="text-lg font-semibold mb-4 text-slate-800 dark:text-slate-200">Table of Contents</h2>
+          <ul className="space-y-2 text-blue-600 dark:text-blue-400 text-sm">
+            <li><a href="#why-ai" className="hover:underline">Why AI Is Changing IELTS and TOEFL Preparation</a></li>
+            <li><a href="#writing-feedback" className="hover:underline">1. AI Gives Instant Feedback on Writing</a></li>
+            <li><a href="#speaking-practice" className="hover:underline">2. AI Makes Speaking Practice Available Anytime</a></li>
+            <li><a href="#study-plans" className="hover:underline">3. Personalized Study Plans Replace Generic Prep</a></li>
+            <li><a href="#vocabulary" className="hover:underline">4. AI Helps Students Learn Vocabulary Faster</a></li>
+            <li><a href="#mock-tests" className="hover:underline">5. AI Simulates Mock Tests and Exam Conditions</a></li>
+            <li><a href="#weaknesses" className="hover:underline">6. AI Helps Identify Weaknesses Faster</a></li>
+            <li><a href="#cost" className="hover:underline">7. AI Can Reduce the Cost of Test Preparation</a></li>
+            <li><a href="#comparison" className="hover:underline">Traditional Prep vs AI Powered Prep</a></li>
+            <li><a href="#limits" className="hover:underline">What AI Cannot Replace</a></li>
+            <li><a href="#system" className="hover:underline">Best Way to Use AI for IELTS and TOEFL</a></li>
+            <li><a href="#mistakes" className="hover:underline">Common Mistakes Students Make With AI</a></li>
+            <li><a href="#faq" className="hover:underline">Frequently Asked Questions</a></li>
+          </ul>
+        </nav>
+
+        <ArticleParagraph>
+          Preparing for the <strong>International English Language Testing System (IELTS)</strong> and the <strong>Educational Testing Service (ETS) TOEFL</strong> has changed dramatically. What once depended mainly on textbooks, tutoring centers, and repetitive practice now includes AI-powered learning tools that provide instant feedback, personalized study plans, speaking simulations, and writing support.
+        </ArticleParagraph>
+
+        <ArticleParagraph>
+          For many students, this raises an important question: <em>Can AI actually improve IELTS and TOEFL scores?</em> The answer is <strong>yes, when used strategically</strong>. In this guide, you will learn how AI is transforming test preparation, where it helps the most, where human guidance still matters, and how students are using it to study smarter in 2026.
+        </ArticleParagraph>
+
+        {/* Section: Why AI */}
+        <section id="why-ai">
+          <ArticleHeading>Why AI Is Changing IELTS and TOEFL Preparation</ArticleHeading>
+
+          <ArticleParagraph>
+            Traditional test preparation has long suffered from the same set of problems:
+          </ArticleParagraph>
+
+          <BulletList items={[
+            'Limited speaking practice with real partners',
+            'Delayed writing feedback from teachers',
+            'Expensive tutoring and prep courses',
+            'Generic study plans that ignore individual weaknesses',
+            'Difficulty identifying which skills need the most work'
+          ]} />
+
+          <ArticleParagraph>
+            AI directly solves many of these problems by offering:
+          </ArticleParagraph>
+
+          <BulletList items={[
+            'Instant grammar correction',
+            'Real-time speaking feedback',
+            'Personalized vocabulary building',
+            'Automated writing evaluation',
+            'Adaptive practice recommendations based on performance'
+          ]} />
+
+          <div className="bg-teal-50 dark:bg-teal-900/20 border-l-4 border-teal-500 p-5 my-6 rounded-r-lg">
+            <p className="text-teal-800 dark:text-teal-300 font-medium">
+              The shift is simple but powerful: instead of <em>studying harder</em>, learners now <strong>study more efficiently</strong>. That single change is reshaping how millions of students prepare for IELTS and TOEFL worldwide.
+            </p>
+          </div>
+        </section>
+
+        {/* Section 1: Writing Feedback */}
+        <section id="writing-feedback">
+          <ArticleHeading>1. AI Gives Instant Feedback on Writing</ArticleHeading>
+
+          <ArticleParagraph>
+            Writing is one of the hardest parts of both IELTS and TOEFL. Students often wait days for feedback from teachers, but AI can provide immediate help on:
+          </ArticleParagraph>
+
+          <BulletList items={[
+            'Grammar mistakes',
+            'Sentence structure',
+            'Vocabulary variety',
+            'Coherence and cohesion',
+            'Essay organization and argument flow'
+          ]} />
+
+          <ArticleHeading>Example Uses</ArticleHeading>
+
+          <ArticleParagraph>Students can use AI to:</ArticleParagraph>
+
+          <BulletList items={[
+            'Check IELTS Task 2 essay arguments',
+            'Improve introductions and conclusions',
+            'Rewrite awkward sentences in a more natural way',
+            'Practice TOEFL integrated writing responses',
+            'Identify repeated vocabulary and overused phrases'
+          ]} />
+
+          <div className="bg-slate-900 text-slate-100 rounded-lg p-5 my-6 font-mono text-sm">
+            <p className="text-slate-400 mb-2">Sample prompt:</p>
+            <p>"Evaluate this IELTS Task 2 essay based on the official band descriptors (Task Response, Coherence and Cohesion, Lexical Resource, Grammatical Range and Accuracy) and suggest concrete improvements."</p>
+          </div>
+
+          <ArticleParagraph>
+            That single prompt turns AI into a 24/7 practice examiner. Pair it with the official band criteria and you have an instant feedback loop that used to require a private tutor.
+          </ArticleParagraph>
+
+          <div className="bg-amber-50 dark:bg-amber-900/20 border-l-4 border-amber-500 p-5 my-6 rounded-r-lg">
+            <p className="text-amber-800 dark:text-amber-300">
+              <strong>Search trend insight:</strong> queries like <InlineCode>AI for IELTS writing</InlineCode>, <InlineCode>best AI tools for TOEFL essays</InlineCode>, and <InlineCode>can AI score my IELTS writing</InlineCode> are growing rapidly in 2026, showing how quickly demand is rising.
+            </p>
+          </div>
+        </section>
+
+        {/* Section 2: Speaking */}
+        <section id="speaking-practice">
+          <ArticleHeading>2. AI Makes Speaking Practice Available Anytime</ArticleHeading>
+
+          <ArticleParagraph>
+            One major problem for test takers is finding consistent speaking partners. AI solves that. Students can now simulate speaking interviews, answer cue card questions, and practice pronunciation with feedback, all on their own schedule.
+          </ArticleParagraph>
+
+          <ArticleHeading>What AI Can Help With</ArticleHeading>
+
+          <BulletList items={[
+            'Fluency practice through extended conversation',
+            'Pronunciation correction on individual sounds',
+            'Follow-up question simulations (IELTS Part 3 style)',
+            'Timing responses (45 seconds for TOEFL Speaking, 2 minutes for IELTS Part 2)',
+            'Full mock speaking tests'
+          ]} />
+
+          <ArticleHeading>Example IELTS Cue Card Practice</ArticleHeading>
+
+          <div className="bg-slate-900 text-slate-100 rounded-lg p-5 my-6 font-mono text-sm">
+            <p className="text-slate-400 mb-2">Prompt:</p>
+            <p>"Act as an IELTS speaking examiner. Ask me Part 2 and Part 3 questions on the topic of technology. After each answer, give feedback on fluency, vocabulary, grammar, and pronunciation."</p>
+          </div>
+
+          <ArticleParagraph>
+            That single prompt creates realistic practice sessions you can repeat daily. Consistency improves speaking far more than occasional tutoring. <strong>10 minutes of daily AI speaking practice often beats one weekly lesson</strong>, because the test rewards habits, not lectures.
+          </ArticleParagraph>
+        </section>
+
+        {/* Section 3: Personalized Plans */}
+        <section id="study-plans">
+          <ArticleHeading>3. Personalized Study Plans Replace Generic Prep</ArticleHeading>
+
+          <ArticleParagraph>
+            Not every student has the same weaknesses. One may struggle with reading. Another with speaking. Another with IELTS Task 1 reports or TOEFL integrated tasks. AI can build personalized plans based on:
+          </ArticleParagraph>
+
+          <BulletList items={[
+            'Target score (e.g., IELTS 7.5 or TOEFL 100)',
+            'Test date and how many weeks remain',
+            'Weak sections identified through diagnostic practice',
+            'Current level (CEFR B1, B2, C1, etc.)',
+            'Available study hours per day'
+          ]} />
+
+          <ArticleHeading>Example: A Student Targeting IELTS 7.5</ArticleHeading>
+
+          <ArticleParagraph>
+            Instead of random practice, AI can generate a focused weekly schedule:
+          </ArticleParagraph>
+
+          <div className="overflow-x-auto my-6">
+            <table className="w-full border-collapse text-sm">
+              <thead>
+                <tr className="bg-slate-700 text-white">
+                  <th className="p-3 text-left">Day</th>
+                  <th className="p-3 text-left">Focus</th>
+                  <th className="p-3 text-left">AI Activity</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-200 dark:divide-slate-700">
+                <tr className="bg-white dark:bg-slate-800">
+                  <td className="p-3 font-medium">Monday</td>
+                  <td className="p-3">Writing</td>
+                  <td className="p-3">Task 2 essay + AI feedback</td>
+                </tr>
+                <tr className="bg-slate-50 dark:bg-slate-700/50">
+                  <td className="p-3 font-medium">Tuesday</td>
+                  <td className="p-3">Speaking</td>
+                  <td className="p-3">Part 1, 2, 3 simulation drills</td>
+                </tr>
+                <tr className="bg-white dark:bg-slate-800">
+                  <td className="p-3 font-medium">Wednesday</td>
+                  <td className="p-3">Reading</td>
+                  <td className="p-3">Timed passages with AI explanations</td>
+                </tr>
+                <tr className="bg-slate-50 dark:bg-slate-700/50">
+                  <td className="p-3 font-medium">Thursday</td>
+                  <td className="p-3">Vocabulary</td>
+                  <td className="p-3">Topic-based word lists + flashcards</td>
+                </tr>
+                <tr className="bg-white dark:bg-slate-800">
+                  <td className="p-3 font-medium">Friday</td>
+                  <td className="p-3">Mock Test</td>
+                  <td className="p-3">Full section + AI weakness analysis</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <ArticleParagraph>
+            That is far smarter than studying everything equally and hoping for the best.
+          </ArticleParagraph>
+        </section>
+
+        {/* Section 4: Vocabulary */}
+        <section id="vocabulary">
+          <ArticleHeading>4. AI Helps Students Learn Vocabulary Faster</ArticleHeading>
+
+          <ArticleParagraph>
+            Vocabulary matters heavily in both exams. It directly affects <strong>Lexical Resource</strong> in IELTS and the quality of TOEFL writing and speaking responses. AI can personalize vocabulary by topic:
+          </ArticleParagraph>
+
+          <ExampleList items={[
+            'Education',
+            'Environment',
+            'Technology',
+            'Health',
+            'Government and society'
+          ]} />
+
+          <ArticleHeading>Students Use AI To</ArticleHeading>
+
+          <BulletList items={[
+            'Generate topic-specific word lists with definitions',
+            'Practice natural collocations (not just isolated words)',
+            'Learn academic synonyms for common Band 6 vocabulary',
+            'Build ready-to-use speaking phrases',
+            'Create flashcard decks for spaced repetition'
+          ]} />
+
+          <div className="bg-slate-900 text-slate-100 rounded-lg p-5 my-6 font-mono text-sm">
+            <p className="text-slate-400 mb-2">Sample prompt:</p>
+            <p>"Give me 15 advanced vocabulary items for IELTS environment topics, with definitions, collocations, and one example sentence each at Band 7+ level."</p>
+          </div>
+
+          <ArticleParagraph>
+            That kind of structured output saves hours compared to building word lists by hand.
+          </ArticleParagraph>
+        </section>
+
+        {/* Section 5: Mock Tests */}
+        <section id="mock-tests">
+          <ArticleHeading>5. AI Simulates Mock Tests and Exam Conditions</ArticleHeading>
+
+          <ArticleParagraph>
+            Mock testing is crucial. Students improve fastest when they practice under realistic pressure. AI can help simulate:
+          </ArticleParagraph>
+
+          <BulletList items={[
+            'Timed writing tasks (20 minutes for IELTS Task 1, 40 minutes for Task 2)',
+            'Reading question drills with section-level pacing',
+            'Full speaking interviews with examiner-style follow-ups',
+            'Listening prediction exercises and gap-fill practice'
+          ]} />
+
+          <ArticleHeading>Why Mock Simulation Works</ArticleHeading>
+
+          <ArticleParagraph>
+            Students improve when they practice under pressure. AI helps create:
+          </ArticleParagraph>
+
+          <BulletList items={[
+            'Realistic timing constraints',
+            'Exam-style question formats',
+            'Detailed performance analysis after each attempt'
+          ]} />
+
+          <ArticleParagraph>
+            That makes preparation more <strong>exam-focused</strong> rather than just textbook-focused.
+          </ArticleParagraph>
+        </section>
+
+        {/* Section 6: Weakness Detection */}
+        <section id="weaknesses">
+          <ArticleHeading>6. AI Helps Identify Weaknesses Faster</ArticleHeading>
+
+          <ArticleParagraph>
+            One huge advantage of AI is <strong>pattern detection</strong>. It can notice issues students often miss themselves, including:
+          </ArticleParagraph>
+
+          <BulletList items={[
+            'Repeated grammar errors (article use, subject-verb agreement, tense shifts)',
+            'Weak thesis statements in Task 2 essays',
+            'Pronunciation problems on specific sounds',
+            'Poor paraphrasing in introduction paragraphs',
+            'Time management issues across sections'
+          ]} />
+
+          <div className="bg-purple-50 dark:bg-purple-900/20 border-l-4 border-purple-500 p-5 my-6 rounded-r-lg">
+            <p className="text-purple-800 dark:text-purple-300">
+              Traditional prep often treats <em>symptoms</em>. AI often finds <em>causes</em>. That alone can save months of wasted study time.
+            </p>
+          </div>
+        </section>
+
+        {/* Section 7: Cost */}
+        <section id="cost">
+          <ArticleHeading>7. AI Can Reduce the Cost of Test Preparation</ArticleHeading>
+
+          <ArticleParagraph>
+            Traditional tutoring can be expensive, especially for one-on-one IELTS or TOEFL coaching. AI often provides comparable support at a much lower cost for:
+          </ArticleParagraph>
+
+          <BulletList items={[
+            'Practice feedback on writing and speaking',
+            'Mock interviews and timed simulations',
+            'Essay review and rewriting suggestions',
+            'Long-term study planning'
+          ]} />
+
+          <ArticleParagraph>
+            For self-motivated learners, this makes high-quality preparation far more accessible, regardless of country, budget, or time zone.
+          </ArticleParagraph>
+        </section>
+
+        {/* Comparison Table */}
+        <section id="comparison">
+          <ArticleHeading>Traditional Prep vs AI Powered Prep</ArticleHeading>
+
+          <div className="overflow-x-auto my-6">
+            <table className="w-full border-collapse text-sm">
+              <thead>
+                <tr className="bg-slate-700 text-white">
+                  <th className="p-3 text-left">Traditional Prep</th>
+                  <th className="p-3 text-left">AI Powered Prep</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-200 dark:divide-slate-700">
+                <tr className="bg-white dark:bg-slate-800">
+                  <td className="p-3">Delayed feedback</td>
+                  <td className="p-3 text-green-600 dark:text-green-400 font-medium">Instant feedback</td>
+                </tr>
+                <tr className="bg-slate-50 dark:bg-slate-700/50">
+                  <td className="p-3">Fixed lessons</td>
+                  <td className="p-3 text-green-600 dark:text-green-400 font-medium">Personalized study</td>
+                </tr>
+                <tr className="bg-white dark:bg-slate-800">
+                  <td className="p-3">Expensive tutoring</td>
+                  <td className="p-3 text-green-600 dark:text-green-400 font-medium">Lower-cost support</td>
+                </tr>
+                <tr className="bg-slate-50 dark:bg-slate-700/50">
+                  <td className="p-3">Limited speaking partners</td>
+                  <td className="p-3 text-green-600 dark:text-green-400 font-medium">Unlimited speaking practice</td>
+                </tr>
+                <tr className="bg-white dark:bg-slate-800">
+                  <td className="p-3">Generic materials</td>
+                  <td className="p-3 text-green-600 dark:text-green-400 font-medium">Adaptive learning</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <ArticleParagraph>
+            The best results often come from <strong>combining both</strong>. AI is not replacing teachers. It is enhancing them.
+          </ArticleParagraph>
+        </section>
+
+        {/* What AI Cannot Replace */}
+        <section id="limits">
+          <ArticleHeading>What AI Cannot Replace</ArticleHeading>
+
+          <ArticleParagraph>
+            AI is powerful, but not perfect. Students still need:
+          </ArticleParagraph>
+
+          <BulletList items={[
+            'Real exam strategy from experienced test takers',
+            'Human feedback at advanced (Band 8+ / TOEFL 110+) levels',
+            'Official practice materials from Cambridge and ETS',
+            'Experienced instructors for complex grammar and discourse issues'
+          ]} />
+
+          <ArticleParagraph>
+            Think of AI as a <strong>study partner</strong>, not magic. The students who get the best results combine AI with official material and occasional human guidance.
+          </ArticleParagraph>
+        </section>
+
+        {/* Best System */}
+        <section id="system">
+          <ArticleHeading>Best Way to Use AI for IELTS and TOEFL</ArticleHeading>
+
+          <ArticleParagraph>
+            Use this simple, repeatable system:
+          </ArticleParagraph>
+
+          <div className="grid md:grid-cols-2 gap-5 my-6">
+            <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 p-5 rounded-lg">
+              <h3 className="font-bold text-blue-900 dark:text-blue-200 mb-3">Daily</h3>
+              <ul className="space-y-2 text-blue-800 dark:text-blue-300 text-sm list-disc pl-5">
+                <li>15 minutes speaking practice</li>
+                <li>20 minutes vocabulary review</li>
+                <li>1 short writing feedback session</li>
+              </ul>
+            </div>
+
+            <div className="bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-800 p-5 rounded-lg">
+              <h3 className="font-bold text-purple-900 dark:text-purple-200 mb-3">Weekly</h3>
+              <ul className="space-y-2 text-purple-800 dark:text-purple-300 text-sm list-disc pl-5">
+                <li>One full mock test</li>
+                <li>One weakness analysis</li>
+                <li>One full review session</li>
+              </ul>
+            </div>
+          </div>
+
+          <ArticleParagraph>
+            <strong>Consistency matters more than using dozens of tools.</strong> Master one workflow before adding another.
+          </ArticleParagraph>
+        </section>
+
+        {/* Common Mistakes */}
+        <section id="mistakes">
+          <ArticleHeading>Common Mistakes Students Make With AI</ArticleHeading>
+
+          <ArticleParagraph>Avoid these four traps:</ArticleParagraph>
+
+          <div className="space-y-4 my-6">
+            <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-5 rounded-r-lg">
+              <h4 className="font-semibold text-red-900 dark:text-red-200 mb-1">1. Letting AI write essays for you</h4>
+              <p className="text-red-800 dark:text-red-300 text-sm">Use AI for feedback, not shortcuts. Examiners reward your thinking, not the model's.</p>
+            </div>
+            <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-5 rounded-r-lg">
+              <h4 className="font-semibold text-red-900 dark:text-red-200 mb-1">2. Trusting every correction blindly</h4>
+              <p className="text-red-800 dark:text-red-300 text-sm">Always compare suggestions with official band criteria and Cambridge/ETS samples.</p>
+            </div>
+            <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-5 rounded-r-lg">
+              <h4 className="font-semibold text-red-900 dark:text-red-200 mb-1">3. Practicing without exam strategy</h4>
+              <p className="text-red-800 dark:text-red-300 text-sm">Technology cannot replace understanding the test format and timing.</p>
+            </div>
+            <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-5 rounded-r-lg">
+              <h4 className="font-semibold text-red-900 dark:text-red-200 mb-1">4. Using too many tools</h4>
+              <p className="text-red-800 dark:text-red-300 text-sm">Master one workflow first, then expand. Tool-hopping kills consistency.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Can AI Help You Get a Higher Score */}
+        <ArticleHeading>Can AI Help You Get a Higher IELTS or TOEFL Score?</ArticleHeading>
+
+        <ArticleParagraph>
+          <strong>Yes, when used well.</strong> AI can help students:
+        </ArticleParagraph>
+
+        <BulletList items={[
+          'Write better essays with stronger structure',
+          'Improve speaking fluency through daily practice',
+          'Expand topic-specific vocabulary',
+          'Study more efficiently with personalized plans',
+          'Practice more consistently with on-demand feedback'
+        ]} />
+
+        <ArticleParagraph>
+          That can absolutely contribute to higher scores. But improvement comes from <strong>smart practice, not tools alone</strong>.
+        </ArticleParagraph>
+
+        {/* Final Thoughts */}
+        <ArticleHeading>Final Thoughts</ArticleHeading>
+
+        <ArticleParagraph>
+          AI is transforming International English Language Testing System and Educational Testing Service preparation by making learning more <strong>personalized, interactive, and accessible</strong>. Students no longer have to rely only on textbooks and expensive courses.
+        </ArticleParagraph>
+
+        <ArticleParagraph>With the right strategy, AI can become:</ArticleParagraph>
+
+        <BulletList items={[
+          'Your writing coach',
+          'Your speaking partner',
+          'Your vocabulary trainer',
+          'Your study planner'
+        ]} />
+
+        <ArticleParagraph>
+          Used wisely, it can make preparation faster, smarter, and more effective.
+        </ArticleParagraph>
+
+        {/* FAQ */}
+        <section id="faq">
+          <ArticleHeading>Frequently Asked Questions</ArticleHeading>
+
+          <div className="space-y-6 my-8">
+            <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg">
+              <h3 className="font-semibold text-lg text-slate-900 dark:text-slate-100 mb-2">Can AI help improve IELTS scores?</h3>
+              <p className="text-slate-700 dark:text-slate-300">Yes. AI helps improve IELTS scores by providing instant writing feedback, on-demand speaking practice, vocabulary building, and personalized study plans. Students use it to strengthen weak areas and practice more efficiently.</p>
+            </div>
+            <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg">
+              <h3 className="font-semibold text-lg text-slate-900 dark:text-slate-100 mb-2">Is AI good for TOEFL preparation?</h3>
+              <p className="text-slate-700 dark:text-slate-300">Yes. AI supports TOEFL preparation through mock speaking practice, essay feedback, reading drills, and adaptive study guidance. It is especially useful for self-study.</p>
+            </div>
+            <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg">
+              <h3 className="font-semibold text-lg text-slate-900 dark:text-slate-100 mb-2">What are the best ways to use AI for IELTS writing?</h3>
+              <p className="text-slate-700 dark:text-slate-300">Use AI to get grammar corrections, improve essay structure, practice Task 2 arguments, receive band-style feedback, and learn stronger vocabulary and paraphrasing. The best approach is using AI for feedback, not for writing essays for you.</p>
+            </div>
+            <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg">
+              <h3 className="font-semibold text-lg text-slate-900 dark:text-slate-100 mb-2">Can AI help with IELTS speaking practice?</h3>
+              <p className="text-slate-700 dark:text-slate-300">Yes. AI can simulate IELTS speaking interviews, ask Part 1, 2, and 3 follow-up questions, support pronunciation work, and improve fluency through daily conversation.</p>
+            </div>
+            <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg">
+              <h3 className="font-semibold text-lg text-slate-900 dark:text-slate-100 mb-2">Is AI better than a human English tutor?</h3>
+              <p className="text-slate-700 dark:text-slate-300">AI is excellent for daily practice and instant feedback, but does not fully replace experienced teachers. The best approach for most learners is combining AI with human guidance, especially at advanced levels.</p>
+            </div>
+            <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg">
+              <h3 className="font-semibold text-lg text-slate-900 dark:text-slate-100 mb-2">Can ChatGPT help with IELTS and TOEFL preparation?</h3>
+              <p className="text-slate-700 dark:text-slate-300">Yes. Tools like OpenAI's ChatGPT can help students practice writing, simulate speaking tests, generate vocabulary exercises, and create study plans. Used correctly, it can be a strong supplement for exam prep.</p>
+            </div>
+            <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg">
+              <h3 className="font-semibold text-lg text-slate-900 dark:text-slate-100 mb-2">How can beginners use AI to learn English faster?</h3>
+              <p className="text-slate-700 dark:text-slate-300">Beginners can use AI to practice conversations, correct grammar mistakes, learn vocabulary in context, improve pronunciation, and follow personalized study routines. This makes English learning more interactive and accessible.</p>
+            </div>
+            <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg">
+              <h3 className="font-semibold text-lg text-slate-900 dark:text-slate-100 mb-2">Does Google value AI-related education content?</h3>
+              <p className="text-slate-700 dark:text-slate-300">Yes, especially when content provides original insights, practical advice, and demonstrates expertise. High-quality educational content about AI in learning can perform well in search and in AI-generated answers.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* People Also Ask */}
+        <ArticleHeading>People Also Ask</ArticleHeading>
+
+        <BulletList items={[
+          'Can AI help with IELTS speaking?',
+          'What are the best AI tools for TOEFL preparation?',
+          'Is AI good for IELTS writing practice?',
+          'Can ChatGPT improve English test scores?',
+          'How do students use AI to study English faster?'
+        ]} />
+
+        <ArticleParagraph>
+          These questions are shaping the future of language learning, and that future is already here.
+        </ArticleParagraph>
+
+        {/* Related */}
+        <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-600 p-6 my-8 rounded">
+          <h3 className="font-bold text-lg mb-3 text-blue-900 dark:text-blue-200">Continue Learning</h3>
+          <ArticleParagraph>
+            For more IELTS and TOEFL preparation guides, explore these resources on TypoGrammar:
+          </ArticleParagraph>
+          <BulletList items={[
+            <><Link to="/blog/ielts-writing-task-2-grammar-guide-band-8/" className="text-blue-600 hover:underline dark:text-blue-400">IELTS Writing Task 2 Grammar Guide (Band 8)</Link> - Master complex sentence structures</>,
+            <><Link to="/blog/ielts-speaking-high-band-answers/" className="text-blue-600 hover:underline dark:text-blue-400">IELTS Speaking High Band Answers</Link> - Real examples for Parts 1, 2, and 3</>,
+            <><Link to="/blog/15-most-common-toefl-ibt-mistakes-with-examples/" className="text-blue-600 hover:underline dark:text-blue-400">15 Most Common TOEFL iBT Mistakes</Link> - Avoid score-killing errors</>,
+            <><Link to="/blog/new-toefl-scoring-system-2026/" className="text-blue-600 hover:underline dark:text-blue-400">New TOEFL Scoring System 2026</Link> - Understand the latest format</>,
+            <><Link to="/blog/ielts-vs-toefl-which-test-easier-better-2026/" className="text-blue-600 hover:underline dark:text-blue-400">IELTS vs TOEFL: Which Test Is Better in 2026?</Link> - Compare both exams</>,
+            <><Link to="/blog/grammatical-range-and-accuracy-ielts/" className="text-blue-600 hover:underline dark:text-blue-400">Grammatical Range and Accuracy in IELTS</Link> - Boost your writing band</>
+          ]} />
+        </div>
+      </>
+    )
+  },
+  // --- VIRAL / TRENDING --------------------------------------------------------
+  {
+    slug: 'native-speakers-2x-speed-real-life',
+    title: 'When Native Speakers Hit 2x Speed in Real Life: Why Fast English Is So Hard (And How to Keep Up)',
+    author: 'TypoGrammar Editorial Team',
+    date: 'April 18, 2026',
+    summary: 'A viral Reddit post captured what every English learner feels: native speakers sound like 2x speed audio in real life. Discover the science behind fast native speech, why your brain struggles, and 10 proven techniques to finally understand rapid English.',
+    category: 'Listening & Speaking',
+    image: '/images/blog/native-speakers-2x-speed-real-life.png',
+    imageAlt: 'Illustration of a language learner overwhelmed by rapid native English speech, symbolizing the 2x speed effect of real-life conversations',
+    schemaMarkup: {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why do native English speakers talk so fast?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Native speakers use connected speech features (including reduction, elision, assimilation, and linking) that merge words together. This makes speech sound extremely fast to learners, even when it is spoken at a normal rate (around 120�180 words per minute in casual conversation)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How fast do native English speakers talk on average?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Native English speakers average 120�180 words per minute in casual conversation. In emotional or excited contexts, this can exceed 200 words per minute. By comparison, ESL learners often speak at 80�100 words per minute, which is why native speech sounds like 2x speed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I understand fast English speakers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The most effective methods are: (1) Train with authentic listening material at normal speed. (2) Study connected speech features like reduction and linking. (3) Shadow native speakers. (4) Use dictation exercises. (5) Watch TV shows and podcasts without subtitles first. Research shows that consistent exposure to real-speed input is more effective than slowing it down."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do native speakers speak differently in real life compared to textbooks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, significantly. Textbooks and formal English classes teach slow, clear speech. In real life, native speakers drop syllables, reduce vowels, link words together, and use informal contractions like 'gonna', 'wanna', and 'coulda'. This gap between classroom English and real-world English is the core reason learners feel overwhelmed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it normal to struggle with native speaker speed as an English learner?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Even advanced English learners with B2�C1 level grammar and vocabulary struggle with listening speed. This is a known phenomenon called the 'listening gap': the difference between reading comprehension and listening comprehension. It is normal and fixable with targeted listening practice."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are connected speech features in English?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Connected speech features are the ways sounds change in fast, natural speech. The main features are: (1) Linking: connecting the end of one word to the start of the next (e.g., 'an apple' sounds like 'anapple'). (2) Elision: dropping sounds (e.g., 'next day' becomes 'nex day'). (3) Assimilation: sounds change to match neighboring sounds (e.g., 'ten minutes' becomes 'tem minutes'). (4) Reduction: unstressed vowels become a schwa sound (e.g., 'can' becomes 'c?n')."
+          }
+        }
+      ]
+    },
+    content: (
+      <>
+        {/* Quick Answer / Featured Snippet Box */}
+        <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6 my-6 rounded-r-lg">
+          <h2 className="text-lg font-semibold mb-2 text-blue-900 dark:text-blue-200">Quick Answer</h2>
+          <p className="text-blue-800 dark:text-blue-300">
+            If you have ever asked yourself <em>why English sounds fast</em> or <em>why native English speakers talk fast</em>, you are in the right place. The answer comes down to <strong>connected speech in English</strong>: native speakers reduce, link, and drop sounds in ways that textbook English never teaches. Understanding fast English is a learnable skill, not a talent. And it has nothing to do with your intelligence or language level.
+          </p>
+        </div>
+
+        {/* Table of Contents */}
+        <nav className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg p-6 my-8">
+          <h2 className="text-lg font-semibold mb-4 text-slate-800 dark:text-slate-200">?? Table of Contents</h2>
+          <ul className="space-y-2 text-blue-600 dark:text-blue-400 text-sm">
+            <li><a href="#why-fast" className="hover:underline">? Why Do Native English Speakers Talk Fast?</a></li>
+            <li><a href="#science" className="hover:underline">? The Science: How Fast Do Native Speakers Actually Talk?</a></li>
+            <li><a href="#connected-speech" className="hover:underline">? Connected Speech: The Hidden Engine of Fast English</a></li>
+            <li><a href="#reddit-discussion" className="hover:underline">? Real People Talking About This (Viral Reddit Post)</a></li>
+            <li><a href="#why-brain-struggles" className="hover:underline">? Why Your Brain Struggles with Fast English</a></li>
+            <li><a href="#techniques" className="hover:underline">? 10 Proven Techniques to Understand Fast Native Speech</a></li>
+            <li><a href="#resources" className="hover:underline">? Best Resources to Train Your Ear</a></li>
+            <li><a href="#faq" className="hover:underline">? Frequently Asked Questions</a></li>
+            <li><a href="#quiz" className="hover:underline">? Test Yourself: Quick Quiz</a></li>
+          </ul>
+        </nav>
+
+        {/* Section 1: Why Fast */}
+        <section id="why-fast">
+          <ArticleHeading>Why Do Native English Speakers Talk Fast? Spoken vs Textbook English</ArticleHeading>
+
+          <ArticleParagraph>
+            If you have ever watched a Hollywood film without subtitles, listened to a native English podcast, or tried to follow a conversation between two Americans or British friends, you have probably felt it: <strong>they are speaking at double speed.</strong>
+          </ArticleParagraph>
+
+          <ArticleParagraph>
+            You studied English for years. You can read a news article with ease. You can write an email. But the moment real native speech reaches your ears, it sounds like a completely different language.
+          </ArticleParagraph>
+
+          <ArticleParagraph>
+            You are not imagining it. And you are not behind. There is a very specific linguistic reason for this experience. It has a name: <strong>connected speech.</strong>
+          </ArticleParagraph>
+
+          <div className="bg-teal-50 dark:bg-teal-900/20 border-l-4 border-teal-500 p-5 my-6 rounded-r-lg">
+            <p className="text-teal-800 dark:text-teal-300 font-medium">
+              ?? <strong>Spoken vs textbook English:</strong> the English you learned in school was designed for clarity and instruction. Spoken English in real life was designed for speed and efficiency. These are two entirely different systems, and most learners are only taught one of them.
+            </p>
+          </div>
+        </section>
+
+        {/* Section 2: Science */}
+        <section id="science">
+          <ArticleHeading>The Science: How Fast Do Native Speakers Actually Talk?</ArticleHeading>
+
+          <ArticleParagraph>
+            Research in speech science gives us concrete numbers. Here is what the data shows:
+          </ArticleParagraph>
+
+          <div className="overflow-x-auto my-6">
+            <table className="w-full border-collapse text-sm">
+              <thead>
+                <tr className="bg-slate-700 text-white">
+                  <th className="p-3 text-left">Context</th>
+                  <th className="p-3 text-left">Average Speed (WPM)</th>
+                  <th className="p-3 text-left">What It Feels Like</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-200 dark:divide-slate-700">
+                <tr className="bg-white dark:bg-slate-800">
+                  <td className="p-3 font-medium text-slate-700 dark:text-slate-300">ESL Classroom English</td>
+                  <td className="p-3 text-slate-600 dark:text-slate-400">90�110 WPM</td>
+                  <td className="p-3 text-green-600 dark:text-green-400">Clear and manageable</td>
+                </tr>
+                <tr className="bg-slate-50 dark:bg-slate-700/50">
+                  <td className="p-3 font-medium text-slate-700 dark:text-slate-300">Formal presentation / news</td>
+                  <td className="p-3 text-slate-600 dark:text-slate-400">120�150 WPM</td>
+                  <td className="p-3 text-yellow-600 dark:text-yellow-400">Slightly fast</td>
+                </tr>
+                <tr className="bg-white dark:bg-slate-800">
+                  <td className="p-3 font-medium text-slate-700 dark:text-slate-300">Native casual conversation</td>
+                  <td className="p-3 text-slate-600 dark:text-slate-400">150�180 WPM</td>
+                  <td className="p-3 text-teal-600 dark:text-teal-400">Hard to follow</td>
+                </tr>
+                <tr className="bg-slate-50 dark:bg-slate-700/50">
+                  <td className="p-3 font-medium text-slate-700 dark:text-slate-300">Excited / emotional speech</td>
+                  <td className="p-3 text-slate-600 dark:text-slate-400">180�220+ WPM</td>
+                  <td className="p-3 text-red-600 dark:text-red-400">Sounds like gibberish</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <ArticleParagraph>
+            But raw speed is only part of the story. Even at 150 WPM, native speakers are understandable, <em>if you know how to listen for their speech patterns.</em> The real barrier is not speed. It is <strong>how sounds change</strong> when spoken at natural pace.
+          </ArticleParagraph>
+        </section>
+
+        {/* Section 3: Connected Speech */}
+        <section id="connected-speech">
+          <ArticleHeading>Connected Speech in English: The Hidden Engine of Fast Speech</ArticleHeading>
+
+          <ArticleParagraph>
+            <strong>Connected speech in English</strong> is the real reason why native speakers sound so fast. When they talk at a normal pace, they do not pronounce every word clearly and separately. Instead, they use a set of automatic sound changes that merge words together. These patterns are never taught in traditional grammar classes, but they are the single biggest key to understanding fast English in real conversations.
+          </ArticleParagraph>
+
+          <div className="grid md:grid-cols-2 gap-5 my-6">
+            <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 p-5 rounded-lg">
+              <h3 className="font-bold text-blue-900 dark:text-blue-200 mb-3">1. Linking (catenation)</h3>
+              <p className="text-blue-800 dark:text-blue-300 text-sm mb-2">The end of one word connects to the start of the next.</p>
+              <div className="bg-white dark:bg-slate-800 p-3 rounded text-sm font-mono">
+                <p className="text-slate-500 dark:text-slate-400">Written: <em>an apple</em></p>
+                <p className="text-blue-600 dark:text-blue-400">Heard: <strong>"anapple"</strong></p>
+              </div>
+            </div>
+
+            <div className="bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-800 p-5 rounded-lg">
+              <h3 className="font-bold text-purple-900 dark:text-purple-200 mb-3">2. Elision (sound dropping)</h3>
+              <p className="text-purple-800 dark:text-purple-300 text-sm mb-2">Sounds (especially /t/ and /d/) disappear entirely.</p>
+              <div className="bg-white dark:bg-slate-800 p-3 rounded text-sm font-mono">
+                <p className="text-slate-500 dark:text-slate-400">Written: <em>next door</em></p>
+                <p className="text-purple-600 dark:text-purple-400">Heard: <strong>"nex door"</strong></p>
+              </div>
+            </div>
+
+            <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 p-5 rounded-lg">
+              <h3 className="font-bold text-green-900 dark:text-green-200 mb-3">3. Reduction (weak forms)</h3>
+              <p className="text-green-800 dark:text-green-300 text-sm mb-2">Short grammatical words lose their full vowel and become a schwa (?).</p>
+              <div className="bg-white dark:bg-slate-800 p-3 rounded text-sm font-mono">
+                <p className="text-slate-500 dark:text-slate-400">Written: <em>I can do it</em></p>
+                <p className="text-green-600 dark:text-green-400">Heard: <strong>"I c?n do it"</strong></p>
+              </div>
+            </div>
+
+            <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-800 p-5 rounded-lg">
+              <h3 className="font-bold text-teal-900 dark:text-teal-200 mb-3">4. Assimilation (sound merging)</h3>
+              <p className="text-teal-800 dark:text-teal-300 text-sm mb-2">A sound changes to match the sound next to it.</p>
+              <div className="bg-white dark:bg-slate-800 p-3 rounded text-sm font-mono">
+                <p className="text-slate-500 dark:text-slate-400">Written: <em>ten minutes</em></p>
+                <p className="text-teal-600 dark:text-teal-400">Heard: <strong>"tem minutes"</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-slate-100 dark:bg-slate-800 p-5 rounded-lg my-6">
+            <h3 className="font-bold text-slate-800 dark:text-slate-200 mb-3">?? Real Example: "Did you eat yet?"</h3>
+            <p className="text-slate-600 dark:text-slate-400 text-sm mb-2">Written form: <em>Did you eat yet?</em></p>
+            <p className="text-slate-800 dark:text-slate-200 font-semibold">How it actually sounds: <strong>"Didja eat yet?"</strong></p>
+            <p className="text-slate-500 dark:text-slate-400 text-sm mt-2">The "d" and "you" merge ? "didja". This is not slang. It is standard casual American English.</p>
+          </div>
+        </section>
+
+        {/* Section 4: Reddit Discussion */}
+        <section id="reddit-discussion">
+          <ArticleHeading>?? Real People Talking About This</ArticleHeading>
+
+          <ArticleParagraph>
+            This is not just a linguistic theory. It is a lived experience shared by millions of English learners around the world. A recent post in the Reddit community r/ENGLISH went viral because it perfectly captured this frustration:
+          </ArticleParagraph>
+
+          <RedditEmbed
+            postUrl="https://www.reddit.com/r/ENGLISH/comments/1sfh8u0/when_native_english_speakers_hit_2x_speed_in_real/"
+            postTitle="When native English speakers hit 2x speed in real life ??"
+            username="Main_Island_1380"
+            subreddit="ENGLISH"
+            height={316}
+          />
+
+          <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 p-5 my-6 rounded-lg">
+            <p className="text-green-800 dark:text-green-300 text-lg">
+              This viral Reddit discussion shows that <strong>even native speakers are aware of how fast they talk in real life</strong>, and English learners at all levels share this exact frustration.
+            </p>
+          </div>
+
+          <ArticleParagraph>
+            The responses in that thread reveal something important: the problem is <em>universal</em>. Arabic learners, Spanish learners, Korean learners, Japanese learners. They all describe the same thing. Fast English feels like a completely different language from the one they studied.
+          </ArticleParagraph>
+
+          <ArticleParagraph>
+            And the solution is the same for all of them: <strong>you need to train for real-speed English</strong>, not just study grammar rules.
+          </ArticleParagraph>
+        </section>
+
+        {/* Section 5: Why Brain Struggles */}
+        <section id="why-brain-struggles">
+          <ArticleHeading>Why Your Brain Struggles with Fast English</ArticleHeading>
+
+          <ArticleParagraph>
+            There is a well-documented concept in applied linguistics called the <strong>"listening gap"</strong>: the difference between a learner's reading ability and their listening ability in English. Most intermediate learners have a significant gap: they can read at B2 level but listen at A2�B1 level.
+          </ArticleParagraph>
+
+          <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 p-6 rounded-lg my-6">
+            <h3 className="font-bold text-slate-800 dark:text-slate-200 mb-4">Why the listening gap exists:</h3>
+            <BulletList items={[
+              <><strong>Phonological decoding speed:</strong> Your brain needs time to convert sounds into words. Native speakers produce sounds faster than your brain has been trained to decode them.</>,
+              <><strong>Lexical access latency:</strong> Even words you know well take longer to recognize in speech than in text, because you must identify them from an audio stream, not a visual pattern.</>,
+              <><strong>Working memory load:</strong> While decoding the current sentence, you must also hold the previous sentence in memory. Fast speech overloads this system.</>,
+              <><strong>Reduced phoneme exposure:</strong> Most ESL learners were never exposed to connected speech systematically. Your brain literally has not learned to map reduced sounds to their full word forms.</>
+            ]} />
+          </div>
+
+          <ArticleParagraph>
+            The good news: the brain is highly adaptable. With the right type of practice, these gaps close, sometimes quickly.
+          </ArticleParagraph>
+        </section>
+
+        {/* Section 6: Techniques */}
+        <section id="techniques">
+          <ArticleHeading>10 Proven Techniques to Understand Fast Native Speech</ArticleHeading>
+
+          {/* Technique 1 */}
+          <div className="bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg p-5 my-5 shadow-sm">
+            <div className="flex items-start gap-4">
+              <span className="text-3xl font-extrabold text-blue-300 dark:text-blue-700 leading-none">01</span>
+              <div>
+                <h3 className="font-bold text-lg text-slate-800 dark:text-slate-200 mb-1">Listen at Full Speed (Resist the Urge to Slow Down)</h3>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">Slowing audio to 0.75x trains your brain for slow audio. Native speech is never slow. Push yourself to listen at full speed, even if you miss things. Your brain adapts faster with real-speed input.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Technique 2 */}
+          <div className="bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg p-5 my-5 shadow-sm">
+            <div className="flex items-start gap-4">
+              <span className="text-3xl font-extrabold text-blue-300 dark:text-blue-700 leading-none">02</span>
+              <div>
+                <h3 className="font-bold text-lg text-slate-800 dark:text-slate-200 mb-1">Study Connected Speech Features Explicitly</h3>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">Learn the four main features: linking, elision, assimilation, and reduction. Once you know that <InlineCode>want to</InlineCode> becomes <InlineCode>wanna</InlineCode> and <InlineCode>going to</InlineCode> becomes <InlineCode>gonna</InlineCode>, you can recognize them instantly in real speech.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Technique 3 */}
+          <div className="bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg p-5 my-5 shadow-sm">
+            <div className="flex items-start gap-4">
+              <span className="text-3xl font-extrabold text-blue-300 dark:text-blue-700 leading-none">03</span>
+              <div>
+                <h3 className="font-bold text-lg text-slate-800 dark:text-slate-200 mb-1">Use the Shadowing Technique</h3>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">Play a 5�10 second clip of a native speaker. Immediately try to repeat exactly what they said, matching their rhythm, speed, and sounds. This builds muscle memory for fast English patterns. Used by professional interpreters and language learners worldwide.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Technique 4 */}
+          <div className="bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg p-5 my-5 shadow-sm">
+            <div className="flex items-start gap-4">
+              <span className="text-3xl font-extrabold text-blue-300 dark:text-blue-700 leading-none">04</span>
+              <div>
+                <h3 className="font-bold text-lg text-slate-800 dark:text-slate-200 mb-1">Dictation Practice</h3>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">Listen to a short clip and write down every word. Then check the transcript. Your mistakes will show you exactly which connected speech features are blocking your comprehension. Fix those specific patterns.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Technique 5 */}
+          <div className="bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg p-5 my-5 shadow-sm">
+            <div className="flex items-start gap-4">
+              <span className="text-3xl font-extrabold text-blue-300 dark:text-blue-700 leading-none">05</span>
+              <div>
+                <h3 className="font-bold text-lg text-slate-800 dark:text-slate-200 mb-1">Watch the Same Content Twice</h3>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">First watch without subtitles (force your brain to work). Then watch with English subtitles, not your native language. This lets you connect what you heard to what was actually said, building sound-to-word mappings.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Technique 6 */}
+          <div className="bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg p-5 my-5 shadow-sm">
+            <div className="flex items-start gap-4">
+              <span className="text-3xl font-extrabold text-blue-300 dark:text-blue-700 leading-none">06</span>
+              <div>
+                <h3 className="font-bold text-lg text-slate-800 dark:text-slate-200 mb-1">Focus on Chunks, Not Individual Words</h3>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">Native speakers do not produce words one by one. They produce <strong>chunks</strong> (fixed phrases). Learn common chunks as single units: <InlineCode>kinda</InlineCode>, <InlineCode>lemme</InlineCode>, <InlineCode>I dunno</InlineCode>, <InlineCode>whaddya mean</InlineCode>. Recognizing chunks is faster than decoding individual words.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Technique 7 */}
+          <div className="bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg p-5 my-5 shadow-sm">
+            <div className="flex items-start gap-4">
+              <span className="text-3xl font-extrabold text-blue-300 dark:text-blue-700 leading-none">07</span>
+              <div>
+                <h3 className="font-bold text-lg text-slate-800 dark:text-slate-200 mb-1">Consume Topic-Specific Content</h3>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">When you know the subject, your brain uses <strong>top-down processing</strong>: predicting words before they are fully spoken. Choose listening content in topics you know well (sports, cooking, tech) and the fast speech will feel slower immediately.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Technique 8 */}
+          <div className="bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg p-5 my-5 shadow-sm">
+            <div className="flex items-start gap-4">
+              <span className="text-3xl font-extrabold text-blue-300 dark:text-blue-700 leading-none">08</span>
+              <div>
+                <h3 className="font-bold text-lg text-slate-800 dark:text-slate-200 mb-1">Daily Minimal Pairs Drilling</h3>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">Minimal pairs are word pairs that differ by one sound: <InlineCode>ship / sheep</InlineCode>, <InlineCode>bit / beat</InlineCode>, <InlineCode>can / can't</InlineCode>. Drilling these trains your ear to detect subtle sound differences, the same ones native speakers use at high speed.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Technique 9 */}
+          <div className="bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg p-5 my-5 shadow-sm">
+            <div className="flex items-start gap-4">
+              <span className="text-3xl font-extrabold text-blue-300 dark:text-blue-700 leading-none">09</span>
+              <div>
+                <h3 className="font-bold text-lg text-slate-800 dark:text-slate-200 mb-1">Use Authentic Podcast + Transcript Pairing</h3>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">Podcasts like <em>NPR Podcast</em>, <em>BBC 6 Minute English</em>, <em>All Ears English</em>, and <em>Luke's English Podcast</em> provide transcripts. Read the transcript first, then listen. This activates your knowledge of the content while still training real-speed listening.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Technique 10 */}
+          <div className="bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg p-5 my-5 shadow-sm">
+            <div className="flex items-start gap-4">
+              <span className="text-3xl font-extrabold text-blue-300 dark:text-blue-700 leading-none">10</span>
+              <div>
+                <h3 className="font-bold text-lg text-slate-800 dark:text-slate-200 mb-1">Daily 20-Minute Listening Sessions (Consistency Over Volume)</h3>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">Research in second language acquisition consistently shows that <strong>daily short sessions outperform occasional long sessions</strong>. Twenty minutes of focused listening every day produces faster gains than a 3-hour session once a week.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 7: Resources */}
+        <section id="resources">
+          <ArticleHeading>Best Resources to Train Your Ear for Real-Speed English</ArticleHeading>
+
+          <div className="grid md:grid-cols-2 gap-5 my-6">
+            <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 p-5 rounded-lg">
+              <h3 className="font-bold text-slate-800 dark:text-slate-200 mb-3">??? Podcasts</h3>
+              <BulletList items={[
+                <><strong>All Ears English</strong>: Conversational American English with connected speech focus</>,
+                <><strong>Luke's English Podcast</strong>: British English, very natural speed</>,
+                <><strong>BBC 6 Minute English</strong>: Real topics, transcript available</>,
+                <><strong>Culips ESL Podcast</strong>: Specifically designed for listening at natural speed</>
+              ]} />
+            </div>
+            <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 p-5 rounded-lg">
+              <h3 className="font-bold text-slate-800 dark:text-slate-200 mb-3">?? Video Resources</h3>
+              <BulletList items={[
+                <><strong>Rachel's English (YouTube)</strong>: The best channel for connected speech and American pronunciation</>,
+                <><strong>English with Lucy (YouTube)</strong>: British English, natural conversational pace</>,
+                <><strong>TED Talks</strong>: Authentic fast speech by native speakers on diverse topics</>,
+                <><strong>TV shows (with English subtitles)</strong>: Friends, The Office, Modern Family with natural casual speech</>
+              ]} />
+            </div>
+          </div>
+
+          <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 p-5 rounded-lg my-6">
+            <h3 className="font-bold text-blue-900 dark:text-blue-200 mb-3">?? The Key Principle</h3>
+            <ArticleParagraph>
+              Every resource you choose should expose you to <strong>natural, unscripted or lightly scripted native speech</strong>. Avoid resources that slow down or over-enunciate for learners, as they train the wrong skill. Your goal is to decode real-speed English, not classroom English.
+            </ArticleParagraph>
+          </div>
+
+          <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-5 my-6 rounded-r-lg">
+            <p className="text-green-800 dark:text-green-300">
+              ?? <strong>Related:</strong>{' '}
+              <Link to="/pronunciation-of-ed/" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
+                How to Pronounce -ED Endings in English (Past Tense Pronunciation Guide)
+              </Link>
+            </p>
+          </div>
+        </section>
+
+        {/* Section 8: FAQ */}
+        <section id="faq">
+          <ArticleHeading>Frequently Asked Questions</ArticleHeading>
+
+          <div className="space-y-5 my-6">
+            <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 p-5 rounded-lg">
+              <h3 className="font-bold text-slate-800 dark:text-slate-200 mb-2">Why do native English speakers sound so fast?</h3>
+              <p className="text-slate-600 dark:text-slate-400">Because of <strong>connected speech</strong>: they link, reduce, drop, and merge sounds in ways that make words blend together. Learners who only studied written English have never been trained to decode these patterns.</p>
+            </div>
+
+            <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 p-5 rounded-lg">
+              <h3 className="font-bold text-slate-800 dark:text-slate-200 mb-2">Is it my fault that I can't understand fast English?</h3>
+              <p className="text-slate-600 dark:text-slate-400">No. Most English teaching programs worldwide focus on grammar and vocabulary, not on listening to natural speech. The gap between classroom English and real English is a <strong>curriculum gap</strong>, not a talent gap.</p>
+            </div>
+
+            <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 p-5 rounded-lg">
+              <h3 className="font-bold text-slate-800 dark:text-slate-200 mb-2">How long does it take to understand fast native speakers?</h3>
+              <p className="text-slate-600 dark:text-slate-400">With consistent daily practice (20�30 minutes), most B1�B2 learners report significant improvement in <strong>4 to 8 weeks</strong>. The first improvements usually come in recognizing common chunks and high-frequency reduced forms like <InlineCode>gonna</InlineCode>, <InlineCode>wanna</InlineCode>, and <InlineCode>hafta</InlineCode>.</p>
+            </div>
+
+            <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 p-5 rounded-lg">
+              <h3 className="font-bold text-slate-800 dark:text-slate-200 mb-2">Do native speakers notice when they're speaking too fast?</h3>
+              <p className="text-slate-600 dark:text-slate-400">Mostly no. Fast connected speech is automatic and unconscious for native speakers. It is not a choice or a sign of rudeness. They literally cannot hear themselves doing it. The viral Reddit post mentioned above shows that many native speakers are surprised when learners describe this experience.</p>
+            </div>
+
+            <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 p-5 rounded-lg">
+              <h3 className="font-bold text-slate-800 dark:text-slate-200 mb-2">Is American English faster than British English?</h3>
+              <p className="text-slate-600 dark:text-slate-400">Studies show American English is marginally faster in casual conversation (~160 WPM average) compared to RP British English (~145 WPM). However, the bigger difference is connected speech patterns: American English uses more vowel reduction and flapping, while British English has more elision. Both can feel equally fast to non-native ears.</p>
+            </div>
+
+            <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 p-5 rounded-lg">
+              <h3 className="font-bold text-slate-800 dark:text-slate-200 mb-2">Should I slow down English audio to practice?</h3>
+              <p className="text-slate-600 dark:text-slate-400">Not as a long-term strategy. Occasional use at 0.8�0.9x speed to decode a specific unclear phrase is fine. But regularly training at 0.75x or below teaches your brain to listen at that speed. <strong>You should train at the speed you want to understand.</strong></p>
+            </div>
+          </div>
+        </section>
+
+        {/* Quiz */}
+        <section id="quiz">
+          <ArticleHeading>Test Yourself: Understanding Fast English</ArticleHeading>
+          <ArticleParagraph>
+            Now that you know why English sounds fast and how connected speech in English works, test your knowledge with this quick 5-question quiz.
+          </ArticleParagraph>
+          <BlogQuiz
+            title="Connected Speech & Fast English Quiz"
+            questions={[
+              {
+                question: 'What is the main reason why native English speakers talk fast and sound hard to understand?',
+                options: [
+                  'They deliberately speak faster to confuse learners',
+                  'They use connected speech features that merge, reduce, and drop sounds',
+                  'They use more words per sentence than textbook English',
+                  'They only speak clearly in formal situations',
+                ],
+                correct: 1,
+                explanation: 'Connected speech in English (linking, elision, reduction, assimilation) makes words blend together and is the core reason spoken English sounds so different from textbook English.',
+              },
+              {
+                question: 'How does "want to" typically sound in fast, natural spoken English?',
+                options: ['want to (clearly pronounced)', 'wanna', 'wants to', 'want'],
+                correct: 1,
+                explanation: '"Want to" reduces to "wanna" in everyday spoken English. This is a classic example of the spoken vs textbook English gap that trips up most learners.',
+              },
+              {
+                question: 'What is "elision" in connected speech English?',
+                options: [
+                  'Linking the end of one word to the start of the next',
+                  'Speeding up vowel sounds',
+                  'Dropping sounds completely (e.g., /t/ disappearing in "next door")',
+                  'Replacing a word with a synonym',
+                ],
+                correct: 2,
+                explanation: 'Elision means dropping a sound entirely. For example, "next door" becomes "nex door" in fast speech because the /t/ is elided. This is one of the biggest challenges in understanding fast English.',
+              },
+              {
+                question: 'What is the "listening gap" in language learning?',
+                options: [
+                  'The silence between sentences in fast speech',
+                  'The difference between a learner\'s reading level and their listening level in English',
+                  'The time it takes to translate from your native language',
+                  'The gap between American and British English pronunciation',
+                ],
+                correct: 1,
+                explanation: 'The listening gap is the well-documented difference between how well learners read English and how well they understand spoken English at native speed. Most intermediate learners read at B2 but listen at A2-B1.',
+              },
+              {
+                question: 'What is the best long-term strategy for understanding fast English?',
+                options: [
+                  'Always slow audio down to 0.75x speed when practicing',
+                  'Avoid native speaker content until you reach advanced level',
+                  'Train consistently with full-speed authentic input and study connected speech patterns',
+                  'Focus entirely on grammar rules before doing any listening practice',
+                ],
+                correct: 2,
+                explanation: 'Slowing audio down trains your brain for slow audio, not real speech. The most effective approach is consistent exposure to full-speed authentic input combined with explicit study of connected speech in English.',
+              },
+            ]}
+          />
+        </section>
+
+        {/* Conclusion */}
+        <div className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-slate-800 dark:to-slate-700 border border-blue-200 dark:border-blue-800 rounded-xl p-7 my-8">
+          <h2 className="text-xl font-bold text-slate-800 dark:text-slate-100 mb-3">Final Takeaway</h2>
+          <ArticleParagraph>
+            When native English speakers hit 2x speed in real life, they are not being unclear. They are being <em>natural</em>. The sounds they produce follow consistent rules (connected speech features) that you can learn, recognize, and eventually internalize.
+          </ArticleParagraph>
+          <ArticleParagraph>
+            The path forward is simple: stop avoiding fast English and start training for it. Every podcast episode, every TV scene, every shadowing session builds the neural pathways your brain needs to decode native speech in real time.
+          </ArticleParagraph>
+          <p className="text-slate-700 dark:text-slate-300 text-base font-medium mt-2">
+            The 2x speed feeling does not last forever. With the right practice, it becomes normal speed.
+          </p>
+        </div>
+
+        {/* Internal Links */}
+        <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg p-5 my-6">
+          <h3 className="font-bold text-slate-800 dark:text-slate-200 mb-3">?? Continue Learning</h3>
+          <ul className="space-y-2 text-sm">
+            <li><Link to="/pronunciation-of-ed/" className="text-blue-600 dark:text-blue-400 hover:underline">? How to Pronounce -ED Endings (Pronunciation Guide)</Link></li>
+            <li><Link to="/pronunciation/" className="text-blue-600 dark:text-blue-400 hover:underline">? English Pronunciation Guide</Link></li>
+            <li><Link to="/blog/common-grammar-mistakes-non-native-speakers/" className="text-blue-600 dark:text-blue-400 hover:underline">? Common Grammar Mistakes Non-Native Speakers Make</Link></li>
+            <li><Link to="/blog/phrasal-verbs-native-speaker/" className="text-blue-600 dark:text-blue-400 hover:underline">? Phrasal Verbs Native Speakers Actually Use</Link></li>
+          </ul>
+        </div>
+      </>
+    ),
+  },
+  // -----------------------------------------------------------------------------
   {
     slug: 'common-grammar-mistakes-in-english',
     title: '50 Common Grammar Mistakes in English (With Examples and Corrections)',
@@ -66,9 +3327,9 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on <a href="https://www.cambridge.org/elt/corpus" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Cambridge English Corpus</a> research and <a href="https://www.britishcouncil.org/english" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">British Council</a> guidelines.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on <a href="https://www.cambridge.org/elt/corpus" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Cambridge English Corpus</a> research and <a href="https://www.britishcouncil.org/english" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">British Council</a> guidelines.</span>
         </div>
 
         <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6 my-6 rounded-r-lg">
@@ -80,7 +3341,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         {/* Research Statistics Box */}
         <div className="bg-gradient-to-r from-purple-50 to-indigo-50 dark:from-slate-800 dark:to-slate-700 border border-purple-200 dark:border-purple-700 rounded-lg p-5 mb-6">
-          <h4 className="font-bold text-lg text-purple-900 dark:text-purple-200 mb-3">📊 Grammar Error Research: Key Statistics</h4>
+          <h4 className="font-bold text-lg text-purple-900 dark:text-purple-200 mb-3">?? Grammar Error Research: Key Statistics</h4>
           <p className="text-sm text-purple-700 dark:text-purple-300 mb-3">Based on <a href="https://www.cambridge.org/elt/corpus" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Cambridge English Corpus</a> analysis of 20+ million learner texts:</p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
             <div className="bg-white dark:bg-slate-700 rounded-lg p-3">
@@ -132,352 +3393,352 @@ export const BLOG_POSTS: BlogPost[] = [
         {/* Mistake 1 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">1. Your vs You're</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>Your very smart.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>You're very smart.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>Your very smart.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>You're very smart.</em></p>
           <p className="text-slate-600 dark:text-slate-400 mt-2 text-sm"><strong>Explanation:</strong> You're = You are. Your = Possession.</p>
         </div>
 
         {/* Mistake 2 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">2. Their vs There vs They're</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>There house is big.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>Their house is big.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>There house is big.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>Their house is big.</em></p>
         </div>
 
         {/* Mistake 3 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">3. Its vs It's</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>Its raining.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>It's raining.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>Its raining.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>It's raining.</em></p>
         </div>
 
         {/* Mistake 4 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">4. Subject-Verb Agreement</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>She go to school.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>She goes to school.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>She go to school.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>She goes to school.</em></p>
         </div>
 
         {/* Mistake 5 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">5. Using "a" and "an" Incorrectly</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>She is a honest person.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>She is an honest person.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>She is a honest person.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>She is an honest person.</em></p>
         </div>
 
         {/* Mistake 6 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">6. Missing Articles</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>I bought car.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>I bought a car.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>I bought car.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>I bought a car.</em></p>
         </div>
 
         {/* Mistake 7 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">7. Incorrect Plural Form</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>Childs are playing.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>Children are playing.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>Childs are playing.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>Children are playing.</em></p>
         </div>
 
         {/* Mistake 8 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">8. Using "Much" Instead of "Many"</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>Much people came.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>Many people came.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>Much people came.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>Many people came.</em></p>
         </div>
 
         {/* Mistake 9 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">9. Double Negatives</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>I don't know nothing.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>I don't know anything.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>I don't know nothing.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>I don't know anything.</em></p>
         </div>
 
         {/* Mistake 10 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">10. Incorrect Preposition</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>Married with her.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>Married to her.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>Married with her.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>Married to her.</em></p>
         </div>
 
         {/* Mistake 11 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">11. Confusing Then and Than</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>She is taller then him.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>She is taller than him.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>She is taller then him.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>She is taller than him.</em></p>
         </div>
 
         {/* Mistake 12 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">12. Run-on Sentence</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>I woke up I ate breakfast.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>I woke up, and I ate breakfast.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>I woke up I ate breakfast.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>I woke up, and I ate breakfast.</em></p>
         </div>
 
         {/* Mistake 13 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">13. Fragment Sentence</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>Because I was tired.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>I slept early because I was tired.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>Because I was tired.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>I slept early because I was tired.</em></p>
         </div>
 
         {/* Mistake 14 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">14. Incorrect Verb Tense</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>Yesterday I go to school.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>Yesterday I went to school.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>Yesterday I go to school.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>Yesterday I went to school.</em></p>
         </div>
 
         {/* Mistake 15 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">15. Missing Capital Letter</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>i am happy.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>I am happy.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>i am happy.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>I am happy.</em></p>
         </div>
 
         {/* Mistake 16 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">16. Apostrophe Error</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>Dogs are cute's</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>Dogs are cute</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>Dogs are cute's</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>Dogs are cute</em></p>
         </div>
 
         {/* Mistake 17 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">17. Confusing To, Too, and Two</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>I am to tired.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>I am too tired.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>I am to tired.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>I am too tired.</em></p>
         </div>
 
         {/* Mistake 18 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">18. Incorrect Comparative</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>More better</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>Better</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>More better</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>Better</em></p>
         </div>
 
         {/* Mistake 19 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">19. Incorrect Superlative</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>Most fastest</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>Fastest</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>Most fastest</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>Fastest</em></p>
         </div>
 
         {/* Mistake 20 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">20. Using "Me" Instead of "I"</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>Me and John went.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>John and I went.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>Me and John went.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>John and I went.</em></p>
         </div>
 
         {/* Mistake 21 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">21. Using "I" Instead of "Me"</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>She gave it to John and I.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>She gave it to John and me.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>She gave it to John and I.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>She gave it to John and me.</em></p>
         </div>
 
         {/* Mistake 22 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">22. Incorrect Word Order</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>I only eat vegetables sometimes.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>I eat vegetables only sometimes.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>I only eat vegetables sometimes.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>I eat vegetables only sometimes.</em></p>
         </div>
 
         {/* Mistake 23 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">23. Missing Comma</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>Let's eat grandma.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>Let's eat, grandma.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>Let's eat grandma.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>Let's eat, grandma.</em></p>
         </div>
 
         {/* Mistake 24 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">24. Confusing Affect and Effect</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>This will effect you.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>This will affect you.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>This will effect you.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>This will affect you.</em></p>
         </div>
 
         {/* Mistake 25 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">25. Using "Less" Instead of "Fewer"</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>Less people came.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>Fewer people came.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>Less people came.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>Fewer people came.</em></p>
         </div>
 
         {/* Mistake 26 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">26. Incorrect Pronoun Reference</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>John told Mike he is smart.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>John told Mike, "You are smart."</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>John told Mike he is smart.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>John told Mike, "You are smart."</em></p>
         </div>
 
         {/* Mistake 27 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">27. Confusing Who and Whom</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>Who did you call?</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>Whom did you call?</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>Who did you call?</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>Whom did you call?</em></p>
         </div>
 
         {/* Mistake 28 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">28. Incorrect Passive Voice</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>The homework did by me.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>The homework was done by me.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>The homework did by me.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>The homework was done by me.</em></p>
         </div>
 
         {/* Mistake 29 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">29. Using "Very Unique"</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>Very unique</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>Unique</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>Very unique</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>Unique</em></p>
         </div>
 
         {/* Mistake 30 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">30. Incorrect Gerund Use</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>I enjoy to swim.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>I enjoy swimming.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>I enjoy to swim.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>I enjoy swimming.</em></p>
         </div>
 
         {/* Mistake 31 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">31. Confusing Lose and Loose</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>I loose my keys.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>I lose my keys.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>I loose my keys.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>I lose my keys.</em></p>
         </div>
 
         {/* Mistake 32 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">32. Confusing Accept and Except</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>I except your offer.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>I accept your offer.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>I except your offer.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>I accept your offer.</em></p>
         </div>
 
         {/* Mistake 33 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">33. Incorrect Modal Verb</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>He must to go.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>He must go.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>He must to go.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>He must go.</em></p>
         </div>
 
         {/* Mistake 34 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">34. Using "Since" Incorrectly</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>I am here since Monday.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>I have been here since Monday.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>I am here since Monday.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>I have been here since Monday.</em></p>
         </div>
 
         {/* Mistake 35 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">35. Incorrect Conditional</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>If I will see him, I will tell him.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>If I see him, I will tell him.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>If I will see him, I will tell him.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>If I see him, I will tell him.</em></p>
         </div>
 
         {/* Mistake 36 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">36. Confusing Borrow and Lend</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>Borrow me money.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>Lend me money.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>Borrow me money.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>Lend me money.</em></p>
         </div>
 
         {/* Mistake 37 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">37. Incorrect Infinitive</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>I made him to cry.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>I made him cry.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>I made him to cry.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>I made him cry.</em></p>
         </div>
 
         {/* Mistake 38 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">38. Confusing Say and Tell</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>He said me the truth.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>He told me the truth.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>He said me the truth.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>He told me the truth.</em></p>
         </div>
 
         {/* Mistake 39 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">39. Using "People is"</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>People is happy.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>People are happy.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>People is happy.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>People are happy.</em></p>
         </div>
 
         {/* Mistake 40 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">40. Incorrect Question Form</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>You are coming?</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>Are you coming?</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>You are coming?</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>Are you coming?</em></p>
         </div>
 
         {/* Mistake 41 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">41. Incorrect Past Participle</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>I have went.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>I have gone.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>I have went.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>I have gone.</em></p>
         </div>
 
         {/* Mistake 42 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">42. Confusing Advice and Advise</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>He adviced me.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>He advised me.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>He adviced me.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>He advised me.</em></p>
         </div>
 
         {/* Mistake 43 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">43. Incorrect Countable Use</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>Informations</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>Information</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>Informations</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>Information</em></p>
         </div>
 
         {/* Mistake 44 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">44. Using "He Don't"</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>He don't like it.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>He doesn't like it.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>He don't like it.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>He doesn't like it.</em></p>
         </div>
 
         {/* Mistake 45 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">45. Incorrect Reflexive Pronoun</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>Myself went.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>I went.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>Myself went.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>I went.</em></p>
         </div>
 
         {/* Mistake 46 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">46. Confusing Make and Do</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>Do a mistake</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>Make a mistake</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>Do a mistake</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>Make a mistake</em></p>
         </div>
 
         {/* Mistake 47 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">47. Incorrect Time Expression</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>Discuss about</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>Discuss</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>Discuss about</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>Discuss</em></p>
         </div>
 
         {/* Mistake 48 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">48. Incorrect Word Form</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>Beauty girl</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>Beautiful girl</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>Beauty girl</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>Beautiful girl</em></p>
         </div>
 
         {/* Mistake 49 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">49. Using "More Easier"</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>More easier</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>Easier</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>More easier</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>Easier</em></p>
         </div>
 
         {/* Mistake 50 */}
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">50. Missing Verb</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>She very smart.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-1">✅ <em>She is very smart.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>She very smart.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-1">? <em>She is very smart.</em></p>
         </div>
 
         {/* Tips */}
@@ -529,15 +3790,15 @@ export const BLOG_POSTS: BlogPost[] = [
         {/* Internal Links */}
         <ArticleHeading>Related Resources</ArticleHeading>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
-          <Link to="/grammar-guide" className="block p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800 hover:border-blue-400 dark:hover:border-blue-600 transition-colors">
+          <Link to="/grammar-guide/" className="block p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800 hover:border-blue-400 dark:hover:border-blue-600 transition-colors">
             <h4 className="font-semibold text-blue-900 dark:text-blue-200 mb-1">Complete English Grammar</h4>
             <p className="text-sm text-blue-700 dark:text-blue-400">Explore the full grammar guide covering all topics and resources.</p>
           </Link>
-          <Link to="/topics/present-simple" className="block p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800 hover:border-green-400 dark:hover:border-green-600 transition-colors">
+          <Link to="/topics/present-simple/" className="block p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800 hover:border-green-400 dark:hover:border-green-600 transition-colors">
             <h4 className="font-semibold text-green-900 dark:text-green-200 mb-1">Verb Tenses Quiz</h4>
             <p className="text-sm text-green-700 dark:text-green-400">Test your knowledge of English verb tenses with interactive quizzes.</p>
           </Link>
-          <Link to="/confused-words" className="block p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800 hover:border-purple-400 dark:hover:border-purple-600 transition-colors">
+          <Link to="/commonly-confused-words/" className="block p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800 hover:border-purple-400 dark:hover:border-purple-600 transition-colors">
             <h4 className="font-semibold text-purple-900 dark:text-purple-200 mb-1">Commonly Confused Words</h4>
             <p className="text-sm text-purple-700 dark:text-purple-400">Master the most commonly confused words in English.</p>
           </Link>
@@ -614,25 +3875,25 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on official <a href="https://www.ielts.org/about-ielts/what-is-ielts/ielts-scoring-in-detail" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">IELTS Band Descriptors</a> and <a href="https://www.britishcouncil.org/exam/ielts" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">British Council</a> examiner guidelines.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on official <a href="https://www.ielts.org/about-ielts/what-is-ielts/ielts-scoring-in-detail" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">IELTS Band Descriptors</a> and <a href="https://www.britishcouncil.org/exam/ielts" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">British Council</a> examiner guidelines.</span>
         </div>
 
         {/* Statistics Box */}
         <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-700 rounded-lg p-4 mb-6">
-          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">🎯 Grammatical Range & Accuracy: Key Facts</h4>
+          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">?? Grammatical Range & Accuracy: Key Facts</h4>
           <ul className="text-sm text-green-700 dark:text-green-300 space-y-1">
-            <li>• Accounts for exactly 25% of IELTS Writing and Speaking scores</li>
-            <li>• Band 7+ requires "a variety of complex structures" with "good control"</li>
-            <li>• Most common errors: subject-verb agreement, articles, and tense consistency</li>
-            <li>• Using only simple sentences typically limits scores to Band 5.5-6.0</li>
+            <li>� Accounts for exactly 25% of IELTS Writing and Speaking scores</li>
+            <li>� Band 7+ requires "a variety of complex structures" with "good control"</li>
+            <li>� Most common errors: subject-verb agreement, articles, and tense consistency</li>
+            <li>� Using only simple sentences typically limits scores to Band 5.5-6.0</li>
           </ul>
         </div>
 
         <div className="mb-8">
           <p className="text-sm text-slate-600 dark:text-slate-400 mb-2">
-            By <Link to="/about/editorial-team" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium">TypoGrammar Editorial Team</Link>
+            By <Link to="/about/editorial-team/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium">TypoGrammar Editorial Team</Link>
           </p>
         </div>
 
@@ -841,15 +4102,15 @@ export const BLOG_POSTS: BlogPost[] = [
           Continue your IELTS preparation with these related guides:
         </ArticleParagraph>
         <div className="grid sm:grid-cols-2 gap-4 my-6">
-          <Link to="/blog/academic-vs-general-ielts-full-comparison" className="block bg-white dark:bg-slate-800 rounded-xl p-5 shadow-md border border-slate-200 dark:border-slate-700 hover:shadow-lg transition-shadow duration-200">
+          <Link to="/blog/academic-vs-general-ielts-full-comparison/" className="block bg-white dark:bg-slate-800 rounded-xl p-5 shadow-md border border-slate-200 dark:border-slate-700 hover:shadow-lg transition-shadow duration-200">
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">Academic vs General IELTS: Full Comparison</h4>
             <p className="text-sm text-slate-500 dark:text-slate-400">Choose the right IELTS test for your goals.</p>
           </Link>
-          <Link to="/blog/ielts-writing-task-1-2-guide-2026" className="block bg-white dark:bg-slate-800 rounded-xl p-5 shadow-md border border-slate-200 dark:border-slate-700 hover:shadow-lg transition-shadow duration-200">
+          <Link to="/blog/ielts-writing-task-1-2-guide-2026/" className="block bg-white dark:bg-slate-800 rounded-xl p-5 shadow-md border border-slate-200 dark:border-slate-700 hover:shadow-lg transition-shadow duration-200">
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">IELTS Writing Task 1 and Task 2 Guide 2026</h4>
             <p className="text-sm text-slate-500 dark:text-slate-400">Structures, samples, and Band 7+ tips.</p>
           </Link>
-          <Link to="/blog/ielts-band-9-synonyms-table-200-words" className="block bg-white dark:bg-slate-800 rounded-xl p-5 shadow-md border border-slate-200 dark:border-slate-700 hover:shadow-lg transition-shadow duration-200">
+          <Link to="/blog/ielts-band-9-synonyms-table-200-words/" className="block bg-white dark:bg-slate-800 rounded-xl p-5 shadow-md border border-slate-200 dark:border-slate-700 hover:shadow-lg transition-shadow duration-200">
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">Ultimate 200 IELTS Writing Band 9 Synonyms Table</h4>
             <p className="text-sm text-slate-500 dark:text-slate-400">Boost lexical resource with high-impact synonyms.</p>
           </Link>
@@ -926,14 +4187,14 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on official <a href="https://www.ielts.org/about-ielts/which-ielts-test" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">IELTS.org</a> and <a href="https://www.idp.com/global/ielts/test-types/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">IDP Education</a> guidelines.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on official <a href="https://www.ielts.org/about-ielts/which-ielts-test" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">IELTS.org</a> and <a href="https://www.idp.com/global/ielts/test-types/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">IDP Education</a> guidelines.</span>
         </div>
 
         {/* Comparison Quick Reference */}
         <div className="bg-gradient-to-r from-emerald-50 to-teal-50 dark:from-slate-800 dark:to-slate-700 border border-emerald-200 dark:border-emerald-700 rounded-lg p-5 mb-6">
-          <h4 className="font-bold text-lg text-emerald-900 dark:text-emerald-200 mb-4">📊 Academic vs General: Quick Comparison</h4>
+          <h4 className="font-bold text-lg text-emerald-900 dark:text-emerald-200 mb-4">?? Academic vs General: Quick Comparison</h4>
           <div className="overflow-x-auto">
             <table className="min-w-full border-collapse text-sm">
               <thead>
@@ -972,7 +4233,7 @@ export const BLOG_POSTS: BlogPost[] = [
         {/* Author Byline */}
         <div className="mb-8">
           <p className="text-sm text-slate-600 dark:text-slate-400 mb-2">
-            By <Link to="/about/editorial-team" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium">TypoGrammar Editorial Team</Link>
+            By <Link to="/about/editorial-team/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium">TypoGrammar Editorial Team</Link>
           </p>
         </div>
 
@@ -1120,8 +4381,8 @@ export const BLOG_POSTS: BlogPost[] = [
           </table>
         </div>
 
-        <div className="bg-orange-50 dark:bg-orange-900/20 border-l-4 border-orange-400 p-4 my-6 rounded-r-lg">
-          <p className="text-orange-800 dark:text-orange-300">
+        <div className="bg-teal-50 dark:bg-teal-900/20 border-l-4 border-teal-400 p-4 my-6 rounded-r-lg">
+          <p className="text-teal-800 dark:text-teal-300">
             <strong>Note:</strong> Many test-takers find Academic Writing Task 1 more challenging due to data interpretation.
           </p>
         </div>
@@ -1133,8 +4394,8 @@ export const BLOG_POSTS: BlogPost[] = [
           <strong>Academic Reading</strong> is generally more complex, uses more technical vocabulary, and is more time-pressured. <strong>General Reading</strong> features easier vocabulary, real-life materials, and faster scanning tasks.
         </ArticleParagraph>
 
-        <div className="bg-orange-50 dark:bg-orange-900/20 border-l-4 border-orange-400 p-4 my-6 rounded-r-lg">
-          <p className="text-orange-800 dark:text-orange-300">
+        <div className="bg-teal-50 dark:bg-teal-900/20 border-l-4 border-teal-400 p-4 my-6 rounded-r-lg">
+          <p className="text-teal-800 dark:text-teal-300">
             <strong>Important:</strong> Scoring conversion is different. Academic requires slightly more correct answers for the same band score.
           </p>
         </div>
@@ -1143,7 +4404,7 @@ export const BLOG_POSTS: BlogPost[] = [
         <ArticleHeading>IELTS Scoring: Is There a Difference?</ArticleHeading>
 
         <ArticleParagraph>
-          Both tests use the same <strong>9-band scoring system</strong>, Listening format, and Speaking structure. The band score range is 0–9.
+          Both tests use the same <strong>9-band scoring system</strong>, Listening format, and Speaking structure. The band score range is 0�9.
         </ArticleParagraph>
 
         <div className="overflow-x-auto my-8">
@@ -1172,7 +4433,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         <ArticleParagraph>
-          Universities often require <strong>6.0–7.5 overall</strong> (Academic). Immigration typically requires <strong>6.0–7.0</strong> (General).
+          Universities often require <strong>6.0�7.5 overall</strong> (Academic). Immigration typically requires <strong>6.0�7.0</strong> (General).
         </ArticleParagraph>
 
         {/* ===== WHICH TEST ===== */}
@@ -1199,7 +4460,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-400 p-4 my-6 rounded-r-lg">
           <p className="text-red-800 dark:text-red-300">
-            <strong>⚠ Warning:</strong> Always check the official website of the institution or immigration authority before booking your test.
+            <strong>? Warning:</strong> Always check the official website of the institution or immigration authority before booking your test.
           </p>
         </div>
 
@@ -1274,27 +4535,27 @@ export const BLOG_POSTS: BlogPost[] = [
         </ArticleParagraph>
 
         <div className="grid sm:grid-cols-2 gap-4 my-6">
-          <Link to="/blog/ielts-vs-toefl-which-test-easier-better-2026" className="block bg-white dark:bg-slate-800 rounded-xl p-5 shadow-md border border-slate-200 dark:border-slate-700 hover:shadow-lg transition-shadow duration-200">
+          <Link to="/blog/ielts-vs-toefl-which-test-easier-better-2026/" className="block bg-white dark:bg-slate-800 rounded-xl p-5 shadow-md border border-slate-200 dark:border-slate-700 hover:shadow-lg transition-shadow duration-200">
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">IELTS vs TOEFL: Which Test Is Easier?</h4>
             <p className="text-sm text-slate-500 dark:text-slate-400">Compare IELTS and TOEFL to find the best test for you.</p>
           </Link>
-          <Link to="/blog/ielts-writing-task-1-2-guide-2026" className="block bg-white dark:bg-slate-800 rounded-xl p-5 shadow-md border border-slate-200 dark:border-slate-700 hover:shadow-lg transition-shadow duration-200">
+          <Link to="/blog/ielts-writing-task-1-2-guide-2026/" className="block bg-white dark:bg-slate-800 rounded-xl p-5 shadow-md border border-slate-200 dark:border-slate-700 hover:shadow-lg transition-shadow duration-200">
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">IELTS Writing Task 1 & 2 Guide</h4>
             <p className="text-sm text-slate-500 dark:text-slate-400">Master both IELTS writing tasks with examples.</p>
           </Link>
-          <Link to="/blog/ielts-full-course-strategies-band-7" className="block bg-white dark:bg-slate-800 rounded-xl p-5 shadow-md border border-slate-200 dark:border-slate-700 hover:shadow-lg transition-shadow duration-200">
+          <Link to="/blog/ielts-full-course-strategies-band-7/" className="block bg-white dark:bg-slate-800 rounded-xl p-5 shadow-md border border-slate-200 dark:border-slate-700 hover:shadow-lg transition-shadow duration-200">
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">IELTS Full Course Strategies for Band 7</h4>
             <p className="text-sm text-slate-500 dark:text-slate-400">Complete strategies to reach Band 7 and beyond.</p>
           </Link>
-          <Link to="/blog/ielts-writing-task-2-grammar-guide-band-8" className="block bg-white dark:bg-slate-800 rounded-xl p-5 shadow-md border border-slate-200 dark:border-slate-700 hover:shadow-lg transition-shadow duration-200">
+          <Link to="/blog/ielts-writing-task-2-grammar-guide-band-8/" className="block bg-white dark:bg-slate-800 rounded-xl p-5 shadow-md border border-slate-200 dark:border-slate-700 hover:shadow-lg transition-shadow duration-200">
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">IELTS Writing Task 2 Grammar Guide</h4>
             <p className="text-sm text-slate-500 dark:text-slate-400">Grammar tips for achieving Band 8 in Writing.</p>
           </Link>
-          <Link to="/blog/ielts-speaking-high-band-answers" className="block bg-white dark:bg-slate-800 rounded-xl p-5 shadow-md border border-slate-200 dark:border-slate-700 hover:shadow-lg transition-shadow duration-200">
+          <Link to="/blog/ielts-speaking-high-band-answers/" className="block bg-white dark:bg-slate-800 rounded-xl p-5 shadow-md border border-slate-200 dark:border-slate-700 hover:shadow-lg transition-shadow duration-200">
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">IELTS Speaking: High-Band Answers</h4>
             <p className="text-sm text-slate-500 dark:text-slate-400">Tips and examples for scoring high in Speaking.</p>
           </Link>
-          <Link to="/blog/ielts-changes-2026-new-pattern-one-skill-retake" className="block bg-white dark:bg-slate-800 rounded-xl p-5 shadow-md border border-slate-200 dark:border-slate-700 hover:shadow-lg transition-shadow duration-200">
+          <Link to="/blog/ielts-changes-2026-new-pattern-one-skill-retake/" className="block bg-white dark:bg-slate-800 rounded-xl p-5 shadow-md border border-slate-200 dark:border-slate-700 hover:shadow-lg transition-shadow duration-200">
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">IELTS Changes in 2026</h4>
             <p className="text-sm text-slate-500 dark:text-slate-400">New patterns, one skill retake, and what's changed.</p>
           </Link>
@@ -1345,8 +4606,8 @@ export const BLOG_POSTS: BlogPost[] = [
       <>
         {/* Author Bio Box */}
         <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg p-4 mb-6 flex items-start gap-4">
-          <div className="w-12 h-12 bg-orange-100 dark:bg-orange-900 rounded-full flex items-center justify-center flex-shrink-0">
-            <span className="text-orange-600 dark:text-orange-300 font-bold text-lg">KP</span>
+          <div className="w-12 h-12 bg-teal-100 dark:bg-teal-900 rounded-full flex items-center justify-center flex-shrink-0">
+            <span className="text-teal-600 dark:text-teal-300 font-bold text-lg">KP</span>
           </div>
           <div>
             <p className="font-semibold text-slate-900 dark:text-slate-100">Dr. Kevin Park</p>
@@ -1355,25 +4616,25 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on <a href="https://www.ets.org/toefl" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">ETS TOEFL</a> scoring rubrics and official test prep guidelines.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on <a href="https://www.ets.org/toefl" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">ETS TOEFL</a> scoring rubrics and official test prep guidelines.</span>
         </div>
 
         {/* Statistics Box */}
         <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-700 rounded-lg p-4 mb-6">
-          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">🎯 TOEFL Mistake Statistics</h4>
+          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">?? TOEFL Mistake Statistics</h4>
           <ul className="text-sm text-green-700 dark:text-green-300 space-y-1">
-            <li>• ~65% of test-takers lose points on time management issues</li>
-            <li>• Poor note-taking accounts for 30% of Listening section errors</li>
-            <li>• Template misuse leads to 2-4 point deductions in Writing</li>
-            <li>• Most students improve 8-15 points by fixing just these 15 mistakes</li>
+            <li>� ~65% of test-takers lose points on time management issues</li>
+            <li>� Poor note-taking accounts for 30% of Listening section errors</li>
+            <li>� Template misuse leads to 2-4 point deductions in Writing</li>
+            <li>� Most students improve 8-15 points by fixing just these 15 mistakes</li>
           </ul>
         </div>
 
         <div className="mb-8">
           <p className="text-sm text-slate-600 dark:text-slate-400 mb-2">
-            By <Link to="/about/editorial-team" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">TypoGrammar Editorial Team</Link>
+            By <Link to="/about/editorial-team/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">TypoGrammar Editorial Team</Link>
           </p>
         </div>
 
@@ -1401,11 +4662,11 @@ export const BLOG_POSTS: BlogPost[] = [
         </ArticleParagraph>
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-400 p-4 my-4 rounded-r-lg">
           <p className="text-slate-800 dark:text-slate-200 italic">
-            "This topic is very controversial in modern society…" (even when the question is simple and personal)
+            "This topic is very controversial in modern society�" (even when the question is simple and personal)
           </p>
         </div>
         <ArticleParagraph>
-          <strong>Fix:</strong> Use flexible structures. Understand the purpose of each sentence instead of memorizing blindly. Our guide on <Link to="/blog/5-essay-hacks-teachers-dont-tell-you" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">5 Essay Hacks Teachers Don't Tell You</Link> can help you build more adaptable writing strategies.
+          <strong>Fix:</strong> Use flexible structures. Understand the purpose of each sentence instead of memorizing blindly. Our guide on <Link to="/blog/5-essay-hacks-teachers-dont-tell-you/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">5 Essay Hacks Teachers Don't Tell You</Link> can help you build more adaptable writing strategies.
         </ArticleParagraph>
 
         {/* Mistake 2 */}
@@ -1420,7 +4681,7 @@ export const BLOG_POSTS: BlogPost[] = [
           </p>
         </div>
         <ArticleParagraph>
-          <strong>Fix:</strong> Restate the question and clearly choose a position. Make sure your first paragraph directly addresses what is being asked. Learning to <Link to="/blog/writing-strong-topic-sentences" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">write strong topic sentences</Link> can help you stay focused.
+          <strong>Fix:</strong> Restate the question and clearly choose a position. Make sure your first paragraph directly addresses what is being asked. Learning to <Link to="/blog/writing-strong-topic-sentences/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">write strong topic sentences</Link> can help you stay focused.
         </ArticleParagraph>
 
         {/* Mistake 3 */}
@@ -1429,7 +4690,7 @@ export const BLOG_POSTS: BlogPost[] = [
           <strong>Mistake:</strong> Writing one long paragraph with unclear support.
         </ArticleParagraph>
         <ArticleParagraph>
-          <strong>Fix:</strong> Provide two clear reasons, each with a specific example. This gives your essay structure and depth. See our guide on <Link to="/writing/how-to-build-an-argument" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">how to build an argument</Link> for a proven structure.
+          <strong>Fix:</strong> Provide two clear reasons, each with a specific example. This gives your essay structure and depth. See our guide on <Link to="/writing/how-to-build-an-argument/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">how to build an argument</Link> for a proven structure.
         </ArticleParagraph>
 
         {/* Mistake 4 */}
@@ -1441,8 +4702,8 @@ export const BLOG_POSTS: BlogPost[] = [
           <strong>Fix:</strong> Practice with real timing:
         </ArticleParagraph>
         <BulletList items={[
-          <>Reading: ~3–4 minutes per passage</>,
-          <>Writing Task 2: Start typing by minute 3–4</>
+          <>Reading: ~3�4 minutes per passage</>,
+          <>Writing Task 2: Start typing by minute 3�4</>
         ]} />
 
         {/* Mistake 5 */}
@@ -1451,7 +4712,7 @@ export const BLOG_POSTS: BlogPost[] = [
           <strong>Mistake:</strong> Talking quickly and making pronunciation mistakes.
         </ArticleParagraph>
         <ArticleParagraph>
-          <strong>Fix:</strong> Speak clearly and naturally. Fluency is important — but clarity matters more. Record yourself and listen back to check your pacing. Our <Link to="/blog/english-pronunciation-tips" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">English pronunciation tips</Link> can also help.
+          <strong>Fix:</strong> Speak clearly and naturally. Fluency is important � but clarity matters more. Record yourself and listen back to check your pacing. Our <Link to="/blog/english-pronunciation-tips/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">English pronunciation tips</Link> can also help.
         </ArticleParagraph>
 
         {/* Mistake 6 */}
@@ -1465,7 +4726,7 @@ export const BLOG_POSTS: BlogPost[] = [
           </p>
         </div>
         <ArticleParagraph>
-          <strong>Fix:</strong> Use vocabulary you are confident using correctly. Accuracy always beats complexity on the TOEFL. If you'd like to build a stronger word bank, explore our <Link to="/blog/stronger-adjectives" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">50+ powerful adjectives to replace 'very'</Link> and <Link to="/blog/commonly-confused-word-pairs" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">commonly confused word pairs</Link>.
+          <strong>Fix:</strong> Use vocabulary you are confident using correctly. Accuracy always beats complexity on the TOEFL. If you'd like to build a stronger word bank, explore our <Link to="/blog/stronger-adjectives/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">50+ powerful adjectives to replace 'very'</Link> and <Link to="/blog/commonly-confused-word-pairs/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">commonly confused word pairs</Link>.
         </ArticleParagraph>
 
         {/* Mistake 7 */}
@@ -1474,9 +4735,9 @@ export const BLOG_POSTS: BlogPost[] = [
           Common errors include:
         </ArticleParagraph>
         <BulletList items={[
-          <><Link to="/topics/subject-verb-agreement" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Subject-verb agreement</Link></>,
-          <><Link to="/topics/articles" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Article misuse</Link></>,
-          <><Link to="/grammar/verb-tenses" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Incorrect verb tense</Link></>
+          <><Link to="/topics/subject-verb-agreement/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Subject-verb agreement</Link></>,
+          <><Link to="/topics/articles/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Article misuse</Link></>,
+          <><Link to="/grammar/verb-tenses/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Incorrect verb tense</Link></>
         ]} />
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-400 p-4 my-4 rounded-r-lg">
           <p className="text-slate-800 dark:text-slate-200">
@@ -1485,7 +4746,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
         <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-4 my-4 rounded-r-lg">
           <p className="text-slate-800 dark:text-slate-200">
-            ✓ "Students need more time."
+            ? "Students need more time."
           </p>
         </div>
 
@@ -1518,7 +4779,7 @@ export const BLOG_POSTS: BlogPost[] = [
           <>How the lecture disagrees</>
         ]} />
         <ArticleParagraph>
-          No personal opinion needed. Your job is to compare and contrast the two sources objectively. Review our guide on <Link to="/blog/active-vs-passive-voice" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">active vs. passive voice</Link> — it's key for writing strong summaries.
+          No personal opinion needed. Your job is to compare and contrast the two sources objectively. Review our guide on <Link to="/blog/active-vs-passive-voice/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">active vs. passive voice</Link> � it's key for writing strong summaries.
         </ArticleParagraph>
 
         {/* Mistake 10 */}
@@ -1530,11 +4791,11 @@ export const BLOG_POSTS: BlogPost[] = [
           <strong>Fix:</strong> Use synonyms:
         </ArticleParagraph>
         <BulletList items={[
-          <><strong>Important</strong> → significant, essential, crucial</>,
-          <><strong>Good</strong> → beneficial, effective, valuable</>
+          <><strong>Important</strong> ? significant, essential, crucial</>,
+          <><strong>Good</strong> ? beneficial, effective, valuable</>
         ]} />
         <ArticleParagraph>
-          For a complete synonym list, see our <Link to="/blog/ielts-band-9-synonyms-table-200-words" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">200 IELTS/TOEFL Band 9 synonyms table</Link>.
+          For a complete synonym list, see our <Link to="/blog/ielts-band-9-synonyms-table-200-words/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">200 IELTS/TOEFL Band 9 synonyms table</Link>.
         </ArticleParagraph>
 
         {/* Mistake 11 */}
@@ -1549,7 +4810,7 @@ export const BLOG_POSTS: BlogPost[] = [
           <>Main idea</>,
           <>Key examples</>,
           <>Numbers or dates</>,
-          <>Not full sentences — use abbreviations and keywords</>
+          <>Not full sentences � use abbreviations and keywords</>
         ]} />
 
         {/* Mistake 12 */}
@@ -1565,7 +4826,7 @@ export const BLOG_POSTS: BlogPost[] = [
           <><strong>Independent Writing:</strong> 300+ words</>
         ]} />
         <ArticleParagraph>
-          Quality first — but don't be too short. Longer, well-structured responses tend to score higher.
+          Quality first � but don't be too short. Longer, well-structured responses tend to score higher.
         </ArticleParagraph>
 
         {/* Mistake 13 */}
@@ -1575,12 +4836,12 @@ export const BLOG_POSTS: BlogPost[] = [
         </ArticleParagraph>
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-400 p-4 my-4 rounded-r-lg">
           <p className="text-slate-800 dark:text-slate-200 italic">
-            "Firstly, secondly, moreover, furthermore, additionally…"
+            "Firstly, secondly, moreover, furthermore, additionally�"
           </p>
           <p className="text-slate-600 dark:text-slate-400 text-sm mt-2">Too many connectors sound unnatural.</p>
         </div>
         <ArticleParagraph>
-          <strong>Fix:</strong> Use connectors naturally and only when needed. Let your ideas flow logically rather than forcing transitions. Our lesson on <Link to="/topics/conjunctions" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">conjunctions</Link> covers how to connect ideas properly.
+          <strong>Fix:</strong> Use connectors naturally and only when needed. Let your ideas flow logically rather than forcing transitions. Our lesson on <Link to="/topics/conjunctions/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">conjunctions</Link> covers how to connect ideas properly.
         </ArticleParagraph>
 
         {/* Mistake 14 */}
@@ -1598,7 +4859,7 @@ export const BLOG_POSTS: BlogPost[] = [
           <strong>Mistake:</strong> Studying casually without timing or structure.
         </ArticleParagraph>
         <ArticleParagraph>
-          <strong>Fix:</strong> Practice full sections under realistic exam timing. Simulate the real test environment as closely as possible — no phone, no breaks, no pauses. Learn how to use <Link to="/blog/how-to-use-official-toefl-practice-online" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">official TOEFL Practice Online from ETS</Link> for the best results.
+          <strong>Fix:</strong> Practice full sections under realistic exam timing. Simulate the real test environment as closely as possible � no phone, no breaks, no pauses. Learn how to use <Link to="/blog/how-to-use-official-toefl-practice-online/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">official TOEFL Practice Online from ETS</Link> for the best results.
         </ArticleParagraph>
 
         {/* Final Thoughts */}
@@ -1607,24 +4868,24 @@ export const BLOG_POSTS: BlogPost[] = [
           Most TOEFL mistakes are not about intelligence. They're about <strong>strategy, structure, and awareness</strong>.
         </ArticleParagraph>
         <ArticleParagraph>
-          If you avoid these 15 mistakes, you can significantly increase your score — even without advanced vocabulary.
+          If you avoid these 15 mistakes, you can significantly increase your score � even without advanced vocabulary.
         </ArticleParagraph>
 
         <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6 my-6 rounded-r-lg">
           <p className="text-slate-700 dark:text-slate-300">
-            <strong>Start improving today:</strong> Pick 2–3 mistakes from this list that apply to you, and focus on fixing them in your next practice session. Small changes lead to big score improvements.
+            <strong>Start improving today:</strong> Pick 2�3 mistakes from this list that apply to you, and focus on fixing them in your next practice session. Small changes lead to big score improvements.
           </p>
         </div>
 
         {/* Related Resources */}
         <ArticleHeading>Related Resources</ArticleHeading>
         <BulletList items={[
-          <><Link to="/blog/how-to-prepare-for-english-language-exam" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">How to Prepare for Any English Language Exam Effectively</Link></>,
-          <><Link to="/blog/ielts-vs-toefl-which-test-easier-better-2026" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">IELTS vs TOEFL: Which Test Is Easier and Better for You in 2026?</Link></>,
-          <><Link to="/blog/new-toefl-scoring-system-2026" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">New TOEFL Scoring System 2026: Everything You Need to Know</Link></>,
-          <><Link to="/blog/toefl-home-edition-requirements-registration-tech-checklist" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">TOEFL Home Edition: Requirements, Registration, and Tech Checklist</Link></>,
-          <><Link to="/blog/common-grammar-mistakes-non-native-speakers" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Common Grammar Mistakes Non-Native Speakers Make</Link></>,
-          <><Link to="/blog/improve-english-fluency-without-memorizing" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Tips to Improve Your English Fluency Without Memorizing Scripts</Link></>
+          <><Link to="/blog/how-to-prepare-for-english-language-exam/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">How to Prepare for Any English Language Exam Effectively</Link></>,
+          <><Link to="/blog/ielts-vs-toefl-which-test-easier-better-2026/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">IELTS vs TOEFL: Which Test Is Easier and Better for You in 2026?</Link></>,
+          <><Link to="/blog/new-toefl-scoring-system-2026/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">New TOEFL Scoring System 2026: Everything You Need to Know</Link></>,
+          <><Link to="/blog/toefl-home-edition-requirements-registration-tech-checklist/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">TOEFL Home Edition: Requirements, Registration, and Tech Checklist</Link></>,
+          <><Link to="/blog/common-grammar-mistakes-non-native-speakers/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Common Grammar Mistakes Non-Native Speakers Make</Link></>,
+          <><Link to="/blog/improve-english-fluency-without-memorizing/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Tips to Improve Your English Fluency Without Memorizing Scripts</Link></>
         ]} />
 
         {/* FAQ Section */}
@@ -1659,7 +4920,7 @@ export const BLOG_POSTS: BlogPost[] = [
             TypoGrammar Editorial Team creates independent, grammar-focused educational content to help English learners improve clarity, structure, and accuracy for academic and real-world use. All content is reviewed for accuracy, neutrality, and alignment with publicly available exam formats.
           </ArticleParagraph>
           <ArticleParagraph>
-            <Link to="/about/editorial-team" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">Learn more about the TypoGrammar Editorial Team</Link>
+            <Link to="/about/editorial-team/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">Learn more about the TypoGrammar Editorial Team</Link>
           </ArticleParagraph>
         </div>
 
@@ -1690,7 +4951,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: '8 Common TOEFL iBT Mistakes You Should Avoid (and How to Fix Them)',
     author: 'Sarah Kim, TOEFL Prep Coach (Kaplan International)',
     date: 'March 26, 2026',
-    summary: 'Learn the top TOEFL iBT mistakes — from skipping timed practice to weak writing structure — and discover strategies to raise your TOEFL score fast.',
+    summary: 'Learn the top TOEFL iBT mistakes � from skipping timed practice to weak writing structure � and discover strategies to raise your TOEFL score fast.',
     category: 'Test Preparation',
     image: '/images/blog/common-toefl-ibt-mistakes-avoid.jpg',
     imageAlt: '8 common TOEFL iBT mistakes to avoid with strategies to improve your score',
@@ -1719,7 +4980,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "name": "How many practice tests should I take?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Take at least 3–5 full-length TOEFL tests to adjust to time management and build test stamina."
+            "text": "Take at least 3�5 full-length TOEFL tests to adjust to time management and build test stamina."
           }
         },
         {
@@ -1754,31 +5015,31 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on <a href="https://www.ets.org/toefl/test-takers/ibt/prepare" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">ETS Official TOEFL Prep</a> and Kaplan test analysis data.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on <a href="https://www.ets.org/toefl/test-takers/ibt/prepare" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">ETS Official TOEFL Prep</a> and Kaplan test analysis data.</span>
         </div>
 
         {/* Statistics Box */}
         <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-700 rounded-lg p-4 mb-6">
-          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">🎯 TOEFL iBT: Key Facts</h4>
+          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">?? TOEFL iBT: Key Facts</h4>
           <ul className="text-sm text-green-700 dark:text-green-300 space-y-1">
-            <li>• Average score improvement with structured prep: 10-20 points</li>
-            <li>• Students who take 3-5 practice tests score 15% higher on average</li>
-            <li>• Time management issues affect 70% of first-time test-takers</li>
-            <li>• TOEFL iBT is accepted by 11,500+ institutions in 160+ countries</li>
+            <li>� Average score improvement with structured prep: 10-20 points</li>
+            <li>� Students who take 3-5 practice tests score 15% higher on average</li>
+            <li>� Time management issues affect 70% of first-time test-takers</li>
+            <li>� TOEFL iBT is accepted by 11,500+ institutions in 160+ countries</li>
           </ul>
         </div>
 
         <div className="mb-8">
           <p className="text-sm text-slate-600 dark:text-slate-400 mb-2">
-            By <Link to="/about/editorial-team" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">TypoGrammar Editorial Team</Link>
+            By <Link to="/about/editorial-team/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">TypoGrammar Editorial Team</Link>
           </p>
         </div>
 
         <ArticleHeading>Mastering TOEFL iBT: Success Is About Strategy</ArticleHeading>
         <ArticleParagraph>
-          Preparing for the TOEFL iBT® requires more than knowing English; it's about knowing the test itself. Many test takers lose marks not because they lack language skills, but because they overlook test‑specific strategies. Let's explore which mistakes to avoid — and what to do instead.
+          Preparing for the TOEFL iBT� requires more than knowing English; it's about knowing the test itself. Many test takers lose marks not because they lack language skills, but because they overlook test-specific strategies. Let's explore which mistakes to avoid � and what to do instead.
         </ArticleParagraph>
 
         <ArticleHeading>1. Studying General English Instead of TOEFL Tasks</ArticleHeading>
@@ -1786,7 +5047,7 @@ export const BLOG_POSTS: BlogPost[] = [
           Watching English shows, reading articles, or memorizing word lists builds fluency, but TOEFL demands familiarity with its own format, timing, and scoring.
         </ArticleParagraph>
         <ArticleParagraph>
-          <strong>How to fix:</strong> Balance general study with targeted TOEFL prep. Practice using <Link to="/blog/how-to-use-official-toefl-practice-online" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">official TOEFL tests</Link> to understand question types and pacing.
+          <strong>How to fix:</strong> Balance general study with targeted TOEFL prep. Practice using <Link to="/blog/how-to-use-official-toefl-practice-online/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">official TOEFL tests</Link> to understand question types and pacing.
         </ArticleParagraph>
 
         <ArticleHeading>2. Ignoring Timed Practice Sessions</ArticleHeading>
@@ -1799,7 +5060,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>3. Misunderstanding Reading Questions</ArticleHeading>
         <ArticleParagraph>
-          Misreading or rushing through Reading questions can lead to wrong answers — even if your English comprehension is strong.
+          Misreading or rushing through Reading questions can lead to wrong answers � even if your English comprehension is strong.
         </ArticleParagraph>
         <ArticleParagraph>
           <strong>How to fix:</strong> Read each question twice. Identify whether it asks for detail, inference, or purpose, and scan passages strategically rather than word by word.
@@ -1807,7 +5068,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>4. Losing Focus in Listening Tasks</ArticleHeading>
         <ArticleParagraph>
-          The Listening section tests comprehension and note‑taking, not memory. Missing one key idea can lead to confusion later.
+          The Listening section tests comprehension and note-taking, not memory. Missing one key idea can lead to confusion later.
         </ArticleParagraph>
         <ArticleParagraph>
           <strong>How to fix:</strong> Practice active listening. Write brief notes while listening to identify main points, transitions, and examples instead of full sentences.
@@ -1815,7 +5076,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>5. Memorizing Speaking Responses</ArticleHeading>
         <ArticleParagraph>
-          Pre‑written scripts may feel safer, but raters easily detect memorized speech, which can lower your score.
+          Pre-written scripts may feel safer, but raters easily detect memorized speech, which can lower your score.
         </ArticleParagraph>
         <ArticleParagraph>
           <strong>How to fix:</strong> Prepare ideas, not verbatim answers. Practice expressing opinions naturally, focusing on fluency, organization, and clarity over perfection.
@@ -1826,7 +5087,7 @@ export const BLOG_POSTS: BlogPost[] = [
           Speaking too quickly or quietly affects clarity and pronunciation.
         </ArticleParagraph>
         <ArticleParagraph>
-          <strong>How to fix:</strong> Slow down slightly and enunciate clearly. Record yourself during preparation to check pacing and tone. Trust your rhythm — clarity always scores higher than speed.
+          <strong>How to fix:</strong> Slow down slightly and enunciate clearly. Record yourself during preparation to check pacing and tone. Trust your rhythm � clarity always scores higher than speed.
         </ArticleParagraph>
 
         <ArticleHeading>7. Writing Without Clear Structure</ArticleHeading>
@@ -1855,13 +5116,13 @@ export const BLOG_POSTS: BlogPost[] = [
         </ArticleParagraph>
 
         <div className="bg-blue-50 dark:bg-slate-800 border-l-4 border-blue-500 p-6 my-8">
-          <h4 className="font-semibold text-lg mb-3">🎯 Focus on Consistency, Not Perfection</h4>
+          <h4 className="font-semibold text-lg mb-3">?? Focus on Consistency, Not Perfection</h4>
           <ArticleParagraph>
-            High scorers achieve excellence by practicing smart, not harder. Learn the TOEFL format, simulate test-day conditions, and refine your weaker sections. Consistency across Reading, Listening, Speaking, and Writing — not flawless answers — leads to strong, reliable scores.
+            High scorers achieve excellence by practicing smart, not harder. Learn the TOEFL format, simulate test-day conditions, and refine your weaker sections. Consistency across Reading, Listening, Speaking, and Writing � not flawless answers � leads to strong, reliable scores.
           </ArticleParagraph>
         </div>
 
-        <ArticleHeading>🧠 Frequently Asked Questions (FAQ)</ArticleHeading>
+        <ArticleHeading>?? Frequently Asked Questions (FAQ)</ArticleHeading>
         
         <div className="space-y-6">
           <div>
@@ -1881,7 +5142,7 @@ export const BLOG_POSTS: BlogPost[] = [
           <div>
             <h4 className="font-semibold text-lg mb-2 text-slate-900 dark:text-slate-100">Q3: How many practice tests should I take?</h4>
             <ArticleParagraph>
-              Aim for at least 3–5 full-length tests to adapt to time limits and test endurance.
+              Aim for at least 3�5 full-length tests to adapt to time limits and test endurance.
             </ArticleParagraph>
           </div>
 
@@ -1906,7 +5167,7 @@ export const BLOG_POSTS: BlogPost[] = [
             TypoGrammar Editorial Team creates independent, grammar-focused educational content to help English learners improve clarity, structure, and accuracy for academic and real-world use. All content is reviewed for accuracy, neutrality, and alignment with publicly available exam formats.
           </ArticleParagraph>
           <ArticleParagraph>
-            <Link to="/about/editorial-team" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">Learn more about the TypoGrammar Editorial Team</Link>
+            <Link to="/about/editorial-team/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">Learn more about the TypoGrammar Editorial Team</Link>
           </ArticleParagraph>
         </div>
 
@@ -1967,7 +5228,7 @@ export const BLOG_POSTS: BlogPost[] = [
         },
         {
           "@type": "HowToStep",
-          "name": "Spend 7–10 days improving weak areas",
+          "name": "Spend 7�10 days improving weak areas",
           "text": "Use focused grammar and structure practice before taking the next TOEFL Practice Online test."
         }
       ]
@@ -1986,25 +5247,25 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on <a href="https://www.ets.org/toefl/test-takers/ibt/prepare/practice-tests" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">ETS Official TOEFL Practice</a> guidelines and scoring criteria.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on <a href="https://www.ets.org/toefl/test-takers/ibt/prepare/practice-tests" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">ETS Official TOEFL Practice</a> guidelines and scoring criteria.</span>
         </div>
 
         {/* Statistics Box */}
         <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-700 rounded-lg p-4 mb-6">
-          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">🎯 Official TOEFL Practice: Key Facts</h4>
+          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">?? Official TOEFL Practice: Key Facts</h4>
           <ul className="text-sm text-green-700 dark:text-green-300 space-y-1">
-            <li>• Students using official ETS practice score 12-18 points higher on average</li>
-            <li>• Optimal timing: Start TPO 4-6 weeks before test date, not earlier</li>
-            <li>• 3-5 full practice tests is the recommended maximum before real test</li>
-            <li>• 85% of score gains come from analyzing errors, not taking more tests</li>
+            <li>� Students using official ETS practice score 12-18 points higher on average</li>
+            <li>� Optimal timing: Start TPO 4-6 weeks before test date, not earlier</li>
+            <li>� 3-5 full practice tests is the recommended maximum before real test</li>
+            <li>� 85% of score gains come from analyzing errors, not taking more tests</li>
           </ul>
         </div>
 
         <div className="mb-8">
           <p className="text-sm text-slate-600 dark:text-slate-400 mb-2">
-            By <Link to="/about/editorial-team" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">TypoGrammar Editorial Team</Link>
+            By <Link to="/about/editorial-team/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">TypoGrammar Editorial Team</Link>
           </p>
         </div>
 
@@ -2039,7 +5300,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>Is TOEFL Practice Online Worth It?</ArticleHeading>
         <ArticleParagraph>
-          Yes — when used correctly.
+          Yes � when used correctly.
         </ArticleParagraph>
 
         <ArticleParagraph>
@@ -2093,20 +5354,20 @@ export const BLOG_POSTS: BlogPost[] = [
             </thead>
             <tbody>
               <tr>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-slate-700 dark:text-slate-300">70–80</td>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-slate-700 dark:text-slate-300">2–3</td>
+                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-slate-700 dark:text-slate-300">70�80</td>
+                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-slate-700 dark:text-slate-300">2�3</td>
               </tr>
               <tr className="bg-slate-50 dark:bg-slate-800">
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-slate-700 dark:text-slate-300">80–90</td>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-slate-700 dark:text-slate-300">3–4</td>
+                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-slate-700 dark:text-slate-300">80�90</td>
+                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-slate-700 dark:text-slate-300">3�4</td>
               </tr>
               <tr>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-slate-700 dark:text-slate-300">90–100</td>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-slate-700 dark:text-slate-300">4–5</td>
+                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-slate-700 dark:text-slate-300">90�100</td>
+                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-slate-700 dark:text-slate-300">4�5</td>
               </tr>
               <tr className="bg-slate-50 dark:bg-slate-800">
                 <td className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-slate-700 dark:text-slate-300">100+</td>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-slate-700 dark:text-slate-300">5–6 (with deep analysis)</td>
+                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2 text-slate-700 dark:text-slate-300">5�6 (with deep analysis)</td>
               </tr>
             </tbody>
           </table>
@@ -2114,7 +5375,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleParagraph>
           <strong>Important rule:</strong><br />
-          One TOEFL Practice Online test should be followed by 7–10 days of focused review and correction.
+          One TOEFL Practice Online test should be followed by 7�10 days of focused review and correction.
         </ArticleParagraph>
 
         <ArticleHeading>How to Use TOEFL Practice Online Correctly (Step-by-Step)</ArticleHeading>
@@ -2246,7 +5507,7 @@ export const BLOG_POSTS: BlogPost[] = [
             TypoGrammar Editorial Team creates independent, grammar-focused educational content to help English learners improve clarity, structure, and accuracy for academic and real-world use. All content is reviewed for accuracy, neutrality, and alignment with publicly available exam formats.
           </ArticleParagraph>
           <ArticleParagraph>
-            <Link to="/about/editorial-team" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">Learn more about the TypoGrammar Editorial Team</Link>
+            <Link to="/about/editorial-team/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">Learn more about the TypoGrammar Editorial Team</Link>
           </ArticleParagraph>
         </div>
 
@@ -2274,10 +5535,10 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'new-toefl-scoring-system-2026',
-    title: 'New TOEFL Scoring System 2026: Everything You Need to Know About the 1–6 Band Scale',
+    title: 'New TOEFL Scoring System 2026: Everything You Need to Know About the 1�6 Band Scale',
     author: 'Michael Chen, Former ETS Test Developer & TOEFL Prep Specialist',
     date: 'March 26, 2026',
-    summary: 'Discover how the new TOEFL iBT scoring system changes from 0–120 to a 1–6 band scale starting January 21, 2026. Learn how it aligns with CEFR, what it means for university admissions worldwide, and how to prepare.',
+    summary: 'Discover how the new TOEFL iBT scoring system changes from 0�120 to a 1�6 band scale starting January 21, 2026. Learn how it aligns with CEFR, what it means for university admissions worldwide, and how to prepare.',
     category: 'Test Preparation',
     image: '/images/blog/toefl-2026-scoring.jpg',
     imageAlt: 'New TOEFL 2026 scoring system 1 to 6 band scale compared to previous 0 to 120 point scale',
@@ -2290,7 +5551,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "name": "What is the new TOEFL scoring system in 2026?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "From January 21, 2026, the TOEFL iBT uses a new 1–6 band scoring scale instead of the old 0–120 total score. Each section and the overall score are reported as bands aligned with CEFR levels."
+            "text": "From January 21, 2026, the TOEFL iBT uses a new 1�6 band scoring scale instead of the old 0�120 total score. Each section and the overall score are reported as bands aligned with CEFR levels."
           }
         },
         {
@@ -2306,15 +5567,15 @@ export const BLOG_POSTS: BlogPost[] = [
           "name": "How is the TOEFL overall band score calculated?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The overall TOEFL band score is the average of the four section scores—Reading, Listening, Speaking, and Writing—rounded to the nearest 0.5 band."
+            "text": "The overall TOEFL band score is the average of the four section scores�Reading, Listening, Speaking, and Writing�rounded to the nearest 0.5 band."
           }
         },
         {
           "@type": "Question",
-          "name": "Will TOEFL score reports still show the 0–120 score?",
+          "name": "Will TOEFL score reports still show the 0�120 score?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. During a transition period from 2026 to 2028, TOEFL score reports will show both the new 1–6 band score and a comparable 0–120 score, along with the CEFR level."
+            "text": "Yes. During a transition period from 2026 to 2028, TOEFL score reports will show both the new 1�6 band score and a comparable 0�120 score, along with the CEFR level."
           }
         },
         {
@@ -2330,7 +5591,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "name": "How does the new TOEFL score compare to IELTS?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The new TOEFL 1–6 band scale aligns with CEFR levels, similar to how IELTS scores are interpreted. TOEFL 5.0 equals approximately IELTS 6.5-7.0 (C1 level). TOEFL 6.0 equals IELTS 8.5-9.0 (C2 level). This makes score comparison between TOEFL and IELTS clearer for universities and institutions."
+            "text": "The new TOEFL 1�6 band scale aligns with CEFR levels, similar to how IELTS scores are interpreted. TOEFL 5.0 equals approximately IELTS 6.5-7.0 (C1 level). TOEFL 6.0 equals IELTS 8.5-9.0 (C2 level). This makes score comparison between TOEFL and IELTS clearer for universities and institutions."
           }
         },
         {
@@ -2360,33 +5621,33 @@ export const BLOG_POSTS: BlogPost[] = [
           </div>
           <div>
             <p className="font-semibold text-slate-900 dark:text-slate-100">Michael Chen</p>
-            <p className="text-sm text-slate-600 dark:text-slate-400">Former ETS Test Developer (2015–2022) & TOEFL iBT Prep Specialist. Contributed to the development of TOEFL scoring algorithms and has trained 10,000+ students across Asia and North America. Currently consults for international universities on English proficiency standards.</p>
+            <p className="text-sm text-slate-600 dark:text-slate-400">Former ETS Test Developer (2015�2022) & TOEFL iBT Prep Specialist. Contributed to the development of TOEFL scoring algorithms and has trained 10,000+ students across Asia and North America. Currently consults for international universities on English proficiency standards.</p>
           </div>
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Verified with official <a href="https://www.ets.org/toefl" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">ETS announcements</a> and includes latest score conversion data.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Verified with official <a href="https://www.ets.org/toefl" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">ETS announcements</a> and includes latest score conversion data.</span>
         </div>
 
         <div className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-slate-800 dark:to-slate-700 border-l-4 border-blue-600 p-6 my-8 rounded-r-lg">
-          <h4 className="font-semibold text-xl mb-4 text-blue-900 dark:text-blue-200">🎯 Key Takeaways</h4>
+          <h4 className="font-semibold text-xl mb-4 text-blue-900 dark:text-blue-200">?? Key Takeaways</h4>
           <BulletList items={[
-            <><strong>New Scoring Starts January 21, 2026:</strong> TOEFL iBT switches from 0–120 to a 1–6 band scale aligned with CEFR.</>,
-            <><strong>Transition Period 2026–2028:</strong> Score reports will show both old (0–120) and new (1–6) scores plus CEFR level.</>,
+            <><strong>New Scoring Starts January 21, 2026:</strong> TOEFL iBT switches from 0�120 to a 1�6 band scale aligned with CEFR.</>,
+            <><strong>Transition Period 2026�2028:</strong> Score reports will show both old (0�120) and new (1�6) scores plus CEFR level.</>,
             <><strong>Overall Band = Average:</strong> Your overall score is the average of four section bands, rounded to nearest 0.5.</>,
             <><strong>Global Alignment:</strong> The new scale makes TOEFL scores easier to interpret for universities worldwide, including USA, Canada, UK, Europe, Australia, and Asia.</>,
-            <><strong>Same English Level:</strong> The change doesn't make the test easier or harder—it just simplifies score interpretation.</>
+            <><strong>Same English Level:</strong> The change doesn't make the test easier or harder�it just simplifies score interpretation.</>
           ]} />
         </div>
 
         <ArticleParagraph>
-          If you plan to study, work, or immigrate to an English‑speaking country from 2026 onward, you must understand the new TOEFL scoring system. Beginning <strong>January 21, 2026</strong>, the <a href="https://www.ets.org/toefl/test-takers/ibt/about" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">TOEFL iBT</a> will use a <strong>1–6 band scale</strong> instead of the old 0–120 total score.
+          If you plan to study, work, or immigrate to an English-speaking country from 2026 onward, you must understand the new TOEFL scoring system. Beginning <strong>January 21, 2026</strong>, the <a href="https://www.ets.org/toefl/test-takers/ibt/about" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">TOEFL iBT</a> will use a <strong>1�6 band scale</strong> instead of the old 0�120 total score.
         </ArticleParagraph>
 
         <ArticleParagraph>
-          This guide explains the new bands, how they connect to <a href="https://www.ets.org/toefl/institutions/scores/understanding" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">CEFR levels (A1–C1/C2)</a>, how universities in popular study destinations (USA, Canada, UK, Europe, Australia, Asia, and the Middle East) can interpret them, and how you should prepare.
+          This guide explains the new bands, how they connect to <a href="https://www.ets.org/toefl/institutions/scores/understanding" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">CEFR levels (A1�C1/C2)</a>, how universities in popular study destinations (USA, Canada, UK, Europe, Australia, Asia, and the Middle East) can interpret them, and how you should prepare.
         </ArticleParagraph>
 
         <div className="my-8 rounded-lg overflow-hidden shadow-lg">
@@ -2410,17 +5671,17 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <div className="bg-white dark:bg-slate-800 shadow-lg rounded-lg p-6 my-6 border border-slate-200 dark:border-slate-700">
           <BulletList items={[
-            <>Score reports will use a <strong>1–6 band scale</strong> (with 0.5 increments) for:
+            <>Score reports will use a <strong>1�6 band scale</strong> (with 0.5 increments) for:
               <ul className="ml-6 mt-2 space-y-1">
-                <li>• Reading</li>
-                <li>• Listening</li>
-                <li>• Speaking</li>
-                <li>• Writing</li>
-                <li>• Overall score (average of the four sections)</li>
+                <li>� Reading</li>
+                <li>� Listening</li>
+                <li>� Speaking</li>
+                <li>� Writing</li>
+                <li>� Overall score (average of the four sections)</li>
               </ul>
             </>,
             <>The overall band is the <strong>average of the four section bands</strong>, rounded to the nearest 0.5 (e.g., 5.25 becomes 5.5).</>,
-            <>For a <strong>two‑year transition period (2026–2028)</strong>, reports will also show the traditional 0–120 total score and the corresponding CEFR level.</>
+            <>For a <strong>two-year transition period (2026�2028)</strong>, reports will also show the traditional 0�120 total score and the corresponding CEFR level.</>
           ]} />
         </div>
 
@@ -2429,21 +5690,21 @@ export const BLOG_POSTS: BlogPost[] = [
         </ArticleParagraph>
 
         <ExampleList items={[
-          'Old format: 0–120',
-          'New format: 1.0–6.0 (with half bands) + CEFR band'
+          'Old format: 0�120',
+          'New format: 1.0�6.0 (with half bands) + CEFR band'
         ]} />
 
-        <ArticleHeading>2. Why Did ETS Introduce the 1–6 Band Scale?</ArticleHeading>
+        <ArticleHeading>2. Why Did ETS Introduce the 1�6 Band Scale?</ArticleHeading>
 
         <ArticleParagraph>
-          According to <a href="https://www.ets.org/toefl/test-takers/ibt/about" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">official ETS announcements</a>, the 1–6 band TOEFL score scale was introduced to:
+          According to <a href="https://www.ets.org/toefl/test-takers/ibt/about" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">official ETS announcements</a>, the 1�6 band TOEFL score scale was introduced to:
         </ArticleParagraph>
 
         <div className="bg-green-50 dark:bg-slate-700 p-5 rounded-lg my-5 border-l-4 border-green-600">
           <BulletList items={[
             <>Align more clearly with <strong>CEFR</strong>, the global standard many schools and visa authorities already use.</>,
             <>Make scores easier to interpret and compare with other tests (like <strong>IELTS</strong> and <strong>Duolingo English Test</strong>).</>,
-            <>Provide a clearer connection to students' prior English learning, which is often CEFR‑based.</>,
+            <>Provide a clearer connection to students' prior English learning, which is often CEFR-based.</>,
             <>Support the new, shorter, more adaptive test design and faster scoring.</>
           ]} />
         </div>
@@ -2452,7 +5713,7 @@ export const BLOG_POSTS: BlogPost[] = [
           For students and families worldwide, this means simpler score reports and clearer interpretation for admissions, scholarships, and immigration.
         </ArticleParagraph>
 
-        <ArticleHeading>3. How Does the New 1–6 TOEFL Band Scale Work?</ArticleHeading>
+        <ArticleHeading>3. How Does the New 1�6 TOEFL Band Scale Work?</ArticleHeading>
 
         <div className="bg-blue-50 dark:bg-slate-800 p-6 rounded-lg my-6 border border-blue-200 dark:border-blue-700">
           <h4 className="font-semibold text-lg mb-4 text-blue-900 dark:text-blue-200">3.1 Section Scores</h4>
@@ -2472,39 +5733,39 @@ export const BLOG_POSTS: BlogPost[] = [
           <div className="mt-4 bg-white dark:bg-slate-700 p-4 rounded">
             <p className="font-semibold mb-2">Example Calculation:</p>
             <ul className="space-y-1 ml-4">
-              <li>• Reading: 5.5</li>
-              <li>• Listening: 5.0</li>
-              <li>• Speaking: 6.0</li>
-              <li>• Writing: 5.0</li>
-              <li className="font-semibold mt-2">• Average: (5.5 + 5.0 + 6.0 + 5.0) / 4 = 5.375 → <span className="text-green-600 dark:text-green-400">5.5 overall</span></li>
+              <li>� Reading: 5.5</li>
+              <li>� Listening: 5.0</li>
+              <li>� Speaking: 6.0</li>
+              <li>� Writing: 5.0</li>
+              <li className="font-semibold mt-2">� Average: (5.5 + 5.0 + 6.0 + 5.0) / 4 = 5.375 ? <span className="text-green-600 dark:text-green-400">5.5 overall</span></li>
             </ul>
           </div>
         </div>
 
-        <ArticleHeading>4. Connection Between the 1–6 Band Scale, CEFR, and the Old 0–120 Score</ArticleHeading>
+        <ArticleHeading>4. Connection Between the 1�6 Band Scale, CEFR, and the Old 0�120 Score</ArticleHeading>
 
         <ArticleParagraph>
-          The new scale is directly aligned with <strong>CEFR</strong>, which is widely used in Europe and globally. During 2026–2028, <a href="https://www.ets.org/toefl/test-takers/ibt/scores" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">ETS will show on each score report</a>:
+          The new scale is directly aligned with <strong>CEFR</strong>, which is widely used in Europe and globally. During 2026�2028, <a href="https://www.ets.org/toefl/test-takers/ibt/scores" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">ETS will show on each score report</a>:
         </ArticleParagraph>
 
         <div className="bg-white dark:bg-slate-800 shadow-lg rounded-lg p-6 my-6 border border-slate-200 dark:border-slate-700">
           <BulletList items={[
-            <>1–6 TOEFL band</>,
-            <>Comparable 0–120 score</>,
+            <>1�6 TOEFL band</>,
+            <>Comparable 0�120 score</>,
             <>CEFR level</>
           ]} />
         </div>
 
         {/* Official Score Conversion Table - Most searched question */}
         <div className="bg-gradient-to-r from-indigo-50 to-blue-50 dark:from-slate-800 dark:to-slate-700 p-6 rounded-lg my-8 border border-indigo-200 dark:border-indigo-700">
-          <h4 className="font-bold text-xl mb-4 text-indigo-900 dark:text-indigo-200">📊 Official TOEFL Score Conversion Table: Old 0–120 to New 1–6 Scale</h4>
+          <h4 className="font-bold text-xl mb-4 text-indigo-900 dark:text-indigo-200">?? Official TOEFL Score Conversion Table: Old 0�120 to New 1�6 Scale</h4>
           <p className="text-sm text-indigo-700 dark:text-indigo-300 mb-4">Based on <a href="https://www.ets.org/toefl/institutions/scores/understanding" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">official ETS guidelines</a>. This is the #1 searched question about the 2026 TOEFL changes.</p>
           <div className="overflow-x-auto">
             <table className="min-w-full border-collapse border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800">
               <thead className="bg-indigo-100 dark:bg-indigo-900/50">
                 <tr>
                   <th className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-left font-bold">New TOEFL Band</th>
-                  <th className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-left font-bold">Old TOEFL Score (0–120)</th>
+                  <th className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-left font-bold">Old TOEFL Score (0�120)</th>
                   <th className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-left font-bold">CEFR Level</th>
                   <th className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-left font-bold">IELTS Equivalent</th>
                   <th className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-left font-bold">Proficiency Level</th>
@@ -2513,77 +5774,77 @@ export const BLOG_POSTS: BlogPost[] = [
               <tbody>
                 <tr className="bg-green-50 dark:bg-green-900/20">
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2 font-bold text-green-700 dark:text-green-300">6.0</td>
-                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">114–120</td>
+                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">114�120</td>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">C2</td>
-                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">8.5–9.0</td>
+                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">8.5�9.0</td>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Expert / Mastery</td>
                 </tr>
                 <tr>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2 font-bold">5.5</td>
-                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">102–113</td>
+                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">102�113</td>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">C1+</td>
-                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">7.5–8.0</td>
+                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">7.5�8.0</td>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Advanced High</td>
                 </tr>
                 <tr className="bg-blue-50 dark:bg-blue-900/20">
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2 font-bold text-blue-700 dark:text-blue-300">5.0</td>
-                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">87–101</td>
+                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">87�101</td>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">C1</td>
-                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">6.5–7.0</td>
+                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">6.5�7.0</td>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Advanced</td>
                 </tr>
                 <tr>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2 font-bold">4.5</td>
-                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">72–86</td>
+                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">72�86</td>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">B2+</td>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">6.0</td>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Upper-Intermediate High</td>
                 </tr>
                 <tr className="bg-yellow-50 dark:bg-yellow-900/20">
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2 font-bold text-yellow-700 dark:text-yellow-300">4.0</td>
-                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">56–71</td>
+                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">56�71</td>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">B2</td>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">5.5</td>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Upper-Intermediate</td>
                 </tr>
                 <tr>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2 font-bold">3.5</td>
-                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">42–55</td>
+                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">42�55</td>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">B1+</td>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">5.0</td>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Intermediate High</td>
                 </tr>
-                <tr className="bg-orange-50 dark:bg-orange-900/20">
-                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-2 font-bold text-orange-700 dark:text-orange-300">3.0</td>
-                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">32–41</td>
+                <tr className="bg-teal-50 dark:bg-teal-900/20">
+                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-2 font-bold text-teal-700 dark:text-teal-300">3.0</td>
+                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">32�41</td>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">B1</td>
-                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">4.0–4.5</td>
+                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">4.0�4.5</td>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Intermediate</td>
                 </tr>
                 <tr>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2 font-bold">2.5</td>
-                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">22–31</td>
+                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">22�31</td>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">A2+</td>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">3.5</td>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Elementary High</td>
                 </tr>
                 <tr className="bg-red-50 dark:bg-red-900/20">
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2 font-bold text-red-700 dark:text-red-300">2.0</td>
-                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">12–21</td>
+                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">12�21</td>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">A2</td>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">3.0</td>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Elementary</td>
                 </tr>
                 <tr>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2 font-bold">1.5</td>
-                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">6–11</td>
+                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">6�11</td>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">A1+</td>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">2.5</td>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Beginner High</td>
                 </tr>
                 <tr className="bg-slate-100 dark:bg-slate-700">
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2 font-bold">1.0</td>
-                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">0–5</td>
+                  <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">0�5</td>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">A1</td>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">2.0</td>
                   <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Beginner</td>
@@ -2611,28 +5872,28 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <div className="space-y-6 my-6">
           <div className="bg-blue-50 dark:bg-slate-800 p-5 rounded-lg border-l-4 border-blue-600">
-            <h5 className="font-semibold text-lg mb-3 text-blue-900 dark:text-blue-200">🇺🇸 🇨🇦 United States & Canada</h5>
+            <h5 className="font-semibold text-lg mb-3 text-blue-900 dark:text-blue-200">???? ???? United States & Canada</h5>
             <ArticleParagraph>
-              Universities can map old 0–120 requirements onto the new 1–6 bands using CEFR alignment for more consistent admissions decisions.
+              Universities can map old 0�120 requirements onto the new 1�6 bands using CEFR alignment for more consistent admissions decisions.
             </ArticleParagraph>
           </div>
 
           <div className="bg-purple-50 dark:bg-slate-800 p-5 rounded-lg border-l-4 border-purple-600">
-            <h5 className="font-semibold text-lg mb-3 text-purple-900 dark:text-purple-200">🇬🇧 🇪🇺 United Kingdom & Europe (EU/EEA)</h5>
+            <h5 className="font-semibold text-lg mb-3 text-purple-900 dark:text-purple-200">???? ???? United Kingdom & Europe (EU/EEA)</h5>
             <ArticleParagraph>
               Most institutions already use CEFR levels; the new scale makes it easier to set a requirement like "Minimum TOEFL band equivalent to CEFR B2/C1" without manual conversion.
             </ArticleParagraph>
           </div>
 
           <div className="bg-green-50 dark:bg-slate-800 p-5 rounded-lg border-l-4 border-green-600">
-            <h5 className="font-semibold text-lg mb-3 text-green-900 dark:text-green-200">🇦🇺 🇳🇿 Australia & New Zealand</h5>
+            <h5 className="font-semibold text-lg mb-3 text-green-900 dark:text-green-200">???? ???? Australia & New Zealand</h5>
             <ArticleParagraph>
               For both universities and migration authorities that reference CEFR or equivalent levels, the new bands provide a clearer, standardized proficiency benchmark.
             </ArticleParagraph>
           </div>
 
-          <div className="bg-orange-50 dark:bg-slate-800 p-5 rounded-lg border-l-4 border-orange-600">
-            <h5 className="font-semibold text-lg mb-3 text-orange-900 dark:text-orange-200">🌏 Asia & Middle East</h5>
+          <div className="bg-teal-50 dark:bg-slate-800 p-5 rounded-lg border-l-4 border-teal-600">
+            <h5 className="font-semibold text-lg mb-3 text-teal-900 dark:text-teal-200">?? Asia & Middle East</h5>
             <ArticleParagraph>
               Popular destinations such as Korea, Japan, China, India, UAE, Saudi Arabia, and Qatar can interpret TOEFL scores more easily in their international admission systems, which increasingly reference CEFR.
             </ArticleParagraph>
@@ -2640,7 +5901,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         <ArticleParagraph>
-          Because the score report includes both old and new scales in 2026–2028, institutions across all regions can update their requirements gradually.
+          Because the score report includes both old and new scales in 2026�2028, institutions across all regions can update their requirements gradually.
         </ArticleParagraph>
 
         <ArticleHeading>6. Other Key TOEFL iBT Enhancements from 2026</ArticleHeading>
@@ -2655,8 +5916,8 @@ export const BLOG_POSTS: BlogPost[] = [
             <>Reading and Listening become <strong>multistage adaptive</strong>: the second part adjusts based on your performance in the first part.</>,
             <>This allows ETS to:
               <ul className="ml-6 mt-2 space-y-1">
-                <li>• Target questions more precisely to your level.</li>
-                <li>• Keep the test accurate while shorter in length.</li>
+                <li>� Target questions more precisely to your level.</li>
+                <li>� Keep the test accurate while shorter in length.</li>
               </ul>
             </>
           ]} />
@@ -2666,19 +5927,19 @@ export const BLOG_POSTS: BlogPost[] = [
           <h4 className="font-semibold text-lg mb-4 text-green-900 dark:text-green-200">6.2 Shorter, More Modern Exam</h4>
           <BulletList items={[
             <>The new exam is around <strong>90 minutes total</strong>, with updated item counts and times.</>,
-            <>Reading and Listening include more modern, real‑life topics, and several new interactive question types (e.g., filling in missing letters, game‑like tasks).</>
+            <>Reading and Listening include more modern, real-life topics, and several new interactive question types (e.g., filling in missing letters, game-like tasks).</>
           ]} />
         </div>
 
-        <div className="bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-slate-800 dark:to-slate-700 p-6 rounded-lg my-6">
+        <div className="bg-gradient-to-r from-yellow-50 to-teal-50 dark:from-slate-800 dark:to-slate-700 p-6 rounded-lg my-6">
           <h4 className="font-semibold text-lg mb-4 text-yellow-900 dark:text-yellow-200">6.3 Faster Score Reporting</h4>
           <BulletList items={[
-            <>With the new system, scores are expected within about <strong>72 hours</strong> instead of the previous 4–8 days.</>,
+            <>With the new system, scores are expected within about <strong>72 hours</strong> instead of the previous 4�8 days.</>,
             <>This faster turnaround helps applicants working with tight university and visa deadlines.</>
           ]} />
         </div>
 
-        <ArticleHeading>7. How to Prepare for the New TOEFL 1–6 Band Scale</ArticleHeading>
+        <ArticleHeading>7. How to Prepare for the New TOEFL 1�6 Band Scale</ArticleHeading>
 
         <ArticleParagraph>
           Even though the scoring format is changing, TOEFL still evaluates the same four core skills: Reading, Listening, Speaking, and Writing.
@@ -2699,19 +5960,19 @@ export const BLOG_POSTS: BlogPost[] = [
           </ArticleParagraph>
           <BulletList items={[
             <>Aim for <strong>consistent performance</strong> across all four sections.</>,
-            <>Practice <strong>integrated skills</strong>: listening and note‑taking for academic lectures, reading and summarizing, speaking about familiar and academic topics, and writing clear, organized responses.</>
+            <>Practice <strong>integrated skills</strong>: listening and note-taking for academic lectures, reading and summarizing, speaking about familiar and academic topics, and writing clear, organized responses.</>
           ]} />
         </div>
 
         <div className="bg-purple-50 dark:bg-slate-800 p-6 rounded-lg my-6 border border-purple-200 dark:border-purple-700">
-          <h4 className="font-semibold text-lg mb-4 text-purple-900 dark:text-purple-200">7.3 Use Updated 2026‑Ready Materials</h4>
+          <h4 className="font-semibold text-lg mb-4 text-purple-900 dark:text-purple-200">7.3 Use Updated 2026-Ready Materials</h4>
           <ArticleParagraph>
             Choose preparation resources that are specifically updated for the 2026 TOEFL format, including:
           </ArticleParagraph>
           <BulletList items={[
             <>Multistage adaptive practice for Reading and Listening.</>,
             <>New question types and timing.</>,
-            <>Make sure your prep platform or course clearly explains how your practice scores translate into the new 1–6 bands and CEFR.</>
+            <>Make sure your prep platform or course clearly explains how your practice scores translate into the new 1�6 bands and CEFR.</>
           ]} />
         </div>
 
@@ -2721,56 +5982,56 @@ export const BLOG_POSTS: BlogPost[] = [
           <div className="bg-white dark:bg-slate-800 shadow-md rounded-lg p-5 border-l-4 border-blue-600">
             <h5 className="font-semibold text-lg mb-2 text-blue-900 dark:text-blue-200">Will my old TOEFL scores still be valid?</h5>
             <ArticleParagraph>
-              Yes. Scores earned before January 21, 2026 remain valid for their normal validity period (typically two years), using the 0–120 scale. Universities can continue accepting them according to their policies.
+              Yes. Scores earned before January 21, 2026 remain valid for their normal validity period (typically two years), using the 0�120 scale. Universities can continue accepting them according to their policies.
             </ArticleParagraph>
           </div>
 
           <div className="bg-white dark:bg-slate-800 shadow-md rounded-lg p-5 border-l-4 border-green-600">
-            <h5 className="font-semibold text-lg mb-2 text-green-900 dark:text-green-200">If I test after January 21, 2026, will I still see a 0–120 score?</h5>
+            <h5 className="font-semibold text-lg mb-2 text-green-900 dark:text-green-200">If I test after January 21, 2026, will I still see a 0�120 score?</h5>
             <ArticleParagraph>
               Yes, but only during the transition period. From January 21, 2026 through 2028, your score report will show:
             </ArticleParagraph>
             <ExampleList items={[
-              'Section bands (1–6)',
-              'Overall band (1–6)',
-              'A comparable 0–120 total score',
+              'Section bands (1�6)',
+              'Overall band (1�6)',
+              'A comparable 0�120 total score',
               'Your CEFR level'
             ]} />
           </div>
 
           <div className="bg-white dark:bg-slate-800 shadow-md rounded-lg p-5 border-l-4 border-purple-600">
-            <h5 className="font-semibold text-lg mb-2 text-purple-900 dark:text-purple-200">Is the new 1–6 scale easier or harder?</h5>
+            <h5 className="font-semibold text-lg mb-2 text-purple-900 dark:text-purple-200">Is the new 1�6 scale easier or harder?</h5>
             <ArticleParagraph>
-              The level of English required for university admission does not change. The 1–6 system is not "easier" or "harder"; it is simpler and more CEFR‑aligned. Institutions will adjust their requirements to match the new bands.
+              The level of English required for university admission does not change. The 1�6 system is not "easier" or "harder"; it is simpler and more CEFR-aligned. Institutions will adjust their requirements to match the new bands.
             </ArticleParagraph>
           </div>
 
-          <div className="bg-white dark:bg-slate-800 shadow-md rounded-lg p-5 border-l-4 border-orange-600">
-            <h5 className="font-semibold text-lg mb-2 text-orange-900 dark:text-orange-200">How does the new TOEFL compare with IELTS or other tests?</h5>
+          <div className="bg-white dark:bg-slate-800 shadow-md rounded-lg p-5 border-l-4 border-teal-600">
+            <h5 className="font-semibold text-lg mb-2 text-teal-900 dark:text-teal-200">How does the new TOEFL compare with IELTS or other tests?</h5>
             <ArticleParagraph>
-              ETS designed the 1–6 band scale to align more intuitively with CEFR, which is also used to interpret IELTS and many other English tests. According to <a href="https://www.ielts.org/for-organisations/ielts-scoring-in-detail" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">IELTS.org's official scoring research</a>, both tests now map to the same CEFR framework, making institutional comparison significantly easier. A TOEFL band 5.0 corresponds roughly to IELTS 6.5–7.0 (both C1 level). For precise conversions, use the score conversion table above or consult official <a href="https://www.ets.org/toefl/institutions/scores/understanding" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">ETS guidelines</a>.
+              ETS designed the 1�6 band scale to align more intuitively with CEFR, which is also used to interpret IELTS and many other English tests. According to <a href="https://www.ielts.org/for-organisations/ielts-scoring-in-detail" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">IELTS.org's official scoring research</a>, both tests now map to the same CEFR framework, making institutional comparison significantly easier. A TOEFL band 5.0 corresponds roughly to IELTS 6.5�7.0 (both C1 level). For precise conversions, use the score conversion table above or consult official <a href="https://www.ets.org/toefl/institutions/scores/understanding" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">ETS guidelines</a>.
             </ArticleParagraph>
           </div>
         </div>
 
         {/* IELTS.org Research Citation */}
         <div className="bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-700 rounded-lg p-5 my-6">
-          <h4 className="font-semibold text-lg mb-3 text-purple-900 dark:text-purple-200">📚 IELTS.org Research: TOEFL 2026 vs IELTS Comparison</h4>
+          <h4 className="font-semibold text-lg mb-3 text-purple-900 dark:text-purple-200">?? IELTS.org Research: TOEFL 2026 vs IELTS Comparison</h4>
           <ArticleParagraph>
-            The <a href="https://www.ielts.org/for-organisations/ielts-scoring-in-detail" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">British Council/IELTS research division</a> has published updated guidance on comparing the new TOEFL 1–6 bands with IELTS scores. Key findings:
+            The <a href="https://www.ielts.org/for-organisations/ielts-scoring-in-detail" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">British Council/IELTS research division</a> has published updated guidance on comparing the new TOEFL 1�6 bands with IELTS scores. Key findings:
           </ArticleParagraph>
           <BulletList items={[
             <><strong>Direct CEFR alignment:</strong> Both TOEFL 2026 and IELTS now report CEFR levels, enabling institutions to set unified requirements.</>,
-            <><strong>Speaking assessment difference:</strong> IELTS uses human examiners; TOEFL uses AI-assisted scoring—scores are comparable but test experiences differ.</>,
+            <><strong>Speaking assessment difference:</strong> IELTS uses human examiners; TOEFL uses AI-assisted scoring�scores are comparable but test experiences differ.</>,
             <><strong>University acceptance:</strong> 98% of US institutions and 100% of UK universities now accept both tests with equivalent CEFR-based requirements.</>,
             <><strong>Recommendation:</strong> Students should choose based on test format preference (computer vs. human interaction) rather than perceived difficulty.</>  
           ]} />
         </div>
 
         <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-8 rounded-lg my-8 shadow-xl">
-          <h4 className="font-bold text-2xl mb-4">🎓 Bottom Line</h4>
+          <h4 className="font-bold text-2xl mb-4">?? Bottom Line</h4>
           <ArticleParagraph>
-            By understanding the new TOEFL 1–6 band scoring system, its CEFR alignment, and the 2026 test format changes, you can set accurate score targets for your preferred country and institution and prepare strategically for success.
+            By understanding the new TOEFL 1�6 band scoring system, its CEFR alignment, and the 2026 test format changes, you can set accurate score targets for your preferred country and institution and prepare strategically for success.
           </ArticleParagraph>
         </div>
 
@@ -2797,7 +6058,7 @@ export const BLOG_POSTS: BlogPost[] = [
               </a>
             </li>
             <li>
-              <strong>ETS – TOEFL iBT Test Updates</strong>
+              <strong>ETS � TOEFL iBT Test Updates</strong>
               <br />
               <span className="text-sm text-slate-600 dark:text-slate-400">Details on multistage adaptive testing, scoring changes, and reporting</span>
               <br />
@@ -2806,16 +6067,16 @@ export const BLOG_POSTS: BlogPost[] = [
               </a>
             </li>
             <li>
-              <strong>ETS – CEFR Alignment Documentation</strong>
+              <strong>ETS � CEFR Alignment Documentation</strong>
               <br />
-              <span className="text-sm text-slate-600 dark:text-slate-400">How TOEFL scores align with CEFR levels (A1–C2)</span>
+              <span className="text-sm text-slate-600 dark:text-slate-400">How TOEFL scores align with CEFR levels (A1�C2)</span>
               <br />
               <a href="https://www.ets.org/toefl/institutions/scores/understanding" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">
                 https://www.ets.org/toefl/institutions/scores/understanding
               </a>
             </li>
             <li>
-              <strong>ETS – TOEFL Score Reporting & Validity</strong>
+              <strong>ETS � TOEFL Score Reporting & Validity</strong>
               <br />
               <span className="text-sm text-slate-600 dark:text-slate-400">Score reports, transition period, and score validity rules</span>
               <br />
@@ -2881,34 +6142,34 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on official <a href="https://www.ielts.org/about-ielts/what-is-ielts/ielts-scoring-in-detail" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">IELTS Band Descriptors</a> and UK/Canada immigration requirements.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on official <a href="https://www.ielts.org/about-ielts/what-is-ielts/ielts-scoring-in-detail" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">IELTS Band Descriptors</a> and UK/Canada immigration requirements.</span>
         </div>
 
         {/* Statistics Box */}
         <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-700 rounded-lg p-4 mb-6">
-          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">🎯 Band 8 Grammar: Key Statistics</h4>
+          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">?? Band 8 Grammar: Key Statistics</h4>
           <ul className="text-sm text-green-700 dark:text-green-300 space-y-1">
-            <li>• Grammar accounts for exactly 25% of your Writing score</li>
-            <li>• Band 8 requires "a wide range of structures" with "rare minor errors"</li>
-            <li>• UK Skilled Worker visa: minimum Band 6.0 in Writing</li>
-            <li>• Canada Express Entry: CLB 7 (Band 6.0) minimum; Band 8+ maximizes CRS points</li>
+            <li>� Grammar accounts for exactly 25% of your Writing score</li>
+            <li>� Band 8 requires "a wide range of structures" with "rare minor errors"</li>
+            <li>� UK Skilled Worker visa: minimum Band 6.0 in Writing</li>
+            <li>� Canada Express Entry: CLB 7 (Band 6.0) minimum; Band 8+ maximizes CRS points</li>
           </ul>
         </div>
 
         <div className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-slate-800 dark:to-slate-700 border-l-4 border-blue-600 p-6 my-8 rounded-r-lg">
-          <h4 className="font-semibold text-xl mb-4 text-blue-900 dark:text-blue-200">🎯 Your Fast-Track to Band 8+ IELTS Grammar</h4>
+          <h4 className="font-semibold text-xl mb-4 text-blue-900 dark:text-blue-200">?? Your Fast-Track to Band 8+ IELTS Grammar</h4>
           <BulletList items={[
             <><strong>Grammar = 25% of Your Score:</strong> IELTS grammar directly accounts for a quarter of your IELTS Writing Task 2 score. Master these structures and you're already halfway to Band 8.</>,
             <><strong>UK/Canada Immigration Approved:</strong> Both UK Canada immigration English test requirements demand Band 6.5-7+ in writing. This guide shows you how to exceed those benchmarks.</>,
-            <><strong>Error-Free Complex Sentences:</strong> Band 8 grammar means using complex structures (conditionals, relative clauses, passive voice) with rare errors—we'll show you exactly how.</>,
+            <><strong>Error-Free Complex Sentences:</strong> Band 8 grammar means using complex structures (conditionals, relative clauses, passive voice) with rare errors�we'll show you exactly how.</>,
             <><strong>Real Examiner Expectations:</strong> Learn what IELTS examiners actually look for in band 8 grammar, based on official assessment criteria.</>
           ]} />
         </div>
 
         <ArticleParagraph>
-          If you're preparing for the UK Canada immigration English test or aiming to study abroad, achieving Band 8+ in <strong>IELTS Writing Task 2</strong> can feel like climbing Everest. But here's the truth: while many test-takers obsess over vocabulary and ideas, the secret weapon that distinguishes Band 6 students from Band 8+ achievers is <strong>IELTS grammar</strong>—specifically, your ability to demonstrate grammatical range and accuracy.
+          If you're preparing for the UK Canada immigration English test or aiming to study abroad, achieving Band 8+ in <strong>IELTS Writing Task 2</strong> can feel like climbing Everest. But here's the truth: while many test-takers obsess over vocabulary and ideas, the secret weapon that distinguishes Band 6 students from Band 8+ achievers is <strong>IELTS grammar</strong>�specifically, your ability to demonstrate grammatical range and accuracy.
         </ArticleParagraph>
 
         <ArticleParagraph>
@@ -2950,7 +6211,7 @@ export const BLOG_POSTS: BlogPost[] = [
         <ArticleHeading>The 7 Essential Grammar Structures for Band 8+ IELTS Writing Task 2</ArticleHeading>
 
         <ArticleParagraph>
-          Now let's explore the seven grammatical structures that consistently appear in Band 8+ essays. These aren't just theoretical concepts—they're practical tools you'll use in every <strong>IELTS Writing Task 2</strong> essay you write.
+          Now let's explore the seven grammatical structures that consistently appear in Band 8+ essays. These aren't just theoretical concepts�they're practical tools you'll use in every <strong>IELTS Writing Task 2</strong> essay you write.
         </ArticleParagraph>
 
         <div className="bg-blue-50 dark:bg-slate-800 p-6 rounded-lg my-6 border border-blue-200 dark:border-blue-700">
@@ -2961,12 +6222,12 @@ export const BLOG_POSTS: BlogPost[] = [
           
           <div className="mt-4 space-y-3">
             <div className="bg-white dark:bg-slate-700 p-4 rounded">
-              <p className="font-semibold mb-2 text-red-600 dark:text-red-400">❌ Band 5-6 (Simple sentences):</p>
+              <p className="font-semibold mb-2 text-red-600 dark:text-red-400">? Band 5-6 (Simple sentences):</p>
               <p className="italic">"Technology is important in education. It helps students learn better. Schools should invest in computers."</p>
             </div>
             
             <div className="bg-white dark:bg-slate-700 p-4 rounded">
-              <p className="font-semibold mb-2 text-green-600 dark:text-green-400">✅ Band 8+ (Complex with subordination):</p>
+              <p className="font-semibold mb-2 text-green-600 dark:text-green-400">? Band 8+ (Complex with subordination):</p>
               <p className="italic">"<strong>Although</strong> technology plays a crucial role in modern education, schools must ensure that <strong>while</strong> investing in digital infrastructure, they do not neglect fundamental teaching methodologies <strong>that have proven effective</strong> over decades."</p>
             </div>
           </div>
@@ -2991,17 +6252,17 @@ export const BLOG_POSTS: BlogPost[] = [
           
           <div className="mt-4 space-y-3">
             <div className="bg-white dark:bg-slate-700 p-4 rounded">
-              <p className="font-semibold mb-2 text-red-600 dark:text-red-400">❌ Basic:</p>
+              <p className="font-semibold mb-2 text-red-600 dark:text-red-400">? Basic:</p>
               <p className="italic">"Students need motivation. Motivation helps them succeed."</p>
             </div>
             
             <div className="bg-white dark:bg-slate-700 p-4 rounded">
-              <p className="font-semibold mb-2 text-green-600 dark:text-green-400">✅ Band 8+ (Defining relative clause):</p>
+              <p className="font-semibold mb-2 text-green-600 dark:text-green-400">? Band 8+ (Defining relative clause):</p>
               <p className="italic">"Students <strong>who demonstrate intrinsic motivation</strong> tend to achieve better academic outcomes than those <strong>who rely solely on external rewards</strong>."</p>
             </div>
 
             <div className="bg-white dark:bg-slate-700 p-4 rounded">
-              <p className="font-semibold mb-2 text-green-600 dark:text-green-400">✅ Band 8+ (Non-defining relative clause):</p>
+              <p className="font-semibold mb-2 text-green-600 dark:text-green-400">? Band 8+ (Non-defining relative clause):</p>
               <p className="italic">"Remote work, <strong>which has become increasingly prevalent since 2020</strong>, offers employees flexibility but <strong>can also lead to isolation</strong>, <strong>which negatively impacts mental health</strong>."</p>
             </div>
           </div>
@@ -3012,30 +6273,30 @@ export const BLOG_POSTS: BlogPost[] = [
           </div>
         </div>
 
-        <div className="bg-orange-50 dark:bg-slate-800 p-6 rounded-lg my-6 border border-orange-200 dark:border-orange-700">
-          <h4 className="font-semibold text-lg mb-4 text-orange-900 dark:text-orange-200">3. Passive Voice for Academic Tone</h4>
+        <div className="bg-teal-50 dark:bg-slate-800 p-6 rounded-lg my-6 border border-teal-200 dark:border-teal-700">
+          <h4 className="font-semibold text-lg mb-4 text-teal-900 dark:text-teal-200">3. Passive Voice for Academic Tone</h4>
           <ArticleParagraph>
-            The passive voice is essential in <strong>IELTS Writing Task 2</strong> for creating an objective, academic tone—a hallmark of <strong>band 8 grammar</strong>.
+            The passive voice is essential in <strong>IELTS Writing Task 2</strong> for creating an objective, academic tone�a hallmark of <strong>band 8 grammar</strong>.
           </ArticleParagraph>
           
           <div className="mt-4 space-y-3">
             <div className="bg-white dark:bg-slate-700 p-4 rounded">
-              <p className="font-semibold mb-2 text-red-600 dark:text-red-400">❌ Too informal (active):</p>
+              <p className="font-semibold mb-2 text-red-600 dark:text-red-400">? Too informal (active):</p>
               <p className="italic">"People consider climate change as one of the greatest threats."</p>
             </div>
             
             <div className="bg-white dark:bg-slate-700 p-4 rounded">
-              <p className="font-semibold mb-2 text-green-600 dark:text-green-400">✅ Band 8+ (passive for academic tone):</p>
+              <p className="font-semibold mb-2 text-green-600 dark:text-green-400">? Band 8+ (passive for academic tone):</p>
               <p className="italic">"Climate change <strong>is widely regarded</strong> as one of the most pressing challenges of our time, and urgent action <strong>must be taken</strong> by governments worldwide."</p>
             </div>
 
             <div className="bg-white dark:bg-slate-700 p-4 rounded">
-              <p className="font-semibold mb-2 text-green-600 dark:text-green-400">✅ Band 8+ (passive with modal verbs):</p>
+              <p className="font-semibold mb-2 text-green-600 dark:text-green-400">? Band 8+ (passive with modal verbs):</p>
               <p className="italic">"This problem <strong>could be addressed</strong> through implementing stricter regulations, which <strong>should be enforced</strong> at both national and international levels."</p>
             </div>
           </div>
 
-          <div className="mt-4 bg-orange-100 dark:bg-slate-900 p-4 rounded">
+          <div className="mt-4 bg-teal-100 dark:bg-slate-900 p-4 rounded">
             <p className="font-semibold mb-2">Common IELTS Grammar Passive Patterns:</p>
             <ExampleList items={[
               "It is believed/thought/argued that...",
@@ -3050,7 +6311,7 @@ export const BLOG_POSTS: BlogPost[] = [
         <div className="bg-teal-50 dark:bg-slate-800 p-6 rounded-lg my-6 border border-teal-200 dark:border-teal-700">
           <h4 className="font-semibold text-lg mb-4 text-teal-900 dark:text-teal-200">4. Conditional Sentences (All Types)</h4>
           <ArticleParagraph>
-            Conditionals allow you to discuss hypothetical situations and cause-effect relationships—critical for many <strong>IELTS Writing Task 2</strong> question types.
+            Conditionals allow you to discuss hypothetical situations and cause-effect relationships�critical for many <strong>IELTS Writing Task 2</strong> question types.
           </ArticleParagraph>
           
           <div className="mt-4 space-y-4">
@@ -3075,7 +6336,7 @@ export const BLOG_POSTS: BlogPost[] = [
             </div>
 
             <div className="bg-white dark:bg-slate-700 p-4 rounded">
-              <p className="font-semibold mb-2 text-green-600 dark:text-green-400">✅ Band 8+ Mixed Conditional:</p>
+              <p className="font-semibold mb-2 text-green-600 dark:text-green-400">? Band 8+ Mixed Conditional:</p>
               <p className="italic">"If society <strong>had invested</strong> more in renewable energy decades ago (past), we <strong>would not be facing</strong> such severe environmental crises today (present)."</p>
             </div>
           </div>
@@ -3084,22 +6345,22 @@ export const BLOG_POSTS: BlogPost[] = [
         <div className="bg-pink-50 dark:bg-slate-800 p-6 rounded-lg my-6 border border-pink-200 dark:border-pink-700">
           <h4 className="font-semibold text-lg mb-4 text-pink-900 dark:text-pink-200">5. Perfect Tenses for Time Relationships</h4>
           <ArticleParagraph>
-            Perfect tenses show sophisticated understanding of time relationships—a key component of <strong>band 8 grammar</strong> in IELTS Writing Task 2.
+            Perfect tenses show sophisticated understanding of time relationships�a key component of <strong>band 8 grammar</strong> in IELTS Writing Task 2.
           </ArticleParagraph>
           
           <div className="mt-4 space-y-3">
             <div className="bg-white dark:bg-slate-700 p-4 rounded">
-              <p className="font-semibold mb-2 text-green-600 dark:text-green-400">✅ Present Perfect (past action with present relevance):</p>
+              <p className="font-semibold mb-2 text-green-600 dark:text-green-400">? Present Perfect (past action with present relevance):</p>
               <p className="italic">"Technology <strong>has transformed</strong> the way we communicate, and this shift <strong>has led</strong> to both opportunities and challenges in modern society."</p>
             </div>
 
             <div className="bg-white dark:bg-slate-700 p-4 rounded">
-              <p className="font-semibold mb-2 text-green-600 dark:text-green-400">✅ Past Perfect (earlier past action):</p>
+              <p className="font-semibold mb-2 text-green-600 dark:text-green-400">? Past Perfect (earlier past action):</p>
               <p className="italic">"By the time governments implemented lockdown measures, the virus <strong>had already spread</strong> to multiple countries."</p>
             </div>
 
             <div className="bg-white dark:bg-slate-700 p-4 rounded">
-              <p className="font-semibold mb-2 text-green-600 dark:text-green-400">✅ Future Perfect (completion before future time):</p>
+              <p className="font-semibold mb-2 text-green-600 dark:text-green-400">? Future Perfect (completion before future time):</p>
               <p className="italic">"By 2050, renewable energy <strong>will have replaced</strong> fossil fuels as the primary energy source in most developed nations."</p>
             </div>
           </div>
@@ -3108,22 +6369,22 @@ export const BLOG_POSTS: BlogPost[] = [
         <div className="bg-indigo-50 dark:bg-slate-800 p-6 rounded-lg my-6 border border-indigo-200 dark:border-indigo-700">
           <h4 className="font-semibold text-lg mb-4 text-indigo-900 dark:text-indigo-200">6. Modal Verbs for Nuance and Hedging</h4>
           <ArticleParagraph>
-            Academic writing requires hedging—expressing ideas with appropriate caution. Modal verbs are essential for <strong>IELTS grammar</strong> at Band 8+.
+            Academic writing requires hedging�expressing ideas with appropriate caution. Modal verbs are essential for <strong>IELTS grammar</strong> at Band 8+.
           </ArticleParagraph>
           
           <div className="mt-4 space-y-3">
             <div className="bg-white dark:bg-slate-700 p-4 rounded">
-              <p className="font-semibold mb-2 text-red-600 dark:text-red-400">❌ Too absolute (Band 6):</p>
+              <p className="font-semibold mb-2 text-red-600 dark:text-red-400">? Too absolute (Band 6):</p>
               <p className="italic">"Social media causes mental health problems in teenagers."</p>
             </div>
             
             <div className="bg-white dark:bg-slate-700 p-4 rounded">
-              <p className="font-semibold mb-2 text-green-600 dark:text-green-400">✅ Band 8+ (hedged with modals):</p>
+              <p className="font-semibold mb-2 text-green-600 dark:text-green-400">? Band 8+ (hedged with modals):</p>
               <p className="italic">"Excessive social media use <strong>may contribute</strong> to mental health issues among adolescents, though this relationship <strong>could be</strong> influenced by numerous other factors."</p>
             </div>
 
             <div className="bg-white dark:bg-slate-700 p-4 rounded">
-              <p className="font-semibold mb-2 text-green-600 dark:text-green-400">✅ Band 8+ (modal perfects):</p>
+              <p className="font-semibold mb-2 text-green-600 dark:text-green-400">? Band 8+ (modal perfects):</p>
               <p className="italic">"The government <strong>should have invested</strong> more heavily in healthcare infrastructure, which <strong>might have prevented</strong> the current crisis."</p>
             </div>
           </div>
@@ -3140,25 +6401,25 @@ export const BLOG_POSTS: BlogPost[] = [
           </div>
         </div>
 
-        <div className="bg-amber-50 dark:bg-slate-800 p-6 rounded-lg my-6 border border-amber-200 dark:border-amber-700">
-          <h4 className="font-semibold text-lg mb-4 text-amber-900 dark:text-amber-200">7. Inversion and Emphatic Structures</h4>
+        <div className="bg-teal-50 dark:bg-slate-800 p-6 rounded-lg my-6 border border-teal-200 dark:border-teal-700">
+          <h4 className="font-semibold text-lg mb-4 text-teal-900 dark:text-teal-200">7. Inversion and Emphatic Structures</h4>
           <ArticleParagraph>
             Advanced structures like inversion demonstrate the highest level of <strong>band 8 grammar</strong> control and grammatical sophistication.
           </ArticleParagraph>
           
           <div className="mt-4 space-y-3">
             <div className="bg-white dark:bg-slate-700 p-4 rounded">
-              <p className="font-semibold mb-2 text-green-600 dark:text-green-400">✅ Negative inversion:</p>
+              <p className="font-semibold mb-2 text-green-600 dark:text-green-400">? Negative inversion:</p>
               <p className="italic">"<strong>Not only does</strong> education improve individual prospects, <strong>but it also</strong> strengthens entire communities."</p>
             </div>
 
             <div className="bg-white dark:bg-slate-700 p-4 rounded">
-              <p className="font-semibold mb-2 text-green-600 dark:text-green-400">✅ "Only" inversion:</p>
+              <p className="font-semibold mb-2 text-green-600 dark:text-green-400">? "Only" inversion:</p>
               <p className="italic">"<strong>Only by implementing</strong> comprehensive reforms can governments hope to address this multifaceted issue."</p>
             </div>
 
             <div className="bg-white dark:bg-slate-700 p-4 rounded">
-              <p className="font-semibold mb-2 text-green-600 dark:text-green-400">✅ Cleft sentences for emphasis:</p>
+              <p className="font-semibold mb-2 text-green-600 dark:text-green-400">? Cleft sentences for emphasis:</p>
               <p className="italic">"<strong>What concerns experts most</strong> is not the current situation but the long-term implications of inaction."</p>
             </div>
           </div>
@@ -3174,40 +6435,40 @@ export const BLOG_POSTS: BlogPost[] = [
           <div className="bg-red-50 dark:bg-red-900/20 p-5 rounded-lg border-l-4 border-red-600">
             <p className="font-semibold mb-2 text-red-800 dark:text-red-300">1. Article Errors (a/an/the)</p>
             <div className="space-y-2 mt-3">
-              <p className="text-sm"><span className="font-semibold text-red-600">❌</span> "Government should invest in education."</p>
-              <p className="text-sm"><span className="font-semibold text-green-600">✅</span> "<strong>The</strong> government should invest in education." or "Governments should invest..."</p>
+              <p className="text-sm"><span className="font-semibold text-red-600">?</span> "Government should invest in education."</p>
+              <p className="text-sm"><span className="font-semibold text-green-600">?</span> "<strong>The</strong> government should invest in education." or "Governments should invest..."</p>
             </div>
           </div>
 
           <div className="bg-red-50 dark:bg-red-900/20 p-5 rounded-lg border-l-4 border-red-600">
             <p className="font-semibold mb-2 text-red-800 dark:text-red-300">2. Subject-Verb Agreement</p>
             <div className="space-y-2 mt-3">
-              <p className="text-sm"><span className="font-semibold text-red-600">❌</span> "The number of students <strong>have</strong> increased."</p>
-              <p className="text-sm"><span className="font-semibold text-green-600">✅</span> "The number of students <strong>has</strong> increased."</p>
+              <p className="text-sm"><span className="font-semibold text-red-600">?</span> "The number of students <strong>have</strong> increased."</p>
+              <p className="text-sm"><span className="font-semibold text-green-600">?</span> "The number of students <strong>has</strong> increased."</p>
             </div>
           </div>
 
           <div className="bg-red-50 dark:bg-red-900/20 p-5 rounded-lg border-l-4 border-red-600">
             <p className="font-semibold mb-2 text-red-800 dark:text-red-300">3. Run-on Sentences</p>
             <div className="space-y-2 mt-3">
-              <p className="text-sm"><span className="font-semibold text-red-600">❌</span> "Technology is important it helps us work faster."</p>
-              <p className="text-sm"><span className="font-semibold text-green-600">✅</span> "Technology is important <strong>because</strong> it helps us work faster."</p>
+              <p className="text-sm"><span className="font-semibold text-red-600">?</span> "Technology is important it helps us work faster."</p>
+              <p className="text-sm"><span className="font-semibold text-green-600">?</span> "Technology is important <strong>because</strong> it helps us work faster."</p>
             </div>
           </div>
 
           <div className="bg-red-50 dark:bg-red-900/20 p-5 rounded-lg border-l-4 border-red-600">
             <p className="font-semibold mb-2 text-red-800 dark:text-red-300">4. Incorrect Preposition Use</p>
             <div className="space-y-2 mt-3">
-              <p className="text-sm"><span className="font-semibold text-red-600">❌</span> "People are dependent <strong>from</strong> technology."</p>
-              <p className="text-sm"><span className="font-semibold text-green-600">✅</span> "People are dependent <strong>on</strong> technology."</p>
+              <p className="text-sm"><span className="font-semibold text-red-600">?</span> "People are dependent <strong>from</strong> technology."</p>
+              <p className="text-sm"><span className="font-semibold text-green-600">?</span> "People are dependent <strong>on</strong> technology."</p>
             </div>
           </div>
 
           <div className="bg-red-50 dark:bg-red-900/20 p-5 rounded-lg border-l-4 border-red-600">
             <p className="font-semibold mb-2 text-red-800 dark:text-red-300">5. Misuse of Relative Pronouns</p>
             <div className="space-y-2 mt-3">
-              <p className="text-sm"><span className="font-semibold text-red-600">❌</span> "The people <strong>which</strong> attended the conference..."</p>
-              <p className="text-sm"><span className="font-semibold text-green-600">✅</span> "The people <strong>who</strong> attended the conference..."</p>
+              <p className="text-sm"><span className="font-semibold text-red-600">?</span> "The people <strong>which</strong> attended the conference..."</p>
+              <p className="text-sm"><span className="font-semibold text-green-600">?</span> "The people <strong>who</strong> attended the conference..."</p>
             </div>
           </div>
         </div>
@@ -3234,7 +6495,7 @@ export const BLOG_POSTS: BlogPost[] = [
           ]} />
         </div>
 
-        <div className="bg-gradient-to-r from-pink-50 to-orange-50 dark:from-slate-800 dark:to-slate-700 p-6 rounded-lg my-6">
+        <div className="bg-gradient-to-r from-pink-50 to-teal-50 dark:from-slate-800 dark:to-slate-700 p-6 rounded-lg my-6">
           <h4 className="font-semibold text-lg mb-4">Body Paragraph 2 (100 words)</h4>
           <BulletList items={[
             <><strong>Use:</strong> Modal verbs for hedging + passive constructions + inversion for emphasis</>,
@@ -3242,7 +6503,7 @@ export const BLOG_POSTS: BlogPost[] = [
           ]} />
         </div>
 
-        <div className="bg-gradient-to-r from-orange-50 to-blue-50 dark:from-slate-800 dark:to-slate-700 p-6 rounded-lg my-6">
+        <div className="bg-gradient-to-r from-teal-50 to-blue-50 dark:from-slate-800 dark:to-slate-700 p-6 rounded-lg my-6">
           <h4 className="font-semibold text-lg mb-4">Conclusion (50 words)</h4>
           <BulletList items={[
             <><strong>Use:</strong> Future perfect + conditional + emphatic structure</>,
@@ -3258,7 +6519,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <div className="grid md:grid-cols-2 gap-6 my-6">
           <div className="bg-blue-50 dark:bg-slate-800 p-6 rounded-lg border-2 border-blue-300 dark:border-blue-700">
-            <h4 className="font-semibold text-xl mb-3 text-blue-900 dark:text-blue-200">🇬🇧 UK Immigration</h4>
+            <h4 className="font-semibold text-xl mb-3 text-blue-900 dark:text-blue-200">???? UK Immigration</h4>
             <BulletList items={[
               <><strong>Skilled Worker Visa:</strong> CEFR Level B1 (IELTS Band 4.0 minimum, but Band 6.5+ recommended)</>,
               <><strong>Student Visa:</strong> Usually Band 5.5-6.5 depending on institution</>,
@@ -3268,7 +6529,7 @@ export const BLOG_POSTS: BlogPost[] = [
           </div>
 
           <div className="bg-red-50 dark:bg-slate-800 p-6 rounded-lg border-2 border-red-300 dark:border-red-700">
-            <h4 className="font-semibold text-xl mb-3 text-red-900 dark:text-red-200">🇨🇦 Canada Immigration</h4>
+            <h4 className="font-semibold text-xl mb-3 text-red-900 dark:text-red-200">???? Canada Immigration</h4>
             <BulletList items={[
               <><strong>Express Entry (Federal Skilled Worker):</strong> CLB 7 (IELTS Band 6.0 minimum per skill)</>,
               <><strong>Canadian Experience Class:</strong> CLB 7 (skilled jobs) or CLB 5 (other jobs)</>,
@@ -3279,7 +6540,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         <ArticleParagraph>
-          Achieving <strong>band 8 grammar</strong> in your <strong>IELTS Writing Task 2</strong> doesn't just meet requirements—it significantly boosts your immigration application by demonstrating superior language skills.
+          Achieving <strong>band 8 grammar</strong> in your <strong>IELTS Writing Task 2</strong> doesn't just meet requirements�it significantly boosts your immigration application by demonstrating superior language skills.
         </ArticleParagraph>
 
         <ArticleHeading>Practice Exercises: Transforming Band 6 Grammar to Band 8+</ArticleHeading>
@@ -3339,25 +6600,25 @@ export const BLOG_POSTS: BlogPost[] = [
         </ArticleParagraph>
 
         <div className="bg-gradient-to-br from-green-50 to-teal-50 dark:from-green-900/20 dark:to-teal-900/20 p-6 rounded-lg my-6 border-2 border-green-400 dark:border-green-600">
-          <h4 className="font-semibold text-xl mb-4 text-green-900 dark:text-green-200">✅ Your Band 8+ Grammar Checklist:</h4>
+          <h4 className="font-semibold text-xl mb-4 text-green-900 dark:text-green-200">? Your Band 8+ Grammar Checklist:</h4>
           <BulletList items={[
-            <>☑️ Used at least 2-3 <strong>complex sentences with subordination</strong> per paragraph</>,
-            <>☑️ Included <strong>relative clauses</strong> (both defining and non-defining)</>,
-            <>☑️ Applied <strong>passive voice</strong> appropriately for academic tone</>,
-            <>☑️ Demonstrated <strong>conditional structures</strong> (at least one per essay)</>,
-            <>☑️ Used <strong>perfect tenses</strong> to show time relationships</>,
-            <>☑️ Incorporated <strong>modal verbs</strong> for hedging and nuance</>,
-            <>☑️ Included at least one <strong>advanced structure</strong> (inversion/cleft sentence)</>,
-            <>☑️ Checked for common errors (articles, subject-verb agreement, prepositions)</>,
-            <>☑️ Ensured variety in sentence length and structure</>,
-            <>☑️ Maintained accuracy with <strong>rare errors only</strong></>
+            <>?? Used at least 2-3 <strong>complex sentences with subordination</strong> per paragraph</>,
+            <>?? Included <strong>relative clauses</strong> (both defining and non-defining)</>,
+            <>?? Applied <strong>passive voice</strong> appropriately for academic tone</>,
+            <>?? Demonstrated <strong>conditional structures</strong> (at least one per essay)</>,
+            <>?? Used <strong>perfect tenses</strong> to show time relationships</>,
+            <>?? Incorporated <strong>modal verbs</strong> for hedging and nuance</>,
+            <>?? Included at least one <strong>advanced structure</strong> (inversion/cleft sentence)</>,
+            <>?? Checked for common errors (articles, subject-verb agreement, prepositions)</>,
+            <>?? Ensured variety in sentence length and structure</>,
+            <>?? Maintained accuracy with <strong>rare errors only</strong></>
           ]} />
         </div>
 
         <ArticleHeading>Conclusion: Your Path to Band 8+ Success</ArticleHeading>
 
         <ArticleParagraph>
-          Mastering <strong>IELTS grammar</strong> for <strong>Writing Task 2</strong> isn't about memorizing rules—it's about understanding how to use sophisticated structures naturally and accurately. Whether you're taking the <strong>UK Canada immigration English test</strong> or aiming for university admission, achieving <strong>band 8 grammar</strong> demonstrates the advanced English proficiency that opens doors to opportunities abroad.
+          Mastering <strong>IELTS grammar</strong> for <strong>Writing Task 2</strong> isn't about memorizing rules�it's about understanding how to use sophisticated structures naturally and accurately. Whether you're taking the <strong>UK Canada immigration English test</strong> or aiming for university admission, achieving <strong>band 8 grammar</strong> demonstrates the advanced English proficiency that opens doors to opportunities abroad.
         </ArticleParagraph>
 
         <ArticleParagraph>
@@ -3367,7 +6628,7 @@ export const BLOG_POSTS: BlogPost[] = [
         <BulletList items={[
           <><strong>Range matters as much as accuracy:</strong> Use diverse structures throughout your essay</>,
           <><strong>Context is crucial:</strong> Choose grammatical forms that suit your argument and maintain academic tone</>,
-          <><strong>Practice deliberately:</strong> Don't just write essays—analyze model answers and consciously incorporate Band 8+ structures</>,
+          <><strong>Practice deliberately:</strong> Don't just write essays�analyze model answers and consciously incorporate Band 8+ structures</>,
           <><strong>Review systematically:</strong> Always reserve 2-3 minutes to check for common grammatical errors</>
         ]} />
 
@@ -3380,24 +6641,24 @@ export const BLOG_POSTS: BlogPost[] = [
         </ArticleParagraph>
 
         <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-8 rounded-xl my-8 shadow-xl">
-          <h4 className="font-bold text-2xl mb-4">🚀 Ready to Achieve Band 8+?</h4>
+          <h4 className="font-bold text-2xl mb-4">?? Ready to Achieve Band 8+?</h4>
           <ArticleParagraph>
             Join thousands of successful test-takers who've mastered IELTS grammar with TypoGrammar. Explore our comprehensive grammar guides, practice with interactive exercises, and track your progress as you prepare for your UK/Canada immigration test.
           </ArticleParagraph>
           <div className="mt-6">
-            <Link to="/grammar-guide" className="inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg hover:bg-blue-50 transition-colors">
-              Start Your Grammar Journey →
+            <Link to="/grammar-guide/" className="inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg hover:bg-blue-50 transition-colors">
+              Start Your Grammar Journey ?
             </Link>
           </div>
         </div>
 
-        <div className="bg-amber-50 dark:bg-amber-900/20 border-l-4 border-amber-500 p-6 my-8">
-          <h4 className="font-semibold text-lg mb-3 text-amber-900 dark:text-amber-200">📚 Related Resources:</h4>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border-l-4 border-teal-500 p-6 my-8">
+          <h4 className="font-semibold text-lg mb-3 text-teal-900 dark:text-teal-200">?? Related Resources:</h4>
           <BulletList items={[
-            <><Link to="/topics/conditionals" className="text-blue-600 dark:text-blue-400 hover:underline">Complete Guide to Conditional Sentences</Link></>,
-            <><Link to="/topics/passive-voice" className="text-blue-600 dark:text-blue-400 hover:underline">Mastering Passive Voice in Academic Writing</Link></>,
-            <><Link to="/topics/relative-clauses" className="text-blue-600 dark:text-blue-400 hover:underline">Advanced Relative Clauses Explained</Link></>,
-            <><Link to="/interactive-exercises" className="text-blue-600 dark:text-blue-400 hover:underline">Practice IELTS Grammar with Interactive Exercises</Link></>
+            <><Link to="/topics/conditionals/" className="text-blue-600 dark:text-blue-400 hover:underline">Complete Guide to Conditional Sentences</Link></>,
+            <><Link to="/topics/passive-voice/" className="text-blue-600 dark:text-blue-400 hover:underline">Mastering Passive Voice in Academic Writing</Link></>,
+            <><Link to="/topics/relative-clauses/" className="text-blue-600 dark:text-blue-400 hover:underline">Advanced Relative Clauses Explained</Link></>,
+            <><Link to="/interactive-exercises/" className="text-blue-600 dark:text-blue-400 hover:underline">Practice IELTS Grammar with Interactive Exercises</Link></>
           ]} />
         </div>
 
@@ -3462,19 +6723,19 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on official <a href="https://www.ielts.org/about-ielts/what-is-ielts/ielts-scoring-in-detail" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">IELTS Speaking Band Descriptors</a> and examiner training materials.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on official <a href="https://www.ielts.org/about-ielts/what-is-ielts/ielts-scoring-in-detail" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">IELTS Speaking Band Descriptors</a> and examiner training materials.</span>
         </div>
 
         {/* Statistics Box */}
         <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-700 rounded-lg p-4 mb-6">
-          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">🎯 IELTS Speaking: Key Facts</h4>
+          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">?? IELTS Speaking: Key Facts</h4>
           <ul className="text-sm text-green-700 dark:text-green-300 space-y-1">
-            <li>• Speaking test lasts 11-14 minutes across 3 parts</li>
-            <li>• Band 7+ requires "fluent" speech with "some hesitation for language"</li>
-            <li>• Students who practice with PEEL structure score 0.5-1.0 band higher</li>
-            <li>• Pronunciation accounts for 25% of Speaking score - clarity over accent</li>
+            <li>� Speaking test lasts 11-14 minutes across 3 parts</li>
+            <li>� Band 7+ requires "fluent" speech with "some hesitation for language"</li>
+            <li>� Students who practice with PEEL structure score 0.5-1.0 band higher</li>
+            <li>� Pronunciation accounts for 25% of Speaking score - clarity over accent</li>
           </ul>
         </div>
 
@@ -3851,19 +7112,19 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on official <a href="https://www.ielts.org/test-centres" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">IELTS.org</a> and <a href="https://www.idp.com/ielts/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">IDP IELTS</a> registration resources.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on official <a href="https://www.ielts.org/test-centres" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">IELTS.org</a> and <a href="https://www.idp.com/ielts/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">IDP IELTS</a> registration resources.</span>
         </div>
 
         {/* Statistics Box */}
         <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-700 rounded-lg p-4 mb-6">
-          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">🎯 IELTS Test Centers: Global Facts</h4>
+          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">?? IELTS Test Centers: Global Facts</h4>
           <ul className="text-sm text-green-700 dark:text-green-300 space-y-1">
-            <li>• 4,000+ test locations across 140 countries worldwide</li>
-            <li>• IELTS is accepted by 12,000+ organizations globally</li>
-            <li>• Computer-delivered IELTS available in 60+ countries with faster results</li>
-            <li>• Book 2-4 weeks in advance for best date selection</li>
+            <li>� 4,000+ test locations across 140 countries worldwide</li>
+            <li>� IELTS is accepted by 12,000+ organizations globally</li>
+            <li>� Computer-delivered IELTS available in 60+ countries with faster results</li>
+            <li>� Book 2-4 weeks in advance for best date selection</li>
           </ul>
         </div>
 
@@ -3899,7 +7160,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </ArticleParagraph>
 
         <ArticleParagraph>
-          IELTS is accepted by more than 12,000 organizations globally, including leading universities and immigration authorities in the UK, Australia, Canada, and the USA. This broad acceptance underscores the importance of a credible and well-regarded test center. Moreover, the availability of specific test formats – paper-based, computer-delivered, or even IELTS Online – can vary by center, directly impacting your comfort and preference.
+          IELTS is accepted by more than 12,000 organizations globally, including leading universities and immigration authorities in the UK, Australia, Canada, and the USA. This broad acceptance underscores the importance of a credible and well-regarded test center. Moreover, the availability of specific test formats � paper-based, computer-delivered, or even IELTS Online � can vary by center, directly impacting your comfort and preference.
         </ArticleParagraph>
 
         <div className="bg-gray-50 dark:bg-slate-800 p-6 rounded-lg my-6">
@@ -4250,7 +7511,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'ielts-writing-task-1-2-guide-2026',
-    title: 'IELTS Writing Task 1 and Task 2 Guide 2026: Structures, Samples, and Band 7+ Tips',
+    title: 'IELTS Writing Task?1?and?Task?2 Guide?2026: Structures, Samples, and Band?7+ Tips',
     author: 'The TypoGrammar Team',
     date: 'December 26, 2026',
     summary: 'A comprehensive 2026 guide to IELTS Writing Task 1 and Task 2: structures, templates, sample questions, and Band 7+ strategies for Academic and General Training.',
@@ -4260,27 +7521,27 @@ export const BLOG_POSTS: BlogPost[] = [
     content: (
       <>
         <ArticleParagraph>
-          Preparing for the IELTS Writing Test is one of the biggest challenges for candidates aiming for a band 7 or higher. Writing is often considered the hardest module because it demands a mix of grammar accuracy, logical organization, lexical range, and task achievement.
+          Preparing for the IELTS Writing Test is one of the biggest challenges for candidates aiming for a band?7?or higher. Writing is often considered the hardest module because it demands a mix of grammar accuracy, logical organization, lexical range, and task achievement.
         </ArticleParagraph>
         <ArticleParagraph>
-          This comprehensive guide will walk you through both Task 1 and Task 2, explain the differences between Academic and General Training questions, and show you how to boost your score using proven strategies and model templates designed for IELTS 2026.
+          This comprehensive guide will walk you through both Task?1 and Task?2, explain the differences between Academic and General Training questions, and show you how to boost your score using proven strategies and model templates designed for IELTS?2026.
         </ArticleParagraph>
         <ArticleHeading>Understanding the IELTS Writing Test Format</ArticleHeading>
         <ArticleParagraph>
-          The IELTS Writing Test lasts 60 minutes and includes two tasks:
+          The IELTS Writing Test lasts 60?minutes and includes two tasks:
         </ArticleParagraph>
         <BulletList items={[
-          <><strong>Task 1:</strong> 20 minutes, at least 150 words, 1/3 of total score</>,
-          <><strong>Task 2:</strong> 40 minutes, at least 250 words, 2/3 of total score</>
+          <><strong>Task?1:</strong> 20?minutes, at least?150?words, 1/3?of total score</>,
+          <><strong>Task?2:</strong> 40?minutes, at least?250?words, 2/3?of total score</>
         ]} />
         <ArticleParagraph>
-          You can take the Academic Module (for university or professional registration) or the General Training Module (for immigration or work purposes). Each has slightly different Task 1 requirements, though Task 2 is the same for both.
+          You can take the Academic Module (for university or professional registration) or the General Training Module (for immigration or work purposes). Each has slightly different Task?1?requirements, though Task?2?is the same for both.
         </ArticleParagraph>
-        <ArticleHeading>IELTS Writing Task 1 (Academic)</ArticleHeading>
+        <ArticleHeading>IELTS Writing Task?1 (Academic)</ArticleHeading>
         <ArticleParagraph>
-          <strong>What You Need to Do:</strong> In Academic Task 1, you’ll describe and analyze visual information, such as line graphs, bar charts, pie charts, tables, maps, diagrams, or processes. Your goal is to summarize key information without opinions. Identify main trends, differences, or stages and present data clearly and objectively.
+          <strong>What You Need to Do:</strong> In Academic Task?1, you�ll describe and analyze visual information, such as line graphs, bar charts, pie charts, tables, maps, diagrams, or processes. Your goal is to summarize key information without opinions. Identify main trends, differences, or stages and present data clearly and objectively.
         </ArticleParagraph>
-        <ArticleHeading>Band 7 Requirements for Academic Task 1</ArticleHeading>
+        <ArticleHeading>Band?7?Requirements for Academic Task?1</ArticleHeading>
         <BulletList items={[
           'Select key features accurately. Avoid describing every small detail.',
           'Summarize trends. Compare key data points.',
@@ -4288,61 +7549,61 @@ export const BLOG_POSTS: BlogPost[] = [
           'Use a range of vocabulary to describe changes (e.g., increase, decline, remain steady).',
           'Demonstrate complex grammar structures like comparative clauses, passive voice, and relative clauses.'
         ]} />
-        <ArticleHeading>Academic Task 1 Structure Template</ArticleHeading>
+        <ArticleHeading>Academic Task?1?Structure Template</ArticleHeading>
         <BulletList items={[
           'Introduction (Paraphrase the question)',
           'Overview (Summarize major trends)',
-          'Details Paragraph 1 (Describe the first main group of data)',
-          'Details Paragraph 2 (Describe the second group and make comparisons or contrasts)'
+          'Details Paragraph?1 (Describe the first main group of data)',
+          'Details Paragraph?2 (Describe the second group and make comparisons or contrasts)'
         ]} />
         <ArticleParagraph>
-          <strong>Example start:</strong> The line graph illustrates changes in the number of students applying for postgraduate courses between 2015 and 2026.
+          <strong>Example start:</strong> The line graph illustrates changes in the number of students applying for postgraduate courses between?2015?and?2026.
         </ArticleParagraph>
         <ArticleParagraph>
           <strong>Overview example:</strong> Overall, the total number of applicants rose significantly, while international enrolments showed the most dramatic growth.
         </ArticleParagraph>
-        <ArticleHeading>Useful Vocabulary for Academic Task 1</ArticleHeading>
+        <ArticleHeading>Useful Vocabulary for Academic Task?1</ArticleHeading>
         <BulletList items={[
           <><strong>Trend Words:</strong> increased, declined, remained stable, peaked, fluctuated</>,
           <><strong>Adjectives:</strong> significant, gradual, steady, sharp</>,
           <><strong>Linking Expressions:</strong> while, whereas, compared to, in contrast, moreover</>
         ]} />
-        <ArticleHeading>IELTS Writing Task 1 (General Training)</ArticleHeading>
+        <ArticleHeading>IELTS Writing Task?1 (General Training)</ArticleHeading>
         <ArticleParagraph>
-          <strong>What You Need to Do:</strong> In General Task 1, you’ll write a letter responding to a situation. The prompt includes three bullet points you must cover. There are three tone types: Formal (to managers, companies, or officials), Semi‑formal (to colleagues or someone you know slightly), and Informal (to friends or family).
+          <strong>What You Need to Do:</strong> In General Task?1, you�ll write a letter responding to a situation. The prompt includes three bullet points you must cover. There are three tone types: Formal (to managers, companies, or officials), Semi-formal (to colleagues or someone you know slightly), and Informal (to friends or family).
         </ArticleParagraph>
         <ArticleParagraph>
-          <strong>Example Question:</strong> You recently moved into a new apartment. Write a letter to the landlord explaining the problems you’ve experienced and suggesting solutions.
+          <strong>Example Question:</strong> You recently moved into a new apartment. Write a letter to the landlord explaining the problems you�ve experienced and suggesting solutions.
         </ArticleParagraph>
         <ArticleHeading>Structure Template for General Training Letters</ArticleHeading>
         <BulletList items={[
-          <><strong>Greeting:</strong> Formal → Dear Sir or Madam, Informal → Hi John,</>,
-          'Opening statement: Explain why you’re writing.',
-          'Body Paragraph 1: Describe the situation or problems.',
-          'Body Paragraph 2: Suggest solutions or express feelings.',
+          <><strong>Greeting:</strong> Formal ? Dear?Sir?or?Madam, Informal ? Hi?John,</>,
+          'Opening statement: Explain why you�re writing.',
+          'Body?Paragraph?1: Describe the situation or problems.',
+          'Body?Paragraph?2: Suggest solutions or express feelings.',
           'Closing line: Request action or express thanks.',
-          <><strong>Sign‑off:</strong> Formal → Yours faithfully, Informal → Best regards,</>
+          <><strong>Sign-off:</strong> Formal ? Yours?faithfully, Informal ? Best?regards,</>
         ]} />
         <ArticleHeading>Quick Tips for General Training</ArticleHeading>
         <BulletList items={[
           'Use clear, polite tone.',
           'Cover all bullet points.',
-          'Aim for 150–170 words.',
-          'Don’t memorize whole letters; use flexible sentence frames.'
+          'Aim for 150�170?words.',
+          'Don�t memorize whole letters; use flexible sentence frames.'
         ]} />
-        <ArticleHeading>IELTS Writing Task 2: The Essay</ArticleHeading>
+        <ArticleHeading>IELTS Writing Task?2: The Essay</ArticleHeading>
         <ArticleParagraph>
-          Task 2 is the same for both Academic and General modules. You’ll write an essay of at least 250 words responding to an opinion, argument, or problem. This task carries two‑thirds of the Writing score, so mastering it is crucial.
+          Task?2?is the same for both Academic and General modules. You�ll write an essay of at least?250?words responding to an opinion, argument, or problem. This task carries two-thirds of the Writing score, so mastering it is crucial.
         </ArticleParagraph>
         <ArticleHeading>Common IELTS Essay Types</ArticleHeading>
         <BulletList items={[
           'Opinion Essay (Agree/Disagree)',
           'Discussion Essay (Discuss both views)',
-          'Problem–Solution Essay',
-          'Advantages–Disadvantages Essay',
+          'Problem�Solution Essay',
+          'Advantages�Disadvantages Essay',
           'Double Question Essay (Two questions in one prompt)'
         ]} />
-        <ArticleHeading>Band 7+ Requirements for Task 2</ArticleHeading>
+        <ArticleHeading>Band?7+ Requirements for Task?2</ArticleHeading>
         <BulletList items={[
           'Address all parts of the task with clear position and purpose.',
           'Present logical ideas with relevant examples.',
@@ -4350,11 +7611,11 @@ export const BLOG_POSTS: BlogPost[] = [
           'Show flexible vocabulary and grammatical accuracy.',
           'Have cohesive and balanced paragraphs.'
         ]} />
-        <ArticleHeading>Universal Structure Template for Task 2 Essays</ArticleHeading>
+        <ArticleHeading>Universal Structure Template for Task?2?Essays</ArticleHeading>
         <BulletList items={[
           'Introduction: Paraphrase the question. State your opinion or what the essay will discuss.',
-          'Body Paragraph 1: Topic sentence with first main idea. Explanation + example.',
-          'Body Paragraph 2: Topic sentence with second idea or contrasting view. Support + example.',
+          'Body?Paragraph?1: Topic sentence with first main idea. Explanation + example.',
+          'Body?Paragraph?2: Topic sentence with second idea or contrasting view. Support + example.',
           'Conclusion: Restate main points and summarize your position.'
         ]} />
         <ArticleHeading>Example: Opinion Essay</ArticleHeading>
@@ -4362,35 +7623,35 @@ export const BLOG_POSTS: BlogPost[] = [
           <strong>Question:</strong> Some people believe online learning provides the same benefits as traditional classroom education, while others disagree. Discuss both views and give your opinion.
         </ArticleParagraph>
         <BulletList items={[
-          'Introduction: Paraphrase and thesis → Technology has revolutionized education, yet many argue it cannot replace face‑to‑face learning.',
-          'Body 1: Online learning flexibility + global access.',
-          'Body 2: Classroom learning builds discipline and confidence.',
+          'Introduction: Paraphrase and thesis ? Technology has revolutionized education, yet many argue it cannot replace face-to-face learning.',
+          'Body?1: Online learning flexibility?+?global access.',
+          'Body?2: Classroom learning builds discipline and confidence.',
           'Conclusion: Both beneficial, but traditional classrooms remain essential for personal development.'
         ]} />
         <ArticleParagraph>
-          <strong>Model Band 7 Sentence Examples:</strong>
+          <strong>Model?Band?7?Sentence Examples:</strong>
         </ArticleParagraph>
         <ExampleList items={[
           'Online education offers remarkable flexibility, enabling learners to study at their own pace.',
-          'However, face‑to‑face interaction still plays a crucial role in developing soft skills and teamwork.'
+          'However, face-to-face interaction still plays a crucial role in developing soft skills and teamwork.'
         ]} />
-        <ArticleHeading>Example: Problem–Solution Essay</ArticleHeading>
+        <ArticleHeading>Example: Problem�Solution Essay</ArticleHeading>
         <ArticleParagraph>
           <strong>Question:</strong> Many cities suffer from traffic congestion. What are the problems, and what solutions can be implemented?
         </ArticleParagraph>
         <BulletList items={[
-          'Body 1 – Problems: Increased private car use, poor public transport, pollution.',
-          'Body 2 – Solutions: Invest in subways, promote carpooling, encourage cycling.'
+          'Body?1?�?Problems: Increased private car use, poor public transport, pollution.',
+          'Body?2?�?Solutions: Invest in subways, promote carpooling, encourage cycling.'
         ]} />
         <ArticleParagraph>
-          <strong>Sample Sentence:</strong> One practical solution is to expand affordable and reliable public transit networks, reducing dependence on private vehicles.
+          <strong>Sample?Sentence:</strong> One practical solution is to expand affordable and reliable public transit networks, reducing dependence on private vehicles.
         </ArticleParagraph>
-        <ArticleHeading>Example: Advantages–Disadvantages Essay</ArticleHeading>
+        <ArticleHeading>Example: Advantages�Disadvantages Essay</ArticleHeading>
         <ArticleParagraph>
           <strong>Question:</strong> Some people prefer working remotely. Discuss the advantages and disadvantages of this development.
         </ArticleParagraph>
         <BulletList items={[
-          'Advantages: Flexibility, cost savings, improved work‑life balance.',
+          'Advantages: Flexibility, cost savings, improved work-life balance.',
           'Disadvantages: Isolation, distraction, weakened teamwork.',
           'Conclusion: Working remotely is beneficial for productivity but requires discipline and digital communication skills.'
         ]} />
@@ -4398,8 +7659,8 @@ export const BLOG_POSTS: BlogPost[] = [
         <BulletList items={[
           <><strong>Opinion:</strong> I believe that, From my perspective, It is evident that</>,
           <><strong>Discussion:</strong> On the one hand, Conversely, Nevertheless</>,
-          <><strong>Problem–Solution:</strong> The main cause of, To tackle this problem, One effective measure</>,
-          <><strong>Advantages–Disadvantages:</strong> The primary benefit, On the negative side, Despite these advantages</>
+          <><strong>Problem�Solution:</strong> The main cause of, To tackle this problem, One effective measure</>,
+          <><strong>Advantages�Disadvantages:</strong> The primary benefit, On the negative side, Despite these advantages</>
         ]} />
         <ArticleHeading>Linking Words You Should Master</ArticleHeading>
         <BulletList items={[
@@ -4412,7 +7673,7 @@ export const BLOG_POSTS: BlogPost[] = [
         <ArticleParagraph>
           Varying your connectors keeps your writing elegant and cohesive.
         </ArticleParagraph>
-        <ArticleHeading>Practice Topics for IELTS Writing Task 2</ArticleHeading>
+        <ArticleHeading>Practice Topics for IELTS?Writing?Task?2</ArticleHeading>
         <BulletList items={[
           <><strong>Education:</strong> Schools should teach practical skills like financial management. Do you agree or disagree?</>,
           <><strong>Technology:</strong> The rise of artificial intelligence will eliminate more jobs than it creates. Discuss both views.</>,
@@ -4421,20 +7682,20 @@ export const BLOG_POSTS: BlogPost[] = [
           <><strong>Culture:</strong> Globalization is making traditional culture disappear. Discuss both views.</>
         ]} />
         <ArticleParagraph>
-          Aim to write one essay daily. Review it using official IELTS Writing Band Descriptors or online feedback services.
+          Aim to write one essay daily. Review it using official IELTS Writing Band?Descriptors or online feedback services.
         </ArticleParagraph>
-        <ArticleHeading>Sample Practice for Academic Task 1</ArticleHeading>
+        <ArticleHeading>Sample Practice for Academic Task?1</ArticleHeading>
         <BulletList items={[
-          <><strong>Line Graph:</strong> Describe the changes in global smartphone ownership between 2010 and 2026.</>,
+          <><strong>Line Graph:</strong> Describe the changes in global smartphone ownership between?2010?and?2026.</>,
           <><strong>Bar Chart:</strong> Compare employment rates of men and women in four industries.</>,
-          <><strong>Pie Chart:</strong> Summarize the energy distribution by source in five countries.</>,
-          <><strong>Map:</strong> Describe the development of a coastal town over 20 years.</>,
+          <><strong>Pie Chart:</strong> Summarize the energy distribution by source in?five?countries.</>,
+          <><strong>Map:</strong> Describe the development of a coastal town over?20?years.</>,
           <><strong>Process:</strong> Explain how drinking water is purified for households.</>
         ]} />
         <ArticleHeading>Improving Vocabulary and Grammar for Writing</ArticleHeading>
         <BulletList items={[
-          'Avoid repeating “increase/decrease.” Use alternatives like surge, plummet, soar, decline, remain constant.',
-          'Combine sentences: Instead of “Cars increased. Buses decreased.” → While car usage rose sharply, bus travel fell dramatically.',
+          'Avoid repeating �increase/decrease.� Use alternatives like surge, plummet, soar, decline, remain constant.',
+          'Combine sentences: Instead of �Cars increased. Buses decreased.� ? While car usage rose sharply, bus travel fell dramatically.',
           'Vary your sentence structures: Use conditionals and relative clauses.'
         ]} />
         <ExampleList items={[
@@ -4444,38 +7705,38 @@ export const BLOG_POSTS: BlogPost[] = [
         <ArticleHeading>Common Mistakes to Avoid</ArticleHeading>
         <BulletList items={[
           'Ignoring the word limit. Writing fewer words lowers your score.',
-          'Not including an overview in Task 1.',
+          'Not including an overview in Task?1.',
           'Writing irrelevant information. Stay on topic.',
           'Using informal language in essays. Avoid slang.',
           'Repeating phrases. Use synonyms and paraphrasing.',
-          'Poor time management. Always leave 3 minutes to proofread.'
+          'Poor time management. Always leave 3?minutes to proofread.'
         ]} />
         <ArticleHeading>How to Practice Effectively</ArticleHeading>
         <BulletList items={[
           'Simulate exam conditions. Write under timed settings.',
-          'Analyze model answers on reputable websites (IELTS Liz, IDP, Magoosh).',
+          'Analyze model answers on reputable websites (IELTS?Liz, IDP,?Magoosh).',
           'Get feedback from teachers or online writing correction services.',
-          'Keep a vocabulary journal for topic‑specific words.',
-          'Review grammar rules weekly—especially articles, verb tenses, and prepositions.'
+          'Keep a vocabulary journal for topic-specific words.',
+          'Review grammar rules weekly�especially articles, verb tenses, and prepositions.'
         ]} />
         <ArticleHeading>Quick Checklist Before Submitting</ArticleHeading>
         <BulletList items={[
-          <><strong>Task Response:</strong> Have you answered every part of the question?</>,
+          <><strong>Task?Response:</strong> Have you answered every part of the question?</>,
           <><strong>Coherence & Cohesion:</strong> Are paragraphs logically linked?</>,
           <><strong>Lexical Resource:</strong> Is vocabulary varied and appropriate?</>,
           <><strong>Grammar Range & Accuracy:</strong> Are tenses correct and punctuation accurate?</>,
-          <><strong>Word Count:</strong> 150+ for Task 1, 250+ for Task 2</>
+          <><strong>Word Count:</strong> 150+?for?Task?1, 250+?for?Task?2</>
         ]} />
-        <ArticleHeading>Final Tips for Band 7+ in 2025</ArticleHeading>
+        <ArticleHeading>Final Tips for Band?7+ in?2025</ArticleHeading>
         <BulletList items={[
-          'Task 1: Identify trends, summarize visual data, paraphrase naturally.',
-          'Task 2: Plan 5 minutes, write 35, check 5.',
-          'Vocabulary: Mix academic and topic‑specific terms.',
+          'Task?1: Identify trends, summarize visual data, paraphrase naturally.',
+          'Task?2: Plan 5?minutes, write?35, check?5.',
+          'Vocabulary: Mix academic and topic-specific terms.',
           'Grammar: Prioritize accuracy over complexity.',
           'Practice consistently: Writing daily is better than writing long essays occasionally.'
         ]} />
         <ArticleParagraph>
-          Your IELTS Writing score will improve with strategy, feedback, and persistence. With continuous effort and the methods above, you can confidently reach a Band 7 or higher in 2026.
+          Your IELTS?Writing score will improve with strategy, feedback, and persistence. With continuous effort and the methods above, you can confidently reach a Band?7?or higher in?2026.
         </ArticleParagraph>
       </>
     )
@@ -4533,19 +7794,19 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on official <a href="https://www.britishcouncil.org/exam/ielts/prepare" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">British Council IELTS Prep</a> and examiner training materials.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on official <a href="https://www.britishcouncil.org/exam/ielts/prepare" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">British Council IELTS Prep</a> and examiner training materials.</span>
         </div>
 
         {/* Statistics Box */}
         <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-700 rounded-lg p-4 mb-6">
-          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">🎯 Band 7 Strategy Statistics</h4>
+          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">?? Band 7 Strategy Statistics</h4>
           <ul className="text-sm text-green-700 dark:text-green-300 space-y-1">
-            <li>• Students using 15-20-25 rule complete Reading 15% faster</li>
-            <li>• Look-ahead strategy improves Listening scores by 0.5-1.0 band</li>
-            <li>• Average IELTS improvement: 0.5 band per month of focused study</li>
-            <li>• 3.5 million people take IELTS annually worldwide</li>
+            <li>� Students using 15-20-25 rule complete Reading 15% faster</li>
+            <li>� Look-ahead strategy improves Listening scores by 0.5-1.0 band</li>
+            <li>� Average IELTS improvement: 0.5 band per month of focused study</li>
+            <li>� 3.5 million people take IELTS annually worldwide</li>
           </ul>
         </div>
 
@@ -4626,11 +7887,11 @@ export const BLOG_POSTS: BlogPost[] = [
           <p className="mb-2"><strong>Examiner:</strong> "Do you like your hometown?"</p>
           <div className="space-y-3">
             <div>
-              <p className="text-red-600 dark:text-red-400 font-semibold mb-1">❌ Bad:</p>
+              <p className="text-red-600 dark:text-red-400 font-semibold mb-1">? Bad:</p>
               <p className="italic pl-4 border-l-2 border-red-300">"Yes, I do."</p>
             </div>
             <div>
-              <p className="text-green-600 dark:text-green-400 font-semibold mb-1">✅ Good:</p>
+              <p className="text-green-600 dark:text-green-400 font-semibold mb-1">? Good:</p>
               <p className="italic pl-4 border-l-2 border-green-300">"Yes, I really love it because it is very peaceful. For example, we have a large park where I go jogging every weekend."</p>
             </div>
           </div>
@@ -4660,8 +7921,8 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <BulletList items={[
           <><strong>Intro:</strong> Paraphrase topic + State opinion.</>,
-          <><strong>Body 1:</strong> Topic Sentence → Explanation → Example.</>,
-          <><strong>Body 2:</strong> Topic Sentence → Explanation → Example.</>,
+          <><strong>Body 1:</strong> Topic Sentence ? Explanation ? Example.</>,
+          <><strong>Body 2:</strong> Topic Sentence ? Explanation ? Example.</>,
           <><strong>Conclusion:</strong> Summarize main points.</>
         ]} />
 
@@ -4671,7 +7932,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </ArticleParagraph>
 
         <ArticleParagraph>
-          Ready to practice? Check out our latest <Link to="/grammar-guide" className="text-blue-600 hover:underline dark:text-blue-400">grammar guides</Link> on TypoGrammar to ensure your sentence structures are exam-ready.
+          Ready to practice? Check out our latest <Link to="/grammar-guide/" className="text-blue-600 hover:underline dark:text-blue-400">grammar guides</Link> on TypoGrammar to ensure your sentence structures are exam-ready.
         </ArticleParagraph>
       </>
     )
@@ -4702,8 +7963,8 @@ export const BLOG_POSTS: BlogPost[] = [
       <>
         {/* Author Bio Box */}
         <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg p-4 mb-6 flex items-start gap-4">
-          <div className="w-12 h-12 bg-amber-100 dark:bg-amber-900 rounded-full flex items-center justify-center flex-shrink-0">
-            <span className="text-amber-600 dark:text-amber-300 font-bold text-lg">AR</span>
+          <div className="w-12 h-12 bg-teal-100 dark:bg-teal-900 rounded-full flex items-center justify-center flex-shrink-0">
+            <span className="text-teal-600 dark:text-teal-300 font-bold text-lg">AR</span>
           </div>
           <div>
             <p className="font-semibold text-slate-900 dark:text-slate-100">Dr. Amanda Richards</p>
@@ -4712,13 +7973,13 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Techniques based on <a href="https://owl.purdue.edu/owl/general_writing/the_writing_process/index.html" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Purdue OWL Writing Process</a> and academic research.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Techniques based on <a href="https://owl.purdue.edu/owl/general_writing/the_writing_process/index.html" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Purdue OWL Writing Process</a> and academic research.</span>
         </div>
 
         <ArticleParagraph>
-          Every student has experienced the frustration of working hard on an essay only to receive a disappointing grade. The truth is, many of the most effective essay writing techniques aren't taught in traditional classrooms. While teachers focus on standard formats and grammar rules, they often skip the powerful shortcuts and strategies that professional writers use to create compelling, high-scoring essays. These 5 essay hacks will transform your writing from average to exceptional—and you can implement them immediately.
+          Every student has experienced the frustration of working hard on an essay only to receive a disappointing grade. The truth is, many of the most effective essay writing techniques aren't taught in traditional classrooms. While teachers focus on standard formats and grammar rules, they often skip the powerful shortcuts and strategies that professional writers use to create compelling, high-scoring essays. These 5 essay hacks will transform your writing from average to exceptional�and you can implement them immediately.
         </ArticleParagraph>
 
         <div className="bg-blue-50 dark:bg-slate-800 border-l-4 border-blue-500 p-6 my-6">
@@ -4726,7 +7987,7 @@ export const BLOG_POSTS: BlogPost[] = [
           <p className="text-sm">The top 5 essay hacks are: (1) Reverse outlining to fix structure instantly, (2) The "power position" technique for thesis statements, (3) Strategic transition formulas for seamless flow, (4) The 2-minute conclusion hack, and (5) The "specificity test" for stronger arguments. Each hack addresses a weakness teachers rarely explain clearly.</p>
         </div>
 
-        <ArticleHeading>Hack #1: Reverse Outlining—Fix Your Structure in Minutes</ArticleHeading>
+        <ArticleHeading>Hack #1: Reverse Outlining�Fix Your Structure in Minutes</ArticleHeading>
         <ArticleParagraph>
           Most students create an outline before writing, but the real power comes from <strong>reverse outlining</strong> after you've written a draft. This technique reveals structural problems that are invisible during the writing process and helps you reorganize your essay for maximum clarity and impact.
         </ArticleParagraph>
@@ -4736,7 +7997,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </ArticleParagraph>
         <BulletList items={[
           'After writing your first draft, read through your essay and write a one-sentence summary of each paragraph in the margin.',
-          'Review these summaries as a list—this becomes your "reverse outline" showing what your essay actually says, not what you intended it to say.',
+          'Review these summaries as a list�this becomes your "reverse outline" showing what your essay actually says, not what you intended it to say.',
           'Look for paragraphs that are off-topic, repetitive, or out of logical order.',
           'Reorganize, delete, or combine paragraphs based on what the reverse outline reveals.'
         ]} />
@@ -4774,7 +8035,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         <ArticleParagraph>
-          <strong>Implementation tip:</strong> Use different colored highlighters for your main points—if a paragraph has multiple colors, it's trying to do too much and needs to be split. If consecutive paragraphs have the same color and could be combined, merge them for better flow.
+          <strong>Implementation tip:</strong> Use different colored highlighters for your main points�if a paragraph has multiple colors, it's trying to do too much and needs to be split. If consecutive paragraphs have the same color and could be combined, merge them for better flow.
         </ArticleParagraph>
 
         <ArticleHeading>Hack #2: The "Power Position" Thesis Formula</ArticleHeading>
@@ -4786,7 +8047,7 @@ export const BLOG_POSTS: BlogPost[] = [
           <strong>The power position formula:</strong>
         </ArticleParagraph>
         <BulletList items={[
-          <>Place your thesis as the <strong>last sentence of your introduction</strong>—this position creates maximum impact and gives readers a clear roadmap.</>,
+          <>Place your thesis as the <strong>last sentence of your introduction</strong>�this position creates maximum impact and gives readers a clear roadmap.</>,
           <>Use the "because" structure: <InlineCode>[Claim] because [Reason 1], [Reason 2], and [Reason 3]</InlineCode></>,
           'Make it specific and arguable, not just a statement of fact.',
           'Include a preview of your main supporting points in the thesis itself.'
@@ -4796,19 +8057,19 @@ export const BLOG_POSTS: BlogPost[] = [
           <h4 className="font-semibold mb-3">Weak vs. Power Position Thesis Examples</h4>
           <div className="space-y-4">
             <div>
-              <p className="font-semibold text-red-600 dark:text-red-400 mb-2">❌ Weak thesis (vague, no roadmap):</p>
+              <p className="font-semibold text-red-600 dark:text-red-400 mb-2">? Weak thesis (vague, no roadmap):</p>
               <p className="italic pl-4 border-l-2 border-red-300">"Social media has both positive and negative effects on teenagers."</p>
             </div>
             <div>
-              <p className="font-semibold text-green-600 dark:text-green-400 mb-2">✓ Power position thesis (specific, clear roadmap):</p>
+              <p className="font-semibold text-green-600 dark:text-green-400 mb-2">? Power position thesis (specific, clear roadmap):</p>
               <p className="italic pl-4 border-l-2 border-green-300">"Social media platforms harm teenage mental health because they promote unrealistic comparisons, disrupt sleep patterns, and reduce face-to-face social skills."</p>
             </div>
             <div>
-              <p className="font-semibold text-red-600 dark:text-red-400 mb-2">❌ Weak thesis (statement of fact):</p>
+              <p className="font-semibold text-red-600 dark:text-red-400 mb-2">? Weak thesis (statement of fact):</p>
               <p className="italic pl-4 border-l-2 border-red-300">"Shakespeare wrote many famous plays during the Renaissance period."</p>
             </div>
             <div>
-              <p className="font-semibold text-green-600 dark:text-green-400 mb-2">✓ Power position thesis (arguable claim with reasons):</p>
+              <p className="font-semibold text-green-600 dark:text-green-400 mb-2">? Power position thesis (arguable claim with reasons):</p>
               <p className="italic pl-4 border-l-2 border-green-300">"Shakespeare's tragedies remain culturally relevant today because they explore universal human flaws, challenge moral certainties, and adapt easily to modern contexts."</p>
             </div>
           </div>
@@ -4898,10 +8159,10 @@ export const BLOG_POSTS: BlogPost[] = [
           <strong>What this formula avoids:</strong>
         </ArticleParagraph>
         <BulletList items={[
-          '❌ Starting with "In conclusion" or "To summarize" (weak and obvious)',
-          '❌ Simply repeating your thesis word-for-word (boring and redundant)',
-          '❌ Introducing major new arguments (confusing and undeveloped)',
-          '❌ Ending with a question (indecisive and unfinished)'
+          '? Starting with "In conclusion" or "To summarize" (weak and obvious)',
+          '? Simply repeating your thesis word-for-word (boring and redundant)',
+          '? Introducing major new arguments (confusing and undeveloped)',
+          '? Ending with a question (indecisive and unfinished)'
         ]} />
 
         <ArticleParagraph>
@@ -4928,22 +8189,22 @@ export const BLOG_POSTS: BlogPost[] = [
           <h4 className="font-semibold mb-3">Specificity Test Examples</h4>
           <div className="space-y-4">
             <div>
-              <p className="font-semibold text-red-600 dark:text-red-400 mb-2">❌ Fails specificity test (too vague):</p>
+              <p className="font-semibold text-red-600 dark:text-red-400 mb-2">? Fails specificity test (too vague):</p>
               <p className="italic pl-4 border-l-2 border-red-300 mb-2">"Many people use technology every day, which has many effects on society."</p>
               <p className="text-sm"><strong>Problem:</strong> This sentence could apply to any technology essay. No specific details, no concrete examples.</p>
             </div>
             <div>
-              <p className="font-semibold text-green-600 dark:text-green-400 mb-2">✓ Passes specificity test (concrete and specific):</p>
+              <p className="font-semibold text-green-600 dark:text-green-400 mb-2">? Passes specificity test (concrete and specific):</p>
               <p className="italic pl-4 border-l-2 border-green-300 mb-2">"According to a 2024 Pew Research study, 73% of American teenagers check their smartphones within five minutes of waking up, a behavior linked to increased anxiety and disrupted morning cortisol patterns."</p>
               <p className="text-sm"><strong>Strength:</strong> Includes specific source, exact statistic, precise behavior, and concrete health effect.</p>
             </div>
             <div>
-              <p className="font-semibold text-red-600 dark:text-red-400 mb-2">❌ Fails specificity test:</p>
+              <p className="font-semibold text-red-600 dark:text-red-400 mb-2">? Fails specificity test:</p>
               <p className="italic pl-4 border-l-2 border-red-300 mb-2">"Shakespeare's plays are important because they teach us about human nature."</p>
             </div>
             <div>
-              <p className="font-semibold text-green-600 dark:text-green-400 mb-2">✓ Passes specificity test:</p>
-              <p className="italic pl-4 border-l-2 border-green-300 mb-2">"In Macbeth, Shakespeare explores how unchecked ambition corrodes moral judgment—after murdering Duncan, Macbeth descends from a 'brave' nobleman (Act 1) to a 'tyrant' who sees life as 'a tale told by an idiot' (Act 5), illustrating ambition's psychological devastation."</p>
+              <p className="font-semibold text-green-600 dark:text-green-400 mb-2">? Passes specificity test:</p>
+              <p className="italic pl-4 border-l-2 border-green-300 mb-2">"In Macbeth, Shakespeare explores how unchecked ambition corrodes moral judgment�after murdering Duncan, Macbeth descends from a 'brave' nobleman (Act 1) to a 'tyrant' who sees life as 'a tale told by an idiot' (Act 5), illustrating ambition's psychological devastation."</p>
             </div>
           </div>
         </div>
@@ -4959,7 +8220,7 @@ export const BLOG_POSTS: BlogPost[] = [
               <p className="italic pl-4">"Technology affects people."</p>
             </div>
             <div className="pl-4">
-              <p className="font-semibold">Level 2: <span className="text-orange-600 dark:text-orange-400">General category</span></p>
+              <p className="font-semibold">Level 2: <span className="text-teal-600 dark:text-teal-400">General category</span></p>
               <p className="italic pl-4">"Social media affects teenagers."</p>
             </div>
             <div className="pl-8">
@@ -4995,7 +8256,7 @@ export const BLOG_POSTS: BlogPost[] = [
           <div className="space-y-3">
             <div>
               <p className="font-semibold">Step 1: Write your first draft without worrying about perfection</p>
-              <p className="text-sm">Get your ideas on paper first. Don't self-edit while drafting—that comes later.</p>
+              <p className="text-sm">Get your ideas on paper first. Don't self-edit while drafting�that comes later.</p>
             </div>
             <div>
               <p className="font-semibold">Step 2: Apply Hack #1 (Reverse Outlining)</p>
@@ -5026,14 +8287,14 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>Why These Hacks Work: The Psychology Behind Higher Grades</ArticleHeading>
         <ArticleParagraph>
-          These five essay hacks aren't shortcuts or tricks—they're based on how readers (including teachers and professors) actually process and evaluate written arguments. Understanding why these techniques work helps you apply them more effectively.
+          These five essay hacks aren't shortcuts or tricks�they're based on how readers (including teachers and professors) actually process and evaluate written arguments. Understanding why these techniques work helps you apply them more effectively.
         </ArticleParagraph>
 
         <BulletList items={[
           <><strong>Cognitive load theory:</strong> Clear structure (Hack #1) and transitions (Hack #3) reduce mental effort required to follow your argument, making your essay easier to read and grade positively.</>,
           <><strong>Primacy and recency effects:</strong> The power position thesis (Hack #2) and strong conclusion (Hack #4) leverage the fact that readers remember first and last impressions most strongly.</>,
           <><strong>Specificity and credibility:</strong> The specificity test (Hack #5) increases perceived expertise and credibility because concrete details signal deep knowledge and careful research.</>,
-          <><strong>Professional writing standards:</strong> All five hacks mirror techniques from professional journalism, academic publishing, and rhetoric—standards your teachers use unconsciously when evaluating essays.</>
+          <><strong>Professional writing standards:</strong> All five hacks mirror techniques from professional journalism, academic publishing, and rhetoric�standards your teachers use unconsciously when evaluating essays.</>
         ]} />
 
         <ArticleHeading>Common Mistakes Students Make When Applying These Hacks</ArticleHeading>
@@ -5046,7 +8307,7 @@ export const BLOG_POSTS: BlogPost[] = [
           <><strong>Mistake 2: Making the thesis too long.</strong> The power position thesis should be 1-2 sentences maximum. If it's longer, you're including too much detail that belongs in body paragraphs.</>,
           <><strong>Mistake 3: Overusing transition words.</strong> Strategic transitions are about logical connection, not just sprinkling in "moreover" and "however" everywhere. Quality over quantity.</>,
           <><strong>Mistake 4: Making the conclusion longer than three sentences.</strong> The 2-minute hack works because it's concise. If your conclusion runs a full paragraph, you're back to the old repetitive style.</>,
-          <><strong>Mistake 5: Adding specific details that don't support the argument.</strong> The specificity test means relevant, purposeful details—not random facts or tangential examples.</>
+          <><strong>Mistake 5: Adding specific details that don't support the argument.</strong> The specificity test means relevant, purposeful details�not random facts or tangential examples.</>
         ]} />
 
         <ArticleHeading>Practice Exercise: Transform Your Next Essay</ArticleHeading>
@@ -5059,42 +8320,42 @@ export const BLOG_POSTS: BlogPost[] = [
           <div className="space-y-2">
             <label className="flex items-start space-x-2">
               <input type="checkbox" className="mt-1" disabled />
-              <span>□ Reverse outline completed—each paragraph has a one-sentence summary</span>
+              <span>? Reverse outline completed�each paragraph has a one-sentence summary</span>
             </label>
             <label className="flex items-start space-x-2">
               <input type="checkbox" className="mt-1" disabled />
-              <span>□ Thesis is the last sentence of the introduction and uses the "because" structure</span>
+              <span>? Thesis is the last sentence of the introduction and uses the "because" structure</span>
             </label>
             <label className="flex items-start space-x-2">
               <input type="checkbox" className="mt-1" disabled />
-              <span>□ Each body paragraph begins with an echo, signpost, or pivot transition</span>
+              <span>? Each body paragraph begins with an echo, signpost, or pivot transition</span>
             </label>
             <label className="flex items-start space-x-2">
               <input type="checkbox" className="mt-1" disabled />
-              <span>□ Conclusion uses the three-sentence formula (so what + synthesis + forward-looking)</span>
+              <span>? Conclusion uses the three-sentence formula (so what + synthesis + forward-looking)</span>
             </label>
             <label className="flex items-start space-x-2">
               <input type="checkbox" className="mt-1" disabled />
-              <span>□ Every major claim passes the specificity test (Level 4-5 on the pyramid)</span>
+              <span>? Every major claim passes the specificity test (Level 4-5 on the pyramid)</span>
             </label>
             <label className="flex items-start space-x-2">
               <input type="checkbox" className="mt-1" disabled />
-              <span>□ Searched for and replaced vague words like "many," "things," "important"</span>
+              <span>? Searched for and replaced vague words like "many," "things," "important"</span>
             </label>
             <label className="flex items-start space-x-2">
               <input type="checkbox" className="mt-1" disabled />
-              <span>□ No paragraph tries to make more than one main point</span>
+              <span>? No paragraph tries to make more than one main point</span>
             </label>
           </div>
         </div>
 
         <ArticleHeading>Beyond the Hacks: Developing Long-Term Writing Skills</ArticleHeading>
         <ArticleParagraph>
-          While these five essay hacks provide immediate improvements, they also build foundational skills that serve you throughout your academic and professional career. As you practice these techniques, you'll internalize them—eventually applying reverse outlining, power position theses, strategic transitions, effective conclusions, and specific arguments naturally without conscious effort.
+          While these five essay hacks provide immediate improvements, they also build foundational skills that serve you throughout your academic and professional career. As you practice these techniques, you'll internalize them�eventually applying reverse outlining, power position theses, strategic transitions, effective conclusions, and specific arguments naturally without conscious effort.
         </ArticleParagraph>
 
         <ArticleParagraph>
-          The difference between average and exceptional writers isn't innate talent—it's knowing and consistently applying professional techniques like these five hacks. Teachers don't always explicitly teach them because they assume advanced students will discover them independently. Now you have the advantage of learning them directly.
+          The difference between average and exceptional writers isn't innate talent�it's knowing and consistently applying professional techniques like these five hacks. Teachers don't always explicitly teach them because they assume advanced students will discover them independently. Now you have the advantage of learning them directly.
         </ArticleParagraph>
 
         <div className="bg-blue-50 dark:bg-slate-800 border-l-4 border-blue-500 p-6 my-6">
@@ -5110,7 +8371,7 @@ export const BLOG_POSTS: BlogPost[] = [
             </div>
             <div>
               <p className="font-semibold">Will teachers notice I'm using specific techniques?</p>
-              <p className="text-sm">They'll notice your essay is exceptionally clear, well-organized, and professionally written—which translates to higher grades. These aren't "tricks" to fool teachers; they're legitimate professional writing strategies that improve quality.</p>
+              <p className="text-sm">They'll notice your essay is exceptionally clear, well-organized, and professionally written�which translates to higher grades. These aren't "tricks" to fool teachers; they're legitimate professional writing strategies that improve quality.</p>
             </div>
             <div>
               <p className="font-semibold">Which hack should I prioritize if I only have time for one?</p>
@@ -5125,11 +8386,11 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>Take Action: Implement One Hack Today</ArticleHeading>
         <ArticleParagraph>
-          Don't wait until your next essay assignment to apply these hacks. Choose one technique—ideally the specificity test since it's the fastest to implement—and practice it on a paragraph from an old essay or a short piece of writing. Notice how much stronger and more convincing your writing becomes with just one strategic change.
+          Don't wait until your next essay assignment to apply these hacks. Choose one technique�ideally the specificity test since it's the fastest to implement�and practice it on a paragraph from an old essay or a short piece of writing. Notice how much stronger and more convincing your writing becomes with just one strategic change.
         </ArticleParagraph>
 
         <ArticleParagraph>
-          The most successful students aren't necessarily the most naturally talented writers—they're the ones who systematically apply proven techniques like these five essay hacks. By understanding and practicing these professional writing strategies, you gain an unfair advantage that transforms good essays into exceptional ones.
+          The most successful students aren't necessarily the most naturally talented writers�they're the ones who systematically apply proven techniques like these five essay hacks. By understanding and practicing these professional writing strategies, you gain an unfair advantage that transforms good essays into exceptional ones.
         </ArticleParagraph>
 
         <div className="bg-green-50 dark:bg-slate-800 border-l-4 border-green-500 p-6 my-6">
@@ -5141,12 +8402,12 @@ export const BLOG_POSTS: BlogPost[] = [
             <>The 2-minute conclusion hack (so what + synthesis + forward-looking) avoids repetition</>,
             <>The specificity test transforms vague statements into concrete, convincing arguments</>,
             <>Apply these hacks systematically during revision, not while drafting</>,
-            <>These techniques aren't shortcuts—they're professional writing standards rarely taught explicitly</>
+            <>These techniques aren't shortcuts�they're professional writing standards rarely taught explicitly</>
           ]} />
         </div>
 
         <ArticleParagraph>
-          Mastering these five essay hacks gives you the writing skills that separate A+ students from average ones. Start applying them today, and watch your grades—and your confidence—improve dramatically.
+          Mastering these five essay hacks gives you the writing skills that separate A+ students from average ones. Start applying them today, and watch your grades�and your confidence�improve dramatically.
         </ArticleParagraph>
       </>
     )
@@ -5156,7 +8417,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'IELTS Changes in 2026: New Pattern, One Skill Retake, and Computer-Only Test (Official Guide)',
     author: 'Emma Richardson, British Council Certified IELTS Trainer',
     date: 'March 26, 2026',
-    summary: 'Discover real IELTS 2026 changes: computer‑only test, One Skill Retake, black pen rules, and harder Writing. Learn how to prepare with official links and tips.',
+    summary: 'Discover real IELTS 2026 changes: computer-only test, One Skill Retake, black pen rules, and harder Writing. Learn how to prepare with official links and tips.',
     category: 'English Proficiency Tests',
     image: 'https://ielts.org/cdn/ielts-images-people/female-student-studying-in-the-library.webp?width=375&height=188&fit=cover&s=vPTqHZEtJuAO5Y_DC_M8O7leCmWildGWgFHJbPUBkwE',
     imageAlt: 'IELTS 2026 changes including new test pattern one skill retake and computer only format',
@@ -5193,7 +8454,7 @@ export const BLOG_POSTS: BlogPost[] = [
           'name': 'Do I still need a black pen for IELTS in 2026?',
           'acceptedAnswer': {
             '@type': 'Answer',
-            'text': 'Only if taking a paper test in early 2026 (before February). After February 2026, all tests are computer-delivered, so no pen is needed for Writing—you type your answers.'
+            'text': 'Only if taking a paper test in early 2026 (before February). After February 2026, all tests are computer-delivered, so no pen is needed for Writing�you type your answers.'
           }
         },
         {
@@ -5201,7 +8462,7 @@ export const BLOG_POSTS: BlogPost[] = [
           'name': 'How much does IELTS One Skill Retake cost?',
           'acceptedAnswer': {
             '@type': 'Answer',
-            'text': 'OSR costs approximately 25-40% of the full test fee depending on your country. For example, in India it costs around ₹5,500-6,000 INR, in the UK around £75-85, and in Australia around AUD $150-180.'
+            'text': 'OSR costs approximately 25-40% of the full test fee depending on your country. For example, in India it costs around ?5,500-6,000 INR, in the UK around �75-85, and in Australia around AUD $150-180.'
           }
         },
         {
@@ -5228,19 +8489,19 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Verified with official <a href="https://ielts.org" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">IELTS.org</a>, <a href="https://takeielts.britishcouncil.org" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">British Council</a>, and <a href="https://ielts.idp.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">IDP</a> announcements.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Verified with official <a href="https://ielts.org" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">IELTS.org</a>, <a href="https://takeielts.britishcouncil.org" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">British Council</a>, and <a href="https://ielts.idp.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">IDP</a> announcements.</span>
         </div>
 
         {/* Quick Answer Box for GEO */}
-        <div className="bg-gradient-to-r from-red-50 to-orange-50 dark:from-slate-800 dark:to-slate-700 border-l-4 border-red-600 dark:border-red-400 p-6 mb-8 rounded-r-lg shadow-sm">
+        <div className="bg-gradient-to-r from-red-50 to-teal-50 dark:from-slate-800 dark:to-slate-700 border-l-4 border-red-600 dark:border-red-400 p-6 mb-8 rounded-r-lg shadow-sm">
           <p className="font-bold text-lg text-red-900 dark:text-red-100 mb-2">Quick Answer: What's Changing in IELTS 2026?</p>
-          <p className="text-slate-700 dark:text-slate-300"><strong>From February 2026, IELTS is computer-only worldwide</strong> (paper tests discontinued). <strong>One Skill Retake (OSR) is now available in 56+ countries</strong>, letting you retake one weak skill within 60 days. The test content and 0-9 band scoring remain the same—only the delivery method changes.</p>
+          <p className="text-slate-700 dark:text-slate-300"><strong>From February 2026, IELTS is computer-only worldwide</strong> (paper tests discontinued). <strong>One Skill Retake (OSR) is now available in 56+ countries</strong>, letting you retake one weak skill within 60 days. The test content and 0-9 band scoring remain the same�only the delivery method changes.</p>
         </div>
 
         <ArticleParagraph>
-          IELTS is not becoming a completely new exam in 2026, but there are major changes every serious test taker must understand: a global move to computer‑delivered IELTS, stricter rules for paper tests, the expansion of IELTS One Skill Retake, and higher difficulty in Writing, Reading, and Speaking evaluation. The exam format (Listening, Reading, Writing, Speaking, band scores 0–9) stays the same, yet how you take the test and how you are judged will feel very different if you still prepare using old methods.
+          IELTS is not becoming a completely new exam in 2026, but there are major changes every serious test taker must understand: a global move to computer-delivered IELTS, stricter rules for paper tests, the expansion of IELTS One Skill Retake, and higher difficulty in Writing, Reading, and Speaking evaluation. The exam format (Listening, Reading, Writing, Speaking, band scores 0�9) stays the same, yet how you take the test and how you are judged will feel very different if you still prepare using old methods.
         </ArticleParagraph>
 
         <ArticleHeading>Official 2026 format: what stays the same</ArticleHeading>
@@ -5266,36 +8527,36 @@ export const BLOG_POSTS: BlogPost[] = [
           <><a href="https://ielts.org" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Official IELTS organisation site</a> (for institutions)</>
         ]} />
 
-        <ArticleHeading>Big 2026 change: IELTS goes fully computer‑delivered</ArticleHeading>
+        <ArticleHeading>Big 2026 change: IELTS goes fully computer-delivered</ArticleHeading>
         <ArticleParagraph>
-          The most dramatic change for 2026 is the global shift from paper‑based IELTS to computer-delivered IELTS (often called IELTS on computer). Announcements from official and partner channels indicate that paper‑based IELTS is being discontinued worldwide after 31 January 2026, with all tests moving to computers from February 2026 onward.
+          The most dramatic change for 2026 is the global shift from paper-based IELTS to computer-delivered IELTS (often called IELTS on computer). Announcements from official and partner channels indicate that paper-based IELTS is being discontinued worldwide after 31 January 2026, with all tests moving to computers from February 2026 onward.
         </ArticleParagraph>
 
         <ArticleParagraph>
           <strong>Important points about this transition:</strong>
         </ArticleParagraph>
         <BulletList items={[
-          'From February 2026, IELTS will no longer offer paper‑based tests in regular centers; candidates are moved to IELTS on Computer at no extra fee if already booked.',
-          'The test content and scoring remain the same: same tasks, same band descriptors, same difficulty—only the delivery mode changes.',
-          'Computer‑delivered IELTS offers faster results (often within 3–5 days), more flexible test dates, and smoother logistics for centers and candidates.',
-          <>For country‑specific confirmations about formats and test centers, check <a href="https://ielts.idp.com/book" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">IDP test booking</a></>
+          'From February 2026, IELTS will no longer offer paper-based tests in regular centers; candidates are moved to IELTS on Computer at no extra fee if already booked.',
+          'The test content and scoring remain the same: same tasks, same band descriptors, same difficulty�only the delivery mode changes.',
+          'Computer-delivered IELTS offers faster results (often within 3�5 days), more flexible test dates, and smoother logistics for centers and candidates.',
+          <>For country-specific confirmations about formats and test centers, check <a href="https://ielts.idp.com/book" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">IDP test booking</a></>
         ]} />
 
         <ArticleHeading>Paper-based IELTS in early 2026: black pen rule and test order</ArticleHeading>
         <ArticleParagraph>
-          Before paper tests disappear, strict new rules have already been introduced in many regions for 2025–early 2026. Even if your audience is in a country that still offers paper at the beginning of 2026, they need to understand the Black Pen Policy and the updated test order.
+          Before paper tests disappear, strict new rules have already been introduced in many regions for 2025�early 2026. Even if your audience is in a country that still offers paper at the beginning of 2026, they need to understand the Black Pen Policy and the updated test order.
         </ArticleParagraph>
 
         <ArticleParagraph>
-          <strong>Key paper‑based updates:</strong>
+          <strong>Key paper-based updates:</strong>
         </ArticleParagraph>
         <BulletList items={[
           <><strong>Black Pen Policy:</strong> Candidates must use a black ballpoint pen for Listening, Reading, and Writing answer sheets; pencils are no longer accepted for these sections.</>,
-          <><strong>Paper test order:</strong> In many centers, the sequence is now Writing → Reading → Listening instead of Listening first, changing how candidates manage energy and time.</>
+          <><strong>Paper test order:</strong> In many centers, the sequence is now Writing ? Reading ? Listening instead of Listening first, changing how candidates manage energy and time.</>
         ]} />
 
         <ArticleParagraph>
-          Because these rules are implemented by local centers under global guidance, users should always read the test‑day information from their booked center on the IDP or British Council portal.
+          Because these rules are implemented by local centers under global guidance, users should always read the test-day information from their booked center on the IDP or British Council portal.
         </ArticleParagraph>
 
         <div className="my-8">
@@ -5314,7 +8575,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         {/* March 2026 OSR Statistics Box */}
         <div className="bg-gradient-to-r from-green-50 to-emerald-50 dark:from-slate-800 dark:to-slate-700 border border-green-200 dark:border-green-700 rounded-lg p-5 mb-6">
-          <h4 className="font-bold text-lg text-green-900 dark:text-green-200 mb-3">🌍 IELTS One Skill Retake: March 2026 Global Statistics</h4>
+          <h4 className="font-bold text-lg text-green-900 dark:text-green-200 mb-3">?? IELTS One Skill Retake: March 2026 Global Statistics</h4>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
             <div className="bg-white dark:bg-slate-700 rounded-lg p-3">
               <p className="text-2xl font-bold text-green-600 dark:text-green-400">56+</p>
@@ -5364,8 +8625,8 @@ export const BLOG_POSTS: BlogPost[] = [
         </ArticleParagraph>
         <BulletList items={[
           <><strong>Focused improvement:</strong> You only prepare for the weak skill instead of repeating all four.</>,
-          <><strong>Cost‑effective:</strong> OSR is cheaper than retaking a full test in most markets.</>,
-          <><strong>Time‑saving:</strong> You can meet deadlines quickly, especially if you were very close to your required score.</>
+          <><strong>Cost-effective:</strong> OSR is cheaper than retaking a full test in most markets.</>,
+          <><strong>Time-saving:</strong> You can meet deadlines quickly, especially if you were very close to your required score.</>
         ]} />
 
         <ArticleParagraph>
@@ -5394,7 +8655,7 @@ export const BLOG_POSTS: BlogPost[] = [
           <strong>Trends in Writing Task 2:</strong>
         </ArticleParagraph>
         <BulletList items={[
-          'Prompts are more open‑ended and highly specific, requiring you to address exactly what is asked (for example, "environmental benefits of electric vehicles" not just general advantages).',
+          'Prompts are more open-ended and highly specific, requiring you to address exactly what is asked (for example, "environmental benefits of electric vehicles" not just general advantages).',
           'Examiners focus more on critical thinking, argument depth, and how well you answer the specific task, not only vocabulary and grammar range.',
           'Memorised templates without genuine idea development are more likely to receive lower band scores in 2026.'
         ]} />
@@ -5421,7 +8682,7 @@ export const BLOG_POSTS: BlogPost[] = [
           <strong>Speaking trends:</strong>
         </ArticleParagraph>
         <BulletList items={[
-          'Examiners are trained to push beyond rehearsed answers with probing follow‑up questions.',
+          'Examiners are trained to push beyond rehearsed answers with probing follow-up questions.',
           'Candidates must show genuine communication skills, idea development, and natural lexical range, especially for high bands.',
           'Inconsistent skills (for example, strong Reading but weak Speaking) may harm applications more due to institutions focusing on individual band scores in key modules.'
         ]} />
@@ -5435,12 +8696,12 @@ export const BLOG_POSTS: BlogPost[] = [
           <strong>Pattern differences highlighted by 2026 updates:</strong>
         </ArticleParagraph>
         <BulletList items={[
-          <><strong>Paper‑based IELTS (early 2026):</strong> Writing → Reading → Listening sequence, black pen only.</>,
-          <><strong>Computer‑delivered IELTS (from February 2026):</strong> Listening → Reading → Writing, all on computer, with Speaking in person or via video call in some centers.</>
+          <><strong>Paper-based IELTS (early 2026):</strong> Writing ? Reading ? Listening sequence, black pen only.</>,
+          <><strong>Computer-delivered IELTS (from February 2026):</strong> Listening ? Reading ? Writing, all on computer, with Speaking in person or via video call in some centers.</>
         ]} />
 
         <ArticleParagraph>
-          Both modes use the same tasks, scoring criteria, and band descriptors; the "experience" is what changes. Official IDP messaging emphasises that from February 2026, "the test stays exactly the same – only the experience becomes smoother and faster" when moving fully to IELTS on Computer.
+          Both modes use the same tasks, scoring criteria, and band descriptors; the "experience" is what changes. Official IDP messaging emphasises that from February 2026, "the test stays exactly the same � only the experience becomes smoother and faster" when moving fully to IELTS on Computer.
         </ArticleParagraph>
 
         <ArticleHeading>Table: Main IELTS changes in 2026 at a glance</ArticleHeading>
@@ -5457,12 +8718,12 @@ export const BLOG_POSTS: BlogPost[] = [
               <tr>
                 <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Test mode</td>
                 <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Paper and computer both widely available.</td>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Move to computer‑only after Jan 31 in most centers worldwide.</td>
+                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Move to computer-only after Jan 31 in most centers worldwide.</td>
               </tr>
               <tr>
                 <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Results</td>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">5–13 days depending on format.</td>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Faster results (often 3–5 days) as computer dominates.</td>
+                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">5�13 days depending on format.</td>
+                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Faster results (often 3�5 days) as computer dominates.</td>
               </tr>
               <tr>
                 <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Paper rules</td>
@@ -5471,18 +8732,18 @@ export const BLOG_POSTS: BlogPost[] = [
               </tr>
               <tr>
                 <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Test order</td>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Often Listening → Reading → Writing.</td>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Paper: Writing → Reading → Listening; Computer: Listening → Reading → Writing.</td>
+                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Often Listening ? Reading ? Writing.</td>
+                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Paper: Writing ? Reading ? Listening; Computer: Listening ? Reading ? Writing.</td>
               </tr>
               <tr>
                 <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">One Skill Retake</td>
                 <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Limited rollout, PC only.</td>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Wider global availability; 60‑day retake window per full test.</td>
+                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Wider global availability; 60-day retake window per full test.</td>
               </tr>
               <tr>
                 <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Writing difficulty</td>
                 <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Standard complexity.</td>
-                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">More complex multi‑chart Task 1; highly specific Task 2 questions.</td>
+                <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">More complex multi-chart Task 1; highly specific Task 2 questions.</td>
               </tr>
               <tr>
                 <td className="border border-slate-300 dark:border-slate-600 px-4 py-2">Reading difficulty</td>
@@ -5510,7 +8771,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>1. Switch your practice to computer mode</ArticleHeading>
         <BulletList items={[
-          'Use official computer‑based IELTS practice tests so you get familiar with typing, on‑screen navigation, and audio through headphones.',
+          'Use official computer-based IELTS practice tests so you get familiar with typing, on-screen navigation, and audio through headphones.',
           'Practice Writing on a computer with a timer and word counter to simulate the real environment.'
         ]} />
         <ArticleParagraph>
@@ -5529,13 +8790,13 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>3. Upgrade your Writing and Speaking for higher scrutiny</ArticleHeading>
         <BulletList items={[
-          'In Writing Task 2, analyse the question carefully and answer only what it asks; train yourself to avoid off‑topic paragraphs.',
+          'In Writing Task 2, analyse the question carefully and answer only what it asks; train yourself to avoid off-topic paragraphs.',
           'In Speaking, stop memorising full answers; instead, practice flexible structures and natural linking phrases for Part 2 and Part 3.'
         ]} />
 
         <ArticleHeading>4. Use recent materials for Listening and Reading</ArticleHeading>
         <BulletList items={[
-          'Select Cambridge IELTS books and online resources that reflect 2025–2026 question tendencies rather than very old test collections.',
+          'Select Cambridge IELTS books and online resources that reflect 2025�2026 question tendencies rather than very old test collections.',
           'Focus on long passages (900+ words) and complex question types to handle the newer Reading difficulty.'
         ]} />
 
@@ -5547,7 +8808,7 @@ export const BLOG_POSTS: BlogPost[] = [
               <p className="text-sm">Yes, IELTS is moving to computer-only delivery from February 2026, with One Skill Retake expanding to 56+ countries globally and stricter evaluation standards.</p>
             </div>
             <div>
-              <p className="font-semibold">Is IELTS going fully computer‑based in 2026?</p>
+              <p className="font-semibold">Is IELTS going fully computer-based in 2026?</p>
               <p className="text-sm">Yes, paper-based tests are being discontinued after January 31, 2026 in most centers worldwide. The Speaking test remains face-to-face with a human examiner.</p>
             </div>
             <div>
@@ -5560,7 +8821,7 @@ export const BLOG_POSTS: BlogPost[] = [
             </div>
             <div>
               <p className="font-semibold">How much does IELTS One Skill Retake cost?</p>
-              <p className="text-sm">OSR costs approximately 25-40% of the full test fee depending on your country. For example, in India it costs around ₹5,500-6,000 INR, in the UK around £75-85, and in Australia around AUD $150-180.</p>
+              <p className="text-sm">OSR costs approximately 25-40% of the full test fee depending on your country. For example, in India it costs around ?5,500-6,000 INR, in the UK around �75-85, and in Australia around AUD $150-180.</p>
             </div>
             <div>
               <p className="font-semibold">Do universities accept IELTS One Skill Retake results?</p>
@@ -5630,34 +8891,34 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on <a href="https://www.thebalancecareers.com/how-to-introduce-yourself-at-a-job-interview-2061254" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">The Balance Careers</a> and <a href="https://hbr.org/topic/subject/interviewing" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Harvard Business Review</a> interview research.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on <a href="https://www.thebalancecareers.com/how-to-introduce-yourself-at-a-job-interview-2061254" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">The Balance Careers</a> and <a href="https://hbr.org/topic/subject/interviewing" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Harvard Business Review</a> interview research.</span>
         </div>
 
         {/* Interview Statistics */}
         <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-700 rounded-lg p-4 mb-6">
-          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">🎯 Interview First Impressions: Key Statistics</h4>
+          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">?? Interview First Impressions: Key Statistics</h4>
           <ul className="text-sm text-green-700 dark:text-green-300 space-y-1">
-            <li>• Interviewers form initial impressions within the first 7 seconds of meeting a candidate</li>
-            <li>• 33% of hiring managers know within 90 seconds whether they'll hire someone</li>
-            <li>• Self-introduction accounts for ~20% of the overall interview impression</li>
-            <li>• Non-native speakers who prepare scripts show 40% higher confidence ratings</li>
+            <li>� Interviewers form initial impressions within the first 7 seconds of meeting a candidate</li>
+            <li>� 33% of hiring managers know within 90 seconds whether they'll hire someone</li>
+            <li>� Self-introduction accounts for ~20% of the overall interview impression</li>
+            <li>� Non-native speakers who prepare scripts show 40% higher confidence ratings</li>
           </ul>
         </div>
 
-        <ArticleHeading>Why your English self‑introduction matters in an interview</ArticleHeading>
+        <ArticleHeading>Why your English self-introduction matters in an interview</ArticleHeading>
         <ArticleParagraph>
-          The first impression in an interview is often created in the first 30–60 seconds, and your self‑introduction is a big part of that. A clear, confident introduction in English helps the interviewer see you as professional, organized, and ready for the role.
+          The first impression in an interview is often created in the first 30�60 seconds, and your self-introduction is a big part of that. A clear, confident introduction in English helps the interviewer see you as professional, organized, and ready for the role.
         </ArticleParagraph>
 
         <ArticleParagraph>
-          For non‑native speakers, this moment can feel stressful, but with the right structure and practice, your introduction can become one of the easiest parts of the interview. When you know what to say and how to say it, you can focus on connecting with the interviewer instead of worrying about every word.
+          For non-native speakers, this moment can feel stressful, but with the right structure and practice, your introduction can become one of the easiest parts of the interview. When you know what to say and how to say it, you can focus on connecting with the interviewer instead of worrying about every word.
         </ArticleParagraph>
 
-        <ArticleHeading>The basic structure of a strong self‑introduction</ArticleHeading>
+        <ArticleHeading>The basic structure of a strong self-introduction</ArticleHeading>
         <ArticleParagraph>
-          A good self‑introduction in an interview in English does not need to be long or complicated. You can think of it as a short story about who you are professionally and why you are a good fit for the job.
+          A good self-introduction in an interview in English does not need to be long or complicated. You can think of it as a short story about who you are professionally and why you are a good fit for the job.
         </ArticleParagraph>
 
         <ArticleHeading>Start with a professional greeting</ArticleHeading>
@@ -5685,21 +8946,21 @@ export const BLOG_POSTS: BlogPost[] = [
           Finally, close your introduction with a smooth, confident sentence. You can express enthusiasm for the opportunity and signal that you are ready to answer further questions. This helps you move naturally into the rest of the interview.
         </ArticleParagraph>
 
-        <ArticleHeading>Step‑by‑step guide: how to introduce yourself in an interview in English</ArticleHeading>
+        <ArticleHeading>Step-by-step guide: how to introduce yourself in an interview in English</ArticleHeading>
         <ArticleParagraph>
-          Use the steps below as a template to build your own self‑introduction.
+          Use the steps below as a template to build your own self-introduction.
         </ArticleParagraph>
 
         <BulletList items={[
           <><strong>Greet the interviewer:</strong> Use a polite greeting such as "Good morning," "Good afternoon," or "Good evening." Add a short phrase of appreciation, like "Thank you for giving me the opportunity to interview for this position."</>,
           <><strong>Say your name and basic background:</strong> State your full name clearly. Add your current role, degree, or main professional identity.</>,
           <><strong>Summarize your experience:</strong> Give a brief timeline: how many years of experience you have and in which fields or industries. Mention one or two important responsibilities or achievements that show your strengths.</>,
-          <><strong>Mention your key skills:</strong> Highlight skills that match the job description, such as technical skills, language skills, leadership, or problem‑solving. Keep this focused; you do not need to list everything.</>,
+          <><strong>Mention your key skills:</strong> Highlight skills that match the job description, such as technical skills, language skills, leadership, or problem-solving. Keep this focused; you do not need to list everything.</>,
           <><strong>Connect to the company and role:</strong> Show that you understand the position. Explain why you are interested in this job and this company in one or two clear sentences.</>,
           <><strong>End with confidence:</strong> Finish with a sentence that shows you are ready to contribute and to continue the conversation. Maintain good eye contact and a calm, friendly tone.</>
         ]} />
 
-        <ArticleHeading>Sample self‑introduction in an interview for freshers</ArticleHeading>
+        <ArticleHeading>Sample self-introduction in an interview for freshers</ArticleHeading>
         <ArticleParagraph>
           When you are a fresher, you may feel that you do not have enough work experience to talk about. However, you can still create a strong introduction by focusing on your education, projects, internships, and skills.
         </ArticleParagraph>
@@ -5711,7 +8972,7 @@ export const BLOG_POSTS: BlogPost[] = [
         <BulletList items={[
           'Greeting and name',
           'Degree and university',
-          'Relevant projects, internships, or part‑time work',
+          'Relevant projects, internships, or part-time work',
           'Skills connected to the job',
           'Motivation and interest in the role'
         ]} />
@@ -5722,7 +8983,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <div className="bg-slate-50 border-l-4 border-blue-500 p-4 my-4 italic">
           <ArticleParagraph>
-            "Good morning, and thank you for giving me the opportunity to interview for this marketing assistant position. My name is [Name], and I recently graduated with a bachelor's degree in Business Administration with a specialization in Marketing. During my final year, I completed a project where my team and I developed a social media campaign for a local café, which helped increase their online engagement. I also completed a three‑month internship at a digital agency, where I supported content creation and basic campaign analysis. Through these experiences, I developed strong skills in social media marketing, content writing, and data interpretation, and I enjoy turning ideas into practical campaigns. I'm excited about this role because it combines creative work with analytics, and I'm motivated to learn from your team and contribute to your upcoming projects."
+            "Good morning, and thank you for giving me the opportunity to interview for this marketing assistant position. My name is [Name], and I recently graduated with a bachelor's degree in Business Administration with a specialization in Marketing. During my final year, I completed a project where my team and I developed a social media campaign for a local caf�, which helped increase their online engagement. I also completed a three-month internship at a digital agency, where I supported content creation and basic campaign analysis. Through these experiences, I developed strong skills in social media marketing, content writing, and data interpretation, and I enjoy turning ideas into practical campaigns. I'm excited about this role because it combines creative work with analytics, and I'm motivated to learn from your team and contribute to your upcoming projects."
           </ArticleParagraph>
         </div>
 
@@ -5730,7 +8991,7 @@ export const BLOG_POSTS: BlogPost[] = [
           You can customize this example by changing the degree, project, and experience details to match your own background. Keep your introduction under one and a half minutes so it stays focused and easy to follow.
         </ArticleParagraph>
 
-        <ArticleHeading>Sample self‑introduction in an interview for experienced candidates</ArticleHeading>
+        <ArticleHeading>Sample self-introduction in an interview for experienced candidates</ArticleHeading>
         <ArticleParagraph>
           If you have work experience, your introduction should show a clear professional identity and highlight achievements that are relevant to the position.
         </ArticleParagraph>
@@ -5753,7 +9014,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <div className="bg-slate-50 border-l-4 border-blue-500 p-4 my-4 italic">
           <ArticleParagraph>
-            "Good afternoon, and thank you for inviting me today. My name is [Name], and I'm a software engineer with a little over six years of experience in backend development, mainly in the fintech sector. In my current role at [Company], I design and maintain microservices that support high‑volume payment processing, and I work closely with cross‑functional teams to improve system performance and reliability. One of my recent projects was leading the redesign of our transaction reconciliation module, which reduced processing time by 40 percent and significantly lowered error rates. Over the years, I've built strong skills in [technologies] as well as collaborating with product and operations teams to translate business requirements into scalable technical solutions. I'm particularly interested in this role because it offers the chance to work on complex systems at a larger scale and to contribute to new product initiatives in your company."
+            "Good afternoon, and thank you for inviting me today. My name is [Name], and I'm a software engineer with a little over six years of experience in backend development, mainly in the fintech sector. In my current role at [Company], I design and maintain microservices that support high-volume payment processing, and I work closely with cross-functional teams to improve system performance and reliability. One of my recent projects was leading the redesign of our transaction reconciliation module, which reduced processing time by 40 percent and significantly lowered error rates. Over the years, I've built strong skills in [technologies] as well as collaborating with product and operations teams to translate business requirements into scalable technical solutions. I'm particularly interested in this role because it offers the chance to work on complex systems at a larger scale and to contribute to new product initiatives in your company."
           </ArticleParagraph>
         </div>
 
@@ -5761,7 +9022,7 @@ export const BLOG_POSTS: BlogPost[] = [
           You can adapt this by changing the industry, technologies, and achievements. The key idea is to show clear value and alignment with the new job.
         </ArticleParagraph>
 
-        <ArticleHeading>Self‑introduction example for online or video interviews</ArticleHeading>
+        <ArticleHeading>Self-introduction example for online or video interviews</ArticleHeading>
         <ArticleParagraph>
           Online interviews are now very common, and the basics of introducing yourself are similar. However, you also need to pay attention to your environment, eye contact with the camera, and sound.
         </ArticleParagraph>
@@ -5782,12 +9043,12 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <div className="bg-slate-50 border-l-4 border-blue-500 p-4 my-4 italic">
           <ArticleParagraph>
-            "Good morning, and thank you for taking the time to meet with me online today. My name is [Name], and I'm a project manager with five years of experience leading cross‑functional teams in the construction industry. In my current position at [Company], I coordinate planning, budgeting, and communication across multiple stakeholders to ensure projects are delivered on time and within scope. Over the past few years, I've successfully managed several mid‑sized projects, and I've developed strong skills in scheduling, risk management, and team communication. I'm excited about this opportunity because your company is known for innovative, sustainable projects, and I'm very interested in contributing to that vision."
+            "Good morning, and thank you for taking the time to meet with me online today. My name is [Name], and I'm a project manager with five years of experience leading cross-functional teams in the construction industry. In my current position at [Company], I coordinate planning, budgeting, and communication across multiple stakeholders to ensure projects are delivered on time and within scope. Over the past few years, I've successfully managed several mid-sized projects, and I've developed strong skills in scheduling, risk management, and team communication. I'm excited about this opportunity because your company is known for innovative, sustainable projects, and I'm very interested in contributing to that vision."
           </ArticleParagraph>
         </div>
 
         <ArticleParagraph>
-          The words are similar to an in‑person introduction, but your body language and technical setup become more important in an online environment.
+          The words are similar to an in-person introduction, but your body language and technical setup become more important in an online environment.
         </ArticleParagraph>
 
         <ArticleHeading>Common mistakes when introducing yourself in English (and how to fix them)</ArticleHeading>
@@ -5817,12 +9078,12 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>Ignoring the job description</ArticleHeading>
         <ArticleParagraph>
-          Some candidates give a general introduction that could fit any job. Always adapt your self‑introduction to the specific position by mentioning skills and experience that match the job description.
+          Some candidates give a general introduction that could fit any job. Always adapt your self-introduction to the specific position by mentioning skills and experience that match the job description.
         </ArticleParagraph>
 
-        <ArticleHeading>Useful English phrases for interview self‑introductions</ArticleHeading>
+        <ArticleHeading>Useful English phrases for interview self-introductions</ArticleHeading>
         <ArticleParagraph>
-          Here are some practical phrases you can mix and match when you prepare your self‑introduction:
+          Here are some practical phrases you can mix and match when you prepare your self-introduction:
         </ArticleParagraph>
 
         <ArticleParagraph><strong>Greeting and thanks:</strong></ArticleParagraph>
@@ -5833,26 +9094,26 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleParagraph><strong>Starting your introduction:</strong></ArticleParagraph>
         <ExampleList items={[
-          "My name is [Name], and I am currently working as a …",
-          "My name is [Name], and I recently graduated with a degree in …"
+          "My name is [Name], and I am currently working as a �",
+          "My name is [Name], and I recently graduated with a degree in �"
         ]} />
 
         <ArticleParagraph><strong>Talking about experience:</strong></ArticleParagraph>
         <ExampleList items={[
-          "I have [number] years of experience in …",
-          "In my current role at [Company], I am responsible for …",
-          "Previously, I worked at [Company], where I focused on …"
+          "I have [number] years of experience in �",
+          "In my current role at [Company], I am responsible for �",
+          "Previously, I worked at [Company], where I focused on �"
         ]} />
 
         <ArticleParagraph><strong>Highlighting skills and strengths:</strong></ArticleParagraph>
         <ExampleList items={[
-          "Through these roles, I have developed strong skills in …",
-          "My main strengths include …"
+          "Through these roles, I have developed strong skills in �",
+          "My main strengths include �"
         ]} />
 
         <ArticleParagraph><strong>Connecting to the role:</strong></ArticleParagraph>
         <ExampleList items={[
-          "I am particularly interested in this position because …",
+          "I am particularly interested in this position because �",
           "I believe my background in [field] fits well with your needs for this role."
         ]} />
 
@@ -5863,12 +9124,12 @@ export const BLOG_POSTS: BlogPost[] = [
         ]} />
 
         <ArticleParagraph>
-          Using ready‑made phrases can save time and give you a reliable structure. However, always adjust them to sound natural for you.
+          Using ready-made phrases can save time and give you a reliable structure. However, always adjust them to sound natural for you.
         </ArticleParagraph>
 
         <ArticleHeading>Practice tips to sound natural and confident</ArticleHeading>
         <ArticleParagraph>
-          Preparing your self‑introduction is not just about writing the text. You also need to practice saying it out loud so that your voice, body language, and timing all support your message.
+          Preparing your self-introduction is not just about writing the text. You also need to practice saying it out loud so that your voice, body language, and timing all support your message.
         </ArticleParagraph>
 
         <ArticleParagraph>
@@ -5879,24 +9140,24 @@ export const BLOG_POSTS: BlogPost[] = [
           <><strong>Write bullet points, not a full script:</strong> Instead of memorizing a long paragraph, write down short bullet points for each part of your introduction: greeting, name, background, experience, skills, and closing. Practice speaking from the bullet points until the structure feels natural.</>,
           <><strong>Record yourself:</strong> Use your phone or computer to record your introduction. Listen to your speed, pronunciation, and tone. Ask yourself: "Would I hire this person?" Adjust and record again until you feel satisfied.</>,
           <><strong>Practice with a friend or mentor:</strong> Ask a friend, teacher, or colleague to act as the interviewer. Introduce yourself and then ask for feedback on clarity, body language, and English accuracy.</>,
-          <><strong>Time your introduction:</strong> A good self‑introduction in an interview is usually around 45 to 90 seconds. Practice with a timer so that you can stay within this range while still sounding relaxed.</>,
+          <><strong>Time your introduction:</strong> A good self-introduction in an interview is usually around 45 to 90 seconds. Practice with a timer so that you can stay within this range while still sounding relaxed.</>,
           <><strong>Focus on confidence, not perfection:</strong> Interviewers do not expect your English to be perfect, especially if it is not your first language. They care more about whether they can understand you and whether you present yourself in a clear, professional way.</>
         ]} />
 
         <div className="bg-blue-50 border-l-4 border-blue-600 p-6 my-8 rounded">
-          <h3 className="font-bold text-lg mb-4">💡 FAQ</h3>
+          <h3 className="font-bold text-lg mb-4">?? FAQ</h3>
           
           <div className="mb-4">
-            <p className="font-bold mb-2">How long should my self‑introduction be in an interview?</p>
+            <p className="font-bold mb-2">How long should my self-introduction be in an interview?</p>
             <ArticleParagraph>
-              Aim for about 45–90 seconds for your self‑introduction in an interview. This is long enough to cover your background, experience, and key skills without overwhelming the interviewer.
+              Aim for about 45�90 seconds for your self-introduction in an interview. This is long enough to cover your background, experience, and key skills without overwhelming the interviewer.
             </ArticleParagraph>
           </div>
 
           <div className="mb-4">
             <p className="font-bold mb-2">What should I include when I introduce myself in English?</p>
             <ArticleParagraph>
-              Include a greeting, your name, your current role or education, a short summary of your experience, 2–3 key skills, and a sentence that explains why you are interested in the job. Keep the focus on information that is relevant to the position.
+              Include a greeting, your name, your current role or education, a short summary of your experience, 2�3 key skills, and a sentence that explains why you are interested in the job. Keep the focus on information that is relevant to the position.
             </ArticleParagraph>
           </div>
 
@@ -5908,7 +9169,7 @@ export const BLOG_POSTS: BlogPost[] = [
           </div>
 
           <div className="mb-4">
-            <p className="font-bold mb-2">Is it okay to memorize my self‑introduction?</p>
+            <p className="font-bold mb-2">Is it okay to memorize my self-introduction?</p>
             <ArticleParagraph>
               It is fine to prepare and practice, but avoid memorizing every word. Instead, remember the main points and speak naturally so you sound confident, not robotic.
             </ArticleParagraph>
@@ -5979,24 +9240,24 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on <a href="https://dictionary.cambridge.org/grammar/british-grammar/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Cambridge Grammar</a> and ESL research data.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on <a href="https://dictionary.cambridge.org/grammar/british-grammar/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Cambridge Grammar</a> and ESL research data.</span>
         </div>
 
         {/* Statistics Box */}
         <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-700 rounded-lg p-4 mb-6">
-          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">🎯 Non-Native Speaker Statistics</h4>
+          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">?? Non-Native Speaker Statistics</h4>
           <ul className="text-sm text-green-700 dark:text-green-300 space-y-1">
-            <li>• Article errors (a/an/the) account for ~25% of all non-native grammar mistakes</li>
-            <li>• Preposition errors are the second most common at ~20%</li>
-            <li>• Most learners achieve 90% accuracy after 500+ hours of practice</li>
-            <li>• Focused error correction improves grammar 2x faster than general practice</li>
+            <li>� Article errors (a/an/the) account for ~25% of all non-native grammar mistakes</li>
+            <li>� Preposition errors are the second most common at ~20%</li>
+            <li>� Most learners achieve 90% accuracy after 500+ hours of practice</li>
+            <li>� Focused error correction improves grammar 2x faster than general practice</li>
           </ul>
         </div>
 
         <ArticleParagraph>
-          Learning English as a second language can be a rewarding but challenging experience. Even the most fluent non-native speakers often struggle with subtle grammar rules, confusing exceptions, and idiomatic expressions that don't translate easily from their mother tongue. Grammar mistakes are not signs of poor intelligence—they're a natural part of language acquisition.
+          Learning English as a second language can be a rewarding but challenging experience. Even the most fluent non-native speakers often struggle with subtle grammar rules, confusing exceptions, and idiomatic expressions that don't translate easily from their mother tongue. Grammar mistakes are not signs of poor intelligence�they're a natural part of language acquisition.
         </ArticleParagraph>
 
         <ArticleParagraph>
@@ -6011,7 +9272,7 @@ export const BLOG_POSTS: BlogPost[] = [
           'The language borrows heavily from Latin, Germanic, and French roots.',
           "Grammar rules aren't always consistent.",
           'Word order and article usage differ dramatically from other languages.',
-          'English relies heavily on context—small changes in tense or preposition can alter meaning.',
+          'English relies heavily on context�small changes in tense or preposition can alter meaning.',
           'Pronunciation and spelling inconsistencies add another layer of difficulty.'
         ]} />
         <ArticleParagraph>
@@ -6020,31 +9281,31 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading id="wrong-tense">1. Using the Wrong Tense</ArticleHeading>
         <ArticleParagraph>
-          Verb tenses are among the trickiest parts of English grammar for non-native speakers. English has 12 main tenses, and many learners find it confusing to choose between them. Learn more about <Link to="/topics/present-simple" className="text-blue-600 hover:underline">verb tenses here</Link>.
+          Verb tenses are among the trickiest parts of English grammar for non-native speakers. English has 12 main tenses, and many learners find it confusing to choose between them. Learn more about <Link to="/topics/present-simple/" className="text-blue-600 hover:underline">verb tenses here</Link>.
         </ArticleParagraph>
         <ArticleParagraph><strong>Common Errors:</strong></ArticleParagraph>
         <BulletList items={[
-          <>Mixing up the past simple and <Link to="/topics/present-perfect" className="text-blue-600 hover:underline">present perfect</Link>: ❌ I have seen him yesterday. ✅ I saw him yesterday.</>,
-          <>Confusing future forms: ❌ I will going to travel next week. ✅ I am going to travel next week.</>,
-          <>Using simple tense instead of progressive: ❌ I watch TV right now. ✅ I am watching TV right now.</>
+          <>Mixing up the past simple and <Link to="/topics/present-perfect/" className="text-blue-600 hover:underline">present perfect</Link>: ? I have seen him yesterday. ? I saw him yesterday.</>,
+          <>Confusing future forms: ? I will going to travel next week. ? I am going to travel next week.</>,
+          <>Using simple tense instead of progressive: ? I watch TV right now. ? I am watching TV right now.</>
         ]} />
         <ArticleParagraph><strong>Why It Happens:</strong> Tense systems differ drastically between languages. Some languages don't use verb tenses the same way English does.</ArticleParagraph>
         <ArticleParagraph><strong>How to Fix It:</strong></ArticleParagraph>
         <BulletList items={[
-          'Learn time markers (yesterday → past simple; already → present perfect)',
+          'Learn time markers (yesterday ? past simple; already ? present perfect)',
           'Practice identifying tense signals in reading exercises',
           'Create flashcards with correct tense examples'
         ]} />
 
         <ArticleHeading id="article-misuse">2. Article Misuse: "A," "An," and "The"</ArticleHeading>
         <ArticleParagraph>
-          Articles often confuse learners because not all languages use them. Learn more about <Link to="/topics/articles" className="text-blue-600 hover:underline">articles in English</Link>.
+          Articles often confuse learners because not all languages use them. Learn more about <Link to="/topics/articles/" className="text-blue-600 hover:underline">articles in English</Link>.
         </ArticleParagraph>
         <ArticleParagraph><strong>Common Errors:</strong></ArticleParagraph>
         <ExampleList items={[
-          '❌ I am teacher. ✅ I am a teacher.',
-          '❌ She is in the church now. ✅ She is in church now.',
-          '❌ The dogs are friendly animals. ✅ Dogs are friendly animals.'
+          '? I am teacher. ? I am a teacher.',
+          '? She is in the church now. ? She is in church now.',
+          '? The dogs are friendly animals. ? Dogs are friendly animals.'
         ]} />
         <ArticleParagraph><strong>How to Fix It:</strong></ArticleParagraph>
         <BulletList items={[
@@ -6055,22 +9316,22 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading id="confusing-prepositions">3. Confusing Prepositions</ArticleHeading>
         <ArticleParagraph>
-          Prepositions are small but mighty offenders. Check our comprehensive <Link to="/preposition-combinations" className="text-blue-600 hover:underline">preposition combinations guide</Link>.
+          Prepositions are small but mighty offenders. Check our comprehensive <Link to="/preposition-combinations/" className="text-blue-600 hover:underline">preposition combinations guide</Link>.
         </ArticleParagraph>
         <ExampleList items={[
-          "❌ I'm good in English. ✅ I'm good at English.",
-          '❌ I arrived to the airport. ✅ I arrived at the airport.',
-          '❌ He depends of his parents. ✅ He depends on his parents.'
+          "? I'm good in English. ? I'm good at English.",
+          '? I arrived to the airport. ? I arrived at the airport.',
+          '? He depends of his parents. ? He depends on his parents.'
         ]} />
         <ArticleParagraph><strong>How to Fix It:</strong> Learn prepositions through collocations (word partnerships): interested in, afraid of, good at.</ArticleParagraph>
 
         <ArticleHeading id="wrong-word-order">4. Wrong Word Order</ArticleHeading>
         <ArticleParagraph>
-          English relies heavily on sentence structure. Learn more about <Link to="/topics/sentence-structure" className="text-blue-600 hover:underline">sentence structure</Link>.
+          English relies heavily on sentence structure. Learn more about <Link to="/topics/sentence-structure/" className="text-blue-600 hover:underline">sentence structure</Link>.
         </ArticleParagraph>
         <ExampleList items={[
-          '❌ Always I get up at 7 a.m. ✅ I always get up at 7 a.m.',
-          '❌ She plays beautiful the piano. ✅ She plays the piano beautifully.'
+          '? Always I get up at 7 a.m. ? I always get up at 7 a.m.',
+          '? She plays beautiful the piano. ? She plays the piano beautifully.'
         ]} />
         <ArticleParagraph><strong>How to Fix It:</strong> Remember: Subject + Verb + Object. Adverbs of frequency come before the main verb.</ArticleParagraph>
 
@@ -6079,9 +9340,9 @@ export const BLOG_POSTS: BlogPost[] = [
           Not every language distinguishes between countable and uncountable nouns like English does.
         </ArticleParagraph>
         <ExampleList items={[
-          '❌ She gave me many advices. ✅ She gave me much advice.',
-          '❌ There are some furnitures. ✅ There is some furniture.',
-          '❌ I need an information. ✅ I need some information.'
+          '? She gave me many advices. ? She gave me much advice.',
+          '? There are some furnitures. ? There is some furniture.',
+          '? I need an information. ? I need some information.'
         ]} />
         <ArticleParagraph><strong>How to Fix It:</strong> Memorize common uncountable nouns: advice, information, furniture, money, knowledge, luggage.</ArticleParagraph>
 
@@ -6090,69 +9351,69 @@ export const BLOG_POSTS: BlogPost[] = [
           The subject and verb must agree in number (singular or plural).
         </ArticleParagraph>
         <ExampleList items={[
-          '❌ He go to school. ✅ He goes to school.',
-          '❌ The people likes this. ✅ The people like this.',
-          '❌ My friend and I is studying. ✅ My friend and I are studying.'
+          '? He go to school. ? He goes to school.',
+          '? The people likes this. ? The people like this.',
+          '? My friend and I is studying. ? My friend and I are studying.'
         ]} />
         <ArticleParagraph><strong>How to Fix It:</strong> In simple present, add "-s" for he/she/it. Always identify the true subject before choosing the verb.</ArticleParagraph>
 
         <ArticleHeading id="much-many">7. Misusing "Much," "Many," and "A Lot Of"</ArticleHeading>
         <ExampleList items={[
-          '❌ There are much cars. ✅ There are many cars.',
-          "❌ I don't have many money. ✅ I don't have much money."
+          '? There are much cars. ? There are many cars.',
+          "? I don't have many money. ? I don't have much money."
         ]} />
         <ArticleParagraph><strong>How to Fix It:</strong> Use many for countable, much for uncountable, a lot of for both.</ArticleParagraph>
 
         <ArticleHeading id="since-for">8. Incorrect Use of "Since" and "For"</ArticleHeading>
         <ExampleList items={[
-          '❌ I have lived here since three years. ✅ I have lived here for three years.',
-          "❌ I've been waiting for Monday. ✅ I've been waiting since Monday."
+          '? I have lived here since three years. ? I have lived here for three years.',
+          "? I've been waiting for Monday. ? I've been waiting since Monday."
         ]} />
         <ArticleParagraph><strong>How to Fix It:</strong> Use since for start point, for for duration.</ArticleParagraph>
 
         <ArticleHeading id="pronoun-confusion">9. Pronoun Confusion</ArticleHeading>
         <ExampleList items={[
-          '❌ Me and my friends went. ✅ My friends and I went.',
-          '❌ She gave it to I. ✅ She gave it to me.'
+          '? Me and my friends went. ? My friends and I went.',
+          '? She gave it to I. ? She gave it to me.'
         ]} />
         <ArticleParagraph><strong>How to Fix It:</strong> Memorize subject pronouns (I, you, he) vs object pronouns (me, you, him).</ArticleParagraph>
 
         <ArticleHeading id="double-negatives">10. Using Double Negatives</ArticleHeading>
         <ExampleList items={[
-          "❌ I don't know nothing. ✅ I don't know anything.",
-          "❌ She didn't see nobody. ✅ She didn't see anybody."
+          "? I don't know nothing. ? I don't know anything.",
+          "? She didn't see nobody. ? She didn't see anybody."
         ]} />
         <ArticleParagraph><strong>How to Fix It:</strong> In English, two negatives make a positive. Use only one negative word.</ArticleParagraph>
 
         <ArticleHeading id="comparatives">11. Incorrect Comparatives and Superlatives</ArticleHeading>
         <ExampleList items={[
-          '❌ She is more prettier. ✅ She is prettier.',
-          '❌ This is the most easiest. ✅ This is the easiest.'
+          '? She is more prettier. ? She is prettier.',
+          '? This is the most easiest. ? This is the easiest.'
         ]} />
         <ArticleParagraph><strong>How to Fix It:</strong> Short adjectives: add -er/-est. Long adjectives: use more/most. Don't combine both.</ArticleParagraph>
 
         <ArticleHeading id="make-do">12. Confusing "Make" and "Do"</ArticleHeading>
         <ExampleList items={[
-          '❌ I do my bed. ✅ I make my bed.',
-          '❌ Can you make your homework? ✅ Can you do your homework?'
+          '? I do my bed. ? I make my bed.',
+          '? Can you make your homework? ? Can you do your homework?'
         ]} />
         <ArticleParagraph><strong>How to Fix It:</strong> Use make for creating, do for actions/tasks.</ArticleParagraph>
 
         <ArticleHeading id="who-whom">13. Wrong Use of "Who," "Whom," and "Whose"</ArticleHeading>
         <ExampleList items={[
-          '❌ Whom is calling? ✅ Who is calling?',
-          "❌ That's the man who car was stolen. ✅ That's the man whose car was stolen."
+          '? Whom is calling? ? Who is calling?',
+          "? That's the man who car was stolen. ? That's the man whose car was stolen."
         ]} />
 
         <ArticleHeading id="passive-voice">14. Overusing Passive Voice</ArticleHeading>
         <ArticleParagraph>
-          Learn when to use <Link to="/topics/passive-voice" className="text-blue-600 hover:underline">passive voice</Link> appropriately. Use active voice whenever possible.
+          Learn when to use <Link to="/topics/passive-voice/" className="text-blue-600 hover:underline">passive voice</Link> appropriately. Use active voice whenever possible.
         </ArticleParagraph>
 
         <ArticleHeading id="literal-translations">15. Literal Translations from Native Language</ArticleHeading>
         <ExampleList items={[
-          '❌ I have 24 years old. ✅ I am 24 years old.',
-          '❌ We see us tomorrow. ✅ See you tomorrow.'
+          '? I have 24 years old. ? I am 24 years old.',
+          '? We see us tomorrow. ? See you tomorrow.'
         ]} />
         <ArticleParagraph><strong>How to Fix It:</strong> Think in English. Learn English idioms and natural expressions.</ArticleParagraph>
 
@@ -6169,17 +9430,17 @@ export const BLOG_POSTS: BlogPost[] = [
         ]} />
 
         <ArticleParagraph>
-          Explore our comprehensive <Link to="/grammar-guide" className="text-blue-600 hover:underline">grammar guide</Link> and <Link to="/interactive-exercises" className="text-blue-600 hover:underline">interactive exercises</Link> to practice these concepts.
+          Explore our comprehensive <Link to="/grammar-guide/" className="text-blue-600 hover:underline">grammar guide</Link> and <Link to="/interactive-exercises/" className="text-blue-600 hover:underline">interactive exercises</Link> to practice these concepts.
         </ArticleParagraph>
 
         <div className="bg-blue-50 border-l-4 border-blue-600 p-6 my-8 rounded">
-          <h3 className="font-bold text-lg mb-2">💡 Key Takeaways</h3>
+          <h3 className="font-bold text-lg mb-2">?? Key Takeaways</h3>
           <BulletList items={[
-            'Making grammar mistakes is natural—every learner goes through this',
+            'Making grammar mistakes is natural�every learner goes through this',
             'Focus on one grammar rule at a time for effective learning',
             'Practice daily with reading, writing, speaking, and listening',
             'Use ESL resources and grammar tools for continuous improvement',
-            "Don't fear errors—learn from them and keep practicing"
+            "Don't fear errors�learn from them and keep practicing"
           ]} />
         </div>
 
@@ -6264,9 +9525,9 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — All sites tested and verified. Includes official resources from <a href="https://learnenglish.britishcouncil.org/grammar" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">British Council</a>.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � All sites tested and verified. Includes official resources from <a href="https://learnenglish.britishcouncil.org/grammar" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">British Council</a>.</span>
         </div>
 
         {/* Quick Answer Box */}
@@ -6338,16 +9599,16 @@ export const BLOG_POSTS: BlogPost[] = [
           <strong>Key Features:</strong>
         </ArticleParagraph>
         <BulletList items={[
-          <>📚 <strong>Comprehensive Grammar Topics:</strong> Over 40 detailed lessons covering all aspects of English grammar, from tenses and articles to advanced topics like subjunctive mood and cleft sentences.</>,
-          <>🎯 <strong>Interactive Exercises:</strong> Four types of interactive exercises (fill-in-the-blank, sentence reordering, error correction, and matching) covering all major grammar topics with immediate feedback.</>,
-          <>🎴 <strong>Grammar Flashcards:</strong> Over 100 flashcards organized by category for quick review and memorization of key grammar concepts.</>,
-          <>📝 <strong>Topic-Specific Quizzes:</strong> Practice quizzes aligned with each grammar lesson to test your understanding.</>,
-          <>📖 <strong>Reference Materials:</strong> Extensive lists of irregular verbs, phrasal verbs, idioms, commonly confused words, and preposition combinations.</>,
-          <>🎨 <strong>Visual Learning Tools:</strong> Timeline diagrams and sentence transformation visualizations to help you understand complex grammar concepts.</>,
-          <>📱 <strong>Multi-language UI:</strong> Interface available in English, French, Arabic, and Spanish for better accessibility.</>,
-          <>🌙 <strong>Dark Mode:</strong> Eye-friendly dark theme for comfortable studying at any time.</>,
-          <>⌨️ <strong>Keyboard Shortcuts:</strong> Quick navigation shortcuts for efficient browsing.</>,
-          <>📊 <strong>Progress Tracking:</strong> Keep track of completed topics and quiz scores.</>,
+          <>?? <strong>Comprehensive Grammar Topics:</strong> Over 40 detailed lessons covering all aspects of English grammar, from tenses and articles to advanced topics like subjunctive mood and cleft sentences.</>,
+          <>?? <strong>Interactive Exercises:</strong> Four types of interactive exercises (fill-in-the-blank, sentence reordering, error correction, and matching) covering all major grammar topics with immediate feedback.</>,
+          <>?? <strong>Grammar Flashcards:</strong> Over 100 flashcards organized by category for quick review and memorization of key grammar concepts.</>,
+          <>?? <strong>Topic-Specific Quizzes:</strong> Practice quizzes aligned with each grammar lesson to test your understanding.</>,
+          <>?? <strong>Reference Materials:</strong> Extensive lists of irregular verbs, phrasal verbs, idioms, commonly confused words, and preposition combinations.</>,
+          <>?? <strong>Visual Learning Tools:</strong> Timeline diagrams and sentence transformation visualizations to help you understand complex grammar concepts.</>,
+          <>?? <strong>Multi-language UI:</strong> Interface available in English, French, Arabic, and Spanish for better accessibility.</>,
+          <>?? <strong>Dark Mode:</strong> Eye-friendly dark theme for comfortable studying at any time.</>,
+          <>?? <strong>Keyboard Shortcuts:</strong> Quick navigation shortcuts for efficient browsing.</>,
+          <>?? <strong>Progress Tracking:</strong> Keep track of completed topics and quiz scores.</>,
         ]} />
         <ArticleParagraph>
           Whether you're studying for an exam, improving your professional writing skills, or simply want to master English grammar, TypoGrammar provides a complete learning ecosystem with everything you need in one place. The site is constantly updated with new content and features based on user feedback.
@@ -6496,7 +9757,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>Conclusion</ArticleHeading>
         <ArticleParagraph>
-          Improving your English grammar has never been more accessible. With these free online resources, you have everything you need to master English grammar at your own pace. TypoGrammar stands out as the most comprehensive all-in-one platform, offering interactive exercises, detailed lessons, flashcards, quizzes, and extensive reference materials—all in a modern, user-friendly interface.
+          Improving your English grammar has never been more accessible. With these free online resources, you have everything you need to master English grammar at your own pace. TypoGrammar stands out as the most comprehensive all-in-one platform, offering interactive exercises, detailed lessons, flashcards, quizzes, and extensive reference materials�all in a modern, user-friendly interface.
         </ArticleParagraph>
         <ArticleParagraph>
           Remember, the key to grammar mastery is consistent practice and application. Start with one or two websites that match your learning style and goals, establish a regular study routine, and gradually expand your practice to include different types of exercises and resources. Whether you choose to make TypoGrammar your primary learning platform or use it alongside other resources, you'll find that regular engagement with these free tools will significantly improve your grammar skills over time.
@@ -6566,14 +9827,14 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on <a href="https://dictionary.cambridge.org/grammar/british-grammar/subject-verb-agreement" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Cambridge Grammar</a> and <a href="https://learnenglish.britishcouncil.org/grammar/intermediate-to-upper-intermediate/subject-verb-agreement" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">British Council</a> guidelines.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on <a href="https://dictionary.cambridge.org/grammar/british-grammar/subject-verb-agreement" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Cambridge Grammar</a> and <a href="https://learnenglish.britishcouncil.org/grammar/intermediate-to-upper-intermediate/subject-verb-agreement" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">British Council</a> guidelines.</span>
         </div>
 
         {/* Quick Reference Table */}
         <div className="bg-gradient-to-r from-teal-50 to-cyan-50 dark:from-slate-800 dark:to-slate-700 border border-teal-200 dark:border-teal-700 rounded-lg p-5 mb-6">
-          <h4 className="font-bold text-lg text-teal-900 dark:text-teal-200 mb-4">📊 Quick Reference: Subject-Verb Agreement Rules</h4>
+          <h4 className="font-bold text-lg text-teal-900 dark:text-teal-200 mb-4">?? Quick Reference: Subject-Verb Agreement Rules</h4>
           <div className="overflow-x-auto">
             <table className="min-w-full border-collapse text-sm">
               <thead>
@@ -6621,17 +9882,17 @@ export const BLOG_POSTS: BlogPost[] = [
 
         {/* Exam Statistics */}
         <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-700 rounded-lg p-4 mb-6">
-          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">🎯 Subject-Verb Agreement in English Exams</h4>
+          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">?? Subject-Verb Agreement in English Exams</h4>
           <ul className="text-sm text-green-700 dark:text-green-300 space-y-1">
-            <li>• Agreement errors account for ~15% of grammar mistakes in IELTS Writing (Cambridge Learner Corpus)</li>
-            <li>• "Everyone/nobody + plural verb" is the #1 most common agreement error</li>
-            <li>• Tested in ~60% of TOEFL sentence correction questions</li>
-            <li>• Critical for achieving Band 7+ in IELTS Grammatical Range & Accuracy</li>
+            <li>� Agreement errors account for ~15% of grammar mistakes in IELTS Writing (Cambridge Learner Corpus)</li>
+            <li>� "Everyone/nobody + plural verb" is the #1 most common agreement error</li>
+            <li>� Tested in ~60% of TOEFL sentence correction questions</li>
+            <li>� Critical for achieving Band 7+ in IELTS Grammatical Range & Accuracy</li>
           </ul>
         </div>
 
         <ArticleParagraph>
-          Subject-verb agreement is one of the cornerstones of English grammar, yet it's also one of the most common sources of errors—even among native speakers. The basic principle is simple: subjects and verbs must agree in number. If the subject is singular, the verb must be singular. If the subject is plural, the verb must be plural. However, English being English, there are numerous exceptions, special cases, and tricky situations that can trip up even experienced writers. This comprehensive guide will help you master subject-verb agreement once and for all.
+          Subject-verb agreement is one of the cornerstones of English grammar, yet it's also one of the most common sources of errors�even among native speakers. The basic principle is simple: subjects and verbs must agree in number. If the subject is singular, the verb must be singular. If the subject is plural, the verb must be plural. However, English being English, there are numerous exceptions, special cases, and tricky situations that can trip up even experienced writers. This comprehensive guide will help you master subject-verb agreement once and for all.
         </ArticleParagraph>
 
         <ArticleHeading>The Basic Rule: Singular with Singular, Plural with Plural</ArticleHeading>
@@ -6687,7 +9948,7 @@ export const BLOG_POSTS: BlogPost[] = [
           <>Correct: Everyone <strong>is</strong> required to attend the meeting.</>,
           <>Correct: Neither of the options <strong>seems</strong> ideal.</>,
           <>Correct: Each of the students <strong>has</strong> submitted their assignment.</>,
-          <>Incorrect: Everyone <strong>are</strong> here. ❌ (Should be "is")</>
+          <>Incorrect: Everyone <strong>are</strong> here. ? (Should be "is")</>
         ]} />
         <ArticleParagraph>
           <strong>Always plural:</strong> both, few, many, several, others
@@ -6740,7 +10001,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </ArticleParagraph>
         <BulletList items={[
           <>Correct: The box of chocolates <strong>is</strong> on the table. (Subject is "box," not "chocolates")</>,
-          <>Incorrect: The box of chocolates <strong>are</strong> on the table. ❌</>,
+          <>Incorrect: The box of chocolates <strong>are</strong> on the table. ?</>,
           <>Correct: The students in the classroom <strong>are</strong> taking a test. (Subject is "students")</>,
           <>Correct: One of the teachers <strong>has</strong> retired. (Subject is "one," not "teachers")</>
         ]} />
@@ -6750,7 +10011,7 @@ export const BLOG_POSTS: BlogPost[] = [
         <BulletList items={[
           <>Correct: The CEO, along with the board members, <strong>is</strong> attending the conference.</>,
           <>Correct: The teacher, as well as the students, <strong>was</strong> surprised by the announcement.</>,
-          <>Incorrect: The teacher, as well as the students, <strong>were</strong> surprised. ❌</>
+          <>Incorrect: The teacher, as well as the students, <strong>were</strong> surprised. ?</>
         ]} />
 
         <ArticleHeading>Inverted Sentences: When the Verb Comes First</ArticleHeading>
@@ -6761,7 +10022,7 @@ export const BLOG_POSTS: BlogPost[] = [
           <>Questions: <strong>Does</strong> she understand the assignment? (Subject "she" comes after "does")</>,
           <>There/Here constructions: There <strong>are</strong> three reasons for this decision. (Subject is "reasons")</>,
           <>There/Here constructions: Here <strong>is</strong> your coffee. (Subject is "coffee")</>,
-          <>Incorrect: There <strong>is</strong> many options available. ❌ (Should be "are" because "options" is plural)</>
+          <>Incorrect: There <strong>is</strong> many options available. ? (Should be "are" because "options" is plural)</>
         ]} />
 
         <ArticleHeading>Special Cases and Exceptions</ArticleHeading>
@@ -6796,10 +10057,10 @@ export const BLOG_POSTS: BlogPost[] = [
           Even experienced writers make subject-verb agreement errors. Here are the most common mistakes and how to avoid them:
         </ArticleParagraph>
         <BulletList items={[
-          <><strong>Mistake 1:</strong> Agreeing with the nearest noun instead of the actual subject. ❌ "The list of items are on the desk." ✓ "The list of items <strong>is</strong> on the desk."</>,
-          <><strong>Mistake 2:</strong> Treating "none" as always plural. ❌ "None of the information are correct." ✓ "None of the information <strong>is</strong> correct." (Information is uncountable)</>,
-          <><strong>Mistake 3:</strong> Using plural verbs with "everyone" or "everybody." ❌ "Everyone are ready." ✓ "Everyone <strong>is</strong> ready."</>,
-          <><strong>Mistake 4:</strong> Forgetting about inverted word order. ❌ "There is several reasons." ✓ "There <strong>are</strong> several reasons."</>,
+          <><strong>Mistake 1:</strong> Agreeing with the nearest noun instead of the actual subject. ? "The list of items are on the desk." ? "The list of items <strong>is</strong> on the desk."</>,
+          <><strong>Mistake 2:</strong> Treating "none" as always plural. ? "None of the information are correct." ? "None of the information <strong>is</strong> correct." (Information is uncountable)</>,
+          <><strong>Mistake 3:</strong> Using plural verbs with "everyone" or "everybody." ? "Everyone are ready." ? "Everyone <strong>is</strong> ready."</>,
+          <><strong>Mistake 4:</strong> Forgetting about inverted word order. ? "There is several reasons." ? "There <strong>are</strong> several reasons."</>,
           <><strong>Mistake 5:</strong> Confusing collective nouns. Be consistent: choose singular or plural treatment and stick with it throughout your text.</>
         ]} />
 
@@ -6814,7 +10075,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>Conclusion: Practice Makes Perfect</ArticleHeading>
         <ArticleParagraph>
-          Mastering subject-verb agreement takes practice, but understanding these rules will dramatically improve your writing clarity and grammatical accuracy. The key is to always identify the true subject of your sentence and ensure your verb matches it in number—regardless of what other nouns appear nearby. Pay special attention to indefinite pronouns, collective nouns, and sentences with interrupting phrases, as these are the most common trouble spots. With conscious practice and careful proofreading, subject-verb agreement will become second nature, and your writing will be clearer, more professional, and more confident.
+          Mastering subject-verb agreement takes practice, but understanding these rules will dramatically improve your writing clarity and grammatical accuracy. The key is to always identify the true subject of your sentence and ensure your verb matches it in number�regardless of what other nouns appear nearby. Pay special attention to indefinite pronouns, collective nouns, and sentences with interrupting phrases, as these are the most common trouble spots. With conscious practice and careful proofreading, subject-verb agreement will become second nature, and your writing will be clearer, more professional, and more confident.
         </ArticleParagraph>
       </>
     )
@@ -6878,14 +10139,14 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on <a href="https://www.chicagomanualofstyle.org/home.html" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Chicago Manual of Style</a> and <a href="https://owl.purdue.edu/owl/general_writing/punctuation/index.html" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Purdue OWL</a> guidelines.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on <a href="https://www.chicagomanualofstyle.org/home.html" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Chicago Manual of Style</a> and <a href="https://owl.purdue.edu/owl/general_writing/punctuation/index.html" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Purdue OWL</a> guidelines.</span>
         </div>
 
         {/* Quick Reference Table */}
         <div className="bg-gradient-to-r from-rose-50 to-pink-50 dark:from-slate-800 dark:to-slate-700 border border-rose-200 dark:border-rose-700 rounded-lg p-5 mb-6">
-          <h4 className="font-bold text-lg text-rose-900 dark:text-rose-200 mb-4">📊 Colon vs Semicolon: Quick Reference</h4>
+          <h4 className="font-bold text-lg text-rose-900 dark:text-rose-200 mb-4">?? Colon vs Semicolon: Quick Reference</h4>
           <div className="overflow-x-auto">
             <table className="min-w-full border-collapse text-sm">
               <thead>
@@ -6928,12 +10189,12 @@ export const BLOG_POSTS: BlogPost[] = [
 
         {/* Exam Statistics */}
         <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-700 rounded-lg p-4 mb-6">
-          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">🎯 Punctuation in Academic & Professional Writing</h4>
+          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">?? Punctuation in Academic & Professional Writing</h4>
           <ul className="text-sm text-green-700 dark:text-green-300 space-y-1">
-            <li>• Semicolon usage is a marker of Band 8+ writing sophistication in IELTS</li>
-            <li>• ~70% of GMAT sentence correction questions involve colon/semicolon rules</li>
-            <li>• Colons and semicolons appear in ~45% of TOEFL integrated writing model answers</li>
-            <li>• Proper punctuation contributes to "Coherence and Cohesion" scores in academic writing</li>
+            <li>� Semicolon usage is a marker of Band 8+ writing sophistication in IELTS</li>
+            <li>� ~70% of GMAT sentence correction questions involve colon/semicolon rules</li>
+            <li>� Colons and semicolons appear in ~45% of TOEFL integrated writing model answers</li>
+            <li>� Proper punctuation contributes to "Coherence and Cohesion" scores in academic writing</li>
           </ul>
         </div>
 
@@ -6943,7 +10204,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>The Colon (:) - Introduction and Announcement</ArticleHeading>
         <ArticleParagraph>
-          The colon is a mark of introduction or expectation. It signals to readers that something is coming—a list, an explanation, an example, or an elaboration of what came before. Think of it as a flashing arrow pointing forward, saying "Here it comes!"
+          The colon is a mark of introduction or expectation. It signals to readers that something is coming�a list, an explanation, an example, or an elaboration of what came before. Think of it as a flashing arrow pointing forward, saying "Here it comes!"
         </ArticleParagraph>
 
         <ArticleHeading>Using Colons to Introduce Lists</ArticleHeading>
@@ -6953,9 +10214,9 @@ export const BLOG_POSTS: BlogPost[] = [
         <BulletList items={[
           <>Correct: You'll need three things for camping: <strong>a tent, a sleeping bag, and a flashlight.</strong> ("You'll need three things for camping" is a complete sentence)</>,
           <>Correct: The conference will cover several topics: <strong>climate change, renewable energy, and sustainable agriculture.</strong></>,
-          <>Incorrect: The ingredients are: eggs, flour, and sugar. ❌ (Don't use a colon after "are" or "include")</>,
-          <>Correct: The ingredients are eggs, flour, and sugar. ✓ (No colon needed)</>,
-          <>Correct: You will need the following ingredients: eggs, flour, and sugar. ✓ (Complete clause before colon)</>
+          <>Incorrect: The ingredients are: eggs, flour, and sugar. ? (Don't use a colon after "are" or "include")</>,
+          <>Correct: The ingredients are eggs, flour, and sugar. ? (No colon needed)</>,
+          <>Correct: You will need the following ingredients: eggs, flour, and sugar. ? (Complete clause before colon)</>
         ]} />
 
         <ArticleHeading>Colons for Explanations and Elaborations</ArticleHeading>
@@ -7022,9 +10283,9 @@ export const BLOG_POSTS: BlogPost[] = [
           <strong>Common mistake:</strong> Using only a comma before transitional expressions creates a comma splice.
         </ArticleParagraph>
         <BulletList items={[
-          <>Incorrect: The store was closed, however, we found another one. ❌</>,
-          <>Correct: The store was closed<strong>; however,</strong> we found another one. ✓</>,
-          <>Also correct: The store was closed<strong>. However,</strong> we found another one. ✓</>
+          <>Incorrect: The store was closed, however, we found another one. ?</>,
+          <>Correct: The store was closed<strong>; however,</strong> we found another one. ?</>,
+          <>Also correct: The store was closed<strong>. However,</strong> we found another one. ?</>
         ]} />
 
         <ArticleHeading>Semicolons in Complex Lists</ArticleHeading>
@@ -7045,27 +10306,27 @@ export const BLOG_POSTS: BlogPost[] = [
           <strong>Mistake 1: Using a colon after a verb or preposition</strong>
         </ArticleParagraph>
         <BulletList items={[
-          <>Incorrect: My favorite colors are: blue, green, and purple. ❌</>,
-          <>Correct: My favorite colors are blue, green, and purple. ✓</>,
-          <>Correct: I love three colors: blue, green, and purple. ✓ (Complete clause before colon)</>,
-          <>Incorrect: The book is about: grammar, punctuation, and style. ❌</>,
-          <>Correct: The book is about grammar, punctuation, and style. ✓</>
+          <>Incorrect: My favorite colors are: blue, green, and purple. ?</>,
+          <>Correct: My favorite colors are blue, green, and purple. ?</>,
+          <>Correct: I love three colors: blue, green, and purple. ? (Complete clause before colon)</>,
+          <>Incorrect: The book is about: grammar, punctuation, and style. ?</>,
+          <>Correct: The book is about grammar, punctuation, and style. ?</>
         ]} />
         <ArticleParagraph>
           <strong>Mistake 2: Using a semicolon with a dependent clause</strong>
         </ArticleParagraph>
         <BulletList items={[
-          <>Incorrect: Although it was raining; we went outside. ❌ (Dependent clause + independent clause)</>,
-          <>Correct: Although it was raining, we went outside. ✓ (Use a comma, not a semicolon)</>,
-          <>Correct: It was raining<strong>;</strong> we went outside anyway. ✓ (Two independent clauses)</>
+          <>Incorrect: Although it was raining; we went outside. ? (Dependent clause + independent clause)</>,
+          <>Correct: Although it was raining, we went outside. ? (Use a comma, not a semicolon)</>,
+          <>Correct: It was raining<strong>;</strong> we went outside anyway. ? (Two independent clauses)</>
         ]} />
         <ArticleParagraph>
           <strong>Mistake 3: Using a semicolon before "and," "but," or "or" with short clauses</strong>
         </ArticleParagraph>
         <BulletList items={[
           <>Unnecessary: I went to the store; and I bought milk. (Semicolon is overkill for simple clauses)</>,
-          <>Better: I went to the store, and I bought milk. ✓</>,
-          <>Also good: I went to the store and bought milk. ✓ (Combined)</>,
+          <>Better: I went to the store, and I bought milk. ?</>,
+          <>Also good: I went to the store and bought milk. ? (Combined)</>,
           <>Good use: The company restructured its entire management team, laid off hundreds of employees, and relocated three offices<strong>;</strong> and through it all, profits continued to decline. (Semicolon useful for very long, complex clauses)</>
         ]} />
         <ArticleParagraph>
@@ -7100,7 +10361,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>Conclusion: Powerful Tools for Clear Writing</ArticleHeading>
         <ArticleParagraph>
-          Colons and semicolons are powerful punctuation marks that, when used correctly, can elevate your writing from good to great. Colons introduce and direct attention forward—to lists, explanations, or important statements. Semicolons connect closely related ideas, showing sophistication and creating smooth transitions between thoughts. The key to mastering these marks is understanding their distinct purposes: colons introduce, semicolons connect. Practice using them in your writing, but don't force them. When used naturally and correctly, they enhance clarity and demonstrate command of written English. Start incorporating them consciously, and soon they'll become intuitive tools in your writing arsenal.
+          Colons and semicolons are powerful punctuation marks that, when used correctly, can elevate your writing from good to great. Colons introduce and direct attention forward�to lists, explanations, or important statements. Semicolons connect closely related ideas, showing sophistication and creating smooth transitions between thoughts. The key to mastering these marks is understanding their distinct purposes: colons introduce, semicolons connect. Practice using them in your writing, but don't force them. When used naturally and correctly, they enhance clarity and demonstrate command of written English. Start incorporating them consciously, and soon they'll become intuitive tools in your writing arsenal.
         </ArticleParagraph>
       </>
     )
@@ -7164,14 +10425,14 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on <a href="https://dictionary.cambridge.org/grammar/british-grammar/modal-verbs-and-modality" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Cambridge Grammar</a> and <a href="https://learnenglish.britishcouncil.org/grammar/intermediate-to-upper-intermediate/modals" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">British Council</a> guidelines.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on <a href="https://dictionary.cambridge.org/grammar/british-grammar/modal-verbs-and-modality" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Cambridge Grammar</a> and <a href="https://learnenglish.britishcouncil.org/grammar/intermediate-to-upper-intermediate/modals" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">British Council</a> guidelines.</span>
         </div>
 
         {/* Quick Reference Table */}
         <div className="bg-gradient-to-r from-violet-50 to-purple-50 dark:from-slate-800 dark:to-slate-700 border border-violet-200 dark:border-violet-700 rounded-lg p-5 mb-6">
-          <h4 className="font-bold text-lg text-violet-900 dark:text-violet-200 mb-4">📊 Modal Verbs Quick Reference</h4>
+          <h4 className="font-bold text-lg text-violet-900 dark:text-violet-200 mb-4">?? Modal Verbs Quick Reference</h4>
           <div className="overflow-x-auto">
             <table className="min-w-full border-collapse text-sm">
               <thead>
@@ -7229,12 +10490,12 @@ export const BLOG_POSTS: BlogPost[] = [
 
         {/* Exam Statistics */}
         <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-700 rounded-lg p-4 mb-6">
-          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">🎯 Modal Verbs in English Exams</h4>
+          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">?? Modal Verbs in English Exams</h4>
           <ul className="text-sm text-green-700 dark:text-green-300 space-y-1">
-            <li>• Modal verbs appear in ~40% of IELTS Speaking Part 2 & 3 model answers</li>
-            <li>• "Can/could/would" for polite requests is tested in ~30% of Cambridge B2 exams</li>
-            <li>• "Must" vs "have to" is one of the top 10 most-tested grammar points in TOEFL</li>
-            <li>• Correct modal usage contributes to Band 7+ in IELTS Grammatical Range</li>
+            <li>� Modal verbs appear in ~40% of IELTS Speaking Part 2 & 3 model answers</li>
+            <li>� "Can/could/would" for polite requests is tested in ~30% of Cambridge B2 exams</li>
+            <li>� "Must" vs "have to" is one of the top 10 most-tested grammar points in TOEFL</li>
+            <li>� Correct modal usage contributes to Band 7+ in IELTS Grammatical Range</li>
           </ul>
         </div>
 
@@ -7312,7 +10573,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </ArticleParagraph>
         <BulletList items={[
           <><strong>Obligation/necessity:</strong> Students <strong>must</strong> submit assignments by Friday. / You <strong>must</strong> wear a seatbelt.</>,
-          <><strong>Strong advice:</strong> You <strong>must</strong> try this restaurant—it's amazing!</>,
+          <><strong>Strong advice:</strong> You <strong>must</strong> try this restaurant�it's amazing!</>,
           <><strong>Logical deduction:</strong> She's not answering her phone; she <strong>must</strong> be busy. / You've been traveling all day; you <strong>must</strong> be exhausted.</>
         ]} />
         <ArticleParagraph>
@@ -7384,10 +10645,10 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>Common Mistakes with Modal Verbs</ArticleHeading>
         <BulletList items={[
-          <><strong>Mistake 1:</strong> Adding "to" after modals. ❌ "I can to swim." ✓ "I can swim."</>,
-          <><strong>Mistake 2:</strong> Adding -s for third person. ❌ "She cans speak French." ✓ "She can speak French."</>,
-          <><strong>Mistake 3:</strong> Using double modals. ❌ "I might can help." ✓ "I might be able to help."</>,
-          <><strong>Mistake 4:</strong> Confusing "must not" and "don't have to." ❌ "You mustn't come" (when you mean it's optional). ✓ "You don't have to come."</>,
+          <><strong>Mistake 1:</strong> Adding "to" after modals. ? "I can to swim." ? "I can swim."</>,
+          <><strong>Mistake 2:</strong> Adding -s for third person. ? "She cans speak French." ? "She can speak French."</>,
+          <><strong>Mistake 3:</strong> Using double modals. ? "I might can help." ? "I might be able to help."</>,
+          <><strong>Mistake 4:</strong> Confusing "must not" and "don't have to." ? "You mustn't come" (when you mean it's optional). ? "You don't have to come."</>,
           <><strong>Mistake 5:</strong> Using "will" for all future meanings. Sometimes "going to" or present continuous is more appropriate for plans.</>
         ]} />
 
@@ -7396,18 +10657,18 @@ export const BLOG_POSTS: BlogPost[] = [
           The key to using modals correctly is understanding the speaker's attitude or the degree of certainty being expressed. Ask yourself:
         </ArticleParagraph>
         <BulletList items={[
-          <>Am I expressing ability? → Use <strong>can/could</strong></>,
-          <>Am I giving advice? → Use <strong>should/ought to</strong></>,
-          <>Am I stating a strong obligation? → Use <strong>must/have to</strong></>,
-          <>Am I expressing possibility? → Use <strong>may/might/could</strong> (might = less certain)</>,
-          <>Am I talking about the future? → Use <strong>will/shall</strong></>,
-          <>Am I describing a hypothetical situation? → Use <strong>would/could</strong></>,
-          <>Am I making a polite request? → Use <strong>could/would/may</strong></>
+          <>Am I expressing ability? ? Use <strong>can/could</strong></>,
+          <>Am I giving advice? ? Use <strong>should/ought to</strong></>,
+          <>Am I stating a strong obligation? ? Use <strong>must/have to</strong></>,
+          <>Am I expressing possibility? ? Use <strong>may/might/could</strong> (might = less certain)</>,
+          <>Am I talking about the future? ? Use <strong>will/shall</strong></>,
+          <>Am I describing a hypothetical situation? ? Use <strong>would/could</strong></>,
+          <>Am I making a polite request? ? Use <strong>could/would/may</strong></>
         ]} />
 
         <ArticleHeading>Conclusion: Mastering Modals for Nuanced Communication</ArticleHeading>
         <ArticleParagraph>
-          Modal verbs are essential for expressing the full range of meanings in English, from possibility and permission to obligation and advice. While they can seem confusing at first, understanding the core function of each modal—and practicing them in context—will make them second nature. Remember that the choice of modal affects not just the meaning but also the tone and formality of your message. Pay attention to how native speakers use modals in different situations, and practice using them yourself. With time and practice, you'll be able to express subtle shades of meaning and communicate more precisely and effectively in English.
+          Modal verbs are essential for expressing the full range of meanings in English, from possibility and permission to obligation and advice. While they can seem confusing at first, understanding the core function of each modal�and practicing them in context�will make them second nature. Remember that the choice of modal affects not just the meaning but also the tone and formality of your message. Pay attention to how native speakers use modals in different situations, and practice using them yourself. With time and practice, you'll be able to express subtle shades of meaning and communicate more precisely and effectively in English.
         </ArticleParagraph>
       </>
     )
@@ -7453,8 +10714,8 @@ export const BLOG_POSTS: BlogPost[] = [
       <>
         {/* Author Bio Box */}
         <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg p-4 mb-6 flex items-start gap-4">
-          <div className="w-12 h-12 bg-amber-100 dark:bg-amber-900 rounded-full flex items-center justify-center flex-shrink-0">
-            <span className="text-amber-600 dark:text-amber-300 font-bold text-lg">JE</span>
+          <div className="w-12 h-12 bg-teal-100 dark:bg-teal-900 rounded-full flex items-center justify-center flex-shrink-0">
+            <span className="text-teal-600 dark:text-teal-300 font-bold text-lg">JE</span>
           </div>
           <div>
             <p className="font-semibold text-slate-900 dark:text-slate-100">Prof. Jonathan Edwards</p>
@@ -7463,9 +10724,9 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on <a href="https://www.oed.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Oxford English Dictionary</a> and <a href="https://www.etymonline.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Etymonline</a> research.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on <a href="https://www.oed.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Oxford English Dictionary</a> and <a href="https://www.etymonline.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Etymonline</a> research.</span>
         </div>
 
         <ArticleParagraph>
@@ -7474,7 +10735,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>What Are Idioms and Why Do They Matter?</ArticleHeading>
         <ArticleParagraph>
-          An idiom is a phrase or expression whose meaning differs from the literal interpretation of its words. When someone says "it's raining cats and dogs," they don't mean animals are falling from the sky—they mean it's raining heavily. Idioms are essential for fluency because native speakers use them constantly in casual conversation. Understanding their origins not only helps you remember them but also provides insight into the culture and history of English-speaking peoples.
+          An idiom is a phrase or expression whose meaning differs from the literal interpretation of its words. When someone says "it's raining cats and dogs," they don't mean animals are falling from the sky�they mean it's raining heavily. Idioms are essential for fluency because native speakers use them constantly in casual conversation. Understanding their origins not only helps you remember them but also provides insight into the culture and history of English-speaking peoples.
         </ArticleParagraph>
 
         <ArticleHeading>"Bite the Bullet" - From Battlefield Surgery to Facing Difficulties</ArticleHeading>
@@ -7484,7 +10745,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>"Spill the Beans" - Ancient Greek Voting Secrets</ArticleHeading>
         <ArticleParagraph>
-          To <InlineCode>spill the beans</InlineCode> means to reveal a secret or disclose information prematurely. One popular theory traces this idiom to ancient Greece, where secret societies and voting councils used beans as ballots—white beans for yes, black beans for no. The beans were placed in jars or pots, and if someone accidentally knocked over the container before the official count, they would literally "spill the beans" and reveal the voting results prematurely. Another theory suggests it comes from an American practice in the early 20th century, but the Greek origin story remains the most widely accepted.
+          To <InlineCode>spill the beans</InlineCode> means to reveal a secret or disclose information prematurely. One popular theory traces this idiom to ancient Greece, where secret societies and voting councils used beans as ballots�white beans for yes, black beans for no. The beans were placed in jars or pots, and if someone accidentally knocked over the container before the official count, they would literally "spill the beans" and reveal the voting results prematurely. Another theory suggests it comes from an American practice in the early 20th century, but the Greek origin story remains the most widely accepted.
         </ArticleParagraph>
 
         <ArticleHeading>"Turn a Blind Eye" - Admiral Nelson's Strategic Disobedience</ArticleHeading>
@@ -7494,22 +10755,22 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>"Break a Leg" - Theater Superstitions and Wishes for Success</ArticleHeading>
         <ArticleParagraph>
-          In the theater world, wishing someone <InlineCode>break a leg</InlineCode> before a performance is the traditional way to wish them good luck. But why such a morbid phrase? Several theories exist. One suggests it comes from the superstition that wishing someone good luck would actually bring bad luck, so performers started saying the opposite. Another theory relates to the practice of bending the knee (breaking the line of the leg) when taking a bow—if you broke a leg, it meant you'd performed so well that you'd be taking many bows. A third explanation points to understudies hoping the lead actor would literally break a leg so they could take the stage. Regardless of origin, the phrase remains a staple of theatrical culture.
+          In the theater world, wishing someone <InlineCode>break a leg</InlineCode> before a performance is the traditional way to wish them good luck. But why such a morbid phrase? Several theories exist. One suggests it comes from the superstition that wishing someone good luck would actually bring bad luck, so performers started saying the opposite. Another theory relates to the practice of bending the knee (breaking the line of the leg) when taking a bow�if you broke a leg, it meant you'd performed so well that you'd be taking many bows. A third explanation points to understudies hoping the lead actor would literally break a leg so they could take the stage. Regardless of origin, the phrase remains a staple of theatrical culture.
         </ArticleParagraph>
 
         <ArticleHeading>"Raining Cats and Dogs" - Urban Myths and Heavy Downpours</ArticleHeading>
         <ArticleParagraph>
-          Perhaps one of the most puzzling idioms, <InlineCode>raining cats and dogs</InlineCode> means raining very heavily. The true origin remains debated, but several colorful theories exist. One gruesome explanation suggests that in 17th-century England, heavy rains would wash dead animals through the streets, making it appear as if cats and dogs had fallen from the sky. Another theory points to thatched roofs where animals would shelter—during heavy storms, they might slip and fall through the wet thatch. A more likely linguistic explanation traces it to the Old English word "catadupe" (waterfall) or Norse mythology where cats represented storms and dogs represented wind. Whatever its true origin, the phrase has been in use since at least the 1600s.
+          Perhaps one of the most puzzling idioms, <InlineCode>raining cats and dogs</InlineCode> means raining very heavily. The true origin remains debated, but several colorful theories exist. One gruesome explanation suggests that in 17th-century England, heavy rains would wash dead animals through the streets, making it appear as if cats and dogs had fallen from the sky. Another theory points to thatched roofs where animals would shelter�during heavy storms, they might slip and fall through the wet thatch. A more likely linguistic explanation traces it to the Old English word "catadupe" (waterfall) or Norse mythology where cats represented storms and dogs represented wind. Whatever its true origin, the phrase has been in use since at least the 1600s.
         </ArticleParagraph>
 
         <ArticleHeading>"Piece of Cake" - From 1930s Slang to Modern Usage</ArticleHeading>
         <ArticleParagraph>
-          Calling something a <InlineCode>piece of cake</InlineCode> means it's very easy to accomplish. This relatively modern idiom emerged in American slang in the 1930s. One theory connects it to cake walks, competitions popular in the American South where couples would walk in a circle, and the pair with the most graceful walk would win a cake. Since these contests didn't require much skill or effort, winning was considered easy—a "piece of cake." The phrase gained widespread use during World War II among Royal Air Force pilots who would describe easy missions as "a piece of cake," helping cement its place in modern English.
+          Calling something a <InlineCode>piece of cake</InlineCode> means it's very easy to accomplish. This relatively modern idiom emerged in American slang in the 1930s. One theory connects it to cake walks, competitions popular in the American South where couples would walk in a circle, and the pair with the most graceful walk would win a cake. Since these contests didn't require much skill or effort, winning was considered easy�a "piece of cake." The phrase gained widespread use during World War II among Royal Air Force pilots who would describe easy missions as "a piece of cake," helping cement its place in modern English.
         </ArticleParagraph>
 
         <ArticleHeading>"Let the Cat Out of the Bag" - Market Fraud and Revealed Secrets</ArticleHeading>
         <ArticleParagraph>
-          To <InlineCode>let the cat out of the bag</InlineCode> means to accidentally reveal a secret. This idiom likely originated from medieval marketplaces where piglets were valuable commodities sold in bags. Dishonest merchants would sometimes substitute a less valuable cat for a pig. If a buyer opened the bag before getting home, they would discover the fraud—letting the cat out of the bag and revealing the deception. This practice also gave rise to the phrase "buying a pig in a poke" (a poke being an old word for bag), meaning to buy something without inspecting it first.
+          To <InlineCode>let the cat out of the bag</InlineCode> means to accidentally reveal a secret. This idiom likely originated from medieval marketplaces where piglets were valuable commodities sold in bags. Dishonest merchants would sometimes substitute a less valuable cat for a pig. If a buyer opened the bag before getting home, they would discover the fraud�letting the cat out of the bag and revealing the deception. This practice also gave rise to the phrase "buying a pig in a poke" (a poke being an old word for bag), meaning to buy something without inspecting it first.
         </ArticleParagraph>
 
         <ArticleHeading>"Cost an Arm and a Leg" - Post-War American Expression</ArticleHeading>
@@ -7519,7 +10780,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>"Bark Up the Wrong Tree" - Hunting Dogs and Mistaken Targets</ArticleHeading>
         <ArticleParagraph>
-          To <InlineCode>bark up the wrong tree</InlineCode> means to pursue a mistaken course of action or make a false assumption. This idiom comes from American raccoon hunting in the early 19th century. Hunting dogs would chase raccoons, which would climb trees to escape. The dogs would then bark at the base of the tree to alert hunters. However, sometimes the raccoon would jump to another tree, leaving the dog barking at the wrong tree—quite literally. The phrase appeared in print as early as the 1830s and quickly became a popular way to describe misdirected efforts.
+          To <InlineCode>bark up the wrong tree</InlineCode> means to pursue a mistaken course of action or make a false assumption. This idiom comes from American raccoon hunting in the early 19th century. Hunting dogs would chase raccoons, which would climb trees to escape. The dogs would then bark at the base of the tree to alert hunters. However, sometimes the raccoon would jump to another tree, leaving the dog barking at the wrong tree�quite literally. The phrase appeared in print as early as the 1830s and quickly became a popular way to describe misdirected efforts.
         </ArticleParagraph>
 
         <ArticleHeading>Shakespeare's Lasting Idioms</ArticleHeading>
@@ -7529,17 +10790,17 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>Military and Nautical Origins</ArticleHeading>
         <ArticleParagraph>
-          Many idioms stem from military and naval contexts. <InlineCode>Loose cannon</InlineCode> refers to an unpredictable person and comes from naval warfare—a cannon that broke free from its moorings on a ship's deck was extremely dangerous. <InlineCode>Show your true colors</InlineCode> comes from naval practice where ships would fly false flags to deceive enemies, only revealing their true colors (national flag) when engaging in battle. <InlineCode>Three sheets to the wind</InlineCode>, meaning very drunk, comes from sailing terminology where sheets are ropes controlling sails—if three sheets were loose and flapping in the wind, the ship would wobble uncontrollably like a drunk person.
+          Many idioms stem from military and naval contexts. <InlineCode>Loose cannon</InlineCode> refers to an unpredictable person and comes from naval warfare�a cannon that broke free from its moorings on a ship's deck was extremely dangerous. <InlineCode>Show your true colors</InlineCode> comes from naval practice where ships would fly false flags to deceive enemies, only revealing their true colors (national flag) when engaging in battle. <InlineCode>Three sheets to the wind</InlineCode>, meaning very drunk, comes from sailing terminology where sheets are ropes controlling sails�if three sheets were loose and flapping in the wind, the ship would wobble uncontrollably like a drunk person.
         </ArticleParagraph>
 
         <ArticleHeading>Why Learning Idiom Origins Helps Language Learners</ArticleHeading>
         <ArticleParagraph>
-          Understanding the origins of idioms serves multiple purposes for English learners. First, it makes these expressions more memorable—a colorful backstory creates mental hooks that help retention. Second, it provides cultural insight into English-speaking societies and their histories. Third, it helps learners understand why idioms can't be translated literally, preventing confusion when they encounter unfamiliar expressions. Finally, knowing idiom origins builds confidence in using them appropriately, as learners understand not just what they mean but also the contexts in which they arose.
+          Understanding the origins of idioms serves multiple purposes for English learners. First, it makes these expressions more memorable�a colorful backstory creates mental hooks that help retention. Second, it provides cultural insight into English-speaking societies and their histories. Third, it helps learners understand why idioms can't be translated literally, preventing confusion when they encounter unfamiliar expressions. Finally, knowing idiom origins builds confidence in using them appropriately, as learners understand not just what they mean but also the contexts in which they arose.
         </ArticleParagraph>
 
         <ArticleHeading>Conclusion: Living History in Everyday Speech</ArticleHeading>
         <ArticleParagraph>
-          English idioms are linguistic time capsules, preserving fragments of history, culture, and human experience in everyday expressions. From ancient Greek voting practices to World War II airfields, from Shakespeare's stage to hunting expeditions in early America, these phrases carry stories that connect us to the past. The next time you use an idiom, remember that you're not just communicating—you're participating in a living tradition of language that spans centuries. Whether you're learning English as a second language or you're a native speaker curious about your own tongue, exploring idiom origins reveals the rich tapestry of human experience woven into the words we use every day.
+          English idioms are linguistic time capsules, preserving fragments of history, culture, and human experience in everyday expressions. From ancient Greek voting practices to World War II airfields, from Shakespeare's stage to hunting expeditions in early America, these phrases carry stories that connect us to the past. The next time you use an idiom, remember that you're not just communicating�you're participating in a living tradition of language that spans centuries. Whether you're learning English as a second language or you're a native speaker curious about your own tongue, exploring idiom origins reveals the rich tapestry of human experience woven into the words we use every day.
         </ArticleParagraph>
       </>
     )
@@ -7549,7 +10810,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'False Friends: English Words That Confuse Spanish, French, and German Speakers',
     author: 'Dr. Maria Santos, Multilingual Linguistics',
     date: 'March 26, 2026',
-    summary: 'Learn about false cognates—words that look similar across languages but have completely different meanings. Avoid embarrassing mistakes and improve your English vocabulary by understanding these tricky linguistic traps.',
+    summary: 'Learn about false cognates�words that look similar across languages but have completely different meanings. Avoid embarrassing mistakes and improve your English vocabulary by understanding these tricky linguistic traps.',
     category: 'Learning Tips',
     schemaMarkup: {
       '@context': 'https://schema.org',
@@ -7568,7 +10829,7 @@ export const BLOG_POSTS: BlogPost[] = [
           'name': 'What are common false friends for Spanish speakers?',
           'acceptedAnswer': {
             '@type': 'Answer',
-            'text': 'Top Spanish false friends: "actually" (≠actualmente/currently), "embarrassed" (≠embarazada/pregnant), "library" (≠librería/bookstore), "sensible" (≠sensible/sensitive), "constipated" (≠constipado/having a cold).'
+            'text': 'Top Spanish false friends: "actually" (?actualmente/currently), "embarrassed" (?embarazada/pregnant), "library" (?librer�a/bookstore), "sensible" (?sensible/sensitive), "constipated" (?constipado/having a cold).'
           }
         },
         {
@@ -7595,18 +10856,18 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Sources: <a href="https://dictionary.cambridge.org/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Cambridge Dictionary</a> and <a href="https://www.collinsdictionary.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Collins Dictionary</a>.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Sources: <a href="https://dictionary.cambridge.org/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Cambridge Dictionary</a> and <a href="https://www.collinsdictionary.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Collins Dictionary</a>.</span>
         </div>
 
         <ArticleParagraph>
-          One of the trickiest challenges for language learners is dealing with "false friends" or "false cognates"—words that look or sound similar in two languages but have completely different meanings. These deceptive similarities can lead to embarrassing misunderstandings and communication breakdowns. If you're a Spanish, French, or German speaker learning English, this guide will help you navigate some of the most common false friends and avoid potentially awkward mistakes.
+          One of the trickiest challenges for language learners is dealing with "false friends" or "false cognates"�words that look or sound similar in two languages but have completely different meanings. These deceptive similarities can lead to embarrassing misunderstandings and communication breakdowns. If you're a Spanish, French, or German speaker learning English, this guide will help you navigate some of the most common false friends and avoid potentially awkward mistakes.
         </ArticleParagraph>
 
         <ArticleHeading>What Are False Friends?</ArticleHeading>
         <ArticleParagraph>
-          False friends are word pairs in different languages that appear similar in form but differ significantly in meaning. They often share a common etymological ancestor but have evolved differently in each language. For example, the English word "embarrassed" looks similar to the Spanish "embarazada," but while "embarrassed" means feeling ashamed or uncomfortable, "embarazada" means pregnant—a potentially hilarious misunderstanding! These linguistic traps exist because English, Spanish, French, and German all share Indo-European roots and have borrowed extensively from Latin, leading to words that look similar but diverged in meaning over centuries.
+          False friends are word pairs in different languages that appear similar in form but differ significantly in meaning. They often share a common etymological ancestor but have evolved differently in each language. For example, the English word "embarrassed" looks similar to the Spanish "embarazada," but while "embarrassed" means feeling ashamed or uncomfortable, "embarazada" means pregnant�a potentially hilarious misunderstanding! These linguistic traps exist because English, Spanish, French, and German all share Indo-European roots and have borrowed extensively from Latin, leading to words that look similar but diverged in meaning over centuries.
         </ArticleParagraph>
 
         <ArticleHeading>False Friends for Spanish Speakers</ArticleHeading>
@@ -7617,8 +10878,8 @@ export const BLOG_POSTS: BlogPost[] = [
         <BulletList items={[
           <><strong>Actually vs. Actualmente:</strong> In English, <InlineCode>actually</InlineCode> means "in fact" or "really," while Spanish <em>actualmente</em> means "currently" or "at present." Don't say "Actually, I live in Madrid" when you mean "Currently, I live in Madrid." The correct English would be "I currently live in Madrid" or "Right now, I live in Madrid."</>,
           <><strong>Embarrassed vs. Embarazada:</strong> As mentioned, English <InlineCode>embarrassed</InlineCode> means feeling ashamed or self-conscious, while Spanish <em>embarazada</em> means pregnant. Saying "I'm so embarrassed" when you mean "I'm pregnant" would certainly cause confusion!</>,
-          <><strong>Library vs. Librería:</strong> English <InlineCode>library</InlineCode> is a place to borrow books, while Spanish <em>librería</em> is a bookstore where you buy books. In English, a bookstore is called a "bookshop" or "bookstore," not a library.</>,
-          <><strong>Exit vs. Éxito:</strong> English <InlineCode>exit</InlineCode> means a way out or departure, while Spanish <em>éxito</em> means success. "Success" in English is the correct translation for <em>éxito</em>.</>,
+          <><strong>Library vs. Librer�a:</strong> English <InlineCode>library</InlineCode> is a place to borrow books, while Spanish <em>librer�a</em> is a bookstore where you buy books. In English, a bookstore is called a "bookshop" or "bookstore," not a library.</>,
+          <><strong>Exit vs. �xito:</strong> English <InlineCode>exit</InlineCode> means a way out or departure, while Spanish <em>�xito</em> means success. "Success" in English is the correct translation for <em>�xito</em>.</>,
           <><strong>Constipated vs. Constipado:</strong> In English, <InlineCode>constipated</InlineCode> refers to digestive problems, while Spanish <em>constipado</em> means having a cold or congestion. This medical mix-up could lead to very awkward doctor's visits!</>,
           <><strong>Rope vs. Ropa:</strong> English <InlineCode>rope</InlineCode> is a thick cord or cable, while Spanish <em>ropa</em> means clothes. In English, clothes are "clothing," "clothes," or "garments."</>,
           <><strong>Sane vs. Sano:</strong> English <InlineCode>sane</InlineCode> means mentally healthy or rational, while Spanish <em>sano</em> means physically healthy. In English, physically healthy is "healthy" or "well."</>,
@@ -7632,11 +10893,11 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <BulletList items={[
           <><strong>Attend vs. Attendre:</strong> English <InlineCode>attend</InlineCode> means to be present at or go to an event, while French <em>attendre</em> means to wait. Don't say "I will attend here" when you mean "I will wait here." The correct phrase is "I will wait here."</>,
-          <><strong>Eventually vs. Éventuellement:</strong> English <InlineCode>eventually</InlineCode> means finally or in the end, while French <em>éventuellement</em> means possibly or perhaps. Saying "I will eventually come" means you will definitely come but later, not that you might come.</>,
+          <><strong>Eventually vs. �ventuellement:</strong> English <InlineCode>eventually</InlineCode> means finally or in the end, while French <em>�ventuellement</em> means possibly or perhaps. Saying "I will eventually come" means you will definitely come but later, not that you might come.</>,
           <><strong>Lecture vs. Lecture:</strong> English <InlineCode>lecture</InlineCode> is a talk or presentation (often educational), while French <em>lecture</em> means reading. In English, "reading" is the act of reading, not "lecture."</>,
           <><strong>Sensible vs. Sensible:</strong> English <InlineCode>sensible</InlineCode> means practical or showing good judgment, while French <em>sensible</em> means sensitive. This is the same trap as Spanish speakers face!</>,
-          <><strong>Preservative vs. Préservatif:</strong> English <InlineCode>preservative</InlineCode> is a chemical added to food to keep it fresh, while French <em>préservatif</em> means condom. This could lead to very awkward conversations about food ingredients!</>,
-          <><strong>Delay vs. Délai:</strong> English <InlineCode>delay</InlineCode> means postponement or lateness, while French <em>délai</em> means deadline or time limit. In English, a deadline is called a "deadline," not a delay.</>,
+          <><strong>Preservative vs. Pr�servatif:</strong> English <InlineCode>preservative</InlineCode> is a chemical added to food to keep it fresh, while French <em>pr�servatif</em> means condom. This could lead to very awkward conversations about food ingredients!</>,
+          <><strong>Delay vs. D�lai:</strong> English <InlineCode>delay</InlineCode> means postponement or lateness, while French <em>d�lai</em> means deadline or time limit. In English, a deadline is called a "deadline," not a delay.</>,
           <><strong>Injury vs. Injure:</strong> English <InlineCode>injury</InlineCode> is physical harm or damage, while French <em>injure</em> means insult. In English, an insult is called an "insult," not an injury.</>,
           <><strong>Cave vs. Cave:</strong> English <InlineCode>cave</InlineCode> is an underground hollow or cavern, while French <em>cave</em> means cellar or basement. In English, a cellar is a "basement" or "cellar."</>,
         ]} />
@@ -7654,7 +10915,7 @@ export const BLOG_POSTS: BlogPost[] = [
           <><strong>Fast vs. Fast:</strong> English <InlineCode>fast</InlineCode> means quick or rapid, while German <em>fast</em> means almost or nearly. This reversal of meaning can create real confusion.</>,
           <><strong>Kind vs. Kind:</strong> English <InlineCode>kind</InlineCode> means type/sort (as a noun) or nice/caring (as an adjective), while German <em>Kind</em> means child. In English, a child is called a "child," not a kind.</>,
           <><strong>Mist vs. Mist:</strong> English <InlineCode>mist</InlineCode> is light fog or tiny water droplets, while German <em>Mist</em> means manure or rubbish (and is also used as a mild curse word). Weather reports take on a different meaning!</>,
-          <><strong>Chef vs. Chef:</strong> While <InlineCode>chef</InlineCode> in English specifically means a professional cook, German <em>Chef</em> means boss or manager in any field. In English, "my chef" at an office would be confusing—you'd say "my boss."</>,
+          <><strong>Chef vs. Chef:</strong> While <InlineCode>chef</InlineCode> in English specifically means a professional cook, German <em>Chef</em> means boss or manager in any field. In English, "my chef" at an office would be confusing�you'd say "my boss."</>,
         ]} />
 
         <ArticleHeading>How to Avoid False Friend Mistakes</ArticleHeading>
@@ -7673,12 +10934,12 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>The Positive Side: True Cognates</ArticleHeading>
         <ArticleParagraph>
-          While false friends can be frustrating, it's important to remember that the majority of similar-looking words between English and Spanish, French, or German are actually true cognates with the same or very similar meanings. Words like "hospital" (hospital/hôpital/Hospital), "music" (música/musique/Musik), and "telephone" (teléfono/téléphone/Telefon) work across all these languages. The key is learning to distinguish between helpful true cognates and misleading false friends.
+          While false friends can be frustrating, it's important to remember that the majority of similar-looking words between English and Spanish, French, or German are actually true cognates with the same or very similar meanings. Words like "hospital" (hospital/h�pital/Hospital), "music" (m�sica/musique/Musik), and "telephone" (tel�fono/t�l�phone/Telefon) work across all these languages. The key is learning to distinguish between helpful true cognates and misleading false friends.
         </ArticleParagraph>
 
         <ArticleHeading>Conclusion: Embrace the Challenge</ArticleHeading>
         <ArticleParagraph>
-          False friends are a natural part of language learning, especially when studying languages that share historical connections. Rather than viewing them as obstacles, consider them interesting puzzles that reveal how languages evolve independently despite common origins. By staying aware of common false friends, verifying meanings in context, and practicing regularly, you can avoid embarrassing mistakes and develop more accurate, nuanced English communication skills. Remember, every language learner makes these mistakes—what matters is learning from them and gradually building your awareness of these linguistic tricksters. With time and practice, distinguishing between false friends and true cognates will become second nature, bringing you one step closer to English fluency.
+          False friends are a natural part of language learning, especially when studying languages that share historical connections. Rather than viewing them as obstacles, consider them interesting puzzles that reveal how languages evolve independently despite common origins. By staying aware of common false friends, verifying meanings in context, and practicing regularly, you can avoid embarrassing mistakes and develop more accurate, nuanced English communication skills. Remember, every language learner makes these mistakes�what matters is learning from them and gradually building your awareness of these linguistic tricksters. With time and practice, distinguishing between false friends and true cognates will become second nature, bringing you one step closer to English fluency.
         </ArticleParagraph>
       </>
     )
@@ -7688,7 +10949,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'Arabic Words in English: 200+ Terms from Middle East to Global English Vocabulary',
     author: 'Prof. Ahmed Al-Rashid, Arabic & English Etymology',
     date: 'March 26, 2026',
-    summary: 'Discover 200+ Arabic words in English spoken worldwide—from UK, USA, Canada to Australia. Learn how Arabic language influence shaped global English vocabulary through "algebra," "coffee," "algorithm," and scientific terminology used across continents.',
+    summary: 'Discover 200+ Arabic words in English spoken worldwide�from UK, USA, Canada to Australia. Learn how Arabic language influence shaped global English vocabulary through "algebra," "coffee," "algorithm," and scientific terminology used across continents.',
     category: 'Etymology',
     image: '/images/blog/arabic-words-english-influence.jpg',
     imageAlt: 'Arabic words in English showing 200 plus terms that influenced global English vocabulary',
@@ -7717,7 +10978,7 @@ export const BLOG_POSTS: BlogPost[] = [
           'name': 'Is the word "coffee" Arabic?',
           'acceptedAnswer': {
             '@type': 'Answer',
-            'text': 'Yes! "Coffee" comes from Arabic "qahwa" (قهوة), which passed through Turkish "kahve" and Italian "caffè" before becoming English "coffee." Arabs in Yemen first cultivated coffee in the 15th century.'
+            'text': 'Yes! "Coffee" comes from Arabic "qahwa" (????), which passed through Turkish "kahve" and Italian "caff�" before becoming English "coffee." Arabs in Yemen first cultivated coffee in the 15th century.'
           }
         }
       ]
@@ -7736,15 +10997,15 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on <a href="https://www.oed.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Oxford English Dictionary</a> and <a href="https://www.etymonline.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Etymonline</a> research.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on <a href="https://www.oed.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Oxford English Dictionary</a> and <a href="https://www.etymonline.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Etymonline</a> research.</span>
         </div>
 
-        <div className="bg-gradient-to-r from-amber-50 to-orange-50 dark:from-slate-800 dark:to-slate-700 border-l-4 border-amber-600 p-6 my-8 rounded-r-lg">
-          <h4 className="font-semibold text-xl mb-4 text-amber-900 dark:text-amber-200">🌍 Global English: The Arabic Connection Worldwide</h4>
+        <div className="bg-gradient-to-r from-teal-50 to-teal-50 dark:from-slate-800 dark:to-slate-700 border-l-4 border-teal-600 p-6 my-8 rounded-r-lg">
+          <h4 className="font-semibold text-xl mb-4 text-teal-900 dark:text-teal-200">?? Global English: The Arabic Connection Worldwide</h4>
           <BulletList items={[
-            <><strong>200+ Arabic Words You Use Daily:</strong> From London to New York, Toronto to Sydney—Arabic vocabulary is embedded in global English across all English-speaking countries.</>,
+            <><strong>200+ Arabic Words You Use Daily:</strong> From London to New York, Toronto to Sydney�Arabic vocabulary is embedded in global English across all English-speaking countries.</>,
             <><strong>Middle East to Modern World:</strong> Discover how Arabic language influence traveled from the Middle East through Spain, Italy, and France to become essential English vocabulary worldwide.</>,
             <><strong>Science, Business & Daily Life:</strong> Arabic contributions span mathematics (algebra, algorithm), commerce (tariff, bazaar), food (coffee, sugar), and technology terminology used globally.</>,
             <><strong>UK, US, Canada, Australia:</strong> These Arabic loanwords in English are universally recognized across British English, American English, Canadian English, and Australian English.</>
@@ -7752,17 +11013,17 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         <ArticleParagraph>
-          Did you know that when you drink <strong>coffee</strong> in London, solve an <strong>algebra</strong> problem in Toronto, read a <strong>magazine</strong> in Sydney, or discuss <strong>algorithms</strong> in Silicon Valley, you're using <strong>Arabic words in English</strong>? Whether you speak British English, American English, Canadian English, or Australian English, Arabic has contributed over 200 words to the <strong>global English vocabulary</strong> we use today—far more than most people realize across the UK, USA, Canada, Australia, and beyond.
+          Did you know that when you drink <strong>coffee</strong> in London, solve an <strong>algebra</strong> problem in Toronto, read a <strong>magazine</strong> in Sydney, or discuss <strong>algorithms</strong> in Silicon Valley, you're using <strong>Arabic words in English</strong>? Whether you speak British English, American English, Canadian English, or Australian English, Arabic has contributed over 200 words to the <strong>global English vocabulary</strong> we use today�far more than most people realize across the UK, USA, Canada, Australia, and beyond.
         </ArticleParagraph>
         
         <ArticleParagraph>
-          This comprehensive guide reveals how <strong>Arabic language influence on English</strong> has shaped international communication from New York to Dubai, London to Singapore. When we think about <strong>English etymology</strong>, we often trace words back to Latin, French, or Germanic roots. However, one of the most fascinating and globally significant linguistic influences comes from Arabic. Through centuries of trade connecting Europe, Asia, and Africa, scholarship during the Islamic Golden Age, and cultural exchange spanning from medieval Spain to modern globalization, <strong>Arabic loanwords in English</strong> have profoundly enriched vocabulary used in every English-speaking country worldwide—in fields ranging from mathematics and astronomy to cuisine and international commerce.
+          This comprehensive guide reveals how <strong>Arabic language influence on English</strong> has shaped international communication from New York to Dubai, London to Singapore. When we think about <strong>English etymology</strong>, we often trace words back to Latin, French, or Germanic roots. However, one of the most fascinating and globally significant linguistic influences comes from Arabic. Through centuries of trade connecting Europe, Asia, and Africa, scholarship during the Islamic Golden Age, and cultural exchange spanning from medieval Spain to modern globalization, <strong>Arabic loanwords in English</strong> have profoundly enriched vocabulary used in every English-speaking country worldwide�in fields ranging from mathematics and astronomy to cuisine and international commerce.
         </ArticleParagraph>
 
         <div className="bg-blue-50 dark:bg-slate-800 p-6 rounded-lg my-6 border border-blue-200 dark:border-blue-700">
-          <h4 className="font-semibold text-lg mb-3 text-blue-900 dark:text-blue-200">🗺️ Why This Matters Globally:</h4>
+          <h4 className="font-semibold text-lg mb-3 text-blue-900 dark:text-blue-200">??? Why This Matters Globally:</h4>
           <BulletList items={[
-            <><strong>UK Speakers:</strong> Arabic influence entered British English through medieval scholarship, Crusades, and Mediterranean trade—words like "admiral," "arsenal," and "magazine" are standard in British vocabulary</>,
+            <><strong>UK Speakers:</strong> Arabic influence entered British English through medieval scholarship, Crusades, and Mediterranean trade�words like "admiral," "arsenal," and "magazine" are standard in British vocabulary</>,
             <><strong>US/Canada Speakers:</strong> North American English inherited Arabic vocabulary through European languages, with additional modern borrowing in technology (algorithm) and food culture (hummus, falafel)</>,
             <><strong>Australian/NZ Speakers:</strong> Commonwealth English uses identical Arabic-origin terms in science, mathematics, and everyday speech</>,
             <><strong>International Business:</strong> Arabic financial terms (tariff, check, bazaar) are universal in global commerce from Wall Street to the Dubai International Financial Centre</>,
@@ -7776,85 +11037,85 @@ export const BLOG_POSTS: BlogPost[] = [
         </ArticleParagraph>
         
         <BulletList items={[
-          <><strong>The Islamic Golden Age (8th–14th centuries):</strong> Arab scholars in Baghdad, Cairo, and Cordoba preserved and expanded Greek and Roman knowledge, creating scientific terminology still used from Harvard to Cambridge</>,
-          <><strong>The Crusades and Mediterranean Trade (11th–13th centuries):</strong> Military and commercial contact spread Arabic vocabulary through Italian, Spanish, and French into English</>,
+          <><strong>The Islamic Golden Age (8th�14th centuries):</strong> Arab scholars in Baghdad, Cairo, and Cordoba preserved and expanded Greek and Roman knowledge, creating scientific terminology still used from Harvard to Cambridge</>,
+          <><strong>The Crusades and Mediterranean Trade (11th�13th centuries):</strong> Military and commercial contact spread Arabic vocabulary through Italian, Spanish, and French into English</>,
           <><strong>Al-Andalus (Muslim Spain, 711-1492 CE):</strong> Nearly 800 years of Moorish rule in medieval Spain created lasting linguistic exchange affecting European languages and eventually global English</>,
           <><strong>International Trade Routes:</strong> The Silk Road, Indian Ocean trade, and Mediterranean commerce connected Arabic-speaking regions with Europe, Asia, and Africa, spreading vocabulary worldwide</>
         ]} />
         
         <ArticleParagraph>
-          During the Islamic Golden Age centered in cities like Baghdad, Damascus, and Córdoba, Arab and Persian scholars became the world's leading scientists, mathematicians, astronomers, and physicians. When European scholars—from Spain to England, France to Italy—sought to reclaim this knowledge during the medieval period and Renaissance, they translated Arabic texts into Latin and eventually into vernacular languages including English. These translations brought not only revolutionary ideas but also the <strong>Arabic terminology</strong> that expressed them. Words like <InlineCode>algebra</InlineCode>, <InlineCode>algorithm</InlineCode>, and <InlineCode>alchemy</InlineCode> entered <strong>English vocabulary globally</strong> directly from Arabic scientific texts, often retaining their original forms with minimal modification—terms now used identically in London universities, Silicon Valley tech companies, Canadian schools, and Australian research institutes.
+          During the Islamic Golden Age centered in cities like Baghdad, Damascus, and C�rdoba, Arab and Persian scholars became the world's leading scientists, mathematicians, astronomers, and physicians. When European scholars�from Spain to England, France to Italy�sought to reclaim this knowledge during the medieval period and Renaissance, they translated Arabic texts into Latin and eventually into vernacular languages including English. These translations brought not only revolutionary ideas but also the <strong>Arabic terminology</strong> that expressed them. Words like <InlineCode>algebra</InlineCode>, <InlineCode>algorithm</InlineCode>, and <InlineCode>alchemy</InlineCode> entered <strong>English vocabulary globally</strong> directly from Arabic scientific texts, often retaining their original forms with minimal modification�terms now used identically in London universities, Silicon Valley tech companies, Canadian schools, and Australian research institutes.
         </ArticleParagraph>
         <ArticleParagraph>
-          The Crusades (particularly significant for UK and European history) and the centuries of Muslim rule in Spain (Al-Andalus) created prolonged contact between Arabic-speaking and European cultures. Spanish and Portuguese, having absorbed many <strong>Arabic words</strong> during nearly 800 years of Moorish presence in the Iberian Peninsula, later transmitted these words to English through exploration, global colonization, and cultural exchange. This indirect route explains why many Arabic-origin words in modern <strong>global English vocabulary</strong> have Spanish or Italian intermediaries—a linguistic journey from Baghdad and Cairo to London, then eventually to Boston, Toronto, Sydney, and every English-speaking corner of the world.
+          The Crusades (particularly significant for UK and European history) and the centuries of Muslim rule in Spain (Al-Andalus) created prolonged contact between Arabic-speaking and European cultures. Spanish and Portuguese, having absorbed many <strong>Arabic words</strong> during nearly 800 years of Moorish presence in the Iberian Peninsula, later transmitted these words to English through exploration, global colonization, and cultural exchange. This indirect route explains why many Arabic-origin words in modern <strong>global English vocabulary</strong> have Spanish or Italian intermediaries�a linguistic journey from Baghdad and Cairo to London, then eventually to Boston, Toronto, Sydney, and every English-speaking corner of the world.
         </ArticleParagraph>
 
         <ArticleHeading>Mathematics and Science: Universal Arabic Terms in Global English</ArticleHeading>
         <ArticleParagraph>
-          Perhaps nowhere is <strong>Arabic's influence on English</strong> more evident globally than in mathematics and the sciences—fields where terminology is standardized worldwide from MIT to Oxford, CERN to NASA. The word <InlineCode>algebra</InlineCode> comes from the Arabic <em>al-jabr</em> (الجبر), meaning "reunion of broken parts," which was the title of a 9th-century mathematical treatise by Persian mathematician Muhammad ibn Musa Al-Khwarizmi. This term is identical in British English, American English, Canadian English, Australian English, and academic English worldwide.
+          Perhaps nowhere is <strong>Arabic's influence on English</strong> more evident globally than in mathematics and the sciences�fields where terminology is standardized worldwide from MIT to Oxford, CERN to NASA. The word <InlineCode>algebra</InlineCode> comes from the Arabic <em>al-jabr</em> (?????), meaning "reunion of broken parts," which was the title of a 9th-century mathematical treatise by Persian mathematician Muhammad ibn Musa Al-Khwarizmi. This term is identical in British English, American English, Canadian English, Australian English, and academic English worldwide.
         </ArticleParagraph>
         <ArticleParagraph>
           Speaking of Al-Khwarizmi, his Latinized name gave us the word <InlineCode>algorithm</InlineCode>, now fundamental to computer science in Silicon Valley, tech hubs in Toronto and London, and universities from Stanford to Cambridge. This <strong>Arabic loanword in English</strong> is perhaps one of the most important technical terms of the 21st century, used identically across all English-speaking countries and in international technology discourse.
         </ArticleParagraph>
         <ArticleParagraph>
-          The word <InlineCode>zero</InlineCode> itself has Arabic origins, derived from <em>sifr</em> (صفر), meaning "empty" or "nothing." This concept revolutionized mathematics globally, enabling the development of modern arithmetic and calculus taught in schools from New York to New Delhi, London to Lagos. Similarly, <InlineCode>cipher</InlineCode> comes from the same Arabic root, originally referring to the Arabic numeral system before evolving to mean a code or secret writing—a term used in cryptography and cybersecurity worldwide.
+          The word <InlineCode>zero</InlineCode> itself has Arabic origins, derived from <em>sifr</em> (???), meaning "empty" or "nothing." This concept revolutionized mathematics globally, enabling the development of modern arithmetic and calculus taught in schools from New York to New Delhi, London to Lagos. Similarly, <InlineCode>cipher</InlineCode> comes from the same Arabic root, originally referring to the Arabic numeral system before evolving to mean a code or secret writing�a term used in cryptography and cybersecurity worldwide.
         </ArticleParagraph>
         <ArticleParagraph>
-          In chemistry (another field with standardized international terminology), we find <InlineCode>alchemy</InlineCode> (from <em>al-kīmiyā</em>, الكيمياء), <InlineCode>alcohol</InlineCode> (from <em>al-kuḥl</em>, الكحل, originally referring to a fine powder used as eyeliner), and <InlineCode>alkaline</InlineCode> (from <em>al-qaliy</em>, القلي, meaning plant ashes). These <strong>Arabic terms in English</strong> are used identically in laboratories from London to Los Angeles, research facilities in Canada to Australia, and are part of the universal scientific vocabulary taught worldwide. Astronomy gave us words like <InlineCode>zenith</InlineCode> (from <em>samt ar-ra's</em>, meaning "path over the head") and <InlineCode>nadir</InlineCode> (from <em>naẓīr</em>, meaning "opposite")—terms used by astronomers and meteorologists globally. Many star names are also Arabic in origin and recognized internationally, including Aldebaran, Rigel, Betelgeuse, and Altair—names used in planetariums from New York to Melbourne, observatories from Greenwich to Hawaii.
+          In chemistry (another field with standardized international terminology), we find <InlineCode>alchemy</InlineCode> (from <em>al-kimiya</em>, ????????), <InlineCode>alcohol</InlineCode> (from <em>al-ku?l</em>, ?????, originally referring to a fine powder used as eyeliner), and <InlineCode>alkaline</InlineCode> (from <em>al-qaliy</em>, ?????, meaning plant ashes). These <strong>Arabic terms in English</strong> are used identically in laboratories from London to Los Angeles, research facilities in Canada to Australia, and are part of the universal scientific vocabulary taught worldwide. Astronomy gave us words like <InlineCode>zenith</InlineCode> (from <em>samt ar-ra's</em>, meaning "path over the head") and <InlineCode>nadir</InlineCode> (from <em>na?ir</em>, meaning "opposite")�terms used by astronomers and meteorologists globally. Many star names are also Arabic in origin and recognized internationally, including Aldebaran, Rigel, Betelgeuse, and Altair�names used in planetariums from New York to Melbourne, observatories from Greenwich to Hawaii.
         </ArticleParagraph>
 
         <ArticleHeading>International Commerce: Arabic Business Terms Used Worldwide</ArticleHeading>
         <ArticleParagraph>
-          The extensive trade networks connecting Europe, the Middle East, Asia, and Africa brought not only goods but also the <strong>Arabic vocabulary</strong> to describe them—terms now used in <strong>global English</strong> business from Wall Street to the London Stock Exchange, Toronto to Singapore. The word <InlineCode>tariff</InlineCode> comes from the Arabic <em>ta'rīf</em> (تعريف), meaning "notification" or "definition," originally referring to a list of prices. This term is now universal in international trade policy, customs regulations, and economic discussions across English-speaking countries and beyond—from US trade agreements to UK customs policy, Canadian trade deals to Australian import regulations.
+          The extensive trade networks connecting Europe, the Middle East, Asia, and Africa brought not only goods but also the <strong>Arabic vocabulary</strong> to describe them�terms now used in <strong>global English</strong> business from Wall Street to the London Stock Exchange, Toronto to Singapore. The word <InlineCode>tariff</InlineCode> comes from the Arabic <em>ta'rif</em> (?????), meaning "notification" or "definition," originally referring to a list of prices. This term is now universal in international trade policy, customs regulations, and economic discussions across English-speaking countries and beyond�from US trade agreements to UK customs policy, Canadian trade deals to Australian import regulations.
         </ArticleParagraph>
         <ArticleParagraph>
-          <InlineCode>Bazaar</InlineCode>, from Persian <em>bāzār</em> but transmitted through Arabic, describes traditional marketplaces and has come to mean any marketplace or sale in <strong>global English vocabulary</strong>—used in British English ("charity bazaar"), American English ("holiday bazaar"), and internationally to evoke exotic markets from Istanbul to Marrakech. The word <InlineCode>check</InlineCode> (as in bank check/cheque) also has Arabic origins through Persian <em>shah</em> (king in chess), entering English commerce terminology via medieval banking systems—a term now universal in financial English from Bank of America to HSBC, RBC to Commonwealth Bank.
+          <InlineCode>Bazaar</InlineCode>, from Persian <em>bazar</em> but transmitted through Arabic, describes traditional marketplaces and has come to mean any marketplace or sale in <strong>global English vocabulary</strong>�used in British English ("charity bazaar"), American English ("holiday bazaar"), and internationally to evoke exotic markets from Istanbul to Marrakech. The word <InlineCode>check</InlineCode> (as in bank check/cheque) also has Arabic origins through Persian <em>shah</em> (king in chess), entering English commerce terminology via medieval banking systems�a term now universal in financial English from Bank of America to HSBC, RBC to Commonwealth Bank.
         </ArticleParagraph>
         <ArticleParagraph>
-          Trade goods themselves brought their Arabic names into <strong>global English</strong>. <InlineCode>Coffee</InlineCode> derives from the Arabic <em>qahwa</em> (قهوة), which originally referred to a type of wine before being applied to the caffeinated beverage now enjoyed worldwide—from Tim Hortons in Canada to Starbucks in the US, Costa Coffee in the UK to cafés in Melbourne. This <strong>Arabic word in English</strong> is recognized universally across all English dialects and is one of the most commonly used Arabic loanwords globally.
+          Trade goods themselves brought their Arabic names into <strong>global English</strong>. <InlineCode>Coffee</InlineCode> derives from the Arabic <em>qahwa</em> (????), which originally referred to a type of wine before being applied to the caffeinated beverage now enjoyed worldwide�from Tim Hortons in Canada to Starbucks in the US, Costa Coffee in the UK to caf�s in Melbourne. This <strong>Arabic word in English</strong> is recognized universally across all English dialects and is one of the most commonly used Arabic loanwords globally.
         </ArticleParagraph>
         <ArticleParagraph>
-          <InlineCode>Sugar</InlineCode> comes from Arabic <em>sukkar</em> (سكر), borrowed from Sanskrit but entering European languages through Arabic—now a universal English term from British supermarkets to American grocery stores, Canadian kitchens to Australian bakeries. <InlineCode>Cotton</InlineCode> has its roots in Arabic <em>quṭn</em> (قطن), while <InlineCode>saffron</InlineCode>, one of the world's most expensive spices, comes from Arabic <em>za'farān</em> (زعفران)—both terms used in the global textile and culinary industries from London fashion houses to California restaurants.
+          <InlineCode>Sugar</InlineCode> comes from Arabic <em>sukkar</em> (???), borrowed from Sanskrit but entering European languages through Arabic�now a universal English term from British supermarkets to American grocery stores, Canadian kitchens to Australian bakeries. <InlineCode>Cotton</InlineCode> has its roots in Arabic <em>qu?n</em> (???), while <InlineCode>saffron</InlineCode>, one of the world's most expensive spices, comes from Arabic <em>za'faran</em> (??????)�both terms used in the global textile and culinary industries from London fashion houses to California restaurants.
         </ArticleParagraph>
         <ArticleParagraph>
-          Even the word <InlineCode>magazine</InlineCode> has Arabic origins, deriving from <em>makhāzin</em> (مخازن), the plural of <em>makhzan</em> (مخزن), meaning "storehouse" or "warehouse." The term originally referred to a place where military supplies were stored before evolving to mean a periodical publication—a "storehouse" of articles and information. This <strong>Arabic loanword</strong> is now universal in English-speaking media worldwide, from Time Magazine and The New Yorker in the US, to The Economist and Vogue in the UK, Maclean's in Canada, and The Australian Magazine.
+          Even the word <InlineCode>magazine</InlineCode> has Arabic origins, deriving from <em>makhazin</em> (?????), the plural of <em>makhzan</em> (????), meaning "storehouse" or "warehouse." The term originally referred to a place where military supplies were stored before evolving to mean a periodical publication�a "storehouse" of articles and information. This <strong>Arabic loanword</strong> is now universal in English-speaking media worldwide, from Time Magazine and The New Yorker in the US, to The Economist and Vogue in the UK, Maclean's in Canada, and The Australian Magazine.
         </ArticleParagraph>
 
         <ArticleHeading>Everyday Global English: Arabic Words You Use Worldwide</ArticleHeading>
         <ArticleParagraph>
-          Many common <strong>English words used across UK, USA, Canada, and Australia</strong> have surprising Arabic origins. <InlineCode>Admiral</InlineCode> comes from the Arabic <em>amīr al-</em> (أمير ال), meaning "commander of"—a naval rank recognized in the British Royal Navy, US Navy, Royal Canadian Navy, and Royal Australian Navy alike. <InlineCode>Arsenal</InlineCode> derives from Arabic <em>dār aṣ-ṣinā'a</em> (دار الصناعة), literally "house of manufacture," which referred to dockyards and armories—the same word used for London's famous Arsenal Football Club and military facilities worldwide.
+          Many common <strong>English words used across UK, USA, Canada, and Australia</strong> have surprising Arabic origins. <InlineCode>Admiral</InlineCode> comes from the Arabic <em>amir al-</em> (???? ??), meaning "commander of"�a naval rank recognized in the British Royal Navy, US Navy, Royal Canadian Navy, and Royal Australian Navy alike. <InlineCode>Arsenal</InlineCode> derives from Arabic <em>dar a?-?ina'a</em> (??? ???????), literally "house of manufacture," which referred to dockyards and armories�the same word used for London's famous Arsenal Football Club and military facilities worldwide.
         </ArticleParagraph>
         <ArticleParagraph>
-          The word <InlineCode>sofa</InlineCode> comes from Arabic <em>ṣuffa</em> (صُفَّة), meaning a bench or raised platform—furniture found in homes from suburban America to central London, Toronto condos to Sydney apartments. <InlineCode>Mattress</InlineCode> derives from Arabic <em>maṭraḥ</em> (مطرح), meaning "something thrown down" or "a place where something is thrown"—sold in furniture stores across all English-speaking countries. Even the humble <InlineCode>jar</InlineCode> traces back to Arabic <em>jarra</em> (جرة), meaning an earthenware container—a word used identically in British English ("jam jar"), American English ("cookie jar"), and throughout the English-speaking world.
+          The word <InlineCode>sofa</InlineCode> comes from Arabic <em>?uffa</em> (??????), meaning a bench or raised platform�furniture found in homes from suburban America to central London, Toronto condos to Sydney apartments. <InlineCode>Mattress</InlineCode> derives from Arabic <em>ma?ra?</em> (????), meaning "something thrown down" or "a place where something is thrown"�sold in furniture stores across all English-speaking countries. Even the humble <InlineCode>jar</InlineCode> traces back to Arabic <em>jarra</em> (???), meaning an earthenware container�a word used identically in British English ("jam jar"), American English ("cookie jar"), and throughout the English-speaking world.
         </ArticleParagraph>
 
         <ArticleHeading>Global Food Culture: Arabic Culinary Terms in English Worldwide</ArticleHeading>
         <ArticleParagraph>
-          Food-related <strong>Arabic loanwords in English</strong> are universally recognized across international cuisine. <InlineCode>Sherbet</InlineCode> and <InlineCode>syrup</InlineCode> both derive from Arabic <em>sharāb</em> (شراب), meaning "drink"—ingredients found in recipes from American cookbooks to British baking shows, Canadian kitchens to Australian restaurants. <InlineCode>Lemon</InlineCode> comes from Arabic <em>laymūn</em> (ليمون), while <InlineCode>apricot</InlineCode> has a more circuitous route through Arabic <em>al-barqūq</em> (البرقوق) via Spanish and Portuguese—both fruits sold in markets worldwide from London's Borough Market to New York's Union Square Greenmarket, Toronto's St. Lawrence Market to Sydney's Paddy's Markets.
+          Food-related <strong>Arabic loanwords in English</strong> are universally recognized across international cuisine. <InlineCode>Sherbet</InlineCode> and <InlineCode>syrup</InlineCode> both derive from Arabic <em>sharab</em> (????), meaning "drink"�ingredients found in recipes from American cookbooks to British baking shows, Canadian kitchens to Australian restaurants. <InlineCode>Lemon</InlineCode> comes from Arabic <em>laymun</em> (?????), while <InlineCode>apricot</InlineCode> has a more circuitous route through Arabic <em>al-barquq</em> (???????) via Spanish and Portuguese�both fruits sold in markets worldwide from London's Borough Market to New York's Union Square Greenmarket, Toronto's St. Lawrence Market to Sydney's Paddy's Markets.
         </ArticleParagraph>
         <ArticleParagraph>
-          Modern <strong>Arabic food terms</strong> continue entering <strong>global English vocabulary</strong>: <InlineCode>hummus</InlineCode> (حمص), <InlineCode>falafel</InlineCode> (فلافل), <InlineCode>tahini</InlineCode> (طحينة), <InlineCode>kebab</InlineCode> (كباب), and <InlineCode>shawarma</InlineCode> (شاورما) are now common words in English-speaking countries worldwide, found on restaurant menus from California to Cornwall, Manitoba to Melbourne, reflecting the global spread of Middle Eastern cuisine through immigration and cultural exchange.
+          Modern <strong>Arabic food terms</strong> continue entering <strong>global English vocabulary</strong>: <InlineCode>hummus</InlineCode> (???), <InlineCode>falafel</InlineCode> (?????), <InlineCode>tahini</InlineCode> (?????), <InlineCode>kebab</InlineCode> (????), and <InlineCode>shawarma</InlineCode> (??????) are now common words in English-speaking countries worldwide, found on restaurant menus from California to Cornwall, Manitoba to Melbourne, reflecting the global spread of Middle Eastern cuisine through immigration and cultural exchange.
         </ArticleParagraph>
 
         <ArticleHeading>The "Al-" Prefix: A Distinctive Arabic Signature in Global English</ArticleHeading>
         <ArticleParagraph>
-          One of the most distinctive markers of <strong>Arabic influence in English vocabulary</strong> worldwide is the prefix "al-" (ال), which is simply the definite article "the" in Arabic. This linguistic fingerprint appears in <strong>English words</strong> used identically across British English, American English, Canadian English, and Australian English. Beyond <InlineCode>algebra</InlineCode>, <InlineCode>algorithm</InlineCode>, and <InlineCode>alchemy</InlineCode>, we find <InlineCode>alcohol</InlineCode> (universal term in medical and social contexts worldwide), <InlineCode>alcove</InlineCode> (from <em>al-qubba</em>, القبة, meaning "the vault"—architectural term used internationally), <InlineCode>alkali</InlineCode> (chemistry term standardized globally), and <InlineCode>almanac</InlineCode> (possibly from <em>al-manākh</em>, meaning "the climate"—publications like "The Old Farmer's Almanac" in the US and Canada use this Arabic-origin word).
+          One of the most distinctive markers of <strong>Arabic influence in English vocabulary</strong> worldwide is the prefix "al-" (??), which is simply the definite article "the" in Arabic. This linguistic fingerprint appears in <strong>English words</strong> used identically across British English, American English, Canadian English, and Australian English. Beyond <InlineCode>algebra</InlineCode>, <InlineCode>algorithm</InlineCode>, and <InlineCode>alchemy</InlineCode>, we find <InlineCode>alcohol</InlineCode> (universal term in medical and social contexts worldwide), <InlineCode>alcove</InlineCode> (from <em>al-qubba</em>, ?????, meaning "the vault"�architectural term used internationally), <InlineCode>alkali</InlineCode> (chemistry term standardized globally), and <InlineCode>almanac</InlineCode> (possibly from <em>al-manakh</em>, meaning "the climate"�publications like "The Old Farmer's Almanac" in the US and Canada use this Arabic-origin word).
         </ArticleParagraph>
         <ArticleParagraph>
-          Interestingly, some words have doubled the article—once in Arabic and once in English or another European language. For example, <InlineCode>lute</InlineCode> comes from Arabic <em>al-'ūd</em> (العود), meaning "the wood," but in <strong>global English</strong>, we say "the lute," effectively saying "the the wood." The same applies to <InlineCode>elixir</InlineCode> from <em>al-iksīr</em> (الإكسير), meaning "the elixir" or philosopher's stone—a term used in pharmaceutical English worldwide and in popular culture from British fantasy literature (Harry Potter) to American video games.
+          Interestingly, some words have doubled the article�once in Arabic and once in English or another European language. For example, <InlineCode>lute</InlineCode> comes from Arabic <em>al-'ud</em> (?????), meaning "the wood," but in <strong>global English</strong>, we say "the lute," effectively saying "the the wood." The same applies to <InlineCode>elixir</InlineCode> from <em>al-iksir</em> (???????), meaning "the elixir" or philosopher's stone�a term used in pharmaceutical English worldwide and in popular culture from British fantasy literature (Harry Potter) to American video games.
         </ArticleParagraph>
 
         <ArticleHeading>Cultural, Military, and Political Arabic Terms in International English</ArticleHeading>
         <ArticleParagraph>
-          Military and political vocabulary also shows <strong>Arabic influence on global English</strong>. <InlineCode>Assassin</InlineCode> derives from Arabic <em>ḥashshāshīn</em> (حشاشين), originally referring to a medieval Islamic sect—now a word used in English-language news, literature, and political discourse worldwide from BBC to CNN, The Guardian to The New York Times. <InlineCode>Safari</InlineCode> comes from Arabic <em>safar</em> (سفر), meaning "journey" or "travel"—primarily associated with East African tourism but used in travel English globally, from British travel agencies to American tour operators. The word <InlineCode>sequin</InlineCode>, those shiny decorative discs on clothing, comes from Arabic <em>sikka</em> (سكة), originally meaning "coin" or "die for striking coins"—fashion terminology used from Paris to New York, London to Sydney.
+          Military and political vocabulary also shows <strong>Arabic influence on global English</strong>. <InlineCode>Assassin</InlineCode> derives from Arabic <em>?ashshashin</em> (??????), originally referring to a medieval Islamic sect�now a word used in English-language news, literature, and political discourse worldwide from BBC to CNN, The Guardian to The New York Times. <InlineCode>Safari</InlineCode> comes from Arabic <em>safar</em> (???), meaning "journey" or "travel"�primarily associated with East African tourism but used in travel English globally, from British travel agencies to American tour operators. The word <InlineCode>sequin</InlineCode>, those shiny decorative discs on clothing, comes from Arabic <em>sikka</em> (???), originally meaning "coin" or "die for striking coins"�fashion terminology used from Paris to New York, London to Sydney.
         </ArticleParagraph>
         <ArticleParagraph>
-          Even color terminology shows <strong>Arabic vocabulary influence</strong>. <InlineCode>Crimson</InlineCode> has Arabic roots, derived from <em>qirmizī</em> (قرمزي), which referred to the kermes insect used to produce red dye—a color name recognized universally in English from British English ("crimson red") to American English descriptions. <InlineCode>Azure</InlineCode>, the bright blue color, comes from Arabic <em>lāzaward</em> (لازورد), which originally referred to lapis lazuli, the deep blue stone—used in art, design, and descriptive English worldwide, from Microsoft Azure (tech company) to heraldic descriptions in British and Commonwealth contexts.
+          Even color terminology shows <strong>Arabic vocabulary influence</strong>. <InlineCode>Crimson</InlineCode> has Arabic roots, derived from <em>qirmizi</em> (?????), which referred to the kermes insect used to produce red dye�a color name recognized universally in English from British English ("crimson red") to American English descriptions. <InlineCode>Azure</InlineCode>, the bright blue color, comes from Arabic <em>lazaward</em> (??????), which originally referred to lapis lazuli, the deep blue stone�used in art, design, and descriptive English worldwide, from Microsoft Azure (tech company) to heraldic descriptions in British and Commonwealth contexts.
         </ArticleParagraph>
 
         <ArticleHeading>The Continuing Global Legacy: Arabic in Modern International English</ArticleHeading>
         <ArticleParagraph>
-          The <strong>influence of Arabic on English</strong> extends far beyond individual words and represents centuries of intellectual exchange, scientific collaboration, and cultural interaction between the Islamic world and Europe, now manifesting in the <strong>global English vocabulary</strong> used across continents. Many of the <strong>Arabic-origin words in English</strong> are concentrated in fields where Arab scholars made pioneering contributions—mathematics, astronomy, chemistry, and medicine—serving as linguistic monuments to their achievements recognized from Oxford to Harvard, Cambridge to Stanford, and in scientific institutions worldwide.
+          The <strong>influence of Arabic on English</strong> extends far beyond individual words and represents centuries of intellectual exchange, scientific collaboration, and cultural interaction between the Islamic world and Europe, now manifesting in the <strong>global English vocabulary</strong> used across continents. Many of the <strong>Arabic-origin words in English</strong> are concentrated in fields where Arab scholars made pioneering contributions�mathematics, astronomy, chemistry, and medicine�serving as linguistic monuments to their achievements recognized from Oxford to Harvard, Cambridge to Stanford, and in scientific institutions worldwide.
         </ArticleParagraph>
         <ArticleParagraph>
           Today, as English continues to evolve as the primary <strong>global language</strong> of international business, science, technology, and diplomacy, it maintains this historical connection to Arabic. Modern <strong>Arabic loanwords</strong> continue entering English vocabulary, particularly terms related to:
@@ -7862,15 +11123,15 @@ export const BLOG_POSTS: BlogPost[] = [
         
         <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg my-6">
           <BulletList items={[
-            <><strong>International Cuisine (UK, US, Canada, Australia):</strong> <InlineCode>hummus</InlineCode>, <InlineCode>falafel</InlineCode>, <InlineCode>tahini</InlineCode>, <InlineCode>shawarma</InlineCode>, <InlineCode>kebab</InlineCode>—found on restaurant menus worldwide</>,
-            <><strong>Religion and Culture (Global Context):</strong> <InlineCode>imam</InlineCode>, <InlineCode>mosque</InlineCode>, <InlineCode>hijab</InlineCode>, <InlineCode>halal</InlineCode>, <InlineCode>jihad</InlineCode>—terms in international news from BBC to CNN, Al Jazeera to Reuters</>,
-            <><strong>Fashion and Beauty (International Markets):</strong> <InlineCode>henna</InlineCode>, <InlineCode>kohl</InlineCode>, <InlineCode>hijab</InlineCode>—products sold globally from London to New York, Dubai to Toronto</>,
+            <><strong>International Cuisine (UK, US, Canada, Australia):</strong> <InlineCode>hummus</InlineCode>, <InlineCode>falafel</InlineCode>, <InlineCode>tahini</InlineCode>, <InlineCode>shawarma</InlineCode>, <InlineCode>kebab</InlineCode>�found on restaurant menus worldwide</>,
+            <><strong>Religion and Culture (Global Context):</strong> <InlineCode>imam</InlineCode>, <InlineCode>mosque</InlineCode>, <InlineCode>hijab</InlineCode>, <InlineCode>halal</InlineCode>, <InlineCode>jihad</InlineCode>�terms in international news from BBC to CNN, Al Jazeera to Reuters</>,
+            <><strong>Fashion and Beauty (International Markets):</strong> <InlineCode>henna</InlineCode>, <InlineCode>kohl</InlineCode>, <InlineCode>hijab</InlineCode>�products sold globally from London to New York, Dubai to Toronto</>,
             <><strong>Technology and Science (Universal Terminology):</strong> Continued use of <InlineCode>algorithm</InlineCode>, <InlineCode>algebra</InlineCode> in computing and mathematics worldwide</>
           ]} />
         </div>
         
         <ArticleParagraph>
-          Understanding the <strong>Arabic roots of English words</strong> enriches our appreciation of the language's diversity and the interconnectedness of human cultures across the Middle East, Europe, the Americas, Asia, and Oceania. Every time we drink <InlineCode>coffee</InlineCode> in a London café, solve an <InlineCode>algebra</InlineCode> problem in a Toronto classroom, discuss <InlineCode>algorithms</InlineCode> in Silicon Valley, or gaze at the <InlineCode>zenith</InlineCode> of the sky in Sydney, we're using linguistic gifts from the Arabic-speaking world—reminders that languages, like cultures, are never isolated but are constantly shaped by contact, exchange, and mutual influence across borders and continents.
+          Understanding the <strong>Arabic roots of English words</strong> enriches our appreciation of the language's diversity and the interconnectedness of human cultures across the Middle East, Europe, the Americas, Asia, and Oceania. Every time we drink <InlineCode>coffee</InlineCode> in a London caf�, solve an <InlineCode>algebra</InlineCode> problem in a Toronto classroom, discuss <InlineCode>algorithms</InlineCode> in Silicon Valley, or gaze at the <InlineCode>zenith</InlineCode> of the sky in Sydney, we're using linguistic gifts from the Arabic-speaking world�reminders that languages, like cultures, are never isolated but are constantly shaped by contact, exchange, and mutual influence across borders and continents.
         </ArticleParagraph>
 
         <ArticleHeading>Conclusion: A Shared Global Linguistic Heritage</ArticleHeading>
@@ -7878,81 +11139,81 @@ export const BLOG_POSTS: BlogPost[] = [
           The <strong>impact of Arabic on English</strong> demonstrates that languages are living records of human history, carrying within them the traces of conquest, commerce, scholarship, and cultural exchange that span from the Middle East to every corner of the English-speaking world. From the scientific revolution centered in Baghdad and Cordoba to the spice trade connecting Asia, Africa, and Europe, from medieval Spanish courts to modern coffee shops in New York, London, Toronto, and Melbourne, <strong>Arabic words have woven themselves into the fabric of global English</strong>, making our language richer, more precise, and more connected to international human experience.
         </ArticleParagraph>
         <ArticleParagraph>
-          As learners and users of English in the UK, USA, Canada, Australia, and beyond, recognizing these <strong>Arabic contributions to English vocabulary</strong> helps us appreciate the language's truly international character. English isn't just a Germanic language with Latin and French borrowings—it's a cosmopolitan global tongue that has absorbed vocabulary from languages across the world, with <strong>Arabic playing a particularly significant role</strong> in shaping the technical, scientific, and commercial lexicon that defines modern international communication. Whether you're studying British English at Oxford, American English in Boston, Canadian English in Vancouver, or Australian English in Sydney, you're using the same <strong>Arabic-origin words</strong> that connect English speakers worldwide through a shared linguistic heritage spanning over a millennium.
+          As learners and users of English in the UK, USA, Canada, Australia, and beyond, recognizing these <strong>Arabic contributions to English vocabulary</strong> helps us appreciate the language's truly international character. English isn't just a Germanic language with Latin and French borrowings�it's a cosmopolitan global tongue that has absorbed vocabulary from languages across the world, with <strong>Arabic playing a particularly significant role</strong> in shaping the technical, scientific, and commercial lexicon that defines modern international communication. Whether you're studying British English at Oxford, American English in Boston, Canadian English in Vancouver, or Australian English in Sydney, you're using the same <strong>Arabic-origin words</strong> that connect English speakers worldwide through a shared linguistic heritage spanning over a millennium.
         </ArticleParagraph>
 
         <div className="bg-gradient-to-r from-emerald-50 to-teal-50 dark:from-slate-800 dark:to-slate-700 p-6 rounded-lg my-8 border-2 border-emerald-400 dark:border-emerald-600">
-          <h4 className="font-semibold text-xl mb-4 text-emerald-900 dark:text-emerald-200">🌐 Complete List: 200+ Arabic Words in Global English</h4>
+          <h4 className="font-semibold text-xl mb-4 text-emerald-900 dark:text-emerald-200">?? Complete List: 200+ Arabic Words in Global English</h4>
           <ArticleParagraph>
             Below is a comprehensive list of <strong>Arabic loanwords in English</strong> organized by category, all used universally across British English, American English, Canadian English, and Australian English:
           </ArticleParagraph>
           
           <div className="mt-6 space-y-4">
             <div>
-              <p className="font-bold mb-2 text-emerald-800 dark:text-emerald-300">📐 Mathematics & Science (20+ terms):</p>
+              <p className="font-bold mb-2 text-emerald-800 dark:text-emerald-300">?? Mathematics & Science (20+ terms):</p>
               <ExampleList items={[
                 "algebra, algorithm, zero, cipher, alkaline, alchemy, alcohol, elixir, alkali, nadir, zenith, azimuth, arsenal, alembic, benzene, borax, soda, talc, antimony, amalgam"
               ]} />
             </div>
             
             <div>
-              <p className="font-bold mb-2 text-emerald-800 dark:text-emerald-300">💼 Commerce & Trade (15+ terms):</p>
+              <p className="font-bold mb-2 text-emerald-800 dark:text-emerald-300">?? Commerce & Trade (15+ terms):</p>
               <ExampleList items={[
                 "tariff, bazaar, magazine, check/cheque, traffic, douane (customs), souk, caravan, risk, average (maritime), mohair, muslin, damask, taffeta, sash"
               ]} />
             </div>
             
             <div>
-              <p className="font-bold mb-2 text-emerald-800 dark:text-emerald-300">☕ Food & Beverages (20+ terms):</p>
+              <p className="font-bold mb-2 text-emerald-800 dark:text-emerald-300">? Food & Beverages (20+ terms):</p>
               <ExampleList items={[
                 "coffee, sugar, lemon, apricot, orange, saffron, syrup, sherbet, sorbet, artichoke, aubergine/eggplant, spinach, tamarind, sesame, caraway, cumin, sumac, tahini, hummus, falafel, kebab, shawarma"
               ]} />
             </div>
             
             <div>
-              <p className="font-bold mb-2 text-emerald-800 dark:text-emerald-300">🏠 Household & Furniture (10+ terms):</p>
+              <p className="font-bold mb-2 text-emerald-800 dark:text-emerald-300">?? Household & Furniture (10+ terms):</p>
               <ExampleList items={[
                 "sofa, mattress, jar, carafe, alcove, adobe, divan, ottoman, sash, carpet (possibly), mummy"
               ]} />
             </div>
             
             <div>
-              <p className="font-bold mb-2 text-emerald-800 dark:text-emerald-300">⚓ Military & Naval (10+ terms):</p>
+              <p className="font-bold mb-2 text-emerald-800 dark:text-emerald-300">? Military & Naval (10+ terms):</p>
               <ExampleList items={[
                 "admiral, arsenal, assassin, magazine (military), onslaught (possibly), caliber, tare, havoc, razzia, ghoul"
               ]} />
             </div>
             
             <div>
-              <p className="font-bold mb-2 text-emerald-800 dark:text-emerald-300">🎨 Colors & Materials (10+ terms):</p>
+              <p className="font-bold mb-2 text-emerald-800 dark:text-emerald-300">?? Colors & Materials (10+ terms):</p>
               <ExampleList items={[
                 "crimson, azure, lilac, henna, kohl, cotton, mohair, muslin, gauze, sequin, taffeta, damask"
               ]} />
             </div>
             
             <div>
-              <p className="font-bold mb-2 text-emerald-800 dark:text-emerald-300">🌟 Astronomy & Star Names (15+ terms):</p>
+              <p className="font-bold mb-2 text-emerald-800 dark:text-emerald-300">?? Astronomy & Star Names (15+ terms):</p>
               <ExampleList items={[
                 "Aldebaran, Rigel, Betelgeuse, Altair, Deneb, Vega, Algol, Alcor, Mizar, Fomalhaut, Acrab, Thuban, Alkaid, zenith, nadir, azimuth"
               ]} />
             </div>
             
             <div>
-              <p className="font-bold mb-2 text-emerald-800 dark:text-emerald-300">🕌 Religion & Culture (20+ terms):</p>
+              <p className="font-bold mb-2 text-emerald-800 dark:text-emerald-300">?? Religion & Culture (20+ terms):</p>
               <ExampleList items={[
                 "Islam, Muslim, mosque, minaret, mihrab, imam, muezzin, Quran/Koran, Ramadan, hajj, jihad, hijab, burqa, halal, haram, Sunni, Shia, sultan, vizier, emir, caliph, sheikh"
               ]} />
             </div>
             
             <div>
-              <p className="font-bold mb-2 text-emerald-800 dark:text-emerald-300">🎵 Music & Entertainment (8+ terms):</p>
+              <p className="font-bold mb-2 text-emerald-800 dark:text-emerald-300">?? Music & Entertainment (8+ terms):</p>
               <ExampleList items={[
                 "lute, guitar (possibly via Arabic), rebec, tambourine, oud, raga (via Arabic), safari, hookah"
               ]} />
             </div>
             
             <div>
-              <p className="font-bold mb-2 text-emerald-800 dark:text-emerald-300">📚 General Vocabulary (20+ terms):</p>
+              <p className="font-bold mb-2 text-emerald-800 dark:text-emerald-300">?? General Vocabulary (20+ terms):</p>
               <ExampleList items={[
                 "almanac, cipher, giraffe, gazelle, racket, magazine, ream, monsoon, typhoon (possibly), candy, mascara, lackey, trash (possibly), safari, harem, hazard, assassin, ghoul, alcohol, elixir"
               ]} />
@@ -7960,12 +11221,12 @@ export const BLOG_POSTS: BlogPost[] = [
           </div>
           
           <ArticleParagraph>
-            This list demonstrates the <strong>extensive Arabic language influence on global English vocabulary</strong> across virtually every domain of life—from the most advanced scientific terminology to everyday household items, from international business to personal grooming. These words are used identically in British English, American English, Canadian English, Australian English, and by English speakers worldwide.
+            This list demonstrates the <strong>extensive Arabic language influence on global English vocabulary</strong> across virtually every domain of life�from the most advanced scientific terminology to everyday household items, from international business to personal grooming. These words are used identically in British English, American English, Canadian English, Australian English, and by English speakers worldwide.
           </ArticleParagraph>
         </div>
 
         <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-600 p-6 my-8 rounded">
-          <h3 className="font-bold text-lg mb-4">💡 Frequently Asked Questions About Arabic Words in Global English</h3>
+          <h3 className="font-bold text-lg mb-4">?? Frequently Asked Questions About Arabic Words in Global English</h3>
           
           <div className="mb-4">
             <p className="font-bold mb-2">How many Arabic words are there in English vocabulary worldwide?</p>
@@ -7984,14 +11245,14 @@ export const BLOG_POSTS: BlogPost[] = [
           <div className="mb-4">
             <p className="font-bold mb-2">Why do many Arabic words in English start with "al"?</p>
             <ArticleParagraph>
-              The prefix "al-" (ال) is simply the definite article "the" in Arabic. When <strong>Arabic words entered European languages</strong> and subsequently English, the article was often retained as part of the word itself, creating the distinctive "al-" prefix seen globally. Examples include algebra (al-jabr), alcohol (al-kuhl), alchemy (al-kimiya), and algorithm (from mathematician Al-Khwarizmi's name). This linguistic feature is recognized in all varieties of international English.
+              The prefix "al-" (??) is simply the definite article "the" in Arabic. When <strong>Arabic words entered European languages</strong> and subsequently English, the article was often retained as part of the word itself, creating the distinctive "al-" prefix seen globally. Examples include algebra (al-jabr), alcohol (al-kuhl), alchemy (al-kimiya), and algorithm (from mathematician Al-Khwarizmi's name). This linguistic feature is recognized in all varieties of international English.
             </ArticleParagraph>
           </div>
 
           <div className="mb-4">
             <p className="font-bold mb-2">How did Arabic influence English scientific vocabulary used worldwide?</p>
             <ArticleParagraph>
-              During the Islamic Golden Age (8th-14th centuries), Arab scholars in Baghdad, Cairo, and Cordoba made groundbreaking contributions to mathematics, astronomy, chemistry, and medicine. When European scholars translated these Arabic texts into Latin and eventually English, they adopted the <strong>Arabic terminology</strong> along with the knowledge. This is why many English scientific terms used globally—from Oxford to MIT, Cambridge to Stanford—have Arabic origins. These terms became standardized in international scientific English.
+              During the Islamic Golden Age (8th-14th centuries), Arab scholars in Baghdad, Cairo, and Cordoba made groundbreaking contributions to mathematics, astronomy, chemistry, and medicine. When European scholars translated these Arabic texts into Latin and eventually English, they adopted the <strong>Arabic terminology</strong> along with the knowledge. This is why many English scientific terms used globally�from Oxford to MIT, Cambridge to Stanford�have Arabic origins. These terms became standardized in international scientific English.
             </ArticleParagraph>
           </div>
 
@@ -8018,14 +11279,14 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-600 p-6 my-8 rounded">
-          <h3 className="font-bold text-lg mb-3">🚀 Want to Explore More About Global English Etymology?</h3>
+          <h3 className="font-bold text-lg mb-3">?? Want to Explore More About Global English Etymology?</h3>
           <ArticleParagraph>
             Fascinated by how different languages shape <strong>international English vocabulary</strong>? Explore our comprehensive guides on language history and vocabulary used worldwide:
           </ArticleParagraph>
           <BulletList items={[
-            <><Link to="/idioms" className="text-blue-600 hover:underline dark:text-blue-400">English Idioms and Their Origins</Link> - Discover the fascinating stories behind common phrases used globally</>,
-            <><Link to="/commonly-confused-words" className="text-blue-600 hover:underline dark:text-blue-400">Commonly Confused Words</Link> - Master tricky vocabulary pairs in global English</>,
-            <><Link to="/grammar-glossary" className="text-blue-600 hover:underline dark:text-blue-400">Grammar Glossary A-Z</Link> - Your complete reference for English grammar terms</>
+            <><Link to="/idioms/" className="text-blue-600 hover:underline dark:text-blue-400">English Idioms and Their Origins</Link> - Discover the fascinating stories behind common phrases used globally</>,
+            <><Link to="/commonly-confused-words/" className="text-blue-600 hover:underline dark:text-blue-400">Commonly Confused Words</Link> - Master tricky vocabulary pairs in global English</>,
+            <><Link to="/grammar-glossary/" className="text-blue-600 hover:underline dark:text-blue-400">Grammar Glossary A-Z</Link> - Your complete reference for English grammar terms</>
           ]} />
         </div>
 
@@ -8051,7 +11312,7 @@ export const BLOG_POSTS: BlogPost[] = [
           'name': 'What is the difference between your and you\'re?',
           'acceptedAnswer': {
             '@type': 'Answer',
-            'text': 'Your is possessive (your book), while you\'re is a contraction of you are. Test by expanding: "You\'re welcome" = "You are welcome" ✓. "Your welcome" = "You are welcome" ✗.'
+            'text': 'Your is possessive (your book), while you\'re is a contraction of you are. Test by expanding: "You\'re welcome" = "You are welcome" ?. "Your welcome" = "You are welcome" ?.'
           }
         },
         {
@@ -8083,7 +11344,7 @@ export const BLOG_POSTS: BlogPost[] = [
           'name': 'What is the difference between its and it\'s?',
           'acceptedAnswer': {
             '@type': 'Answer',
-            'text': 'Its (no apostrophe) is the possessive pronoun — "the dog wagged its tail." It\'s (with apostrophe) is a contraction of "it is" or "it has" — "it\'s raining," "it\'s been a long day." Test: replace with "it is" — if the sentence still makes sense, use it\'s.'
+            'text': 'Its (no apostrophe) is the possessive pronoun � "the dog wagged its tail." It\'s (with apostrophe) is a contraction of "it is" or "it has" � "it\'s raining," "it\'s been a long day." Test: replace with "it is" � if the sentence still makes sense, use it\'s.'
           }
         },
         {
@@ -8091,7 +11352,7 @@ export const BLOG_POSTS: BlogPost[] = [
           'name': 'What are the most common grammar mistakes native speakers make?',
           'acceptedAnswer': {
             '@type': 'Answer',
-            'text': 'The 5 most common English grammar mistakes are: (1) your vs. you\'re — possessive vs. contraction; (2) their/they\'re/there — three different words; (3) its vs. it\'s — possessive vs. contraction; (4) less vs. fewer — uncountable vs. countable nouns; (5) affect vs. effect — verb vs. noun. These appear in professional writing, social media, and student essays daily.'
+            'text': 'The 5 most common English grammar mistakes are: (1) your vs. you\'re � possessive vs. contraction; (2) their/they\'re/there � three different words; (3) its vs. it\'s � possessive vs. contraction; (4) less vs. fewer � uncountable vs. countable nouns; (5) affect vs. effect � verb vs. noun. These appear in professional writing, social media, and student essays daily.'
           }
         }
       ]
@@ -8110,19 +11371,19 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on <a href="https://owl.purdue.edu/owl/general_writing/common_writing_errors.html" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Purdue OWL Common Errors</a> and editorial experience.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on <a href="https://owl.purdue.edu/owl/general_writing/common_writing_errors.html" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Purdue OWL Common Errors</a> and editorial experience.</span>
         </div>
 
         {/* Statistics Box */}
         <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-700 rounded-lg p-4 mb-6">
-          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">🎯 Grammar Error Statistics</h4>
+          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">?? Grammar Error Statistics</h4>
           <ul className="text-sm text-green-700 dark:text-green-300 space-y-1">
-            <li>• Your/you're: Found in ~15% of analyzed social media posts</li>
-            <li>• Their/they're/there: Most searched grammar question on Google</li>
-            <li>• Less/fewer: Supermarkets infamously use "10 items or less" incorrectly</li>
-            <li>• Affect/effect: Confused even by 30% of college graduates</li>
+            <li>� Your/you're: Found in ~15% of analyzed social media posts</li>
+            <li>� Their/they're/there: Most searched grammar question on Google</li>
+            <li>� Less/fewer: Supermarkets infamously use "10 items or less" incorrectly</li>
+            <li>� Affect/effect: Confused even by 30% of college graduates</li>
           </ul>
         </div>
 
@@ -8130,11 +11391,11 @@ export const BLOG_POSTS: BlogPost[] = [
         <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-5 mb-8 rounded-r-lg">
           <h2 className="text-lg font-bold text-green-900 dark:text-green-200 mb-2">Quick Answer: The 5 Most Common Grammar Mistakes</h2>
           <ol className="list-decimal pl-5 text-green-800 dark:text-green-300 space-y-1 text-sm">
-            <li><strong>your / you're</strong> — your = belongs to you; you're = you are</li>
-            <li><strong>their / they're / there</strong> — their = theirs; they're = they are; there = place/existence</li>
-            <li><strong>its / it's</strong> — its = belongs to it; it's = it is / it has</li>
-            <li><strong>less / fewer</strong> — fewer = countable things (fewer apples); less = uncountable (less time)</li>
-            <li><strong>affect / effect</strong> — affect = verb (to affect); effect = noun (an effect)</li>
+            <li><strong>your / you're</strong> � your = belongs to you; you're = you are</li>
+            <li><strong>their / they're / there</strong> � their = theirs; they're = they are; there = place/existence</li>
+            <li><strong>its / it's</strong> � its = belongs to it; it's = it is / it has</li>
+            <li><strong>less / fewer</strong> � fewer = countable things (fewer apples); less = uncountable (less time)</li>
+            <li><strong>affect / effect</strong> � affect = verb (to affect); effect = noun (an effect)</li>
           </ol>
         </div>
 
@@ -8159,13 +11420,13 @@ export const BLOG_POSTS: BlogPost[] = [
         
         <ArticleParagraph><strong>Examples:</strong></ArticleParagraph>
         <ExampleList items={[
-          "✅ Is this your book? (possessive - the book belongs to you)",
-          "✅ You're going to be late. (contraction - You are going to be late)",
-          "❌ Your going to love this. (WRONG)",
-          "✅ You're going to love this. (CORRECT)"
+          "? Is this your book? (possessive - the book belongs to you)",
+          "? You're going to be late. (contraction - You are going to be late)",
+          "? Your going to love this. (WRONG)",
+          "? You're going to love this. (CORRECT)"
         ]} />
         
-        <ArticleParagraph><strong>Memory Trick:</strong> If you can replace the word with "you are" and the sentence still makes sense, use <InlineCode>you're</InlineCode>. Otherwise, use <InlineCode>your</InlineCode>. Try it: "You are going to be late" ✓ works, so use "you're."</ArticleParagraph>
+        <ArticleParagraph><strong>Memory Trick:</strong> If you can replace the word with "you are" and the sentence still makes sense, use <InlineCode>you're</InlineCode>. Otherwise, use <InlineCode>your</InlineCode>. Try it: "You are going to be late" ? works, so use "you're."</ArticleParagraph>
         
         <ArticleHeading>2. Their vs. They're vs. There: Three Confusing Homophones</ArticleHeading>
         <ArticleParagraph>
@@ -8181,11 +11442,11 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleParagraph><strong>Examples:</strong></ArticleParagraph>
         <ExampleList items={[
-          "✅ Their house is beautiful. (possessive - belongs to them)",
-          "✅ They're the best team in the league. (they are)",
-          "✅ There are three apples on the table. (location/existence)",
-          "❌ Their going to the store. (WRONG)",
-          "✅ They're going to the store. (CORRECT)"
+          "? Their house is beautiful. (possessive - belongs to them)",
+          "? They're the best team in the league. (they are)",
+          "? There are three apples on the table. (location/existence)",
+          "? Their going to the store. (WRONG)",
+          "? They're going to the store. (CORRECT)"
         ]} />
 
         <ArticleParagraph><strong>Memory Trick:</strong> <InlineCode>They're</InlineCode> = they are (has an apostrophe like other contractions). <InlineCode>Their</InlineCode> = shows ownership (like "heir" inheriting something). <InlineCode>There</InlineCode> = location (contains "here").</ArticleParagraph>
@@ -8203,11 +11464,11 @@ export const BLOG_POSTS: BlogPost[] = [
         
         <ArticleParagraph><strong>Examples:</strong></ArticleParagraph>
         <ExampleList items={[
-          "✅ The dog wagged its tail. (possessive - the tail belongs to the dog)",
-          "✅ It's a beautiful day today. (it is)",
-          "✅ It's been raining all morning. (it has)",
-          "❌ The company announced it's new policy. (WRONG)",
-          "✅ The company announced its new policy. (CORRECT)"
+          "? The dog wagged its tail. (possessive - the tail belongs to the dog)",
+          "? It's a beautiful day today. (it is)",
+          "? It's been raining all morning. (it has)",
+          "? The company announced it's new policy. (WRONG)",
+          "? The company announced its new policy. (CORRECT)"
         ]} />
         
         <ArticleParagraph><strong>Memory Trick:</strong> Possessive pronouns (my, your, his, her, its, our, their) <em>never</em> use apostrophes. If you can say "it is" or "it has," use <InlineCode>it's</InlineCode>. Otherwise, use <InlineCode>its</InlineCode>.</ArticleParagraph>
@@ -8225,12 +11486,12 @@ export const BLOG_POSTS: BlogPost[] = [
         
         <ArticleParagraph><strong>Examples:</strong></ArticleParagraph>
         <ExampleList items={[
-          "✅ I have fewer coins than you. (countable - you can count coins: 1, 2, 3...)",
-          "✅ I have less money than you. (uncountable - money as a concept)",
-          "✅ There are fewer people here today. (countable)",
-          "✅ There is less traffic today. (uncountable)",
-          "❌ Express lane: 10 items or less (WRONG - commonly seen!)",
-          "✅ Express lane: 10 items or fewer (CORRECT)"
+          "? I have fewer coins than you. (countable - you can count coins: 1, 2, 3...)",
+          "? I have less money than you. (uncountable - money as a concept)",
+          "? There are fewer people here today. (countable)",
+          "? There is less traffic today. (uncountable)",
+          "? Express lane: 10 items or less (WRONG - commonly seen!)",
+          "? Express lane: 10 items or fewer (CORRECT)"
         ]} />
         
         <ArticleParagraph><strong>Memory Trick:</strong> If you can count it individually, use <InlineCode>fewer</InlineCode>. If you measure it as a whole quantity, use <InlineCode>less</InlineCode>. Think: "fewer items, less stuff."</ArticleParagraph>
@@ -8248,12 +11509,12 @@ export const BLOG_POSTS: BlogPost[] = [
         
         <ArticleParagraph><strong>Examples:</strong></ArticleParagraph>
         <ExampleList items={[
-          "✅ The rain will affect the traffic. (verb - rain influences traffic)",
-          "✅ The rain had a negative effect on the traffic. (noun - the result)",
-          "✅ How does stress affect your health? (verb)",
-          "✅ What are the effects of stress on health? (noun - results)",
-          "❌ The medicine had no affect. (WRONG)",
-          "✅ The medicine had no effect. (CORRECT)"
+          "? The rain will affect the traffic. (verb - rain influences traffic)",
+          "? The rain had a negative effect on the traffic. (noun - the result)",
+          "? How does stress affect your health? (verb)",
+          "? What are the effects of stress on health? (noun - results)",
+          "? The medicine had no affect. (WRONG)",
+          "? The medicine had no effect. (CORRECT)"
         ]} />
         
         <ArticleParagraph><strong>Memory Trick:</strong> <InlineCode>Affect</InlineCode> = <strong>A</strong>ction (verb). <InlineCode>Effect</InlineCode> = <strong>E</strong>nd result (noun). Or remember: "The <strong>A</strong>ction <strong>A</strong>ffects. The End result is the <strong>E</strong>ffect."</ArticleParagraph>
@@ -8261,7 +11522,7 @@ export const BLOG_POSTS: BlogPost[] = [
         <ArticleParagraph><strong>Advanced Note:</strong> "Effect" can occasionally be used as a verb meaning "to bring about" or "to cause" (example: "to effect change"), and "affect" can be a noun in psychology meaning "emotion." However, these uses are rare in everyday writing.</ArticleParagraph>
 
         <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-600 p-6 my-8 rounded">
-          <h3 className="font-bold text-lg mb-4">💡 Frequently Asked Questions About Grammar Mistakes</h3>
+          <h3 className="font-bold text-lg mb-4">?? Frequently Asked Questions About Grammar Mistakes</h3>
           
           <div className="mb-4">
             <p className="font-bold mb-2">What are the most common grammar mistakes in English?</p>
@@ -8300,20 +11561,20 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-600 p-6 my-8 rounded">
-          <h3 className="font-bold text-lg mb-3">🚀 Ready to Master English Grammar?</h3>
+          <h3 className="font-bold text-lg mb-3">?? Ready to Master English Grammar?</h3>
           <ArticleParagraph>
             Now that you understand these 5 common mistakes, explore our comprehensive grammar resources:
           </ArticleParagraph>
           <BulletList items={[
-            <><Link to="/blog/common-grammar-mistakes-non-native-speakers" className="text-blue-600 hover:underline dark:text-blue-400">15 Grammar Mistakes Non-Native Speakers Make</Link> - Comprehensive guide with detailed explanations</>,
-            <><Link to="/commonly-confused-words" className="text-blue-600 hover:underline dark:text-blue-400">Commonly Confused Words</Link> - Master tricky word pairs</>,
-            <><Link to="/interactive-exercises" className="text-blue-600 hover:underline dark:text-blue-400">Interactive Grammar Exercises</Link> - Practice what you've learned</>,
-            <><Link to="/grammar-guide" className="text-blue-600 hover:underline dark:text-blue-400">Complete Grammar Guide</Link> - Your comprehensive English grammar reference</>
+            <><Link to="/blog/common-grammar-mistakes-non-native-speakers/" className="text-blue-600 hover:underline dark:text-blue-400">15 Grammar Mistakes Non-Native Speakers Make</Link> - Comprehensive guide with detailed explanations</>,
+            <><Link to="/commonly-confused-words/" className="text-blue-600 hover:underline dark:text-blue-400">Commonly Confused Words</Link> - Master tricky word pairs</>,
+            <><Link to="/interactive-exercises/" className="text-blue-600 hover:underline dark:text-blue-400">Interactive Grammar Exercises</Link> - Practice what you've learned</>,
+            <><Link to="/grammar-guide/" className="text-blue-600 hover:underline dark:text-blue-400">Complete Grammar Guide</Link> - Your comprehensive English grammar reference</>
           ]} />
         </div>
 
         <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-600 p-6 my-8 rounded">
-          <h3 className="font-bold text-lg mb-3">✏️ Quick Practice Exercise</h3>
+          <h3 className="font-bold text-lg mb-3">?? Quick Practice Exercise</h3>
           <ArticleParagraph>
             Test yourself! Find and correct the errors in these sentences:
           </ArticleParagraph>
@@ -8340,7 +11601,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "Is 'Whom' Still a Thing? A Guide to Modern Usage",
     author: 'Dr. Catherine Moore, English Usage Expert',
     date: 'March 26, 2026',
-    summary: "Confused about when to use 'who' vs 'whom'? Discover the simple substitution test, 15+ usage examples across contexts, and when modern English allows 'who' instead of 'whom' — with guidance for formal writing, IELTS, and everyday speech.",
+    summary: "Confused about when to use 'who' vs 'whom'? Discover the simple substitution test, 15+ usage examples across contexts, and when modern English allows 'who' instead of 'whom' � with guidance for formal writing, IELTS, and everyday speech.",
     category: 'Style & Usage',
     schemaMarkup: {
       '@context': 'https://schema.org',
@@ -8367,7 +11628,7 @@ export const BLOG_POSTS: BlogPost[] = [
           'name': 'What is the easiest trick to choose between who and whom?',
           'acceptedAnswer': {
             '@type': 'Answer',
-            'text': 'The he/him substitution test: If you can rephrase using "he" (or "she"), use "who." If you can rephrase using "him" (or "her"), use "whom." Both "him" and "whom" end in M — that is the trick to remember.'
+            'text': 'The he/him substitution test: If you can rephrase using "he" (or "she"), use "who." If you can rephrase using "him" (or "her"), use "whom." Both "him" and "whom" end in M � that is the trick to remember.'
           }
         },
         {
@@ -8375,7 +11636,7 @@ export const BLOG_POSTS: BlogPost[] = [
           'name': 'Should I say "who did you call" or "whom did you call"?',
           'acceptedAnswer': {
             '@type': 'Answer',
-            'text': '"Whom did you call?" is grammatically correct in formal English because "whom" is the object of "call" (You called HIM → whom). In casual conversation, "Who did you call?" is widely accepted and not considered an error in informal contexts.'
+            'text': '"Whom did you call?" is grammatically correct in formal English because "whom" is the object of "call" (You called HIM ? whom). In casual conversation, "Who did you call?" is widely accepted and not considered an error in informal contexts.'
           }
         },
         {
@@ -8391,7 +11652,7 @@ export const BLOG_POSTS: BlogPost[] = [
           'name': 'Can I use "who" after a preposition?',
           'acceptedAnswer': {
             '@type': 'Answer',
-            'text': 'Technically, "who" after a preposition is incorrect in formal English — it should be "to whom," not "to who." However, in informal speech, "who" after prepositions is increasingly common and understood. For any formal writing or exam, always use "whom" after prepositions.'
+            'text': 'Technically, "who" after a preposition is incorrect in formal English � it should be "to whom," not "to who." However, in informal speech, "who" after prepositions is increasingly common and understood. For any formal writing or exam, always use "whom" after prepositions.'
           }
         }
       ]
@@ -8410,9 +11671,9 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on <a href="https://www.merriam-webster.com/grammar/who-vs-whom-usage" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Merriam-Webster</a> and <a href="https://www.chicagomanualofstyle.org/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Chicago Manual of Style</a>.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on <a href="https://www.merriam-webster.com/grammar/who-vs-whom-usage" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Merriam-Webster</a> and <a href="https://www.chicagomanualofstyle.org/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Chicago Manual of Style</a>.</span>
         </div>
 
         {/* Quick Answer Box */}
@@ -8422,7 +11683,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         <ArticleParagraph>
-          The word <InlineCode>whom</InlineCode> makes many writers pause. In modern, informal English, <InlineCode>who</InlineCode> has largely taken over in casual speech, but in formal writing and specific grammatical constructions, <InlineCode>whom</InlineCode> is still the correct choice — and required in exams like IELTS, TOEFL, and Cambridge English.
+          The word <InlineCode>whom</InlineCode> makes many writers pause. In modern, informal English, <InlineCode>who</InlineCode> has largely taken over in casual speech, but in formal writing and specific grammatical constructions, <InlineCode>whom</InlineCode> is still the correct choice � and required in exams like IELTS, TOEFL, and Cambridge English.
         </ArticleParagraph>
 
         <ArticleHeading>The Basic Rule: Subject vs. Object</ArticleHeading>
@@ -8435,9 +11696,9 @@ export const BLOG_POSTS: BlogPost[] = [
           The fastest and most reliable way to decide: substitute <strong>he/him</strong> (or she/her) into your sentence.
         </ArticleParagraph>
         <BulletList items={[
-          <><strong>If "he" fits → use "who":</strong> "Who called?" → "He called." ✓ → Use <strong>who</strong></>,
-          <><strong>If "him" fits → use "whom":</strong> "For ___ should I vote?" → "I should vote for him." ✓ → Use <strong>whom</strong></>,
-          <>Memory aid: <strong>both "him" and "whom" end in M</strong> — if HIM works, use WHOM.</>
+          <><strong>If "he" fits ? use "who":</strong> "Who called?" ? "He called." ? ? Use <strong>who</strong></>,
+          <><strong>If "him" fits ? use "whom":</strong> "For ___ should I vote?" ? "I should vote for him." ? ? Use <strong>whom</strong></>,
+          <>Memory aid: <strong>both "him" and "whom" end in M</strong> � if HIM works, use WHOM.</>
         ]} />
 
         <ArticleHeading>Who/Whom by Context: Quick Reference Table</ArticleHeading>
@@ -8473,38 +11734,38 @@ export const BLOG_POSTS: BlogPost[] = [
         <ArticleHeading>15+ Examples: Who vs. Whom in Practice</ArticleHeading>
         <ArticleParagraph><strong>As a subject (use who):</strong></ArticleParagraph>
         <BulletList items={[
-          <><InlineCode>Who</InlineCode> is coming to the meeting? (He is coming → subject → who)</>,
-          <>The candidate <InlineCode>who</InlineCode> applied first will be contacted. (She applied → subject)</>,
-          <>Do you know <InlineCode>who</InlineCode> wrote this? (He wrote it → subject)</>,
-          <><InlineCode>Who</InlineCode> told you that? (She told you → subject)</>
+          <><InlineCode>Who</InlineCode> is coming to the meeting? (He is coming ? subject ? who)</>,
+          <>The candidate <InlineCode>who</InlineCode> applied first will be contacted. (She applied ? subject)</>,
+          <>Do you know <InlineCode>who</InlineCode> wrote this? (He wrote it ? subject)</>,
+          <><InlineCode>Who</InlineCode> told you that? (She told you ? subject)</>
         ]} />
         <ArticleParagraph><strong>As an object (use whom):</strong></ArticleParagraph>
         <BulletList items={[
-          <>To <InlineCode>whom</InlineCode> should I address this letter? (address it to him → after preposition → whom)</>,
-          <>The professor <InlineCode>whom</InlineCode> I admire most is Dr. Chen. (I admire him → object)</>,
-          <><InlineCode>Whom</InlineCode> did you call? (You called him → object of verb → whom)</>,
-          <>For <InlineCode>whom</InlineCode> is this gift? (It is for her → after preposition → whom)</>,
-          <>The employee <InlineCode>whom</InlineCode> we hired last month is excellent. (We hired her → object)</>
+          <>To <InlineCode>whom</InlineCode> should I address this letter? (address it to him ? after preposition ? whom)</>,
+          <>The professor <InlineCode>whom</InlineCode> I admire most is Dr. Chen. (I admire him ? object)</>,
+          <><InlineCode>Whom</InlineCode> did you call? (You called him ? object of verb ? whom)</>,
+          <>For <InlineCode>whom</InlineCode> is this gift? (It is for her ? after preposition ? whom)</>,
+          <>The employee <InlineCode>whom</InlineCode> we hired last month is excellent. (We hired her ? object)</>
         ]} />
 
         <ArticleHeading>When "Who" Replaces "Whom" in Modern English</ArticleHeading>
         <ArticleParagraph>
-          In casual, everyday conversation, native speakers increasingly use "who" in place of "whom" — and this is now widely accepted informally. The key is knowing <em>when</em> each register applies:
+          In casual, everyday conversation, native speakers increasingly use "who" in place of "whom" � and this is now widely accepted informally. The key is knowing <em>when</em> each register applies:
         </ArticleParagraph>
         <BulletList items={[
-          <><strong>Formal/academic/business writing → always use "whom" where required</strong></>,
-          <><strong>English exams (IELTS, TOEFL, CAE) → always use "whom" where required</strong></>,
-          <><strong>Casual conversation → "who" replacing "whom" is acceptable</strong></>,
-          <>After prepositions → <strong>always use "whom"</strong> even informally (ending a sentence with "to who" sounds wrong to most native speakers too)</>
+          <><strong>Formal/academic/business writing ? always use "whom" where required</strong></>,
+          <><strong>English exams (IELTS, TOEFL, CAE) ? always use "whom" where required</strong></>,
+          <><strong>Casual conversation ? "who" replacing "whom" is acceptable</strong></>,
+          <>After prepositions ? <strong>always use "whom"</strong> even informally (ending a sentence with "to who" sounds wrong to most native speakers too)</>
         ]} />
 
         <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-600 p-6 my-8 rounded">
           <h3 className="font-bold text-lg mb-3">Related Grammar Topics</h3>
           <BulletList items={[
-            <><Link to="/topics/relative-clauses" className="text-blue-600 hover:underline dark:text-blue-400">Relative Clauses Guide</Link> — Master who, whom, whose, which, and that</>,
-            <><Link to="/blog/mastering-the-comma-splice" className="text-blue-600 hover:underline dark:text-blue-400">Comma Splices</Link> — Fix another common writing error</>,
-            <><Link to="/commonly-confused-words" className="text-blue-600 hover:underline dark:text-blue-400">Commonly Confused Words</Link> — Master other tricky word pairs</>,
-            <><Link to="/interactive-exercises" className="text-blue-600 hover:underline dark:text-blue-400">Interactive Exercises</Link> — Practice who vs. whom in context</>
+            <><Link to="/topics/relative-clauses/" className="text-blue-600 hover:underline dark:text-blue-400">Relative Clauses Guide</Link> � Master who, whom, whose, which, and that</>,
+            <><Link to="/blog/mastering-the-comma-splice/" className="text-blue-600 hover:underline dark:text-blue-400">Comma Splices</Link> � Fix another common writing error</>,
+            <><Link to="/commonly-confused-words/" className="text-blue-600 hover:underline dark:text-blue-400">Commonly Confused Words</Link> � Master other tricky word pairs</>,
+            <><Link to="/interactive-exercises/" className="text-blue-600 hover:underline dark:text-blue-400">Interactive Exercises</Link> � Practice who vs. whom in context</>
           ]} />
         </div>
        </>
@@ -8550,7 +11811,7 @@ export const BLOG_POSTS: BlogPost[] = [
           'name': 'Can comma splices ever be correct?',
           'acceptedAnswer': {
             '@type': 'Answer',
-            'text': 'Intentional comma splices are used by skilled writers for stylistic effect — to create pace, rhythm, or dramatic impact. Caesar\'s "Veni, vidi, vici" is a famous comma splice. In academic and formal writing, however, comma splices are always considered errors.'
+            'text': 'Intentional comma splices are used by skilled writers for stylistic effect � to create pace, rhythm, or dramatic impact. Caesar\'s "Veni, vidi, vici" is a famous comma splice. In academic and formal writing, however, comma splices are always considered errors.'
           }
         },
         {
@@ -8566,7 +11827,7 @@ export const BLOG_POSTS: BlogPost[] = [
           'name': 'Is using a semicolon the best way to fix a comma splice?',
           'acceptedAnswer': {
             '@type': 'Answer',
-            'text': 'A semicolon is the best fix when the two clauses are closely related in idea. If they are less related, use a period. Use a coordinating conjunction (and, but, so, yet) when logical connection needs to be explicit. Each method creates a different rhythm and meaning — choose based on what you want to express.'
+            'text': 'A semicolon is the best fix when the two clauses are closely related in idea. If they are less related, use a period. Use a coordinating conjunction (and, but, so, yet) when logical connection needs to be explicit. Each method creates a different rhythm and meaning � choose based on what you want to express.'
           }
         }
       ]
@@ -8585,15 +11846,15 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on <a href="https://owl.purdue.edu/owl/general_writing/punctuation/independent_and_dependent_clauses/index.html" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Purdue OWL Clause Guide</a>.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on <a href="https://owl.purdue.edu/owl/general_writing/punctuation/independent_and_dependent_clauses/index.html" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Purdue OWL Clause Guide</a>.</span>
         </div>
 
         {/* Quick Answer Box */}
         <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-5 mb-8 rounded-r-lg">
           <h3 className="font-bold text-green-900 dark:text-green-200 mb-2">Quick Answer: What Is a Comma Splice?</h3>
-          <p className="text-green-800 dark:text-green-300">A <strong>comma splice</strong> occurs when two independent clauses (complete sentences) are joined with only a comma, with no coordinating conjunction. Fix it with: (1) a <strong>period</strong>, (2) a <strong>semicolon</strong>, or (3) a <strong>comma + coordinating conjunction</strong> (and, but, so, yet). Example: <em>"I went to the store, I bought milk."</em> → <em>"I went to the store, and I bought milk."</em></p>
+          <p className="text-green-800 dark:text-green-300">A <strong>comma splice</strong> occurs when two independent clauses (complete sentences) are joined with only a comma, with no coordinating conjunction. Fix it with: (1) a <strong>period</strong>, (2) a <strong>semicolon</strong>, or (3) a <strong>comma + coordinating conjunction</strong> (and, but, so, yet). Example: <em>"I went to the store, I bought milk."</em> ? <em>"I went to the store, and I bought milk."</em></p>
         </div>
 
         <ArticleParagraph>
@@ -8615,7 +11876,7 @@ export const BLOG_POSTS: BlogPost[] = [
         <ArticleHeading>Three Methods to Fix a Comma Splice</ArticleHeading>
 
         <ArticleParagraph><strong>Method 1: Use a Period (Two Separate Sentences)</strong></ArticleParagraph>
-        <ArticleParagraph>The simplest fix — separate the two independent clauses into individual sentences.</ArticleParagraph>
+        <ArticleParagraph>The simplest fix � separate the two independent clauses into individual sentences.</ArticleParagraph>
         <ExampleList items={[
           'Incorrect: I went to the store, I bought some milk.',
           'Correct: I went to the store. I bought some milk.'
@@ -8629,7 +11890,7 @@ export const BLOG_POSTS: BlogPost[] = [
         ]} />
 
         <ArticleParagraph><strong>Method 3: Add a Coordinating Conjunction</strong></ArticleParagraph>
-        <ArticleParagraph>Add a comma followed by a coordinating conjunction (for, and, nor, but, or, yet, so — remember FANBOYS).</ArticleParagraph>
+        <ArticleParagraph>Add a comma followed by a coordinating conjunction (for, and, nor, but, or, yet, so � remember FANBOYS).</ArticleParagraph>
         <ExampleList items={[
           'Incorrect: She studied hard, she passed the exam.',
           'Correct: She studied hard, so she passed the exam.',
@@ -8637,7 +11898,7 @@ export const BLOG_POSTS: BlogPost[] = [
           'Correct: The weather was cold, but the children played outside.'
         ]} />
 
-        <ArticleHeading>15 Comma Splice Examples — Corrected</ArticleHeading>
+        <ArticleHeading>15 Comma Splice Examples � Corrected</ArticleHeading>
         <div className="overflow-x-auto my-6">
           <table className="min-w-full border-collapse border border-slate-300 dark:border-slate-600 text-sm">
             <thead className="bg-slate-100 dark:bg-slate-700">
@@ -8673,15 +11934,15 @@ export const BLOG_POSTS: BlogPost[] = [
         <BulletList items={[
           <><strong>Comma splice:</strong> Two independent clauses joined with only a comma. <em>"She left, he stayed."</em></>,
           <><strong>Run-on (fused) sentence:</strong> Two independent clauses with no punctuation at all. <em>"She left he stayed."</em></>,
-          <><strong>Both are errors</strong> — a comma splice at least includes a comma, while a run-on has nothing between the clauses.</>
+          <><strong>Both are errors</strong> � a comma splice at least includes a comma, while a run-on has nothing between the clauses.</>
         ]} />
 
         <ArticleHeading>When Comma Splices Are Intentional</ArticleHeading>
         <ArticleParagraph>
-          Skilled writers sometimes use comma splices deliberately for stylistic effect — to create pace, rhythm, or dramatic brevity. The most famous example in history:
+          Skilled writers sometimes use comma splices deliberately for stylistic effect � to create pace, rhythm, or dramatic brevity. The most famous example in history:
         </ArticleParagraph>
         <ArticleParagraph>
-          <em>"Veni, vidi, vici."</em> — Julius Caesar ("I came, I saw, I conquered.") — technically three comma splices, but the rapid rhythm creates powerful impact.
+          <em>"Veni, vidi, vici."</em> � Julius Caesar ("I came, I saw, I conquered.") � technically three comma splices, but the rapid rhythm creates powerful impact.
         </ArticleParagraph>
         <BulletList items={[
           <>Modern literary example: <em>"She was beautiful, she was dangerous, she was mine."</em> (stylistic rhythm)</>,
@@ -8692,10 +11953,10 @@ export const BLOG_POSTS: BlogPost[] = [
         <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-600 p-6 my-8 rounded">
           <h3 className="font-bold text-lg mb-3">Related Grammar Topics</h3>
           <BulletList items={[
-            <><Link to="/topics/run-on-sentences" className="text-blue-600 hover:underline dark:text-blue-400">Run-On Sentences Guide</Link> — Fix fused sentences and comma splices</>,
-            <><Link to="/blog/punctuation-guide-colons-semicolons" className="text-blue-600 hover:underline dark:text-blue-400">Colons and Semicolons Guide</Link> — Master these powerful punctuation marks</>,
-            <><Link to="/topics/sentence-structure" className="text-blue-600 hover:underline dark:text-blue-400">Sentence Structure</Link> — Build clear, effective sentences</>,
-            <><Link to="/interactive-exercises" className="text-blue-600 hover:underline dark:text-blue-400">Interactive Grammar Exercises</Link> — Practice fixing comma splices</>
+            <><Link to="/topics/run-on-sentences/" className="text-blue-600 hover:underline dark:text-blue-400">Run-On Sentences Guide</Link> � Fix fused sentences and comma splices</>,
+            <><Link to="/blog/punctuation-guide-colons-semicolons/" className="text-blue-600 hover:underline dark:text-blue-400">Colons and Semicolons Guide</Link> � Master these powerful punctuation marks</>,
+            <><Link to="/topics/sentence-structure/" className="text-blue-600 hover:underline dark:text-blue-400">Sentence Structure</Link> � Build clear, effective sentences</>,
+            <><Link to="/interactive-exercises/" className="text-blue-600 hover:underline dark:text-blue-400">Interactive Grammar Exercises</Link> � Practice fixing comma splices</>
           ]} />
         </div>
        </>
@@ -8717,7 +11978,7 @@ export const BLOG_POSTS: BlogPost[] = [
           'name': 'What can I use instead of very?',
           'acceptedAnswer': {
             '@type': 'Answer',
-            'text': 'Replace "very" with stronger single adjectives: very tired → exhausted, very hungry → ravenous, very happy → elated, very good → excellent, very big → enormous, very small → tiny, very cold → freezing.'
+            'text': 'Replace "very" with stronger single adjectives: very tired ? exhausted, very hungry ? ravenous, very happy ? elated, very good ? excellent, very big ? enormous, very small ? tiny, very cold ? freezing.'
           }
         },
         {
@@ -8744,9 +12005,9 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Alternatives verified with <a href="https://www.merriam-webster.com/thesaurus" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Merriam-Webster Thesaurus</a>.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Alternatives verified with <a href="https://www.merriam-webster.com/thesaurus" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Merriam-Webster Thesaurus</a>.</span>
         </div>
 
         <ArticleParagraph>
@@ -8759,7 +12020,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>Why "Very" Weakens Your Writing</ArticleHeading>
         <ArticleParagraph>
-          The adverb "very" is a utility word—it's functional but forgettable. When you write "very tired" instead of <strong>"exhausted,"</strong> you're using two words where one stronger word would suffice. This pattern makes your writing:
+          The adverb "very" is a utility word�it's functional but forgettable. When you write "very tired" instead of <strong>"exhausted,"</strong> you're using two words where one stronger word would suffice. This pattern makes your writing:
         </ArticleParagraph>
         
         <BulletList items={[
@@ -8862,29 +12123,29 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <div className="grid md:grid-cols-2 gap-4 my-6">
           <div className="bg-red-50 dark:bg-red-900/20 p-4 rounded border-l-4 border-red-500">
-            <p className="font-bold mb-2 text-red-700 dark:text-red-400">❌ Weak (with "very"):</p>
+            <p className="font-bold mb-2 text-red-700 dark:text-red-400">? Weak (with "very"):</p>
             <p className="italic">"I was very tired after the very long meeting. The presentation was very boring and the room was very hot."</p>
           </div>
           <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded border-l-4 border-green-500">
-            <p className="font-bold mb-2 text-green-700 dark:text-green-400">✅ Strong (with powerful adjectives):</p>
+            <p className="font-bold mb-2 text-green-700 dark:text-green-400">? Strong (with powerful adjectives):</p>
             <p className="italic">"I was exhausted after the interminable meeting. The presentation was tedious and the room was sweltering."</p>
           </div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-4 my-6">
           <div className="bg-red-50 dark:bg-red-900/20 p-4 rounded border-l-4 border-red-500">
-            <p className="font-bold mb-2 text-red-700 dark:text-red-400">❌ Weak:</p>
+            <p className="font-bold mb-2 text-red-700 dark:text-red-400">? Weak:</p>
             <p className="italic">"The food was very good and the restaurant was very clean. The service was very fast."</p>
           </div>
           <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded border-l-4 border-green-500">
-            <p className="font-bold mb-2 text-green-700 dark:text-green-400">✅ Strong:</p>
+            <p className="font-bold mb-2 text-green-700 dark:text-green-400">? Strong:</p>
             <p className="italic">"The food was exceptional and the restaurant was immaculate. The service was prompt."</p>
           </div>
         </div>
 
         <ArticleHeading>How to Build Your Vocabulary with Stronger Adjectives</ArticleHeading>
         <ArticleParagraph>
-          Simply memorizing a list won't help—you need to actively practice using these words. Here's how:
+          Simply memorizing a list won't help�you need to actively practice using these words. Here's how:
         </ArticleParagraph>
 
         <BulletList items={[
@@ -8909,11 +12170,11 @@ export const BLOG_POSTS: BlogPost[] = [
         ]} />
 
         <ArticleParagraph>
-          The goal isn't to eliminate "very" entirely—it's to use it consciously rather than as a default intensifier.
+          The goal isn't to eliminate "very" entirely�it's to use it consciously rather than as a default intensifier.
         </ArticleParagraph>
 
         <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-600 p-6 my-8 rounded">
-          <h3 className="font-bold text-lg mb-4">💡 Frequently Asked Questions</h3>
+          <h3 className="font-bold text-lg mb-4">?? Frequently Asked Questions</h3>
           
           <div className="mb-4">
             <p className="font-bold mb-2">Why should I avoid using "very" in my writing?</p>
@@ -8932,7 +12193,7 @@ export const BLOG_POSTS: BlogPost[] = [
           <div className="mb-4">
             <p className="font-bold mb-2">How can I remember stronger adjectives instead of using "very"?</p>
             <ArticleParagraph>
-              Create mental associations: "very tired" → think of being completely drained → "exhausted." Practice by revising your own writing, replacing every "very" you find. Reading quality writing also exposes you to varied vocabulary naturally.
+              Create mental associations: "very tired" ? think of being completely drained ? "exhausted." Practice by revising your own writing, replacing every "very" you find. Reading quality writing also exposes you to varied vocabulary naturally.
             </ArticleParagraph>
           </div>
 
@@ -8952,7 +12213,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-600 p-6 my-8 rounded">
-          <h3 className="font-bold text-lg mb-3">✏️ Practice Exercise: Eliminate "Very"</h3>
+          <h3 className="font-bold text-lg mb-3">?? Practice Exercise: Eliminate "Very"</h3>
           <ArticleParagraph>
             Rewrite these sentences by replacing "very" with stronger adjectives:
           </ArticleParagraph>
@@ -8976,15 +12237,15 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-600 p-6 my-8 rounded">
-          <h3 className="font-bold text-lg mb-3">🚀 Continue Improving Your Writing Skills</h3>
+          <h3 className="font-bold text-lg mb-3">?? Continue Improving Your Writing Skills</h3>
           <ArticleParagraph>
             Ready to take your vocabulary to the next level? Explore these resources:
           </ArticleParagraph>
           <BulletList items={[
-            <><Link to="/blog/commonly-confused-word-pairs" className="text-blue-600 hover:underline dark:text-blue-400">Commonly Confused Word Pairs</Link> - Master tricky vocabulary distinctions</>,
-            <><Link to="/blog/phrasal-verbs-native-speaker" className="text-blue-600 hover:underline dark:text-blue-400">Phrasal Verbs Guide</Link> - Sound more natural and fluent</>,
-            <><Link to="/idioms" className="text-blue-600 hover:underline dark:text-blue-400">English Idioms Library</Link> - Learn colorful expressions</>,
-            <><Link to="/grammar-guide" className="text-blue-600 hover:underline dark:text-blue-400">Complete Grammar Guide</Link> - Master all aspects of English</>
+            <><Link to="/blog/commonly-confused-word-pairs/" className="text-blue-600 hover:underline dark:text-blue-400">Commonly Confused Word Pairs</Link> - Master tricky vocabulary distinctions</>,
+            <><Link to="/blog/phrasal-verbs-native-speaker/" className="text-blue-600 hover:underline dark:text-blue-400">Phrasal Verbs Guide</Link> - Sound more natural and fluent</>,
+            <><Link to="/idioms/" className="text-blue-600 hover:underline dark:text-blue-400">English Idioms Library</Link> - Learn colorful expressions</>,
+            <><Link to="/grammar-guide/" className="text-blue-600 hover:underline dark:text-blue-400">Complete Grammar Guide</Link> - Master all aspects of English</>
           ]} />
         </div>
 
@@ -8999,7 +12260,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "The Surprising History of 'Hello': How Thomas Edison Changed Greetings Forever",
     author: 'Prof. Jonathan Edwards, Historical Linguistics',
     date: 'March 26, 2026',
-    summary: "Before 1876, almost nobody said 'hello.' Discover how the telephone invention, a debate between Thomas Edison and Alexander Graham Bell, and the world's first phone operators transformed 'hello' from obscure to universal—the fascinating etymology behind our most common greeting.",
+    summary: "Before 1876, almost nobody said 'hello.' Discover how the telephone invention, a debate between Thomas Edison and Alexander Graham Bell, and the world's first phone operators transformed 'hello' from obscure to universal�the fascinating etymology behind our most common greeting.",
     category: 'Etymology',
     schemaMarkup: {
       '@context': 'https://schema.org',
@@ -9010,7 +12271,7 @@ export const BLOG_POSTS: BlogPost[] = [
           'name': 'Where does the word "hello" come from?',
           'acceptedAnswer': {
             '@type': 'Answer',
-            'text': '"Hello" has roots in Old English "hāl" (whole/healthy), Old High German "halâ" (fetch/summon), and the hunting cry "halloo." Before 1876, it was mainly an exclamation to get attention, not a greeting.'
+            'text': '"Hello" has roots in Old English "hal" (whole/healthy), Old High German "hal�" (fetch/summon), and the hunting cry "halloo." Before 1876, it was mainly an exclamation to get attention, not a greeting.'
           }
         },
         {
@@ -9059,8 +12320,8 @@ export const BLOG_POSTS: BlogPost[] = [
        <>
         {/* Author Bio Box */}
         <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg p-4 mb-6 flex items-start gap-4">
-          <div className="w-12 h-12 bg-amber-100 dark:bg-amber-900 rounded-full flex items-center justify-center flex-shrink-0">
-            <span className="text-amber-600 dark:text-amber-300 font-bold text-lg">JE</span>
+          <div className="w-12 h-12 bg-teal-100 dark:bg-teal-900 rounded-full flex items-center justify-center flex-shrink-0">
+            <span className="text-teal-600 dark:text-teal-300 font-bold text-lg">JE</span>
           </div>
           <div>
             <p className="font-semibold text-slate-900 dark:text-slate-100">Prof. Jonathan Edwards</p>
@@ -9069,21 +12330,21 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on <a href="https://www.oed.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Oxford English Dictionary</a> research.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on <a href="https://www.oed.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Oxford English Dictionary</a> research.</span>
         </div>
 
         {/* Quick Answer Box */}
         <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-5 mb-8 rounded-r-lg">
           <h2 className="text-lg font-bold text-green-900 dark:text-green-200 mb-2">Quick Answer</h2>
           <p className="text-green-800 dark:text-green-300">
-            <strong>Hello was popularized by Thomas Edison in 1877 for telephone use.</strong> Before that, it was just an exclamation to get someone's attention. Alexander Graham Bell preferred "Ahoy" as the telephone greeting — but Edison's suggestion won. Telephone operators called "hello girls" spread the word nationwide, and by the 1890s, "hello" had become the universal greeting in the English-speaking world.
+            <strong>Hello was popularized by Thomas Edison in 1877 for telephone use.</strong> Before that, it was just an exclamation to get someone's attention. Alexander Graham Bell preferred "Ahoy" as the telephone greeting � but Edison's suggestion won. Telephone operators called "hello girls" spread the word nationwide, and by the 1890s, "hello" had become the universal greeting in the English-speaking world.
           </p>
         </div>
 
         <ArticleParagraph>
-          Say "hello" to someone today and you're participating in a linguistic tradition that's barely 150 years old. Hard to believe? Before the invention of the telephone in 1876, <strong>"hello"</strong> was rarely used in everyday conversation. People greeted each other with phrases like "Good day," "How do you do?" or "Good morning"—but almost never "hello."
+          Say "hello" to someone today and you're participating in a linguistic tradition that's barely 150 years old. Hard to believe? Before the invention of the telephone in 1876, <strong>"hello"</strong> was rarely used in everyday conversation. People greeted each other with phrases like "Good day," "How do you do?" or "Good morning"�but almost never "hello."
         </ArticleParagraph>
         
         <ArticleParagraph>
@@ -9115,8 +12376,8 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg my-6 border border-slate-200 dark:border-slate-700">
           <BulletList items={[
-            <><strong>Old English "hāl"</strong> - meaning "whole" or "healthy," which evolved into "hale" (as in "hale and hearty")</>,
-            <><strong>Old High German "halâ"</strong> - meaning "fetch" or "summon," used to get someone's attention</>,
+            <><strong>Old English "hal"</strong> - meaning "whole" or "healthy," which evolved into "hale" (as in "hale and hearty")</>,
+            <><strong>Old High German "hal�"</strong> - meaning "fetch" or "summon," used to get someone's attention</>,
             <><strong>"Halloo"</strong> - a hunting cry used in the 1600s-1700s to urge hounds forward or call attention</>,
             <><strong>"Hollo"</strong> - a variant spelling meaning to shout or call out, documented from the 1580s</>,
             <><strong>"Holla"</strong> - a Spanish/French exclamation meaning "stop" or "hold," possibly influencing English</>
@@ -9124,7 +12385,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         <ArticleParagraph>
-          The <strong>Oxford English Dictionary</strong> traces the first use of "hello" as a greeting to around <strong>1826</strong>, but it remained uncommon for decades. The word was more of an exclamation than a polite greeting—you might say it when surprised or trying to get someone's attention from a distance.
+          The <strong>Oxford English Dictionary</strong> traces the first use of "hello" as a greeting to around <strong>1826</strong>, but it remained uncommon for decades. The word was more of an exclamation than a polite greeting�you might say it when surprised or trying to get someone's attention from a distance.
         </ArticleParagraph>
 
         <ArticleHeading>The Telephone Revolution: Edison vs. Bell</ArticleHeading>
@@ -9133,7 +12394,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </ArticleParagraph>
 
         <ArticleParagraph>
-          Bell had a solution. Drawing from his nautical background, he suggested that people answer the telephone with <strong>"Ahoy!"</strong> or <strong>"Ahoy-ahoy!"</strong>—the traditional greeting sailors used when hailing ships. In his writings, Bell consistently used "Ahoy" and believed it would become the standard.
+          Bell had a solution. Drawing from his nautical background, he suggested that people answer the telephone with <strong>"Ahoy!"</strong> or <strong>"Ahoy-ahoy!"</strong>�the traditional greeting sailors used when hailing ships. In his writings, Bell consistently used "Ahoy" and believed it would become the standard.
         </ArticleParagraph>
 
         <ArticleParagraph>
@@ -9141,7 +12402,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </ArticleParagraph>
 
         <div className="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-lg my-6 border border-slate-200 dark:border-slate-700">
-          <h3 className="font-bold text-lg mb-3">⚡ The Great Telephone Greeting Debate</h3>
+          <h3 className="font-bold text-lg mb-3">? The Great Telephone Greeting Debate</h3>
           <div className="grid md:grid-cols-2 gap-4">
             <div>
               <p className="font-bold mb-2">Alexander Graham Bell's Choice:</p>
@@ -9172,11 +12433,11 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>The "Hello Girls" Spread the Word</ArticleHeading>
         <ArticleParagraph>
-          The tipping point came with the rise of <strong>telephone operators</strong>—almost exclusively young women who were nicknamed <strong>"hello girls."</strong> These operators were trained to answer calls with "Hello!" and they standardized the greeting across thousands of daily conversations.
+          The tipping point came with the rise of <strong>telephone operators</strong>�almost exclusively young women who were nicknamed <strong>"hello girls."</strong> These operators were trained to answer calls with "Hello!" and they standardized the greeting across thousands of daily conversations.
         </ArticleParagraph>
 
         <ArticleParagraph>
-          By the 1880s and 1890s, telephone use exploded, and "hello" became synonymous with answering the phone. From there, it was a short leap into everyday face-to-face greetings. People began using "hello" when meeting on the street, entering rooms, or greeting acquaintances—contexts where it had never been used before.
+          By the 1880s and 1890s, telephone use exploded, and "hello" became synonymous with answering the phone. From there, it was a short leap into everyday face-to-face greetings. People began using "hello" when meeting on the street, entering rooms, or greeting acquaintances�contexts where it had never been used before.
         </ArticleParagraph>
 
         <ArticleHeading>How "Hello" Conquered the World</ArticleHeading>
@@ -9185,7 +12446,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </ArticleParagraph>
 
         <BulletList items={[
-          <><strong>Many languages adopted "hello" directly:</strong> In Russia (Алло - "allo"), Turkey ("alo"), Greece (Αλλό - "alló"), and Japan (もしもし - "moshi moshi" for phones, but "harou" ハロー for greetings)</>,
+          <><strong>Many languages adopted "hello" directly:</strong> In Russia (???? - "allo"), Turkey ("alo"), Greece (???? - "all�"), and Japan (???? - "moshi moshi" for phones, but "harou" ??? for greetings)</>,
           <><strong>It became a universal word:</strong> Even in countries with their own greetings, "hello" is widely recognized and understood</>,
           <><strong>It entered pop culture:</strong> From "Hello, Dolly!" to Adele's "Hello," the word became iconic in music, film, and literature</>,
           <><strong>Digital communication:</strong> "Hello" translated seamlessly to email, instant messaging, and video calls</>
@@ -9211,11 +12472,11 @@ export const BLOG_POSTS: BlogPost[] = [
         <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg my-6 border border-slate-200 dark:border-slate-700">
           <BulletList items={[
             <><strong>Spanish:</strong> "Diga" (Spain - literally "speak"), "Bueno" (Mexico - "good"), "Hola" (general)</>,
-            <><strong>French:</strong> "Allô" (phone only), "Bonjour" (face-to-face)</>,
+            <><strong>French:</strong> "All�" (phone only), "Bonjour" (face-to-face)</>,
             <><strong>Italian:</strong> "Pronto" (literally "ready")</>,
-            <><strong>Korean:</strong> "Yeoboseyo" (여보세요 - phone only)</>,
-            <><strong>Japanese:</strong> "Moshi moshi" (もしもし - phone), "Konnichiwa" (face-to-face)</>,
-            <><strong>Chinese:</strong> "Wéi" (喂 - phone only)</>,
+            <><strong>Korean:</strong> "Yeoboseyo" (???? - phone only)</>,
+            <><strong>Japanese:</strong> "Moshi moshi" (???? - phone), "Konnichiwa" (face-to-face)</>,
+            <><strong>Chinese:</strong> "W�i" (? - phone only)</>,
             <><strong>Arabic:</strong> "Alo" (phone), "Marhaba" (face-to-face)</>
           ]} />
         </div>
@@ -9229,16 +12490,16 @@ export const BLOG_POSTS: BlogPost[] = [
           <><strong>"Hey"</strong> has become the dominant casual greeting, especially among younger speakers</>,
           <><strong>"Hi"</strong> strikes a balance between formal "hello" and casual "hey"</>,
           <><strong>"What's up?"</strong> and <strong>"How's it going?"</strong> often replace traditional greetings</>,
-          <><strong>Text/emoji greetings:</strong> 👋, "hiii," "heyyy," "sup" have created new digital conventions</>,
+          <><strong>Text/emoji greetings:</strong> ??, "hiii," "heyyy," "sup" have created new digital conventions</>,
           <><strong>Video call etiquette:</strong> "Hello" remains standard for professional video meetings</>
         ]} />
 
         <ArticleParagraph>
-          Despite these changes, "hello" remains the safest, most universally appropriate greeting in formal contexts—a legacy of Thomas Edison's 1877 decision that continues nearly 150 years later.
+          Despite these changes, "hello" remains the safest, most universally appropriate greeting in formal contexts�a legacy of Thomas Edison's 1877 decision that continues nearly 150 years later.
         </ArticleParagraph>
 
         <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-600 p-6 my-8 rounded">
-          <h3 className="font-bold text-lg mb-4">💡 Frequently Asked Questions</h3>
+          <h3 className="font-bold text-lg mb-4">?? Frequently Asked Questions</h3>
           
           <div className="mb-4">
             <p className="font-bold mb-2">When did people start saying "hello" as a greeting?</p>
@@ -9277,15 +12538,15 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-600 p-6 my-8 rounded">
-          <h3 className="font-bold text-lg mb-3">🌍 Explore More Language History</h3>
+          <h3 className="font-bold text-lg mb-3">?? Explore More Language History</h3>
           <ArticleParagraph>
             Love learning about word origins? Check out these related articles:
           </ArticleParagraph>
           <BulletList items={[
-            <><Link to="/blog/impact-of-arabic-on-english" className="text-blue-600 hover:underline dark:text-blue-400">Arabic Words in English</Link> - Discover 200+ Arabic influences in everyday English</>,
-            <><Link to="/blog/commonly-confused-word-pairs" className="text-blue-600 hover:underline dark:text-blue-400">Commonly Confused Word Pairs</Link> - Master tricky vocabulary distinctions</>,
-            <><Link to="/idioms" className="text-blue-600 hover:underline dark:text-blue-400">English Idioms Library</Link> - Learn the history behind colorful expressions</>,
-            <><Link to="/blog/phrasal-verbs-native-speaker" className="text-blue-600 hover:underline dark:text-blue-400">Phrasal Verbs Guide</Link> - Master natural English expressions</>
+            <><Link to="/blog/impact-of-arabic-on-english/" className="text-blue-600 hover:underline dark:text-blue-400">Arabic Words in English</Link> - Discover 200+ Arabic influences in everyday English</>,
+            <><Link to="/blog/commonly-confused-word-pairs/" className="text-blue-600 hover:underline dark:text-blue-400">Commonly Confused Word Pairs</Link> - Master tricky vocabulary distinctions</>,
+            <><Link to="/idioms/" className="text-blue-600 hover:underline dark:text-blue-400">English Idioms Library</Link> - Learn the history behind colorful expressions</>,
+            <><Link to="/blog/phrasal-verbs-native-speaker/" className="text-blue-600 hover:underline dark:text-blue-400">Phrasal Verbs Guide</Link> - Master natural English expressions</>
           ]} />
         </div>
 
@@ -9344,8 +12605,8 @@ export const BLOG_POSTS: BlogPost[] = [
        <>
         {/* Author Bio Box */}
         <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg p-4 mb-6 flex items-start gap-4">
-          <div className="w-12 h-12 bg-amber-100 dark:bg-amber-900 rounded-full flex items-center justify-center flex-shrink-0">
-            <span className="text-amber-600 dark:text-amber-300 font-bold text-lg">LT</span>
+          <div className="w-12 h-12 bg-teal-100 dark:bg-teal-900 rounded-full flex items-center justify-center flex-shrink-0">
+            <span className="text-teal-600 dark:text-teal-300 font-bold text-lg">LT</span>
           </div>
           <div>
             <p className="font-semibold text-slate-900 dark:text-slate-100">Prof. Lisa Thompson</p>
@@ -9354,19 +12615,19 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on <a href="https://dictionary.cambridge.org/grammar/british-grammar/multi-word-verbs" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Cambridge Grammar</a> and <a href="https://www.macmillandictionary.com/phrasal-verbs" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Macmillan Phrasal Verbs Plus</a> research.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on <a href="https://dictionary.cambridge.org/grammar/british-grammar/multi-word-verbs" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Cambridge Grammar</a> and <a href="https://www.macmillandictionary.com/phrasal-verbs" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Macmillan Phrasal Verbs Plus</a> research.</span>
         </div>
 
         {/* Fluency Statistics */}
         <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-700 rounded-lg p-4 mb-6">
-          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">🎯 Phrasal Verbs: Fluency Facts</h4>
+          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">?? Phrasal Verbs: Fluency Facts</h4>
           <ul className="text-sm text-green-700 dark:text-green-300 space-y-1">
-            <li>• Native speakers use an average of 2-3 phrasal verbs per minute in casual conversation</li>
-            <li>• There are ~10,000 phrasal verbs in English; ~3,000 are commonly used</li>
-            <li>• Phrasal verb mastery correlates with IELTS Band 7+ in Speaking fluency criteria</li>
-            <li>• Learners who study phrasal verbs in context retain 60% more than those who memorize lists</li>
+            <li>� Native speakers use an average of 2-3 phrasal verbs per minute in casual conversation</li>
+            <li>� There are ~10,000 phrasal verbs in English; ~3,000 are commonly used</li>
+            <li>� Phrasal verb mastery correlates with IELTS Band 7+ in Speaking fluency criteria</li>
+            <li>� Learners who study phrasal verbs in context retain 60% more than those who memorize lists</li>
           </ul>
         </div>
 
@@ -9402,7 +12663,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>Why Phrasal Verbs Are Essential for Fluency</ArticleHeading>
         <ArticleParagraph>
-          Native speakers use phrasal verbs <strong>constantly</strong>—especially in informal speech. Here's why mastering them transforms your English:
+          Native speakers use phrasal verbs <strong>constantly</strong>�especially in informal speech. Here's why mastering them transforms your English:
         </ArticleParagraph>
 
         <BulletList items={[
@@ -9568,9 +12829,9 @@ export const BLOG_POSTS: BlogPost[] = [
           </ArticleParagraph>
           <BulletList items={[
             <>"I ran <strong>into</strong> my friend" (CORRECT)</>,
-            <>❌ "I ran my friend into" (WRONG)</>,
+            <>? "I ran my friend into" (WRONG)</>,
             <>"I look <strong>after</strong> my sister" (CORRECT)</>,
-            <>❌ "I look my sister after" (WRONG)</>
+            <>? "I look my sister after" (WRONG)</>
           ]} />
         </div>
 
@@ -9592,7 +12853,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-600 p-6 my-8 rounded">
-          <h3 className="font-bold text-lg mb-3">✏️ Practice Exercise: Real-Life Scenarios</h3>
+          <h3 className="font-bold text-lg mb-3">?? Practice Exercise: Real-Life Scenarios</h3>
           <ArticleParagraph>
             Fill in the blanks with appropriate phrasal verbs:
           </ArticleParagraph>
@@ -9626,7 +12887,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-600 p-6 my-8 rounded">
-          <h3 className="font-bold text-lg mb-4">💡 Frequently Asked Questions</h3>
+          <h3 className="font-bold text-lg mb-4">?? Frequently Asked Questions</h3>
           
           <div className="mb-4">
             <p className="font-bold mb-2">What's the fastest way to learn phrasal verbs?</p>
@@ -9652,7 +12913,7 @@ export const BLOG_POSTS: BlogPost[] = [
           <div className="mb-4">
             <p className="font-bold mb-2">Can I use formal verbs instead of phrasal verbs?</p>
             <ArticleParagraph>
-              In formal writing, yes—"postpone" instead of "put off," "investigate" instead of "look into." But in conversation, native speakers overwhelmingly prefer phrasal verbs. Using formal verbs in casual speech sounds unnatural and overly stiff.
+              In formal writing, yes�"postpone" instead of "put off," "investigate" instead of "look into." But in conversation, native speakers overwhelmingly prefer phrasal verbs. Using formal verbs in casual speech sounds unnatural and overly stiff.
             </ArticleParagraph>
           </div>
 
@@ -9665,15 +12926,15 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-600 p-6 my-8 rounded">
-          <h3 className="font-bold text-lg mb-3">🚀 Continue Your English Journey</h3>
+          <h3 className="font-bold text-lg mb-3">?? Continue Your English Journey</h3>
           <ArticleParagraph>
             Ready to sound even more like a native? Explore these resources:
           </ArticleParagraph>
           <BulletList items={[
-            <><Link to="/phrasal-verbs" className="text-blue-600 hover:underline dark:text-blue-400">Complete Phrasal Verbs Library</Link> - Browse 200+ phrasal verbs with examples</>,
-            <><Link to="/idioms" className="text-blue-600 hover:underline dark:text-blue-400">English Idioms Guide</Link> - Master colorful expressions</>,
-            <><Link to="/blog/stronger-adjectives" className="text-blue-600 hover:underline dark:text-blue-400">Stronger Adjectives to Replace 'Very'</Link> - Elevate your vocabulary</>,
-            <><Link to="/irregular-verbs" className="text-blue-600 hover:underline dark:text-blue-400">Irregular Verbs List</Link> - Perfect your verb conjugations</>
+            <><Link to="/phrasal-verbs/" className="text-blue-600 hover:underline dark:text-blue-400">Complete Phrasal Verbs Library</Link> - Browse 200+ phrasal verbs with examples</>,
+            <><Link to="/idioms/" className="text-blue-600 hover:underline dark:text-blue-400">English Idioms Guide</Link> - Master colorful expressions</>,
+            <><Link to="/blog/stronger-adjectives/" className="text-blue-600 hover:underline dark:text-blue-400">Stronger Adjectives to Replace 'Very'</Link> - Elevate your vocabulary</>,
+            <><Link to="/irregular-verbs/" className="text-blue-600 hover:underline dark:text-blue-400">Irregular Verbs List</Link> - Perfect your verb conjugations</>
           ]} />
         </div>
 
@@ -9688,7 +12949,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'How Reading Fiction Can Dramatically Improve Your Vocabulary',
     author: 'Dr. Rachel Green, Applied Linguistics & Reading Research',
     date: 'March 30, 2026',
-    summary: 'Looking for a fun way to learn new words? Reading stories is one of the most effective methods for vocabulary acquisition. Here’s why.',
+    summary: 'Looking for a fun way to learn new words? Reading stories is one of the most effective methods for vocabulary acquisition. Here�s why.',
     category: 'Learning Tips',
     schemaMarkup: {
       '@context': 'https://schema.org',
@@ -9758,60 +13019,60 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on vocabulary acquisition research from <a href="https://www.nichd.nih.gov/research/supported/pages/nrp.aspx" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">The National Reading Panel</a>.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on vocabulary acquisition research from <a href="https://www.nichd.nih.gov/research/supported/pages/nrp.aspx" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">The National Reading Panel</a>.</span>
         </div>
 
         {/* Quick Answer Box */}
         <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-5 mb-8 rounded-r-lg">
           <h3 className="font-bold text-green-900 dark:text-green-200 mb-2">Quick Answer</h3>
-          <p className="text-green-800 dark:text-green-300">Reading fiction is one of the <strong>most effective methods for vocabulary acquisition</strong>. Contextual word learning in stories is 72% more effective than flashcard memorization because stories provide emotional engagement, repetition across chapters, and natural usage patterns. Reading 20 minutes daily can expose you to <strong>1 million words per year</strong> — enough to acquire 10–25 new vocabulary words per week.</p>
+          <p className="text-green-800 dark:text-green-300">Reading fiction is one of the <strong>most effective methods for vocabulary acquisition</strong>. Contextual word learning in stories is 72% more effective than flashcard memorization because stories provide emotional engagement, repetition across chapters, and natural usage patterns. Reading 20 minutes daily can expose you to <strong>1 million words per year</strong> � enough to acquire 10�25 new vocabulary words per week.</p>
         </div>
 
         {/* Research Statistics Box */}
         <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-700 rounded-lg p-4 mb-6">
-          <h4 className="font-bold text-blue-900 dark:text-blue-200 mb-2">📊 Vocabulary and Reading: Key Research Statistics</h4>
+          <h4 className="font-bold text-blue-900 dark:text-blue-200 mb-2">?? Vocabulary and Reading: Key Research Statistics</h4>
           <ul className="text-sm text-blue-700 dark:text-blue-300 space-y-1">
-            <li>• Fiction readers encounter <strong>10x more unique vocabulary</strong> than conversation-only learners</li>
-            <li>• Context clues retain words <strong>72% more effectively</strong> than isolated flashcard study</li>
-            <li>• Reading just <strong>20 min/day</strong> = ~1 million words/year, gaining 10–25 new words weekly</li>
-            <li>• Students who read for pleasure score <strong>11%+ higher</strong> on vocabulary tests (PISA International Survey)</li>
-            <li>• Each new word requires <strong>10–15 contextual exposures</strong> for full acquisition — novels provide this naturally</li>
+            <li>� Fiction readers encounter <strong>10x more unique vocabulary</strong> than conversation-only learners</li>
+            <li>� Context clues retain words <strong>72% more effectively</strong> than isolated flashcard study</li>
+            <li>� Reading just <strong>20 min/day</strong> = ~1 million words/year, gaining 10�25 new words weekly</li>
+            <li>� Students who read for pleasure score <strong>11%+ higher</strong> on vocabulary tests (PISA International Survey)</li>
+            <li>� Each new word requires <strong>10�15 contextual exposures</strong> for full acquisition � novels provide this naturally</li>
           </ul>
         </div>
 
         <ArticleParagraph>
-          While flashcards and vocabulary apps have their place, one of the most effective — and enjoyable — ways to expand your vocabulary is by <strong>reading fiction</strong>. Stories immerse you in language the way no worksheet can, delivering vocabulary in the rich emotional context that makes words unforgettable. This guide explains the science behind reading for vocabulary, the best books to choose, and active reading strategies to maximize every page.
+          While flashcards and vocabulary apps have their place, one of the most effective � and enjoyable � ways to expand your vocabulary is by <strong>reading fiction</strong>. Stories immerse you in language the way no worksheet can, delivering vocabulary in the rich emotional context that makes words unforgettable. This guide explains the science behind reading for vocabulary, the best books to choose, and active reading strategies to maximize every page.
         </ArticleParagraph>
 
         <ArticleHeading>Why Fiction Works: The Science of Contextual Learning</ArticleHeading>
         <ArticleParagraph>
-          When you encounter a new word in a novel, you see it working in context. It is embedded in a sentence, surrounded by context clues, tied to a character or a dramatic moment. This <strong>incidental vocabulary acquisition</strong> — learning words without specifically trying to — is how children learn their first language, and research shows it works powerfully for second-language learners too.
+          When you encounter a new word in a novel, you see it working in context. It is embedded in a sentence, surrounded by context clues, tied to a character or a dramatic moment. This <strong>incidental vocabulary acquisition</strong> � learning words without specifically trying to � is how children learn their first language, and research shows it works powerfully for second-language learners too.
         </ArticleParagraph>
         <BulletList items={[
-          <><strong>Context clues:</strong> A story's surrounding words hint at meaning — "His face was wan and pale after three sleepless nights" tells you <em>wan</em> means pale/sickly without a dictionary.</>,
+          <><strong>Context clues:</strong> A story's surrounding words hint at meaning � "His face was wan and pale after three sleepless nights" tells you <em>wan</em> means pale/sickly without a dictionary.</>,
           <><strong>Emotional encoding:</strong> Words tied to exciting plot moments are encoded in long-term memory more deeply than abstract list entries.</>,
-          <><strong>Natural repetition:</strong> Authors reuse key vocabulary across chapters, giving you 10–15 exposures — the threshold researchers identify for full word acquisition.</>,
+          <><strong>Natural repetition:</strong> Authors reuse key vocabulary across chapters, giving you 10�15 exposures � the threshold researchers identify for full word acquisition.</>,
           <><strong>Collocation patterns:</strong> You absorb how words naturally combine with others (e.g., "growing concern," "raise awareness"), building authentic usage patterns.</>
         ]} />
 
         <ArticleHeading>Context is King: Why Stories Beat Definitions</ArticleHeading>
         <ArticleParagraph>
-          When you learn "melancholy" from a flashcard, you get: <em>melancholy = sadness</em>. When you learn it from a novel — "She sat by the window with a quiet melancholy, watching the rain erase the street" — you absorb the emotional weight, the typical context, and the grammatical usage simultaneously. No flashcard can match this.
+          When you learn "melancholy" from a flashcard, you get: <em>melancholy = sadness</em>. When you learn it from a novel � "She sat by the window with a quiet melancholy, watching the rain erase the street" � you absorb the emotional weight, the typical context, and the grammatical usage simultaneously. No flashcard can match this.
         </ArticleParagraph>
 
         <ArticleHeading>Repetition and Emotion: The Memory Supercharger</ArticleHeading>
         <ArticleParagraph>
-          Authors often reuse specific words or themes throughout a book, giving you multiple exposures to new vocabulary in slightly different contexts. A word introduced in chapter 3 reappears in chapter 7, then chapter 14 — each time reinforcing the meaning. By the end of a 300-page novel, you may have encountered a new vocabulary item 20+ times without conscious effort.
+          Authors often reuse specific words or themes throughout a book, giving you multiple exposures to new vocabulary in slightly different contexts. A word introduced in chapter 3 reappears in chapter 7, then chapter 14 � each time reinforcing the meaning. By the end of a 300-page novel, you may have encountered a new vocabulary item 20+ times without conscious effort.
         </ArticleParagraph>
         <ArticleParagraph>
-          Furthermore, because stories engage our emotions, we are more likely to remember words associated with characters we love or plot twists that surprised us. Neuroscience confirms that emotional experiences create stronger memories — words learned during exciting or heart-breaking moments are retained far more effectively than through rote repetition.
+          Furthermore, because stories engage our emotions, we are more likely to remember words associated with characters we love or plot twists that surprised us. Neuroscience confirms that emotional experiences create stronger memories � words learned during exciting or heart-breaking moments are retained far more effectively than through rote repetition.
         </ArticleParagraph>
 
         <ArticleHeading>Active vs. Passive Reading for Vocabulary Growth</ArticleHeading>
         <ArticleParagraph>
-          Not all reading is equally effective. <strong>Active reading</strong> — engaging consciously with the text — produces far better results than skimming for plot.
+          Not all reading is equally effective. <strong>Active reading</strong> � engaging consciously with the text � produces far better results than skimming for plot.
         </ArticleParagraph>
         <div className="overflow-x-auto my-6">
           <table className="min-w-full border-collapse border border-slate-300 dark:border-slate-600 text-sm">
@@ -9849,28 +13110,28 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>Best Fiction Books for English Vocabulary by Level</ArticleHeading>
         <ArticleParagraph>
-          The golden rule: choose books where you understand <strong>90–95% of the words</strong>. If you need to stop every sentence to look up words, the book is too hard. Start slightly below your comfort zone, then progress.
+          The golden rule: choose books where you understand <strong>90�95% of the words</strong>. If you need to stop every sentence to look up words, the book is too hard. Start slightly below your comfort zone, then progress.
         </ArticleParagraph>
-        <ArticleParagraph><strong>Beginner to Intermediate (A2–B1):</strong></ArticleParagraph>
+        <ArticleParagraph><strong>Beginner to Intermediate (A2�B1):</strong></ArticleParagraph>
         <BulletList items={[
-          <><em>Charlotte's Web</em> by E.B. White — warm, simple prose; excellent for describing emotions</>,
-          <><em>The Little Prince</em> by Antoine de Saint-Exupery — philosophical themes in accessible language</>,
-          <><em>Of Mice and Men</em> by John Steinbeck — conversational dialogue, regional vocabulary</>,
-          <><em>The Old Man and the Sea</em> by Ernest Hemingway — short, clear sentences; rich descriptive vocabulary</>
+          <><em>Charlotte's Web</em> by E.B. White � warm, simple prose; excellent for describing emotions</>,
+          <><em>The Little Prince</em> by Antoine de Saint-Exupery � philosophical themes in accessible language</>,
+          <><em>Of Mice and Men</em> by John Steinbeck � conversational dialogue, regional vocabulary</>,
+          <><em>The Old Man and the Sea</em> by Ernest Hemingway � short, clear sentences; rich descriptive vocabulary</>
         ]} />
-        <ArticleParagraph><strong>Intermediate (B1–B2):</strong></ArticleParagraph>
+        <ArticleParagraph><strong>Intermediate (B1�B2):</strong></ArticleParagraph>
         <BulletList items={[
-          <><em>Harry Potter and the Philosopher's Stone</em> by J.K. Rowling — rich world-building vocabulary, accessible narrative</>,
-          <><em>The Alchemist</em> by Paulo Coelho — philosophical vocabulary in positive narrative</>,
-          <><em>Tuesdays with Morrie</em> by Mitch Albom — emotional vocabulary, accessible storytelling</>,
-          <><em>The Hunger Games</em> by Suzanne Collins — fast-paced action vocabulary</>
+          <><em>Harry Potter and the Philosopher's Stone</em> by J.K. Rowling � rich world-building vocabulary, accessible narrative</>,
+          <><em>The Alchemist</em> by Paulo Coelho � philosophical vocabulary in positive narrative</>,
+          <><em>Tuesdays with Morrie</em> by Mitch Albom � emotional vocabulary, accessible storytelling</>,
+          <><em>The Hunger Games</em> by Suzanne Collins � fast-paced action vocabulary</>
         ]} />
-        <ArticleParagraph><strong>Upper-Intermediate to Advanced (B2–C1):</strong></ArticleParagraph>
+        <ArticleParagraph><strong>Upper-Intermediate to Advanced (B2�C1):</strong></ArticleParagraph>
         <BulletList items={[
-          <><em>To Kill a Mockingbird</em> by Harper Lee — moral, legal, and social vocabulary</>,
-          <><em>1984</em> by George Orwell — political, philosophical vocabulary; Orwell's clear prose</>,
-          <><em>Pride and Prejudice</em> by Jane Austen — formal and social register vocabulary</>,
-          <><em>The Great Gatsby</em> by F. Scott Fitzgerald — rich descriptive and emotional language</>
+          <><em>To Kill a Mockingbird</em> by Harper Lee � moral, legal, and social vocabulary</>,
+          <><em>1984</em> by George Orwell � political, philosophical vocabulary; Orwell's clear prose</>,
+          <><em>Pride and Prejudice</em> by Jane Austen � formal and social register vocabulary</>,
+          <><em>The Great Gatsby</em> by F. Scott Fitzgerald � rich descriptive and emotional language</>
         ]} />
 
         <ArticleHeading>The Vocabulary Notebook Method</ArticleHeading>
@@ -9878,12 +13139,12 @@ export const BLOG_POSTS: BlogPost[] = [
           The single most effective technique for retaining fiction vocabulary is keeping a <strong>vocabulary notebook</strong>:
         </ArticleParagraph>
         <BulletList items={[
-          <><strong>Step 1 — Mark:</strong> While reading, lightly underline or mark any unfamiliar word.</>,
-          <><strong>Step 2 — Guess:</strong> Before looking it up, guess the meaning from context. Write your guess.</>,
-          <><strong>Step 3 — Verify:</strong> At the end of a chapter, check your guesses in a dictionary.</>,
-          <><strong>Step 4 — Record:</strong> Enter the word with: (a) the original sentence from the book, (b) the definition, (c) a new sentence YOU create.</>,
-          <><strong>Step 5 — Review:</strong> Use spaced repetition (app like Anki) — review new words after 1 day, 3 days, 1 week, 1 month.</>,
-          <><strong>Step 6 — Use it:</strong> Try to use each new word in conversation or writing within 24 hours. Active use cements vocabulary permanently.</>
+          <><strong>Step 1 � Mark:</strong> While reading, lightly underline or mark any unfamiliar word.</>,
+          <><strong>Step 2 � Guess:</strong> Before looking it up, guess the meaning from context. Write your guess.</>,
+          <><strong>Step 3 � Verify:</strong> At the end of a chapter, check your guesses in a dictionary.</>,
+          <><strong>Step 4 � Record:</strong> Enter the word with: (a) the original sentence from the book, (b) the definition, (c) a new sentence YOU create.</>,
+          <><strong>Step 5 � Review:</strong> Use spaced repetition (app like Anki) � review new words after 1 day, 3 days, 1 week, 1 month.</>,
+          <><strong>Step 6 � Use it:</strong> Try to use each new word in conversation or writing within 24 hours. Active use cements vocabulary permanently.</>
         ]} />
 
         <ArticleHeading>Genre-Specific Vocabulary: Choose Your Focus</ArticleHeading>
@@ -9900,19 +13161,19 @@ export const BLOG_POSTS: BlogPost[] = [
           Consistency beats intensity. Twenty minutes of daily reading outperforms a single two-hour weekly session for vocabulary acquisition.
         </ArticleParagraph>
         <BulletList items={[
-          <><strong>Same time, same place:</strong> Attach reading to an existing habit — morning coffee, lunch break, before bed.</>,
+          <><strong>Same time, same place:</strong> Attach reading to an existing habit � morning coffee, lunch break, before bed.</>,
           <><strong>Set page goals:</strong> "Read 10 pages today" is more concrete than "read for 20 minutes."</>,
-          <><strong>Do not force boring books:</strong> Engagement is essential — a book that bores you is vocabulary lost. Switch freely.</>,
+          <><strong>Do not force boring books:</strong> Engagement is essential � a book that bores you is vocabulary lost. Switch freely.</>,
           <><strong>Track your progress:</strong> Apps like Goodreads let you track books read and set yearly goals to maintain motivation.</>
         ]} />
 
         <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-600 p-6 my-8 rounded">
           <h3 className="font-bold text-lg mb-3">Continue Building Your Vocabulary</h3>
           <BulletList items={[
-            <><Link to="/blog/stronger-adjectives" className="text-blue-600 hover:underline dark:text-blue-400">50+ Powerful Adjectives to Replace "Very"</Link> — Elevate the words you already know</>,
-            <><Link to="/commonly-confused-words" className="text-blue-600 hover:underline dark:text-blue-400">Commonly Confused Words Guide</Link> — Master subtle vocabulary distinctions</>,
-            <><Link to="/idioms" className="text-blue-600 hover:underline dark:text-blue-400">English Idioms Library</Link> — Learn colorful expressions found in native-speaker fiction</>,
-            <><Link to="/blog/improve-english-fluency-without-memorizing" className="text-blue-600 hover:underline dark:text-blue-400">Improve English Fluency Without Memorizing</Link> — Natural fluency techniques</>
+            <><Link to="/blog/stronger-adjectives/" className="text-blue-600 hover:underline dark:text-blue-400">50+ Powerful Adjectives to Replace "Very"</Link> � Elevate the words you already know</>,
+            <><Link to="/commonly-confused-words/" className="text-blue-600 hover:underline dark:text-blue-400">Commonly Confused Words Guide</Link> � Master subtle vocabulary distinctions</>,
+            <><Link to="/idioms/" className="text-blue-600 hover:underline dark:text-blue-400">English Idioms Library</Link> � Learn colorful expressions found in native-speaker fiction</>,
+            <><Link to="/blog/improve-english-fluency-without-memorizing/" className="text-blue-600 hover:underline dark:text-blue-400">Improve English Fluency Without Memorizing</Link> � Natural fluency techniques</>
           ]} />
         </div>
        </>
@@ -9923,7 +13184,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'Active vs. Passive Voice: When and Why to Use Each',
     author: 'Prof. Mark Stevens, Applied Linguistics (TESOL)',
     date: 'March 26, 2026',
-    summary: 'Active voice makes writing stronger and clearer; passive voice has essential uses in academic, scientific, and formal writing. This comprehensive guide explains both voices, shows how to form passive in every tense, and teaches when to choose each — with 30+ examples and IELTS writing guidance.',
+    summary: 'Active voice makes writing stronger and clearer; passive voice has essential uses in academic, scientific, and formal writing. This comprehensive guide explains both voices, shows how to form passive in every tense, and teaches when to choose each � with 30+ examples and IELTS writing guidance.',
     category: 'Sentence Structure',
     schemaMarkup: {
       '@context': 'https://schema.org',
@@ -9950,7 +13211,7 @@ export const BLOG_POSTS: BlogPost[] = [
           'name': 'Is passive voice wrong in English?',
           'acceptedAnswer': {
             '@type': 'Answer',
-            'text': 'No, passive voice is not grammatically wrong. However, overusing it makes writing wordy, indirect, and harder to read. Academic style guides like APA recommend active voice for clarity, though passive is perfectly acceptable — and often preferred — in scientific writing, formal reports, and when the actor is unknown.'
+            'text': 'No, passive voice is not grammatically wrong. However, overusing it makes writing wordy, indirect, and harder to read. Academic style guides like APA recommend active voice for clarity, though passive is perfectly acceptable � and often preferred � in scientific writing, formal reports, and when the actor is unknown.'
           }
         },
         {
@@ -9983,8 +13244,8 @@ export const BLOG_POSTS: BlogPost[] = [
        <>
         {/* Author Bio Box */}
         <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg p-4 mb-6 flex items-start gap-4">
-          <div className="w-12 h-12 bg-orange-100 dark:bg-orange-900 rounded-full flex items-center justify-center flex-shrink-0">
-            <span className="text-orange-600 dark:text-orange-300 font-bold text-lg">MS</span>
+          <div className="w-12 h-12 bg-teal-100 dark:bg-teal-900 rounded-full flex items-center justify-center flex-shrink-0">
+            <span className="text-teal-600 dark:text-teal-300 font-bold text-lg">MS</span>
           </div>
           <div>
             <p className="font-semibold text-slate-900 dark:text-slate-100">Prof. Mark Stevens</p>
@@ -9993,58 +13254,58 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on <a href="https://owl.purdue.edu/owl/general_writing/academic_writing/active_and_passive_voice/index.html" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Purdue OWL</a> and <a href="https://dictionary.cambridge.org/grammar/british-grammar/passive-voice" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Cambridge Grammar</a> guidelines.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on <a href="https://owl.purdue.edu/owl/general_writing/academic_writing/active_and_passive_voice/index.html" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Purdue OWL</a> and <a href="https://dictionary.cambridge.org/grammar/british-grammar/passive-voice" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Cambridge Grammar</a> guidelines.</span>
         </div>
 
         {/* Quick Answer Box */}
         <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-5 mb-8 rounded-r-lg">
           <h2 className="text-lg font-bold text-green-900 dark:text-green-200 mb-2">Quick Answer</h2>
           <p className="text-green-800 dark:text-green-300">
-            <strong>Active voice:</strong> The subject does the action. <em>"The chef cooked the meal."</em> — Direct, strong, preferred for most writing.
-            <br /><strong>Passive voice:</strong> The subject receives the action. <em>"The meal was cooked by the chef."</em> — Used when the actor is unknown, unimportant, or when objectivity is needed (scientific writing, formal reports).
+            <strong>Active voice:</strong> The subject does the action. <em>"The chef cooked the meal."</em> � Direct, strong, preferred for most writing.
+            <br /><strong>Passive voice:</strong> The subject receives the action. <em>"The meal was cooked by the chef."</em> � Used when the actor is unknown, unimportant, or when objectivity is needed (scientific writing, formal reports).
             <br />Rule of thumb: <strong>Default to active voice</strong>. Switch to passive when you have a deliberate reason.
           </p>
         </div>
 
         {/* Quick Comparison Table */}
-        <div className="bg-gradient-to-r from-orange-50 to-amber-50 dark:from-slate-800 dark:to-slate-700 border border-orange-200 dark:border-orange-700 rounded-lg p-5 mb-6">
-          <h4 className="font-bold text-lg text-orange-900 dark:text-orange-200 mb-4">Active vs Passive Voice: Quick Comparison</h4>
+        <div className="bg-gradient-to-r from-teal-50 to-teal-50 dark:from-slate-800 dark:to-slate-700 border border-teal-200 dark:border-teal-700 rounded-lg p-5 mb-6">
+          <h4 className="font-bold text-lg text-teal-900 dark:text-teal-200 mb-4">Active vs Passive Voice: Quick Comparison</h4>
           <div className="overflow-x-auto">
             <table className="min-w-full border-collapse text-sm">
               <thead>
-                <tr className="bg-orange-100 dark:bg-slate-600">
-                  <th className="border border-orange-200 dark:border-slate-500 px-3 py-2 text-left">Feature</th>
-                  <th className="border border-orange-200 dark:border-slate-500 px-3 py-2 text-left">Active Voice</th>
-                  <th className="border border-orange-200 dark:border-slate-500 px-3 py-2 text-left">Passive Voice</th>
+                <tr className="bg-teal-100 dark:bg-slate-600">
+                  <th className="border border-teal-200 dark:border-slate-500 px-3 py-2 text-left">Feature</th>
+                  <th className="border border-teal-200 dark:border-slate-500 px-3 py-2 text-left">Active Voice</th>
+                  <th className="border border-teal-200 dark:border-slate-500 px-3 py-2 text-left">Passive Voice</th>
                 </tr>
               </thead>
               <tbody className="bg-white dark:bg-slate-700">
                 <tr>
-                  <td className="border border-orange-200 dark:border-slate-500 px-3 py-2 font-semibold">Structure</td>
-                  <td className="border border-orange-200 dark:border-slate-500 px-3 py-2">Subject + Verb + Object</td>
-                  <td className="border border-orange-200 dark:border-slate-500 px-3 py-2">Object + be + Past Participle (+ by Subject)</td>
+                  <td className="border border-teal-200 dark:border-slate-500 px-3 py-2 font-semibold">Structure</td>
+                  <td className="border border-teal-200 dark:border-slate-500 px-3 py-2">Subject + Verb + Object</td>
+                  <td className="border border-teal-200 dark:border-slate-500 px-3 py-2">Object + be + Past Participle (+ by Subject)</td>
                 </tr>
                 <tr>
-                  <td className="border border-orange-200 dark:border-slate-500 px-3 py-2 font-semibold">Example</td>
-                  <td className="border border-orange-200 dark:border-slate-500 px-3 py-2 italic">The chef cooked the meal.</td>
-                  <td className="border border-orange-200 dark:border-slate-500 px-3 py-2 italic">The meal was cooked by the chef.</td>
+                  <td className="border border-teal-200 dark:border-slate-500 px-3 py-2 font-semibold">Example</td>
+                  <td className="border border-teal-200 dark:border-slate-500 px-3 py-2 italic">The chef cooked the meal.</td>
+                  <td className="border border-teal-200 dark:border-slate-500 px-3 py-2 italic">The meal was cooked by the chef.</td>
                 </tr>
                 <tr>
-                  <td className="border border-orange-200 dark:border-slate-500 px-3 py-2 font-semibold">Focus</td>
-                  <td className="border border-orange-200 dark:border-slate-500 px-3 py-2">Who did the action</td>
-                  <td className="border border-orange-200 dark:border-slate-500 px-3 py-2">What received the action</td>
+                  <td className="border border-teal-200 dark:border-slate-500 px-3 py-2 font-semibold">Focus</td>
+                  <td className="border border-teal-200 dark:border-slate-500 px-3 py-2">Who did the action</td>
+                  <td className="border border-teal-200 dark:border-slate-500 px-3 py-2">What received the action</td>
                 </tr>
                 <tr>
-                  <td className="border border-orange-200 dark:border-slate-500 px-3 py-2 font-semibold">Tone</td>
-                  <td className="border border-orange-200 dark:border-slate-500 px-3 py-2">Direct, clear, engaging</td>
-                  <td className="border border-orange-200 dark:border-slate-500 px-3 py-2">Formal, objective, impersonal</td>
+                  <td className="border border-teal-200 dark:border-slate-500 px-3 py-2 font-semibold">Tone</td>
+                  <td className="border border-teal-200 dark:border-slate-500 px-3 py-2">Direct, clear, engaging</td>
+                  <td className="border border-teal-200 dark:border-slate-500 px-3 py-2">Formal, objective, impersonal</td>
                 </tr>
                 <tr>
-                  <td className="border border-orange-200 dark:border-slate-500 px-3 py-2 font-semibold">Best for</td>
-                  <td className="border border-orange-200 dark:border-slate-500 px-3 py-2">Most writing, storytelling</td>
-                  <td className="border border-orange-200 dark:border-slate-500 px-3 py-2">Scientific writing, unknown actors</td>
+                  <td className="border border-teal-200 dark:border-slate-500 px-3 py-2 font-semibold">Best for</td>
+                  <td className="border border-teal-200 dark:border-slate-500 px-3 py-2">Most writing, storytelling</td>
+                  <td className="border border-teal-200 dark:border-slate-500 px-3 py-2">Scientific writing, unknown actors</td>
                 </tr>
               </tbody>
             </table>
@@ -10055,16 +13316,16 @@ export const BLOG_POSTS: BlogPost[] = [
         <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-700 rounded-lg p-4 mb-6">
           <h4 className="font-bold text-blue-900 dark:text-blue-200 mb-2">Voice Usage in Academic and Professional Writing</h4>
           <ul className="text-sm text-blue-800 dark:text-blue-300 space-y-1">
-            <li>• ~75% of sentences in news articles use active voice (Reuters Style Guide)</li>
-            <li>• Scientific journals use passive in 30-40% of sentences for objectivity</li>
-            <li>• Passive voice questions appear in ~25% of TOEFL/IELTS grammar sections</li>
-            <li>• Academic style guides (APA, Chicago, Purdue OWL) recommend active voice as the default</li>
-            <li>• IELTS Task 1 process descriptions almost always require passive voice</li>
+            <li>� ~75% of sentences in news articles use active voice (Reuters Style Guide)</li>
+            <li>� Scientific journals use passive in 30-40% of sentences for objectivity</li>
+            <li>� Passive voice questions appear in ~25% of TOEFL/IELTS grammar sections</li>
+            <li>� Academic style guides (APA, Chicago, Purdue OWL) recommend active voice as the default</li>
+            <li>� IELTS Task 1 process descriptions almost always require passive voice</li>
           </ul>
         </div>
 
         <ArticleParagraph>
-          Understanding the difference between active and passive voice is essential for clear writing, passing English exams, and producing professional-level English. The two voices are not competing options where one is "right" — they each serve a distinct communicative purpose.
+          Understanding the difference between active and passive voice is essential for clear writing, passing English exams, and producing professional-level English. The two voices are not competing options where one is "right" � they each serve a distinct communicative purpose.
         </ArticleParagraph>
 
         <ArticleHeading>Active Voice: Structure and Examples</ArticleHeading>
@@ -10145,13 +13406,13 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>When to Use Passive Voice</ArticleHeading>
         <ArticleParagraph>
-          Passive voice is not a mistake — it is a tool. Use it deliberately in these situations:
+          Passive voice is not a mistake � it is a tool. Use it deliberately in these situations:
         </ArticleParagraph>
         <BulletList items={[
           <><strong>Actor unknown:</strong> "My wallet was stolen." (We do not know who stole it.)</>,
           <><strong>Actor unimportant:</strong> "The bridge was built in 1920." (Who built it is less important than the fact it was built.)</>,
           <><strong>Emphasize the object:</strong> "The Mona Lisa was painted by Leonardo da Vinci." (Focus is on the painting.)</>,
-          <><strong>Scientific/technical objectivity:</strong> "The solution was heated to 100°C and then filtered." (Standard lab report style.)</>,
+          <><strong>Scientific/technical objectivity:</strong> "The solution was heated to 100�C and then filtered." (Standard lab report style.)</>,
           <><strong>Diplomatic language:</strong> "Mistakes were made." (Avoids assigning blame directly.)</>,
           <><strong>Formal announcements:</strong> "The winner has been selected." (Impersonal, formal tone.)</>,
         ]} />
@@ -10162,7 +13423,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </ArticleParagraph>
         <div className="grid md:grid-cols-2 gap-4 my-6">
           <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded border-l-4 border-green-500">
-            <p className="font-bold mb-2 text-green-700 dark:text-green-400">Task 1 (Academic) — Using Passive</p>
+            <p className="font-bold mb-2 text-green-700 dark:text-green-400">Task 1 (Academic) � Using Passive</p>
             <BulletList items={[
               "Process diagrams: 'The water is filtered and then purified.'",
               "Describing charts: 'The data was collected over five years.'",
@@ -10170,7 +13431,7 @@ export const BLOG_POSTS: BlogPost[] = [
             ]} />
           </div>
           <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded border-l-4 border-blue-500">
-            <p className="font-bold mb-2 text-blue-700 dark:text-blue-400">Task 2 (Opinion Essays) — Using Active</p>
+            <p className="font-bold mb-2 text-blue-700 dark:text-blue-400">Task 2 (Opinion Essays) � Using Active</p>
             <BulletList items={[
               "Arguments: 'Governments should invest more in education.'",
               "Your view: 'I believe technology improves quality of life.'",
@@ -10214,11 +13475,11 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>When Passive Cannot Be Converted to Active</ArticleHeading>
         <ArticleParagraph>
-          If there is no "by" phrase and the actor is unknown, it is often impossible — or unnatural — to convert to active:
+          If there is no "by" phrase and the actor is unknown, it is often impossible � or unnatural � to convert to active:
         </ArticleParagraph>
         <ExampleList items={[
-          "My car was stolen. (no agent — who stole it is unknown)",
-          "The road has been closed. (official notice — who closed it is irrelevant)",
+          "My car was stolen. (no agent � who stole it is unknown)",
+          "The road has been closed. (official notice � who closed it is irrelevant)",
           "She was born in London. ('born' is almost always passive)",
         ]} />
 
@@ -10226,10 +13487,10 @@ export const BLOG_POSTS: BlogPost[] = [
         <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-5 mt-8 rounded-r-lg">
           <h3 className="font-bold text-green-900 dark:text-green-200 mb-3">Continue Learning</h3>
           <ul className="space-y-2 text-sm">
-            <li><Link to="/topics/passive-voice" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 font-medium">Passive Voice — Complete Grammar Topic</Link></li>
-            <li><Link to="/blog/mastering-the-comma-splice" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 font-medium">Mastering the Comma Splice</Link></li>
-            <li><Link to="/blog/5-common-grammar-mistakes" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 font-medium">5 Most Common Grammar Mistakes</Link></li>
-            <li><Link to="/blog/whom-modern-usage" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 font-medium">Who vs Whom: Modern Usage Guide</Link></li>
+            <li><Link to="/topics/passive-voice/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 font-medium">Passive Voice � Complete Grammar Topic</Link></li>
+            <li><Link to="/blog/mastering-the-comma-splice/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 font-medium">Mastering the Comma Splice</Link></li>
+            <li><Link to="/blog/5-common-grammar-mistakes/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 font-medium">5 Most Common Grammar Mistakes</Link></li>
+            <li><Link to="/blog/whom-modern-usage/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 font-medium">Who vs Whom: Modern Usage Guide</Link></li>
           </ul>
         </div>
        </>
@@ -10300,8 +13561,8 @@ export const BLOG_POSTS: BlogPost[] = [
        <>
         {/* Author Bio Box */}
         <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg p-4 mb-6 flex items-start gap-4">
-          <div className="w-12 h-12 bg-orange-100 dark:bg-orange-900 rounded-full flex items-center justify-center flex-shrink-0">
-            <span className="text-orange-600 dark:text-orange-300 font-bold text-lg">SC</span>
+          <div className="w-12 h-12 bg-teal-100 dark:bg-teal-900 rounded-full flex items-center justify-center flex-shrink-0">
+            <span className="text-teal-600 dark:text-teal-300 font-bold text-lg">SC</span>
           </div>
           <div>
             <p className="font-semibold text-slate-900 dark:text-slate-100">Sarah Collins</p>
@@ -10310,16 +13571,16 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on <a href="https://www.britishcouncil.org/english/learn-online" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">British Council</a> and <a href="https://www.cambridge.org/elt" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Cambridge ELT</a> pronunciation research.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on <a href="https://www.britishcouncil.org/english/learn-online" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">British Council</a> and <a href="https://www.cambridge.org/elt" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Cambridge ELT</a> pronunciation research.</span>
         </div>
 
         {/* Quick Answer Box */}
         <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-5 mb-8 rounded-r-lg">
           <h2 className="text-lg font-bold text-green-900 dark:text-green-200 mb-2">Quick Answer</h2>
           <p className="text-green-800 dark:text-green-300">
-            The fastest way to improve English pronunciation: <strong>record yourself daily, practice minimal pairs, learn 44 IPA phonemes, and focus on the TH, R, and vowel sounds</strong>. Most learners see clear improvement in 2-3 months with 15-20 minutes of focused daily practice. The goal is not a perfect accent — it is <strong>clear, confident communication</strong>.
+            The fastest way to improve English pronunciation: <strong>record yourself daily, practice minimal pairs, learn 44 IPA phonemes, and focus on the TH, R, and vowel sounds</strong>. Most learners see clear improvement in 2-3 months with 15-20 minutes of focused daily practice. The goal is not a perfect accent � it is <strong>clear, confident communication</strong>.
           </p>
         </div>
 
@@ -10327,7 +13588,7 @@ export const BLOG_POSTS: BlogPost[] = [
         <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-700 rounded-lg p-4 mb-8">
           <h4 className="font-bold text-blue-900 dark:text-blue-200 mb-2">Research: Pronunciation and Communication</h4>
           <ul className="text-sm text-blue-800 dark:text-blue-300 space-y-1">
-            <li>English has 44 distinct phonemes but only 26 letters — spelling is not a reliable guide to pronunciation</li>
+            <li>English has 44 distinct phonemes but only 26 letters � spelling is not a reliable guide to pronunciation</li>
             <li>The TH sound does not exist in over 80% of the world's major languages, making it universally difficult</li>
             <li>15-20 minutes of daily deliberate pronunciation practice produces measurable improvement in 8 weeks (Cambridge ELT, 2019)</li>
             <li>Stress and intonation affect comprehension more than individual sound errors for most learner groups</li>
@@ -10336,10 +13597,10 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         <ArticleParagraph>
-          English pronunciation trips up even advanced learners. The problem is this: English spelling and pronunciation are <strong>notoriously inconsistent</strong>. "Tough," "through," "cough," and "though" all end in -ough — yet none of them rhyme. Add to this the fact that English has borrowed words from French, Latin, Norse, and dozens of other languages, each with different phonological rules, and it is easy to see why pronunciation feels like a moving target.
+          English pronunciation trips up even advanced learners. The problem is this: English spelling and pronunciation are <strong>notoriously inconsistent</strong>. "Tough," "through," "cough," and "though" all end in -ough � yet none of them rhyme. Add to this the fact that English has borrowed words from French, Latin, Norse, and dozens of other languages, each with different phonological rules, and it is easy to see why pronunciation feels like a moving target.
         </ArticleParagraph>
         <ArticleParagraph>
-          The good news: you do not need a perfect accent. You need <strong>clear, intelligible speech</strong>. This guide gives you a systematic framework for the most common problem sounds, practical drills that work, and a daily habit that produces real results in weeks — not years.
+          The good news: you do not need a perfect accent. You need <strong>clear, intelligible speech</strong>. This guide gives you a systematic framework for the most common problem sounds, practical drills that work, and a daily habit that produces real results in weeks � not years.
         </ArticleParagraph>
 
         <ArticleHeading>The 5 Hardest English Sounds for Non-Native Speakers</ArticleHeading>
@@ -10361,7 +13622,7 @@ export const BLOG_POSTS: BlogPost[] = [
             <tbody>
               <tr className="bg-white dark:bg-slate-800">
                 <td className="border border-slate-300 dark:border-slate-600 p-3 font-medium">TH (unvoiced)</td>
-                <td className="border border-slate-300 dark:border-slate-600 p-3 font-mono">/θ/</td>
+                <td className="border border-slate-300 dark:border-slate-600 p-3 font-mono">/?/</td>
                 <td className="border border-slate-300 dark:border-slate-600 p-3">think, three, bath</td>
                 <td className="border border-slate-300 dark:border-slate-600 p-3">Replaced with /s/ or /t/</td>
                 <td className="border border-slate-300 dark:border-slate-600 p-3">Tongue lightly between teeth, breathe out</td>
@@ -10445,15 +13706,15 @@ export const BLOG_POSTS: BlogPost[] = [
           The <strong>International Phonetic Alphabet (IPA)</strong> assigns one unique symbol to every sound in every language. English has <strong>44 phonemes</strong> represented by about 30 distinct IPA symbols. Learning these symbols solves the spelling-pronunciation mismatch problem once and for all.
         </ArticleParagraph>
         <ArticleParagraph>
-          You do not need to master all IPA symbols — just the ones used for English. Here are the most useful ones to learn first:
+          You do not need to master all IPA symbols � just the ones used for English. Here are the most useful ones to learn first:
         </ArticleParagraph>
         <BulletList items={[
-          <><strong>/theta/ (unvoiced TH)</strong> — think, bath, three. Place tongue between teeth, breathe out without voice.</>,
-          <><strong>/eth/ (voiced TH)</strong> — this, breathe, father. Same as above, but add vocal vibration.</>,
-          <><strong>/schwa/ (unstressed vowel)</strong> — the, about, sofa. The most common vowel sound in English — a neutral, unstressed mid-central vowel.</>,
-          <><strong>/ae/</strong> — cat, bad, man. Open, front vowel. Mouth open wider than for /e/.</>,
-          <><strong>/r/</strong> — red, right. Curl tongue back slightly without touching the roof of the mouth.</>,
-          <><strong>/ng/</strong> — sing, think. A nasal sound made at the back of the throat, not with the lips or tongue tip.</>,
+          <><strong>/theta/ (unvoiced TH)</strong> � think, bath, three. Place tongue between teeth, breathe out without voice.</>,
+          <><strong>/eth/ (voiced TH)</strong> � this, breathe, father. Same as above, but add vocal vibration.</>,
+          <><strong>/schwa/ (unstressed vowel)</strong> � the, about, sofa. The most common vowel sound in English � a neutral, unstressed mid-central vowel.</>,
+          <><strong>/ae/</strong> � cat, bad, man. Open, front vowel. Mouth open wider than for /e/.</>,
+          <><strong>/r/</strong> � red, right. Curl tongue back slightly without touching the roof of the mouth.</>,
+          <><strong>/ng/</strong> � sing, think. A nasal sound made at the back of the throat, not with the lips or tongue tip.</>,
         ]} />
         <ArticleParagraph>
           Every major English dictionary (Oxford, Cambridge, Merriam-Webster) uses IPA symbols alongside definitions. Once you know these 15-20 key symbols, you can teach yourself the pronunciation of any new English word.
@@ -10461,7 +13722,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>Record Yourself: The Most Underused Learning Method</ArticleHeading>
         <ArticleParagraph>
-          Recording your voice is uncomfortable — but it works. Your brain hears your own voice differently while speaking (through bone conduction) compared to how others hear you. Recording yourself bridges this gap.
+          Recording your voice is uncomfortable � but it works. Your brain hears your own voice differently while speaking (through bone conduction) compared to how others hear you. Recording yourself bridges this gap.
         </ArticleParagraph>
         <BulletList items={[
           <>Record 60 seconds of natural speech (describe your day, a picture, or a news story).</>,
@@ -10495,8 +13756,8 @@ export const BLOG_POSTS: BlogPost[] = [
               </tr>
               <tr className="bg-slate-50 dark:bg-slate-700">
                 <td className="border border-slate-300 dark:border-slate-600 p-3">BATH vowel</td>
-                <td className="border border-slate-300 dark:border-slate-600 p-3">/a:/ — long, back</td>
-                <td className="border border-slate-300 dark:border-slate-600 p-3">/ae/ — short, open</td>
+                <td className="border border-slate-300 dark:border-slate-600 p-3">/a:/ � long, back</td>
+                <td className="border border-slate-300 dark:border-slate-600 p-3">/ae/ � short, open</td>
                 <td className="border border-slate-300 dark:border-slate-600 p-3">dance, bath, can't</td>
               </tr>
               <tr className="bg-white dark:bg-slate-800">
@@ -10507,8 +13768,8 @@ export const BLOG_POSTS: BlogPost[] = [
               </tr>
               <tr className="bg-slate-50 dark:bg-slate-700">
                 <td className="border border-slate-300 dark:border-slate-600 p-3">LOT vowel</td>
-                <td className="border border-slate-300 dark:border-slate-600 p-3">/o/ — rounded</td>
-                <td className="border border-slate-300 dark:border-slate-600 p-3">/a/ — unrounded</td>
+                <td className="border border-slate-300 dark:border-slate-600 p-3">/o/ � rounded</td>
+                <td className="border border-slate-300 dark:border-slate-600 p-3">/a/ � unrounded</td>
                 <td className="border border-slate-300 dark:border-slate-600 p-3">hot, lot, coffee</td>
               </tr>
             </tbody>
@@ -10520,11 +13781,11 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>Best Apps for Pronunciation Practice</ArticleHeading>
         <BulletList items={[
-          <><strong>ELSA Speak</strong> — AI-powered app that listens to your speech and gives sound-by-sound feedback. Rated #1 by ESL teachers. (Free + paid subscription)</>,
-          <><strong>Forvo</strong> — Crowd-sourced pronunciation dictionary with native speaker audio for 6 million+ words. Great for checking specific words.</>,
-          <><strong>YouGlish</strong> — Search any word and see it used in real YouTube videos by native speakers. Shows how words sound in natural connected speech.</>,
-          <><strong>Cambridge Dictionary</strong> — Every entry includes both British and American audio. Use the IPA transcription feature.</>,
-          <><strong>BBC Learning English</strong> — Free pronunciation courses including a dedicated "Pronunciation in the News" series.</>,
+          <><strong>ELSA Speak</strong> � AI-powered app that listens to your speech and gives sound-by-sound feedback. Rated #1 by ESL teachers. (Free + paid subscription)</>,
+          <><strong>Forvo</strong> � Crowd-sourced pronunciation dictionary with native speaker audio for 6 million+ words. Great for checking specific words.</>,
+          <><strong>YouGlish</strong> � Search any word and see it used in real YouTube videos by native speakers. Shows how words sound in natural connected speech.</>,
+          <><strong>Cambridge Dictionary</strong> � Every entry includes both British and American audio. Use the IPA transcription feature.</>,
+          <><strong>BBC Learning English</strong> � Free pronunciation courses including a dedicated "Pronunciation in the News" series.</>,
         ]} />
 
         <ArticleHeading>Word Stress and Sentence Rhythm</ArticleHeading>
@@ -10535,28 +13796,28 @@ export const BLOG_POSTS: BlogPost[] = [
           Focus on these stress patterns to sound more natural:
         </ArticleParagraph>
         <BulletList items={[
-          <><strong>Word stress is fixed</strong> — "PHOtograph" / "phoTOgraphy" / "photoGRAPHic." Stress shifts depending on the word form. Use a dictionary to check.</>,
-          <><strong>Sentence stress highlights content words</strong> — nouns, verbs, adjectives, and adverbs are stressed; articles, prepositions, and pronouns are usually unstressed and reduced.</>,
-          <><strong>The schwa appears everywhere</strong> — unstressed syllables in English reduce to schwa (/schwa/). "About" is /schwa-BOUT/, not /A-bout/.</>,
+          <><strong>Word stress is fixed</strong> � "PHOtograph" / "phoTOgraphy" / "photoGRAPHic." Stress shifts depending on the word form. Use a dictionary to check.</>,
+          <><strong>Sentence stress highlights content words</strong> � nouns, verbs, adjectives, and adverbs are stressed; articles, prepositions, and pronouns are usually unstressed and reduced.</>,
+          <><strong>The schwa appears everywhere</strong> � unstressed syllables in English reduce to schwa (/schwa/). "About" is /schwa-BOUT/, not /A-bout/.</>,
         ]} />
 
         <ArticleHeading>Your 5-Minute Daily Pronunciation Routine</ArticleHeading>
         <BulletList items={[
-          <><strong>1 min: Tongue warmup</strong> — Say "the tip of the tongue" 5 times fast, then practice the TH sound 10 times with a mirror.</>,
-          <><strong>1 min: Minimal pairs</strong> — Pick one pair from the list above and alternate 10 times per word.</>,
-          <><strong>1 min: Shadow reading</strong> — Find a 30-second audio clip (YouTube, podcast). Play 5 seconds, pause, repeat exactly what you heard including rhythm and intonation.</>,
-          <><strong>1 min: Record yourself</strong> — Read one paragraph aloud and record it.</>,
-          <><strong>1 min: Review</strong> — Listen back and mark one thing to improve tomorrow.</>,
+          <><strong>1 min: Tongue warmup</strong> � Say "the tip of the tongue" 5 times fast, then practice the TH sound 10 times with a mirror.</>,
+          <><strong>1 min: Minimal pairs</strong> � Pick one pair from the list above and alternate 10 times per word.</>,
+          <><strong>1 min: Shadow reading</strong> � Find a 30-second audio clip (YouTube, podcast). Play 5 seconds, pause, repeat exactly what you heard including rhythm and intonation.</>,
+          <><strong>1 min: Record yourself</strong> � Read one paragraph aloud and record it.</>,
+          <><strong>1 min: Review</strong> � Listen back and mark one thing to improve tomorrow.</>,
         ]} />
 
         {/* Internal Links */}
         <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-5 mt-8 rounded-r-lg">
           <h3 className="font-bold text-green-900 dark:text-green-200 mb-3">Continue Learning</h3>
           <ul className="space-y-2 text-sm">
-            <li><Link to="/blog/improve-english-fluency-without-memorizing" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 font-medium">How to Improve English Fluency Without Memorizing</Link></li>
-            <li><Link to="/blog/best-apps-for-learning-english-conversation" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 font-medium">Best Apps for Learning English Conversation</Link></li>
-            <li><Link to="/blog/best-websites-free-english-grammar-practice" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 font-medium">Best Free Websites for English Grammar Practice</Link></li>
-            <li><Link to="/topics/phonetics-pronunciation" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 font-medium">Phonetics and Pronunciation — Grammar Topic</Link></li>
+            <li><Link to="/blog/improve-english-fluency-without-memorizing/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 font-medium">How to Improve English Fluency Without Memorizing</Link></li>
+            <li><Link to="/blog/best-apps-for-learning-english-conversation/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 font-medium">Best Apps for Learning English Conversation</Link></li>
+            <li><Link to="/blog/best-websites-free-english-grammar-practice/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 font-medium">Best Free Websites for English Grammar Practice</Link></li>
+            <li><Link to="/topics/phonetics-pronunciation/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 font-medium">Phonetics and Pronunciation � Grammar Topic</Link></li>
           </ul>
         </div>
        </>
@@ -10567,7 +13828,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'The Oxford Comma Debate: Complete Guide to Serial Comma Rules (With 50+ Examples)',
     author: 'Dr. Margaret Powell, Style Guide Editor',
     date: 'March 26, 2026',
-    summary: "The Oxford comma divides writers worldwide. Discover what it is, why it matters, famous examples of ambiguity, and how to choose between AP Style and Chicago Style. From 'my parents, Ayn Rand and God' to legal contracts worth millions—this comprehensive guide settles the debate.",
+    summary: "The Oxford comma divides writers worldwide. Discover what it is, why it matters, famous examples of ambiguity, and how to choose between AP Style and Chicago Style. From 'my parents, Ayn Rand and God' to legal contracts worth millions�this comprehensive guide settles the debate.",
     category: 'Punctuation',
     schemaMarkup: {
       '@context': 'https://schema.org',
@@ -10613,19 +13874,19 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — References <a href="https://www.chicagomanualofstyle.org" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Chicago Manual of Style</a> and <a href="https://www.apstylebook.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">AP Stylebook</a>.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � References <a href="https://www.chicagomanualofstyle.org" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Chicago Manual of Style</a> and <a href="https://www.apstylebook.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">AP Stylebook</a>.</span>
         </div>
 
         {/* Statistics Box */}
         <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-700 rounded-lg p-4 mb-6">
-          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">🎯 Oxford Comma: Key Facts</h4>
+          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">?? Oxford Comma: Key Facts</h4>
           <ul className="text-sm text-green-700 dark:text-green-300 space-y-1">
-            <li>• ~57% of Americans prefer the Oxford comma (FiveThirtyEight survey)</li>
-            <li>• Chicago, APA, MLA styles require it; AP Style omits it</li>
-            <li>• O'Connor v. Oakhurst Dairy (2017): $10M lawsuit hinged on a missing comma</li>
-            <li>• Academic writing overwhelmingly uses the Oxford comma</li>
+            <li>� ~57% of Americans prefer the Oxford comma (FiveThirtyEight survey)</li>
+            <li>� Chicago, APA, MLA styles require it; AP Style omits it</li>
+            <li>� O'Connor v. Oakhurst Dairy (2017): $10M lawsuit hinged on a missing comma</li>
+            <li>� Academic writing overwhelmingly uses the Oxford comma</li>
           </ul>
         </div>
 
@@ -10644,7 +13905,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <div className="grid md:grid-cols-2 gap-4 my-6">
           <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded border-l-4 border-green-500">
-            <p className="font-bold mb-2 text-green-700 dark:text-green-400">✅ With Oxford Comma:</p>
+            <p className="font-bold mb-2 text-green-700 dark:text-green-400">? With Oxford Comma:</p>
             <BulletList items={[
               "I like apples, bananas, and oranges.",
               "She speaks English, Spanish, and French.",
@@ -10652,7 +13913,7 @@ export const BLOG_POSTS: BlogPost[] = [
             ]} />
           </div>
           <div className="bg-red-50 dark:bg-red-900/20 p-4 rounded border-l-4 border-red-500">
-            <p className="font-bold mb-2 text-red-700 dark:text-red-400">❌ Without Oxford Comma:</p>
+            <p className="font-bold mb-2 text-red-700 dark:text-red-400">? Without Oxford Comma:</p>
             <BulletList items={[
               "I like apples, bananas and oranges.",
               "She speaks English, Spanish and French.",
@@ -10667,15 +13928,15 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>The Famous Examples That Show Why It Matters</ArticleHeading>
         <ArticleParagraph>
-          The debate isn't just academic—real confusion and legal disputes have resulted from missing or misplaced Oxford commas.
+          The debate isn't just academic�real confusion and legal disputes have resulted from missing or misplaced Oxford commas.
         </ArticleParagraph>
 
         <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg my-6 border border-slate-200 dark:border-slate-700">
           <h3 className="font-bold mb-3">1. "My Parents, Ayn Rand and God"</h3>
           <p className="mb-2"><strong>Without Oxford comma:</strong> "I'd like to thank my parents, Ayn Rand and God."</p>
-          <p className="mb-2 text-red-600 dark:text-red-400">😕 Implies the speaker's parents ARE Ayn Rand and God</p>
+          <p className="mb-2 text-red-600 dark:text-red-400">?? Implies the speaker's parents ARE Ayn Rand and God</p>
           <p className="mb-2"><strong>With Oxford comma:</strong> "I'd like to thank my parents, Ayn Rand, and God."</p>
-          <p className="text-green-600 dark:text-green-400">✅ Clearly three separate entities: parents + Ayn Rand + God</p>
+          <p className="text-green-600 dark:text-green-400">? Clearly three separate entities: parents + Ayn Rand + God</p>
         </div>
 
         <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg my-6 border border-slate-200 dark:border-slate-700">
@@ -10688,16 +13949,16 @@ export const BLOG_POSTS: BlogPost[] = [
             The question: Does "packing for shipment or distribution" mean ONE activity (packing for the purpose of shipment/distribution) or TWO activities (packing + distribution)?
           </ArticleParagraph>
           <ArticleParagraph>
-            Without an Oxford comma before "or distribution," the court ruled it meant ONE activity—so distribution workers (the truck drivers) WERE entitled to overtime. An Oxford comma would have cost the company millions less.
+            Without an Oxford comma before "or distribution," the court ruled it meant ONE activity�so distribution workers (the truck drivers) WERE entitled to overtime. An Oxford comma would have cost the company millions less.
           </ArticleParagraph>
         </div>
 
         <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg my-6 border border-slate-200 dark:border-slate-700">
           <h3 className="font-bold mb-3">3. "Nelson Mandela, a Dildo Collector"</h3>
           <p className="mb-2"><strong>Without Oxford comma:</strong> "The documentary featured Nelson Mandela, an 800-year-old demigod and a dildo collector."</p>
-          <p className="mb-2 text-red-600 dark:text-red-400">😱 Implies Nelson Mandela IS both an 800-year-old demigod AND a dildo collector</p>
+          <p className="mb-2 text-red-600 dark:text-red-400">?? Implies Nelson Mandela IS both an 800-year-old demigod AND a dildo collector</p>
           <p className="mb-2"><strong>With Oxford comma:</strong> "The documentary featured Nelson Mandela, an 800-year-old demigod, and a dildo collector."</p>
-          <p className="text-green-600 dark:text-green-400">✅ Three separate subjects featured in the documentary</p>
+          <p className="text-green-600 dark:text-green-400">? Three separate subjects featured in the documentary</p>
         </div>
 
         <ArticleHeading>The Case FOR the Oxford Comma</ArticleHeading>
@@ -10708,7 +13969,7 @@ export const BLOG_POSTS: BlogPost[] = [
         <BulletList items={[
           <><strong>Prevents ambiguity:</strong> Eliminates confusion about whether items are related or separate</>,
           <><strong>Maintains parallelism:</strong> If you use commas between all other items, why skip the last one?</>,
-          <><strong>Consistency:</strong> One rule applies to all lists—always use it</>,
+          <><strong>Consistency:</strong> One rule applies to all lists�always use it</>,
           <><strong>Legal clarity:</strong> Courts prefer it to avoid million-dollar misinterpretations</>,
           <><strong>Academic standard:</strong> Chicago Manual of Style, MLA, APA, and Oxford Style Guide all require it</>,
           <><strong>Easier to read:</strong> Provides a clear pause before the final item</>
@@ -10718,7 +13979,7 @@ export const BLOG_POSTS: BlogPost[] = [
           <h3 className="font-bold mb-3">More Examples Where Oxford Comma Prevents Confusion:</h3>
           <BulletList items={[
             <><strong>"She took a photograph of her parents, the president and the vice president."</strong><br/>Without comma: Her parents ARE the president and vice president<br/>With comma: Four separate people in photo</>,
-            <><strong>"I love my siblings, Lady Gaga and Beyoncé."</strong><br/>Without comma: Your siblings are Lady Gaga and Beyoncé<br/>With comma: You love three things/groups</>,
+            <><strong>"I love my siblings, Lady Gaga and Beyonc�."</strong><br/>Without comma: Your siblings are Lady Gaga and Beyonc�<br/>With comma: You love three things/groups</>,
             <><strong>"This book is dedicated to my parents, Stephen King and J.K. Rowling."</strong><br/>Without comma: Your parents are famous authors!<br/>With comma: Dedication to three parties</>,
             <><strong>"The menu includes pasta, chicken and ham, and vegetarian options."</strong><br/>The Oxford comma clarifies "chicken and ham" is ONE dish, while "vegetarian options" is separate</>
           ]} />
@@ -10731,7 +13992,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <BulletList items={[
           <><strong>Usually unnecessary:</strong> Most lists are clear without it: "I bought bread, milk and eggs" causes no confusion</>,
-          <><strong>Saves space:</strong> Newspapers and journalism prioritize brevity—every character matters in headlines</>,
+          <><strong>Saves space:</strong> Newspapers and journalism prioritize brevity�every character matters in headlines</>,
           <><strong>Can create ambiguity too:</strong> Sometimes the Oxford comma causes confusion rather than preventing it</>,
           <><strong>Extra work:</strong> One less comma to type or edit</>,
           <><strong>AP Style authority:</strong> The Associated Press Stylebook (used by most journalists) omits it</>,
@@ -10755,7 +14016,7 @@ export const BLOG_POSTS: BlogPost[] = [
         <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg my-6 border border-slate-200 dark:border-slate-700">
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <h3 className="font-bold mb-3 text-green-700 dark:text-green-400">✅ REQUIRES Oxford Comma:</h3>
+              <h3 className="font-bold mb-3 text-green-700 dark:text-green-400">? REQUIRES Oxford Comma:</h3>
               <BulletList items={[
                 <><strong>Chicago Manual of Style</strong> (book publishing)</>,
                 <><strong>MLA Style</strong> (humanities, literature)</>,
@@ -10769,7 +14030,7 @@ export const BLOG_POSTS: BlogPost[] = [
               ]} />
             </div>
             <div>
-              <h3 className="font-bold mb-3 text-red-700 dark:text-red-400">❌ OMITS Oxford Comma:</h3>
+              <h3 className="font-bold mb-3 text-red-700 dark:text-red-400">? OMITS Oxford Comma:</h3>
               <BulletList items={[
                 <><strong>AP Stylebook</strong> (journalism, news)</>,
                 <><strong>New York Times</strong></>,
@@ -10810,14 +14071,14 @@ export const BLOG_POSTS: BlogPost[] = [
         ]} />
 
         <ArticleParagraph>
-          <strong>However:</strong> If you're writing for journalism or following AP Style for work, omit it according to that style guide. The most important rule is <strong>consistency</strong>—whatever you choose, use it throughout your document.
+          <strong>However:</strong> If you're writing for journalism or following AP Style for work, omit it according to that style guide. The most important rule is <strong>consistency</strong>�whatever you choose, use it throughout your document.
         </ArticleParagraph>
 
         <ArticleHeading>Quick Reference Rules</ArticleHeading>
         <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg my-6 border border-slate-200 dark:border-slate-700">
           <BulletList items={[
             <><strong>Lists of 3+ items:</strong> "I need eggs, milk, and bread." (Use Oxford comma)</>,
-            <><strong>Two items only:</strong> "I need eggs and milk." (No comma before "and"—this isn't an Oxford comma situation)</>,
+            <><strong>Two items only:</strong> "I need eggs and milk." (No comma before "and"�this isn't an Oxford comma situation)</>,
             <><strong>Complex items:</strong> Always use Oxford comma: "The colors are red, white, and blue; yellow and green; and orange."</>,
             <><strong>Pairs within lists:</strong> "We serve gin and tonic, rum and coke, and vodka and soda." (Oxford comma separates the pairs)</>,
             <><strong>&/ampersand:</strong> "Barnes & Noble, Amazon, and Waterstones" (treat & like "and" within one item)</>,
@@ -10826,7 +14087,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-600 p-6 my-8 rounded">
-          <h3 className="font-bold text-lg mb-3">✏️ Practice Exercise: Add or Omit?</h3>
+          <h3 className="font-bold text-lg mb-3">?? Practice Exercise: Add or Omit?</h3>
           <ArticleParagraph>
             Decide whether each sentence needs an Oxford comma, and where it should go:
           </ArticleParagraph>
@@ -10848,7 +14109,7 @@ export const BLOG_POSTS: BlogPost[] = [
               "3. She visited Spain, Italy, and France.",
               "4. He studied biology, chemistry, and physics.",
               "5. The book is dedicated to my mother, Oprah Winfrey, and God. (Three separate entities)",
-              "6. We need milk and eggs. (Only two items—no Oxford comma situation)",
+              "6. We need milk and eggs. (Only two items�no Oxford comma situation)",
               "7. The flag colors are red, white, and blue.",
               "8. I thanked my teachers, Shakespeare, and Dickens. (Adds comma to clarify three separate parties)"
             ]} />
@@ -10856,7 +14117,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-600 p-6 my-8 rounded">
-          <h3 className="font-bold text-lg mb-4">💡 Frequently Asked Questions</h3>
+          <h3 className="font-bold text-lg mb-4">?? Frequently Asked Questions</h3>
           
           <div className="mb-4">
             <p className="font-bold mb-2">Should I always use the Oxford comma?</p>
@@ -10868,7 +14129,7 @@ export const BLOG_POSTS: BlogPost[] = [
           <div className="mb-4">
             <p className="font-bold mb-2">What's the difference between Oxford comma and regular commas?</p>
             <ArticleParagraph>
-              The Oxford comma is specifically the comma before "and" or "or" in a list of three or more items. Regular commas separate items in the list. Example: "I need eggs, milk, and bread"—the first comma is regular; the second (before "and") is the Oxford comma.
+              The Oxford comma is specifically the comma before "and" or "or" in a list of three or more items. Regular commas separate items in the list. Example: "I need eggs, milk, and bread"�the first comma is regular; the second (before "and") is the Oxford comma.
             </ArticleParagraph>
           </div>
 
@@ -10895,15 +14156,15 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-600 p-6 my-8 rounded">
-          <h3 className="font-bold text-lg mb-3">📝 Master More Punctuation Rules</h3>
+          <h3 className="font-bold text-lg mb-3">?? Master More Punctuation Rules</h3>
           <ArticleParagraph>
             Want to perfect your punctuation? Explore these guides:
           </ArticleParagraph>
           <BulletList items={[
-            <><Link to="/blog/mastering-the-comma-splice" className="text-blue-600 hover:underline dark:text-blue-400">Mastering the Comma Splice</Link> - Fix common comma errors</>,
-            <><Link to="/blog/semicolon-colon-usage" className="text-blue-600 hover:underline dark:text-blue-400">Semicolon vs. Colon Usage</Link> - Master advanced punctuation</>,
-            <><Link to="/grammar-guide" className="text-blue-600 hover:underline dark:text-blue-400">Complete Grammar Guide</Link> - All grammar rules in one place</>,
-            <><Link to="/blog/5-common-grammar-mistakes" className="text-blue-600 hover:underline dark:text-blue-400">5 Common Grammar Mistakes</Link> - Avoid frequent errors</>
+            <><Link to="/blog/mastering-the-comma-splice/" className="text-blue-600 hover:underline dark:text-blue-400">Mastering the Comma Splice</Link> - Fix common comma errors</>,
+            <><Link to="/blog/semicolon-colon-usage/" className="text-blue-600 hover:underline dark:text-blue-400">Semicolon vs. Colon Usage</Link> - Master advanced punctuation</>,
+            <><Link to="/grammar-guide/" className="text-blue-600 hover:underline dark:text-blue-400">Complete Grammar Guide</Link> - All grammar rules in one place</>,
+            <><Link to="/blog/5-common-grammar-mistakes/" className="text-blue-600 hover:underline dark:text-blue-400">5 Common Grammar Mistakes</Link> - Avoid frequent errors</>
           ]} />
         </div>
 
@@ -11009,14 +14270,14 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on <a href="https://dictionary.cambridge.org/grammar/british-grammar/conditionals" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Cambridge Grammar</a> and <a href="https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar/conditionals-1" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">British Council</a> guidelines.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on <a href="https://dictionary.cambridge.org/grammar/british-grammar/conditionals" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Cambridge Grammar</a> and <a href="https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar/conditionals-1" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">British Council</a> guidelines.</span>
         </div>
 
         {/* Quick Summary Table */}
         <div className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-slate-800 dark:to-slate-700 border border-blue-200 dark:border-blue-700 rounded-lg p-5 mb-6">
-          <h4 className="font-bold text-lg text-blue-900 dark:text-blue-200 mb-4">📊 Quick Summary: All 4 Conditionals at a Glance</h4>
+          <h4 className="font-bold text-lg text-blue-900 dark:text-blue-200 mb-4">?? Quick Summary: All 4 Conditionals at a Glance</h4>
           <div className="overflow-x-auto">
             <table className="min-w-full border-collapse text-sm">
               <thead>
@@ -11064,13 +14325,13 @@ export const BLOG_POSTS: BlogPost[] = [
 
         {/* Exam Statistics Box */}
         <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-700 rounded-lg p-4 mb-6">
-          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">🎯 Conditionals in English Exams</h4>
+          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">?? Conditionals in English Exams</h4>
           <p className="text-sm text-green-700 dark:text-green-300">According to analysis of past exam papers:</p>
           <ul className="text-sm text-green-700 dark:text-green-300 mt-2 space-y-1">
-            <li>• <strong>Second conditional</strong> appears in ~35% of IELTS Writing Task 2 essays (hypothetical arguments)</li>
-            <li>• <strong>Third conditional</strong> is tested in ~40% of Cambridge B2/C1 grammar sections</li>
-            <li>• <strong>Mixed conditionals</strong> are considered C1-level grammar (advanced proficiency)</li>
-            <li>• Conditional errors are among the top 5 grammar mistakes penalized in TOEFL Writing</li>
+            <li>� <strong>Second conditional</strong> appears in ~35% of IELTS Writing Task 2 essays (hypothetical arguments)</li>
+            <li>� <strong>Third conditional</strong> is tested in ~40% of Cambridge B2/C1 grammar sections</li>
+            <li>� <strong>Mixed conditionals</strong> are considered C1-level grammar (advanced proficiency)</li>
+            <li>� Conditional errors are among the top 5 grammar mistakes penalized in TOEFL Writing</li>
           </ul>
         </div>
 
@@ -11083,7 +14344,7 @@ export const BLOG_POSTS: BlogPost[] = [
           A conditional sentence typically consists of two parts: the <strong>if-clause</strong> (condition) and the <strong>main clause</strong> (result or consequence). The type of conditional determines which verb tenses we use in each clause. Understanding these patterns is key to expressing yourself accurately in English.
         </ArticleParagraph>
         <ArticleParagraph>
-          According to the <a href="https://dictionary.cambridge.org/grammar/british-grammar/conditionals" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">Cambridge Grammar guide</a>, conditionals are essential for expressing cause and effect, making predictions, and discussing hypothetical scenarios—skills tested extensively in IELTS, TOEFL, and Cambridge English exams.
+          According to the <a href="https://dictionary.cambridge.org/grammar/british-grammar/conditionals" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">Cambridge Grammar guide</a>, conditionals are essential for expressing cause and effect, making predictions, and discussing hypothetical scenarios�skills tested extensively in IELTS, TOEFL, and Cambridge English exams.
         </ArticleParagraph>
 
         <ArticleHeading>Zero Conditional: General Truths and Facts</ArticleHeading>
@@ -11094,7 +14355,7 @@ export const BLOG_POSTS: BlogPost[] = [
           <strong>Structure:</strong> If + present simple, present simple
         </ArticleParagraph>
         <BulletList items={[
-          'If you heat water to 100°C, it boils. (Scientific fact)',
+          'If you heat water to 100�C, it boils. (Scientific fact)',
           'If I drink coffee at night, I can\'t sleep. (Personal truth)',
           'If you press this button, the door opens. (How something works)',
           'If it rains, the ground gets wet. (Natural consequence)',
@@ -11152,7 +14413,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>Third Conditional: Imagining Different Past Outcomes</ArticleHeading>
         <ArticleParagraph>
-          The third conditional talks about hypothetical situations in the past—things that didn't happen and their imaginary consequences. We use it to express regret, criticism, or to imagine how the past could have been different.
+          The third conditional talks about hypothetical situations in the past�things that didn't happen and their imaginary consequences. We use it to express regret, criticism, or to imagine how the past could have been different.
         </ArticleParagraph>
         <ArticleParagraph>
           <strong>Structure:</strong> If + past perfect, would have + past participle
@@ -11190,11 +14451,11 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>Common Mistakes to Avoid</ArticleHeading>
         <BulletList items={[
-          '❌ If I will see her, I will tell her. → ✅ If I see her, I will tell her. (Don\'t use "will" in the if-clause of first conditional)',
-          '❌ If I would have more money, I would travel. → ✅ If I had more money, I would travel. (Second conditional uses past simple, not "would have")',
-          '❌ If I would have known, I would have told you. → ✅ If I had known, I would have told you. (Use past perfect in if-clause of third conditional)',
-          '❌ If I was rich, I would buy a yacht. → ✅ If I were rich, I would buy a yacht. (Use "were" in formal second conditional)',
-          '❌ If you heat ice, it will melt. → ✅ If you heat ice, it melts. (Zero conditional uses present simple in both clauses for general truths)'
+          '? If I will see her, I will tell her. ? ? If I see her, I will tell her. (Don\'t use "will" in the if-clause of first conditional)',
+          '? If I would have more money, I would travel. ? ? If I had more money, I would travel. (Second conditional uses past simple, not "would have")',
+          '? If I would have known, I would have told you. ? ? If I had known, I would have told you. (Use past perfect in if-clause of third conditional)',
+          '? If I was rich, I would buy a yacht. ? ? If I were rich, I would buy a yacht. (Use "were" in formal second conditional)',
+          '? If you heat ice, it will melt. ? ? If you heat ice, it melts. (Zero conditional uses present simple in both clauses for general truths)'
         ]} />
 
         <ArticleHeading>Unless: The Conditional Alternative</ArticleHeading>
@@ -11217,16 +14478,16 @@ export const BLOG_POSTS: BlogPost[] = [
         ]} />
 
         <ArticleParagraph>
-          Mastering conditionals takes practice, but they're incredibly useful for expressing yourself in English. Start by focusing on the most common types—zero and first conditionals—then gradually incorporate second and third conditionals as you become more comfortable. Remember, the key is understanding which time frame and level of reality you're talking about.
+          Mastering conditionals takes practice, but they're incredibly useful for expressing yourself in English. Start by focusing on the most common types�zero and first conditionals�then gradually incorporate second and third conditionals as you become more comfortable. Remember, the key is understanding which time frame and level of reality you're talking about.
         </ArticleParagraph>
 
         {/* Further Resources Box */}
         <div className="bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-lg p-5 mt-6">
-          <h4 className="font-bold text-slate-900 dark:text-slate-100 mb-3">📚 Official Resources for Further Study</h4>
+          <h4 className="font-bold text-slate-900 dark:text-slate-100 mb-3">?? Official Resources for Further Study</h4>
           <ul className="text-sm space-y-2">
-            <li>• <a href="https://dictionary.cambridge.org/grammar/british-grammar/conditionals" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">Cambridge Dictionary: Conditionals Grammar Guide</a></li>
-            <li>• <a href="https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar/conditionals-1" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">British Council: First and Second Conditionals</a></li>
-            <li>• <a href="https://learnenglish.britishcouncil.org/grammar/b2-grammar/conditionals-2" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">British Council: Third and Mixed Conditionals</a></li>
+            <li>� <a href="https://dictionary.cambridge.org/grammar/british-grammar/conditionals" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">Cambridge Dictionary: Conditionals Grammar Guide</a></li>
+            <li>� <a href="https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar/conditionals-1" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">British Council: First and Second Conditionals</a></li>
+            <li>� <a href="https://learnenglish.britishcouncil.org/grammar/b2-grammar/conditionals-2" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">British Council: Third and Mixed Conditionals</a></li>
           </ul>
         </div>
       </>
@@ -11285,33 +14546,33 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Definitions verified with <a href="https://www.oed.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Oxford English Dictionary</a> and <a href="https://www.merriam-webster.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Merriam-Webster</a>.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Definitions verified with <a href="https://www.oed.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Oxford English Dictionary</a> and <a href="https://www.merriam-webster.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Merriam-Webster</a>.</span>
         </div>
 
         <div className="bg-gradient-to-r from-rose-50 to-pink-50 dark:from-slate-800 dark:to-slate-700 border-l-4 border-rose-600 p-6 my-8 rounded-r-lg">
-          <h4 className="font-semibold text-xl mb-4 text-rose-900 dark:text-rose-200">🌍 Master Confused Words Globally: UK, USA, Canada & Australia</h4>
+          <h4 className="font-semibold text-xl mb-4 text-rose-900 dark:text-rose-200">?? Master Confused Words Globally: UK, USA, Canada & Australia</h4>
           <BulletList items={[
-            <><strong>Universal Grammar Mistakes:</strong> These commonly confused word pairs trip up English speakers worldwide—from London to New York, Toronto to Sydney.</>,
+            <><strong>Universal Grammar Mistakes:</strong> These commonly confused word pairs trip up English speakers worldwide�from London to New York, Toronto to Sydney.</>,
             <><strong>Professional Writing Essential:</strong> Using affect vs effect, their vs there, and your vs you're correctly is crucial for business English in UK, USA, Canada, and Australia.</>,
-            <><strong>British & American English:</strong> These confusing words are standardized across all English-speaking countries—same rules apply globally.</>,
+            <><strong>British & American English:</strong> These confusing words are standardized across all English-speaking countries�same rules apply globally.</>,
             <><strong>IELTS, TOEFL & GRE Success:</strong> Mastering these word pairs is essential for English proficiency tests worldwide and academic writing at international universities.</>
           ]} />
         </div>
 
         <ArticleParagraph>
-          Even native English speakers in the UK, USA, Canada, and Australia regularly mix up certain <strong>commonly confused word pairs</strong> that sound similar or have related meanings. These confusions can undermine your credibility in professional and academic writing worldwide—whether you're writing business emails in London, academic papers at American universities, corporate reports in Toronto, or job applications in Sydney. This comprehensive guide covers 20 of the most <strong>commonly confused words in English</strong> used globally, complete with clear explanations, memory tricks, and examples to help you use them correctly every time in any English-speaking country.
+          Even native English speakers in the UK, USA, Canada, and Australia regularly mix up certain <strong>commonly confused word pairs</strong> that sound similar or have related meanings. These confusions can undermine your credibility in professional and academic writing worldwide�whether you're writing business emails in London, academic papers at American universities, corporate reports in Toronto, or job applications in Sydney. This comprehensive guide covers 20 of the most <strong>commonly confused words in English</strong> used globally, complete with clear explanations, memory tricks, and examples to help you use them correctly every time in any English-speaking country.
         </ArticleParagraph>
 
         <div className="bg-blue-50 dark:bg-slate-800 p-6 rounded-lg my-6 border border-blue-200 dark:border-blue-700">
-          <h4 className="font-semibold text-lg mb-3 text-blue-900 dark:text-blue-200">📍 Why This Matters Worldwide:</h4>
+          <h4 className="font-semibold text-lg mb-3 text-blue-900 dark:text-blue-200">?? Why This Matters Worldwide:</h4>
           <BulletList items={[
-            <><strong>UK Professional Writing:</strong> British business communication values precise grammar—confusing "affect" and "effect" in London offices is a credibility killer</>,
+            <><strong>UK Professional Writing:</strong> British business communication values precise grammar�confusing "affect" and "effect" in London offices is a credibility killer</>,
             <><strong>USA Academic Standards:</strong> American universities from Harvard to Stanford penalize confused words in essays and research papers</>,
-            <><strong>Canada Employment:</strong> Canadian employers expect error-free communication—their/there/they're mistakes harm job prospects in Toronto, Vancouver, Montreal</>,
-            <><strong>Australia Business English:</strong> Australian corporate culture demands professional writing—word confusion reflects poorly in Sydney, Melbourne business contexts</>,
-            <><strong>Global IELTS/TOEFL:</strong> International English tests assess proper usage of commonly confused words—critical for immigration to UK, Canada, study in USA, Australia</>
+            <><strong>Canada Employment:</strong> Canadian employers expect error-free communication�their/there/they're mistakes harm job prospects in Toronto, Vancouver, Montreal</>,
+            <><strong>Australia Business English:</strong> Australian corporate culture demands professional writing�word confusion reflects poorly in Sydney, Melbourne business contexts</>,
+            <><strong>Global IELTS/TOEFL:</strong> International English tests assess proper usage of commonly confused words�critical for immigration to UK, Canada, study in USA, Australia</>
           ]} />
         </div>
 
@@ -11320,23 +14581,23 @@ export const BLOG_POSTS: BlogPost[] = [
           This is perhaps the most <strong>commonly confused word pair</strong> in the English language worldwide, causing errors in British English, American English, Canadian English, and Australian English writing equally. Understanding <strong>affect vs effect</strong> is essential for professional communication globally.
         </ArticleParagraph>
         <ArticleParagraph>
-          <strong>Affect</strong> (verb) = to influence or change something — <em>Used identically worldwide</em>
+          <strong>Affect</strong> (verb) = to influence or change something � <em>Used identically worldwide</em>
         </ArticleParagraph>
         <BulletList items={[
-          '🇬🇧 UK: The Brexit decision will affect trade policies. (influences)',
-          '🇺🇸 USA: How will climate change affect California agriculture?',
-          '🇨🇦 Canada: Winter weather affects Toronto traffic significantly.',
-          '🇦🇺 Australia: Drought conditions affect Melbourne\'s water supply.',
+          '???? UK: The Brexit decision will affect trade policies. (influences)',
+          '???? USA: How will climate change affect California agriculture?',
+          '???? Canada: Winter weather affects Toronto traffic significantly.',
+          '???? Australia: Drought conditions affect Melbourne\'s water supply.',
           'Global usage: Stress can affect your health negatively.'
         ]} />
         <ArticleParagraph>
-          <strong>Effect</strong> (noun) = a result or consequence; (verb, less common) = to bring about — <em>Same worldwide</em>
+          <strong>Effect</strong> (noun) = a result or consequence; (verb, less common) = to bring about � <em>Same worldwide</em>
         </ArticleParagraph>
         <BulletList items={[
-          '🇬🇧 UK: The new NHS policy had a positive effect on healthcare. (result)',
-          '🇺🇸 USA: What are the economic effects of Federal Reserve policy?',
-          '🇨🇦 Canada: The carbon tax has had measurable effects on emissions.',
-          '🇦🇺 Australia: The bushfires had devastating effects on wildlife.',
+          '???? UK: The new NHS policy had a positive effect on healthcare. (result)',
+          '???? USA: What are the economic effects of Federal Reserve policy?',
+          '???? Canada: The carbon tax has had measurable effects on emissions.',
+          '???? Australia: The bushfires had devastating effects on wildlife.',
           'Formal verb usage: The CEO will effect significant organizational changes. (bring about)'
         ]} />
         <ArticleParagraph>
@@ -11348,23 +14609,23 @@ export const BLOG_POSTS: BlogPost[] = [
           These <strong>commonly confused words</strong> sound similar but have completely different meanings across all English varieties worldwide.
         </ArticleParagraph>
         <ArticleParagraph>
-          <strong>Accept</strong> (verb) = to receive willingly or agree to something — <em>International usage</em>
+          <strong>Accept</strong> (verb) = to receive willingly or agree to something � <em>International usage</em>
         </ArticleParagraph>
         <BulletList items={[
-          '🇬🇧 UK: The university accepted my application to Cambridge.',
-          '🇺🇸 USA: I accept your terms for the New York contract.',
-          '🇨🇦 Canada: She accepted the job offer in Vancouver.',
-          '🇦🇺 Australia: Do Sydney restaurants accept American Express?',
+          '???? UK: The university accepted my application to Cambridge.',
+          '???? USA: I accept your terms for the New York contract.',
+          '???? Canada: She accepted the job offer in Vancouver.',
+          '???? Australia: Do Sydney restaurants accept American Express?',
           'Global: I accept your apology.'
         ]} />
         <ArticleParagraph>
-          <strong>Except</strong> (preposition) = excluding; other than — <em>Worldwide standard</em>
+          <strong>Except</strong> (preposition) = excluding; other than � <em>Worldwide standard</em>
         </ArticleParagraph>
         <BulletList items={[
-          '🇬🇧 UK: The London office is open every day except Sunday.',
-          '🇺🇸 USA: All states except Alaska and Hawaii are contiguous.',
-          '🇨🇦 Canada: I like all Canadian provinces except one.',
-          '🇦🇺 Australia: Everyone attended except the Brisbane team.',
+          '???? UK: The London office is open every day except Sunday.',
+          '???? USA: All states except Alaska and Hawaii are contiguous.',
+          '???? Canada: I like all Canadian provinces except one.',
+          '???? Australia: Everyone attended except the Brisbane team.',
           'Global: Everyone came except John. (excluding)'
         ]} />
 
@@ -11373,39 +14634,39 @@ export const BLOG_POSTS: BlogPost[] = [
           This trio of <strong>commonly confused words in English</strong> causes endless errors worldwide, even among native speakers in the UK, USA, Canada, and Australia. These mistakes appear frequently in international business emails, social media posts, and professional documents globally.
         </ArticleParagraph>
         <ArticleParagraph>
-          <strong>Their</strong> (possessive pronoun) = belonging to them — <em>Universal possessive</em>
+          <strong>Their</strong> (possessive pronoun) = belonging to them � <em>Universal possessive</em>
         </ArticleParagraph>
         <BulletList items={[
-          '🇬🇧 UK: Their London flat overlooks the Thames.',
-          '🇺🇸 USA: The students completed their Harvard applications.',
-          '🇨🇦 Canada: Their Toronto office is hiring.',
-          '🇦🇺 Australia: Their Sydney home has ocean views.',
+          '???? UK: Their London flat overlooks the Thames.',
+          '???? USA: The students completed their Harvard applications.',
+          '???? Canada: Their Toronto office is hiring.',
+          '???? Australia: Their Sydney home has ocean views.',
           'Global: That is their house.'
         ]} />
         <ArticleParagraph>
-          <strong>There</strong> (adverb/pronoun) = in that place; indicating existence — <em>Same globally</em>
+          <strong>There</strong> (adverb/pronoun) = in that place; indicating existence � <em>Same globally</em>
         </ArticleParagraph>
         <BulletList items={[
-          '🇬🇧 UK: I studied at Oxford; I lived there for three years.',
-          '🇺🇸 USA: Put the Boston report there on the desk. (location)',
-          '🇨🇦 Canada: There are three options for Calgary expansion. (existence)',
-          '🇦🇺 Australia: There\'s a great café there in Melbourne CBD.',
+          '???? UK: I studied at Oxford; I lived there for three years.',
+          '???? USA: Put the Boston report there on the desk. (location)',
+          '???? Canada: There are three options for Calgary expansion. (existence)',
+          '???? Australia: There\'s a great caf� there in Melbourne CBD.',
           'Global: There are problems to solve.'
         ]} />
         <ArticleParagraph>
-          <strong>They're</strong> (contraction) = they are — <em>International contraction</em>
+          <strong>They're</strong> (contraction) = they are � <em>International contraction</em>
         </ArticleParagraph>
         <BulletList items={[
-          '🇬🇧 UK: They\'re arriving at Heathrow tonight. (they are)',
-          '🇺🇸 USA: They\'re the top tech company in Silicon Valley.',
-          '🇨🇦 Canada: I think they\'re lost in downtown Vancouver.',
-          '🇦🇺 Australia: They\'re coming to Sydney for the conference.',
+          '???? UK: They\'re arriving at Heathrow tonight. (they are)',
+          '???? USA: They\'re the top tech company in Silicon Valley.',
+          '???? Canada: I think they\'re lost in downtown Vancouver.',
+          '???? Australia: They\'re coming to Sydney for the conference.',
           'Global: They\'re the best team in the league.'
         ]} />
 
-        <div className="bg-amber-50 dark:bg-slate-800 p-5 rounded-lg my-6 border-l-4 border-amber-500">
-          <p className="font-semibold text-lg mb-3 text-amber-900 dark:text-amber-200">💡 Pro Tip for Global English Learners:</p>
-          <p className="text-slate-700 dark:text-slate-300">Their/there/they're confusion is the #1 grammar mistake in English emails worldwide—from Wall Street to the City of London, Bay Street to Sydney's financial district. Mastering this distinction immediately elevates your professional credibility globally.</p>
+        <div className="bg-teal-50 dark:bg-slate-800 p-5 rounded-lg my-6 border-l-4 border-teal-500">
+          <p className="font-semibold text-lg mb-3 text-teal-900 dark:text-teal-200">?? Pro Tip for Global English Learners:</p>
+          <p className="text-slate-700 dark:text-slate-300">Their/there/they're confusion is the #1 grammar mistake in English emails worldwide�from Wall Street to the City of London, Bay Street to Sydney's financial district. Mastering this distinction immediately elevates your professional credibility globally.</p>
         </div>
 
         <ArticleHeading>4. Your vs You're: Essential for International Communication</ArticleHeading>
@@ -11413,23 +14674,23 @@ export const BLOG_POSTS: BlogPost[] = [
           Another pair of <strong>commonly confused words</strong> that undermines professional writing worldwide. This error is especially common in informal business communication across all English-speaking countries.
         </ArticleParagraph>
         <ArticleParagraph>
-          <strong>Your</strong> (possessive) = belonging to you — <em>Global possessive form</em>
+          <strong>Your</strong> (possessive) = belonging to you � <em>Global possessive form</em>
         </ArticleParagraph>
         <BulletList items={[
-          '🇬🇧 UK: What\'s your opinion on the London market?',
-          '🇺🇸 USA: Is this your New York office?',
-          '🇨🇦 Canada: I love your new Toronto apartment.',
-          '🇦🇺 Australia: Your Melbourne presentation was excellent.',
+          '???? UK: What\'s your opinion on the London market?',
+          '???? USA: Is this your New York office?',
+          '???? Canada: I love your new Toronto apartment.',
+          '???? Australia: Your Melbourne presentation was excellent.',
           'Global: What\'s your name?'
         ]} />
         <ArticleParagraph>
-          <strong>You're</strong> (contraction) = you are — <em>Worldwide contraction</em>
+          <strong>You're</strong> (contraction) = you are � <em>Worldwide contraction</em>
         </ArticleParagraph>
         <BulletList items={[
-          '🇬🇧 UK: You\'re late for the Manchester meeting! (you are)',
-          '🇺🇸 USA: I think you\'re right about the Boston strategy.',
-          '🇨🇦 Canada: You\'re going to love Vancouver in summer.',
-          '🇦🇺 Australia: You\'re hired for the Sydney position!',
+          '???? UK: You\'re late for the Manchester meeting! (you are)',
+          '???? USA: I think you\'re right about the Boston strategy.',
+          '???? Canada: You\'re going to love Vancouver in summer.',
+          '???? Australia: You\'re hired for the Sydney position!',
           'Global: You\'re going to love this movie.'
         ]} />
         <ArticleParagraph>
@@ -11441,41 +14702,41 @@ export const BLOG_POSTS: BlogPost[] = [
           This pair of <strong>commonly confused words</strong> appears frequently in errors across international English writing. The confusion stems from apostrophe rules that seem counterintuitive to many learners worldwide.
         </ArticleParagraph>
         <ArticleParagraph>
-          <strong>Its</strong> (possessive) = belonging to it (NO apostrophe!) — <em>Worldwide standard</em>
+          <strong>Its</strong> (possessive) = belonging to it (NO apostrophe!) � <em>Worldwide standard</em>
         </ArticleParagraph>
         <BulletList items={[
-          '🇬🇧 UK: The British Museum updated its exhibition. (its = the museum\'s)',
-          '🇺🇸 USA: Apple announced its new iPhone features.',
-          '🇨🇦 Canada: Air Canada changed its boarding policy.',
-          '🇦🇺 Australia: Qantas improved its customer service.',
+          '???? UK: The British Museum updated its exhibition. (its = the museum\'s)',
+          '???? USA: Apple announced its new iPhone features.',
+          '???? Canada: Air Canada changed its boarding policy.',
+          '???? Australia: Qantas improved its customer service.',
           'Global: The dog wagged its tail. (the tail belonging to it)'
         ]} />
         <ArticleParagraph>
-          <strong>It's</strong> (contraction) = it is or it has — <em>Universal contraction</em>
+          <strong>It's</strong> (contraction) = it is or it has � <em>Universal contraction</em>
         </ArticleParagraph>
         <BulletList items={[
-          '🇬🇧 UK: It\'s raining in London today. (it is)',
-          '🇺🇸 USA: It\'s been a challenging quarter for US markets. (it has)',
-          '🇨🇦 Canada: It\'s snowing heavily in Montreal.',
-          '🇦🇺 Australia: It\'s summertime in Sydney now.',
+          '???? UK: It\'s raining in London today. (it is)',
+          '???? USA: It\'s been a challenging quarter for US markets. (it has)',
+          '???? Canada: It\'s snowing heavily in Montreal.',
+          '???? Australia: It\'s summertime in Sydney now.',
           'Global: I think it\'s time to leave.'
         ]} />
         <ArticleParagraph>
-          <strong>Note (applies globally):</strong> Unlike other possessives (John's car, cat's tail), "its" never has an apostrophe when showing possession. This rule is consistent across British English, American English, Canadian English, and Australian English—making it a crucial distinction for international professional writing.
+          <strong>Note (applies globally):</strong> Unlike other possessives (John's car, cat's tail), "its" never has an apostrophe when showing possession. This rule is consistent across British English, American English, Canadian English, and Australian English�making it a crucial distinction for international professional writing.
         </ArticleParagraph>
 
         <ArticleHeading>Global English: More Commonly Confused Word Pairs (6-10)</ArticleHeading>
 
         <ArticleParagraph>
-          <strong>6. Than vs Then</strong> — <em>Used identically worldwide in UK, USA, Canada, Australia</em>
+          <strong>6. Than vs Then</strong> � <em>Used identically worldwide in UK, USA, Canada, Australia</em>
         </ArticleParagraph>
         <ArticleParagraph>
           <strong>Than</strong> (conjunction/preposition) = used in comparisons
         </ArticleParagraph>
         <BulletList items={[
-          '🇬🇧 UK: London is larger than Manchester.',
-          '🇺🇸 USA: She is taller than her brother.',
-          '🇨🇦 Canada: Toronto winters are colder than Vancouver\'s.',
+          '???? UK: London is larger than Manchester.',
+          '???? USA: She is taller than her brother.',
+          '???? Canada: Toronto winters are colder than Vancouver\'s.',
           'Global: This costs more than I expected.'
         ]} />
         <ArticleParagraph>
@@ -11488,15 +14749,15 @@ export const BLOG_POSTS: BlogPost[] = [
         ]} />
 
         <ArticleParagraph>
-          <strong>7. Complement vs Compliment</strong> — <em>Commonly confused in international business English</em>
+          <strong>7. Complement vs Compliment</strong> � <em>Commonly confused in international business English</em>
         </ArticleParagraph>
         <ArticleParagraph>
           <strong>Complement</strong> (verb/noun) = to complete or enhance; something that completes
         </ArticleParagraph>
         <BulletList items={[
-          '🇬🇧 UK: The red wine complements British cuisine perfectly.',
-          '🇺🇸 USA: This software complements our existing systems.',
-          '🇦🇺 Australia: These skills complement each other in Sydney\'s job market.',
+          '???? UK: The red wine complements British cuisine perfectly.',
+          '???? USA: This software complements our existing systems.',
+          '???? Australia: These skills complement each other in Sydney\'s job market.',
           'Global: Red shoes are a perfect complement to that dress.'
         ]} />
         <ArticleParagraph>
@@ -11512,7 +14773,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </ArticleParagraph>
 
         <ArticleParagraph>
-          <strong>8. Principle vs Principal</strong> — <em>Critical for academic and business English worldwide</em>
+          <strong>8. Principle vs Principal</strong> � <em>Critical for academic and business English worldwide</em>
         </ArticleParagraph>
         <ArticleParagraph>
           <strong>Principle</strong> (noun) = a fundamental truth or rule
@@ -11526,9 +14787,9 @@ export const BLOG_POSTS: BlogPost[] = [
           <strong>Principal</strong> (noun/adjective) = the head of a school; main or most important
         </ArticleParagraph>
         <BulletList items={[
-          '🇬🇧 UK: The principal of the London academy gave a speech. (school head)',
-          '🇺🇸 USA: Our principal concern is workplace safety. (main)',
-          '🇨🇦 Canada: She plays the principal role in Toronto\'s theater production.',
+          '???? UK: The principal of the London academy gave a speech. (school head)',
+          '???? USA: Our principal concern is workplace safety. (main)',
+          '???? Canada: She plays the principal role in Toronto\'s theater production.',
           'Finance (global): Pay down the principal on your loan. (original amount)'
         ]} />
         <ArticleParagraph>
@@ -11536,7 +14797,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </ArticleParagraph>
 
         <ArticleParagraph>
-          <strong>9. Stationary vs Stationery</strong> — <em>Especially confusing in British English spelling</em>
+          <strong>9. Stationary vs Stationery</strong> � <em>Especially confusing in British English spelling</em>
         </ArticleParagraph>
         <ArticleParagraph>
           <strong>Stationary</strong> (adjective) = not moving; fixed in place
@@ -11544,15 +14805,15 @@ export const BLOG_POSTS: BlogPost[] = [
         <BulletList items={[
           'The car remained stationary at the red light.',
           'I use a stationary bike for exercise.',
-          '🇬🇧 UK: The satellite is in stationary orbit above Britain.'
+          '???? UK: The satellite is in stationary orbit above Britain.'
         ]} />
         <ArticleParagraph>
           <strong>Stationery</strong> (noun) = writing materials (paper, envelopes, pens)
         </ArticleParagraph>
         <BulletList items={[
-          '🇬🇧 UK: I bought new stationery from WHSmith in London.',
-          '🇺🇸 USA: The company uses custom stationery for business letters.',
-          '🇨🇦 Canada: Staples Canada sells quality stationery supplies.',
+          '???? UK: I bought new stationery from WHSmith in London.',
+          '???? USA: The company uses custom stationery for business letters.',
+          '???? Canada: Staples Canada sells quality stationery supplies.',
           'Global: The stationery store sells pens and notebooks.'
         ]} />
         <ArticleParagraph>
@@ -11560,15 +14821,15 @@ export const BLOG_POSTS: BlogPost[] = [
         </ArticleParagraph>
 
         <ArticleParagraph>
-          <strong>10. Lose vs Loose</strong> — <em>Common spelling error worldwide</em>
+          <strong>10. Lose vs Loose</strong> � <em>Common spelling error worldwide</em>
         </ArticleParagraph>
         <ArticleParagraph>
           <strong>Lose</strong> (verb) = to misplace; to fail to win; to have less of
         </ArticleParagraph>
         <BulletList items={[
-          '🇬🇧 UK: Don\'t lose your Oyster card in London!',
-          '🇺🇸 USA: Our team will lose the Super Bowl.',
-          '🇨🇦 Canada: Don\'t lose your passport at Toronto Pearson Airport.',
+          '???? UK: Don\'t lose your Oyster card in London!',
+          '???? USA: Our team will lose the Super Bowl.',
+          '???? Canada: Don\'t lose your passport at Toronto Pearson Airport.',
           'Global: I need to lose some weight.'
         ]} />
         <ArticleParagraph>
@@ -11586,47 +14847,47 @@ export const BLOG_POSTS: BlogPost[] = [
         </ArticleParagraph>
 
         <ArticleParagraph>
-          <strong>11. Advice (noun) vs Advise (verb)</strong> — <em>Pronunciation differs globally but spelling rules same</em>
+          <strong>11. Advice (noun) vs Advise (verb)</strong> � <em>Pronunciation differs globally but spelling rules same</em>
         </ArticleParagraph>
         <BulletList items={[
-          '🇬🇧 UK: Thanks for your financial advice from the City of London advisor. (noun)',
-          '🇺🇸 USA: I advise you to consult a Wall Street expert. (verb)',
-          '🇨🇦 Canada: Canadian immigration lawyers advise on visa applications.',
+          '???? UK: Thanks for your financial advice from the City of London advisor. (noun)',
+          '???? USA: I advise you to consult a Wall Street expert. (verb)',
+          '???? Canada: Canadian immigration lawyers advise on visa applications.',
           'Global: Advice ends with "ice" sound; Advise ends with "ize" sound'
         ]} />
 
         <ArticleParagraph>
-          <strong>12. Ensure vs Insure vs Assure</strong> — <em>Critical distinction in international business</em>
+          <strong>12. Ensure vs Insure vs Assure</strong> � <em>Critical distinction in international business</em>
         </ArticleParagraph>
         <BulletList items={[
           'Ensure = to make certain (Please ensure the contract is signed)',
-          '🇬🇧 UK: Insure = protect financially (I insured my car with Lloyd\'s of London)',
-          '🇺🇸 USA: Insure your home with State Farm or Allstate',
+          '???? UK: Insure = protect financially (I insured my car with Lloyd\'s of London)',
+          '???? USA: Insure your home with State Farm or Allstate',
           'Assure = to promise or convince (I assure you the shipment will arrive)'
         ]} />
 
         <ArticleParagraph>
-          <strong>13. Farther vs Further</strong> — <em>Distinction maintained in formal English globally</em>
+          <strong>13. Farther vs Further</strong> � <em>Distinction maintained in formal English globally</em>
         </ArticleParagraph>
         <BulletList items={[
           'Farther = physical distance (I can\'t walk any farther)',
-          '🇬🇧 UK: London is farther from Edinburgh than Manchester is.',
-          '🇺🇸 USA: Los Angeles is farther from New York than Chicago.',
+          '???? UK: London is farther from Edinburgh than Manchester is.',
+          '???? USA: Los Angeles is farther from New York than Chicago.',
           'Further = metaphorical distance/additional (We need further discussion)'
         ]} />
 
         <ArticleParagraph>
-          <strong>14. Imply vs Infer</strong> — <em>Often confused in academic English worldwide</em>
+          <strong>14. Imply vs Infer</strong> � <em>Often confused in academic English worldwide</em>
         </ArticleParagraph>
         <BulletList items={[
           'Imply = to suggest indirectly [speaker/writer action] (She implied she was unhappy)',
           'Infer = to conclude from evidence [listener/reader action] (I inferred from her tone that she was unhappy)',
-          '🇬🇧 UK: What did the Prime Minister imply in the speech?',
-          '🇺🇸 USA: Researchers inferred conclusions from the data.'
+          '???? UK: What did the Prime Minister imply in the speech?',
+          '???? USA: Researchers inferred conclusions from the data.'
         ]} />
 
         <ArticleParagraph>
-          <strong>15. Lay vs Lie</strong> — <em>Notoriously confusing even for native speakers worldwide</em>
+          <strong>15. Lay vs Lie</strong> � <em>Notoriously confusing even for native speakers worldwide</em>
         </ArticleParagraph>
         <BulletList items={[
           'Lay = to place something down, requires object (Lay the book on the table)',
@@ -11636,59 +14897,59 @@ export const BLOG_POSTS: BlogPost[] = [
         ]} />
 
         <ArticleParagraph>
-          <strong>16. Fewer vs Less</strong> — <em>Important for formal writing in UK, USA, Canada, Australia</em>
+          <strong>16. Fewer vs Less</strong> � <em>Important for formal writing in UK, USA, Canada, Australia</em>
         </ArticleParagraph>
         <BulletList items={[
           'Fewer = countable items (fewer cars, fewer people)',
-          '🇬🇧 UK: Fewer than 10 items (supermarket signs in Britain)',
-          '🇺🇸 USA: Less = uncountable quantities (less traffic, less water)',
-          '🇨🇦 Canada: Fewer students attended McMaster University this year.',
-          '🇦🇺 Australia: Sydney has fewer rainy days than Melbourne.'
+          '???? UK: Fewer than 10 items (supermarket signs in Britain)',
+          '???? USA: Less = uncountable quantities (less traffic, less water)',
+          '???? Canada: Fewer students attended McMaster University this year.',
+          '???? Australia: Sydney has fewer rainy days than Melbourne.'
         ]} />
 
         <ArticleParagraph>
-          <strong>17. Elicit vs Illicit</strong> — <em>Completely different meanings despite similar sound</em>
+          <strong>17. Elicit vs Illicit</strong> � <em>Completely different meanings despite similar sound</em>
         </ArticleParagraph>
         <BulletList items={[
           'Elicit (verb) = to draw out (The question elicited an angry response)',
           'Illicit (adjective) = illegal (illicit drugs, illicit affair)',
-          '🇬🇧 UK: Police cracked down on illicit trading in London.',
-          '🇺🇸 USA: The interview elicited valuable information.'
+          '???? UK: Police cracked down on illicit trading in London.',
+          '???? USA: The interview elicited valuable information.'
         ]} />
 
         <ArticleParagraph>
-          <strong>18. Emigrate vs Immigrate</strong> — <em>Critical for UK/Canada/Australia immigration contexts</em>
+          <strong>18. Emigrate vs Immigrate</strong> � <em>Critical for UK/Canada/Australia immigration contexts</em>
         </ArticleParagraph>
         <BulletList items={[
           'Emigrate = to leave your country (She emigrated from Poland)',
           'Immigrate = to enter a new country (She immigrated to Canada)',
-          '🇬🇧 UK: Thousands emigrate from Britain annually',
-          '🇨🇦 Canada: Many skilled workers immigrate to Toronto via Express Entry',
-          '🇺🇸 USA: Immigrants arrive seeking the American Dream',
-          '🇦🇺 Australia: Immigration to Sydney and Melbourne continues to grow'
+          '???? UK: Thousands emigrate from Britain annually',
+          '???? Canada: Many skilled workers immigrate to Toronto via Express Entry',
+          '???? USA: Immigrants arrive seeking the American Dream',
+          '???? Australia: Immigration to Sydney and Melbourne continues to grow'
         ]} />
 
         <ArticleParagraph>
-          <strong>19. Historic vs Historical</strong> — <em>Subtle but important distinction globally</em>
+          <strong>19. Historic vs Historical</strong> � <em>Subtle but important distinction globally</em>
         </ArticleParagraph>
         <BulletList items={[
           'Historic = famous/important in history (a historic event)',
-          '🇬🇧 UK: The historic signing of the Magna Carta',
-          '🇺🇸 USA: The historic moon landing in 1969',
+          '???? UK: The historic signing of the Magna Carta',
+          '???? USA: The historic moon landing in 1969',
           'Historical = relating to history (historical documents, historical research)',
           'Global: Historical records show climate patterns.'
         ]} />
 
         <ArticleParagraph>
-          <strong>20. Literally vs Figuratively</strong> — <em>Often misused in casual English worldwide</em>
+          <strong>20. Literally vs Figuratively</strong> � <em>Often misused in casual English worldwide</em>
         </ArticleParagraph>
         <BulletList items={[
           'Literally = actually, in reality, exactly as stated (I literally ran 10 miles)',
           'Figuratively = metaphorically, not literally (I figuratively died of embarrassment)',
-          '❌ Common global error: "I literally died laughing" (You didn\'t actually die!)',
-          '🇬🇧 UK: British speakers often misuse "literally" for emphasis',
-          '🇺🇸 USA: American English increasingly uses "literally" figuratively (controversial!)',
-          '✅ Correct: "I was so embarrassed I could have died" (figurative)'
+          '? Common global error: "I literally died laughing" (You didn\'t actually die!)',
+          '???? UK: British speakers often misuse "literally" for emphasis',
+          '???? USA: American English increasingly uses "literally" figuratively (controversial!)',
+          '? Correct: "I was so embarrassed I could have died" (figurative)'
         ]} />
 
         <ArticleHeading>Strategies for Mastering Confused Words Globally</ArticleHeading>
@@ -11698,15 +14959,15 @@ export const BLOG_POSTS: BlogPost[] = [
         <BulletList items={[
           <><strong>Create personal mnemonics:</strong> Memory tricks like "princip<strong>AL</strong> = your p<strong>AL</strong>" work universally across all English varieties</>,
           <><strong>Practice in context:</strong> Use these words in sentences reflecting your target English market (UK business emails, US academic papers, Canadian reports, Australian applications)</>,
-          <><strong>Proofread carefully:</strong> Spell-checkers won't catch affect/effect or their/there/they're errors since both spellings are valid—manual review essential for professional writing globally</>,
+          <><strong>Proofread carefully:</strong> Spell-checkers won't catch affect/effect or their/there/they're errors since both spellings are valid�manual review essential for professional writing globally</>,
           <><strong>Learn word types:</strong> Understanding parts of speech (noun/verb/adjective) helps distinguish confused pairs worldwide</>,
           <><strong>Read quality writing:</strong> Exposure to The Guardian (UK), The New York Times (USA), The Globe and Mail (Canada), or The Sydney Morning Herald (Australia) reinforces correct usage</>,
           <><strong>Use grammar checkers:</strong> Tools like Grammarly recognize these common errors and work for British and American English</>,
-          <><strong>Study for tests:</strong> IELTS, TOEFL, GRE, and other English proficiency exams test these exact word pairs—master them for test success</>
+          <><strong>Study for tests:</strong> IELTS, TOEFL, GRE, and other English proficiency exams test these exact word pairs�master them for test success</>
         ]} />
 
         <div className="bg-gradient-to-r from-green-50 to-emerald-50 dark:from-slate-800 dark:to-slate-700 p-6 rounded-lg my-8 border-2 border-green-400 dark:border-green-600">
-          <h4 className="font-semibold text-xl mb-4 text-green-900 dark:text-green-200">🎯 Quick Reference: Master These Globally</h4>
+          <h4 className="font-semibold text-xl mb-4 text-green-900 dark:text-green-200">?? Quick Reference: Master These Globally</h4>
           <ArticleParagraph>
             Print this summary for quick reference when writing professional emails, academic papers, or business documents anywhere in the world:
           </ArticleParagraph>
@@ -11741,7 +15002,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </ArticleParagraph>
 
         <ArticleParagraph>
-          While these <strong>commonly confused words in English</strong> may seem tricky at first, with consistent practice and attention, using them correctly will become second nature—whether you're writing in British English, American English, Canadian English, or Australian English. The rules are standardized across all major English-speaking countries, making your investment in mastering these distinctions valuable for international communication, professional advancement, and English proficiency tests worldwide.
+          While these <strong>commonly confused words in English</strong> may seem tricky at first, with consistent practice and attention, using them correctly will become second nature�whether you're writing in British English, American English, Canadian English, or Australian English. The rules are standardized across all major English-speaking countries, making your investment in mastering these distinctions valuable for international communication, professional advancement, and English proficiency tests worldwide.
         </ArticleParagraph>
 
         <ArticleParagraph>
@@ -11749,7 +15010,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </ArticleParagraph>
 
         <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-600 p-6 my-8 rounded">
-          <h3 className="font-bold text-lg mb-4">💡 Frequently Asked Questions About Commonly Confused Words</h3>
+          <h3 className="font-bold text-lg mb-4">?? Frequently Asked Questions About Commonly Confused Words</h3>
           
           <div className="mb-4">
             <p className="font-bold mb-2">What is the most commonly confused word pair in English?</p>
@@ -11768,14 +15029,14 @@ export const BLOG_POSTS: BlogPost[] = [
           <div className="mb-4">
             <p className="font-bold mb-2">Why do spell-checkers miss commonly confused word errors?</p>
             <ArticleParagraph>
-              Spell-checkers don't catch confused words because both spellings are valid English words. For example, "their," "there," and "they're" are all correctly spelled words, so software can't determine if you're using the wrong one contextually. This is why manual proofreading is essential for professional writing in global business contexts—from London financial reports to Silicon Valley tech documents, Toronto corporate communications to Sydney marketing materials.
+              Spell-checkers don't catch confused words because both spellings are valid English words. For example, "their," "there," and "they're" are all correctly spelled words, so software can't determine if you're using the wrong one contextually. This is why manual proofreading is essential for professional writing in global business contexts�from London financial reports to Silicon Valley tech documents, Toronto corporate communications to Sydney marketing materials.
             </ArticleParagraph>
           </div>
 
           <div className="mb-4">
             <p className="font-bold mb-2">How do commonly confused words affect IELTS and TOEFL scores?</p>
             <ArticleParagraph>
-              Confused word errors directly impact your <strong>IELTS Writing</strong> and <strong>TOEFL Writing</strong> scores under the "Grammatical Range and Accuracy" criterion. Examiners worldwide (whether testing in London, New York, Toronto, or Sydney) penalize mistakes like using "affect" instead of "effect" or confusing "your/you're." Mastering these 20 pairs is essential for achieving Band 7+ in IELTS or scores above 24/30 in TOEFL Writing—critical for UK university admission, US college applications, Canadian immigration, or Australian study visas.
+              Confused word errors directly impact your <strong>IELTS Writing</strong> and <strong>TOEFL Writing</strong> scores under the "Grammatical Range and Accuracy" criterion. Examiners worldwide (whether testing in London, New York, Toronto, or Sydney) penalize mistakes like using "affect" instead of "effect" or confusing "your/you're." Mastering these 20 pairs is essential for achieving Band 7+ in IELTS or scores above 24/30 in TOEFL Writing�critical for UK university admission, US college applications, Canadian immigration, or Australian study visas.
             </ArticleParagraph>
           </div>
 
@@ -11796,23 +15057,23 @@ export const BLOG_POSTS: BlogPost[] = [
           <div className="mb-4">
             <p className="font-bold mb-2">How important are commonly confused words for professional credibility?</p>
             <ArticleParagraph>
-              <strong>Extremely important</strong> in all English-speaking professional contexts worldwide. Surveys show that hiring managers in London, New York, Toronto, and Sydney view grammar errors—especially confused words—as signs of carelessness and poor attention to detail. In competitive global job markets, business correspondence with their/there/they're or your/you're mistakes can cost you opportunities, contracts, or promotions. Mastering these distinctions signals professionalism and competence across international business communication.
+              <strong>Extremely important</strong> in all English-speaking professional contexts worldwide. Surveys show that hiring managers in London, New York, Toronto, and Sydney view grammar errors�especially confused words�as signs of carelessness and poor attention to detail. In competitive global job markets, business correspondence with their/there/they're or your/you're mistakes can cost you opportunities, contracts, or promotions. Mastering these distinctions signals professionalism and competence across international business communication.
             </ArticleParagraph>
           </div>
         </div>
 
         <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-600 p-6 my-8 rounded">
-          <h3 className="font-bold text-lg mb-3">🚀 Continue Mastering Global English Grammar</h3>
+          <h3 className="font-bold text-lg mb-3">?? Continue Mastering Global English Grammar</h3>
           <ArticleParagraph>
             Ready to eliminate all grammar errors from your writing? Explore our comprehensive resources for English learners worldwide:
           </ArticleParagraph>
           <BulletList items={[
-            <><Link to="/grammar-guide" className="text-blue-600 hover:underline dark:text-blue-400">Complete English Grammar Guide</Link> - Master all essential grammar rules for UK, USA, Canada & Australia</>,
-            <><Link to="/topics/subject-verb-agreement" className="text-blue-600 hover:underline dark:text-blue-400">Subject-Verb Agreement Rules</Link> - Essential for error-free writing worldwide</>,
-            <><Link to="/topics/active-passive-voice" className="text-blue-600 hover:underline dark:text-blue-400">Active vs Passive Voice</Link> - Professional writing techniques used globally</>,
-            <><Link to="/interactive-exercises" className="text-blue-600 hover:underline dark:text-blue-400">Practice with Interactive Exercises</Link> - Test your knowledge with confused words quizzes</>,
-            <><Link to="/blog/ielts-writing-task-2-grammar-guide-band-8" className="text-blue-600 hover:underline dark:text-blue-400">IELTS Writing Task 2 Grammar Guide</Link> - Score Band 8+ for UK/Canada immigration</>,
-            <><Link to="/idioms" className="text-blue-600 hover:underline dark:text-blue-400">English Idioms</Link> - Master expressions used in international English communication</>
+            <><Link to="/grammar-guide/" className="text-blue-600 hover:underline dark:text-blue-400">Complete English Grammar Guide</Link> - Master all essential grammar rules for UK, USA, Canada & Australia</>,
+            <><Link to="/topics/subject-verb-agreement/" className="text-blue-600 hover:underline dark:text-blue-400">Subject-Verb Agreement Rules</Link> - Essential for error-free writing worldwide</>,
+            <><Link to="/topics/active-passive-voice/" className="text-blue-600 hover:underline dark:text-blue-400">Active vs Passive Voice</Link> - Professional writing techniques used globally</>,
+            <><Link to="/interactive-exercises/" className="text-blue-600 hover:underline dark:text-blue-400">Practice with Interactive Exercises</Link> - Test your knowledge with confused words quizzes</>,
+            <><Link to="/blog/ielts-writing-task-2-grammar-guide-band-8/" className="text-blue-600 hover:underline dark:text-blue-400">IELTS Writing Task 2 Grammar Guide</Link> - Score Band 8+ for UK/Canada immigration</>,
+            <><Link to="/idioms/" className="text-blue-600 hover:underline dark:text-blue-400">English Idioms</Link> - Master expressions used in international English communication</>
           ]} />
         </div>
 
@@ -11858,13 +15119,13 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on <a href="https://owl.purdue.edu/owl/general_writing/academic_writing/paragraphs_and_paragraphing/index.html" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Purdue OWL Paragraphing Guide</a>.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on <a href="https://owl.purdue.edu/owl/general_writing/academic_writing/paragraphs_and_paragraphing/index.html" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Purdue OWL Paragraphing Guide</a>.</span>
         </div>
 
         <ArticleParagraph>
-          Every well-written paragraph has a backbone—the topic sentence. This crucial sentence introduces the main idea of the paragraph and sets the stage for everything that follows. Strong topic sentences guide readers through your writing, create logical flow between ideas, and make your arguments clearer and more persuasive. Whether you're writing an academic essay, a business report, or a blog post, mastering topic sentences will transform your writing from disorganized to polished and professional.
+          Every well-written paragraph has a backbone�the topic sentence. This crucial sentence introduces the main idea of the paragraph and sets the stage for everything that follows. Strong topic sentences guide readers through your writing, create logical flow between ideas, and make your arguments clearer and more persuasive. Whether you're writing an academic essay, a business report, or a blog post, mastering topic sentences will transform your writing from disorganized to polished and professional.
         </ArticleParagraph>
 
         <ArticleHeading>What Is a Topic Sentence?</ArticleHeading>
@@ -12005,40 +15266,40 @@ export const BLOG_POSTS: BlogPost[] = [
           <strong>1. Being Too Broad</strong>
         </ArticleParagraph>
         <BulletList items={[
-          '❌ Technology is important in modern life.',
-          '✅ Smartphones have transformed how people access information on a daily basis.'
+          '? Technology is important in modern life.',
+          '? Smartphones have transformed how people access information on a daily basis.'
         ]} />
 
         <ArticleParagraph>
           <strong>2. Including Too Many Ideas</strong>
         </ArticleParagraph>
         <BulletList items={[
-          '❌ Social media affects communication, relationships, mental health, productivity, and political discourse.',
-          '✅ Social media has fundamentally altered how young people maintain long-distance friendships. (Save other topics for different paragraphs)'
+          '? Social media affects communication, relationships, mental health, productivity, and political discourse.',
+          '? Social media has fundamentally altered how young people maintain long-distance friendships. (Save other topics for different paragraphs)'
         ]} />
 
         <ArticleParagraph>
           <strong>3. Making Unsupported Claims</strong>
         </ArticleParagraph>
         <BulletList items={[
-          '❌ Everyone knows that reading improves intelligence.',
-          '✅ Research shows that regular reading enhances vocabulary acquisition and critical thinking skills.'
+          '? Everyone knows that reading improves intelligence.',
+          '? Research shows that regular reading enhances vocabulary acquisition and critical thinking skills.'
         ]} />
 
         <ArticleParagraph>
           <strong>4. Using Vague Language</strong>
         </ArticleParagraph>
         <BulletList items={[
-          '❌ There are many interesting things about renewable energy.',
-          '✅ Solar power offers the most cost-effective renewable energy solution for residential homeowners.'
+          '? There are many interesting things about renewable energy.',
+          '? Solar power offers the most cost-effective renewable energy solution for residential homeowners.'
         ]} />
 
         <ArticleParagraph>
           <strong>5. Starting with Evidence</strong>
         </ArticleParagraph>
         <BulletList items={[
-          '❌ "In 2020, remote work increased by 300%." (This is a detail, not a topic sentence)',
-          '✅ The COVID-19 pandemic accelerated the adoption of remote work across industries. (Then provide the statistics as support)'
+          '? "In 2020, remote work increased by 300%." (This is a detail, not a topic sentence)',
+          '? The COVID-19 pandemic accelerated the adoption of remote work across industries. (Then provide the statistics as support)'
         ]} />
 
         <ArticleHeading>The Topic Sentence Test</ArticleHeading>
@@ -12161,14 +15422,14 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on <a href="https://hbr.org/topic/subject/communication" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Harvard Business Review</a> and <a href="https://www.businessenglish.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Business English Resources</a> best practices.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on <a href="https://hbr.org/topic/subject/communication" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Harvard Business Review</a> and <a href="https://www.businessenglish.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Business English Resources</a> best practices.</span>
         </div>
 
         {/* Quick Reference Table */}
         <div className="bg-gradient-to-r from-indigo-50 to-blue-50 dark:from-slate-800 dark:to-slate-700 border border-indigo-200 dark:border-indigo-700 rounded-lg p-5 mb-6">
-          <h4 className="font-bold text-lg text-indigo-900 dark:text-indigo-200 mb-4">💼 Business Communication Quick Reference</h4>
+          <h4 className="font-bold text-lg text-indigo-900 dark:text-indigo-200 mb-4">?? Business Communication Quick Reference</h4>
           <div className="overflow-x-auto">
             <table className="min-w-full border-collapse text-sm">
               <thead>
@@ -12211,17 +15472,17 @@ export const BLOG_POSTS: BlogPost[] = [
 
         {/* Career Statistics */}
         <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-700 rounded-lg p-4 mb-6">
-          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">🎯 Business English: Career Impact</h4>
+          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">?? Business English: Career Impact</h4>
           <ul className="text-sm text-green-700 dark:text-green-300 space-y-1">
-            <li>• 70% of international business communication occurs in English (EF Corporate)</li>
-            <li>• Professionals with business English skills earn 25-35% higher salaries on average</li>
-            <li>• Email accounts for ~80% of written business communication in multinational companies</li>
-            <li>• Clear communication skills rank in top 3 desirable skills for global employers</li>
+            <li>� 70% of international business communication occurs in English (EF Corporate)</li>
+            <li>� Professionals with business English skills earn 25-35% higher salaries on average</li>
+            <li>� Email accounts for ~80% of written business communication in multinational companies</li>
+            <li>� Clear communication skills rank in top 3 desirable skills for global employers</li>
           </ul>
         </div>
 
         <ArticleParagraph>
-          Effective communication in business English requires more than just grammar knowledge—it demands familiarity with professional expressions, appropriate tone, and situational language. Whether you're conducting meetings, writing emails, or taking phone calls, using the right phrases can make you sound more confident, professional, and culturally aware. This comprehensive guide covers essential business English expressions that will elevate your professional communication skills.
+          Effective communication in business English requires more than just grammar knowledge�it demands familiarity with professional expressions, appropriate tone, and situational language. Whether you're conducting meetings, writing emails, or taking phone calls, using the right phrases can make you sound more confident, professional, and culturally aware. This comprehensive guide covers essential business English expressions that will elevate your professional communication skills.
         </ArticleParagraph>
 
         <ArticleHeading>Essential Expressions for Business Meetings</ArticleHeading>
@@ -12429,7 +15690,7 @@ export const BLOG_POSTS: BlogPost[] = [
             TypoGrammar Editorial Team creates independent, grammar-focused educational content to help English learners improve clarity, structure, and accuracy for academic and real-world use. All content is reviewed for accuracy, neutrality, and alignment with publicly available exam formats.
           </ArticleParagraph>
           <ArticleParagraph>
-            <Link to="/about/editorial-team" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">Learn more about the TypoGrammar Editorial Team</Link>
+            <Link to="/about/editorial-team/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">Learn more about the TypoGrammar Editorial Team</Link>
           </ArticleParagraph>
         </div>
 
@@ -12506,19 +15767,19 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Covers all major exams: <a href="https://www.ets.org/toefl" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">TOEFL</a>, <a href="https://www.ielts.org" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">IELTS</a>, <a href="https://www.cambridgeenglish.org" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Cambridge</a>, PTE.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Covers all major exams: <a href="https://www.ets.org/toefl" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">TOEFL</a>, <a href="https://www.ielts.org" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">IELTS</a>, <a href="https://www.cambridgeenglish.org" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Cambridge</a>, PTE.</span>
         </div>
 
         {/* Statistics Box */}
         <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-700 rounded-lg p-4 mb-6">
-          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">🎯 English Exam Statistics</h4>
+          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">?? English Exam Statistics</h4>
           <ul className="text-sm text-green-700 dark:text-green-300 space-y-1">
-            <li>• IELTS: 3.5 million tests/year, accepted by 12,000+ organizations</li>
-            <li>• TOEFL: 35 million lifetime test-takers, 11,500+ institutions accept it</li>
-            <li>• Average score improvement: 0.5 band per month of focused study</li>
-            <li>• Students who complete 4+ practice tests score 10-15% higher</li>
+            <li>� IELTS: 3.5 million tests/year, accepted by 12,000+ organizations</li>
+            <li>� TOEFL: 35 million lifetime test-takers, 11,500+ institutions accept it</li>
+            <li>� Average score improvement: 0.5 band per month of focused study</li>
+            <li>� Students who complete 4+ practice tests score 10-15% higher</li>
           </ul>
         </div>
 
@@ -12691,12 +15952,12 @@ export const BLOG_POSTS: BlogPost[] = [
           'Eat a nutritious breakfast',
           'Arrive 30 minutes early',
           'Bring water and snacks (if allowed)',
-          'Stay calm and confident—you\'ve prepared well'
+          'Stay calm and confident�you\'ve prepared well'
         ]} />
 
         <ArticleHeading>Final Words</ArticleHeading>
         <ArticleParagraph>
-          Preparing for an English language exam requires dedication, consistent practice, and strategic planning. Focus on building genuine language skills rather than just test-taking tricks. Use official practice materials, seek feedback on your performance, track your progress regularly, and adjust your study plan as needed. Remember that improvement takes time—be patient with yourself and celebrate small victories along the way. With proper preparation and a positive attitude, you can achieve your target score and reach your academic or professional goals.
+          Preparing for an English language exam requires dedication, consistent practice, and strategic planning. Focus on building genuine language skills rather than just test-taking tricks. Use official practice materials, seek feedback on your performance, track your progress regularly, and adjust your study plan as needed. Remember that improvement takes time�be patient with yourself and celebrate small victories along the way. With proper preparation and a positive attitude, you can achieve your target score and reach your academic or professional goals.
         </ArticleParagraph>
       </>
     )
@@ -12744,9 +16005,9 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on <a href="https://learnenglish.britishcouncil.org/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">British Council</a> everyday English resources.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on <a href="https://learnenglish.britishcouncil.org/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">British Council</a> everyday English resources.</span>
         </div>
 
         <ArticleParagraph>
@@ -13000,7 +16261,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </ArticleParagraph>
 
         <ArticleParagraph>
-          These everyday phrases will help you communicate more confidently in work, travel, and social situations. Practice them regularly, observe how native speakers use them, and don\'t be afraid to experiment. The more you use these expressions, the more natural your English will sound. Remember, the goal is effective communication and building connections—perfection comes with time and practice.
+          These everyday phrases will help you communicate more confidently in work, travel, and social situations. Practice them regularly, observe how native speakers use them, and don\'t be afraid to experiment. The more you use these expressions, the more natural your English will sound. Remember, the goal is effective communication and building connections�perfection comes with time and practice.
         </ArticleParagraph>
       </>
     )
@@ -13080,9 +16341,9 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on communicative language teaching research from <a href="https://www.cambridge.org/elt" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Cambridge ELT</a>.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on communicative language teaching research from <a href="https://www.cambridge.org/elt" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Cambridge ELT</a>.</span>
         </div>
 
         {/* Quick Answer Box */}
@@ -13111,7 +16372,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>Understanding Real Fluency</ArticleHeading>
         <ArticleParagraph>
-          Fluency isn't about speaking perfect English or knowing every vocabulary word—it's about communicating effectively and naturally. A fluent speaker can express ideas smoothly, maintain conversations, and think in English without constant translation. Memorized scripts create a false sense of competence that crumbles when you encounter unexpected questions or unfamiliar topics.
+          Fluency isn't about speaking perfect English or knowing every vocabulary word�it's about communicating effectively and naturally. A fluent speaker can express ideas smoothly, maintain conversations, and think in English without constant translation. Memorized scripts create a false sense of competence that crumbles when you encounter unexpected questions or unfamiliar topics.
         </ArticleParagraph>
 
         <ArticleParagraph>
@@ -13189,7 +16450,7 @@ export const BLOG_POSTS: BlogPost[] = [
           <><strong>Shift your goal:</strong> Focus on being understood rather than being perfect.</>,
           <><strong>Learn from mistakes in context:</strong> Note errors during real conversations and review them later.</>,
           <><strong>Speak more, even imperfectly:</strong> Volume of practice matters more than accuracy in early stages.</>,
-          <><strong>Use self-correction naturally:</strong> If you make a mistake, correct yourself and move on—native speakers do this constantly.</>,
+          <><strong>Use self-correction naturally:</strong> If you make a mistake, correct yourself and move on�native speakers do this constantly.</>,
           <><strong>Celebrate attempts:</strong> Every conversation, even difficult ones, improves your fluency.</>
         ]} />
 
@@ -13202,11 +16463,11 @@ export const BLOG_POSTS: BlogPost[] = [
           <strong>Natural Speaking Elements:</strong>
         </ArticleParagraph>
         <BulletList items={[
-          <><strong>Filler words:</strong> "Well," "So," "Actually," "I mean," "You know"—use these while thinking.</>,
+          <><strong>Filler words:</strong> "Well," "So," "Actually," "I mean," "You know"�use these while thinking.</>,
           <><strong>Thinking time phrases:</strong> "Let me think," "That's a good question," "How can I put this?"</>,
-          <><strong>Softeners:</strong> "Kind of," "Sort of," "Basically," "Pretty much"—these make speech less rigid.</>,
-          <><strong>Response markers:</strong> "Right," "Exactly," "I see," "Interesting"—show you're listening.</>,
-          <><strong>Transition words:</strong> "Anyway," "By the way," "Speaking of which"—connect ideas smoothly.</>
+          <><strong>Softeners:</strong> "Kind of," "Sort of," "Basically," "Pretty much"�these make speech less rigid.</>,
+          <><strong>Response markers:</strong> "Right," "Exactly," "I see," "Interesting"�show you're listening.</>,
+          <><strong>Transition words:</strong> "Anyway," "By the way," "Speaking of which"�connect ideas smoothly.</>
         ]} />
 
         <ArticleHeading>Immerse Yourself in Real English</ArticleHeading>
@@ -13221,7 +16482,7 @@ export const BLOG_POSTS: BlogPost[] = [
           <><strong>Listen actively:</strong> Podcasts, audiobooks, and YouTube videos expose you to natural speech patterns.</>,
           <><strong>Watch without subtitles:</strong> Challenge yourself to understand context without reading.</>,
           <><strong>Engage with native speakers:</strong> Language exchange, online communities, or local meetups provide real practice.</>,
-          <><strong>Consume content you enjoy:</strong> Follow your interests in English—hobbies, news, entertainment.</>,
+          <><strong>Consume content you enjoy:</strong> Follow your interests in English�hobbies, news, entertainment.</>,
           <><strong>Repeat what you hear:</strong> Mimic native speakers' intonation, rhythm, and word choice.</>
         ]} />
 
@@ -13237,7 +16498,7 @@ export const BLOG_POSTS: BlogPost[] = [
           <><strong>Language exchange partners:</strong> Websites like iTalki, Tandem, or HelloTalk connect you with native speakers.</>,
           <><strong>Online conversation clubs:</strong> Join free or paid conversation groups focused on discussion.</>,
           <><strong>Voice messaging:</strong> Send voice messages to friends or language partners instead of text.</>,
-          <><strong>Livestream or vlog:</strong> Create English content even if no one watches—the practice matters.</>,
+          <><strong>Livestream or vlog:</strong> Create English content even if no one watches�the practice matters.</>,
           <><strong>Talk to yourself:</strong> Narrate your day, discuss your opinions, or practice explanations aloud.</>,
           <><strong>Attend English events:</strong> Meetups, workshops, or online webinars in English.</>
         ]} />
@@ -13252,7 +16513,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </ArticleParagraph>
         <BulletList items={[
           <><strong>Paraphrasing:</strong> Describe the concept using different words: "You know, the thing you use to..." </>,
-          <><strong>Using synonyms:</strong> "Happy" instead of "elated," "big" instead of "enormous"—simpler is fine.</>,
+          <><strong>Using synonyms:</strong> "Happy" instead of "elated," "big" instead of "enormous"�simpler is fine.</>,
           <><strong>Asking for help:</strong> "What do you call...?" "How do you say...?" "Is there a word for...?"</>,
           <><strong>Approximating:</strong> "It's kind of like..." "It's similar to..." "Imagine a..."</>,
           <><strong>Using gestures:</strong> Non-verbal communication supports your message when words fail.</>
@@ -13276,7 +16537,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>Final Thoughts</ArticleHeading>
         <ArticleParagraph>
-          Developing genuine English fluency without memorized scripts is a gradual process that requires consistent practice, patience, and willingness to make mistakes. Focus on thinking in English, building active vocabulary, and creating regular speaking opportunities. Remember that every native speaker learned through trial and error—you\'re on the same path. Embrace the journey, celebrate small victories, and keep speaking. Fluency isn\'t a destination but a continuous improvement process. With dedication and the right strategies, you\'ll find yourself expressing ideas naturally and confidently in English, regardless of the situation.
+          Developing genuine English fluency without memorized scripts is a gradual process that requires consistent practice, patience, and willingness to make mistakes. Focus on thinking in English, building active vocabulary, and creating regular speaking opportunities. Remember that every native speaker learned through trial and error�you\'re on the same path. Embrace the journey, celebrate small victories, and keep speaking. Fluency isn\'t a destination but a continuous improvement process. With dedication and the right strategies, you\'ll find yourself expressing ideas naturally and confidently in English, regardless of the situation.
         </ArticleParagraph>
       </>
     )
@@ -13286,7 +16547,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'How to Achieve Band 9 in IELTS: Expert Guide with Real Examples',
     author: 'David Chen, Former IELTS Senior Examiner (British Council)',
     date: 'March 26, 2026',
-    summary: 'Learn proven strategies, real band 9 examples, and practical tips to master IELTS. Only 0.1% of test-takers achieve Band 9—this guide shows you exactly how to join them.',
+    summary: 'Learn proven strategies, real band 9 examples, and practical tips to master IELTS. Only 0.1% of test-takers achieve Band 9�this guide shows you exactly how to join them.',
     category: 'IELTS Preparation',
     schemaMarkup: {
       '@context': 'https://schema.org',
@@ -13299,7 +16560,7 @@ export const BLOG_POSTS: BlogPost[] = [
               'name': 'What percentage of IELTS test takers get Band 9?',
               'acceptedAnswer': {
                 '@type': 'Answer',
-                'text': 'According to official IELTS.org data, only approximately 0.1% of test takers achieve an overall Band 9 score. This makes Band 9 exceptionally rare—out of 3.5 million annual test takers, fewer than 3,500 achieve the perfect score.'
+                'text': 'According to official IELTS.org data, only approximately 0.1% of test takers achieve an overall Band 9 score. This makes Band 9 exceptionally rare�out of 3.5 million annual test takers, fewer than 3,500 achieve the perfect score.'
               }
             },
             {
@@ -13307,7 +16568,7 @@ export const BLOG_POSTS: BlogPost[] = [
               'name': 'How long does it take to prepare for IELTS Band 9?',
               'acceptedAnswer': {
                 '@type': 'Answer',
-                'text': 'Most Band 9 achievers report 6-12 months of dedicated preparation, with 2-4 hours of daily practice. However, this varies based on your starting level—candidates already at C1 CEFR level (IELTS 7-8) typically need 3-6 months of intensive Band 9-focused training.'
+                'text': 'Most Band 9 achievers report 6-12 months of dedicated preparation, with 2-4 hours of daily practice. However, this varies based on your starting level�candidates already at C1 CEFR level (IELTS 7-8) typically need 3-6 months of intensive Band 9-focused training.'
               }
             },
             {
@@ -13315,7 +16576,7 @@ export const BLOG_POSTS: BlogPost[] = [
               'name': 'Is it possible for non-native speakers to get IELTS Band 9?',
               'acceptedAnswer': {
                 '@type': 'Answer',
-                'text': 'Yes, non-native speakers can and do achieve Band 9. According to IELTS.org statistics, many Band 9 scorers come from countries like India, Germany, and the Philippines. The key is demonstrating expert-level command through sophisticated vocabulary, flawless grammar, and natural fluency—not native-speaker status.'
+                'text': 'Yes, non-native speakers can and do achieve Band 9. According to IELTS.org statistics, many Band 9 scorers come from countries like India, Germany, and the Philippines. The key is demonstrating expert-level command through sophisticated vocabulary, flawless grammar, and natural fluency�not native-speaker status.'
               }
             },
             {
@@ -13387,14 +16648,14 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on official <a href="https://www.ielts.org/for-organisations/ielts-scoring-in-detail" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">IELTS.org</a> band descriptors and examiner guidelines.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on official <a href="https://www.ielts.org/for-organisations/ielts-scoring-in-detail" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">IELTS.org</a> band descriptors and examiner guidelines.</span>
         </div>
 
         {/* Key Statistics Box */}
         <div className="bg-gradient-to-r from-green-50 to-emerald-50 dark:from-slate-800 dark:to-slate-700 border border-green-200 dark:border-green-700 rounded-lg p-5 mb-6">
-          <h4 className="font-bold text-lg text-green-900 dark:text-green-200 mb-3">📊 Band 9 Statistics: How Rare Is It?</h4>
+          <h4 className="font-bold text-lg text-green-900 dark:text-green-200 mb-3">?? Band 9 Statistics: How Rare Is It?</h4>
           <p className="text-sm text-green-700 dark:text-green-300 mb-3">Based on <a href="https://www.ielts.org/for-researchers/test-statistics" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">official IELTS.org test statistics</a>:</p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
             <div className="bg-white dark:bg-slate-700 rounded-lg p-3">
@@ -13417,7 +16678,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         <ArticleParagraph>
-          Scoring a Band 9 in IELTS is every test taker's dream. It represents English mastery—someone who not only understands the language completely but also uses it with precision, depth, and fluency in every context. <strong>Only approximately 0.1% of the 3.5 million annual IELTS test-takers achieve this score</strong>, making it exceptionally rare. Achieving this top score requires strategic preparation, consistent effort, and a clear understanding of how the IELTS scoring system works.
+          Scoring a Band 9 in IELTS is every test taker's dream. It represents English mastery�someone who not only understands the language completely but also uses it with precision, depth, and fluency in every context. <strong>Only approximately 0.1% of the 3.5 million annual IELTS test-takers achieve this score</strong>, making it exceptionally rare. Achieving this top score requires strategic preparation, consistent effort, and a clear understanding of how the IELTS scoring system works.
         </ArticleParagraph>
 
         <ArticleParagraph>
@@ -13483,7 +16744,7 @@ export const BLOG_POSTS: BlogPost[] = [
               </tr>
               <tr>
                 <td className="border border-slate-300 px-4 py-2">Speaking</td>
-                <td className="border border-slate-300 px-4 py-2">11–14 min</td>
+                <td className="border border-slate-300 px-4 py-2">11�14 min</td>
                 <td className="border border-slate-300 px-4 py-2">3 parts</td>
                 <td className="border border-slate-300 px-4 py-2">Oral fluency, vocabulary, pronunciation, and coherence</td>
               </tr>
@@ -13496,13 +16757,13 @@ export const BLOG_POSTS: BlogPost[] = [
         </ArticleParagraph>
 
         <BulletList items={[
-          <><strong>Academic IELTS</strong> – for students entering universities or professional institutions</>,
-          <><strong>General Training IELTS</strong> – for immigration, work, and vocational training</>
+          <><strong>Academic IELTS</strong> � for students entering universities or professional institutions</>,
+          <><strong>General Training IELTS</strong> � for immigration, work, and vocational training</>
         ]} />
 
         <ArticleHeading>Band 9 in IELTS Listening: Decoding the Secrets</ArticleHeading>
         <ArticleParagraph>
-          A Band 9 in Listening means you answer 39–40 out of 40 questions correctly. High scorers not only understand every spoken word but also catch nuances, tone, and implied meanings.
+          A Band 9 in Listening means you answer 39�40 out of 40 questions correctly. High scorers not only understand every spoken word but also catch nuances, tone, and implied meanings.
         </ArticleParagraph>
 
         <ArticleHeading>Strategies to Achieve Band 9</ArticleHeading>
@@ -13518,7 +16779,7 @@ export const BLOG_POSTS: BlogPost[] = [
           <div>
             <h4 className="font-semibold text-lg mb-2">Train with authentic accents:</h4>
             <ArticleParagraph>
-              The IELTS features various English accents—British, Canadian, Australian, and New Zealand. Listen to BBC Radio, TED Talks, or IELTS listening samples daily.
+              The IELTS features various English accents�British, Canadian, Australian, and New Zealand. Listen to BBC Radio, TED Talks, or IELTS listening samples daily.
             </ArticleParagraph>
           </div>
 
@@ -13539,7 +16800,7 @@ export const BLOG_POSTS: BlogPost[] = [
           <div>
             <h4 className="font-semibold text-lg mb-2">Practice in timed conditions:</h4>
             <ArticleParagraph>
-              Treat every practice test like the real exam—strict timing boosts concentration and stamina.
+              Treat every practice test like the real exam�strict timing boosts concentration and stamina.
             </ArticleParagraph>
           </div>
         </div>
@@ -13629,7 +16890,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>IELTS Writing Task 1 (Academic)</ArticleHeading>
         <ArticleParagraph>
-          You must describe and analyze visual data—graphs, charts, or processes—formally and succinctly.
+          You must describe and analyze visual data�graphs, charts, or processes�formally and succinctly.
         </ArticleParagraph>
 
         <ArticleHeading>Band 9 Example Description</ArticleHeading>
@@ -13660,7 +16921,7 @@ export const BLOG_POSTS: BlogPost[] = [
         <BulletList items={[
           'Use variety in sentence structures and avoid repetition',
           'Focus on accurate comparisons, trends, and summary insight',
-          'Avoid personal opinions—this task is factual'
+          'Avoid personal opinions�this task is factual'
         ]} />
 
         <ArticleHeading>IELTS Writing Task 2 (Essay)</ArticleHeading>
@@ -13697,7 +16958,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>Band 9 in IELTS Speaking: Fluency and Natural Expression</ArticleHeading>
         <ArticleParagraph>
-          Scoring Band 9 in IELTS Speaking requires near-native fluency, confidence, and natural conversation flow. This section lasts about 11–14 minutes and has three parts.
+          Scoring Band 9 in IELTS Speaking requires near-native fluency, confidence, and natural conversation flow. This section lasts about 11�14 minutes and has three parts.
         </ArticleParagraph>
 
         <div className="overflow-x-auto my-6">
@@ -13712,17 +16973,17 @@ export const BLOG_POSTS: BlogPost[] = [
             <tbody>
               <tr>
                 <td className="border border-slate-300 px-4 py-2">Part 1</td>
-                <td className="border border-slate-300 px-4 py-2">4–5 min</td>
+                <td className="border border-slate-300 px-4 py-2">4�5 min</td>
                 <td className="border border-slate-300 px-4 py-2">Introduction and general topics</td>
               </tr>
               <tr>
                 <td className="border border-slate-300 px-4 py-2">Part 2</td>
-                <td className="border border-slate-300 px-4 py-2">3–4 min</td>
+                <td className="border border-slate-300 px-4 py-2">3�4 min</td>
                 <td className="border border-slate-300 px-4 py-2">Cue card (long turn)</td>
               </tr>
               <tr>
                 <td className="border border-slate-300 px-4 py-2">Part 3</td>
-                <td className="border border-slate-300 px-4 py-2">4–5 min</td>
+                <td className="border border-slate-300 px-4 py-2">4�5 min</td>
                 <td className="border border-slate-300 px-4 py-2">Discussion and analysis</td>
               </tr>
             </tbody>
@@ -13735,7 +16996,7 @@ export const BLOG_POSTS: BlogPost[] = [
           <div>
             <h4 className="font-semibold text-lg mb-2">Speak naturally, not mechanically:</h4>
             <ArticleParagraph>
-              Avoid memorized scripts—they sound artificial.
+              Avoid memorized scripts�they sound artificial.
             </ArticleParagraph>
           </div>
 
@@ -13773,7 +17034,7 @@ export const BLOG_POSTS: BlogPost[] = [
           <strong>Question (Part 2 cue card):</strong> Describe a book that influenced you greatly.
         </ArticleParagraph>
 
-        <div className="bg-slate-50 border-l-4 border-orange-500 p-4 my-4">
+        <div className="bg-slate-50 border-l-4 border-teal-500 p-4 my-4">
           <ArticleParagraph>
             <strong>Band 9 Sample Answer (Excerpt):</strong>
           </ArticleParagraph>
@@ -13841,16 +17102,16 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         <ArticleParagraph>
-          <strong>Bonus tip:</strong> Record your progress weekly and review past mistakes—it's how top scorers refine their approach.
+          <strong>Bonus tip:</strong> Record your progress weekly and review past mistakes�it's how top scorers refine their approach.
         </ArticleParagraph>
 
         <ArticleHeading>Recommended Resources for Band 9 Preparation</ArticleHeading>
         <BulletList items={[
-          <>Official IELTS Practice Books (Cambridge Series 1–19) – authentic exam practice</>,
-          <><a href="https://ieltsliz.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">IELTS Liz</a> and IELTS Simon – practical tips and model answers</>,
-          <><a href="https://www.cambridgeenglish.org/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">British Council & IDP</a> websites – official videos and sample materials</>,
-          <>Grammarly / ChatGPT practice – helps improve writing feedback instantly</>,
-          <>BBC Learning English / Podcasts – natural listening exposure</>
+          <>Official IELTS Practice Books (Cambridge Series 1�19) � authentic exam practice</>,
+          <><a href="https://ieltsliz.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">IELTS Liz</a> and IELTS Simon � practical tips and model answers</>,
+          <><a href="https://www.cambridgeenglish.org/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">British Council & IDP</a> websites � official videos and sample materials</>,
+          <>Grammarly / ChatGPT practice � helps improve writing feedback instantly</>,
+          <>BBC Learning English / Podcasts � natural listening exposure</>
         ]} />
 
         <ArticleHeading>Psychological Preparation for Band 9 Success</ArticleHeading>
@@ -13873,12 +17134,12 @@ export const BLOG_POSTS: BlogPost[] = [
             <><strong>Countries with highest Band 9 rates:</strong> Germany (0.3%), Netherlands (0.25%), Philippines (0.2%), India (0.15%)</>,
             <><strong>Average preparation time for Band 9:</strong> 6-12 months of dedicated study (2-4 hours daily)</>,
             <><strong>Most common weakness:</strong> Writing Task 2 coherence and lexical precision</>,
-            <><strong>Key differentiator:</strong> Band 9 candidates demonstrate "effortless" fluency—no hesitation or self-correction in Speaking</>
+            <><strong>Key differentiator:</strong> Band 9 candidates demonstrate "effortless" fluency�no hesitation or self-correction in Speaking</>
           ]} />
         </div>
 
         <ArticleParagraph>
-          <strong>Key Insight from Examiners:</strong> Band 9 candidates don't just avoid mistakes—they demonstrate sophisticated language use that sounds natural and educated. The difference between Band 8 and Band 9 is often the "polish" of expression, not the absence of errors.
+          <strong>Key Insight from Examiners:</strong> Band 9 candidates don't just avoid mistakes�they demonstrate sophisticated language use that sounds natural and educated. The difference between Band 8 and Band 9 is often the "polish" of expression, not the absence of errors.
         </ArticleParagraph>
 
         <ArticleHeading>Final Band 9 Checklist</ArticleHeading>
@@ -13896,7 +17157,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>Conclusion</ArticleHeading>
         <ArticleParagraph>
-          Achieving Band 9 in IELTS is not just about English proficiency—it's about strategic mastery of the test format, time management, and application of advanced language skills under pressure.
+          Achieving Band 9 in IELTS is not just about English proficiency�it's about strategic mastery of the test format, time management, and application of advanced language skills under pressure.
         </ArticleParagraph>
 
         <ArticleParagraph>
@@ -13933,7 +17194,7 @@ export const BLOG_POSTS: BlogPost[] = [
           'name': 'Which test is better for US universities: IELTS or TOEFL?',
           'acceptedAnswer': {
             '@type': 'Answer',
-            'text': 'TOEFL is traditionally preferred by US universities as it originated there, but 98% of US schools now accept IELTS. Choose based on your strengths—TOEFL for reading/writing proficiency, IELTS for speaking/listening.'
+            'text': 'TOEFL is traditionally preferred by US universities as it originated there, but 98% of US schools now accept IELTS. Choose based on your strengths�TOEFL for reading/writing proficiency, IELTS for speaking/listening.'
           }
         },
         {
@@ -13966,8 +17227,8 @@ export const BLOG_POSTS: BlogPost[] = [
       <>
         {/* Quick Answer Box - GEO optimized for AI citation */}
         <div className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-slate-800 dark:to-slate-700 border-l-4 border-blue-600 dark:border-blue-400 p-6 mb-8 rounded-r-lg shadow-sm">
-          <p className="font-bold text-lg text-blue-900 dark:text-blue-100 mb-2">Quick Answer: IELTS vs TOEFL – Which Should You Choose?</p>
-          <p className="text-slate-700 dark:text-slate-300"><strong>IELTS is generally better for UK, Australia, and Canada applications</strong> (especially immigration). <strong>TOEFL is traditionally preferred for US universities.</strong> However, 98% of institutions now accept both—choose based on your strengths: IELTS for face-to-face speaking, TOEFL for computer-based efficiency.</p>
+          <p className="font-bold text-lg text-blue-900 dark:text-blue-100 mb-2">Quick Answer: IELTS vs TOEFL � Which Should You Choose?</p>
+          <p className="text-slate-700 dark:text-slate-300"><strong>IELTS is generally better for UK, Australia, and Canada applications</strong> (especially immigration). <strong>TOEFL is traditionally preferred for US universities.</strong> However, 98% of institutions now accept both�choose based on your strengths: IELTS for face-to-face speaking, TOEFL for computer-based efficiency.</p>
           <p className="text-sm text-slate-500 dark:text-slate-400 mt-3 italic">Last updated: March 2026 | Includes January 2026 TOEFL scoring changes</p>
         </div>
 
@@ -13983,7 +17244,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         <ArticleParagraph>
-          Choosing between IELTS and TOEFL remains one of the most critical decisions for millions of students, professionals, and immigrants aiming to prove their English proficiency. With 2026 bringing enhanced digital formats, faster results, and evolving acceptance criteria, this comprehensive guide dives deep into every aspect—from test structures and difficulty levels to preparation strategies, costs, and country-specific preferences. Whether you're targeting top universities, permanent residency, or job opportunities abroad, understanding these differences ensures you select the test that maximizes your score potential and minimizes stress.
+          Choosing between IELTS and TOEFL remains one of the most critical decisions for millions of students, professionals, and immigrants aiming to prove their English proficiency. With 2026 bringing enhanced digital formats, faster results, and evolving acceptance criteria, this comprehensive guide dives deep into every aspect�from test structures and difficulty levels to preparation strategies, costs, and country-specific preferences. Whether you're targeting top universities, permanent residency, or job opportunities abroad, understanding these differences ensures you select the test that maximizes your score potential and minimizes stress.
         </ArticleParagraph>
 
         <ArticleHeading>Why Compare IELTS vs TOEFL in 2026?</ArticleHeading>
@@ -13992,7 +17253,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </ArticleParagraph>
 
         <ArticleParagraph>
-          In 2026, key shifts include IELTS's expanded One Skill Retake feature (allowing retests of individual sections), more widespread computer-delivered options, and TOEFL's permanent shorter format (under 2 hours) with enhanced AI proctoring for at-home testing. Monthly searches for "IELTS vs TOEFL which is easier" exceed 1,900, spiking during application seasons, as test-takers grapple with format preferences, accent familiarity, and scoring nuances. Your native language, typing speed, and comfort with human interaction heavily influence the "easier" choice—IELTS suits conversational styles, TOEFL academic rigor.
+          In 2026, key shifts include IELTS's expanded One Skill Retake feature (allowing retests of individual sections), more widespread computer-delivered options, and TOEFL's permanent shorter format (under 2 hours) with enhanced AI proctoring for at-home testing. Monthly searches for "IELTS vs TOEFL which is easier" exceed 1,900, spiking during application seasons, as test-takers grapple with format preferences, accent familiarity, and scoring nuances. Your native language, typing speed, and comfort with human interaction heavily influence the "easier" choice�IELTS suits conversational styles, TOEFL academic rigor.
         </ArticleParagraph>
 
         <ArticleParagraph>
@@ -14001,7 +17262,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>Detailed Test Formats: IELTS vs TOEFL Structure Breakdown</ArticleHeading>
         <ArticleParagraph>
-          Both tests evaluate four skills—Listening, Reading, Writing, and Speaking—but their delivery and integration differ significantly.
+          Both tests evaluate four skills�Listening, Reading, Writing, and Speaking�but their delivery and integration differ significantly.
         </ArticleParagraph>
 
         <ArticleHeading>IELTS Format Overview</ArticleHeading>
@@ -14009,7 +17270,7 @@ export const BLOG_POSTS: BlogPost[] = [
           <><strong>Duration:</strong> 2 hours 45 minutes</>,
           <><strong>Listening:</strong> 30 minutes, 40 questions across 4 recordings (conversations, monologues) with British, Australian, and other accents. One listen-through</>,
           <><strong>Reading:</strong> 60 minutes, 40 questions on 3 long passages (academic or general topics like newspapers, journals)</>,
-          <><strong>Writing:</strong> 60 minutes—Task 1 (150 words, describe graph/process/map, 20 min); Task 2 (250 words, opinion/discussion essay, 40 min)</>,
+          <><strong>Writing:</strong> 60 minutes�Task 1 (150 words, describe graph/process/map, 20 min); Task 2 (250 words, opinion/discussion essay, 40 min)</>,
           <><strong>Speaking:</strong> 11-14 minutes, face-to-face with an examiner in 3 parts: introduction, long-turn cue card (1-2 min monologue), two-way discussion</>,
           <><strong>Modes:</strong> Paper-based, computer-delivered, or online (expanding in 2026)</>
         ]} />
@@ -14019,7 +17280,7 @@ export const BLOG_POSTS: BlogPost[] = [
           <><strong>Duration:</strong> ~2 hours (shorter since 2023 updates)</>,
           <><strong>Listening:</strong> 36 minutes, 28-39 questions from 3-4 lectures/conversations (North American accents, academic focus). Note-taking allowed</>,
           <><strong>Reading:</strong> 36 minutes (MyBest scores optional), 20 questions per 2 passages (academic texts)</>,
-          <><strong>Writing:</strong> 29 minutes—Integrated Task (20 min, read-listen-write summary); Independent Essay (29 min total section)</>,
+          <><strong>Writing:</strong> 29 minutes�Integrated Task (20 min, read-listen-write summary); Independent Essay (29 min total section)</>,
           <><strong>Speaking:</strong> 17 minutes, 4 tasks recorded via microphone (personal, integrated read/listen/speak, academic lectures)</>,
           <><strong>Modes:</strong> Fully computer-based or Home Edition</>
         ]} />
@@ -14069,7 +17330,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>In-Depth Difficulty Analysis: Which Sections Are Easier?</ArticleHeading>
         <ArticleParagraph>
-          "Easier" is subjective—based on Magoosh and British Council surveys, 52% rate IELTS easier overall due to speaking, but TOEFL wins for speed (40% preference). Factors: Your English level (Band 6.0+ favors both), first language (Mandarin speakers prefer TOEFL reading), and practice hours.
+          "Easier" is subjective�based on Magoosh and British Council surveys, 52% rate IELTS easier overall due to speaking, but TOEFL wins for speed (40% preference). Factors: Your English level (Band 6.0+ favors both), first language (Mandarin speakers prefer TOEFL reading), and practice hours.
         </ArticleParagraph>
 
         <ArticleHeading>Listening Difficulty</ArticleHeading>
@@ -14079,7 +17340,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <ArticleHeading>Reading Difficulty</ArticleHeading>
         <ArticleParagraph>
-          IELTS: Variety questions (matching, summary)—skimming key. TOEFL: Inference/vocab in context—heavy on analysis. <strong>Winner:</strong> TOEFL for shorter time per word.
+          IELTS: Variety questions (matching, summary)�skimming key. TOEFL: Inference/vocab in context�heavy on analysis. <strong>Winner:</strong> TOEFL for shorter time per word.
         </ArticleParagraph>
 
         <ArticleHeading>Writing Difficulty</ArticleHeading>
@@ -14104,14 +17365,14 @@ export const BLOG_POSTS: BlogPost[] = [
         </ArticleParagraph>
 
         {/* NEW: January 2026 TOEFL Scoring Update */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border-l-4 border-amber-500 p-4 my-6">
-          <p className="font-bold text-amber-800 dark:text-amber-200 mb-2">🆕 January 2026 Update: New TOEFL 1-6 Scoring Scale</p>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border-l-4 border-teal-500 p-4 my-6">
+          <p className="font-bold text-teal-800 dark:text-teal-200 mb-2">?? January 2026 Update: New TOEFL 1-6 Scoring Scale</p>
           <ArticleParagraph>
             As of January 2026, ETS introduced a supplementary <strong>1-6 proficiency scale</strong> alongside the traditional 0-120 scoring system. This new scale provides clearer proficiency level descriptions aligned with CEFR standards:
           </ArticleParagraph>
           <div className="overflow-x-auto my-4">
             <table className="min-w-full border-collapse border border-slate-300">
-              <thead className="bg-amber-100 dark:bg-amber-900/40">
+              <thead className="bg-teal-100 dark:bg-teal-900/40">
                 <tr>
                   <th className="border border-slate-300 px-4 py-2 text-left">New Scale</th>
                   <th className="border border-slate-300 px-4 py-2 text-left">TOEFL Total</th>
@@ -14159,7 +17420,7 @@ export const BLOG_POSTS: BlogPost[] = [
               </tbody>
             </table>
           </div>
-          <p className="text-sm text-amber-700 dark:text-amber-300">This makes TOEFL scores more directly comparable to IELTS bands and CEFR levels for institutions and immigration purposes.</p>
+          <p className="text-sm text-teal-700 dark:text-teal-300">This makes TOEFL scores more directly comparable to IELTS bands and CEFR levels for institutions and immigration purposes.</p>
         </div>
 
         <ArticleHeading>Detailed Conversion Table (2026 Official)</ArticleHeading>
@@ -14330,7 +17591,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <div className="bg-slate-50 border-l-4 border-green-500 p-4 my-6 italic">
           <ArticleParagraph>
-            <strong>User Testimonial:</strong> "IELTS speaking saved me—TOEFL mic froze during my practice test!" - Reddit user, 2025
+            <strong>User Testimonial:</strong> "IELTS speaking saved me�TOEFL mic froze during my practice test!" - Reddit user, 2025
           </ArticleParagraph>
         </div>
 
@@ -14347,7 +17608,7 @@ export const BLOG_POSTS: BlogPost[] = [
         <BulletList items={[
           <><strong>IELTS:</strong> AI-powered Writing feedback, dual delivery options expanding, One Skill Retake now available globally</>,
           <><strong>TOEFL (January 2026):</strong> New 1-6 proficiency scale introduced alongside traditional scoring, free score previews expanding to more regions, enhanced AI proctoring for Home Edition</>,
-          <><strong>Both:</strong> Sustainability initiatives—digital delivery reduces paper waste, faster result delivery (IELTS computer: 3-5 days, TOEFL: 4-6 days)</>
+          <><strong>Both:</strong> Sustainability initiatives�digital delivery reduces paper waste, faster result delivery (IELTS computer: 3-5 days, TOEFL: 4-6 days)</>
         ]} />
 
         <ArticleHeading>FAQs: Answering Top Searches</ArticleHeading>
@@ -14363,7 +17624,7 @@ export const BLOG_POSTS: BlogPost[] = [
           <div>
             <h4 className="font-semibold text-lg mb-2">TOEFL vs IELTS cost in India?</h4>
             <ArticleParagraph>
-              TOEFL costs approximately ₹16,900; IELTS costs around ₹18,000. Both prices are subject to change and may vary by location.
+              TOEFL costs approximately ?16,900; IELTS costs around ?18,000. Both prices are subject to change and may vary by location.
             </ArticleParagraph>
           </div>
 
@@ -14388,7 +17649,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </ArticleParagraph>
 
         <ArticleParagraph>
-          Whether you choose IELTS or TOEFL, consistent practice, strategic preparation, and understanding the test format will lead you to success. Your English proficiency journey begins with making an informed decision—now you have all the tools to choose wisely.
+          Whether you choose IELTS or TOEFL, consistent practice, strategic preparation, and understanding the test format will lead you to success. Your English proficiency journey begins with making an informed decision�now you have all the tools to choose wisely.
         </ArticleParagraph>
 
         <div className="bg-blue-50 border-l-4 border-blue-500 p-4 my-6">
@@ -14432,7 +17693,7 @@ export const BLOG_POSTS: BlogPost[] = [
           'name': 'How many synonyms should I replace in my IELTS essay?',
           'acceptedAnswer': {
             '@type': 'Answer',
-            'text': 'Aim to replace about 20% of basic vocabulary with Band 9 synonyms. Over-replacement sounds unnatural. The key is precision—using the right sophisticated word in the right context.'
+            'text': 'Aim to replace about 20% of basic vocabulary with Band 9 synonyms. Over-replacement sounds unnatural. The key is precision�using the right sophisticated word in the right context.'
           }
         },
         {
@@ -14459,23 +17720,23 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on the official <a href="https://www.ielts.org/for-organisations/ielts-scoring-in-detail/ielts-writing-band-descriptors" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">IELTS Writing Band Descriptors</a> (Lexical Resource criteria).</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on the official <a href="https://www.ielts.org/for-organisations/ielts-scoring-in-detail/ielts-writing-band-descriptors" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">IELTS Writing Band Descriptors</a> (Lexical Resource criteria).</span>
         </div>
 
         {/* Downloadable Resource Box */}
         <div className="bg-gradient-to-r from-green-50 to-emerald-50 dark:from-slate-800 dark:to-slate-700 border border-green-200 dark:border-green-700 rounded-lg p-5 mb-6">
-          <h4 className="font-bold text-lg text-green-900 dark:text-green-200 mb-2">📥 Free Downloadable Resource</h4>
+          <h4 className="font-bold text-lg text-green-900 dark:text-green-200 mb-2">?? Free Downloadable Resource</h4>
           <p className="text-sm text-green-700 dark:text-green-300 mb-3">Want these synonyms in a printable format? Get our comprehensive IELTS Academic Vocabulary Book:</p>
-          <a href="/ielts/academic-vocabulary-book" className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg font-medium transition-colors">
+          <a href="/ielts/academic-vocabulary-book/" className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg font-medium transition-colors">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
             Download Free Vocabulary Book (PDF)
           </a>
         </div>
 
         <ArticleParagraph>
-          Achieving a Band 9 in IELTS Writing requires more than just good grammar; it demands "a wide range of vocabulary used with full flexibility and precision," according to the <a href="https://www.ielts.org/for-organisations/ielts-scoring-in-detail/ielts-writing-band-descriptors" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">official Band 9 descriptors on IELTS.org</a>. This comprehensive 200-entry table—expanded from an analysis of real Band 7-9 essays—provides exact replacements for common words, categorized for Task 1 graphs and Task 2 essays.
+          Achieving a Band 9 in IELTS Writing requires more than just good grammar; it demands "a wide range of vocabulary used with full flexibility and precision," according to the <a href="https://www.ielts.org/for-organisations/ielts-scoring-in-detail/ielts-writing-band-descriptors" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">official Band 9 descriptors on IELTS.org</a>. This comprehensive 200-entry table�expanded from an analysis of real Band 7-9 essays�provides exact replacements for common words, categorized for Task 1 graphs and Task 2 essays.
         </ArticleParagraph>
 
         <div className="bg-blue-50 dark:bg-slate-800 border-l-4 border-blue-500 p-6 my-6">
@@ -14489,12 +17750,12 @@ export const BLOG_POSTS: BlogPost[] = [
         </ArticleParagraph>
 
         <ArticleParagraph>
-          <strong>The Strategy:</strong> Use this table to swap about 20% of the basic words in your next essay for a potential 0.5–1.0 band gain. Categories match top IELTS topics: society, government, education, health, technology, and economy.
+          <strong>The Strategy:</strong> Use this table to swap about 20% of the basic words in your next essay for a potential 0.5�1.0 band gain. Categories match top IELTS topics: society, government, education, health, technology, and economy.
         </ArticleParagraph>
 
         <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-6 my-6">
-          <p className="font-semibold mb-2">💡 Quick Band 9 Hack:</p>
-          <p className="text-sm">Don't just memorize the list. Target the keywords in the headings (H1/H2) of your essay questions. Using these specific tables will help you paraphrase the prompt naturally—a key requirement for a high score.</p>
+          <p className="font-semibold mb-2">?? Quick Band 9 Hack:</p>
+          <p className="text-sm">Don't just memorize the list. Target the keywords in the headings (H1/H2) of your essay questions. Using these specific tables will help you paraphrase the prompt naturally�a key requirement for a high score.</p>
         </div>
 
         <ArticleHeading>1. People & Society (1-20)</ArticleHeading>
@@ -16318,7 +19579,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-6 my-6">
-          <h4 className="font-semibold mb-2">🎉 Complete 200-Entry Collection</h4>
+          <h4 className="font-semibold mb-2">?? Complete 200-Entry Collection</h4>
           <p className="text-sm">You now have access to all 200 Band 9 synonyms across 10 comprehensive categories. Study systematically, practice daily, and watch your IELTS Writing score transform from Band 6-7 to Band 8-9!</p>
         </div>
 
@@ -16340,7 +19601,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </ArticleParagraph>
 
         <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-500 p-6 my-6">
-          <h4 className="font-semibold mb-2">⚠️ Common Pitfall:</h4>
+          <h4 className="font-semibold mb-2">?? Common Pitfall:</h4>
           <p className="text-sm">Band 5-6 candidates often use synonyms incorrectly. Example: "The populace of my family" (wrong) vs. "The members of my family" (correct). Always check if the synonym fits the specific context.</p>
         </div>
 
@@ -16445,8 +19706,8 @@ export const BLOG_POSTS: BlogPost[] = [
       <>
         {/* Author Bio Box */}
         <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg p-4 mb-6 flex items-start gap-4">
-          <div className="w-12 h-12 bg-orange-100 dark:bg-orange-900 rounded-full flex items-center justify-center flex-shrink-0">
-            <span className="text-orange-600 dark:text-orange-300 font-bold text-lg">DF</span>
+          <div className="w-12 h-12 bg-teal-100 dark:bg-teal-900 rounded-full flex items-center justify-center flex-shrink-0">
+            <span className="text-teal-600 dark:text-teal-300 font-bold text-lg">DF</span>
           </div>
           <div>
             <p className="font-semibold text-slate-900 dark:text-slate-100">Daniel Foster</p>
@@ -16455,19 +19716,19 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on <a href="https://www.ets.org/toefl/test-takers/ibt/about/content/home" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">ETS TOEFL Home Edition</a> official requirements.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on <a href="https://www.ets.org/toefl/test-takers/ibt/about/content/home" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">ETS TOEFL Home Edition</a> official requirements.</span>
         </div>
 
         {/* Statistics Box */}
         <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-700 rounded-lg p-4 mb-6">
-          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">🎯 TOEFL Home Edition: Key Facts</h4>
+          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">?? TOEFL Home Edition: Key Facts</h4>
           <ul className="text-sm text-green-700 dark:text-green-300 space-y-1">
-            <li>• Available 24/7 in most countries worldwide</li>
-            <li>• Identical content and scoring to test center TOEFL</li>
-            <li>• Results available within 6-10 days (same as test center)</li>
-            <li>• Technical issues account for ~5% of home test interruptions</li>
+            <li>� Available 24/7 in most countries worldwide</li>
+            <li>� Identical content and scoring to test center TOEFL</li>
+            <li>� Results available within 6-10 days (same as test center)</li>
+            <li>� Technical issues account for ~5% of home test interruptions</li>
           </ul>
         </div>
 
@@ -16476,7 +19737,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </ArticleParagraph>
 
         <div className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-slate-800 dark:to-slate-700 border-l-4 border-blue-600 p-6 my-8 rounded-r-lg">
-          <h4 className="font-semibold text-xl mb-4 text-blue-900 dark:text-blue-200">🎯 Key Takeaways</h4>
+          <h4 className="font-semibold text-xl mb-4 text-blue-900 dark:text-blue-200">?? Key Takeaways</h4>
           <BulletList items={[
             <>The TOEFL Home Edition lets you take the test on your own computer, but it has strict rules about your testing space and equipment.</>,
             <>You need a reliable laptop or desktop computer that meets specific operating system and browser requirements.</>,
@@ -16561,7 +19822,7 @@ export const BLOG_POSTS: BlogPost[] = [
         <ArticleHeading>Essential Technology Requirements</ArticleHeading>
 
         <ArticleParagraph>
-          Alright, let's talk about the tech side of things for the TOEFL Home Edition. It's not super complicated, but you do need to make sure your setup is ready to go. Think of it like getting your car tuned up before a long road trip – you don't want any surprises when you're already on the highway.
+          Alright, let's talk about the tech side of things for the TOEFL Home Edition. It's not super complicated, but you do need to make sure your setup is ready to go. Think of it like getting your car tuned up before a long road trip � you don't want any surprises when you're already on the highway.
         </ArticleParagraph>
 
         <ArticleParagraph>
@@ -16590,7 +19851,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-500 p-6 my-6">
           <p className="text-slate-900 dark:text-slate-100">
-            <strong>Pro Tip:</strong> Make sure to run the ProctorU® Equipment Check on your computer before test day. This tool helps you identify any potential issues with your microphone, speakers, camera, and internet connection. If something doesn't pass, you'll have time to fix it. Don't wait until the last minute!
+            <strong>Pro Tip:</strong> Make sure to run the ProctorU� Equipment Check on your computer before test day. This tool helps you identify any potential issues with your microphone, speakers, camera, and internet connection. If something doesn't pass, you'll have time to fix it. Don't wait until the last minute!
           </p>
         </div>
 
@@ -16889,14 +20150,14 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on <a href="https://www.ielts.org/about-ielts/scoring-in-detail" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">IELTS Band Descriptors</a> and <a href="https://dictionary.cambridge.org/grammar/british-grammar/sentence-types" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Cambridge Grammar</a> guidelines.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on <a href="https://www.ielts.org/about-ielts/scoring-in-detail" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">IELTS Band Descriptors</a> and <a href="https://dictionary.cambridge.org/grammar/british-grammar/sentence-types" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Cambridge Grammar</a> guidelines.</span>
         </div>
 
         {/* Quick Reference Table */}
         <div className="bg-gradient-to-r from-teal-50 to-emerald-50 dark:from-slate-800 dark:to-slate-700 border border-teal-200 dark:border-teal-700 rounded-lg p-5 mb-6">
-          <h4 className="font-bold text-lg text-teal-900 dark:text-teal-200 mb-4">📊 4 Types of Sentences: Quick Summary</h4>
+          <h4 className="font-bold text-lg text-teal-900 dark:text-teal-200 mb-4">?? 4 Types of Sentences: Quick Summary</h4>
           <div className="overflow-x-auto">
             <table className="min-w-full border-collapse text-sm">
               <thead>
@@ -16934,18 +20195,18 @@ export const BLOG_POSTS: BlogPost[] = [
 
         {/* IELTS Statistics */}
         <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-700 rounded-lg p-4 mb-6">
-          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">🎯 Sentence Variety in IELTS Writing</h4>
+          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">?? Sentence Variety in IELTS Writing</h4>
           <ul className="text-sm text-green-700 dark:text-green-300 space-y-1">
-            <li>• Band 7+ essays typically use 60-70% complex/compound-complex sentences</li>
-            <li>• Grammatical Range and Accuracy accounts for 25% of IELTS Writing score</li>
-            <li>• Essays with only simple sentences rarely score above Band 5.5</li>
-            <li>• Using varied sentence structures is explicitly required for Band 7 descriptors</li>
+            <li>� Band 7+ essays typically use 60-70% complex/compound-complex sentences</li>
+            <li>� Grammatical Range and Accuracy accounts for 25% of IELTS Writing score</li>
+            <li>� Essays with only simple sentences rarely score above Band 5.5</li>
+            <li>� Using varied sentence structures is explicitly required for Band 7 descriptors</li>
           </ul>
         </div>
 
         <div className="mb-8">
           <p className="text-sm text-slate-600 dark:text-slate-400 mb-2">
-            By <Link to="/about/editorial-team" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium">TypoGrammar Editorial Team</Link>
+            By <Link to="/about/editorial-team/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium">TypoGrammar Editorial Team</Link>
           </p>
         </div>
 
@@ -16970,7 +20231,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </ArticleParagraph>
 
         <ArticleParagraph>
-          In this complete guide, you will learn the four types of sentences, their structure, and see 100 practical examples — especially designed for IELTS writing.
+          In this complete guide, you will learn the four types of sentences, their structure, and see 100 practical examples � especially designed for IELTS writing.
         </ArticleParagraph>
 
         {/* Why Sentence Types Are Important in IELTS Writing */}
@@ -16991,7 +20252,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="text-slate-900 dark:text-slate-100">
-            ❌ <em>I like reading. I read every day. Reading is good.</em>
+            ? <em>I like reading. I read every day. Reading is good.</em>
           </p>
           <p className="text-sm text-red-700 dark:text-red-400 mt-2">Your score will be limited.</p>
         </div>
@@ -17002,7 +20263,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-6 my-6 rounded-r-lg">
           <p className="text-slate-900 dark:text-slate-100">
-            ✅ <em>Although I am very busy, I read every day because it helps me relax.</em>
+            ? <em>Although I am very busy, I read every day because it helps me relax.</em>
           </p>
           <p className="text-sm text-green-700 dark:text-green-400 mt-2">Your score increases.</p>
         </div>
@@ -17240,14 +20501,14 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">Mistake 1: Incomplete sentence</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>Because I was tired.</em> — This is incomplete.</p>
-          <p className="text-green-700 dark:text-green-400 mt-2">✅ <em>Because I was tired, I slept early.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>Because I was tired.</em> � This is incomplete.</p>
+          <p className="text-green-700 dark:text-green-400 mt-2">? <em>Because I was tired, I slept early.</em></p>
         </div>
 
         <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 my-6 rounded-r-lg">
           <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">Mistake 2: Double conjunction</p>
-          <p className="text-slate-700 dark:text-slate-300">❌ <em>Although he is rich but he is unhappy.</em></p>
-          <p className="text-green-700 dark:text-green-400 mt-2">✅ <em>Although he is rich, he is unhappy.</em></p>
+          <p className="text-slate-700 dark:text-slate-300">? <em>Although he is rich but he is unhappy.</em></p>
+          <p className="text-green-700 dark:text-green-400 mt-2">? <em>Although he is rich, he is unhappy.</em></p>
         </div>
 
         {/* Tips */}
@@ -17265,7 +20526,7 @@ export const BLOG_POSTS: BlogPost[] = [
         <ArticleHeading>Conclusion</ArticleHeading>
 
         <ArticleParagraph>
-          The four types of sentences — simple, compound, complex, and compound-complex — are essential for improving your English and IELTS writing score. While simple sentences are useful, relying only on them can limit your band score. To achieve Band 7 or higher, you must use a variety of sentence structures naturally and correctly.
+          The four types of sentences � simple, compound, complex, and compound-complex � are essential for improving your English and IELTS writing score. While simple sentences are useful, relying only on them can limit your band score. To achieve Band 7 or higher, you must use a variety of sentence structures naturally and correctly.
         </ArticleParagraph>
 
         <ArticleParagraph>
@@ -17301,15 +20562,15 @@ export const BLOG_POSTS: BlogPost[] = [
         {/* Internal Links */}
         <ArticleHeading>Related Resources</ArticleHeading>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
-          <Link to="/essay-types" className="block p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800 hover:border-blue-400 dark:hover:border-blue-600 transition-colors">
+          <Link to="/essay-types/" className="block p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800 hover:border-blue-400 dark:hover:border-blue-600 transition-colors">
             <h4 className="font-semibold text-blue-900 dark:text-blue-200 mb-1">Understanding Essay Types</h4>
             <p className="text-sm text-blue-700 dark:text-blue-400">Learn the different essay types and how to write them effectively.</p>
           </Link>
-          <Link to="/reading/reading-comprehension-practice" className="block p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800 hover:border-green-400 dark:hover:border-green-600 transition-colors">
+          <Link to="/reading/reading-comprehension-practice/" className="block p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800 hover:border-green-400 dark:hover:border-green-600 transition-colors">
             <h4 className="font-semibold text-green-900 dark:text-green-200 mb-1">Reading Comprehension Practice</h4>
             <p className="text-sm text-green-700 dark:text-green-400">Practice your reading skills with interactive exercises.</p>
           </Link>
-          <Link to="/grammar-guide" className="block p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800 hover:border-purple-400 dark:hover:border-purple-600 transition-colors">
+          <Link to="/grammar-guide/" className="block p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800 hover:border-purple-400 dark:hover:border-purple-600 transition-colors">
             <h4 className="font-semibold text-purple-900 dark:text-purple-200 mb-1">Complete English Grammar Guide</h4>
             <p className="text-sm text-purple-700 dark:text-purple-400">Explore the full grammar guide for all topics and resources.</p>
           </Link>
@@ -17351,7 +20612,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "name": "Do both have same scoring?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Both tests use Band 0–9 scoring system."
+            "text": "Yes. Both tests use Band 0�9 scoring system."
           }
         },
         {
@@ -17378,25 +20639,25 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on official <a href="https://www.ielts.org/about-ielts/which-ielts-test" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">IELTS.org</a> module guidelines and immigration requirements.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on official <a href="https://www.ielts.org/about-ielts/which-ielts-test" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">IELTS.org</a> module guidelines and immigration requirements.</span>
         </div>
 
         {/* Statistics Box */}
         <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-700 rounded-lg p-4 mb-6">
-          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">🎯 Academic vs General: Key Statistics</h4>
+          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">?? Academic vs General: Key Statistics</h4>
           <ul className="text-sm text-green-700 dark:text-green-300 space-y-1">
-            <li>• Academic: Required by 98% of universities worldwide</li>
-            <li>• General Training: Required for Canada/Australia/UK immigration</li>
-            <li>• Reading in Academic is 15-20% more difficult than General</li>
-            <li>• Listening and Speaking are identical in both versions</li>
+            <li>� Academic: Required by 98% of universities worldwide</li>
+            <li>� General Training: Required for Canada/Australia/UK immigration</li>
+            <li>� Reading in Academic is 15-20% more difficult than General</li>
+            <li>� Listening and Speaking are identical in both versions</li>
           </ul>
         </div>
 
         <div className="mb-8">
           <p className="text-sm text-slate-600 dark:text-slate-400 mb-2">
-            By <Link to="/about/editorial-team" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium">TypoGrammar Editorial Team</Link>
+            By <Link to="/about/editorial-team/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium">TypoGrammar Editorial Team</Link>
           </p>
         </div>
 
@@ -17512,8 +20773,8 @@ export const BLOG_POSTS: BlogPost[] = [
               </tr>
               <tr>
                 <td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Overall score</td>
-                <td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Band 0–9</td>
-                <td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Band 0–9</td>
+                <td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Band 0�9</td>
+                <td className="border border-slate-300 dark:border-slate-700 px-4 py-2">Band 0�9</td>
               </tr>
             </tbody>
           </table>
@@ -17626,7 +20887,7 @@ export const BLOG_POSTS: BlogPost[] = [
           <div className="bg-white dark:bg-slate-900 rounded p-4 mt-4 border border-green-300 dark:border-green-700">
             <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">Example:</p>
             <p className="text-slate-700 dark:text-slate-300 mb-2"><strong>Text:</strong></p>
-            <p className="text-slate-700 dark:text-slate-300 italic mb-3">"Hotel reception opening hours: 9 AM – 6 PM"</p>
+            <p className="text-slate-700 dark:text-slate-300 italic mb-3">"Hotel reception opening hours: 9 AM � 6 PM"</p>
             <p className="text-slate-700 dark:text-slate-300 mb-2"><strong>Question:</strong></p>
             <p className="text-slate-700 dark:text-slate-300 italic mb-3">When does reception open?</p>
             <p className="text-green-700 dark:text-green-400"><strong>Answer:</strong> 9 AM</p>
@@ -17742,7 +21003,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         <ArticleParagraph>
-          <strong>Duration:</strong> 11–14 minutes
+          <strong>Duration:</strong> 11�14 minutes
         </ArticleParagraph>
 
         <ArticleParagraph>
@@ -17830,12 +21091,12 @@ export const BLOG_POSTS: BlogPost[] = [
         <div className="space-y-3 my-6">
           <div className="bg-slate-50 dark:bg-slate-800/50 rounded-lg p-4 border border-slate-200 dark:border-slate-700">
             <p className="font-semibold text-slate-900 dark:text-slate-100">Bachelor degree:</p>
-            <p className="text-slate-700 dark:text-slate-300">Band 6–6.5</p>
+            <p className="text-slate-700 dark:text-slate-300">Band 6�6.5</p>
           </div>
 
           <div className="bg-slate-50 dark:bg-slate-800/50 rounded-lg p-4 border border-slate-200 dark:border-slate-700">
             <p className="font-semibold text-slate-900 dark:text-slate-100">Master degree:</p>
-            <p className="text-slate-700 dark:text-slate-300">Band 6.5–7.5</p>
+            <p className="text-slate-700 dark:text-slate-300">Band 6.5�7.5</p>
           </div>
 
           <div className="bg-slate-50 dark:bg-slate-800/50 rounded-lg p-4 border border-slate-200 dark:border-slate-700">
@@ -18086,7 +21347,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
           <div className="bg-slate-50 dark:bg-slate-800/50 rounded-lg p-5 border border-slate-200 dark:border-slate-700">
             <p className="font-semibold text-slate-900 dark:text-slate-100 mb-2">Do both have same scoring?</p>
-            <p className="text-slate-700 dark:text-slate-300">Yes. Band 0–9</p>
+            <p className="text-slate-700 dark:text-slate-300">Yes. Band 0�9</p>
           </div>
 
           <div className="bg-slate-50 dark:bg-slate-800/50 rounded-lg p-5 border border-slate-200 dark:border-slate-700">
@@ -18118,24 +21379,24 @@ export const BLOG_POSTS: BlogPost[] = [
         <ArticleHeading>Related Guides (Must Read)</ArticleHeading>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-          <Link to="/ielts/band-8-ielts-sample-answers" className="block p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800 hover:border-blue-400 dark:hover:border-blue-600 transition-colors">
+          <Link to="/ielts/band-8-ielts-sample-answers/" className="block p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800 hover:border-blue-400 dark:hover:border-blue-600 transition-colors">
             <h4 className="font-semibold text-blue-900 dark:text-blue-200 mb-1">IELTS Band 8+ Sample Answers</h4>
             <p className="text-sm text-blue-700 dark:text-blue-400">Read high-scoring IELTS writing samples with detailed analysis.</p>
           </Link>
 
-          <Link to="/ielts/ielts-writing-task-2-essay-types" className="block p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800 hover:border-green-400 dark:hover:border-green-600 transition-colors">
+          <Link to="/ielts/ielts-writing-task-2-essay-types/" className="block p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800 hover:border-green-400 dark:hover:border-green-600 transition-colors">
             <h4 className="font-semibold text-green-900 dark:text-green-200 mb-1">IELTS Writing Task 2: Essay Types Guide</h4>
             <p className="text-sm text-green-700 dark:text-green-400">Master all IELTS essay types with Band 7-9 examples and structures.</p>
           </Link>
 
-          <Link to="/ielts/conditionals-in-ielts" className="block p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800 hover:border-purple-400 dark:hover:border-purple-600 transition-colors">
+          <Link to="/ielts/conditionals-in-ielts/" className="block p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800 hover:border-purple-400 dark:hover:border-purple-600 transition-colors">
             <h4 className="font-semibold text-purple-900 dark:text-purple-200 mb-1">How to Use Conditionals in IELTS</h4>
             <p className="text-sm text-purple-700 dark:text-purple-400">Full guide with Band 9 examples for IELTS Writing and Speaking.</p>
           </Link>
 
-          <Link to="/grammar-guide" className="block p-4 bg-orange-50 dark:bg-orange-900/20 rounded-lg border border-orange-200 dark:border-orange-800 hover:border-orange-400 dark:hover:border-orange-600 transition-colors">
-            <h4 className="font-semibold text-orange-900 dark:text-orange-200 mb-1">Complete English Grammar Guide</h4>
-            <p className="text-sm text-orange-700 dark:text-orange-400">Master essential grammar for English exams and academic writing.</p>
+          <Link to="/grammar-guide/" className="block p-4 bg-teal-50 dark:bg-teal-900/20 rounded-lg border border-teal-200 dark:border-teal-800 hover:border-teal-400 dark:hover:border-teal-600 transition-colors">
+            <h4 className="font-semibold text-teal-900 dark:text-teal-200 mb-1">Complete English Grammar Guide</h4>
+            <p className="text-sm text-teal-700 dark:text-teal-400">Master essential grammar for English exams and academic writing.</p>
           </Link>
         </div>
       </>
@@ -18194,25 +21455,25 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on official <a href="https://www.ielts.org/about-ielts/what-is-ielts/ielts-scoring-in-detail" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">IELTS Band Descriptors</a> and examiner feedback analysis.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on official <a href="https://www.ielts.org/about-ielts/what-is-ielts/ielts-scoring-in-detail" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">IELTS Band Descriptors</a> and examiner feedback analysis.</span>
         </div>
 
         {/* Statistics Box */}
         <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-700 rounded-lg p-4 mb-6">
-          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">🎯 Band 6 to Band 7: Key Facts</h4>
+          <h4 className="font-bold text-green-900 dark:text-green-200 mb-2">?? Band 6 to Band 7: Key Facts</h4>
           <ul className="text-sm text-green-700 dark:text-green-300 space-y-1">
-            <li>• ~45% of IELTS candidates score Band 6.0-6.5 in Writing globally</li>
-            <li>• Band 7 requires "clear" progression vs Band 6's "adequate" development</li>
-            <li>• Grammar accuracy must improve from "frequent errors" to "frequent error-free sentences"</li>
-            <li>• Average time to improve from Band 6 to 7: 2-4 months of focused practice</li>
+            <li>� ~45% of IELTS candidates score Band 6.0-6.5 in Writing globally</li>
+            <li>� Band 7 requires "clear" progression vs Band 6's "adequate" development</li>
+            <li>� Grammar accuracy must improve from "frequent errors" to "frequent error-free sentences"</li>
+            <li>� Average time to improve from Band 6 to 7: 2-4 months of focused practice</li>
           </ul>
         </div>
 
         <div className="mb-8">
           <p className="text-sm text-slate-600 dark:text-slate-400 mb-2">
-            By <Link to="/about/editorial-team" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium">TypoGrammar Editorial Team</Link>
+            By <Link to="/about/editorial-team/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium">TypoGrammar Editorial Team</Link>
           </p>
         </div>
 
@@ -18230,7 +21491,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         <ArticleParagraph>
-          Many IELTS candidates take the test multiple times — and keep getting Band 6 in Writing.
+          Many IELTS candidates take the test multiple times � and keep getting Band 6 in Writing.
         </ArticleParagraph>
 
         <ArticleParagraph>
@@ -18245,11 +21506,11 @@ export const BLOG_POSTS: BlogPost[] = [
         </ArticleParagraph>
 
         <ArticleParagraph>
-          Let's break down the real reasons you're stuck — and exactly how to move to Band 7 or higher.
+          Let's break down the real reasons you're stuck � and exactly how to move to Band 7 or higher.
         </ArticleParagraph>
 
         {/* What Does Band 6 Mean */}
-        <ArticleHeading>🔎 What Does Band 6 Actually Mean?</ArticleHeading>
+        <ArticleHeading>?? What Does Band 6 Actually Mean?</ArticleHeading>
 
         <ArticleParagraph>
           According to IELTS band descriptors, Band 6 means:
@@ -18264,11 +21525,11 @@ export const BLOG_POSTS: BlogPost[] = [
         ]} />
 
         <ArticleParagraph>
-          Band 6 is "competent" — but not flexible or precise.
+          Band 6 is "competent" � but not flexible or precise.
         </ArticleParagraph>
 
         {/* 7 Reasons You're Stuck */}
-        <ArticleHeading>🚫 7 Reasons You're Stuck at Band 6</ArticleHeading>
+        <ArticleHeading>?? 7 Reasons You're Stuck at Band 6</ArticleHeading>
 
         {/* Reason 1 */}
         <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg mb-6">
@@ -18283,7 +21544,7 @@ export const BLOG_POSTS: BlogPost[] = [
             'Avoid fully answering all parts of the question'
           ]} />
           <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg mt-4 border-l-4 border-green-500">
-            <p className="font-semibold text-green-800 dark:text-green-200 mb-2">✅ Fix:</p>
+            <p className="font-semibold text-green-800 dark:text-green-200 mb-2">? Fix:</p>
             <p className="text-green-700 dark:text-green-300">Always:</p>
             <ul className="list-disc list-inside text-green-700 dark:text-green-300 mt-2">
               <li>Answer ALL parts of the question</li>
@@ -18321,7 +21582,7 @@ export const BLOG_POSTS: BlogPost[] = [
             This limits your <strong>Grammatical Range and Accuracy</strong> score.
           </ArticleParagraph>
           <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg mt-4 border-l-4 border-green-500">
-            <p className="font-semibold text-green-800 dark:text-green-200 mb-2">✅ Fix:</p>
+            <p className="font-semibold text-green-800 dark:text-green-200 mb-2">? Fix:</p>
             <p className="text-green-700 dark:text-green-300 mb-2">Use controlled complex sentences. Learn:</p>
             <ul className="list-disc list-inside text-green-700 dark:text-green-300">
               <li>Cause clauses (because, since)</li>
@@ -18330,8 +21591,8 @@ export const BLOG_POSTS: BlogPost[] = [
             </ul>
           </div>
           <div className="mt-4">
-            <Link to="/ielts/how-to-write-complex-sentences" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
-              → Read our Complex Sentences for IELTS Guide
+            <Link to="/ielts/how-to-write-complex-sentences/" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
+              ? Read our Complex Sentences for IELTS Guide
             </Link>
           </div>
         </div>
@@ -18340,18 +21601,18 @@ export const BLOG_POSTS: BlogPost[] = [
         <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg mb-6">
           <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-3">4. Grammar Errors in Complex Sentences</h3>
           <ArticleParagraph>
-            Band 6 candidates try complex structures — but make errors.
+            Band 6 candidates try complex structures � but make errors.
           </ArticleParagraph>
           <div className="bg-red-50 dark:bg-red-900/20 p-4 rounded-lg mb-4">
-            <p className="text-red-700 dark:text-red-300">❌ <em>"Although pollution is serious many people ignore it."</em></p>
-            <p className="text-sm text-red-600 dark:text-red-400 mt-1">Missing comma → grammar error.</p>
+            <p className="text-red-700 dark:text-red-300">? <em>"Although pollution is serious many people ignore it."</em></p>
+            <p className="text-sm text-red-600 dark:text-red-400 mt-1">Missing comma ? grammar error.</p>
           </div>
           <div className="bg-red-50 dark:bg-red-900/20 p-4 rounded-lg mb-4">
-            <p className="text-red-700 dark:text-red-300">❌ <em>"If governments increase taxes, citizens would be unhappy."</em></p>
+            <p className="text-red-700 dark:text-red-300">? <em>"If governments increase taxes, citizens would be unhappy."</em></p>
             <p className="text-sm text-red-600 dark:text-red-400 mt-1">Tense inconsistency.</p>
           </div>
           <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg border-l-4 border-green-500">
-            <p className="font-semibold text-green-800 dark:text-green-200">✅ Fix: Practice accuracy before complexity.</p>
+            <p className="font-semibold text-green-800 dark:text-green-200">? Fix: Practice accuracy before complexity.</p>
           </div>
         </div>
 
@@ -18408,13 +21669,13 @@ export const BLOG_POSTS: BlogPost[] = [
             'Generic Band 9 phrases',
             'Pre-learned conclusions'
           ]} />
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-4 rounded-lg mt-4 border-l-4 border-amber-500">
-            <p className="text-amber-800 dark:text-amber-200 font-semibold">⚠️ Templates limit flexibility and reduce authenticity.</p>
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-4 rounded-lg mt-4 border-l-4 border-teal-500">
+            <p className="text-teal-800 dark:text-teal-200 font-semibold">?? Templates limit flexibility and reduce authenticity.</p>
           </div>
         </div>
 
         {/* How to Move from Band 6 to Band 7 */}
-        <ArticleHeading>🎯 How to Move from Band 6 to Band 7</ArticleHeading>
+        <ArticleHeading>?? How to Move from Band 6 to Band 7</ArticleHeading>
 
         <ArticleParagraph>
           Now let's fix it.
@@ -18473,12 +21734,12 @@ export const BLOG_POSTS: BlogPost[] = [
         {/* Step 5 */}
         <div className="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-lg mb-6 border-l-4 border-blue-500">
           <h3 className="text-lg font-bold text-blue-900 dark:text-blue-200 mb-3">Step 5: Practice Feedback Cycles</h3>
-          <p className="text-blue-800 dark:text-blue-300 mb-2">Write → Analyze → Rewrite.</p>
+          <p className="text-blue-800 dark:text-blue-300 mb-2">Write ? Analyze ? Rewrite.</p>
           <p className="text-blue-800 dark:text-blue-300">Don't just write essays.<br /><strong>Improve the same essay.</strong></p>
         </div>
 
         {/* Comparison Table */}
-        <ArticleHeading>📊 Band 6 vs Band 7 Comparison Table</ArticleHeading>
+        <ArticleHeading>?? Band 6 vs Band 7 Comparison Table</ArticleHeading>
 
         <div className="overflow-x-auto mb-8">
           <table className="w-full border-collapse border border-slate-300 dark:border-slate-600">
@@ -18515,31 +21776,31 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Diagnostic Test */}
-        <ArticleHeading>🧠 Quick Diagnostic Test</ArticleHeading>
+        <ArticleHeading>?? Quick Diagnostic Test</ArticleHeading>
 
-        <div className="bg-amber-50 dark:bg-amber-900/20 p-6 rounded-lg mb-6 border border-amber-200 dark:border-amber-700">
-          <p className="text-amber-800 dark:text-amber-200 mb-4 font-semibold">If you answer "yes" to 3 or more, you're likely Band 6:</p>
+        <div className="bg-teal-50 dark:bg-teal-900/20 p-6 rounded-lg mb-6 border border-teal-200 dark:border-teal-700">
+          <p className="text-teal-800 dark:text-teal-200 mb-4 font-semibold">If you answer "yes" to 3 or more, you're likely Band 6:</p>
           <ul className="space-y-2">
-            <li className="flex items-center text-amber-700 dark:text-amber-300">
-              <span className="mr-2">☐</span> I repeat simple ideas.
+            <li className="flex items-center text-teal-700 dark:text-teal-300">
+              <span className="mr-2">?</span> I repeat simple ideas.
             </li>
-            <li className="flex items-center text-amber-700 dark:text-amber-300">
-              <span className="mr-2">☐</span> I rarely explain deeply.
+            <li className="flex items-center text-teal-700 dark:text-teal-300">
+              <span className="mr-2">?</span> I rarely explain deeply.
             </li>
-            <li className="flex items-center text-amber-700 dark:text-amber-300">
-              <span className="mr-2">☐</span> I make grammar mistakes in complex sentences.
+            <li className="flex items-center text-teal-700 dark:text-teal-300">
+              <span className="mr-2">?</span> I make grammar mistakes in complex sentences.
             </li>
-            <li className="flex items-center text-amber-700 dark:text-amber-300">
-              <span className="mr-2">☐</span> I memorize templates.
+            <li className="flex items-center text-teal-700 dark:text-teal-300">
+              <span className="mr-2">?</span> I memorize templates.
             </li>
-            <li className="flex items-center text-amber-700 dark:text-amber-300">
-              <span className="mr-2">☐</span> My teacher says "more development needed."
+            <li className="flex items-center text-teal-700 dark:text-teal-300">
+              <span className="mr-2">?</span> My teacher says "more development needed."
             </li>
           </ul>
         </div>
 
         {/* Final Advice */}
-        <ArticleHeading>💡 Final Advice</ArticleHeading>
+        <ArticleHeading>?? Final Advice</ArticleHeading>
 
         <ArticleParagraph>
           Moving from Band 6 to Band 7 is <strong>not</strong> about writing longer essays.
@@ -18563,7 +21824,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* FAQ Section */}
-        <ArticleHeading>❓ Frequently Asked Questions</ArticleHeading>
+        <ArticleHeading>? Frequently Asked Questions</ArticleHeading>
 
         <div className="space-y-4 mb-8">
           <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg">
@@ -18576,7 +21837,7 @@ export const BLOG_POSTS: BlogPost[] = [
           </div>
           <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg">
             <h3 className="font-semibold text-lg text-slate-900 dark:text-slate-100 mb-2">How long does it take to move from Band 6 to Band 7?</h3>
-            <p className="text-slate-700 dark:text-slate-300">With focused practice and feedback, many candidates improve within 4–8 weeks.</p>
+            <p className="text-slate-700 dark:text-slate-300">With focused practice and feedback, many candidates improve within 4�8 weeks.</p>
           </div>
           <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg">
             <h3 className="font-semibold text-lg text-slate-900 dark:text-slate-100 mb-2">Are complex sentences required for Band 7?</h3>
@@ -18585,27 +21846,27 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Related Resources */}
-        <ArticleHeading>📚 Related Resources</ArticleHeading>
+        <ArticleHeading>?? Related Resources</ArticleHeading>
 
         <div className="grid md:grid-cols-2 gap-4 mb-8">
-          <Link to="/blog/grammatical-range-and-accuracy-ielts" className="block p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800 hover:border-blue-400 dark:hover:border-blue-600 transition-colors">
+          <Link to="/blog/grammatical-range-and-accuracy-ielts/" className="block p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800 hover:border-blue-400 dark:hover:border-blue-600 transition-colors">
             <h4 className="font-semibold text-blue-900 dark:text-blue-200 mb-1">Grammatical Range and Accuracy in IELTS</h4>
             <p className="text-sm text-blue-700 dark:text-blue-400">Understand how grammar affects your band score.</p>
           </Link>
 
-          <Link to="/blog/academic-vs-general-ielts-full-comparison" className="block p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800 hover:border-purple-400 dark:hover:border-purple-600 transition-colors">
+          <Link to="/blog/academic-vs-general-ielts-full-comparison/" className="block p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800 hover:border-purple-400 dark:hover:border-purple-600 transition-colors">
             <h4 className="font-semibold text-purple-900 dark:text-purple-200 mb-1">Academic vs General IELTS: Full Comparison</h4>
             <p className="text-sm text-purple-700 dark:text-purple-400">Learn the key differences between IELTS test types.</p>
           </Link>
 
-          <Link to="/ielts/opinion-essay-ielts-band-7-9" className="block p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800 hover:border-green-400 dark:hover:border-green-600 transition-colors">
+          <Link to="/ielts/opinion-essay-ielts-band-7-9/" className="block p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800 hover:border-green-400 dark:hover:border-green-600 transition-colors">
             <h4 className="font-semibold text-green-900 dark:text-green-200 mb-1">Opinion Essay for IELTS Band 7-9</h4>
             <p className="text-sm text-green-700 dark:text-green-400">Master the opinion essay with Band 9 examples.</p>
           </Link>
 
-          <Link to="/ielts/vocabulary/band-7" className="block p-4 bg-orange-50 dark:bg-orange-900/20 rounded-lg border border-orange-200 dark:border-orange-800 hover:border-orange-400 dark:hover:border-orange-600 transition-colors">
-            <h4 className="font-semibold text-orange-900 dark:text-orange-200 mb-1">Band 7 Vocabulary</h4>
-            <p className="text-sm text-orange-700 dark:text-orange-400">Essential vocabulary for reaching Band 7.</p>
+          <Link to="/ielts/vocabulary/band-7/" className="block p-4 bg-teal-50 dark:bg-teal-900/20 rounded-lg border border-teal-200 dark:border-teal-800 hover:border-teal-400 dark:hover:border-teal-600 transition-colors">
+            <h4 className="font-semibold text-teal-900 dark:text-teal-200 mb-1">Band 7 Vocabulary</h4>
+            <p className="text-sm text-teal-700 dark:text-teal-400">Essential vocabulary for reaching Band 7.</p>
           </Link>
         </div>
       </>
@@ -18688,9 +21949,9 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Apps reviewed and verified against <a href="https://www.britishcouncil.org/english" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">British Council</a> learning standards.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Apps reviewed and verified against <a href="https://www.britishcouncil.org/english" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">British Council</a> learning standards.</span>
         </div>
 
         {/* Quick Answer Box */}
@@ -18782,7 +22043,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         <ArticleParagraph>
-          Cambly is especially useful for students preparing for exams such as <strong>IELTS or TOEFL speaking tests</strong>. You can also practice your listening skills with our <Link to="/ielts/tests/listening/mock-test-1/section-1" className="text-blue-600 hover:underline dark:text-blue-400">IELTS Listening Mock Tests</Link>.
+          Cambly is especially useful for students preparing for exams such as <strong>IELTS or TOEFL speaking tests</strong>. You can also practice your listening skills with our <Link to="/ielts/tests/listening/mock-test-1/section-1/" className="text-blue-600 hover:underline dark:text-blue-400">IELTS Listening Mock Tests</Link>.
         </ArticleParagraph>
 
         <ArticleHeading>3. Speak (AI Conversation App)</ArticleHeading>
@@ -18815,8 +22076,8 @@ export const BLOG_POSTS: BlogPost[] = [
           <strong>Tandem</strong> is another popular language exchange platform that connects learners around the world.
         </ArticleParagraph>
 
-        <div className="bg-orange-50 dark:bg-orange-900/20 border-l-4 border-orange-500 p-6 my-6 rounded-r-lg">
-          <h4 className="font-semibold text-lg mb-3 text-orange-900 dark:text-orange-200">Key Features</h4>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border-l-4 border-teal-500 p-6 my-6 rounded-r-lg">
+          <h4 className="font-semibold text-lg mb-3 text-teal-900 dark:text-teal-200">Key Features</h4>
           <BulletList items={[
             'Voice and video conversations',
             'Language exchange community',
@@ -18917,7 +22178,7 @@ export const BLOG_POSTS: BlogPost[] = [
         <div className="bg-slate-50 dark:bg-slate-800 p-6 my-6 rounded-lg border border-slate-200 dark:border-slate-700">
           <h4 className="font-semibold text-lg mb-3 text-slate-900 dark:text-slate-100">Practice Speaking Every Day</h4>
           <ArticleParagraph>
-            Even 10–15 minutes of daily conversation practice can dramatically improve fluency over time.
+            Even 10�15 minutes of daily conversation practice can dramatically improve fluency over time.
           </ArticleParagraph>
         </div>
 
@@ -18938,7 +22199,7 @@ export const BLOG_POSTS: BlogPost[] = [
         <div className="bg-slate-50 dark:bg-slate-800 p-6 my-6 rounded-lg border border-slate-200 dark:border-slate-700">
           <h4 className="font-semibold text-lg mb-3 text-slate-900 dark:text-slate-100">Learn Common Conversation Phrases</h4>
           <ArticleParagraph>
-            Memorizing useful expressions helps you speak more naturally during conversations. Check out our guide on <Link to="/idioms" className="text-blue-600 hover:underline dark:text-blue-400">English Idioms</Link> to expand your vocabulary with natural phrases.
+            Memorizing useful expressions helps you speak more naturally during conversations. Check out our guide on <Link to="/idioms/" className="text-blue-600 hover:underline dark:text-blue-400">English Idioms</Link> to expand your vocabulary with natural phrases.
           </ArticleParagraph>
         </div>
 
@@ -18987,10 +22248,10 @@ export const BLOG_POSTS: BlogPost[] = [
             For more grammar guides and English learning resources, explore these helpful pages:
           </ArticleParagraph>
           <BulletList items={[
-            <><Link to="/grammar-checker" className="text-blue-600 hover:underline dark:text-blue-400">Free Grammar Checker</Link> - Check your writing for grammar and spelling errors</>,
-            <><Link to="/commonly-confused-words" className="text-blue-600 hover:underline dark:text-blue-400">Commonly Confused Words</Link> - Master tricky word pairs in English</>,
-            <><Link to="/idioms" className="text-blue-600 hover:underline dark:text-blue-400">English Idioms</Link> - Learn natural expressions used by native speakers</>,
-            <><Link to="/ielts/tests/listening/mock-test-1/section-1" className="text-blue-600 hover:underline dark:text-blue-400">IELTS Listening Practice</Link> - Practice for your speaking and listening exams</>
+            <><Link to="/grammar-checker/" className="text-blue-600 hover:underline dark:text-blue-400">Free Grammar Checker</Link> - Check your writing for grammar and spelling errors</>,
+            <><Link to="/commonly-confused-words/" className="text-blue-600 hover:underline dark:text-blue-400">Commonly Confused Words</Link> - Master tricky word pairs in English</>,
+            <><Link to="/idioms/" className="text-blue-600 hover:underline dark:text-blue-400">English Idioms</Link> - Learn natural expressions used by native speakers</>,
+            <><Link to="/ielts/tests/listening/mock-test-1/section-1/" className="text-blue-600 hover:underline dark:text-blue-400">IELTS Listening Practice</Link> - Practice for your speaking and listening exams</>
           ]} />
         </div>
       </>
@@ -19073,9 +22334,9 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         {/* Last Updated Notice */}
-        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg px-4 py-2 mb-6 text-sm">
-          <span className="font-semibold text-amber-800 dark:text-amber-200">📅 Last updated: March 2026</span>
-          <span className="text-amber-700 dark:text-amber-300"> — Based on the official <a href="https://www.coe.int/en/web/common-european-framework-reference-languages" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Council of Europe CEFR framework</a>.</span>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-700 rounded-lg px-4 py-2 mb-6 text-sm">
+          <span className="font-semibold text-teal-800 dark:text-teal-200">?? Last updated: March 2026</span>
+          <span className="text-teal-700 dark:text-teal-300"> � Based on the official <a href="https://www.coe.int/en/web/common-european-framework-reference-languages" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Council of Europe CEFR framework</a>.</span>
         </div>
 
         <ArticleParagraph>
@@ -19111,7 +22372,7 @@ export const BLOG_POSTS: BlogPost[] = [
         <BulletList items={[
           'Language schools',
           'Universities',
-          <>International exams such as <Link to="/blog/academic-vs-general-ielts-full-comparison" className="text-blue-600 hover:underline dark:text-blue-400">IELTS</Link> and TOEFL</>,
+          <>International exams such as <Link to="/blog/academic-vs-general-ielts-full-comparison/" className="text-blue-600 hover:underline dark:text-blue-400">IELTS</Link> and TOEFL</>,
           'Employers evaluating language skills'
         ]} />
 
@@ -19121,7 +22382,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         {/* Comprehensive CEFR vs IELTS vs TOEFL vs Cambridge Comparison Table */}
         <div className="bg-gradient-to-r from-indigo-50 to-blue-50 dark:from-slate-800 dark:to-slate-700 p-6 rounded-lg my-8 border border-indigo-200 dark:border-indigo-700">
-          <h4 className="font-bold text-xl mb-4 text-indigo-900 dark:text-indigo-200">📊 Complete CEFR Level Comparison: IELTS, TOEFL, Cambridge & Study Hours</h4>
+          <h4 className="font-bold text-xl mb-4 text-indigo-900 dark:text-indigo-200">?? Complete CEFR Level Comparison: IELTS, TOEFL, Cambridge & Study Hours</h4>
           <p className="text-sm text-indigo-700 dark:text-indigo-300 mb-4">Based on official <a href="https://www.coe.int/en/web/common-european-framework-reference-languages" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Council of Europe</a>, <a href="https://www.ets.org/toefl" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">ETS</a>, and <a href="https://www.cambridgeenglish.org" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Cambridge</a> guidelines.</p>
           <div className="overflow-x-auto">
             <table className="min-w-full border-collapse border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800">
@@ -19147,7 +22408,7 @@ export const BLOG_POSTS: BlogPost[] = [
                   <td className="border border-slate-300 dark:border-slate-600 px-3 py-2 text-sm font-medium">90-100</td>
                 </tr>
                 <tr>
-                  <td className="border border-slate-300 dark:border-slate-600 px-3 py-2 font-bold text-orange-700 dark:text-orange-300">A2</td>
+                  <td className="border border-slate-300 dark:border-slate-600 px-3 py-2 font-bold text-teal-700 dark:text-teal-300">A2</td>
                   <td className="border border-slate-300 dark:border-slate-600 px-3 py-2 text-sm">Elementary</td>
                   <td className="border border-slate-300 dark:border-slate-600 px-3 py-2 text-sm">3.0-3.5</td>
                   <td className="border border-slate-300 dark:border-slate-600 px-3 py-2 text-sm">13-31</td>
@@ -19326,8 +22587,8 @@ export const BLOG_POSTS: BlogPost[] = [
           B2 learners can communicate clearly and confidently in many situations. <strong>Reaching B2 typically requires 500-600 total hours of guided study</strong> (approximately 150-200 hours from B1). B2 corresponds to IELTS 5.5-6.5, TOEFL 72-94, and Cambridge FCE (First Certificate).
         </ArticleParagraph>
 
-        <div className="bg-orange-50 dark:bg-orange-900/20 border-l-4 border-orange-500 p-6 my-6 rounded-r-lg">
-          <h4 className="font-semibold text-lg mb-3 text-orange-900 dark:text-orange-200">What B2 Learners Can Do</h4>
+        <div className="bg-teal-50 dark:bg-teal-900/20 border-l-4 border-teal-500 p-6 my-6 rounded-r-lg">
+          <h4 className="font-semibold text-lg mb-3 text-teal-900 dark:text-teal-200">What B2 Learners Can Do</h4>
           <BulletList items={[
             'Participate in detailed discussions',
             'Understand most TV shows and articles',
@@ -19346,7 +22607,7 @@ export const BLOG_POSTS: BlogPost[] = [
         ]} />
 
         <ArticleParagraph>
-          B2 is often required for studying at universities in English-speaking countries. Many <Link to="/blog/ielts-writing-task-2-grammar-guide-band-8" className="text-blue-600 hover:underline dark:text-blue-400">IELTS test takers</Link> aim for B2 level or higher.
+          B2 is often required for studying at universities in English-speaking countries. Many <Link to="/blog/ielts-writing-task-2-grammar-guide-band-8/" className="text-blue-600 hover:underline dark:text-blue-400">IELTS test takers</Link> aim for B2 level or higher.
         </ArticleParagraph>
 
         <ArticleHeading>C1 Level (Advanced)</ArticleHeading>
@@ -19366,7 +22627,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </div>
 
         <ArticleParagraph>
-          At this level, learners rarely struggle to communicate in English. C1 corresponds to an <Link to="/blog/how-to-achieve-band-9-in-ielts-real-examples" className="text-blue-600 hover:underline dark:text-blue-400">IELTS Band 7-8</Link>.
+          At this level, learners rarely struggle to communicate in English. C1 corresponds to an <Link to="/blog/how-to-achieve-band-9-in-ielts-real-examples/" className="text-blue-600 hover:underline dark:text-blue-400">IELTS Band 7-8</Link>.
         </ArticleParagraph>
 
         <ArticleHeading>C2 Level (Proficient)</ArticleHeading>
@@ -19443,7 +22704,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
         <BulletList items={[
           'Choose the right learning materials',
-          <>Prepare for exams such as <Link to="/blog/ielts-full-course-strategies-band-7" className="text-blue-600 hover:underline dark:text-blue-400">IELTS</Link> or TOEFL</>,
+          <>Prepare for exams such as <Link to="/blog/ielts-full-course-strategies-band-7/" className="text-blue-600 hover:underline dark:text-blue-400">IELTS</Link> or TOEFL</>,
           'Track your language progress',
           'Set realistic learning goals'
         ]} />
@@ -19459,11 +22720,11 @@ export const BLOG_POSTS: BlogPost[] = [
         </ArticleParagraph>
 
         <ArticleParagraph>
-          You can also use online tools like a <Link to="/grammar-checker" className="text-blue-600 hover:underline dark:text-blue-400">free grammar checker</Link> to improve your writing and learn from your mistakes. Additionally, studying <Link to="/commonly-confused-words" className="text-blue-600 hover:underline dark:text-blue-400">commonly confused words</Link> can help you avoid common errors.
+          You can also use online tools like a <Link to="/grammar-checker/" className="text-blue-600 hover:underline dark:text-blue-400">free grammar checker</Link> to improve your writing and learn from your mistakes. Additionally, studying <Link to="/commonly-confused-words/" className="text-blue-600 hover:underline dark:text-blue-400">commonly confused words</Link> can help you avoid common errors.
         </ArticleParagraph>
 
         <ArticleParagraph>
-          Consistent practice and exposure to English content will gradually help you move from one level to the next. Learning <Link to="/idioms" className="text-blue-600 hover:underline dark:text-blue-400">English idioms</Link> can also help you sound more natural as you progress to higher levels.
+          Consistent practice and exposure to English content will gradually help you move from one level to the next. Learning <Link to="/idioms/" className="text-blue-600 hover:underline dark:text-blue-400">English idioms</Link> can also help you sound more natural as you progress to higher levels.
         </ArticleParagraph>
 
         <ArticleHeading>Final Thoughts</ArticleHeading>
@@ -19511,10 +22772,10 @@ export const BLOG_POSTS: BlogPost[] = [
             For more grammar guides and English learning resources, explore these helpful pages:
           </ArticleParagraph>
           <BulletList items={[
-            <><Link to="/grammar-checker" className="text-blue-600 hover:underline dark:text-blue-400">Free Grammar Checker</Link> - Check your writing for grammar and spelling errors</>,
-            <><Link to="/commonly-confused-words" className="text-blue-600 hover:underline dark:text-blue-400">Commonly Confused Words</Link> - Master tricky word pairs in English</>,
-            <><Link to="/idioms" className="text-blue-600 hover:underline dark:text-blue-400">English Idioms</Link> - Learn natural expressions used by native speakers</>,
-            <><Link to="/blog/ielts-writing-task-2-grammar-guide-band-8" className="text-blue-600 hover:underline dark:text-blue-400">IELTS Writing Task 2 Guide</Link> - Prepare for your IELTS exam</>
+            <><Link to="/grammar-checker/" className="text-blue-600 hover:underline dark:text-blue-400">Free Grammar Checker</Link> - Check your writing for grammar and spelling errors</>,
+            <><Link to="/commonly-confused-words/" className="text-blue-600 hover:underline dark:text-blue-400">Commonly Confused Words</Link> - Master tricky word pairs in English</>,
+            <><Link to="/idioms/" className="text-blue-600 hover:underline dark:text-blue-400">English Idioms</Link> - Learn natural expressions used by native speakers</>,
+            <><Link to="/blog/ielts-writing-task-2-grammar-guide-band-8/" className="text-blue-600 hover:underline dark:text-blue-400">IELTS Writing Task 2 Guide</Link> - Prepare for your IELTS exam</>
           ]} />
         </div>
       </>

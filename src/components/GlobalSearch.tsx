@@ -21,7 +21,7 @@ const TYPE_COLORS: Record<string, string> = {
   page: 'bg-emerald-100 text-emerald-700',
 };
 
-// Base index available immediately (lightweight — no JSX, no grammar topics)
+// Base index available immediately (lightweight, no JSX, no grammar topics)
 const BASE_RESULTS: SearchEntry[] = [
   ...BLOG_SEARCH_INDEX,
   ...STATIC_PAGES_INDEX,
@@ -38,14 +38,14 @@ const GlobalSearch: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // Lazy-load grammar topics only when search is first opened
+  // Lazy-load grammar topics meta only when search is first opened
   const openSearch = () => {
     setIsOpen(true);
     if (!grammarLoaded.current) {
       grammarLoaded.current = true;
-      import('../constants/grammarTopics').then(({ GRAMMAR_TOPICS }) => {
+      import('../constants/grammarTopicsMeta').then(({ GRAMMAR_TOPICS_META }) => {
         setAllResults([
-          ...GRAMMAR_TOPICS.map(t => ({
+          ...GRAMMAR_TOPICS_META.map(t => ({
             title: t.title,
             subtitle: t.category,
             url: `/topics/${t.id}`,
@@ -73,6 +73,20 @@ const GlobalSearch: React.FC = () => {
       setResults([]);
       setActiveIndex(-1);
     }
+  }, [isOpen]);
+
+  // Global Escape listener while modal is open (works even if focus
+  // leaves the input, e.g. after clicking a result button)
+  useEffect(() => {
+    if (!isOpen) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        e.preventDefault();
+        setIsOpen(false);
+      }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
   }, [isOpen]);
 
   // Global keyboard shortcut: Ctrl+K / Cmd+K
@@ -127,7 +141,7 @@ const GlobalSearch: React.FC = () => {
 
   return (
     <>
-      {/* Trigger — pill search bar on desktop, icon-only on mobile */}
+      {/* Trigger, pill search bar on desktop, icon-only on mobile */}
       <button
         onClick={openSearch}
         className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-slate-200 bg-slate-50 hover:bg-white hover:border-blue-400 hover:shadow-sm transition-all duration-150 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-500 dark:hover:bg-slate-700"
@@ -137,7 +151,7 @@ const GlobalSearch: React.FC = () => {
         <svg className="h-4 w-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
         </svg>
-        <span className="hidden md:inline text-sm text-slate-400 dark:text-slate-500 pr-1 whitespace-nowrap">Search…</span>
+        <span className="hidden md:inline text-sm text-slate-400 dark:text-slate-500 pr-1 whitespace-nowrap">Search...</span>
         <kbd className="hidden lg:inline-flex items-center px-1.5 py-0.5 rounded text-xs font-medium bg-white border border-slate-200 text-slate-400 dark:bg-slate-700 dark:border-slate-600 dark:text-slate-400">
           Ctrl K
         </kbd>
@@ -172,14 +186,22 @@ const GlobalSearch: React.FC = () => {
                   value={query}
                   onChange={e => setQuery(e.target.value)}
                   onKeyDown={handleKeyDown}
-                  placeholder="Search topics, lessons, blog posts…"
+                  placeholder="Search topics, lessons, blog posts..."
                   className="flex-1 bg-transparent text-slate-800 placeholder-slate-400 text-base focus:outline-none"
                   autoComplete="off"
                   spellCheck={false}
                 />
-                <kbd className="hidden sm:inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-slate-100 text-slate-500 border border-slate-200">
-                  Esc
-                </kbd>
+                <button
+                  type="button"
+                  onClick={close}
+                  aria-label="Close search"
+                  className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-500 hover:text-blue-700 bg-slate-100 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 transition-colors"
+                >
+                  <span className="hidden sm:inline">Esc</span>
+                  <svg className="w-3.5 h-3.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fillRule="evenodd" d="M4.28 3.22a.75.75 0 00-1.06 1.06L8.94 10l-5.72 5.72a.75.75 0 101.06 1.06L10 11.06l5.72 5.72a.75.75 0 101.06-1.06L11.06 10l5.72-5.72a.75.75 0 00-1.06-1.06L10 8.94 4.28 3.22z" clipRule="evenodd" />
+                  </svg>
+                </button>
               </div>
 
               {/* Results list */}

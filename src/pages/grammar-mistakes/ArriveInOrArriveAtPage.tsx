@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../../hooks/usePageMetadata';
 import SchemaMarkup from '../../components/SchemaMarkup';
@@ -7,7 +7,7 @@ const ArriveInOrArriveAtPage: React.FC = () => {
   usePageMetadata({
     title: 'Arrive In or Arrive At: What\'s the Difference? | TypoGrammar',
     description: 'Learn when to use "arrive in" vs "arrive at." Use "arrive in" for cities, countries, and large areas. Use "arrive at" for specific places like buildings.',
-    canonical: 'https://typogrammar.com/grammar-mistakes/arrive-in-or-arrive-at'
+    canonical: 'https://typogrammar.com/grammar-mistakes/arrive-in-or-arrive-at/'
   });
 
   const [showAnswer, setShowAnswer] = useState(false);
@@ -49,7 +49,7 @@ const ArriveInOrArriveAtPage: React.FC = () => {
       <nav className="mb-6 text-slate-600 dark:text-slate-400">
         <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
         {' › '}
-        <Link to="/grammar-mistakes" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
+        <Link to="/grammar-mistakes/" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
         {' › '}
         <span className="text-slate-900 dark:text-slate-100">Arrive In or Arrive At</span>
       </nav>
@@ -101,12 +101,12 @@ const ArriveInOrArriveAtPage: React.FC = () => {
 
           <div className="bg-red-50 dark:bg-red-900/20 p-4 rounded-lg mb-4">
             <p className="text-lg text-red-800 dark:text-red-200">
-              <strong>Warning:</strong> Never use "arrive to" — this is always incorrect in English!
+              <strong>Warning:</strong> Never use "arrive to", this is always incorrect in English!
             </p>
           </div>
 
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-4 rounded-lg">
-            <p className="text-lg text-amber-800 dark:text-amber-200">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-4 rounded-lg">
+            <p className="text-lg text-teal-800 dark:text-teal-200">
               <strong>Special case - HOME:</strong> We say "arrive home" (no preposition needed).
             </p>
           </div>
@@ -154,7 +154,7 @@ const ArriveInOrArriveAtPage: React.FC = () => {
           <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
             Practice
           </h2>
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-6 rounded-lg">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-6 rounded-lg">
             <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
               <strong>Fill in with "in" or "at":</strong>
             </p>
@@ -187,22 +187,22 @@ const ArriveInOrArriveAtPage: React.FC = () => {
           </h2>
           <ul className="space-y-2 text-lg">
             <li>
-              <Link to="/grammar-mistakes/in-the-weekend-or-on-the-weekend" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/in-the-weekend-or-on-the-weekend/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → In the Weekend or On the Weekend?
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/interested-in-or-interested-on" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/interested-in-or-interested-on/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Interested In or Interested On?
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/enter-or-enter-to" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/enter-or-enter-to/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Enter or Enter To?
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → All Grammar Mistakes
               </Link>
             </li>

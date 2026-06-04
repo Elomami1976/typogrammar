@@ -69,8 +69,20 @@ const faqItems: { question: string; answer: React.ReactNode }[] = [
     answer: 'Currently, our content is designed for online use. However, you can print individual articles from your browser if you need offline reference materials. We\'re considering adding downloadable study guides in the future based on user feedback.'
   },
   {
+    question: 'Does TypoGrammar have an AI assistant?',
+    answer: 'Yes! TypoGrammar has a built-in AI chatbot you can access from any page. It can answer grammar questions, explain rules, give examples, and help you understand tricky topics instantly. Look for the "Ask TypoGrammar AI" button in the bottom-right corner of the site.'
+  },
+  {
+    question: 'Is there a TypoGrammar Chrome Extension?',
+    answer: 'Yes, we have a Chrome extension that brings TypoGrammar\'s grammar tools directly into your browser. It helps you check grammar and get explanations while you write on any website. You can find it by searching "TypoGrammar" in the Chrome Web Store.'
+  },
+  {
+    question: 'How do I subscribe to TypoGrammar updates?',
+    answer: 'You can subscribe using the subscription form on our homepage or Contact page. Simply fill in your name, email, phone number (optional), and country. We use your country to send you tips and resources in your preferred language. You can unsubscribe at any time by emailing contact@typogrammar.com.'
+  },
+  {
     question: 'What makes TypoGrammar different from other grammar websites?',
-    answer: 'TypoGrammar stands out through its combination of design excellence, clarity, and accessibility. We prioritize beautiful typography, clean layouts, and user-friendly navigation. Our explanations are concise yet comprehensive, and everything is completely free with no paywalls or account requirements.'
+    answer: 'TypoGrammar stands out through its combination of design excellence, clarity, and accessibility. We prioritize beautiful typography, clean layouts, and user-friendly navigation. Our explanations are concise yet comprehensive, and everything is completely free with no paywalls or account requirements. We also offer an AI chatbot, a Chrome extension, and regular updates tailored to your country and language.'
   },
   {
     question: 'How accurate is the grammar information on TypoGrammar?',
@@ -120,7 +132,7 @@ const FaqItem: React.FC<{
 
 const FaqPage: React.FC = () => {
   usePageMetadata({
-    title: 'FAQ – Frequently Asked Questions About TypoGrammar',
+    title: 'FAQ - Frequently Asked Questions About TypoGrammar',
     description: 'Find answers to common questions about TypoGrammar. Learn how to use our platform, track your progress, access quizzes, and improve your English grammar skills. Free and no registration required.'
   });
 

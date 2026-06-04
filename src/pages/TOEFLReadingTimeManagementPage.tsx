@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading, BulletList } from '../components/ArticleComponents';
@@ -18,7 +18,7 @@ const TOEFLReadingTimeManagementPage: React.FC = () => {
         "name": "How much time should I spend on each TOEFL Reading passage?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "You should spend about 17–18 minutes per passage."
+          "text": "You should spend about 17-18 minutes per passage."
         }
       },
       {
@@ -101,7 +101,7 @@ const TOEFLReadingTimeManagementPage: React.FC = () => {
             </tr>
             <tr className="bg-slate-50 dark:bg-slate-800/50">
               <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">Average time per passage</td>
-              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">17–18 minutes</td>
+              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">17-18 minutes</td>
             </tr>
             <tr>
               <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">Average time per question</td>
@@ -133,11 +133,11 @@ const TOEFLReadingTimeManagementPage: React.FC = () => {
           <tbody>
             <tr>
               <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">Skim the passage</td>
-              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">2–3 minutes</td>
+              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">2-3 minutes</td>
             </tr>
             <tr className="bg-slate-50 dark:bg-slate-800/50">
               <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">Answer questions</td>
-              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">13–14 minutes</td>
+              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">13-14 minutes</td>
             </tr>
             <tr>
               <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">Review answers</td>
@@ -199,7 +199,7 @@ const TOEFLReadingTimeManagementPage: React.FC = () => {
         One of the biggest mistakes students make is spending too much time on a single question.
       </ArticleParagraph>
 
-      <div className="bg-amber-50 dark:bg-amber-900/20 border-l-4 border-amber-500 p-4 my-6">
+      <div className="bg-teal-50 dark:bg-teal-900/20 border-l-4 border-teal-500 p-4 my-6">
         <p className="text-slate-700 dark:text-slate-300">
           If you cannot answer a question within about <strong>90 seconds</strong>, move on and return later.
         </p>
@@ -327,7 +327,7 @@ const TOEFLReadingTimeManagementPage: React.FC = () => {
 
       <h3 className="text-xl font-semibold mt-6 mb-3 text-slate-900 dark:text-slate-100">How much time should I spend on each TOEFL Reading passage?</h3>
       <ArticleParagraph>
-        You should spend about <strong>17–18 minutes per passage</strong>.
+        You should spend about <strong>17-18 minutes per passage</strong>.
       </ArticleParagraph>
 
       <h3 className="text-xl font-semibold mt-6 mb-3 text-slate-900 dark:text-slate-100">What happens if I run out of time in TOEFL Reading?</h3>
@@ -362,17 +362,17 @@ const TOEFLReadingTimeManagementPage: React.FC = () => {
         </h3>
         <ul className="space-y-2">
           <li>
-            <Link to="/toefl/toefl-reading/toefl-reading-section-explained" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
+            <Link to="/toefl/toefl-reading/toefl-reading-section-explained/" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
               → TOEFL Reading Section Explained: Format, Question Types, and Tips
             </Link>
           </li>
           <li>
-            <Link to="/toefl/toefl-reading/toefl-reading-strategies" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
+            <Link to="/toefl/toefl-reading/toefl-reading-strategies/" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
               → TOEFL Reading Strategies: 10 Proven Tips to Score Higher
             </Link>
           </li>
           <li>
-            <Link to="/toefl/toefl-reading/toefl-reading-question-types" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
+            <Link to="/toefl/toefl-reading/toefl-reading-question-types/" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
               → TOEFL Reading Question Types: Complete Guide with Examples
             </Link>
           </li>

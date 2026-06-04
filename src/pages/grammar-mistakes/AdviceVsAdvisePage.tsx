@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../../hooks/usePageMetadata';
 import SchemaMarkup from '../../components/SchemaMarkup';
@@ -7,7 +7,7 @@ const AdviceVsAdvisePage: React.FC = () => {
   usePageMetadata({
     title: 'Advice vs. Advise: What\'s the Difference? | TypoGrammar',
     description: 'Learn the difference between advice and advise. Advice is a noun (I need advice), advise is a verb (I advise you). Clear examples and practice.',
-    canonical: 'https://typogrammar.com/grammar-mistakes/advice-vs-advise'
+    canonical: 'https://typogrammar.com/grammar-mistakes/advice-vs-advise/'
   });
 
   const [showAnswer, setShowAnswer] = useState(false);
@@ -49,7 +49,7 @@ const AdviceVsAdvisePage: React.FC = () => {
       <nav className="mb-6 text-slate-600 dark:text-slate-400">
         <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
         {' › '}
-        <Link to="/grammar-mistakes" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
+        <Link to="/grammar-mistakes/" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
         {' › '}
         <span className="text-slate-900 dark:text-slate-100">Advice vs. Advise</span>
       </nav>
@@ -89,7 +89,7 @@ const AdviceVsAdvisePage: React.FC = () => {
               <p className="text-slate-600 dark:text-slate-400 mt-2 italic">Example: "I advise you to study."</p>
             </div>
           </div>
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-4 rounded-lg">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-4 rounded-lg">
             <p className="text-lg text-slate-700 dark:text-slate-300">
               <strong>Memory tip:</strong> Advice with a "c" is like a "c"omment (noun). Advise with an "s" is like supervi"s"e (verb).
             </p>
@@ -155,7 +155,7 @@ const AdviceVsAdvisePage: React.FC = () => {
           <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
             Practice
           </h2>
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-6 rounded-lg">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-6 rounded-lg">
             <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
               <strong>Choose the correct word:</strong>
             </p>
@@ -188,22 +188,22 @@ const AdviceVsAdvisePage: React.FC = () => {
           </h2>
           <ul className="space-y-2 text-lg">
             <li>
-              <Link to="/grammar-mistakes/do-vs-make" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/do-vs-make/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Do vs. Make
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/speak-vs-talk" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/speak-vs-talk/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Speak vs. Talk
               </Link>
             </li>
             <li>
-              <Link to="/commonly-confused-words" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/commonly-confused-words/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Commonly Confused Words
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → All Grammar Mistakes
               </Link>
             </li>

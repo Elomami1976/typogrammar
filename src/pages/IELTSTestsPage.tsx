@@ -1,11 +1,11 @@
-import React from 'react';
+﻿import React from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading } from '../components/ArticleComponents';
 
 const IELTSTestsPage: React.FC = () => {
   usePageMetadata({
-    title: 'IELTS Practice Tests – Listening, Reading, Writing, Speaking | TypoGrammar',
+    title: 'IELTS Practice Tests - Listening, Reading, Writing, Speaking | TypoGrammar',
     description: 'Free IELTS practice tests for all four skills: Listening, Reading, Writing, and Speaking. Improve your IELTS band score with TypoGrammar.'
   });
 
@@ -34,11 +34,11 @@ const IELTSTestsPage: React.FC = () => {
           </h3>
           <div className="space-y-2">
             <Link
-              to="/ielts/tests/listening/mock-test-1/section-1"
+              to="/ielts/tests/listening/mock-test-1/section-1/"
               className="block p-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors duration-200"
             >
               <span className="font-semibold text-blue-900 dark:text-blue-300">
-                Section 1 – Questions 1–4
+                Section 1 - Questions 1-4
               </span>
               <p className="text-sm text-slate-600 dark:text-slate-400 mt-1">
                 Social conversation: Course enrollment inquiry
@@ -47,7 +47,7 @@ const IELTSTestsPage: React.FC = () => {
             
             <div className="p-4 bg-slate-50 dark:bg-slate-700/50 border border-slate-200 dark:border-slate-600 rounded-lg opacity-60">
               <span className="font-semibold text-slate-600 dark:text-slate-400">
-                Section 2 – Coming Soon
+                Section 2 - Coming Soon
               </span>
               <p className="text-sm text-slate-500 dark:text-slate-500 mt-1">
                 Social monologue
@@ -56,7 +56,7 @@ const IELTSTestsPage: React.FC = () => {
             
             <div className="p-4 bg-slate-50 dark:bg-slate-700/50 border border-slate-200 dark:border-slate-600 rounded-lg opacity-60">
               <span className="font-semibold text-slate-600 dark:text-slate-400">
-                Section 3 – Coming Soon
+                Section 3 - Coming Soon
               </span>
               <p className="text-sm text-slate-500 dark:text-slate-500 mt-1">
                 Academic conversation
@@ -65,7 +65,7 @@ const IELTSTestsPage: React.FC = () => {
             
             <div className="p-4 bg-slate-50 dark:bg-slate-700/50 border border-slate-200 dark:border-slate-600 rounded-lg opacity-60">
               <span className="font-semibold text-slate-600 dark:text-slate-400">
-                Section 4 – Coming Soon
+                Section 4 - Coming Soon
               </span>
               <p className="text-sm text-slate-500 dark:text-slate-500 mt-1">
                 Academic monologue
@@ -79,15 +79,39 @@ const IELTSTestsPage: React.FC = () => {
       <div className="bg-white dark:bg-slate-800 rounded-lg shadow-md p-6 mb-6">
         <ArticleHeading>📖 Reading Tests</ArticleHeading>
         <ArticleParagraph>
-          Coming soon: IELTS Academic and General Training reading practice tests.
+          Full 60-minute mock reading tests with instant scoring, an estimated band, and a tutor-style explanation for every question.
         </ArticleParagraph>
+        <div className="mt-4 space-y-2">
+          <Link
+            to="/ielts/tests/reading/academic/test-1/"
+            className="block p-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors duration-200"
+          >
+            <span className="font-semibold text-blue-900 dark:text-blue-300">
+              Academic Reading — Practice Test 1
+            </span>
+            <p className="text-sm text-slate-600 dark:text-slate-400 mt-1">
+              3 passages · 40 questions · 60 minutes (coral reefs, cartography, behavioural economics)
+            </p>
+          </Link>
+          <Link
+            to="/ielts/tests/reading/general/test-1/"
+            className="block p-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors duration-200"
+          >
+            <span className="font-semibold text-blue-900 dark:text-blue-300">
+              General Training Reading — Practice Test 1
+            </span>
+            <p className="text-sm text-slate-600 dark:text-slate-400 mt-1">
+              3 sections · 40 questions · 60 minutes (community notices, workplace handbook, night trains)
+            </p>
+          </Link>
+        </div>
       </div>
 
       {/* Writing Tests Section */}
       <div className="bg-white dark:bg-slate-800 rounded-lg shadow-md p-6 mb-6">
         <ArticleHeading>✍️ Writing Tests</ArticleHeading>
         <ArticleParagraph>
-          Check out our comprehensive <Link to="/ielts/ielts-writing-task-2-essay-types" className="text-blue-600 hover:underline dark:text-blue-400">
+          Check out our comprehensive <Link to="/ielts/ielts-writing-task-2-essay-types/" className="text-blue-600 hover:underline dark:text-blue-400">
             IELTS Writing Task 2 guide
           </Link> with essay types, sample answers, and band descriptors.
         </ArticleParagraph>
@@ -108,17 +132,27 @@ const IELTSTestsPage: React.FC = () => {
         </h2>
         <ul className="space-y-2">
           <li>
-            <Link to="/ielts/vocabulary/band-7" className="text-blue-600 hover:underline dark:text-blue-400">
+            <Link to="/ielts/reading-raw-score-to-band-conversion/" className="text-blue-600 hover:underline dark:text-blue-400">
+              IELTS Reading Raw Score to Band Conversion (Full Table)
+            </Link>
+          </li>
+          <li>
+            <Link to="/ielts/is-7-5-ielts-score-good-enough/" className="text-blue-600 hover:underline dark:text-blue-400">
+              Is a 7.5 IELTS Score Good Enough? (Universities, Visas & Jobs)
+            </Link>
+          </li>
+          <li>
+            <Link to="/ielts/vocabulary/band-7/" className="text-blue-600 hover:underline dark:text-blue-400">
               IELTS Vocabulary by Band Score
             </Link>
           </li>
           <li>
-            <Link to="/ielts/academic-vocabulary-book" className="text-blue-600 hover:underline dark:text-blue-400">
+            <Link to="/ielts/academic-vocabulary-book/" className="text-blue-600 hover:underline dark:text-blue-400">
               Free IELTS Vocabulary Book (PDF)
             </Link>
           </li>
           <li>
-            <Link to="/ielts/ielts-writing-task-2-essay-types" className="text-blue-600 hover:underline dark:text-blue-400">
+            <Link to="/ielts/ielts-writing-task-2-essay-types/" className="text-blue-600 hover:underline dark:text-blue-400">
               IELTS Writing Task 2 Essay Types
             </Link>
           </li>

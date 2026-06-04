@@ -12,6 +12,13 @@ dist
 dist-ssr
 *.local
 
+# Secrets — never commit. Place these on the server outside public_html.
+private_config/
+db_config.php
+.env
+.env.*
+!.env.example
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

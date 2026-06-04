@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 
 // SEO Meta:
-// Title: IELTS Band Score Calculator – Instant Overall Band Calculation | Typogrammar
+// Title: IELTS Band Score Calculator - Instant Overall Band Calculation | Typogrammar
 // Description: Calculate your IELTS overall band score instantly with our free calculator. Understand IELTS rounding rules, band score charts, and how to improve your score. No sign-up required.
 
 // FAQ Data for SEO and rendering
@@ -58,9 +58,9 @@ const bandDescriptions = [
 
 const IELTSBandScoreCalculatorPage: React.FC = () => {
   usePageMetadata({
-    title: 'IELTS Band Score Calculator – Instant Overall Band Calculation | Typogrammar',
+    title: 'IELTS Band Score Calculator - Instant Overall Band Calculation | Typogrammar',
     description: 'Calculate your IELTS overall band score instantly with our free calculator. Understand IELTS rounding rules, band score charts, and how to improve your score. No sign-up required.',
-    canonical: 'https://typogrammar.com/ielts-band-score-calculator'
+    canonical: 'https://typogrammar.com/ielts-band-score-calculator/'
   });
 
   const [listening, setListening] = useState<string>('');
@@ -217,7 +217,7 @@ const IELTSBandScoreCalculatorPage: React.FC = () => {
           <p className="text-base text-slate-600 dark:text-slate-400 max-w-3xl mx-auto mb-8">
             Understanding how IELTS calculates your overall score is essential for setting realistic goals and tracking your progress. 
             The overall band score is an average of your four component scores, rounded to the nearest whole or half band according to 
-            specific rounding rules. <strong>No sign-up required</strong>—calculate your score immediately below.
+            specific rounding rules. <strong>No sign-up required</strong>-calculate your score immediately below.
           </p>
 
           {/* CTA Button */}
@@ -228,7 +228,7 @@ const IELTSBandScoreCalculatorPage: React.FC = () => {
             <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
             </svg>
-            Calculate Your Score Now – It's Free
+            Calculate Your Score Now - It's Free
             <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
             </svg>
@@ -565,27 +565,27 @@ const IELTSBandScoreCalculatorPage: React.FC = () => {
             Explore our comprehensive IELTS preparation materials to boost your score:
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <Link to="/ielts/ielts-writing-task-2-essay-types" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
+            <Link to="/ielts/ielts-writing-task-2-essay-types/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
               <h3 className="font-bold text-slate-900 dark:text-slate-100 mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">IELTS Writing Task 2</h3>
               <p className="text-sm text-slate-600 dark:text-slate-400">Master all 5 essay types with sample answers.</p>
             </Link>
-            <Link to="/grammar-checker" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
+            <Link to="/grammar-checker/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
               <h3 className="font-bold text-slate-900 dark:text-slate-100 mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Grammar Checker</h3>
               <p className="text-sm text-slate-600 dark:text-slate-400">Check your IELTS essays for grammar errors.</p>
             </Link>
-            <Link to="/ielts/vocabulary/band-7" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
+            <Link to="/ielts/vocabulary/band-7/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
               <h3 className="font-bold text-slate-900 dark:text-slate-100 mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">IELTS Vocabulary Band 7</h3>
               <p className="text-sm text-slate-600 dark:text-slate-400">Learn vocabulary for Band 7+ scores.</p>
             </Link>
-            <Link to="/paraphrasing-tool" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
+            <Link to="/paraphrasing-tool/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
               <h3 className="font-bold text-slate-900 dark:text-slate-100 mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Paraphrasing Tool</h3>
               <p className="text-sm text-slate-600 dark:text-slate-400">Practice paraphrasing for IELTS Writing.</p>
             </Link>
-            <Link to="/ielts/band-8-ielts-sample-answers" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
+            <Link to="/ielts/band-8-ielts-sample-answers/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
               <h3 className="font-bold text-slate-900 dark:text-slate-100 mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Band 8 Sample Answers</h3>
               <p className="text-sm text-slate-600 dark:text-slate-400">Study high-scoring IELTS essay examples.</p>
             </Link>
-            <Link to="/grammar/verb-tenses" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
+            <Link to="/grammar/verb-tenses/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
               <h3 className="font-bold text-slate-900 dark:text-slate-100 mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Verb Tenses</h3>
               <p className="text-sm text-slate-600 dark:text-slate-400">Master all 12 English tenses for accuracy.</p>
             </Link>
@@ -624,7 +624,7 @@ const IELTSBandScoreCalculatorPage: React.FC = () => {
           <h3 className="text-2xl font-bold text-white mb-3">Ready to Calculate Your IELTS Score?</h3>
           <p className="text-slate-300 mb-6 max-w-2xl mx-auto">
             Our free IELTS band score calculator uses official rounding rules. 
-            No sign-up required—get your overall band score instantly.
+            No sign-up required-get your overall band score instantly.
           </p>
           <button
             onClick={scrollToTool}
@@ -633,7 +633,7 @@ const IELTSBandScoreCalculatorPage: React.FC = () => {
             <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
             </svg>
-            Calculate Your Score Now – 100% Free
+            Calculate Your Score Now - 100% Free
           </button>
         </section>
 
@@ -641,7 +641,7 @@ const IELTSBandScoreCalculatorPage: React.FC = () => {
         <section className="text-center">
           <p className="text-sm text-slate-500 dark:text-slate-400">
             <strong>Trusted by IELTS students worldwide</strong> · Uses official IELTS rounding rules · 
-            Built by <Link to="/about/editorial-team" className="text-blue-600 dark:text-blue-400 hover:underline">language experts</Link> at Typogrammar
+            Built by <Link to="/about/editorial-team/" className="text-blue-600 dark:text-blue-400 hover:underline">language experts</Link> at Typogrammar
           </p>
         </section>
       </article>

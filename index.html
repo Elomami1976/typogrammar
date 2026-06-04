@@ -13,7 +13,7 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://typogrammar.com/">
-    <meta property="og:title" content="TypoGrammar – Free English Grammar, IELTS & TOEFL Prep">
+    <meta property="og:title" content="TypoGrammar - Free English Grammar, IELTS & TOEFL Prep">
     <meta property="og:description" content="Master English grammar with free lessons, IELTS & TOEFL prep, vocabulary, quizzes, and AI writing tools. Start free.">
     <meta property="og:image" content="https://typogrammar.com/og-default.png">
     <meta property="og:site_name" content="TypoGrammar">
@@ -21,13 +21,13 @@
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="TypoGrammar – Free English Grammar, IELTS & TOEFL Prep">
+    <meta name="twitter:title" content="TypoGrammar - Free English Grammar, IELTS & TOEFL Prep">
     <meta name="twitter:description" content="Master English grammar with free lessons, IELTS & TOEFL prep, vocabulary, quizzes, and AI writing tools. Start free.">
     <meta name="twitter:image" content="https://typogrammar.com/og-default.png">
     
     <!-- Google AdSense loaded lazily after page interaction - see end of body -->
     
-    <title>TypoGrammar – Free English Grammar, IELTS & TOEFL Prep</title>
+    <title>TypoGrammar - Free English Grammar, IELTS & TOEFL Prep</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/FAVICON.svg">
@@ -35,8 +35,7 @@
     <!-- Preconnect to external domains for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://www.youtube.com" crossorigin>
-    <link rel="dns-prefetch" href="https://cdn.jotfor.ms">
+    <link rel="dns-prefetch" href="https://www.youtube.com">
     <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
 
@@ -337,22 +336,6 @@
       }
     </script>
 
-    <!-- Jotform Chatbot Agent - Lazy loaded on interaction -->
-    <script>
-      var chatbotLoaded = false;
-      function loadChatbot() {
-        if (!chatbotLoaded) {
-          chatbotLoaded = true;
-          var script = document.createElement('script');
-          script.src = 'https://cdn.jotfor.ms/agent/embedjs/019b0ee2e6267947a640a8d120b244782b58/embed.js';
-          document.body.appendChild(script);
-        }
-      }
-      window.addEventListener('scroll', loadChatbot, { once: true, passive: true });
-      window.addEventListener('click', loadChatbot, { once: true });
-      window.addEventListener('touchstart', loadChatbot, { once: true, passive: true });
-      setTimeout(loadChatbot, 12000);
-    </script>
     
     <!-- Google Fonts - Load after user interaction for better FCP/LCP -->
     <script>
@@ -376,6 +359,10 @@
     
     <!-- Google AdSense - Lazy loaded for better performance -->
     <script>
+      // Pre-initialize the adsbygoogle queue so React pushes are never lost,
+      // even if the AdSense script hasn't finished loading yet (fixes mobile race condition).
+      window.adsbygoogle = window.adsbygoogle || [];
+
       var adsenseLoaded = false;
       function loadAdsense() {
         if (!adsenseLoaded) {

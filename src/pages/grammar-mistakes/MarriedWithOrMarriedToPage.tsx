@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../../hooks/usePageMetadata';
 import SchemaMarkup from '../../components/SchemaMarkup';
@@ -7,7 +7,7 @@ const MarriedWithOrMarriedToPage: React.FC = () => {
   usePageMetadata({
     title: 'Married With or Married To? Which One Is Correct | TypoGrammar',
     description: 'Learn whether to say "married with" or "married to." The correct form is "married to" when referring to your spouse.',
-    canonical: 'https://typogrammar.com/grammar-mistakes/married-with-or-married-to'
+    canonical: 'https://typogrammar.com/grammar-mistakes/married-with-or-married-to/'
   });
 
   const [showAnswer, setShowAnswer] = useState(false);
@@ -31,7 +31,7 @@ const MarriedWithOrMarriedToPage: React.FC = () => {
       <nav className="mb-6 text-slate-600 dark:text-slate-400">
         <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
         {' › '}
-        <Link to="/grammar-mistakes" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
+        <Link to="/grammar-mistakes/" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
         {' › '}
         <span className="text-slate-900 dark:text-slate-100">Married With or Married To</span>
       </nav>
@@ -76,7 +76,7 @@ const MarriedWithOrMarriedToPage: React.FC = () => {
               </ul>
             </div>
           </div>
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-4 rounded-lg">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-4 rounded-lg">
             <p className="text-lg text-slate-700 dark:text-slate-300">
               <strong>Memory tip:</strong> You marry <em>to</em> a person, but you're married <em>with</em> children (accompanying circumstances).
             </p>
@@ -130,7 +130,7 @@ const MarriedWithOrMarriedToPage: React.FC = () => {
           <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
             Practice
           </h2>
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-6 rounded-lg">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-6 rounded-lg">
             <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
               <strong>Choose the correct preposition:</strong>
             </p>
@@ -160,22 +160,22 @@ const MarriedWithOrMarriedToPage: React.FC = () => {
           </h2>
           <ul className="space-y-2 text-lg">
             <li>
-              <Link to="/grammar-mistakes/interested-in-or-interested-on" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/interested-in-or-interested-on/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Interested In or Interested On?
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/different-from-or-different-than" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/different-from-or-different-than/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Different From or Different Than?
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/good-in-or-good-at" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/good-in-or-good-at/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Good In or Good At?
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → All Grammar Mistakes
               </Link>
             </li>

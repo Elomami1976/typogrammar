@@ -1,9 +1,11 @@
-import React from 'react';
+﻿import React from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading, BulletList } from '../components/ArticleComponents';
 import ShareButtons from '../components/ShareButtons';
 import SchemaMarkup from '../components/SchemaMarkup';
+import MiniQuiz from '../components/MiniQuiz';
+import RelatedContent from '../components/RelatedContent';
 
 const TOEFLWritingTopicsPage: React.FC = () => {
   usePageMetadata({
@@ -195,7 +197,7 @@ const TOEFLWritingTopicsPage: React.FC = () => {
         {/* Work and Business Topics */}
         <ArticleHeading>TOEFL Writing Topics About Work and Business</ArticleHeading>
         
-        <div className="bg-amber-50 dark:bg-amber-900/20 rounded-lg p-6 mb-6">
+        <div className="bg-teal-50 dark:bg-teal-900/20 rounded-lg p-6 mb-6">
           <TopicList topics={workTopics} startNumber={41} />
         </div>
 
@@ -209,6 +211,52 @@ const TOEFLWritingTopicsPage: React.FC = () => {
         <div className="bg-slate-100 dark:bg-slate-800 rounded-lg p-6 mb-6">
           <TopicList topics={advancedTopics} startNumber={51} />
         </div>
+
+        {/* Mini quiz: turn passive readers into active practicers */}
+        <MiniQuiz
+          title="Pick the Best Thesis Statement"
+          intro="Practice picking strong thesis statements before you start writing."
+          questions={[
+            {
+              question: 'Topic: Should universities focus more on practical skills or theoretical knowledge?',
+              options: [
+                'Universities are good places to learn many things in life.',
+                'I think practical skills are nice but theory is also important sometimes.',
+                'While theoretical knowledge is foundational, universities should prioritise practical skills because graduates need them to succeed in modern, fast-changing job markets.',
+                'Practical skills.',
+              ],
+              correctAnswer: 2,
+              explanation: 'A strong TOEFL thesis takes a clear position and previews the reasoning. Vague or one-word answers do not score well.',
+            },
+            {
+              question: 'Topic: Do smartphones make our lives better or more complicated?',
+              options: [
+                'Smartphones have many features such as cameras, apps, and games.',
+                'Although smartphones add some complexity, they overwhelmingly improve our lives by saving time, connecting people, and giving instant access to information.',
+                'It depends on the person.',
+                'Smartphones are very popular nowadays in modern society.',
+              ],
+              correctAnswer: 1,
+              explanation: 'High-band TOEFL essays acknowledge the counter-position briefly, then take a clear, well-supported stance.',
+            },
+            {
+              question: 'Which essay opening shows the strongest paraphrase of the prompt?',
+              options: [
+                'Some people think technology improves communication. I agree with this opinion.',
+                'Whether modern technology has genuinely enhanced human communication is a debate that grows louder as we spend more hours interacting through screens than face to face.',
+                'Technology is good for communication. People can talk easily.',
+                'In this essay I will discuss whether technology improves communication.',
+              ],
+              correctAnswer: 1,
+              explanation: 'The strongest opening paraphrases the prompt with sophisticated language and frames the issue — a key Band 28+ habit.',
+            },
+          ]}
+          cta={{
+            to: '/toefl-writing-templates/',
+            label: 'See Step-by-Step TOEFL Templates',
+            subtitle: 'Use these structures with the topics above.',
+          }}
+        />
 
         {/* How to Practice */}
         <ArticleHeading>How to Practice TOEFL Writing Topics</ArticleHeading>
@@ -298,7 +346,7 @@ const TOEFLWritingTopicsPage: React.FC = () => {
         </div>
 
         {/* FAQ Section */}
-        <ArticleHeading>TOEFL Writing Topics – Frequently Asked Questions (FAQ)</ArticleHeading>
+        <ArticleHeading>TOEFL Writing Topics - Frequently Asked Questions (FAQ)</ArticleHeading>
 
         <div className="space-y-6 mb-8">
           <div className="border-b border-slate-200 dark:border-slate-700 pb-4">
@@ -313,7 +361,7 @@ const TOEFLWritingTopicsPage: React.FC = () => {
 
           <div className="border-b border-slate-200 dark:border-slate-700 pb-4">
             <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">How many TOEFL writing topics should I practice?</h3>
-            <p className="text-slate-600 dark:text-slate-400">Practicing at least 50–100 topics can help you become comfortable with different types of questions that appear in the TOEFL exam.</p>
+            <p className="text-slate-600 dark:text-slate-400">Practicing at least 50-100 topics can help you become comfortable with different types of questions that appear in the TOEFL exam.</p>
           </div>
 
           <div className="border-b border-slate-200 dark:border-slate-700 pb-4">
@@ -342,22 +390,22 @@ const TOEFLWritingTopicsPage: React.FC = () => {
         <ArticleHeading>Related TOEFL Writing Resources</ArticleHeading>
         
         <div className="grid md:grid-cols-2 gap-4 mb-8">
-          <Link to="/toefl/toefl-writing/toefl-writing-task-1-explained" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
+          <Link to="/toefl/toefl-writing/toefl-writing-task-1-explained/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">TOEFL Writing Task 1 Explained</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">Complete guide to the Integrated Writing Task.</p>
           </Link>
           
-          <Link to="/toefl/toefl-writing/toefl-writing-task-2-explained" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
+          <Link to="/toefl/toefl-writing/toefl-writing-task-2-explained/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">TOEFL Writing Task 2 Explained</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">Master the Academic Discussion Task with examples.</p>
           </Link>
           
-          <Link to="/toefl/toefl-writing/toefl-writing-templates" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
+          <Link to="/toefl/toefl-writing/toefl-writing-templates/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">TOEFL Writing Templates</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">Ready-to-use templates for both Task 1 and Task 2.</p>
           </Link>
           
-          <Link to="/toefl/toefl-writing/toefl-writing-practice-questions" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
+          <Link to="/toefl/toefl-writing/toefl-writing-practice-questions/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">TOEFL Writing Practice Questions</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">Practice questions with high-scoring sample answers.</p>
           </Link>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../../hooks/usePageMetadata';
 import SchemaMarkup from '../../components/SchemaMarkup';
@@ -7,7 +7,7 @@ const FreeGiftPage: React.FC = () => {
   usePageMetadata({
     title: 'Free Gift: Is It Redundant? | TypoGrammar',
     description: 'Is "free gift" redundant? Yes! A gift is already free by definition. Just say "gift." Learn why and see correct examples.',
-    canonical: 'https://typogrammar.com/grammar-mistakes/free-gift'
+    canonical: 'https://typogrammar.com/grammar-mistakes/free-gift/'
   });
 
   const [showAnswer, setShowAnswer] = useState(false);
@@ -31,7 +31,7 @@ const FreeGiftPage: React.FC = () => {
       {
         "@type": "Question",
         "name": "Is 'free gift' redundant?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes, 'free gift' is redundant. A gift is, by definition, something given without expecting payment. If you pay for it, it's not a gift—it's a purchase. Just say 'gift.'" }
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, 'free gift' is redundant. A gift is, by definition, something given without expecting payment. If you pay for it, it's not a gift-it's a purchase. Just say 'gift.'" }
       },
       {
         "@type": "Question",
@@ -49,7 +49,7 @@ const FreeGiftPage: React.FC = () => {
       <nav className="mb-6 text-slate-600 dark:text-slate-400">
         <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
         {' › '}
-        <Link to="/grammar-mistakes" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
+        <Link to="/grammar-mistakes/" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
         {' › '}
         <span className="text-slate-900 dark:text-slate-100">Free Gift</span>
       </nav>
@@ -83,11 +83,11 @@ const FreeGiftPage: React.FC = () => {
           </div>
 
           <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
-            If you have to pay for something, it's not a gift—it's a purchase. Therefore, all gifts are free by definition, making "free gift" redundant.
+            If you have to pay for something, it's not a gift-it's a purchase. Therefore, all gifts are free by definition, making "free gift" redundant.
           </p>
 
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-4 rounded-lg">
-            <p className="text-lg text-amber-800 dark:text-amber-200">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-4 rounded-lg">
+            <p className="text-lg text-teal-800 dark:text-teal-200">
               <strong>Think about it:</strong> Have you ever received a gift and then been asked to pay for it? That wouldn't be a gift!
             </p>
           </div>
@@ -165,7 +165,7 @@ const FreeGiftPage: React.FC = () => {
           <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
             Practice
           </h2>
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-6 rounded-lg">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-6 rounded-lg">
             <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
               <strong>Fix this sentence:</strong>
             </p>
@@ -198,22 +198,22 @@ const FreeGiftPage: React.FC = () => {
           </h2>
           <ul className="space-y-2 text-lg">
             <li>
-              <Link to="/grammar-mistakes/advance-planning" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/advance-planning/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Advance Planning (Redundant?)
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/end-result" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/end-result/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → End Result (Redundant?)
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/final-outcome" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/final-outcome/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Final Outcome (Redundant?)
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → All Grammar Mistakes
               </Link>
             </li>

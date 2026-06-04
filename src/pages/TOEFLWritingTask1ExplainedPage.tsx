@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading, BulletList, CodeBlock, ExampleList } from '../components/ArticleComponents';
@@ -78,7 +78,7 @@ const TOEFLWritingTask1ExplainedPage: React.FC = () => {
               </tr>
               <tr className="bg-slate-50 dark:bg-slate-750">
                 <td className="px-6 py-4 text-slate-700 dark:text-slate-300 border-b border-slate-200 dark:border-slate-700">Listening Lecture</td>
-                <td className="px-6 py-4 text-slate-700 dark:text-slate-300 border-b border-slate-200 dark:border-slate-700">2–3 minutes</td>
+                <td className="px-6 py-4 text-slate-700 dark:text-slate-300 border-b border-slate-200 dark:border-slate-700">2-3 minutes</td>
               </tr>
               <tr>
                 <td className="px-6 py-4 text-slate-700 dark:text-slate-300 border-b border-slate-200 dark:border-slate-700">Writing Time</td>
@@ -86,7 +86,7 @@ const TOEFLWritingTask1ExplainedPage: React.FC = () => {
               </tr>
               <tr className="bg-slate-50 dark:bg-slate-750">
                 <td className="px-6 py-4 text-slate-700 dark:text-slate-300">Essay Length</td>
-                <td className="px-6 py-4 text-slate-700 dark:text-slate-300">150–225 words recommended</td>
+                <td className="px-6 py-4 text-slate-700 dark:text-slate-300">150-225 words recommended</td>
               </tr>
             </tbody>
           </table>
@@ -106,7 +106,7 @@ const TOEFLWritingTask1ExplainedPage: React.FC = () => {
         <h3 className="text-xl font-semibold text-slate-900 dark:text-white mt-6 mb-3">Step 1: Read the Passage</h3>
         
         <ArticleParagraph>
-          You will read a short academic passage (about 250–300 words). It usually presents three main points supporting a claim.
+          You will read a short academic passage (about 250-300 words). It usually presents three main points supporting a claim.
         </ArticleParagraph>
 
         <ArticleParagraph>
@@ -143,8 +143,8 @@ const TOEFLWritingTask1ExplainedPage: React.FC = () => {
           'Focus on the relationship between them'
         ]} />
 
-        <div className="bg-amber-50 dark:bg-amber-900/20 border-l-4 border-amber-500 p-4 mb-6">
-          <p className="text-amber-800 dark:text-amber-200 font-medium">
+        <div className="bg-teal-50 dark:bg-teal-900/20 border-l-4 border-teal-500 p-4 mb-6">
+          <p className="text-teal-800 dark:text-teal-200 font-medium">
             Important: You should not give your personal opinion.
           </p>
         </div>
@@ -159,16 +159,16 @@ const TOEFLWritingTask1ExplainedPage: React.FC = () => {
         <h3 className="text-xl font-semibold text-slate-900 dark:text-white mt-6 mb-3">Paragraph Structure</h3>
 
         <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-6 mb-6">
-          <p className="font-semibold text-blue-900 dark:text-blue-100 mb-2">Paragraph 1 — Introduction</p>
+          <p className="font-semibold text-blue-900 dark:text-blue-100 mb-2">Paragraph 1, Introduction</p>
           <p className="text-blue-800 dark:text-blue-200 mb-4">Explain the relationship between the reading and the lecture.</p>
           
-          <p className="font-semibold text-blue-900 dark:text-blue-100 mb-2">Paragraph 2 — First Point</p>
+          <p className="font-semibold text-blue-900 dark:text-blue-100 mb-2">Paragraph 2, First Point</p>
           <p className="text-blue-800 dark:text-blue-200 mb-4">Explain how the lecture challenges the first idea in the reading.</p>
           
-          <p className="font-semibold text-blue-900 dark:text-blue-100 mb-2">Paragraph 3 — Second Point</p>
+          <p className="font-semibold text-blue-900 dark:text-blue-100 mb-2">Paragraph 3, Second Point</p>
           <p className="text-blue-800 dark:text-blue-200 mb-4">Explain how the lecture contradicts the second idea.</p>
           
-          <p className="font-semibold text-blue-900 dark:text-blue-100 mb-2">Paragraph 4 — Third Point</p>
+          <p className="font-semibold text-blue-900 dark:text-blue-100 mb-2">Paragraph 4, Third Point</p>
           <p className="text-blue-800 dark:text-blue-200">Explain the third disagreement.</p>
         </div>
 
@@ -288,7 +288,7 @@ Point 3: Reading vs Lecture`}
 
           <div className="bg-red-50 dark:bg-red-900/20 rounded-lg p-5 border-l-4 border-red-500">
             <h4 className="font-semibold text-red-900 dark:text-red-100 mb-2">4. Writing Too Little</h4>
-            <p className="text-red-800 dark:text-red-200">Although the minimum is about 150 words, most high-scoring essays contain 180–220 words.</p>
+            <p className="text-red-800 dark:text-red-200">Although the minimum is about 150 words, most high-scoring essays contain 180-220 words.</p>
           </div>
         </div>
 
@@ -314,8 +314,8 @@ Point 3: Reading vs Lecture`}
         </ArticleParagraph>
 
         <ExampleList items={[
-          'The lecturer contradicts the reading by explaining…',
-          'The professor challenges the claim that…'
+          'The lecturer contradicts the reading by explaining...',
+          'The professor challenges the claim that...'
         ]} />
 
         <h3 className="text-xl font-semibold text-slate-900 dark:text-white mt-6 mb-3">Use Transition Words</h3>
@@ -346,7 +346,7 @@ Point 3: Reading vs Lecture`}
         <ArticleHeading>TOEFL Writing Task 1 Scoring</ArticleHeading>
         
         <ArticleParagraph>
-          Your essay is graded on a <strong>0–5 scale</strong> based on:
+          Your essay is graded on a <strong>0-5 scale</strong> based on:
         </ArticleParagraph>
 
         <div className="space-y-4 mb-6">
@@ -383,7 +383,7 @@ Point 3: Reading vs Lecture`}
         </ArticleParagraph>
 
         {/* FAQ Section */}
-        <ArticleHeading>TOEFL Writing Task 1 – Frequently Asked Questions (FAQ)</ArticleHeading>
+        <ArticleHeading>TOEFL Writing Task 1 - Frequently Asked Questions (FAQ)</ArticleHeading>
 
         <div className="space-y-6 mb-8">
           <div className="border-b border-slate-200 dark:border-slate-700 pb-4">
@@ -398,7 +398,7 @@ Point 3: Reading vs Lecture`}
 
           <div className="border-b border-slate-200 dark:border-slate-700 pb-4">
             <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">How many words should TOEFL Writing Task 1 be?</h3>
-            <p className="text-slate-600 dark:text-slate-400">The recommended length for TOEFL Writing Task 1 is 150–225 words. However, many high-scoring essays are around 180–220 words.</p>
+            <p className="text-slate-600 dark:text-slate-400">The recommended length for TOEFL Writing Task 1 is 150-225 words. However, many high-scoring essays are around 180-220 words.</p>
           </div>
 
           <div className="border-b border-slate-200 dark:border-slate-700 pb-4">
@@ -408,7 +408,7 @@ Point 3: Reading vs Lecture`}
 
           <div className="border-b border-slate-200 dark:border-slate-700 pb-4">
             <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">How is TOEFL Writing Task 1 scored?</h3>
-            <p className="text-slate-600 dark:text-slate-400">TOEFL Writing Task 1 is scored on a 0–5 scale. The score is based on accuracy of content, organization and clarity, and grammar and vocabulary usage.</p>
+            <p className="text-slate-600 dark:text-slate-400">TOEFL Writing Task 1 is scored on a 0-5 scale. The score is based on accuracy of content, organization and clarity, and grammar and vocabulary usage.</p>
           </div>
 
           <div className="border-b border-slate-200 dark:border-slate-700 pb-4">
@@ -431,22 +431,22 @@ Point 3: Reading vs Lecture`}
         <ArticleHeading>Related TOEFL Writing Resources</ArticleHeading>
         
         <div className="grid md:grid-cols-2 gap-4 mb-8">
-          <Link to="/toefl/toefl-writing/toefl-writing-task-2-explained" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
+          <Link to="/toefl/toefl-writing/toefl-writing-task-2-explained/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">TOEFL Writing Task 2 Explained</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">Master the Academic Discussion Task with templates and sample answers.</p>
           </Link>
           
-          <Link to="/toefl/toefl-writing/toefl-writing-templates" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
+          <Link to="/toefl/toefl-writing/toefl-writing-templates/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">TOEFL Writing Templates</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">Ready-to-use templates for both Task 1 and Task 2.</p>
           </Link>
           
-          <Link to="/toefl/toefl-writing/toefl-writing-topics" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
+          <Link to="/toefl/toefl-writing/toefl-writing-topics/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">TOEFL Writing Topics</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">60+ essay questions organized by category for practice.</p>
           </Link>
           
-          <Link to="/toefl/toefl-writing/toefl-writing-practice-questions" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
+          <Link to="/toefl/toefl-writing/toefl-writing-practice-questions/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">TOEFL Writing Practice Questions</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">Practice questions with high-scoring sample answers.</p>
           </Link>

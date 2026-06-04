@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import SchemaMarkup from '../components/SchemaMarkup';
@@ -7,7 +7,7 @@ const VerbTensesHubPage: React.FC = () => {
   usePageMetadata({
     title: 'The 12 English Verb Tenses (Complete Guide) | TypoGrammar',
     description: 'Master all 12 English verb tenses with a complete chart, structure formulas, examples, and links to detailed lessons. Simple guide for ESL learners.',
-    canonical: 'https://typogrammar.com/grammar/verb-tenses'
+    canonical: 'https://typogrammar.com/grammar/verb-tenses/'
   });
 
   const articleSchema = {
@@ -45,7 +45,7 @@ const VerbTensesHubPage: React.FC = () => {
         <nav className="text-sm text-slate-600 dark:text-slate-400 mb-6">
           <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
           <span className="mx-2">›</span>
-          <Link to="/grammar" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar</Link>
+          <Link to="/grammar/" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar</Link>
           <span className="mx-2">›</span>
           <span className="text-slate-900 dark:text-slate-100">Verb Tenses</span>
         </nav>
@@ -96,28 +96,28 @@ const VerbTensesHubPage: React.FC = () => {
               </tr>
               <tr>
                 <td className="border border-slate-300 dark:border-slate-600 px-3 py-2">
-                  <Link to="/grammar/verb-tenses/present-simple" className="text-blue-600 hover:underline dark:text-blue-400">Present Simple</Link>
+                  <Link to="/grammar/verb-tenses/present-simple/" className="text-blue-600 hover:underline dark:text-blue-400">Present Simple</Link>
                 </td>
                 <td className="border border-slate-300 dark:border-slate-600 px-3 py-2">S + V(s/es)</td>
                 <td className="border border-slate-300 dark:border-slate-600 px-3 py-2">She works every day.</td>
               </tr>
               <tr className="bg-slate-50 dark:bg-slate-800">
                 <td className="border border-slate-300 dark:border-slate-600 px-3 py-2">
-                  <Link to="/grammar/verb-tenses/present-progressive" className="text-blue-600 hover:underline dark:text-blue-400">Present Progressive</Link>
+                  <Link to="/grammar/verb-tenses/present-progressive/" className="text-blue-600 hover:underline dark:text-blue-400">Present Progressive</Link>
                 </td>
                 <td className="border border-slate-300 dark:border-slate-600 px-3 py-2">S + am/is/are + V-ing</td>
                 <td className="border border-slate-300 dark:border-slate-600 px-3 py-2">She is working now.</td>
               </tr>
               <tr>
                 <td className="border border-slate-300 dark:border-slate-600 px-3 py-2">
-                  <Link to="/grammar/verb-tenses/present-perfect" className="text-blue-600 hover:underline dark:text-blue-400">Present Perfect</Link>
+                  <Link to="/grammar/verb-tenses/present-perfect/" className="text-blue-600 hover:underline dark:text-blue-400">Present Perfect</Link>
                 </td>
                 <td className="border border-slate-300 dark:border-slate-600 px-3 py-2">S + have/has + V3</td>
                 <td className="border border-slate-300 dark:border-slate-600 px-3 py-2">She has finished her work.</td>
               </tr>
               <tr className="bg-slate-50 dark:bg-slate-800">
                 <td className="border border-slate-300 dark:border-slate-600 px-3 py-2">
-                  <Link to="/grammar/verb-tenses/present-perfect-progressive" className="text-blue-600 hover:underline dark:text-blue-400">Present Perfect Progressive</Link>
+                  <Link to="/grammar/verb-tenses/present-perfect-progressive/" className="text-blue-600 hover:underline dark:text-blue-400">Present Perfect Progressive</Link>
                 </td>
                 <td className="border border-slate-300 dark:border-slate-600 px-3 py-2">S + have/has been + V-ing</td>
                 <td className="border border-slate-300 dark:border-slate-600 px-3 py-2">She has been working for hours.</td>
@@ -129,28 +129,28 @@ const VerbTensesHubPage: React.FC = () => {
               </tr>
               <tr>
                 <td className="border border-slate-300 dark:border-slate-600 px-3 py-2">
-                  <Link to="/grammar/verb-tenses/past-simple" className="text-blue-600 hover:underline dark:text-blue-400">Past Simple</Link>
+                  <Link to="/grammar/verb-tenses/past-simple/" className="text-blue-600 hover:underline dark:text-blue-400">Past Simple</Link>
                 </td>
                 <td className="border border-slate-300 dark:border-slate-600 px-3 py-2">S + V2</td>
                 <td className="border border-slate-300 dark:border-slate-600 px-3 py-2">She worked yesterday.</td>
               </tr>
               <tr className="bg-slate-50 dark:bg-slate-800">
                 <td className="border border-slate-300 dark:border-slate-600 px-3 py-2">
-                  <Link to="/grammar/verb-tenses/past-progressive" className="text-blue-600 hover:underline dark:text-blue-400">Past Progressive</Link>
+                  <Link to="/grammar/verb-tenses/past-progressive/" className="text-blue-600 hover:underline dark:text-blue-400">Past Progressive</Link>
                 </td>
                 <td className="border border-slate-300 dark:border-slate-600 px-3 py-2">S + was/were + V-ing</td>
                 <td className="border border-slate-300 dark:border-slate-600 px-3 py-2">She was working at 5 PM.</td>
               </tr>
               <tr>
                 <td className="border border-slate-300 dark:border-slate-600 px-3 py-2">
-                  <Link to="/grammar/verb-tenses/past-perfect" className="text-blue-600 hover:underline dark:text-blue-400">Past Perfect</Link>
+                  <Link to="/grammar/verb-tenses/past-perfect/" className="text-blue-600 hover:underline dark:text-blue-400">Past Perfect</Link>
                 </td>
                 <td className="border border-slate-300 dark:border-slate-600 px-3 py-2">S + had + V3</td>
                 <td className="border border-slate-300 dark:border-slate-600 px-3 py-2">She had finished before I arrived.</td>
               </tr>
               <tr className="bg-slate-50 dark:bg-slate-800">
                 <td className="border border-slate-300 dark:border-slate-600 px-3 py-2">
-                  <Link to="/grammar/verb-tenses/past-perfect-progressive" className="text-blue-600 hover:underline dark:text-blue-400">Past Perfect Progressive</Link>
+                  <Link to="/grammar/verb-tenses/past-perfect-progressive/" className="text-blue-600 hover:underline dark:text-blue-400">Past Perfect Progressive</Link>
                 </td>
                 <td className="border border-slate-300 dark:border-slate-600 px-3 py-2">S + had been + V-ing</td>
                 <td className="border border-slate-300 dark:border-slate-600 px-3 py-2">She had been working for hours.</td>
@@ -162,28 +162,28 @@ const VerbTensesHubPage: React.FC = () => {
               </tr>
               <tr>
                 <td className="border border-slate-300 dark:border-slate-600 px-3 py-2">
-                  <Link to="/grammar/verb-tenses/future-simple" className="text-blue-600 hover:underline dark:text-blue-400">Future Simple</Link>
+                  <Link to="/grammar/verb-tenses/future-simple/" className="text-blue-600 hover:underline dark:text-blue-400">Future Simple</Link>
                 </td>
                 <td className="border border-slate-300 dark:border-slate-600 px-3 py-2">S + will + V</td>
                 <td className="border border-slate-300 dark:border-slate-600 px-3 py-2">She will work tomorrow.</td>
               </tr>
               <tr className="bg-slate-50 dark:bg-slate-800">
                 <td className="border border-slate-300 dark:border-slate-600 px-3 py-2">
-                  <Link to="/grammar/verb-tenses/future-progressive" className="text-blue-600 hover:underline dark:text-blue-400">Future Progressive</Link>
+                  <Link to="/grammar/verb-tenses/future-progressive/" className="text-blue-600 hover:underline dark:text-blue-400">Future Progressive</Link>
                 </td>
                 <td className="border border-slate-300 dark:border-slate-600 px-3 py-2">S + will be + V-ing</td>
                 <td className="border border-slate-300 dark:border-slate-600 px-3 py-2">She will be working at 5 PM.</td>
               </tr>
               <tr>
                 <td className="border border-slate-300 dark:border-slate-600 px-3 py-2">
-                  <Link to="/grammar/verb-tenses/future-perfect" className="text-blue-600 hover:underline dark:text-blue-400">Future Perfect</Link>
+                  <Link to="/grammar/verb-tenses/future-perfect/" className="text-blue-600 hover:underline dark:text-blue-400">Future Perfect</Link>
                 </td>
                 <td className="border border-slate-300 dark:border-slate-600 px-3 py-2">S + will have + V3</td>
                 <td className="border border-slate-300 dark:border-slate-600 px-3 py-2">She will have finished by 6 PM.</td>
               </tr>
               <tr className="bg-slate-50 dark:bg-slate-800">
                 <td className="border border-slate-300 dark:border-slate-600 px-3 py-2">
-                  <Link to="/grammar/verb-tenses/future-perfect-progressive" className="text-blue-600 hover:underline dark:text-blue-400">Future Perfect Progressive</Link>
+                  <Link to="/grammar/verb-tenses/future-perfect-progressive/" className="text-blue-600 hover:underline dark:text-blue-400">Future Perfect Progressive</Link>
                 </td>
                 <td className="border border-slate-300 dark:border-slate-600 px-3 py-2">S + will have been + V-ing</td>
                 <td className="border border-slate-300 dark:border-slate-600 px-3 py-2">She will have been working for 8 hours.</td>
@@ -201,19 +201,19 @@ const VerbTensesHubPage: React.FC = () => {
         </p>
 
         <div className="grid gap-4 md:grid-cols-2 mb-8">
-          <Link to="/grammar/verb-tenses/present-simple" className="block p-4 bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 rounded-lg transition-all dark:bg-slate-700/50 dark:border-slate-600 dark:hover:bg-slate-700 dark:hover:border-blue-500">
+          <Link to="/grammar/verb-tenses/present-simple/" className="block p-4 bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 rounded-lg transition-all dark:bg-slate-700/50 dark:border-slate-600 dark:hover:bg-slate-700 dark:hover:border-blue-500">
             <h3 className="text-lg font-bold text-blue-600 dark:text-blue-400 mb-2">Present Simple</h3>
             <p className="text-slate-600 dark:text-slate-400 text-sm">Habits, facts, routines. <em>"She works every day."</em></p>
           </Link>
-          <Link to="/grammar/verb-tenses/present-progressive" className="block p-4 bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 rounded-lg transition-all dark:bg-slate-700/50 dark:border-slate-600 dark:hover:bg-slate-700 dark:hover:border-blue-500">
+          <Link to="/grammar/verb-tenses/present-progressive/" className="block p-4 bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 rounded-lg transition-all dark:bg-slate-700/50 dark:border-slate-600 dark:hover:bg-slate-700 dark:hover:border-blue-500">
             <h3 className="text-lg font-bold text-blue-600 dark:text-blue-400 mb-2">Present Progressive</h3>
             <p className="text-slate-600 dark:text-slate-400 text-sm">Actions happening now. <em>"She is working."</em></p>
           </Link>
-          <Link to="/grammar/verb-tenses/present-perfect" className="block p-4 bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 rounded-lg transition-all dark:bg-slate-700/50 dark:border-slate-600 dark:hover:bg-slate-700 dark:hover:border-blue-500">
+          <Link to="/grammar/verb-tenses/present-perfect/" className="block p-4 bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 rounded-lg transition-all dark:bg-slate-700/50 dark:border-slate-600 dark:hover:bg-slate-700 dark:hover:border-blue-500">
             <h3 className="text-lg font-bold text-blue-600 dark:text-blue-400 mb-2">Present Perfect</h3>
             <p className="text-slate-600 dark:text-slate-400 text-sm">Past actions connected to now. <em>"She has finished."</em></p>
           </Link>
-          <Link to="/grammar/verb-tenses/present-perfect-progressive" className="block p-4 bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 rounded-lg transition-all dark:bg-slate-700/50 dark:border-slate-600 dark:hover:bg-slate-700 dark:hover:border-blue-500">
+          <Link to="/grammar/verb-tenses/present-perfect-progressive/" className="block p-4 bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 rounded-lg transition-all dark:bg-slate-700/50 dark:border-slate-600 dark:hover:bg-slate-700 dark:hover:border-blue-500">
             <h3 className="text-lg font-bold text-blue-600 dark:text-blue-400 mb-2">Present Perfect Progressive</h3>
             <p className="text-slate-600 dark:text-slate-400 text-sm">Duration up to now. <em>"She has been working."</em></p>
           </Link>
@@ -228,19 +228,19 @@ const VerbTensesHubPage: React.FC = () => {
         </p>
 
         <div className="grid gap-4 md:grid-cols-2 mb-8">
-          <Link to="/grammar/verb-tenses/past-simple" className="block p-4 bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 rounded-lg transition-all dark:bg-slate-700/50 dark:border-slate-600 dark:hover:bg-slate-700 dark:hover:border-blue-500">
+          <Link to="/grammar/verb-tenses/past-simple/" className="block p-4 bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 rounded-lg transition-all dark:bg-slate-700/50 dark:border-slate-600 dark:hover:bg-slate-700 dark:hover:border-blue-500">
             <h3 className="text-lg font-bold text-blue-600 dark:text-blue-400 mb-2">Past Simple</h3>
             <p className="text-slate-600 dark:text-slate-400 text-sm">Completed past actions. <em>"She worked yesterday."</em></p>
           </Link>
-          <Link to="/grammar/verb-tenses/past-progressive" className="block p-4 bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 rounded-lg transition-all dark:bg-slate-700/50 dark:border-slate-600 dark:hover:bg-slate-700 dark:hover:border-blue-500">
+          <Link to="/grammar/verb-tenses/past-progressive/" className="block p-4 bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 rounded-lg transition-all dark:bg-slate-700/50 dark:border-slate-600 dark:hover:bg-slate-700 dark:hover:border-blue-500">
             <h3 className="text-lg font-bold text-blue-600 dark:text-blue-400 mb-2">Past Progressive</h3>
             <p className="text-slate-600 dark:text-slate-400 text-sm">Ongoing past actions. <em>"She was working at 5 PM."</em></p>
           </Link>
-          <Link to="/grammar/verb-tenses/past-perfect" className="block p-4 bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 rounded-lg transition-all dark:bg-slate-700/50 dark:border-slate-600 dark:hover:bg-slate-700 dark:hover:border-blue-500">
+          <Link to="/grammar/verb-tenses/past-perfect/" className="block p-4 bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 rounded-lg transition-all dark:bg-slate-700/50 dark:border-slate-600 dark:hover:bg-slate-700 dark:hover:border-blue-500">
             <h3 className="text-lg font-bold text-blue-600 dark:text-blue-400 mb-2">Past Perfect</h3>
             <p className="text-slate-600 dark:text-slate-400 text-sm">Action before another past event. <em>"She had finished."</em></p>
           </Link>
-          <Link to="/grammar/verb-tenses/past-perfect-progressive" className="block p-4 bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 rounded-lg transition-all dark:bg-slate-700/50 dark:border-slate-600 dark:hover:bg-slate-700 dark:hover:border-blue-500">
+          <Link to="/grammar/verb-tenses/past-perfect-progressive/" className="block p-4 bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 rounded-lg transition-all dark:bg-slate-700/50 dark:border-slate-600 dark:hover:bg-slate-700 dark:hover:border-blue-500">
             <h3 className="text-lg font-bold text-blue-600 dark:text-blue-400 mb-2">Past Perfect Progressive</h3>
             <p className="text-slate-600 dark:text-slate-400 text-sm">Duration before a past moment. <em>"She had been working."</em></p>
           </Link>
@@ -255,19 +255,19 @@ const VerbTensesHubPage: React.FC = () => {
         </p>
 
         <div className="grid gap-4 md:grid-cols-2 mb-8">
-          <Link to="/grammar/verb-tenses/future-simple" className="block p-4 bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 rounded-lg transition-all dark:bg-slate-700/50 dark:border-slate-600 dark:hover:bg-slate-700 dark:hover:border-blue-500">
+          <Link to="/grammar/verb-tenses/future-simple/" className="block p-4 bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 rounded-lg transition-all dark:bg-slate-700/50 dark:border-slate-600 dark:hover:bg-slate-700 dark:hover:border-blue-500">
             <h3 className="text-lg font-bold text-blue-600 dark:text-blue-400 mb-2">Future Simple</h3>
             <p className="text-slate-600 dark:text-slate-400 text-sm">Predictions, decisions. <em>"She will work tomorrow."</em></p>
           </Link>
-          <Link to="/grammar/verb-tenses/future-progressive" className="block p-4 bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 rounded-lg transition-all dark:bg-slate-700/50 dark:border-slate-600 dark:hover:bg-slate-700 dark:hover:border-blue-500">
+          <Link to="/grammar/verb-tenses/future-progressive/" className="block p-4 bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 rounded-lg transition-all dark:bg-slate-700/50 dark:border-slate-600 dark:hover:bg-slate-700 dark:hover:border-blue-500">
             <h3 className="text-lg font-bold text-blue-600 dark:text-blue-400 mb-2">Future Progressive</h3>
             <p className="text-slate-600 dark:text-slate-400 text-sm">Ongoing action at a future time. <em>"She will be working."</em></p>
           </Link>
-          <Link to="/grammar/verb-tenses/future-perfect" className="block p-4 bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 rounded-lg transition-all dark:bg-slate-700/50 dark:border-slate-600 dark:hover:bg-slate-700 dark:hover:border-blue-500">
+          <Link to="/grammar/verb-tenses/future-perfect/" className="block p-4 bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 rounded-lg transition-all dark:bg-slate-700/50 dark:border-slate-600 dark:hover:bg-slate-700 dark:hover:border-blue-500">
             <h3 className="text-lg font-bold text-blue-600 dark:text-blue-400 mb-2">Future Perfect</h3>
             <p className="text-slate-600 dark:text-slate-400 text-sm">Completion before a future time. <em>"She will have finished."</em></p>
           </Link>
-          <Link to="/grammar/verb-tenses/future-perfect-progressive" className="block p-4 bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 rounded-lg transition-all dark:bg-slate-700/50 dark:border-slate-600 dark:hover:bg-slate-700 dark:hover:border-blue-500">
+          <Link to="/grammar/verb-tenses/future-perfect-progressive/" className="block p-4 bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 rounded-lg transition-all dark:bg-slate-700/50 dark:border-slate-600 dark:hover:bg-slate-700 dark:hover:border-blue-500">
             <h3 className="text-lg font-bold text-blue-600 dark:text-blue-400 mb-2">Future Perfect Progressive</h3>
             <p className="text-slate-600 dark:text-slate-400 text-sm">Duration before a future time. <em>"She will have been working."</em></p>
           </Link>
@@ -369,7 +369,7 @@ const VerbTensesHubPage: React.FC = () => {
           <p className="text-slate-700 dark:text-slate-300 mb-4">
             Ready to test your knowledge? Take our comprehensive quiz covering all 12 tenses.
           </p>
-          <Link to="/quizzes/verb-tenses-quiz" className="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors">
+          <Link to="/quizzes/verb-tenses-quiz/" className="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors">
             Take the Verb Tenses Quiz →
           </Link>
         </div>
@@ -377,7 +377,7 @@ const VerbTensesHubPage: React.FC = () => {
         {/* Editorial Attribution */}
         <div className="bg-slate-100 dark:bg-slate-700 border border-slate-300 dark:border-slate-600 p-6 rounded-lg">
           <p className="text-slate-700 dark:text-slate-300 mb-4">
-            By <Link to="/about" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">TypoGrammar</Link>
+            By <Link to="/about/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">TypoGrammar</Link>
           </p>
           <p className="text-slate-700 dark:text-slate-300 mb-4">
             TypoGrammar creates clear, accurate grammar guides for English learners worldwide.

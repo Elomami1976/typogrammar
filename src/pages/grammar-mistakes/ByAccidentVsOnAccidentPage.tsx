@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../../hooks/usePageMetadata';
 import SchemaMarkup from '../../components/SchemaMarkup';
@@ -7,7 +7,7 @@ const ByAccidentVsOnAccidentPage: React.FC = () => {
   usePageMetadata({
     title: 'By Accident vs. On Accident: Which Is Correct? | TypoGrammar',
     description: 'Learn whether to say "by accident" or "on accident" in English. "By accident" is the standard and universally accepted form. Clear examples and explanations.',
-    canonical: 'https://typogrammar.com/grammar-mistakes/by-accident-vs-on-accident'
+    canonical: 'https://typogrammar.com/grammar-mistakes/by-accident-vs-on-accident/'
   });
 
   const [showAnswer, setShowAnswer] = useState(false);
@@ -70,7 +70,7 @@ const ByAccidentVsOnAccidentPage: React.FC = () => {
       <nav className="mb-6 text-slate-600 dark:text-slate-400">
         <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
         {' › '}
-        <Link to="/grammar-mistakes" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
+        <Link to="/grammar-mistakes/" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
         {' › '}
         <span className="text-slate-900 dark:text-slate-100">By Accident vs. On Accident</span>
       </nav>
@@ -103,7 +103,7 @@ const ByAccidentVsOnAccidentPage: React.FC = () => {
           </p>
           <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
             <strong>On accident</strong> is used informally in some regions of the United States, often by analogy
-            with the phrase <em>on purpose</em>. However, the logic doesn't hold — <em>on purpose</em> and
+            with the phrase <em>on purpose</em>. However, the logic doesn't hold, <em>on purpose</em> and
             <em> by accident</em> are separate idioms that evolved independently, and they are not interchangeable
             opposites in terms of preposition.
           </p>
@@ -119,7 +119,7 @@ const ByAccidentVsOnAccidentPage: React.FC = () => {
             <div className="bg-red-50 dark:bg-red-900/20 p-4 rounded-lg border border-red-200 dark:border-red-800">
               <h3 className="text-xl font-bold text-red-800 dark:text-red-200 mb-2">✘ ON ACCIDENT</h3>
               <ul className="list-disc list-inside text-slate-700 dark:text-slate-300 space-y-1">
-                <li>Informal — limited to some American dialects</li>
+                <li>Informal, limited to some American dialects</li>
                 <li>Not accepted in formal writing or exams</li>
                 <li>Considered nonstandard by most grammar guides</li>
               </ul>
@@ -138,7 +138,7 @@ const ByAccidentVsOnAccidentPage: React.FC = () => {
             "on purpose" should be "on accident." This reasoning feels natural, but English idioms don't always
             follow logical patterns.
           </p>
-          <div className="bg-amber-50 dark:bg-amber-900/20 border-l-4 border-amber-400 p-5 rounded-r-lg">
+          <div className="bg-teal-50 dark:bg-teal-900/20 border-l-4 border-teal-400 p-5 rounded-r-lg">
             <p className="text-slate-800 dark:text-slate-200 font-semibold mb-2">Remember this pattern:</p>
             <ul className="space-y-2 text-lg text-slate-700 dark:text-slate-300">
               <li>✔ I did it <strong>on purpose</strong>. (intentionally)</li>
@@ -206,7 +206,7 @@ const ByAccidentVsOnAccidentPage: React.FC = () => {
             ].map((item) => (
               <div key={item.phrase} className="bg-slate-50 dark:bg-slate-700/50 p-3 rounded-lg flex items-center gap-3">
                 <span className="font-semibold text-blue-700 dark:text-blue-300">{item.phrase}</span>
-                <span className="text-slate-500 dark:text-slate-400">—</span>
+                <span className="text-slate-500 dark:text-slate-400">-</span>
                 <span className="text-slate-700 dark:text-slate-300">{item.meaning}</span>
               </div>
             ))}
@@ -257,7 +257,7 @@ const ByAccidentVsOnAccidentPage: React.FC = () => {
           <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
             Practice
           </h2>
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-6 rounded-lg">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-6 rounded-lg">
             <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
               <strong>Choose the correct preposition:</strong>
             </p>
@@ -290,22 +290,22 @@ const ByAccidentVsOnAccidentPage: React.FC = () => {
           </h2>
           <ul className="space-y-2 text-lg">
             <li>
-              <Link to="/grammar-mistakes/discuss-or-discuss-about" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/discuss-or-discuss-about/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Discuss or Discuss About?
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/different-from-or-different-than" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/different-from-or-different-than/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Different From or Different Than?
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/should-have-vs-should-of" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/should-have-vs-should-of/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Should Have vs. Should Of
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → All Grammar Mistakes
               </Link>
             </li>

@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { GrammarTopic } from '../types';
 import { ArticleParagraph, ArticleHeading, InlineCode, CodeBlock, ExampleList, BulletList } from '../components/ArticleComponents';
 import { Link } from 'react-router-dom';
@@ -104,7 +104,7 @@ DO:
         </div>
 
         <ArticleParagraph>
-          <strong>Related topics:</strong> <Link to="/commonly-confused-words" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Commonly Confused Words</Link> · <Link to="/topics/affect-vs-effect" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Affect vs Effect</Link> · <Link to="/vocabulary/collocations" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">English Collocations</Link>
+          <strong>Related topics:</strong> <Link to="/commonly-confused-words/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Commonly Confused Words</Link> · <Link to="/topics/affect-vs-effect/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Affect vs Effect</Link> · <Link to="/vocabulary/collocations/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">English Collocations</Link>
         </ArticleParagraph>
       </>
     ),
@@ -143,7 +143,7 @@ DO:
         
         <ArticleHeading>A Few vs A Little (Some, But Not Many)</ArticleHeading>
         <ArticleParagraph>
-          Adding <InlineCode>a</InlineCode> changes the meaning slightly—it becomes more positive, meaning "some" rather than "not many/much."
+          Adding <InlineCode>a</InlineCode> changes the meaning slightly-it becomes more positive, meaning "some" rather than "not many/much."
         </ArticleParagraph>
         <BulletList items={[
           <><InlineCode>few friends</InlineCode> = not many friends (negative tone)</>,
@@ -206,7 +206,7 @@ DO:
         </div>
 
         <ArticleParagraph>
-          <strong>Related topics:</strong> <Link to="/topics/countable-uncountable-nouns" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Countable & Uncountable Nouns</Link> · <Link to="/topics/articles" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Articles: A, An, The</Link> · <Link to="/commonly-confused-words" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Commonly Confused Words</Link>
+          <strong>Related topics:</strong> <Link to="/topics/countable-uncountable-nouns/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Countable & Uncountable Nouns</Link> · <Link to="/topics/articles/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Articles: A, An, The</Link> · <Link to="/commonly-confused-words/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Commonly Confused Words</Link>
         </ArticleParagraph>
       </>
     ),
@@ -312,7 +312,7 @@ With EFFECT (noun):
         </div>
 
         <ArticleParagraph>
-          <strong>Related topics:</strong> <Link to="/commonly-confused-words" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Commonly Confused Words</Link> · <Link to="/blog/commonly-confused-word-pairs" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Commonly Confused Word Pairs (Blog)</Link> · <Link to="/topics/its-vs-its" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">It's vs Its</Link>
+          <strong>Related topics:</strong> <Link to="/commonly-confused-words/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Commonly Confused Words</Link> · <Link to="/blog/commonly-confused-word-pairs/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Commonly Confused Word Pairs (Blog)</Link> · <Link to="/topics/its-vs-its/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">It's vs Its</Link>
         </ArticleParagraph>
       </>
     ),
@@ -328,7 +328,7 @@ With EFFECT (noun):
         <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6 my-6 rounded-r-lg">
           <h4 className="font-semibold text-lg mb-2 text-slate-900 dark:text-slate-100">Quick Summary</h4>
           <p className="text-slate-700 dark:text-slate-300">
-            <strong>Lay</strong> means to put something down (transitive — needs an object): "Lay the book on the table." <strong>Lie</strong> means to recline (intransitive — no object): "I lie down every afternoon." The confusion comes because the past tense of "lie" is "lay."
+            <strong>Lay</strong> means to put something down (transitive, needs an object): "Lay the book on the table." <strong>Lie</strong> means to recline (intransitive, no object): "I lie down every afternoon." The confusion comes because the past tense of "lie" is "lay."
           </p>
         </div>
 
@@ -359,7 +359,7 @@ Examples:
         
         <ArticleHeading>Lie = To Recline/Be in a Horizontal Position (Intransitive)</ArticleHeading>
         <ArticleParagraph>
-          <InlineCode>Lie</InlineCode> means to recline or be in a flat position. It does NOT take a direct object (you just lie—no object).
+          <InlineCode>Lie</InlineCode> means to recline or be in a flat position. It does NOT take a direct object (you just lie-no object).
         </ArticleParagraph>
         <CodeBlock>{`Present: lie/lies
 Past: lay (!) - This is the confusing part!
@@ -426,7 +426,7 @@ Examples:
         </div>
 
         <ArticleParagraph>
-          <strong>Related topics:</strong> <Link to="/topics/make-vs-do" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Make vs Do</Link> · <Link to="/commonly-confused-words" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Commonly Confused Words</Link> · <Link to="/irregular-verbs" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Irregular Verbs</Link>
+          <strong>Related topics:</strong> <Link to="/topics/make-vs-do/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Make vs Do</Link> · <Link to="/commonly-confused-words/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Commonly Confused Words</Link> · <Link to="/irregular-verbs/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Irregular Verbs</Link>
         </ArticleParagraph>
       </>
     ),
@@ -452,7 +452,7 @@ Examples:
         
         <ArticleHeading>It's = It Is OR It Has (Contraction)</ArticleHeading>
         <ArticleParagraph>
-          <InlineCode>It's</InlineCode> with an apostrophe is ALWAYS a contraction—a shortened form of "it is" or "it has." If you can expand it to "it is" or "it has," use the apostrophe.
+          <InlineCode>It's</InlineCode> with an apostrophe is ALWAYS a contraction-a shortened form of "it is" or "it has." If you can expand it to "it is" or "it has," use the apostrophe.
         </ArticleParagraph>
         <ExampleList items={[
           "It's raining. (It is raining)",
@@ -525,7 +525,7 @@ Answer: Use IT'S (contraction)`}</CodeBlock>
         </div>
 
         <ArticleParagraph>
-          <strong>Related topics:</strong> <Link to="/topics/apostrophes" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Apostrophes</Link> · <Link to="/topics/affect-vs-effect" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Affect vs Effect</Link> · <Link to="/commonly-confused-words" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Commonly Confused Words</Link>
+          <strong>Related topics:</strong> <Link to="/topics/apostrophes/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Apostrophes</Link> · <Link to="/topics/affect-vs-effect/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Affect vs Effect</Link> · <Link to="/commonly-confused-words/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Commonly Confused Words</Link>
         </ArticleParagraph>
       </>
     ),

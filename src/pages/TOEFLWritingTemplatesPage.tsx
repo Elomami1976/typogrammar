@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading, BulletList, ExampleList } from '../components/ArticleComponents';
@@ -69,8 +69,8 @@ const TOEFLWritingTemplatesPage: React.FC = () => {
           'Help you include all important information'
         ]} />
 
-        <div className="bg-amber-50 dark:bg-amber-900/20 border-l-4 border-amber-500 p-4 mb-6">
-          <p className="text-amber-800 dark:text-amber-200">
+        <div className="bg-teal-50 dark:bg-teal-900/20 border-l-4 border-teal-500 p-4 mb-6">
+          <p className="text-teal-800 dark:text-teal-200">
             <strong>Important:</strong> Templates should be used as guidelines, not memorized essays. You still need to adapt them to each question.
           </p>
         </div>
@@ -175,7 +175,7 @@ const TOEFLWritingTemplatesPage: React.FC = () => {
         ]} />
 
         <ArticleParagraph>
-          Most responses are <strong>100–150 words</strong>.
+          Most responses are <strong>100-150 words</strong>.
         </ArticleParagraph>
 
         <h3 className="text-xl font-semibold text-slate-900 dark:text-white mt-6 mb-3">Simple TOEFL Discussion Template</h3>
@@ -307,7 +307,7 @@ const TOEFLWritingTemplatesPage: React.FC = () => {
         </div>
 
         {/* FAQ Section */}
-        <ArticleHeading>TOEFL Writing Templates – Frequently Asked Questions (FAQ)</ArticleHeading>
+        <ArticleHeading>TOEFL Writing Templates - Frequently Asked Questions (FAQ)</ArticleHeading>
 
         <div className="space-y-6 mb-8">
           <div className="border-b border-slate-200 dark:border-slate-700 pb-4">
@@ -361,22 +361,22 @@ const TOEFLWritingTemplatesPage: React.FC = () => {
         <ArticleHeading>Related TOEFL Writing Resources</ArticleHeading>
         
         <div className="grid md:grid-cols-2 gap-4 mb-8">
-          <Link to="/toefl/toefl-writing/toefl-writing-task-1-explained" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
+          <Link to="/toefl/toefl-writing/toefl-writing-task-1-explained/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">TOEFL Writing Task 1 Explained</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">Complete guide to the Integrated Writing Task.</p>
           </Link>
           
-          <Link to="/toefl/toefl-writing/toefl-writing-task-2-explained" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
+          <Link to="/toefl/toefl-writing/toefl-writing-task-2-explained/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">TOEFL Writing Task 2 Explained</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">Master the Academic Discussion Task with examples.</p>
           </Link>
           
-          <Link to="/toefl/toefl-writing/toefl-writing-topics" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
+          <Link to="/toefl/toefl-writing/toefl-writing-topics/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">TOEFL Writing Topics</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">60+ essay questions organized by category for practice.</p>
           </Link>
           
-          <Link to="/toefl/toefl-writing/toefl-writing-practice-questions" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
+          <Link to="/toefl/toefl-writing/toefl-writing-practice-questions/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">TOEFL Writing Practice Questions</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">Practice questions with high-scoring sample answers.</p>
           </Link>

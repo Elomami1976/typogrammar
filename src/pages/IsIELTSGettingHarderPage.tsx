@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading, BulletList } from '../components/ArticleComponents';
@@ -105,7 +105,7 @@ const IsIELTSGettingHarderPage: React.FC = () => {
 
       <div className="mb-6">
         <Link
-          to="/ielts/ielts-writing-task-2-essay-types"
+          to="/ielts/ielts-writing-task-2-essay-types/"
           className="text-blue-600 hover:underline text-sm"
         >
           ← Back to IELTS Preparation
@@ -120,7 +120,7 @@ const IsIELTSGettingHarderPage: React.FC = () => {
       <div className="bg-green-50 border-l-4 border-green-500 p-6 my-8 rounded-r-lg">
         <h2 className="text-lg font-semibold mb-3 text-green-900">✅ Short Answer</h2>
         <p className="text-green-800 text-lg">
-          <strong>No — IELTS has not officially become harder in 2026.</strong> The exam format, band descriptors, and scoring system remain the same. However, increased competition, immigration score requirements, and the difficulty of moving from Band 6.5 to 7.0 make the test feel more challenging for many candidates.
+          <strong>No, IELTS has not officially become harder in 2026.</strong> The exam format, band descriptors, and scoring system remain the same. However, increased competition, immigration score requirements, and the difficulty of moving from Band 6.5 to 7.0 make the test feel more challenging for many candidates.
         </p>
       </div>
 
@@ -163,7 +163,7 @@ const IsIELTSGettingHarderPage: React.FC = () => {
         </ArticleParagraph>
 
         <ArticleParagraph>
-          To understand what changed — and what did not — we must look at official sources.
+          To understand what changed, and what did not, we must look at official sources.
         </ArticleParagraph>
 
         <div className="bg-blue-50 border border-blue-200 p-6 my-6 rounded-lg">
@@ -265,10 +265,10 @@ const IsIELTSGettingHarderPage: React.FC = () => {
         <div className="bg-slate-50 border border-slate-200 p-6 my-6 rounded-lg">
           <h3 className="text-xl font-semibold mb-4 text-slate-800">1️⃣ Higher Immigration Score Requirements</h3>
           <ArticleParagraph>
-            For example, under <strong>Express Entry</strong> candidates often need CLB 9 (IELTS 7.0–8.0 range) to be competitive.
+            For example, under <strong>Express Entry</strong> candidates often need CLB 9 (IELTS 7.0-8.0 range) to be competitive.
           </ArticleParagraph>
           <ArticleParagraph>
-            This creates pressure. When Band 7 becomes essential, <strong>Band 6.5 feels like failure</strong> — even though it is a strong score.
+            This creates pressure. When Band 7 becomes essential, <strong>Band 6.5 feels like failure</strong>, even though it is a strong score.
           </ArticleParagraph>
         </div>
 
@@ -288,11 +288,11 @@ const IsIELTSGettingHarderPage: React.FC = () => {
             <>Stronger argument development</>
           ]} />
           <ArticleParagraph>
-            This gap feels larger — and therefore "harder."
+            This gap feels larger, and therefore "harder."
           </ArticleParagraph>
           <div className="bg-blue-50 border-l-4 border-blue-500 p-3 mt-4">
             <p className="text-blue-800">
-              📖 <strong>Deep Dive:</strong> <Link to="/ielts/why-stuck-at-6-5" className="text-blue-600 hover:underline font-medium">Why Most Candidates Are Stuck at 6.5 (And How to Break Through)</Link>
+              📖 <strong>Deep Dive:</strong> <Link to="/ielts/why-stuck-at-6-5/" className="text-blue-600 hover:underline font-medium">Why Most Candidates Are Stuck at 6.5 (And How to Break Through)</Link>
             </p>
           </div>
         </div>
@@ -313,7 +313,7 @@ const IsIELTSGettingHarderPage: React.FC = () => {
           </ArticleParagraph>
           <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mt-4">
             <p className="text-blue-800 font-medium">
-              💡 The exam did not change — <strong>competition did</strong>.
+              💡 The exam did not change, <strong>competition did</strong>.
             </p>
           </div>
         </div>
@@ -359,7 +359,7 @@ const IsIELTSGettingHarderPage: React.FC = () => {
 
         <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4 my-6">
           <p className="text-yellow-800 font-medium">
-            ⚠️ The difference is <strong>control and consistency</strong> — not intelligence.
+            ⚠️ The difference is <strong>control and consistency</strong>, not intelligence.
           </p>
         </div>
       </section>
@@ -462,9 +462,9 @@ const IsIELTSGettingHarderPage: React.FC = () => {
           For better Writing scores, see our guides:
         </ArticleParagraph>
         <BulletList items={[
-          <Link to="/ielts/task-achievement-in-ielts" className="text-blue-600 hover:underline">What Is Task Achievement in IELTS?</Link>,
-          <Link to="/ielts/lexical-resource-in-ielts" className="text-blue-600 hover:underline">What Is Lexical Resource in IELTS?</Link>,
-          <Link to="/ielts/how-to-write-complex-sentences" className="text-blue-600 hover:underline">How to Write Complex Sentences for IELTS</Link>
+          <Link to="/ielts/task-achievement-in-ielts/" className="text-blue-600 hover:underline">What Is Task Achievement in IELTS?</Link>,
+          <Link to="/ielts/lexical-resource-in-ielts/" className="text-blue-600 hover:underline">What Is Lexical Resource in IELTS?</Link>,
+          <Link to="/ielts/how-to-write-complex-sentences/" className="text-blue-600 hover:underline">How to Write Complex Sentences for IELTS</Link>
         ]} />
       </section>
 
@@ -506,9 +506,9 @@ const IsIELTSGettingHarderPage: React.FC = () => {
         </div>
       </section>
 
-      {/* So… Is IELTS Actually Harder in 2026? */}
+      {/* So... Is IELTS Actually Harder in 2026? */}
       <section id="verdict-preview">
-        <ArticleHeading>So… Is IELTS Actually Harder in 2026?</ArticleHeading>
+        <ArticleHeading>So... Is IELTS Actually Harder in 2026?</ArticleHeading>
 
         <div className="grid md:grid-cols-2 gap-6 my-6">
           <div className="bg-green-50 border border-green-200 p-6 rounded-lg">
@@ -562,7 +562,7 @@ const IsIELTSGettingHarderPage: React.FC = () => {
 
         <div className="bg-blue-50 border-l-4 border-blue-500 p-4 my-6">
           <p className="text-blue-800 font-medium">
-            💡 Often, moving from 6.5 to 7.0 requires <strong>refinement — not dramatic improvement</strong>.
+            💡 Often, moving from 6.5 to 7.0 requires <strong>refinement, not dramatic improvement</strong>.
           </p>
         </div>
 
@@ -570,9 +570,9 @@ const IsIELTSGettingHarderPage: React.FC = () => {
           Helpful resources:
         </ArticleParagraph>
         <BulletList items={[
-          <Link to="/ielts/common-grammar-mistakes-ielts-writing" className="text-blue-600 hover:underline">Common Grammar Mistakes in IELTS Writing</Link>,
-          <Link to="/ielts/50-band-9-ielts-writing-task-2-sample-essays" className="text-blue-600 hover:underline">50 Band 9 IELTS Essays</Link>,
-          <Link to="/ielts/vocabulary/band-7" className="text-blue-600 hover:underline">Band 7 Vocabulary List</Link>
+          <Link to="/ielts/common-grammar-mistakes-ielts-writing/" className="text-blue-600 hover:underline">Common Grammar Mistakes in IELTS Writing</Link>,
+          <Link to="/ielts/50-band-9-ielts-writing-task-2-sample-essays/" className="text-blue-600 hover:underline">50 Band 9 IELTS Essays</Link>,
+          <Link to="/ielts/vocabulary/band-7/" className="text-blue-600 hover:underline">Band 7 Vocabulary List</Link>
         ]} />
       </section>
 
@@ -645,19 +645,19 @@ const IsIELTSGettingHarderPage: React.FC = () => {
       <section className="mt-12 pt-8 border-t border-slate-200">
         <h2 className="text-2xl font-bold mb-6 text-slate-800">Related IELTS Guides</h2>
         <div className="grid md:grid-cols-2 gap-4">
-          <Link to="/ielts/why-stuck-at-6-5" className="block p-4 bg-blue-50 border-2 border-blue-300 rounded-lg hover:border-blue-500 transition-colors">
+          <Link to="/ielts/why-stuck-at-6-5/" className="block p-4 bg-blue-50 border-2 border-blue-300 rounded-lg hover:border-blue-500 transition-colors">
             <h3 className="font-semibold text-blue-600">Why Most Candidates Are Stuck at 6.5</h3>
             <p className="text-sm text-slate-600 mt-1">Break the Band 7 barrier with these strategies</p>
           </Link>
-          <Link to="/ielts/task-achievement-in-ielts" className="block p-4 bg-slate-50 border border-slate-200 rounded-lg hover:border-blue-500 transition-colors">
+          <Link to="/ielts/task-achievement-in-ielts/" className="block p-4 bg-slate-50 border border-slate-200 rounded-lg hover:border-blue-500 transition-colors">
             <h3 className="font-semibold text-blue-600">What Is Task Achievement in IELTS?</h3>
             <p className="text-sm text-slate-600 mt-1">Full Band 9 guide to scoring higher</p>
           </Link>
-          <Link to="/ielts/lexical-resource-in-ielts" className="block p-4 bg-slate-50 border border-slate-200 rounded-lg hover:border-blue-500 transition-colors">
+          <Link to="/ielts/lexical-resource-in-ielts/" className="block p-4 bg-slate-50 border border-slate-200 rounded-lg hover:border-blue-500 transition-colors">
             <h3 className="font-semibold text-blue-600">What Is Lexical Resource in IELTS?</h3>
             <p className="text-sm text-slate-600 mt-1">Improve your vocabulary score</p>
           </Link>
-          <Link to="/ielts/common-grammar-mistakes-ielts-writing" className="block p-4 bg-slate-50 border border-slate-200 rounded-lg hover:border-blue-500 transition-colors">
+          <Link to="/ielts/common-grammar-mistakes-ielts-writing/" className="block p-4 bg-slate-50 border border-slate-200 rounded-lg hover:border-blue-500 transition-colors">
             <h3 className="font-semibold text-blue-600">Common Grammar Mistakes in IELTS</h3>
             <p className="text-sm text-slate-600 mt-1">Avoid these errors that drop your score</p>
           </Link>

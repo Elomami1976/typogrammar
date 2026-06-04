@@ -1,19 +1,133 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
-  
-  # Force HTTPS
-  RewriteCond %{HTTPS} off
-  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-  
-  # Force non-www
+
+  # Canonical convention: trailing-slash URLs (e.g. /topics/conditionals/).
+  # Hostinger's Apache ignores DirectorySlash Off, so Apache naturally serves
+  # pre-rendered directories at their slash URLs. We align the canonical and
+  # sitemap to match this server behavior rather than fight it.
+  # Fallback to /_spa-shell.html so directories without a prerendered
+  # index.html (e.g. /worksheets/ which only contains PDFs) serve the SPA
+  # instead of returning 403 under `Options -Indexes`.
+  DirectoryIndex index.html /_spa-shell.html
+
+  # Force HTTPS + non-www in a single 301 to avoid redirect chains
+  # (http://www.foo -> https://foo) which Google reports as
+  # "Page with redirect" hops.
   RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
   RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
-  
-  # Remove trailing slash (except root) to prevent duplicate URLs
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_URI} (.+)/$
-  RewriteRule ^ %1 [L,R=301]
+
+  RewriteCond %{HTTPS} off
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # Strip tracking query parameters (?ref=, utm_*, fbclid, gclid) to prevent
+  # Google Search Console flagging them as "Alternative page with proper canonical tag".
+  # Redirect to the clean URL with a 301.
+  RewriteCond %{QUERY_STRING} (^|&)(ref|utm_source|utm_medium|utm_campaign|utm_term|utm_content|fbclid|gclid|mc_cid|mc_eid)= [NC]
+  RewriteRule ^(.*)$ /$1? [R=301,L]
+
+  # Redirect non-existent category stub /ielts/vocabulary to the canonical band-8 page
+  # (was being crawled as a soft-404 duplicate)
+  RewriteRule ^ielts/vocabulary/?$ /ielts/vocabulary/band-8/ [R=301,L]
+
+  # Redirect bare section roots that have no hub page (leftover empty
+  # directories from old deploys were returning 403 under Options -Indexes).
+  # NOTE: these rules MUST stay above any -d / -f filename checks so they
+  # fire even if Hostinger has empty folders called /ielts /toefl /quizzes
+  # left over from previous deployments.
+  RewriteRule ^ielts/?$ /ielts/tests/ [R=301,L,NC]
+  RewriteRule ^toefl/?$ /practice-tools/ [R=301,L,NC]
+  RewriteRule ^quizzes/?$ /practice-tools/ [R=301,L,NC]
+
+  # ========================================
+  # 301 REDIRECTS FOR STALE / BROKEN URLs
+  # ========================================
+  # Legacy URLs that Google Search Console has crawled but never had a
+  # backing route. They were soft-404ing (NotFoundPage with noindex), so
+  # send them to their canonical counterparts to recover link equity and
+  # clear the GSC "Excluded by 'noindex' tag" / "Soft 404" reports.
+  RewriteRule ^confused-words/?$ /commonly-confused-words/ [R=301,L]
+  RewriteRule ^ielts/writing/?$ /ielts/ielts-writing-task-2-essay-types/ [R=301,L]
+  RewriteRule ^writing-resources/paraphrasing/?$ /writing/how-to-paraphrase/ [R=301,L]
+  RewriteRule ^writing-resources/?$ /writing/how-to-paraphrase/ [R=301,L]
+
+  # Truncated URLs that Google (or external sources) have crawled. Send them
+  # to the closest canonical landing page so they leave the "Excluded by
+  # 'noindex' tag" report (the SPA shell's noindex no longer applies).
+  # Match with optional trailing slash AND optional trailing dash so both the
+  # raw truncation and the URL-normalized variant are caught.
+  RewriteRule ^typogrammar-?/?$ /typogrammar-write/ [R=301,L]
+  RewriteRule ^blog/english-?/?$ /blog/ [R=301,L]
+  RewriteRule ^blog/how-ai-is-?/?$ /blog/how-ai-is-transforming-ielts-and-toefl-preparation/ [R=301,L]
+  RewriteRule ^blog/new-toefl-?/?$ /blog/new-toefl-scoring-system-2026/ [R=301,L]
+  RewriteRule ^blog/ielts-band-?/?$ /blog/ [R=301,L]
+  RewriteRule ^toefl/toefl-?/?$ /toefl/ [R=301,L]
+  RewriteRule ^grammar-?/?$ /grammar-guide/ [R=301,L]
+  RewriteRule ^commonly-?/?$ /commonly-confused-words/ [R=301,L]
+
+  # ========================================
+  # WRONG / LEGACY URL PATHS GSC HAS INDEXED
+  # ========================================
+  # These pages exist at a different canonical path. 301 the old/wrong path
+  # to the canonical so GSC stops reporting them as noindex duplicates.
+  RewriteRule ^collocations/?$ /vocabulary/collocations/ [R=301,L]
+  RewriteRule ^homophones-homonyms-homographs/?$ /vocabulary/homophones-homonyms-homographs/ [R=301,L]
+  RewriteRule ^sentence-structure/?$ /writing/how-to-vary-sentence-structure/ [R=301,L]
+  RewriteRule ^writing/essay-types/?$ /essay-types/ [R=301,L]
+  RewriteRule ^ielts-vocabulary-booster/?$ /ielts/vocabulary/band-6/ [R=301,L]
+  RewriteRule ^topics/present-perfect-vs-past-simple/?$ /grammar/verb-tenses/present-perfect/ [R=301,L]
+
+  # Legacy worksheet filenames that no longer exist in /public/worksheets/.
+  # Redirect to the worksheets index so crawlers stop receiving the noindex
+  # SPA shell for these PDF URLs.
+  RewriteRule ^worksheets/toys\.pdf$ /worksheets/ [R=301,L]
+  RewriteRule ^worksheets/transport\.pdf$ /worksheets/transportation.pdf [R=301,L]
+
+  # Redirect old /verb-tenses stub (no backing route → was serving noindex NotFoundPage)
+  RewriteRule ^verb-tenses/?$ /grammar/verb-tenses/ [R=301,L]
+
+  # Redirect old /topics/[tense] URLs to canonical /grammar/verb-tenses/[tense]/ pages.
+  # These topics now have dedicated, richer pages. Redirecting clears "Excluded by noindex"
+  # and "Crawled - currently not indexed" GSC warnings for the old /topics/ duplicates.
+  RewriteRule ^topics/present-simple/?$ /grammar/verb-tenses/present-simple/ [R=301,L]
+  RewriteRule ^topics/present-progressive/?$ /grammar/verb-tenses/present-progressive/ [R=301,L]
+  RewriteRule ^topics/past-simple/?$ /grammar/verb-tenses/past-simple/ [R=301,L]
+  RewriteRule ^topics/past-progressive/?$ /grammar/verb-tenses/past-progressive/ [R=301,L]
+  RewriteRule ^topics/present-perfect/?$ /grammar/verb-tenses/present-perfect/ [R=301,L]
+  RewriteRule ^topics/present-perfect-progressive/?$ /grammar/verb-tenses/present-perfect-progressive/ [R=301,L]
+  RewriteRule ^topics/past-perfect/?$ /grammar/verb-tenses/past-perfect/ [R=301,L]
+  RewriteRule ^topics/past-perfect-progressive/?$ /grammar/verb-tenses/past-perfect-progressive/ [R=301,L]
+  RewriteRule ^topics/future-simple/?$ /grammar/verb-tenses/future-simple/ [R=301,L]
+  RewriteRule ^topics/future-progressive/?$ /grammar/verb-tenses/future-progressive/ [R=301,L]
+  RewriteRule ^topics/future-perfect/?$ /grammar/verb-tenses/future-perfect/ [R=301,L]
+  RewriteRule ^topics/future-perfect-progressive/?$ /grammar/verb-tenses/future-perfect-progressive/ [R=301,L]
+
+  # Add trailing slash to no-slash requests for pre-rendered directory pages.
+  # This aligns the served URL with the canonical (trailing-slash convention)
+  # and eliminates the "Page with redirect" GSC warning for grammar-mistakes
+  # and other pre-rendered routes where Apache mod_dir was already doing this
+  # redirect implicitly (but inconsistently).
+  # Excludes: actual files, root, and URLs already ending with a slash.
+  RewriteCond %{REQUEST_URI} !/$
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME}/ -d
+  RewriteRule ^(.+)$ /$1/ [R=301,L]
+
+  # Catch-all trailing-slash redirect for SPA-only routes (no prerendered
+  # directory exists). Without this, both /foo and /foo/ serve identical
+  # SPA content -> Google flags duplicate as "Crawled - currently not
+  # indexed". Excludes any URL whose last path segment contains a dot
+  # (file extension), root, and existing files.
+  RewriteCond %{REQUEST_URI} !/$
+  RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]{2,5}$
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^(.+)$ /$1/ [R=301,L]
+
+  # Internally rewrite /foo/ -> /foo/index.html when a prerendered file
+  # exists, so the canonical (slash) URL is served at 200 directly.
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME}index.html -f
+  RewriteRule ^(.+/)$ /$1index.html [L]
   
   # Explicitly serve critical root files without any rewriting
   RewriteRule ^ads\.txt$ - [L]
@@ -22,14 +136,37 @@
   RewriteRule ^sw\.js$ - [L]
   RewriteRule ^llms\.txt$ - [L]
   RewriteRule ^_redirects$ - [L]
+  # Serve well-known agent discovery files directly (Agent Skills, etc.)
+  RewriteRule ^\.well-known/ - [L]
+
+  # ========================================
+  # MARKDOWN NEGOTIATION (Cloudflare / Agents)
+  # ========================================
+  # When an AI agent requests the homepage with Accept: text/markdown,
+  # serve the canonical markdown summary (llms.txt) instead of HTML.
+  # Browsers (Accept: text/html) continue to receive the SPA as normal.
+  RewriteCond %{HTTP_ACCEPT} text/markdown [NC]
+  RewriteRule ^$ /llms.txt [L,E=IS_MARKDOWN:1]
+  RewriteCond %{HTTP_ACCEPT} text/markdown [NC]
+  RewriteRule ^index\.html$ /llms.txt [L,E=IS_MARKDOWN:1]
   
+  # /worksheets and /downloads each contain a real folder with downloadable
+  # files (PDFs etc.) AND a SPA route. With DirectoryIndex above, requests for
+  # the bare folder will naturally serve the prerendered index.html inside,
+  # while requests for files inside (e.g. /worksheets/sheet.pdf) hit the
+  # static-file passthrough below. No explicit rule needed.
+
   # Skip rewrite for all other existing files and directories
   RewriteCond %{REQUEST_FILENAME} -f [OR]
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
   
-  # Redirect all other requests to index.html for client-side routing
-  RewriteRule . /index.html [L]
+  # Redirect all other (unknown) requests to the SPA shell so React's
+  # client-side router can render NotFoundPage with the correct
+  # noindex,follow robots tag. Prerendered pages are served as static
+  # files by the rule above; this fallback only fires for URLs we never
+  # prerendered (typos, removed routes, etc.).
+  RewriteRule . /_spa-shell.html [L]
 </IfModule>
 
 # Prevent directory browsing
@@ -40,6 +177,8 @@ Options -Indexes
   AddType text/plain .txt
   AddType application/xml .xml
   AddType image/svg+xml .svg
+  AddType application/json .json
+  AddType text/markdown .md
 </IfModule>
 
 # Enable Brotli compression (preferred over gzip)
@@ -73,11 +212,11 @@ Options -Indexes
 <IfModule mod_expires.c>
   ExpiresActive On
   
-  # HTML files - Revalidate but allow bfcache (no-store breaks back/forward cache)
+  # HTML files - Revalidate but allow bfcache (no-store would break back/forward cache)
   <FilesMatch "\.(html|htm)$">
     ExpiresDefault "access plus 0 seconds"
     Header set Cache-Control "no-cache, must-revalidate, max-age=0"
-    Header set Pragma "no-cache"
+    # Intentionally no Pragma/Expires: legacy headers can interfere with bfcache heuristics
   </FilesMatch>
   
   # JavaScript and CSS with hashed filenames - cache forever (1 year)
@@ -128,13 +267,35 @@ Options -Indexes
   # Ensure HTML revalidates but allows bfcache
   <FilesMatch "\.(html|htm)$">
     Header set Cache-Control "no-cache, must-revalidate, max-age=0"
-    Header set Pragma "no-cache"
-    Header set Expires "0"
+    Header unset Pragma
+    Header unset Expires
   </FilesMatch>
   # Security headers
   Header always set X-Content-Type-Options "nosniff"
   Header always set X-Frame-Options "SAMEORIGIN"
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+  # ========================================
+  # LINK HEADERS for Agent Discovery (RFC 8288)
+  # ========================================
+  # Advertise machine-readable resources to AI agents and crawlers.
+  <FilesMatch "\.(html|htm)$">
+    Header always add Link "</llms.txt>; rel=\"alternate\"; type=\"text/markdown\"; title=\"TypoGrammar site overview for LLMs\""
+    Header always add Link "</.well-known/agent-skills/index.json>; rel=\"service-doc\"; type=\"application/json\"; title=\"Agent Skills index\""
+    Header always add Link "</sitemap.xml>; rel=\"sitemap\"; type=\"application/xml\""
+  </FilesMatch>
+
+  # Markdown Negotiation: when serving llms.txt as the markdown alternate,
+  # advertise it as text/markdown so agents see the proper Content-Type.
+  <Files "llms.txt">
+    Header set Content-Type "text/markdown; charset=utf-8"
+    Header append Vary "Accept"
+  </Files>
+
+  # Agent Skills index must be served as JSON.
+  <Files "index.json">
+    Header set Content-Type "application/json; charset=utf-8"
+  </Files>
 </IfModule>
 
 # Set proper permissions (Apache 2.4 syntax)

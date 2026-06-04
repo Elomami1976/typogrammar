@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading, BulletList } from '../components/ArticleComponents';
@@ -105,7 +105,7 @@ const WhyStuckAt65Page: React.FC = () => {
 
       <div className="mb-6">
         <Link
-          to="/ielts/ielts-writing-task-2-essay-types"
+          to="/ielts/ielts-writing-task-2-essay-types/"
           className="text-blue-600 hover:underline text-sm"
         >
           ← Back to IELTS Preparation
@@ -120,7 +120,7 @@ const WhyStuckAt65Page: React.FC = () => {
       <div className="bg-green-50 border-l-4 border-green-500 p-6 my-8 rounded-r-lg">
         <h2 className="text-lg font-semibold mb-3 text-green-900">✅ Short Answer</h2>
         <p className="text-green-800 text-lg">
-          Most candidates are stuck at IELTS 6.5 because they have <strong>adequate English ability but lack the precision, consistency, and control</strong> required for Band 7. The jump from 6.5 to 7.0 is not about knowing more vocabulary — it is about <strong>reducing noticeable errors and improving clarity</strong>.
+          Most candidates are stuck at IELTS 6.5 because they have <strong>adequate English ability but lack the precision, consistency, and control</strong> required for Band 7. The jump from 6.5 to 7.0 is not about knowing more vocabulary, it is about <strong>reducing noticeable errors and improving clarity</strong>.
         </p>
       </div>
 
@@ -265,7 +265,7 @@ const WhyStuckAt65Page: React.FC = () => {
 
           <div className="bg-blue-50 border-l-4 border-blue-500 p-3 mt-4">
             <p className="text-blue-800 font-medium">
-              💡 The difference is not complexity — it is <strong>accuracy</strong>.
+              💡 The difference is not complexity, it is <strong>accuracy</strong>.
             </p>
           </div>
         </div>
@@ -387,7 +387,7 @@ const WhyStuckAt65Page: React.FC = () => {
 
           <div className="bg-blue-50 border-l-4 border-blue-500 p-3 mt-4">
             <p className="text-blue-800 font-medium">
-              💡 Fluency is about <strong>flow — not speed</strong>.
+              💡 Fluency is about <strong>flow, not speed</strong>.
             </p>
           </div>
         </div>
@@ -445,13 +445,13 @@ const WhyStuckAt65Page: React.FC = () => {
 
         <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4 my-6">
           <p className="text-yellow-800">
-            ⚠️ When Band 7 becomes essential, <strong>6.5 feels like failure</strong> — even though it is a strong score.
+            ⚠️ When Band 7 becomes essential, <strong>6.5 feels like failure</strong>, even though it is a strong score.
           </p>
         </div>
 
         <div className="bg-blue-50 border border-blue-200 p-4 rounded-lg my-6">
           <p className="text-blue-800">
-            📖 <strong>Related:</strong> <Link to="/ielts/is-ielts-getting-harder-2026" className="text-blue-600 hover:underline font-medium">Is IELTS Getting Harder in 2026? Official Facts & Score Trends</Link>
+            📖 <strong>Related:</strong> <Link to="/ielts/is-ielts-getting-harder-2026/" className="text-blue-600 hover:underline font-medium">Is IELTS Getting Harder in 2026? Official Facts & Score Trends</Link>
           </p>
         </div>
       </section>
@@ -625,7 +625,7 @@ const WhyStuckAt65Page: React.FC = () => {
 
           <div className="bg-white border border-slate-200 p-4 rounded-lg">
             <p className="text-lg text-slate-800 font-medium text-center">
-              The difference is <strong>refinement — not intelligence</strong>.
+              The difference is <strong>refinement, not intelligence</strong>.
             </p>
           </div>
         </div>
@@ -635,19 +635,19 @@ const WhyStuckAt65Page: React.FC = () => {
       <section className="mt-12 pt-8 border-t border-slate-200">
         <h2 className="text-2xl font-bold mb-6 text-slate-800">Related IELTS Guides</h2>
         <div className="grid md:grid-cols-2 gap-4">
-          <Link to="/ielts/is-ielts-getting-harder-2026" className="block p-4 bg-slate-50 border border-slate-200 rounded-lg hover:border-blue-500 transition-colors">
+          <Link to="/ielts/is-ielts-getting-harder-2026/" className="block p-4 bg-slate-50 border border-slate-200 rounded-lg hover:border-blue-500 transition-colors">
             <h3 className="font-semibold text-blue-600">Is IELTS Getting Harder in 2026?</h3>
             <p className="text-sm text-slate-600 mt-1">Official facts and score trends</p>
           </Link>
-          <Link to="/ielts/task-achievement-in-ielts" className="block p-4 bg-slate-50 border border-slate-200 rounded-lg hover:border-blue-500 transition-colors">
+          <Link to="/ielts/task-achievement-in-ielts/" className="block p-4 bg-slate-50 border border-slate-200 rounded-lg hover:border-blue-500 transition-colors">
             <h3 className="font-semibold text-blue-600">What Is Task Achievement in IELTS?</h3>
             <p className="text-sm text-slate-600 mt-1">Full Band 9 guide to scoring higher</p>
           </Link>
-          <Link to="/ielts/common-grammar-mistakes-ielts-writing" className="block p-4 bg-slate-50 border border-slate-200 rounded-lg hover:border-blue-500 transition-colors">
+          <Link to="/ielts/common-grammar-mistakes-ielts-writing/" className="block p-4 bg-slate-50 border border-slate-200 rounded-lg hover:border-blue-500 transition-colors">
             <h3 className="font-semibold text-blue-600">Common Grammar Mistakes in IELTS</h3>
             <p className="text-sm text-slate-600 mt-1">Avoid these errors that drop your score</p>
           </Link>
-          <Link to="/ielts/lexical-resource-in-ielts" className="block p-4 bg-slate-50 border border-slate-200 rounded-lg hover:border-blue-500 transition-colors">
+          <Link to="/ielts/lexical-resource-in-ielts/" className="block p-4 bg-slate-50 border border-slate-200 rounded-lg hover:border-blue-500 transition-colors">
             <h3 className="font-semibold text-blue-600">What Is Lexical Resource in IELTS?</h3>
             <p className="text-sm text-slate-600 mt-1">Improve your vocabulary score</p>
           </Link>

@@ -46,7 +46,7 @@ export const BulletList: React.FC<{ items: React.ReactNode[] }> = ({ items }) =>
 
 // ─── Callout Box Components ───────────────────────────────────────────────────
 
-/** Green callout — use for correct examples */
+/** Green callout, use for correct examples */
 export const CorrectExample: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-4 my-4 dark:bg-green-900/20 dark:border-green-400">
     <div className="flex items-start gap-3">
@@ -56,7 +56,7 @@ export const CorrectExample: React.FC<{ children: React.ReactNode }> = ({ childr
   </div>
 );
 
-/** Red callout — use for incorrect examples */
+/** Red callout, use for incorrect examples */
 export const IncorrectExample: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <div className="bg-red-50 border-l-4 border-red-500 rounded-r-lg p-4 my-4 dark:bg-red-900/20 dark:border-red-400">
     <div className="flex items-start gap-3">
@@ -66,20 +66,20 @@ export const IncorrectExample: React.FC<{ children: React.ReactNode }> = ({ chil
   </div>
 );
 
-/** Amber callout — use for tips and memory tricks */
+/** Amber callout, use for tips and memory tricks */
 export const TipBox: React.FC<{ children: React.ReactNode; title?: string }> = ({ children, title = 'Tip' }) => (
-  <div className="bg-amber-50 border-l-4 border-amber-500 rounded-r-lg p-4 my-4 dark:bg-amber-900/20 dark:border-amber-400">
+  <div className="bg-teal-50 border-l-4 border-teal-500 rounded-r-lg p-4 my-4 dark:bg-teal-900/20 dark:border-teal-400">
     <div className="flex items-start gap-3">
-      <span className="text-amber-600 dark:text-amber-400 text-lg flex-shrink-0" aria-hidden="true">💡</span>
+      <span className="text-teal-600 dark:text-teal-400 text-lg flex-shrink-0" aria-hidden="true">💡</span>
       <div>
-        <p className="font-bold text-amber-900 dark:text-amber-100 text-sm uppercase tracking-wide mb-1">{title}</p>
-        <div className="text-amber-900 dark:text-amber-100 text-base leading-relaxed">{children}</div>
+        <p className="font-bold text-teal-900 dark:text-teal-100 text-sm uppercase tracking-wide mb-1">{title}</p>
+        <div className="text-teal-900 dark:text-teal-100 text-base leading-relaxed">{children}</div>
       </div>
     </div>
   </div>
 );
 
-/** Blue callout — use for important notes and key rules */
+/** Blue callout, use for important notes and key rules */
 export const NoteBox: React.FC<{ children: React.ReactNode; title?: string }> = ({ children, title = 'Note' }) => (
   <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-4 dark:bg-blue-900/20 dark:border-blue-400">
     <div className="flex items-start gap-3">

@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 
@@ -6,7 +6,7 @@ const aiTools = [
   {
     title: 'Grammar Checker',
     description: 'Check your grammar, spelling, and punctuation instantly with AI-powered analysis.',
-    path: '/grammar-checker',
+    path: '/grammar-checker/',
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -17,7 +17,7 @@ const aiTools = [
   {
     title: 'Paraphrasing Tool',
     description: 'Rewrite sentences and paragraphs in academic English while preserving meaning.',
-    path: '/paraphrasing-tool',
+    path: '/paraphrasing-tool/',
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
@@ -28,7 +28,7 @@ const aiTools = [
   {
     title: 'Essay Topic Generator',
     description: 'Generate IELTS Writing Task 2 essay topics for practice across various categories.',
-    path: '/essay-topic-generator',
+    path: '/essay-topic-generator/',
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
@@ -39,21 +39,21 @@ const aiTools = [
   {
     title: 'IELTS Band Calculator',
     description: 'Calculate your estimated IELTS band score based on your practice test results.',
-    path: '/ielts-band-score-calculator',
+    path: '/ielts-band-score-calculator/',
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
       </svg>
     ),
-    color: 'from-orange-500 to-orange-600'
+    color: 'from-teal-500 to-teal-600'
   }
 ];
 
 const AIWritingToolsPage: React.FC = () => {
   usePageMetadata({
-    title: 'Free AI Writing Tools – Grammar Checker, Paraphrasing & More | Typogrammar',
+    title: 'Free AI Writing Tools - Grammar Checker, Paraphrasing & More | Typogrammar',
     description: 'Access free AI-powered writing tools: Grammar Checker, Paraphrasing Tool, Essay Topic Generator, and IELTS Band Calculator. Perfect for students and writers.',
-    canonical: 'https://typogrammar.com/ai-writing-tools'
+    canonical: 'https://typogrammar.com/ai-writing-tools/'
   });
 
   return (

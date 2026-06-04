@@ -1,12 +1,12 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading, CodeBlock, BulletList } from '../components/ArticleComponents';
 
 const IELTSWritingTask2Page: React.FC = () => {
   usePageMetadata({
-    title: 'IELTS Writing Task 2 Essay Types – Band 7–9 Model Answers | TypoGrammar',
-    description: 'Learn all IELTS Writing Task 2 essay types with Band 7–9 model answers, clear structures, and examiner tips to boost your score.'
+    title: 'IELTS Writing Task 2 Essay Types - Band 7-9 Model Answers | TypoGrammar',
+    description: 'Learn all IELTS Writing Task 2 essay types with Band 7-9 model answers, clear structures, and examiner tips to boost your score.'
   });
 
   const faqSchema = {
@@ -77,7 +77,7 @@ const IELTSWritingTask2Page: React.FC = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
         <h1 className="text-4xl font-bold mb-6 text-slate-900 dark:text-slate-100">
-          IELTS Writing Task 2 Essay Types – Band 7–9 Model Answers
+          IELTS Writing Task 2 Essay Types - Band 7-9 Model Answers
         </h1>
 
         <ArticleParagraph>
@@ -91,7 +91,7 @@ const IELTSWritingTask2Page: React.FC = () => {
 
         <BulletList items={[
           'The real exam-style question',
-          'A complete Band 7–9 model answer',
+          'A complete Band 7-9 model answer',
           'Clear, natural English (no memorised templates)'
         ]} />
 
@@ -101,33 +101,33 @@ const IELTSWritingTask2Page: React.FC = () => {
           </h3>
           <ul className="space-y-2">
             <li>
-              <Link to="/ielts/opinion-essay-ielts-band-7-9" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
-                → Opinion Essay (Agree/Disagree) – Band 7–9 Guide
+              <Link to="/ielts/opinion-essay-ielts-band-7-9/" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
+                → Opinion Essay (Agree/Disagree) - Band 7-9 Guide
               </Link>
             </li>
             <li>
-              <Link to="/ielts/discussion-essay-ielts-band-7-9" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
-                → Discussion Essay (Both Views) – Band 7–9 Examples
+              <Link to="/ielts/discussion-essay-ielts-band-7-9/" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
+                → Discussion Essay (Both Views) - Band 7-9 Examples
               </Link>
             </li>
             <li>
-              <Link to="/ielts/advantages-disadvantages-essay-ielts" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
-                → Advantages & Disadvantages Essay – Band 7–9 Strategy
+              <Link to="/ielts/advantages-disadvantages-essay-ielts/" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
+                → Advantages & Disadvantages Essay - Band 7-9 Strategy
               </Link>
             </li>
             <li>
-              <Link to="/ielts/problem-solution-essay-ielts" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
-                → Problem & Solution Essay – Band 7–9 Model Answer
+              <Link to="/ielts/problem-solution-essay-ielts/" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
+                → Problem & Solution Essay - Band 7-9 Model Answer
               </Link>
             </li>
             <li>
-              <Link to="/ielts/two-part-question-essay-ielts" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
-                → Two-Part Question Essay – How to Answer Both Questions
+              <Link to="/ielts/two-part-question-essay-ielts/" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
+                → Two-Part Question Essay - How to Answer Both Questions
               </Link>
             </li>
             <li>
-              <Link to="/ielts/mixed-essay-types-ielts" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
-                → Mixed Essay Types – Band 7–9 Strategy & Example
+              <Link to="/ielts/mixed-essay-types-ielts/" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
+                → Mixed Essay Types - Band 7-9 Strategy & Example
               </Link>
             </li>
           </ul>
@@ -163,8 +163,8 @@ In conclusion, teaching children how to manage money at school prepares them for
         <div className="my-6 p-4 bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500">
           <p className="text-sm text-slate-700 dark:text-slate-300">
             💡 <strong>Want the complete guide?</strong> Read our full{' '}
-            <Link to="/ielts/opinion-essay-ielts-band-7-9" className="text-green-700 dark:text-green-400 hover:underline font-medium">
-              Opinion Essay (Band 7–9) guide
+            <Link to="/ielts/opinion-essay-ielts-band-7-9/" className="text-green-700 dark:text-green-400 hover:underline font-medium">
+              Opinion Essay (Band 7-9) guide
             </Link>
           </p>
         </div>
@@ -197,7 +197,7 @@ In my opinion, although rural life is calmer, cities are more suitable for most 
         <div className="my-6 p-4 bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500">
           <p className="text-sm text-slate-700 dark:text-slate-300">
             💡 <strong>Want the complete guide?</strong> Read our full{' '}
-            <Link to="/ielts/discussion-essay-ielts-band-7-9" className="text-green-700 dark:text-green-400 hover:underline font-medium">
+            <Link to="/ielts/discussion-essay-ielts-band-7-9/" className="text-green-700 dark:text-green-400 hover:underline font-medium">
               Discussion Essay guide
             </Link>
           </p>
@@ -231,7 +231,7 @@ Despite these drawbacks, the benefits of flexibility, productivity, and improved
         <div className="my-6 p-4 bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500">
           <p className="text-sm text-slate-700 dark:text-slate-300">
             💡 <strong>Want the complete guide?</strong> Read our full{' '}
-            <Link to="/ielts/advantages-disadvantages-essay-ielts" className="text-green-700 dark:text-green-400 hover:underline font-medium">
+            <Link to="/ielts/advantages-disadvantages-essay-ielts/" className="text-green-700 dark:text-green-400 hover:underline font-medium">
               Advantages & Disadvantages Essay guide
             </Link>
           </p>
@@ -265,7 +265,7 @@ In conclusion, traffic congestion is caused by poor transport planning, but effe
         <div className="my-6 p-4 bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500">
           <p className="text-sm text-slate-700 dark:text-slate-300">
             💡 <strong>Want the complete guide?</strong> Read our full{' '}
-            <Link to="/ielts/problem-solution-essay-ielts" className="text-green-700 dark:text-green-400 hover:underline font-medium">
+            <Link to="/ielts/problem-solution-essay-ielts/" className="text-green-700 dark:text-green-400 hover:underline font-medium">
               Problem & Solution Essay guide
             </Link>
           </p>
@@ -299,7 +299,7 @@ Overall, although longer life expectancy creates challenges, it reflects positiv
         <div className="my-6 p-4 bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500">
           <p className="text-sm text-slate-700 dark:text-slate-300">
             💡 <strong>Want the complete guide?</strong> Read our full{' '}
-            <Link to="/ielts/two-part-question-essay-ielts" className="text-green-700 dark:text-green-400 hover:underline font-medium">
+            <Link to="/ielts/two-part-question-essay-ielts/" className="text-green-700 dark:text-green-400 hover:underline font-medium">
               Two-Part Question Essay guide
             </Link>
           </p>
@@ -331,7 +331,7 @@ In conclusion, although free university education has clear advantages, a partia
         <div className="my-6 p-4 bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500">
           <p className="text-sm text-slate-700 dark:text-slate-300">
             💡 <strong>Want the complete guide?</strong> Read our full{' '}
-            <Link to="/ielts/mixed-essay-types-ielts" className="text-green-700 dark:text-green-400 hover:underline font-medium">
+            <Link to="/ielts/mixed-essay-types-ielts/" className="text-green-700 dark:text-green-400 hover:underline font-medium">
               Mixed Essay Types guide
             </Link>
           </p>

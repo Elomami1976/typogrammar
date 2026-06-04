@@ -55,7 +55,7 @@ const InteractiveExercisesPage: React.FC = () => {
       <div className="bg-gradient-to-r from-green-100 to-teal-100 dark:from-slate-700 dark:to-slate-600 border-l-4 border-green-600 p-6 rounded-lg mb-8 shadow-md">
         <h2 className="text-lg font-bold text-slate-900 dark:text-white mb-2">What are Interactive Grammar Exercises?</h2>
         <p className="text-slate-800 dark:text-slate-200 leading-relaxed mb-4">
-          <strong>Interactive grammar exercises</strong> are online practice activities that give you instant feedback as you learn. Unlike worksheets, these exercises tell you immediately if you're right or wrong and explain why—helping you learn faster.
+          <strong>Interactive grammar exercises</strong> are online practice activities that give you instant feedback as you learn. Unlike worksheets, these exercises tell you immediately if you're right or wrong and explain why-helping you learn faster.
         </p>
         <div className="bg-white/50 dark:bg-slate-800/50 p-4 rounded-lg">
           <h3 className="font-semibold text-slate-900 dark:text-white mb-2">Quick Answer: What exercise types are available?</h3>

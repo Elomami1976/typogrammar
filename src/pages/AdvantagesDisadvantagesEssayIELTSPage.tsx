@@ -1,12 +1,12 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading, CodeBlock, BulletList } from '../components/ArticleComponents';
 
 const AdvantagesDisadvantagesEssayIELTSPage: React.FC = () => {
   usePageMetadata({
-    title: 'IELTS Advantages and Disadvantages Essay – Band 7–9 Example | TypoGrammar',
-    description: 'Understand IELTS advantages and disadvantages essays with a Band 7–9 model answer and clear comparison strategy.'
+    title: 'IELTS Advantages and Disadvantages Essay - Band 7-9 Example | TypoGrammar',
+    description: 'Understand IELTS advantages and disadvantages essays with a Band 7-9 model answer and clear comparison strategy.'
   });
 
   const faqSchema = {
@@ -70,7 +70,7 @@ const AdvantagesDisadvantagesEssayIELTSPage: React.FC = () => {
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="mb-6">
           <Link 
-            to="/ielts/ielts-writing-task-2-essay-types" 
+            to="/ielts/ielts-writing-task-2-essay-types/" 
             className="text-blue-600 dark:text-blue-400 hover:underline text-sm"
           >
             ← Back to IELTS Writing Task 2 Essay Types
@@ -78,7 +78,7 @@ const AdvantagesDisadvantagesEssayIELTSPage: React.FC = () => {
         </div>
 
         <h1 className="text-4xl font-bold mb-6 text-slate-900 dark:text-slate-100">
-          IELTS Advantages and Disadvantages Essay – Band 7–9 Example
+          IELTS Advantages and Disadvantages Essay - Band 7-9 Example
         </h1>
 
         {/* Featured Snippet Box */}
@@ -128,7 +128,7 @@ const AdvantagesDisadvantagesEssayIELTSPage: React.FC = () => {
 
         <div className="bg-slate-100 dark:bg-slate-800 p-6 rounded-lg my-6">
           <h4 className="font-semibold mb-4 text-slate-900 dark:text-slate-100">
-            📐 Recommended Structure (Band 7–9)
+            📐 Recommended Structure (Band 7-9)
           </h4>
           <div className="space-y-4">
             <div>
@@ -143,7 +143,7 @@ const AdvantagesDisadvantagesEssayIELTSPage: React.FC = () => {
             </div>
             <div>
               <p className="font-medium text-slate-900 dark:text-slate-100">
-                2. Body Paragraph 1 – Advantages (4-5 sentences)
+                2. Body Paragraph 1 - Advantages (4-5 sentences)
               </p>
               <p className="text-sm text-slate-700 dark:text-slate-300 ml-4">
                 • Topic sentence about benefits<br />
@@ -153,7 +153,7 @@ const AdvantagesDisadvantagesEssayIELTSPage: React.FC = () => {
             </div>
             <div>
               <p className="font-medium text-slate-900 dark:text-slate-100">
-                3. Body Paragraph 2 – Disadvantages (4-5 sentences)
+                3. Body Paragraph 2 - Disadvantages (4-5 sentences)
               </p>
               <p className="text-sm text-slate-700 dark:text-slate-300 ml-4">
                 • Topic sentence about drawbacks<br />
@@ -422,7 +422,7 @@ Despite these drawbacks, the benefits of flexibility, productivity, and improved
           <p className="text-slate-800 dark:text-slate-200">
             📚 <strong>This article is part of our complete</strong>{' '}
             <Link 
-              to="/ielts/ielts-writing-task-2-essay-types" 
+              to="/ielts/ielts-writing-task-2-essay-types/" 
               className="text-green-700 dark:text-green-400 hover:underline font-medium"
             >
               IELTS Writing Task 2 Essay Types guide

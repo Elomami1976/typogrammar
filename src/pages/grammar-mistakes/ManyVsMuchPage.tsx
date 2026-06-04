@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../../hooks/usePageMetadata';
 import SchemaMarkup from '../../components/SchemaMarkup';
@@ -7,7 +7,7 @@ const ManyVsMuchPage: React.FC = () => {
   usePageMetadata({
     title: 'Many vs Much: What Is the Difference? | TypoGrammar',
     description: 'Learn the difference between "many" and "much." Use "many" with countable nouns and "much" with uncountable nouns.',
-    canonical: 'https://typogrammar.com/grammar-mistakes/many-vs-much'
+    canonical: 'https://typogrammar.com/grammar-mistakes/many-vs-much/'
   });
 
   const [showAnswer, setShowAnswer] = useState(false);
@@ -31,7 +31,7 @@ const ManyVsMuchPage: React.FC = () => {
       <nav className="mb-6 text-slate-600 dark:text-slate-400">
         <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
         {' › '}
-        <Link to="/grammar-mistakes" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
+        <Link to="/grammar-mistakes/" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
         {' › '}
         <span className="text-slate-900 dark:text-slate-100">Many vs Much</span>
       </nav>
@@ -77,8 +77,8 @@ const ManyVsMuchPage: React.FC = () => {
               </ul>
             </div>
           </div>
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-4 rounded-lg">
-            <h3 className="text-lg font-bold text-amber-900 dark:text-amber-100 mb-2">Usage Note:</h3>
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-4 rounded-lg">
+            <h3 className="text-lg font-bold text-teal-900 dark:text-teal-100 mb-2">Usage Note:</h3>
             <p className="text-slate-700 dark:text-slate-300">
               In <strong>affirmative sentences</strong>, native speakers often prefer <strong>"a lot of"</strong> instead of much/many:
             </p>
@@ -159,7 +159,7 @@ const ManyVsMuchPage: React.FC = () => {
           <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
             Practice
           </h2>
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-6 rounded-lg">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-6 rounded-lg">
             <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
               <strong>Choose the correct word:</strong>
             </p>
@@ -192,22 +192,22 @@ const ManyVsMuchPage: React.FC = () => {
           </h2>
           <ul className="space-y-2 text-lg">
             <li>
-              <Link to="/grammar-mistakes/little-vs-few" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/little-vs-few/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Little vs Few
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/less-people-or-fewer-people" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/less-people-or-fewer-people/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Less People or Fewer People?
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/much-people-or-many-people" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/much-people-or-many-people/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Much People or Many People?
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → All Grammar Mistakes
               </Link>
             </li>

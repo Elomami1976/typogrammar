@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../../hooks/usePageMetadata';
 import SchemaMarkup from '../../components/SchemaMarkup';
@@ -7,7 +7,7 @@ const ReturnBackOrReturnPage: React.FC = () => {
   usePageMetadata({
     title: 'Return Back or Return? Which One Is Correct | TypoGrammar',
     description: 'Learn whether to say "return back" or just "return." The correct form is "return" without "back" - it is redundant.',
-    canonical: 'https://typogrammar.com/grammar-mistakes/return-back-or-return'
+    canonical: 'https://typogrammar.com/grammar-mistakes/return-back-or-return/'
   });
 
   const [showAnswer, setShowAnswer] = useState(false);
@@ -31,7 +31,7 @@ const ReturnBackOrReturnPage: React.FC = () => {
       <nav className="mb-6 text-slate-600 dark:text-slate-400">
         <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
         {' › '}
-        <Link to="/grammar-mistakes" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
+        <Link to="/grammar-mistakes/" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
         {' › '}
         <span className="text-slate-900 dark:text-slate-100">Return Back or Return</span>
       </nav>
@@ -66,7 +66,7 @@ const ReturnBackOrReturnPage: React.FC = () => {
             </p>
           </div>
           <p className="text-lg text-slate-700 dark:text-slate-300">
-            This type of error is called a <strong>pleonasm</strong> – using more words than necessary to express an idea.
+            This type of error is called a <strong>pleonasm</strong> - using more words than necessary to express an idea.
           </p>
         </section>
 
@@ -134,7 +134,7 @@ const ReturnBackOrReturnPage: React.FC = () => {
           <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
             Practice
           </h2>
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-6 rounded-lg">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-6 rounded-lg">
             <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
               <strong>Fix the sentence:</strong>
             </p>
@@ -164,17 +164,17 @@ const ReturnBackOrReturnPage: React.FC = () => {
           </h2>
           <ul className="space-y-2 text-lg">
             <li>
-              <Link to="/grammar-mistakes/repeat-again-or-repeat" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/repeat-again-or-repeat/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Repeat Again or Repeat?
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/discuss-or-discuss-about" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/discuss-or-discuss-about/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Discuss or Discuss About?
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → All Grammar Mistakes
               </Link>
             </li>

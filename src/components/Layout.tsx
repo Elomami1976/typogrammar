@@ -1,16 +1,18 @@
-
 import React, { useState, useEffect } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import Sidebar from './Sidebar';
 import SEO from './SEO';
+import ScrollProgress from './ScrollProgress';
+import BackToTop from './BackToTop';
+import AdDebugOverlay from './AdDebugOverlay';
+import TypoGrammarChatbot from './TypoGrammarChatbot';
 import { useGlobalKeyboardShortcuts } from '../hooks/useKeyboardShortcuts';
+import { normalizeAllSeoSignalsInDOM } from '../seo/normalizeSeoSignals';
 
 const Layout: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [scrollProgress, setScrollProgress] = useState(0);
-  const [showBackTop, setShowBackTop] = useState(false);
   const location = useLocation();
 
   // Force light mode - remove any dark class
@@ -19,23 +21,34 @@ const Layout: React.FC = () => {
     localStorage.removeItem('theme');
   }, []);
 
-  // Scroll progress bar + back-to-top visibility
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      setScrollProgress(docHeight > 0 ? (scrollTop / docHeight) * 100 : 0);
-      setShowBackTop(scrollTop > 400);
-    };
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   // Close mobile menu on route change
   useEffect(() => {
     setIsMobileMenuOpen(false);
   }, [location.pathname]);
-  
+
+  // Final-guard SEO-signal normalizer.
+  //
+  // Effect ordering in React runs deepest-child first, parent-component last,
+  // so by the time this Layout effect runs on a route change, every page-level
+  // hook (usePageMetadata, <SchemaMarkup>, inline JSON-LD <script> tags) has
+  // already committed to the DOM. We then walk the live <head> and force every
+  // SEO signal (canonical, og:url, hreflang, every JSON-LD `@id` / `url`) to
+  // the trailing-slash convention used by sitemap.xml + .htaccess.
+  //
+  // This eliminates the entire class of "Google chose different canonical
+  // than user" / "Alternate page with proper canonical tag" / "Page with
+  // redirect" issues caused by mismatched canonical signals — without
+  // requiring 150+ page files to be edited individually.
+  //
+  // We also schedule a microtask + a 0ms timeout pass to catch any schemas
+  // injected by lazily-loaded child effects that commit just after Layout's
+  // effect (e.g. <FaqAccordion> nested deep inside an Outlet'd page).
+  useEffect(() => {
+    normalizeAllSeoSignalsInDOM();
+    const t = window.setTimeout(normalizeAllSeoSignalsInDOM, 0);
+    return () => window.clearTimeout(t);
+  }, [location.pathname, location.search]);
+
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
@@ -48,18 +61,12 @@ const Layout: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-violet-50 text-slate-800">
+    <div className="flex flex-col min-h-screen bg-surface-50 text-slate-800">
       {/* Global SEO - automatically applied to all pages based on current route */}
       <SEO path={location.pathname} />
 
-      {/* Reading progress bar */}
-      <div
-        className="fixed top-[69px] left-0 h-0.5 bg-blue-500 z-30 transition-[width] duration-75 ease-out"
-        style={{ width: `${scrollProgress}%` }}
-        role="progressbar"
-        aria-valuenow={Math.round(scrollProgress)}
-        aria-label="Reading progress"
-      />
+      {/* Reading progress bar (gradient, fixed top-0) */}
+      <ScrollProgress />
 
       <Header 
         onMenuClick={toggleMobileMenu}
@@ -72,18 +79,14 @@ const Layout: React.FC = () => {
       </div>
       <Footer />
 
-      {/* Back to top button */}
-      {showBackTop && (
-        <button
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="fixed bottom-6 right-6 z-40 p-3 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 hover:-translate-y-0.5 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-          aria-label="Back to top"
-        >
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
-          </svg>
-        </button>
-      )}
+      {/* Back to top button with progress ring */}
+      <BackToTop threshold={500} />
+
+      {/* AdSense diagnostic overlay — only renders when ?ad-debug=1 was used */}
+      <AdDebugOverlay />
+
+      {/* TypoGrammar AI chatbot — replaces Jotform */}
+      <TypoGrammarChatbot />
     </div>
   );
 };

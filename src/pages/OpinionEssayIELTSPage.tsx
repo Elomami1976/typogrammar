@@ -1,12 +1,12 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading, CodeBlock, BulletList } from '../components/ArticleComponents';
 
 const OpinionEssayIELTSPage: React.FC = () => {
   usePageMetadata({
-    title: 'IELTS Opinion Essay (Agree or Disagree) – Band 7–9 Guide | TypoGrammar',
-    description: 'Master the IELTS opinion essay with a Band 7–9 model answer, clear structure, and examiner tips to avoid common mistakes.'
+    title: 'IELTS Opinion Essay (Agree or Disagree) - Band 7-9 Guide | TypoGrammar',
+    description: 'Master the IELTS opinion essay with a Band 7-9 model answer, clear structure, and examiner tips to avoid common mistakes.'
   });
 
   const faqSchema = {
@@ -70,7 +70,7 @@ const OpinionEssayIELTSPage: React.FC = () => {
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="mb-6">
           <Link 
-            to="/ielts/ielts-writing-task-2-essay-types" 
+            to="/ielts/ielts-writing-task-2-essay-types/" 
             className="text-blue-600 dark:text-blue-400 hover:underline text-sm"
           >
             ← Back to IELTS Writing Task 2 Essay Types
@@ -78,7 +78,7 @@ const OpinionEssayIELTSPage: React.FC = () => {
         </div>
 
         <h1 className="text-4xl font-bold mb-6 text-slate-900 dark:text-slate-100">
-          IELTS Opinion Essay (Agree or Disagree) – Band 7–9 Guide
+          IELTS Opinion Essay (Agree or Disagree) - Band 7-9 Guide
         </h1>
 
         {/* Featured Snippet Box */}
@@ -116,7 +116,7 @@ const OpinionEssayIELTSPage: React.FC = () => {
 
         <div className="bg-slate-100 dark:bg-slate-800 p-6 rounded-lg my-6">
           <h4 className="font-semibold mb-4 text-slate-900 dark:text-slate-100">
-            📐 Recommended Structure (Band 7–9)
+            📐 Recommended Structure (Band 7-9)
           </h4>
           <div className="space-y-4">
             <div>
@@ -391,7 +391,7 @@ In conclusion, teaching children how to manage money at school prepares them for
           <p className="text-slate-800 dark:text-slate-200">
             📚 <strong>This article is part of our complete</strong>{' '}
             <Link 
-              to="/ielts/ielts-writing-task-2-essay-types" 
+              to="/ielts/ielts-writing-task-2-essay-types/" 
               className="text-green-700 dark:text-green-400 hover:underline font-medium"
             >
               IELTS Writing Task 2 Essay Types guide

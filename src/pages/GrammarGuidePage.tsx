@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Link } from 'react-router-dom';
 import GoogleAd from '../components/GoogleAd';
 import usePageMetadata from '../hooks/usePageMetadata';
@@ -14,93 +14,93 @@ const GrammarGuidePage: React.FC = () => {
       title: 'Verb Tenses',
       description: 'Master all 12 English tenses with clear explanations and examples',
       topics: [
-        { name: 'Present Simple', slug: '/topics/present-simple' },
-        { name: 'Present Progressive', slug: '/topics/present-progressive' },
-        { name: 'Present Perfect', slug: '/topics/present-perfect' },
-        { name: 'Past Simple', slug: '/topics/past-simple' },
-        { name: 'Past Progressive', slug: '/topics/past-progressive' },
-        { name: 'Future Simple', slug: '/topics/future-simple' },
-        { name: 'Tense Visualizer Tool', slug: '/tense-visualizer' }
+        { name: 'Present Simple', slug: '/topics/present-simple/' },
+        { name: 'Present Progressive', slug: '/topics/present-progressive/' },
+        { name: 'Present Perfect', slug: '/topics/present-perfect/' },
+        { name: 'Past Simple', slug: '/topics/past-simple/' },
+        { name: 'Past Progressive', slug: '/topics/past-progressive/' },
+        { name: 'Future Simple', slug: '/topics/future-simple/' },
+        { name: 'Tense Visualizer Tool', slug: '/tense-visualizer/' }
       ]
     },
     {
       title: 'Sentence Structure',
       description: 'Learn how to construct clear, grammatically correct sentences',
       topics: [
-        { name: 'Active vs Passive Voice', slug: '/topics/passive-voice' },
-        { name: 'Conditionals (If-Clauses)', slug: '/topics/conditionals' },
-        { name: 'Reported Speech', slug: '/topics/reported-speech' },
-        { name: 'Varying Sentence Structure', slug: '/writing/how-to-vary-sentence-structure' }
+        { name: 'Active vs Passive Voice', slug: '/topics/passive-voice/' },
+        { name: 'Conditionals (If-Clauses)', slug: '/topics/conditionals/' },
+        { name: 'Reported Speech', slug: '/topics/reported-speech/' },
+        { name: 'Varying Sentence Structure', slug: '/writing/how-to-vary-sentence-structure/' }
       ]
     },
     {
       title: 'Parts of Speech',
       description: 'Understand nouns, verbs, adjectives, adverbs, and more',
       topics: [
-        { name: 'Adjectives & Adverbs', slug: '/topics/adjectives-adverbs' },
-        { name: 'Prepositions', slug: '/topics/prepositions' },
-        { name: 'Pronouns', slug: '/topics/pronouns' },
-        { name: 'Articles (A, An, The)', slug: '/topics/articles' }
+        { name: 'Adjectives & Adverbs', slug: '/topics/adjectives-adverbs/' },
+        { name: 'Prepositions', slug: '/topics/prepositions/' },
+        { name: 'Pronouns', slug: '/topics/pronouns/' },
+        { name: 'Articles (A, An, The)', slug: '/topics/articles/' }
       ]
     },
     {
       title: 'Punctuation',
       description: 'Perfect your use of commas, semicolons, apostrophes, and more',
       topics: [
-        { name: 'Apostrophes', slug: '/topics/apostrophes' },
-        { name: 'Commas', slug: '/topics/commas' },
-        { name: 'Semicolons & Colons', slug: '/blog/punctuation-guide-colons-semicolons' },
-        { name: 'Quotation Marks', slug: '/topics/quotation-marks' }
+        { name: 'Apostrophes', slug: '/topics/apostrophes/' },
+        { name: 'Commas', slug: '/topics/commas/' },
+        { name: 'Semicolons & Colons', slug: '/blog/punctuation-guide-colons-semicolons/' },
+        { name: 'Quotation Marks', slug: '/topics/quotation-marks/' }
       ]
     },
     {
       title: 'Writing Skills',
       description: 'Develop your essay, email, and creative writing abilities',
       topics: [
-        { name: 'Essay Types & Structure', slug: '/writing/essay-types' },
-        { name: 'Professional Email Writing', slug: '/writing/how-to-write-a-professional-email' },
-        { name: 'Paraphrasing Techniques', slug: '/writing/how-to-paraphrase' },
-        { name: 'Building Arguments', slug: '/writing/how-to-build-an-argument' },
-        { name: 'Writing Assistant Tool', slug: '/writing-assistant' }
+        { name: 'Essay Types & Structure', slug: '/writing/essay-types/' },
+        { name: 'Professional Email Writing', slug: '/writing/how-to-write-a-professional-email/' },
+        { name: 'Paraphrasing Techniques', slug: '/writing/how-to-paraphrase/' },
+        { name: 'Building Arguments', slug: '/writing/how-to-build-an-argument/' },
+        { name: 'Writing Assistant Tool', slug: '/writing-assistant/' }
       ]
     },
     {
       title: 'Reading Comprehension',
       description: 'Improve your understanding and analysis of English texts',
       topics: [
-        { name: 'Critical Reading Strategies', slug: '/reading/how-to-read-critically' },
-        { name: 'Reading Comprehension Practice', slug: '/reading/reading-comprehension-practice' },
-        { name: 'Reading Tips & Techniques', slug: '/reading/how-to-read-efficiently' }
+        { name: 'Critical Reading Strategies', slug: '/reading/how-to-read-critically/' },
+        { name: 'Reading Comprehension Practice', slug: '/reading/reading-comprehension-practice/' },
+        { name: 'Reading Tips & Techniques', slug: '/reading/how-to-read-efficiently/' }
       ]
     },
     {
       title: 'Vocabulary & Usage',
       description: 'Expand your vocabulary and avoid common mistakes',
       topics: [
-        { name: 'Phrasal Verbs', slug: '/phrasal-verbs' },
-        { name: 'Idioms & Expressions', slug: '/idioms' },
-        { name: 'Commonly Confused Words', slug: '/commonly-confused-words' },
-        { name: 'Homophones, Homonyms & Homographs', slug: '/vocabulary/homophones-homonyms-homographs' },
-        { name: 'Collocations', slug: '/vocabulary/collocations' },
-        { name: 'Prefixes & Suffixes', slug: '/prefixes-suffixes' }
+        { name: 'Phrasal Verbs', slug: '/phrasal-verbs/' },
+        { name: 'Idioms & Expressions', slug: '/idioms/' },
+        { name: 'Commonly Confused Words', slug: '/commonly-confused-words/' },
+        { name: 'Homophones, Homonyms & Homographs', slug: '/vocabulary/homophones-homonyms-homographs/' },
+        { name: 'Collocations', slug: '/vocabulary/collocations/' },
+        { name: 'Prefixes & Suffixes', slug: '/prefixes-suffixes/' }
       ]
     },
     {
       title: 'Pronunciation',
       description: 'Improve your English pronunciation and speaking skills',
       topics: [
-        { name: 'Pronunciation Guide', slug: '/pronunciation' },
-        { name: 'Past Tense Pronunciation', slug: '/pronunciation-of-ed' }
+        { name: 'Pronunciation Guide', slug: '/pronunciation/' },
+        { name: 'Past Tense Pronunciation', slug: '/pronunciation-of-ed/' }
       ]
     },
     {
       title: 'Special Topics',
       description: 'Explore specific grammar topics and terminology',
       topics: [
-        { name: 'Grammar Glossary A-Z', slug: '/grammar-glossary' },
-        { name: 'Basic Grammar Terminology', slug: '/grammar-fundamentals/basic-terminology' },
-        { name: 'Irregular Verbs', slug: '/irregular-verbs' },
-        { name: 'Preposition Combinations', slug: '/preposition-combinations' }
+        { name: 'Grammar Glossary A-Z', slug: '/grammar-glossary/' },
+        { name: 'Basic Grammar Terminology', slug: '/grammar-fundamentals/basic-terminology/' },
+        { name: 'Irregular Verbs', slug: '/irregular-verbs/' },
+        { name: 'Preposition Combinations', slug: '/preposition-combinations/' }
       ]
     }
   ];
@@ -121,7 +121,7 @@ const GrammarGuidePage: React.FC = () => {
         {/* Quick Links */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           <Link
-            to="/blog"
+            to="/blog/"
             className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-200 hover:border-blue-400 hover:shadow-lg transition-all duration-300 dark:from-blue-900/20 dark:to-indigo-900/20 dark:border-blue-800/30 dark:hover:border-blue-600"
           >
             <div className="flex items-center gap-3 mb-2">
@@ -136,7 +136,7 @@ const GrammarGuidePage: React.FC = () => {
           </Link>
 
           <Link
-            to="/progress"
+            to="/progress/"
             className="bg-gradient-to-br from-green-50 to-emerald-50 p-6 rounded-xl border border-green-200 hover:border-green-400 hover:shadow-lg transition-all duration-300 dark:from-green-900/20 dark:to-emerald-900/20 dark:border-green-800/30 dark:hover:border-green-600"
           >
             <div className="flex items-center gap-3 mb-2">
@@ -151,7 +151,7 @@ const GrammarGuidePage: React.FC = () => {
           </Link>
 
           <Link
-            to="/teacher"
+            to="/teacher/"
             className="bg-gradient-to-br from-purple-50 to-pink-50 p-6 rounded-xl border border-purple-200 hover:border-purple-400 hover:shadow-lg transition-all duration-300 dark:from-purple-900/20 dark:to-pink-900/20 dark:border-purple-800/30 dark:hover:border-purple-600"
           >
             <div className="flex items-center gap-3 mb-2">
@@ -209,7 +209,7 @@ const GrammarGuidePage: React.FC = () => {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <Link
-              to="/tense-visualizer"
+              to="/tense-visualizer/"
               className="bg-white p-6 rounded-lg border border-slate-200 hover:border-blue-400 hover:shadow-md transition-all duration-200 dark:bg-slate-700/50 dark:border-slate-600 dark:hover:border-blue-500"
             >
               <h3 className="font-heading text-xl font-bold text-slate-900 mb-2 dark:text-slate-100">Tense Visualizer</h3>
@@ -218,7 +218,7 @@ const GrammarGuidePage: React.FC = () => {
               </p>
             </Link>
             <Link
-              to="/writing-assistant"
+              to="/writing-assistant/"
               className="bg-white p-6 rounded-lg border border-slate-200 hover:border-blue-400 hover:shadow-md transition-all duration-200 dark:bg-slate-700/50 dark:border-slate-600 dark:hover:border-blue-500"
             >
               <h3 className="font-heading text-xl font-bold text-slate-900 mb-2 dark:text-slate-100">English Writing Styles</h3>
@@ -227,7 +227,7 @@ const GrammarGuidePage: React.FC = () => {
               </p>
             </Link>
             <Link
-              to="/reading/reading-comprehension-practice"
+              to="/reading/reading-comprehension-practice/"
               className="bg-white p-6 rounded-lg border border-slate-200 hover:border-blue-400 hover:shadow-md transition-all duration-200 dark:bg-slate-700/50 dark:border-slate-600 dark:hover:border-blue-500"
             >
               <h3 className="font-heading text-xl font-bold text-slate-900 mb-2 dark:text-slate-100">Reading Comprehension</h3>
@@ -236,7 +236,7 @@ const GrammarGuidePage: React.FC = () => {
               </p>
             </Link>
             <Link
-              to="/irregular-verbs"
+              to="/irregular-verbs/"
               className="bg-white p-6 rounded-lg border border-slate-200 hover:border-blue-400 hover:shadow-md transition-all duration-200 dark:bg-slate-700/50 dark:border-slate-600 dark:hover:border-blue-500"
             >
               <h3 className="font-heading text-xl font-bold text-slate-900 mb-2 dark:text-slate-100">Irregular Verbs Quiz</h3>
@@ -261,7 +261,7 @@ const GrammarGuidePage: React.FC = () => {
               Browse All Topics
             </Link>
             <Link
-              to="/faq"
+              to="/faq/"
               className="inline-block bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg hover:bg-blue-800 transition-colors duration-200"
             >
               Have Questions?

@@ -1,5 +1,5 @@
 // Service Worker for TypoGrammar - Smart caching strategy
-const CACHE_NAME = 'typogrammar-v2'; // Increment version to force cache update
+const CACHE_NAME = 'typogrammar-v4'; // Increment version to force cache update
 const STATIC_CACHE = [
   // Only cache truly static assets that rarely change
   '/robots.txt',

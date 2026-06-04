@@ -1,4 +1,4 @@
-
+﻿
 import React, { useState, useMemo, useRef, useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
 import GoogleAd from '../components/GoogleAd';
@@ -91,7 +91,7 @@ const IdiomsPage: React.FC = () => {
           name: 'What is an idiom in English?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'An idiom is a phrase or expression that has a figurative meaning different from the literal meaning of the individual words. For example, "break the ice" doesn\'t mean physically breaking ice—it means to initiate conversation in a social setting to reduce tension or awkwardness.'
+            text: 'An idiom is a phrase or expression that has a figurative meaning different from the literal meaning of the individual words. For example, "break the ice" doesn\'t mean physically breaking ice-it means to initiate conversation in a social setting to reduce tension or awkwardness.'
           }
         },
         {
@@ -164,7 +164,7 @@ const IdiomsPage: React.FC = () => {
       <section className="mb-10 p-6 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl border border-blue-100 dark:from-slate-700/50 dark:to-slate-700/30 dark:border-slate-600">
         <h2 className="font-heading text-2xl font-bold text-slate-800 mb-4 dark:text-slate-200">What Are English Idioms?</h2>
         <p className="font-body text-slate-700 mb-4 dark:text-slate-300">
-          <strong>Idioms</strong> are phrases or expressions whose meaning cannot be understood from the literal definition of the words. They are a crucial part of natural English communication. For example, when someone says "<em>it's raining cats and dogs</em>," they don't mean animals are falling from the sky—they mean it's raining heavily.
+          <strong>Idioms</strong> are phrases or expressions whose meaning cannot be understood from the literal definition of the words. They are a crucial part of natural English communication. For example, when someone says "<em>it's raining cats and dogs</em>," they don't mean animals are falling from the sky-they mean it's raining heavily.
         </p>
         <p className="font-body text-slate-700 mb-4 dark:text-slate-300">
           This comprehensive guide contains <strong>{totalIdiomsCount}+ carefully curated English idioms</strong> organized into {IDIOMS_CATEGORIES.length} practical categories including idioms about <strong>animals, body parts, food, money, time, weather, work, emotions, relationships,</strong> and more.
@@ -264,10 +264,10 @@ const IdiomsPage: React.FC = () => {
           <div>
             <h3 className="font-semibold text-slate-800 mb-2 dark:text-slate-200">✅ Best Practices</h3>
             <ul className="space-y-2 text-slate-700 dark:text-slate-300">
-              <li>• <strong>Learn in context</strong> – Study idioms through example sentences, not just definitions</li>
-              <li>• <strong>Group by theme</strong> – Learn related idioms together (all food idioms, all weather idioms)</li>
-              <li>• <strong>Practice actively</strong> – Use new idioms in your writing and speaking</li>
-              <li>• <strong>Watch native content</strong> – Movies and shows expose you to natural idiom usage</li>
+              <li>• <strong>Learn in context</strong> - Study idioms through example sentences, not just definitions</li>
+              <li>• <strong>Group by theme</strong> - Learn related idioms together (all food idioms, all weather idioms)</li>
+              <li>• <strong>Practice actively</strong> - Use new idioms in your writing and speaking</li>
+              <li>• <strong>Watch native content</strong> - Movies and shows expose you to natural idiom usage</li>
             </ul>
           </div>
           <div>
@@ -276,7 +276,7 @@ const IdiomsPage: React.FC = () => {
               <li>• Don't translate idioms literally to your native language</li>
               <li>• Avoid mixing parts of different idioms together</li>
               <li>• Be aware of regional differences (British vs. American idioms)</li>
-              <li>• Don't overuse idioms – they should enhance, not dominate, your speech</li>
+              <li>• Don't overuse idioms - they should enhance, not dominate, your speech</li>
             </ul>
           </div>
         </div>
@@ -291,7 +291,7 @@ const IdiomsPage: React.FC = () => {
               What is an idiom in English?
               <span className="transition group-open:rotate-180">▼</span>
             </summary>
-            <p className="px-4 pb-4 text-slate-700 dark:text-slate-300">An idiom is a phrase or expression whose meaning cannot be understood from the literal definition of the words. For example, "<em>break the ice</em>" doesn't mean physically breaking ice—it means to initiate conversation in a social setting to reduce tension or awkwardness.</p>
+            <p className="px-4 pb-4 text-slate-700 dark:text-slate-300">An idiom is a phrase or expression whose meaning cannot be understood from the literal definition of the words. For example, "<em>break the ice</em>" doesn't mean physically breaking ice-it means to initiate conversation in a social setting to reduce tension or awkwardness.</p>
           </details>
           <details className="group bg-slate-50 dark:bg-slate-700/50 rounded-lg">
             <summary className="flex justify-between items-center cursor-pointer p-4 font-semibold text-slate-800 dark:text-slate-200">
@@ -321,22 +321,22 @@ const IdiomsPage: React.FC = () => {
       <aside className="mt-12 p-6 bg-blue-50 rounded-xl border border-blue-100 dark:bg-slate-700/50 dark:border-slate-600">
         <h2 className="font-heading text-xl font-bold text-slate-800 mb-4 dark:text-slate-200">Related Vocabulary Resources</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          <Link to="/phrasal-verbs" className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow dark:bg-slate-800 dark:hover:bg-slate-700">
+          <Link to="/phrasal-verbs/" className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow dark:bg-slate-800 dark:hover:bg-slate-700">
             <span className="text-2xl">🔤</span>
             <h3 className="font-semibold text-slate-800 mt-2 dark:text-slate-200">Phrasal Verbs</h3>
             <p className="text-sm text-slate-600 dark:text-slate-400">Essential multi-word verbs</p>
           </Link>
-          <Link to="/collocations" className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow dark:bg-slate-800 dark:hover:bg-slate-700">
+          <Link to="/collocations/" className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow dark:bg-slate-800 dark:hover:bg-slate-700">
             <span className="text-2xl">🔗</span>
             <h3 className="font-semibold text-slate-800 mt-2 dark:text-slate-200">Collocations</h3>
             <p className="text-sm text-slate-600 dark:text-slate-400">Natural word combinations</p>
           </Link>
-          <Link to="/confused-words" className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow dark:bg-slate-800 dark:hover:bg-slate-700">
+          <Link to="/commonly-confused-words/" className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow dark:bg-slate-800 dark:hover:bg-slate-700">
             <span className="text-2xl">🔄</span>
             <h3 className="font-semibold text-slate-800 mt-2 dark:text-slate-200">Confused Words</h3>
             <p className="text-sm text-slate-600 dark:text-slate-400">Commonly mixed-up words</p>
           </Link>
-          <Link to="/homophones" className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow dark:bg-slate-800 dark:hover:bg-slate-700">
+          <Link to="/homophones/" className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow dark:bg-slate-800 dark:hover:bg-slate-700">
             <span className="text-2xl">👂</span>
             <h3 className="font-semibold text-slate-800 mt-2 dark:text-slate-200">Homophones</h3>
             <p className="text-sm text-slate-600 dark:text-slate-400">Same sound, different meaning</p>

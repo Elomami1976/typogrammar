@@ -1,4 +1,4 @@
-
+﻿
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { BLOG_POSTS } from '../constants/blogPosts';
@@ -8,6 +8,9 @@ import BlogMetadata from '../components/BlogMetadata';
 import BlogImage from '../components/BlogImage';
 import ShareButtons from '../components/ShareButtons';
 import SchemaMarkup from '../components/SchemaMarkup';
+import RelatedContent from '../components/RelatedContent';
+import MiniQuiz from '../components/MiniQuiz';
+import StickyNextCTA from '../components/StickyNextCTA';
 
 const BlogPostPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -32,7 +35,8 @@ const BlogPostPage: React.FC = () => {
 
   usePageMetadata({
     title: metaTitle,
-    description: metaDescription
+    description: metaDescription,
+    robots: !post ? 'noindex, follow' : undefined
   });
 
   if (!post) {
@@ -42,7 +46,7 @@ const BlogPostPage: React.FC = () => {
         <p className="font-body text-xl text-slate-600 dark:text-slate-400">
           Sorry, we couldn't find the blog post you were looking for.
         </p>
-        <Link to="/blog" className="mt-6 inline-block bg-blue-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors dark:bg-blue-500 dark:hover:bg-blue-600">
+        <Link to="/blog/" className="mt-6 inline-block bg-blue-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors dark:bg-blue-500 dark:hover:bg-blue-600">
           Back to Blog
         </Link>
       </div>
@@ -105,7 +109,7 @@ const BlogPostPage: React.FC = () => {
             <h1 className="font-heading text-4xl md:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight dark:text-slate-100">{post.title}</h1>
             <p className="font-body text-slate-500 dark:text-slate-400">
               By {post.author === 'TypoGrammar Editorial Team' ? (
-                <Link to="/about/editorial-team" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">
+                <Link to="/about/editorial-team/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">
                   {post.author}
                 </Link>
               ) : (
@@ -128,6 +132,52 @@ const BlogPostPage: React.FC = () => {
       <div className="prose prose-lg max-w-none">
         {post.content}
       </div>
+
+      {/* Generic post-content engagement: 3-question mini-quiz */}
+      <MiniQuiz
+        title="Quick Check Before You Go"
+        intro={`A 3-question recap on “${post.title.length > 60 ? post.title.slice(0, 57) + '…' : post.title}”`}
+        questions={[
+          {
+            question: 'What is the most effective way to retain what you just read?',
+            options: [
+              'Skim the article a second time',
+              'Apply it immediately with practice',
+              'Bookmark it and come back later',
+              'Share it on social media',
+            ],
+            correctAnswer: 1,
+            explanation: 'Active recall and immediate practice beat passive re-reading by a wide margin.',
+          },
+          {
+            question: 'Which approach builds long-term English fluency fastest?',
+            options: [
+              'Memorising long word lists in one sitting',
+              'Studying for 3 hours once a week',
+              'Short, daily, varied practice (reading + writing + speaking)',
+              'Watching English movies without subtitles',
+            ],
+            correctAnswer: 2,
+            explanation: 'Spaced, varied daily practice produces the strongest, longest-lasting gains.',
+          },
+          {
+            question: 'What should you do when you make the same mistake repeatedly?',
+            options: [
+              'Ignore it — it will fix itself',
+              'Write the correction down and review it weekly',
+              'Avoid using that grammar point',
+              'Memorise the rule once and move on',
+            ],
+            correctAnswer: 1,
+            explanation: 'Logging mistakes and reviewing them on a schedule converts errors into permanent fixes.',
+          },
+        ]}
+        cta={{
+          to: '/quizzes/verb-tenses-quiz/',
+          label: 'Try the Free 50-Question Tenses Quiz',
+          subtitle: 'Test all 12 English tenses with instant explanations.',
+        }}
+      />
 
       <ShareButtons 
         url={`https://typogrammar.com/blog/${post.slug}`}
@@ -174,7 +224,7 @@ const BlogPostPage: React.FC = () => {
         </div>
         
         <div className="mt-12 text-center">
-            <Link to="/blog" className="group inline-flex items-center text-blue-600 font-semibold dark:text-blue-400">
+            <Link to="/blog/" className="group inline-flex items-center text-blue-600 font-semibold dark:text-blue-400">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 transform group-hover:-translate-x-1 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
             </svg>
@@ -183,6 +233,69 @@ const BlogPostPage: React.FC = () => {
         </div>
       </div>
     </article>
+    <div className="max-w-4xl mx-auto">
+      <RelatedContent
+        title="More Ways to Improve Your English"
+        description="Hand-picked next steps based on what you just read."
+        items={[
+          {
+            to: '/quizzes/verb-tenses-quiz/',
+            title: 'Free Verb Tenses Quiz (50 Questions)',
+            subtitle: 'Practice every tense with instant scoring and explanations.',
+            badge: 'Quiz',
+            meta: '50 questions',
+          },
+          {
+            to: '/grammar-checker/',
+            title: 'Free Grammar Checker',
+            subtitle: 'Catch mistakes in your writing instantly.',
+            badge: 'Tool',
+            meta: 'No signup',
+          },
+          {
+            to: '/ielts/english-grammar-pdf/',
+            title: 'Complete English Grammar PDF',
+            subtitle: 'Download the free workbook with exercises.',
+            badge: 'PDF',
+            meta: 'Free',
+          },
+          {
+            to: '/grammar-guide/',
+            title: 'Grammar Guide: Browse All Topics',
+            subtitle: 'Lessons grouped by category, completion tracking included.',
+            badge: 'Lesson',
+          },
+          ...(nextPost
+            ? [{
+                to: `/blog/${nextPost.slug}`,
+                title: nextPost.title,
+                subtitle: nextPost.summary?.slice(0, 110) + '…',
+                badge: 'Article',
+                meta: 'Next post',
+              }]
+            : [{
+                to: '/blog/',
+                title: 'Browse All Articles',
+                subtitle: 'Tips, examples, and guides for serious English learners.',
+                badge: 'Article',
+              }]),
+          {
+            to: '/practice-tools/',
+            title: 'Interactive Practice Tools',
+            subtitle: 'Drills, flashcards, paraphrasing, and more.',
+            badge: 'Practice',
+          },
+        ]}
+      />
+    </div>
+    {nextPost && (
+      <StickyNextCTA
+        to={`/blog/${nextPost.slug}`}
+        label={nextPost.title}
+        subtitle="Read next"
+        threshold={60}
+      />
+    )}
     </>
   );
 };

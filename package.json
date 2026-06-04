@@ -5,7 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "node scripts/build-chatbot-index.cjs && vite build && node scripts/prerender.cjs && node scripts/generate-llms-full.cjs && node scripts/validate-seo.cjs",
+    "build:no-prerender": "node scripts/build-chatbot-index.cjs && vite build",
+    "prerender": "node scripts/prerender.cjs",
+    "validate:seo": "node scripts/validate-seo.cjs",
+    "llms-full": "node scripts/generate-llms-full.cjs",
+    "build:chatbot-index": "node scripts/build-chatbot-index.cjs",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -19,6 +24,7 @@
     "@vitejs/plugin-react": "^4.3.1",
     "autoprefixer": "^10.4.0",
     "postcss": "^8.4.0",
+    "puppeteer": "^24.43.0",
     "tailwindcss": "^3.4.0",
     "typescript": "^5.5.3",
     "vite": "^5.3.3"

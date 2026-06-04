@@ -1,4 +1,4 @@
-
+﻿
 import React from 'react';
 import { GrammarTopic } from '../types';
 import { ArticleParagraph, ArticleHeading, InlineCode, CodeBlock, ExampleList, BulletList } from '../components/ArticleComponents';
@@ -700,8 +700,8 @@ Will + subject + have + been + verb(-ing)?`}</CodeBlock>
                   <tr><td className="px-4 py-2 border-b">few students</td><td className="px-4 py-2 border-b">little time</td><td className="px-4 py-2 border-b">a lot of students/time</td></tr>
                   <tr><td className="px-4 py-2 border-b">a few ideas</td><td className="px-4 py-2 border-b">a little money</td><td className="px-4 py-2 border-b">no books/water</td></tr>
                   <tr><td className="px-4 py-2 border-b">several people</td><td className="px-4 py-2 border-b">a bit of help</td><td className="px-4 py-2 border-b">plenty of food/options</td></tr>
-                  <tr><td className="px-4 py-2 border-b">each/every student</td><td className="px-4 py-2 border-b">—</td><td className="px-4 py-2 border-b">enough food/chairs</td></tr>
-                  <tr><td className="px-4 py-2 border-b">a/an (singular)</td><td className="px-4 py-2 border-b">—</td><td className="px-4 py-2 border-b">any help/books</td></tr>
+                  <tr><td className="px-4 py-2 border-b">each/every student</td><td className="px-4 py-2 border-b">-</td><td className="px-4 py-2 border-b">enough food/chairs</td></tr>
+                  <tr><td className="px-4 py-2 border-b">a/an (singular)</td><td className="px-4 py-2 border-b">-</td><td className="px-4 py-2 border-b">any help/books</td></tr>
                 </tbody>
               </table>
             </div>
@@ -752,16 +752,16 @@ Will + subject + have + been + verb(-ing)?`}</CodeBlock>
                 These nouns are uncountable in English (though they may be countable in other languages):
             </ArticleParagraph>
             <BulletList items={[
-                <><strong>advice</strong> — "She gave me good advice." (NOT "advices")</>,
-                <><strong>information</strong> — "The information is useful." (NOT "informations")</>,
-                <><strong>news</strong> — "The news is shocking." (singular verb!)</>,
-                <><strong>furniture</strong> — "The furniture is expensive." (NOT "furnitures")</>,
-                <><strong>luggage/baggage</strong> — "My luggage is heavy." (NOT "luggages")</>,
-                <><strong>equipment</strong> — "The equipment works well." (NOT "equipments")</>,
-                <><strong>homework</strong> — "There's a lot of homework." (NOT "homeworks")</>,
-                <><strong>progress</strong> — "We've made good progress." (NOT "progresses")</>,
-                <><strong>knowledge</strong> — "Knowledge is power." (NOT "knowledges")</>,
-                <><strong>traffic</strong> — "The traffic is terrible." (NOT "traffics")</>
+                <><strong>advice</strong>, "She gave me good advice." (NOT "advices")</>,
+                <><strong>information</strong>, "The information is useful." (NOT "informations")</>,
+                <><strong>news</strong>, "The news is shocking." (singular verb!)</>,
+                <><strong>furniture</strong>, "The furniture is expensive." (NOT "furnitures")</>,
+                <><strong>luggage/baggage</strong>, "My luggage is heavy." (NOT "luggages")</>,
+                <><strong>equipment</strong>, "The equipment works well." (NOT "equipments")</>,
+                <><strong>homework</strong>, "There's a lot of homework." (NOT "homeworks")</>,
+                <><strong>progress</strong>, "We've made good progress." (NOT "progresses")</>,
+                <><strong>knowledge</strong>, "Knowledge is power." (NOT "knowledges")</>,
+                <><strong>traffic</strong>, "The traffic is terrible." (NOT "traffics")</>
             ]}/>
 
             <ArticleHeading>Frequently Asked Questions</ArticleHeading>
@@ -772,7 +772,7 @@ Will + subject + have + been + verb(-ing)?`}</CodeBlock>
               </div>
               <div className="bg-slate-50 dark:bg-slate-800 p-4 rounded border border-slate-200 dark:border-slate-700">
                 <p className="font-semibold text-slate-800 dark:text-slate-200">Can I say "waters" or "coffees"?</p>
-                <p className="text-slate-600 dark:text-slate-400 mt-2">In some contexts, yes! "Two coffees, please" (meaning two cups) is acceptable. "The waters of the Pacific" (meaning bodies of water) is also correct. However, "I drank much waters" is still incorrect—use "much water."</p>
+                <p className="text-slate-600 dark:text-slate-400 mt-2">In some contexts, yes! "Two coffees, please" (meaning two cups) is acceptable. "The waters of the Pacific" (meaning bodies of water) is also correct. However, "I drank much waters" is still incorrect-use "much water."</p>
               </div>
               <div className="bg-slate-50 dark:bg-slate-800 p-4 rounded border border-slate-200 dark:border-slate-700">
                 <p className="font-semibold text-slate-800 dark:text-slate-200">What's the difference between "few" and "a few"?</p>
@@ -907,7 +907,7 @@ Will + subject + have + been + verb(-ing)?`}</CodeBlock>
       <>
         <div className="bg-blue-50 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-800 rounded-xl p-5 mb-8">
           <h2 className="font-heading text-lg font-bold text-blue-800 dark:text-blue-300 mb-2">Quick Summary</h2>
-          <p className="text-blue-900 dark:text-blue-200 text-base"><strong>Adjectives</strong> describe nouns ("a <em>tall</em> building"). <strong>Adverbs</strong> describe verbs, adjectives, or other adverbs ("she runs <em>quickly</em>"). There are four main adverb types — manner, place, time, and frequency — each with specific placement rules. A common confusion: <strong>good</strong> is an adjective; <strong>well</strong> is an adverb.</p>
+          <p className="text-blue-900 dark:text-blue-200 text-base"><strong>Adjectives</strong> describe nouns ("a <em>tall</em> building"). <strong>Adverbs</strong> describe verbs, adjectives, or other adverbs ("she runs <em>quickly</em>"). There are four main adverb types, manner, place, time, and frequency, each with specific placement rules. A common confusion: <strong>good</strong> is an adjective; <strong>well</strong> is an adverb.</p>
         </div>
         <ArticleParagraph>
           Adjectives and adverbs are descriptive words that make your writing more vivid and precise. While they both add detail, they modify different parts of a sentence.
@@ -1002,9 +1002,9 @@ far -> farther/further -> farthest/furthest`}</CodeBlock>
 
         <ArticleHeading>Related Topics</ArticleHeading>
         <BulletList items={[
-          <><Link to="/topics/comparative-superlative" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Comparatives &amp; Superlatives</Link> — Deep dive into comparing things with adjectives and adverbs.</>,
-          <><Link to="/writing/how-to-vary-sentence-structure" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Varying Sentence Structure</Link> — Use adjectives and adverbs to add rhythm and variety to your writing.</>,
-          <><Link to="/topics/simple-and-complex-sentences" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Simple &amp; Complex Sentences</Link> — Understand how adverbs connect to dependent clauses.</>,
+          <><Link to="/topics/comparative-superlative/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Comparatives &amp; Superlatives</Link>, Deep dive into comparing things with adjectives and adverbs.</>,
+          <><Link to="/writing/how-to-vary-sentence-structure/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Varying Sentence Structure</Link>, Use adjectives and adverbs to add rhythm and variety to your writing.</>,
+          <><Link to="/topics/simple-and-complex-sentences/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Simple &amp; Complex Sentences</Link>, Understand how adverbs connect to dependent clauses.</>,
         ]} />
 
         <div className="bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 rounded-xl p-6 mt-10">
@@ -1012,7 +1012,7 @@ far -> farther/further -> farthest/furthest`}</CodeBlock>
           <div className="space-y-4">
             <div>
               <h3 className="font-semibold text-slate-700 dark:text-slate-300">What is the difference between an adjective and an adverb?</h3>
-              <p className="text-slate-600 dark:text-slate-400 mt-1">An adjective modifies a noun or pronoun ("a <em>fast</em> car"), while an adverb modifies a verb, adjective, or another adverb ("she drives <em>fast</em>"). Many adverbs end in -ly, but not all — "fast," "well," and "hard" are common exceptions.</p>
+              <p className="text-slate-600 dark:text-slate-400 mt-1">An adjective modifies a noun or pronoun ("a <em>fast</em> car"), while an adverb modifies a verb, adjective, or another adverb ("she drives <em>fast</em>"). Many adverbs end in -ly, but not all, "fast," "well," and "hard" are common exceptions.</p>
             </div>
             <div>
               <h3 className="font-semibold text-slate-700 dark:text-slate-300">What is the difference between "good" and "well"?</h3>
@@ -1155,9 +1155,9 @@ much/many → more → most
 
         <ArticleHeading>Related Topics</ArticleHeading>
         <BulletList items={[
-          <><Link to="/topics/adjectives-adverbs" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Adjectives &amp; Adverbs</Link> — Review the basics of adjectives and adverbs before comparing them.</>,
-          <><Link to="/topics/few-little-less-fewer" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Few vs Little, Less vs Fewer</Link> — Related comparison words that follow different rules.</>,
-          <><Link to="/confused-words" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Commonly Confused Words</Link> — Avoid mixing up similar-sounding comparative forms.</>,
+          <><Link to="/topics/adjectives-adverbs/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Adjectives &amp; Adverbs</Link>, Review the basics of adjectives and adverbs before comparing them.</>,
+          <><Link to="/topics/few-little-less-fewer/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Few vs Little, Less vs Fewer</Link>, Related comparison words that follow different rules.</>,
+          <><Link to="/commonly-confused-words/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Commonly Confused Words</Link>, Avoid mixing up similar-sounding comparative forms.</>,
         ]} />
 
         <div className="bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 rounded-xl p-6 mt-10">
@@ -1231,21 +1231,21 @@ much/many → more → most
             </div>
 
             <ArticleHeading>1. Ability: Can, Could, Be Able To</ArticleHeading>
-            <ArticleParagraph><strong>Can</strong> — present ability:</ArticleParagraph>
+            <ArticleParagraph><strong>Can</strong>, present ability:</ArticleParagraph>
             <ExampleList items={[
                 "I can speak three languages.",
                 "She can play the piano beautifully.",
                 "Can you see that sign from here?"
             ]} />
 
-            <ArticleParagraph><strong>Could</strong> — past ability (general) or present possibility:</ArticleParagraph>
+            <ArticleParagraph><strong>Could</strong>, past ability (general) or present possibility:</ArticleParagraph>
             <ExampleList items={[
                 "I could swim when I was five. (past ability)",
                 "She could read before starting school.",
                 "You could try calling them again. (suggestion/possibility)"
             ]} />
 
-            <ArticleParagraph><strong>Be able to</strong> — used when modals can't work (with other modals, in infinitives):</ArticleParagraph>
+            <ArticleParagraph><strong>Be able to</strong>, used when modals can't work (with other modals, in infinitives):</ArticleParagraph>
             <ExampleList items={[
                 "I will be able to help tomorrow. (future ability)",
                 "She has been able to finish the project. (present perfect)",
@@ -1262,10 +1262,10 @@ much/many → more → most
                 "Students may not use phones during exams. (formal rule)"
             ]} />
 
-            <div className="bg-amber-50 dark:bg-amber-900/30 border border-amber-200 dark:border-amber-700 p-4 mb-6 rounded">
-              <p className="font-bold text-amber-800 dark:text-amber-200 mb-2">💡 Formality Scale for Permission</p>
-              <p className="text-amber-700 dark:text-amber-300">Can (informal) → Could (polite) → May (formal)</p>
-              <p className="text-amber-700 dark:text-amber-300 mt-2">"Can I..." is fine with friends. "May I..." is best in formal situations.</p>
+            <div className="bg-teal-50 dark:bg-teal-900/30 border border-teal-200 dark:border-teal-700 p-4 mb-6 rounded">
+              <p className="font-bold text-teal-800 dark:text-teal-200 mb-2">💡 Formality Scale for Permission</p>
+              <p className="text-teal-700 dark:text-teal-300">Can (informal) → Could (polite) → May (formal)</p>
+              <p className="text-teal-700 dark:text-teal-300 mt-2">"Can I..." is fine with friends. "May I..." is best in formal situations.</p>
             </div>
 
             <ArticleHeading>3. Possibility: May, Might, Could</ArticleHeading>
@@ -1284,21 +1284,21 @@ much/many → more → most
             </div>
 
             <ArticleHeading>4. Obligation & Necessity: Must, Have To, Should</ArticleHeading>
-            <ArticleParagraph><strong>Must</strong> — strong obligation (often internal or rules):</ArticleParagraph>
+            <ArticleParagraph><strong>Must</strong>, strong obligation (often internal or rules):</ArticleParagraph>
             <ExampleList items={[
                 "You must wear a seatbelt. (law/rule)",
                 "I must finish this report today. (personal obligation)",
                 "Passengers must fasten their seatbelts."
             ]} />
 
-            <ArticleParagraph><strong>Have to</strong> — obligation (often external):</ArticleParagraph>
+            <ArticleParagraph><strong>Have to</strong>, obligation (often external):</ArticleParagraph>
             <ExampleList items={[
                 "I have to work tomorrow. (external requirement)",
                 "She has to take medicine every day.",
                 "Do you have to leave so early?"
             ]} />
 
-            <ArticleParagraph><strong>Should</strong> — advice or expectation:</ArticleParagraph>
+            <ArticleParagraph><strong>Should</strong>, advice or expectation:</ArticleParagraph>
             <ExampleList items={[
                 "You should see a doctor. (advice)",
                 "He should arrive by 6:00. (expectation)",
@@ -1314,7 +1314,7 @@ much/many → more → most
             <ArticleHeading>5. Logical Deduction: Must, Can't, Should</ArticleHeading>
             <ArticleParagraph>Use modals to make logical conclusions based on evidence:</ArticleParagraph>
             <ExampleList items={[
-                "She must be tired. She worked 12 hours. (logical conclusion — almost certain)",
+                "She must be tired. She worked 12 hours. (logical conclusion, almost certain)",
                 "That can't be true! (impossibility)",
                 "He can't be at work. His car is here.",
                 "They should be home by now. (expectation based on logic)"
@@ -1410,7 +1410,7 @@ much/many → more → most
         </div>
 
         <ArticleParagraph>
-          Gerunds and infinitives are two verb forms that can function as nouns in sentences. One of the trickiest aspects of English grammar is knowing which form to use after certain verbs, as there's no universal rule—you often have to memorize which verbs take which form. However, understanding patterns and practicing common combinations will help you master this challenging area.
+          Gerunds and infinitives are two verb forms that can function as nouns in sentences. One of the trickiest aspects of English grammar is knowing which form to use after certain verbs, as there's no universal rule-you often have to memorize which verbs take which form. However, understanding patterns and practicing common combinations will help you master this challenging area.
         </ArticleParagraph>
 
         <ArticleHeading>What Are Gerunds?</ArticleHeading>
@@ -1459,7 +1459,7 @@ much/many → more → most
         ]} />
 
         <ArticleParagraph><strong>3. After Prepositions:</strong></ArticleParagraph>
-        <ArticleParagraph>Gerunds ALWAYS follow prepositions—never infinitives.</ArticleParagraph>
+        <ArticleParagraph>Gerunds ALWAYS follow prepositions-never infinitives.</ArticleParagraph>
         <ExampleList items={[
             "I'm interested in learning more. (NOT: in to learn)",
             "She's good at playing tennis.",
@@ -1484,10 +1484,10 @@ much/many → more → most
           An <strong>infinitive</strong> is <strong>to + base verb</strong>. It can function as a noun, adjective, or adverb.
         </ArticleParagraph>
         <ExampleList items={[
-            "To err is human. (subject — formal)",
+            "To err is human. (subject, formal)",
             "She wants to leave early. (object of verb)",
-            "He has a lot of work to do. (adjective — modifying 'work')",
-            "I went to the store to buy milk. (adverb — showing purpose)"
+            "He has a lot of work to do. (adjective, modifying 'work')",
+            "I went to the store to buy milk. (adverb, showing purpose)"
         ]} />
 
         <ArticleHeading>Infinitive Uses</ArticleHeading>
@@ -1552,28 +1552,28 @@ much/many → more → most
         ]} />
 
         <ArticleHeading>Verbs That Take Both (with Different Meanings)</ArticleHeading>
-        <div className="bg-amber-50 dark:bg-amber-900/30 border border-amber-200 dark:border-amber-700 p-4 mb-6 rounded">
-          <p className="font-bold text-amber-800 dark:text-amber-200 mb-3">⚠️ Critical Differences</p>
+        <div className="bg-teal-50 dark:bg-teal-900/30 border border-teal-200 dark:border-teal-700 p-4 mb-6 rounded">
+          <p className="font-bold text-teal-800 dark:text-teal-200 mb-3">⚠️ Critical Differences</p>
           
-          <p className="text-amber-700 dark:text-amber-300 font-semibold">STOP:</p>
-          <p className="text-amber-700 dark:text-amber-300 mb-2">• "I stopped smoking" = I quit the habit</p>
-          <p className="text-amber-700 dark:text-amber-300 mb-3">• "I stopped to smoke" = I paused in order to smoke</p>
+          <p className="text-teal-700 dark:text-teal-300 font-semibold">STOP:</p>
+          <p className="text-teal-700 dark:text-teal-300 mb-2">• "I stopped smoking" = I quit the habit</p>
+          <p className="text-teal-700 dark:text-teal-300 mb-3">• "I stopped to smoke" = I paused in order to smoke</p>
 
-          <p className="text-amber-700 dark:text-amber-300 font-semibold">REMEMBER:</p>
-          <p className="text-amber-700 dark:text-amber-300 mb-2">• "I remember locking the door" = I have a memory of doing it</p>
-          <p className="text-amber-700 dark:text-amber-300 mb-3">• "I remembered to lock the door" = I didn't forget to do it</p>
+          <p className="text-teal-700 dark:text-teal-300 font-semibold">REMEMBER:</p>
+          <p className="text-teal-700 dark:text-teal-300 mb-2">• "I remember locking the door" = I have a memory of doing it</p>
+          <p className="text-teal-700 dark:text-teal-300 mb-3">• "I remembered to lock the door" = I didn't forget to do it</p>
 
-          <p className="text-amber-700 dark:text-amber-300 font-semibold">FORGET:</p>
-          <p className="text-amber-700 dark:text-amber-300 mb-2">• "I'll never forget meeting you" = memory of past event</p>
-          <p className="text-amber-700 dark:text-amber-300 mb-3">• "I forgot to meet him" = I didn't do it</p>
+          <p className="text-teal-700 dark:text-teal-300 font-semibold">FORGET:</p>
+          <p className="text-teal-700 dark:text-teal-300 mb-2">• "I'll never forget meeting you" = memory of past event</p>
+          <p className="text-teal-700 dark:text-teal-300 mb-3">• "I forgot to meet him" = I didn't do it</p>
 
-          <p className="text-amber-700 dark:text-amber-300 font-semibold">TRY:</p>
-          <p className="text-amber-700 dark:text-amber-300 mb-2">• "Try eating less sugar" = experiment with this method</p>
-          <p className="text-amber-700 dark:text-amber-300 mb-3">• "Try to eat less sugar" = make an effort</p>
+          <p className="text-teal-700 dark:text-teal-300 font-semibold">TRY:</p>
+          <p className="text-teal-700 dark:text-teal-300 mb-2">• "Try eating less sugar" = experiment with this method</p>
+          <p className="text-teal-700 dark:text-teal-300 mb-3">• "Try to eat less sugar" = make an effort</p>
 
-          <p className="text-amber-700 dark:text-amber-300 font-semibold">REGRET:</p>
-          <p className="text-amber-700 dark:text-amber-300 mb-2">• "I regret telling him" = I wish I hadn't told him</p>
-          <p className="text-amber-700 dark:text-amber-300">• "I regret to tell you..." = I'm sorry to inform you (formal)</p>
+          <p className="text-teal-700 dark:text-teal-300 font-semibold">REGRET:</p>
+          <p className="text-teal-700 dark:text-teal-300 mb-2">• "I regret telling him" = I wish I hadn't told him</p>
+          <p className="text-teal-700 dark:text-teal-300">• "I regret to tell you..." = I'm sorry to inform you (formal)</p>
         </div>
 
         <ArticleHeading>Bare Infinitives (Without "To")</ArticleHeading>
@@ -1615,7 +1615,7 @@ much/many → more → most
           </div>
           <div className="bg-slate-50 dark:bg-slate-800 p-4 rounded border border-slate-200 dark:border-slate-700">
             <p className="font-semibold text-slate-800 dark:text-slate-200">Why can't I say "I want going"?</p>
-            <p className="text-slate-600 dark:text-slate-400 mt-2">"Want" refers to a desire for future action. Verbs expressing future intentions, desires, or decisions typically take infinitives. There's no deep grammatical reason—it's just how English evolved.</p>
+            <p className="text-slate-600 dark:text-slate-400 mt-2">"Want" refers to a desire for future action. Verbs expressing future intentions, desires, or decisions typically take infinitives. There's no deep grammatical reason-it's just how English evolved.</p>
           </div>
           <div className="bg-slate-50 dark:bg-slate-800 p-4 rounded border border-slate-200 dark:border-slate-700">
             <p className="font-semibold text-slate-800 dark:text-slate-200">Is "help to do" or "help do" correct?</p>
@@ -1726,7 +1726,7 @@ much/many → more → most
         
         <ArticleHeading>Practice Tips</ArticleHeading>
         <ArticleParagraph>
-            Prepositions often don't translate directly between languages, so learning them in context is crucial. Pay attention to prepositions in the phrases and expressions you encounter. Create a personal list of common prepositional phrases you need for your own communication. Remember that some verbs and adjectives always pair with specific prepositions—these combinations must be memorized.
+            Prepositions often don't translate directly between languages, so learning them in context is crucial. Pay attention to prepositions in the phrases and expressions you encounter. Create a personal list of common prepositional phrases you need for your own communication. Remember that some verbs and adjectives always pair with specific prepositions-these combinations must be memorized.
         </ArticleParagraph>
       </>
     ),
@@ -1862,10 +1862,10 @@ much/many → more → most
 
         <ArticleHeading>Related Topics</ArticleHeading>
         <BulletList items={[
-          <><Link to="/topics/direct-and-indirect-speech" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Direct &amp; Indirect Speech</Link> — Learn how reported speech interacts with passive constructions.</>,
-          <><Link to="/topics/subject-verb-agreement" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Subject-Verb Agreement</Link> — Ensure the verb agrees with the subject in passive sentences.</>,
-          <><Link to="/topics/simple-and-complex-sentences" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Simple &amp; Complex Sentences</Link> — Combine passive voice with complex sentence structures.</>,
-          <><Link to="/writing/how-to-vary-sentence-structure" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Varying Sentence Structure</Link> — Use passive voice as a tool to vary your writing style.</>,
+          <><Link to="/topics/direct-and-indirect-speech/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Direct &amp; Indirect Speech</Link>, Learn how reported speech interacts with passive constructions.</>,
+          <><Link to="/topics/subject-verb-agreement/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Subject-Verb Agreement</Link>, Ensure the verb agrees with the subject in passive sentences.</>,
+          <><Link to="/topics/simple-and-complex-sentences/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Simple &amp; Complex Sentences</Link>, Combine passive voice with complex sentence structures.</>,
+          <><Link to="/writing/how-to-vary-sentence-structure/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Varying Sentence Structure</Link>, Use passive voice as a tool to vary your writing style.</>,
         ]} />
 
         <div className="bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 rounded-xl p-6 mt-10">
@@ -1873,7 +1873,7 @@ much/many → more → most
           <div className="space-y-4">
             <div>
               <h3 className="font-semibold text-slate-700 dark:text-slate-300">When should I use the passive voice?</h3>
-              <p className="text-slate-600 dark:text-slate-400 mt-1">Use the passive voice when the doer of the action is unknown, unimportant, or obvious. It is also used in formal writing — especially scientific and academic texts — to focus on the action or result rather than who performed it.</p>
+              <p className="text-slate-600 dark:text-slate-400 mt-1">Use the passive voice when the doer of the action is unknown, unimportant, or obvious. It is also used in formal writing, especially scientific and academic texts, to focus on the action or result rather than who performed it.</p>
             </div>
             <div>
               <h3 className="font-semibold text-slate-700 dark:text-slate-300">How do I convert active voice to passive voice?</h3>
@@ -1909,9 +1909,9 @@ much/many → more → most
 
         <ArticleHeading>Related Topics</ArticleHeading>
         <BulletList items={[
-          <><Link to="/topics/passive-voice" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Passive Voice</Link> — Agreement becomes trickier in passive constructions.</>,
-          <><Link to="/topics/sentence-fragments" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Sentence Fragments</Link> — Missing verbs lead to both fragments and agreement errors.</>,
-          <><Link to="/topics/simple-and-complex-sentences" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Simple &amp; Complex Sentences</Link> — Understand clauses where agreement rules apply.</>,
+          <><Link to="/topics/passive-voice/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Passive Voice</Link>, Agreement becomes trickier in passive constructions.</>,
+          <><Link to="/topics/sentence-fragments/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Sentence Fragments</Link>, Missing verbs lead to both fragments and agreement errors.</>,
+          <><Link to="/topics/simple-and-complex-sentences/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Simple &amp; Complex Sentences</Link>, Understand clauses where agreement rules apply.</>,
         ]} />
 
         <div className="bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 rounded-xl p-6 mt-10">
@@ -2058,10 +2058,10 @@ much/many → more → most
 
         <ArticleHeading>Related Topics</ArticleHeading>
         <BulletList items={[
-          <><Link to="/topics/reported-speech" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Reported Speech</Link> — Learn how questions change in indirect/reported speech.</>,
-          <><Link to="/topics/direct-and-indirect-speech" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Direct &amp; Indirect Speech</Link> — Understand quoting vs reporting questions.</>,
-          <><Link to="/topics/subject-verb-agreement" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Subject-Verb Agreement</Link> — Ensure correct agreement in question forms.</>,
-          <><Link to="/writing/how-to-vary-sentence-structure" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Varying Sentence Structure</Link> — Use questions to add variety to your writing.</>,
+          <><Link to="/topics/reported-speech/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Reported Speech</Link>, Learn how questions change in indirect/reported speech.</>,
+          <><Link to="/topics/direct-and-indirect-speech/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Direct &amp; Indirect Speech</Link>, Understand quoting vs reporting questions.</>,
+          <><Link to="/topics/subject-verb-agreement/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Subject-Verb Agreement</Link>, Ensure correct agreement in question forms.</>,
+          <><Link to="/writing/how-to-vary-sentence-structure/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Varying Sentence Structure</Link>, Use questions to add variety to your writing.</>,
         ]} />
 
         <div className="bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 rounded-xl p-6 mt-10">
@@ -2110,9 +2110,9 @@ much/many → more → most
 
         <ArticleHeading>Related Topics</ArticleHeading>
         <BulletList items={[
-          <><Link to="/topics/direct-and-indirect-speech" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Direct &amp; Indirect Speech</Link> — Compare quoted speech with reported speech in detail.</>,
-          <><Link to="/topics/question-formation" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Question Formation</Link> — Understand how question structure changes in reported speech.</>,
-          <><Link to="/topics/passive-voice" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Passive Voice</Link> — Learn how passive sentences are reported.</>,
+          <><Link to="/topics/direct-and-indirect-speech/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Direct &amp; Indirect Speech</Link>, Compare quoted speech with reported speech in detail.</>,
+          <><Link to="/topics/question-formation/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Question Formation</Link>, Understand how question structure changes in reported speech.</>,
+          <><Link to="/topics/passive-voice/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Passive Voice</Link>, Learn how passive sentences are reported.</>,
         ]} />
 
         <div className="bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 rounded-xl p-6 mt-10">
@@ -2171,10 +2171,10 @@ Indirect: He said that he was studying then.`}</CodeBlock>
 
         <ArticleHeading>Related Topics</ArticleHeading>
         <BulletList items={[
-          <><Link to="/topics/reported-speech" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Reported Speech</Link> — Deep dive into tense backshift rules and more examples.</>,
-          <><Link to="/topics/question-formation" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Question Formation</Link> — Learn how to report questions using indirect speech.</>,
-          <><Link to="/topics/passive-voice" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Passive Voice</Link> — Combine passive constructions with direct and indirect speech.</>,
-          <><Link to="/writing/how-to-vary-sentence-structure" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Varying Sentence Structure</Link> — Use direct and indirect speech to add variety to your writing.</>,
+          <><Link to="/topics/reported-speech/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Reported Speech</Link>, Deep dive into tense backshift rules and more examples.</>,
+          <><Link to="/topics/question-formation/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Question Formation</Link>, Learn how to report questions using indirect speech.</>,
+          <><Link to="/topics/passive-voice/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Passive Voice</Link>, Combine passive constructions with direct and indirect speech.</>,
+          <><Link to="/writing/how-to-vary-sentence-structure/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Varying Sentence Structure</Link>, Use direct and indirect speech to add variety to your writing.</>,
         ]} />
 
         <div className="bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 rounded-xl p-6 mt-10">
@@ -2201,7 +2201,7 @@ Indirect: He said that he was studying then.`}</CodeBlock>
       <>
         <div className="bg-blue-50 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-800 rounded-xl p-5 mb-8">
           <h2 className="font-heading text-lg font-bold text-blue-800 dark:text-blue-300 mb-2">Quick Summary</h2>
-          <p className="text-blue-900 dark:text-blue-200 text-base">A <strong>sentence fragment</strong> is an incomplete sentence — it's missing a subject, a verb, or a complete thought. Common types: dependent-clause fragments, <em>-ing</em> fragments, and phrases missing a subject or verb. Fix them by adding what's missing or attaching them to a nearby sentence.</p>
+          <p className="text-blue-900 dark:text-blue-200 text-base">A <strong>sentence fragment</strong> is an incomplete sentence, it's missing a subject, a verb, or a complete thought. Common types: dependent-clause fragments, <em>-ing</em> fragments, and phrases missing a subject or verb. Fix them by adding what's missing or attaching them to a nearby sentence.</p>
         </div>
         <ArticleParagraph>
           A sentence fragment is an incomplete sentence that is punctuated as if it were a complete sentence. It lacks a subject, a complete verb, or doesn't express a complete thought. While sometimes used for stylistic effect in creative writing, they are considered errors in formal and academic writing.
@@ -2226,9 +2226,9 @@ Indirect: He said that he was studying then.`}</CodeBlock>
 
         <ArticleHeading>Related Topics</ArticleHeading>
         <BulletList items={[
-          <><Link to="/topics/simple-and-complex-sentences" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Simple &amp; Complex Sentences</Link> — Understand what makes a complete sentence vs. a fragment.</>,
-          <><Link to="/topics/subject-verb-agreement" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Subject-Verb Agreement</Link> — A missing or mismatched verb can create fragments.</>,
-          <><Link to="/writing/how-to-vary-sentence-structure" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Varying Sentence Structure</Link> — Learn to vary sentences without accidentally creating fragments.</>,
+          <><Link to="/topics/simple-and-complex-sentences/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Simple &amp; Complex Sentences</Link>, Understand what makes a complete sentence vs. a fragment.</>,
+          <><Link to="/topics/subject-verb-agreement/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Subject-Verb Agreement</Link>, A missing or mismatched verb can create fragments.</>,
+          <><Link to="/writing/how-to-vary-sentence-structure/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Varying Sentence Structure</Link>, Learn to vary sentences without accidentally creating fragments.</>,
         ]} />
 
         <div className="bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 rounded-xl p-6 mt-10">
@@ -2236,7 +2236,7 @@ Indirect: He said that he was studying then.`}</CodeBlock>
           <div className="space-y-4">
             <div>
               <h3 className="font-semibold text-slate-700 dark:text-slate-300">What is a sentence fragment?</h3>
-              <p className="text-slate-600 dark:text-slate-400 mt-1">A sentence fragment is a group of words that is punctuated like a sentence but is missing a subject, a verb, or a complete thought. For example, "Because I forgot my keys" is a fragment — it needs an independent clause to be complete.</p>
+              <p className="text-slate-600 dark:text-slate-400 mt-1">A sentence fragment is a group of words that is punctuated like a sentence but is missing a subject, a verb, or a complete thought. For example, "Because I forgot my keys" is a fragment, it needs an independent clause to be complete.</p>
             </div>
             <div>
               <h3 className="font-semibold text-slate-700 dark:text-slate-300">Are sentence fragments always wrong?</h3>
@@ -2302,10 +2302,10 @@ Dependent Clause, + Independent Clause`}</CodeBlock>
 
         <ArticleHeading>Related Topics</ArticleHeading>
         <BulletList items={[
-          <><Link to="/topics/sentence-fragments" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Sentence Fragments</Link> — Learn what happens when a clause can't stand alone.</>,
-          <><Link to="/topics/passive-voice" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Passive Voice</Link> — Combine passive forms with complex sentence structures.</>,
-          <><Link to="/topics/conditionals" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Conditionals (If Clauses)</Link> — A key type of complex sentence with dependent clauses.</>,
-          <><Link to="/writing/how-to-vary-sentence-structure" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Varying Sentence Structure</Link> — Practical tips for mixing sentence types in your writing.</>,
+          <><Link to="/topics/sentence-fragments/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Sentence Fragments</Link>, Learn what happens when a clause can't stand alone.</>,
+          <><Link to="/topics/passive-voice/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Passive Voice</Link>, Combine passive forms with complex sentence structures.</>,
+          <><Link to="/topics/conditionals/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Conditionals (If Clauses)</Link>, A key type of complex sentence with dependent clauses.</>,
+          <><Link to="/writing/how-to-vary-sentence-structure/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Varying Sentence Structure</Link>, Practical tips for mixing sentence types in your writing.</>,
         ]} />
 
         <div className="bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 rounded-xl p-6 mt-10">
@@ -2317,7 +2317,7 @@ Dependent Clause, + Independent Clause`}</CodeBlock>
             </div>
             <div>
               <h3 className="font-semibold text-slate-700 dark:text-slate-300">Do I need a comma in a complex sentence?</h3>
-              <p className="text-slate-600 dark:text-slate-400 mt-1">Yes — but only when the dependent clause comes first. "Although it rained, we went out" needs a comma. "We went out although it rained" does not.</p>
+              <p className="text-slate-600 dark:text-slate-400 mt-1">Yes, but only when the dependent clause comes first. "Although it rained, we went out" needs a comma. "We went out although it rained" does not.</p>
             </div>
           </div>
         </div>
@@ -2363,7 +2363,7 @@ Dependent Clause, + Independent Clause`}</CodeBlock>
 
         <ArticleHeading>Zero Conditional: General Truths and Facts</ArticleHeading>
         <ArticleParagraph>
-            Use the zero conditional for things that are always true—scientific facts, general truths, and habitual actions.
+            Use the zero conditional for things that are always true-scientific facts, general truths, and habitual actions.
         </ArticleParagraph>
         <ArticleParagraph><strong>Structure:</strong> If + present simple, ... present simple</ArticleParagraph>
         <ExampleList items={[
@@ -2379,7 +2379,7 @@ Dependent Clause, + Independent Clause`}</CodeBlock>
 
         <ArticleHeading>First Conditional: Real/Likely Future Possibilities</ArticleHeading>
         <ArticleParagraph>
-            Use the first conditional for real possibilities in the future—situations that are likely to happen.
+            Use the first conditional for real possibilities in the future-situations that are likely to happen.
         </ArticleParagraph>
         <ArticleParagraph><strong>Structure:</strong> If + present simple, ... will + base verb</ArticleParagraph>
         <ExampleList items={[
@@ -2411,12 +2411,12 @@ Dependent Clause, + Independent Clause`}</CodeBlock>
             "If I were you, I would apologize."
         ]} />
 
-        <div className="bg-amber-50 dark:bg-amber-900/30 border border-amber-200 dark:border-amber-700 p-4 mb-6 rounded">
-          <p className="font-bold text-amber-800 dark:text-amber-200 mb-2">💡 "If I were" vs. "If I was"</p>
-          <p className="text-amber-700 dark:text-amber-300 mb-2">Traditionally, "were" is used for all subjects in second conditionals (subjunctive mood):</p>
-          <p className="text-amber-700 dark:text-amber-300">• "If I <strong>were</strong> rich..." (formal/traditional)</p>
-          <p className="text-amber-700 dark:text-amber-300">• "If I <strong>was</strong> rich..." (informal/colloquial)</p>
-          <p className="text-amber-700 dark:text-amber-300 mt-2">Both are acceptable in modern English, but "were" is preferred in formal writing and the phrase "If I were you."</p>
+        <div className="bg-teal-50 dark:bg-teal-900/30 border border-teal-200 dark:border-teal-700 p-4 mb-6 rounded">
+          <p className="font-bold text-teal-800 dark:text-teal-200 mb-2">💡 "If I were" vs. "If I was"</p>
+          <p className="text-teal-700 dark:text-teal-300 mb-2">Traditionally, "were" is used for all subjects in second conditionals (subjunctive mood):</p>
+          <p className="text-teal-700 dark:text-teal-300">• "If I <strong>were</strong> rich..." (formal/traditional)</p>
+          <p className="text-teal-700 dark:text-teal-300">• "If I <strong>was</strong> rich..." (informal/colloquial)</p>
+          <p className="text-teal-700 dark:text-teal-300 mt-2">Both are acceptable in modern English, but "were" is preferred in formal writing and the phrase "If I were you."</p>
         </div>
 
         <ArticleParagraph><strong>Variations with could and might:</strong></ArticleParagraph>
@@ -2428,7 +2428,7 @@ Dependent Clause, + Independent Clause`}</CodeBlock>
 
         <ArticleHeading>Third Conditional: Impossible Past Situations</ArticleHeading>
         <ArticleParagraph>
-            Use the third conditional to talk about hypothetical situations in the past—things that didn't happen but you're imagining if they had.
+            Use the third conditional to talk about hypothetical situations in the past-things that didn't happen but you're imagining if they had.
         </ArticleParagraph>
         <ArticleParagraph><strong>Structure:</strong> If + past perfect, ... would have + past participle</ArticleParagraph>
         <ExampleList items={[
@@ -2514,7 +2514,7 @@ Dependent Clause, + Independent Clause`}</CodeBlock>
           </div>
           <div className="bg-slate-50 dark:bg-slate-800 p-4 rounded border border-slate-200 dark:border-slate-700">
             <p className="font-semibold text-slate-800 dark:text-slate-200">What's the difference between first and second conditional?</p>
-            <p className="text-slate-600 dark:text-slate-400 mt-2">First conditional = real possibility: "If it rains, I'll take an umbrella." (It might rain—this is likely.) Second conditional = hypothetical: "If it rained diamonds, I'd be rich." (This won't happen—it's imaginary.)</p>
+            <p className="text-slate-600 dark:text-slate-400 mt-2">First conditional = real possibility: "If it rains, I'll take an umbrella." (It might rain-this is likely.) Second conditional = hypothetical: "If it rained diamonds, I'd be rich." (This won't happen-it's imaginary.)</p>
           </div>
           <div className="bg-slate-50 dark:bg-slate-800 p-4 rounded border border-slate-200 dark:border-slate-700">
             <p className="font-semibold text-slate-800 dark:text-slate-200">Can I use "could" instead of "would"?</p>
@@ -2591,10 +2591,10 @@ Dependent Clause, + Independent Clause`}</CodeBlock>
                 "She gave me the book, which I had been wanting to read. (The book has been specified already.)"
             ]} />
 
-            <div className="bg-amber-50 dark:bg-amber-900/30 border border-amber-200 dark:border-amber-700 p-4 mb-6 rounded">
-              <p className="font-bold text-amber-800 dark:text-amber-200 mb-3">⚠️ Commas Change Meaning!</p>
-              <p className="text-amber-700 dark:text-amber-300 mb-2"><strong>No commas (defining):</strong> "The students who passed the exam can leave."<br/>→ Only the students who passed can leave. (Others must stay.)</p>
-              <p className="text-amber-700 dark:text-amber-300"><strong>With commas (non-defining):</strong> "The students, who passed the exam, can leave."<br/>→ All students passed, and all can leave. (Extra info.)</p>
+            <div className="bg-teal-50 dark:bg-teal-900/30 border border-teal-200 dark:border-teal-700 p-4 mb-6 rounded">
+              <p className="font-bold text-teal-800 dark:text-teal-200 mb-3">⚠️ Commas Change Meaning!</p>
+              <p className="text-teal-700 dark:text-teal-300 mb-2"><strong>No commas (defining):</strong> "The students who passed the exam can leave."<br/>→ Only the students who passed can leave. (Others must stay.)</p>
+              <p className="text-teal-700 dark:text-teal-300"><strong>With commas (non-defining):</strong> "The students, who passed the exam, can leave."<br/>→ All students passed, and all can leave. (Extra info.)</p>
             </div>
 
             <ArticleHeading>That vs. Which</ArticleHeading>
@@ -2728,7 +2728,7 @@ Dependent Clause, + Independent Clause`}</CodeBlock>
         <>
             <div className="bg-blue-50 dark:bg-blue-900/30 border-l-4 border-blue-500 p-4 mb-6 rounded-r">
               <p className="font-semibold text-blue-800 dark:text-blue-200 mb-2">Quick Summary</p>
-              <p className="text-blue-700 dark:text-blue-300 text-sm">The comma (,) is one of the most frequently used—and misused—punctuation marks in English. It separates elements within sentences, creates pauses for clarity, and prevents misreading. Mastering comma rules is essential for clear, professional writing.</p>
+              <p className="text-blue-700 dark:text-blue-300 text-sm">The comma (,) is one of the most frequently used-and misused-punctuation marks in English. It separates elements within sentences, creates pauses for clarity, and prevents misreading. Mastering comma rules is essential for clear, professional writing.</p>
             </div>
 
             <ArticleParagraph>
@@ -2749,14 +2749,14 @@ Dependent Clause, + Independent Clause`}</CodeBlock>
             <ArticleParagraph>
                 <strong>Why the Oxford Comma Matters:</strong> Consider the difference between these two sentences:
             </ArticleParagraph>
-            <div className="bg-amber-50 dark:bg-amber-900/30 border border-amber-200 dark:border-amber-700 p-4 mb-6 rounded">
-              <p className="text-amber-800 dark:text-amber-200"><strong>Without Oxford comma:</strong> "I love my parents, Batman and Wonder Woman." (This suggests your parents ARE Batman and Wonder Woman!)</p>
-              <p className="text-amber-800 dark:text-amber-200 mt-2"><strong>With Oxford comma:</strong> "I love my parents, Batman, and Wonder Woman." (This clearly lists three separate things you love.)</p>
+            <div className="bg-teal-50 dark:bg-teal-900/30 border border-teal-200 dark:border-teal-700 p-4 mb-6 rounded">
+              <p className="text-teal-800 dark:text-teal-200"><strong>Without Oxford comma:</strong> "I love my parents, Batman and Wonder Woman." (This suggests your parents ARE Batman and Wonder Woman!)</p>
+              <p className="text-teal-800 dark:text-teal-200 mt-2"><strong>With Oxford comma:</strong> "I love my parents, Batman, and Wonder Woman." (This clearly lists three separate things you love.)</p>
             </div>
 
             <ArticleHeading>2. Commas Before Coordinating Conjunctions</ArticleHeading>
             <ArticleParagraph>
-                When joining two independent clauses (complete sentences) with a coordinating conjunction (for, and, nor, but, or, yet, so — remember FANBOYS), place a comma before the conjunction.
+                When joining two independent clauses (complete sentences) with a coordinating conjunction (for, and, nor, but, or, yet, so, remember FANBOYS), place a comma before the conjunction.
             </ArticleParagraph>
             <ExampleList items={[
                 "I wanted to go to the concert, but the tickets were sold out.",
@@ -2769,7 +2769,7 @@ Dependent Clause, + Independent Clause`}</CodeBlock>
                 <strong>Important:</strong> Do NOT use a comma if what follows the conjunction is not an independent clause:
             </ArticleParagraph>
             <ExampleList items={[
-                "CORRECT: She studied hard and passed the exam. (no comma needed — 'passed the exam' is not a complete sentence)",
+                "CORRECT: She studied hard and passed the exam. (no comma needed, 'passed the exam' is not a complete sentence)",
                 "INCORRECT: She studied hard, and passed the exam."
             ]} />
 
@@ -2801,7 +2801,7 @@ Dependent Clause, + Independent Clause`}</CodeBlock>
 
             <ArticleHeading>4. Commas with Non-Essential Information</ArticleHeading>
             <ArticleParagraph>
-                Use commas to set off non-essential (non-restrictive) information—words, phrases, or clauses that add extra detail but aren't necessary to identify what you're talking about. If you can remove the information without changing the core meaning, use commas.
+                Use commas to set off non-essential (non-restrictive) information-words, phrases, or clauses that add extra detail but aren't necessary to identify what you're talking about. If you can remove the information without changing the core meaning, use commas.
             </ArticleParagraph>
             <ExampleList items={[
                 "My sister, who lives in New York, is a talented writer. (I only have one sister; 'who lives in New York' is extra information)",
@@ -2814,7 +2814,7 @@ Dependent Clause, + Independent Clause`}</CodeBlock>
             </ArticleParagraph>
             <ExampleList items={[
                 "The sister who lives in New York is visiting next week. (I have multiple sisters; I'm specifying WHICH one)",
-                "The students who studied passed the exam. (Only the students who studied—not all students)"
+                "The students who studied passed the exam. (Only the students who studied-not all students)"
             ]} />
 
             <ArticleHeading>5. Commas with Appositives</ArticleHeading>
@@ -2838,11 +2838,11 @@ Dependent Clause, + Independent Clause`}</CodeBlock>
                 "Ladies and gentlemen, welcome to the show.",
                 "Thank you, Mom, for all your support."
             ]} />
-            <div className="bg-amber-50 dark:bg-amber-900/30 border border-amber-200 dark:border-amber-700 p-4 mb-6 rounded">
-              <p className="text-amber-800 dark:text-amber-200"><strong>The Famous "Let's eat" Example:</strong></p>
-              <p className="text-amber-800 dark:text-amber-200 mt-2">"Let's eat, Grandma!" (You're inviting Grandma to eat.)</p>
-              <p className="text-amber-800 dark:text-amber-200 mt-1">"Let's eat Grandma!" (You're suggesting eating Grandma! 😱)</p>
-              <p className="text-amber-700 dark:text-amber-300 mt-2 text-sm italic">Commas save lives!</p>
+            <div className="bg-teal-50 dark:bg-teal-900/30 border border-teal-200 dark:border-teal-700 p-4 mb-6 rounded">
+              <p className="text-teal-800 dark:text-teal-200"><strong>The Famous "Let's eat" Example:</strong></p>
+              <p className="text-teal-800 dark:text-teal-200 mt-2">"Let's eat, Grandma!" (You're inviting Grandma to eat.)</p>
+              <p className="text-teal-800 dark:text-teal-200 mt-1">"Let's eat Grandma!" (You're suggesting eating Grandma! 😱)</p>
+              <p className="text-teal-700 dark:text-teal-300 mt-2 text-sm italic">Commas save lives!</p>
             </div>
 
             <ArticleHeading>7. Commas with Quotations</ArticleHeading>
@@ -2910,7 +2910,7 @@ Dependent Clause, + Independent Clause`}</CodeBlock>
                 <><strong>Don't separate subject and verb with a comma:</strong> WRONG: "The tall man in the blue coat, walked quickly." CORRECT: "The tall man in the blue coat walked quickly."</>,
                 <><strong>Don't use a comma before "that" in essential clauses:</strong> WRONG: "She believes, that he is innocent." CORRECT: "She believes that he is innocent."</>,
                 <><strong>Don't use a comma after "and" or "but":</strong> WRONG: "I went to the store, and, bought some milk." CORRECT: "I went to the store and bought some milk."</>,
-                <><strong>Don't overuse commas:</strong> Too many commas can make writing choppy and hard to read. When in doubt, read the sentence aloud—natural pauses often indicate where commas should go.</>,
+                <><strong>Don't overuse commas:</strong> Too many commas can make writing choppy and hard to read. When in doubt, read the sentence aloud-natural pauses often indicate where commas should go.</>,
                 <><strong>Don't forget commas in complex sentences:</strong> Long sentences with multiple clauses often need commas for clarity.</>
             ]}/>
 
@@ -2968,7 +2968,7 @@ Dependent Clause, + Independent Clause`}</CodeBlock>
         </div>
 
         <ArticleParagraph>
-          The apostrophe is a small punctuation mark with significant responsibilities in English. While it may seem straightforward, apostrophe misuse is one of the most common grammatical errors—appearing on shop signs, in professional documents, and throughout the internet. Understanding when to use (and when NOT to use) apostrophes is essential for clear, correct writing.
+          The apostrophe is a small punctuation mark with significant responsibilities in English. While it may seem straightforward, apostrophe misuse is one of the most common grammatical errors-appearing on shop signs, in professional documents, and throughout the internet. Understanding when to use (and when NOT to use) apostrophes is essential for clear, correct writing.
         </ArticleParagraph>
 
         <ArticleHeading>1. Apostrophes for Possession (Showing Ownership)</ArticleHeading>
@@ -3018,8 +3018,8 @@ Dependent Clause, + Independent Clause`}</CodeBlock>
 
         <ArticleParagraph><strong>Joint vs. Individual Possession:</strong></ArticleParagraph>
         <ExampleList items={[
-          "Jack and Jill's bucket (they share ONE bucket) — apostrophe on last name only",
-          "Jack's and Jill's buckets (each has their OWN bucket) — apostrophe on both names",
+          "Jack and Jill's bucket (they share ONE bucket), apostrophe on last name only",
+          "Jack's and Jill's buckets (each has their OWN bucket), apostrophe on both names",
           "Mom and Dad's car (one car they share)",
           "Mom's and Dad's cars (separate cars)"
         ]} />
@@ -3074,13 +3074,13 @@ Dependent Clause, + Independent Clause`}</CodeBlock>
 
         <ArticleHeading>4. The Most Confusing Apostrophe Pairs</ArticleHeading>
         
-        <div className="bg-amber-50 dark:bg-amber-900/30 border border-amber-200 dark:border-amber-700 p-4 mb-6 rounded">
-          <p className="font-bold text-amber-800 dark:text-amber-200 mb-3">⚠️ It's vs. Its — The #1 Apostrophe Mistake</p>
-          <p className="text-amber-700 dark:text-amber-300 mb-2"><strong>it's</strong> = contraction of "it is" or "it has"</p>
-          <p className="text-amber-700 dark:text-amber-300 mb-2"><strong>its</strong> = possessive pronoun (like his, her, their)</p>
-          <p className="text-amber-700 dark:text-amber-300 mt-3"><strong>Test:</strong> Replace with "it is." If it makes sense, use "it's." If not, use "its."</p>
-          <p className="text-amber-700 dark:text-amber-300 mt-2">• "The dog wagged <strong>its</strong> tail." (The dog wagged it is tail? NO → "its")</p>
-          <p className="text-amber-700 dark:text-amber-300">• "<strong>It's</strong> raining outside." (It is raining outside? YES → "it's")</p>
+        <div className="bg-teal-50 dark:bg-teal-900/30 border border-teal-200 dark:border-teal-700 p-4 mb-6 rounded">
+          <p className="font-bold text-teal-800 dark:text-teal-200 mb-3">⚠️ It's vs. Its, The #1 Apostrophe Mistake</p>
+          <p className="text-teal-700 dark:text-teal-300 mb-2"><strong>it's</strong> = contraction of "it is" or "it has"</p>
+          <p className="text-teal-700 dark:text-teal-300 mb-2"><strong>its</strong> = possessive pronoun (like his, her, their)</p>
+          <p className="text-teal-700 dark:text-teal-300 mt-3"><strong>Test:</strong> Replace with "it is." If it makes sense, use "it's." If not, use "its."</p>
+          <p className="text-teal-700 dark:text-teal-300 mt-2">• "The dog wagged <strong>its</strong> tail." (The dog wagged it is tail? NO → "its")</p>
+          <p className="text-teal-700 dark:text-teal-300">• "<strong>It's</strong> raining outside." (It is raining outside? YES → "it's")</p>
         </div>
 
         <ArticleParagraph><strong>Other Commonly Confused Pairs:</strong></ArticleParagraph>
@@ -3192,7 +3192,7 @@ Dependent Clause, + Independent Clause`}</CodeBlock>
         <ArticleHeading>Part 1: The Semicolon (;)</ArticleHeading>
         
         <ArticleParagraph>
-          The semicolon is stronger than a comma but weaker than a period. Think of it as a "soft period"—it indicates a closer relationship between two ideas than a period would, but maintains the separation between distinct thoughts.
+          The semicolon is stronger than a comma but weaker than a period. Think of it as a "soft period"-it indicates a closer relationship between two ideas than a period would, but maintains the separation between distinct thoughts.
         </ArticleParagraph>
 
         <ArticleHeading>Rule 1: Joining Related Independent Clauses</ArticleHeading>
@@ -3207,11 +3207,11 @@ Dependent Clause, + Independent Clause`}</CodeBlock>
           "The project was challenging; however, we completed it on time."
         ]} />
 
-        <div className="bg-amber-50 dark:bg-amber-900/30 border border-amber-200 dark:border-amber-700 p-4 mb-6 rounded">
-          <p className="font-bold text-amber-800 dark:text-amber-200 mb-2">⚠️ Important Rule</p>
-          <p className="text-amber-700 dark:text-amber-300">Both clauses joined by a semicolon must be complete sentences (independent clauses). Each side must have a subject and verb and be able to stand alone.</p>
-          <p className="text-amber-700 dark:text-amber-300 mt-2">CORRECT: "I love pizza; it's my favorite food."</p>
-          <p className="text-amber-700 dark:text-amber-300">WRONG: "I love pizza; especially pepperoni." (not a complete sentence)</p>
+        <div className="bg-teal-50 dark:bg-teal-900/30 border border-teal-200 dark:border-teal-700 p-4 mb-6 rounded">
+          <p className="font-bold text-teal-800 dark:text-teal-200 mb-2">⚠️ Important Rule</p>
+          <p className="text-teal-700 dark:text-teal-300">Both clauses joined by a semicolon must be complete sentences (independent clauses). Each side must have a subject and verb and be able to stand alone.</p>
+          <p className="text-teal-700 dark:text-teal-300 mt-2">CORRECT: "I love pizza; it's my favorite food."</p>
+          <p className="text-teal-700 dark:text-teal-300">WRONG: "I love pizza; especially pepperoni." (not a complete sentence)</p>
         </div>
 
         <ArticleHeading>Rule 2: With Transitional Words</ArticleHeading>
@@ -3259,7 +3259,7 @@ Dependent Clause, + Independent Clause`}</CodeBlock>
         <ArticleHeading>Part 2: The Colon (:)</ArticleHeading>
         
         <ArticleParagraph>
-          The colon is an announcing punctuation mark—it signals that something important is coming. It says to the reader: "Here's what I'm talking about" or "Here's what I mean."
+          The colon is an announcing punctuation mark-it signals that something important is coming. It says to the reader: "Here's what I'm talking about" or "Here's what I mean."
         </ArticleParagraph>
 
         <ArticleHeading>Rule 1: Introducing a List</ArticleHeading>
@@ -3383,7 +3383,7 @@ Dependent Clause, + Independent Clause`}</CodeBlock>
         </div>
 
         <ArticleParagraph>
-          Quotation marks are punctuation marks that set off direct speech, exact quotations, and titles of certain works. While they may seem straightforward, quotation marks have nuanced rules—especially regarding punctuation placement—that differ between American and British English. Understanding these rules is crucial for academic papers, creative writing, journalism, and professional documents.
+          Quotation marks are punctuation marks that set off direct speech, exact quotations, and titles of certain works. While they may seem straightforward, quotation marks have nuanced rules-especially regarding punctuation placement-that differ between American and British English. Understanding these rules is crucial for academic papers, creative writing, journalism, and professional documents.
         </ArticleParagraph>
 
         <ArticleHeading>1. Direct Quotations</ArticleHeading>
@@ -3433,8 +3433,8 @@ Dependent Clause, + Independent Clause`}</CodeBlock>
           "\"I don't know,\" he replied. (comma inside)",
           "She called it a \"masterpiece.\" (period inside)",
           "The article discusses \"quantum computing\"; however, it's quite technical. (semicolon outside)",
-          "Have you read \"War and Peace\"? (question mark outside—not part of the title)",
-          "She asked, \"What time is it?\" (question mark inside—part of the quote)"
+          "Have you read \"War and Peace\"? (question mark outside-not part of the title)",
+          "She asked, \"What time is it?\" (question mark inside-part of the quote)"
         ]} />
 
         <ArticleHeading>3. Single vs. Double Quotation Marks</ArticleHeading>
@@ -3494,8 +3494,8 @@ Dependent Clause, + Independent Clause`}</CodeBlock>
           "His \"help\" only made things worse.",
           "The company's \"voluntary\" overtime was anything but optional."
         ]} />
-        <div className="bg-amber-50 dark:bg-amber-900/30 border border-amber-200 dark:border-amber-700 p-4 mb-6 rounded">
-          <p className="text-amber-800 dark:text-amber-200">⚠️ <strong>Warning:</strong> Avoid overusing scare quotes. They can seem sarcastic or passive-aggressive. Use them sparingly and intentionally.</p>
+        <div className="bg-teal-50 dark:bg-teal-900/30 border border-teal-200 dark:border-teal-700 p-4 mb-6 rounded">
+          <p className="text-teal-800 dark:text-teal-200">⚠️ <strong>Warning:</strong> Avoid overusing scare quotes. They can seem sarcastic or passive-aggressive. Use them sparingly and intentionally.</p>
         </div>
 
         <ArticleParagraph><strong>Words being defined or introduced:</strong></ArticleParagraph>
@@ -3556,7 +3556,7 @@ Dependent Clause, + Independent Clause`}</CodeBlock>
             <p className="text-slate-600 dark:text-slate-400 mt-2">In American English, use double quotation marks for regular quotes and single for quotes within quotes. British English typically does the opposite. Follow the style guide for your context (academic, journalistic, etc.).</p>
           </div>
           <div className="bg-slate-50 dark:bg-slate-800 p-4 rounded border border-slate-200 dark:border-slate-700">
-            <p className="font-semibold text-slate-800 dark:text-slate-200">Where do I put the period—inside or outside the quotation marks?</p>
+            <p className="font-semibold text-slate-800 dark:text-slate-200">Where do I put the period-inside or outside the quotation marks?</p>
             <p className="text-slate-600 dark:text-slate-400 mt-2">In American English, periods always go inside closing quotation marks. In British English, it depends on whether the period is part of the quoted material (logical punctuation).</p>
           </div>
           <div className="bg-slate-50 dark:bg-slate-800 p-4 rounded border border-slate-200 dark:border-slate-700">
@@ -4025,7 +4025,7 @@ Wh-cleft: Why she resigned was because of the stress.`}</CodeBlock>
         </div>
 
         <ArticleParagraph>
-          <strong>Related topics:</strong> <Link to="/topics/past-simple" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Past Simple Tense</Link> · <Link to="/topics/wish-vs-hope" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Wish vs Hope</Link> · <Link to="/topics/conditionals" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Conditionals</Link>
+          <strong>Related topics:</strong> <Link to="/topics/past-simple/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Past Simple Tense</Link> · <Link to="/topics/wish-vs-hope/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Wish vs Hope</Link> · <Link to="/topics/conditionals/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Conditionals</Link>
         </ArticleParagraph>
       </>
     ),
@@ -4085,7 +4085,7 @@ Wh-cleft: Why she resigned was because of the stress.`}</CodeBlock>
         
         <ArticleHeading>Wish + Past Perfect (Past Unreal)</ArticleHeading>
         <ArticleParagraph>
-          For regrets about the past—things you wish had happened differently but didn't.
+          For regrets about the past-things you wish had happened differently but didn't.
         </ArticleParagraph>
         <ExampleList items={[
           "I wish I had studied harder. (but I didn't)",
@@ -4134,12 +4134,12 @@ Wish (impossible/unlikely now):
           </div>
           <div className="bg-slate-50 dark:bg-slate-700/50 p-5 rounded-lg">
             <h4 className="font-semibold text-slate-900 dark:text-slate-100 mb-2">Why does "wish" use past tense for present situations?</h4>
-            <p className="text-slate-700 dark:text-slate-300">English uses past tense after "wish" to signal unreality — the situation is contrary to fact. "I wish I were taller" uses "were" (past) to show this is not true now. This is called the <strong>subjunctive mood</strong>.</p>
+            <p className="text-slate-700 dark:text-slate-300">English uses past tense after "wish" to signal unreality, the situation is contrary to fact. "I wish I were taller" uses "were" (past) to show this is not true now. This is called the <strong>subjunctive mood</strong>.</p>
           </div>
         </div>
 
         <ArticleParagraph>
-          <strong>Related topics:</strong> <Link to="/topics/used-to-vs-would" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Used To vs Would</Link> · <Link to="/topics/conditionals" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Conditionals (If Clauses)</Link> · <Link to="/topics/subjunctive-mood" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Subjunctive Mood</Link>
+          <strong>Related topics:</strong> <Link to="/topics/used-to-vs-would/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Used To vs Would</Link> · <Link to="/topics/conditionals/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Conditionals (If Clauses)</Link> · <Link to="/topics/subjunctive-mood/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Subjunctive Mood</Link>
         </ArticleParagraph>
       </>
     ),

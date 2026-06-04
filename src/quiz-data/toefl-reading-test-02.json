@@ -1,0 +1,325 @@
+{
+  "test_id": "toefl-reading-test-02",
+  "exam": "TOEFL iBT",
+  "section": "Reading",
+  "format_year": 2026,
+  "title": "TOEFL Reading Practice Test 2 (2026 Format)",
+  "description": "Full TOEFL Reading section in the 2026 format: one Complete the Words task, two Daily Life reading tasks, and three Academic passages with all 2026 question types.",
+  "time_limit_seconds": 2100,
+  "total_questions": 30,
+  "instructions": "You have 35 minutes to complete all six tasks. You may navigate freely between tasks before submitting. Once you submit, the test will be scored automatically and you will see explanations.",
+  "tasks": [
+    {
+      "task_id": "t1",
+      "type": "complete_words",
+      "title": "Task 1 — Complete the Words",
+      "directions": "Read the short paragraph. Some words have missing letters, shown as a token with the first few letters given. Type the complete word for each blank.",
+      "passage": "Astronomers study the {{w1}} that fill the night sky and the {{w2}} of motion that govern them. Using powerful {{w3}}, they can detect light from {{w4}} stars and distant galaxies. Every new {{w5}} adds to our {{w6}} of the universe. Some scientists focus on the {{w7}} of planets, while others investigate the {{w8}} between gravity and time. Their {{w9}} often require years of careful {{w10}} before any clear pattern emerges.",
+      "items": [
+        { "item_id": "w1", "given": "obj", "answer": "objects", "blanks": 4 },
+        { "item_id": "w2", "given": "law", "answer": "laws", "blanks": 1 },
+        { "item_id": "w3", "given": "tel", "answer": "telescopes", "blanks": 7 },
+        { "item_id": "w4", "given": "fai", "answer": "faint", "blanks": 2 },
+        { "item_id": "w5", "given": "dis", "answer": "discovery", "blanks": 6 },
+        { "item_id": "w6", "given": "und", "answer": "understanding", "blanks": 10 },
+        { "item_id": "w7", "given": "for", "answer": "formation", "blanks": 6 },
+        { "item_id": "w8", "given": "rel", "answer": "relationship", "blanks": 9 },
+        { "item_id": "w9", "given": "exp", "answer": "experiments", "blanks": 8 },
+        { "item_id": "w10", "given": "obs", "answer": "observation", "blanks": 8 }
+      ]
+    },
+    {
+      "task_id": "t2",
+      "type": "daily_life",
+      "title": "Task 2 — Daily Life Reading",
+      "context_label": "Community noticeboard",
+      "passage": "SATURDAY CHARITY RUN — REGISTRATION OPEN\n\nThe Pine Valley Community Center will host its annual 5K charity run on Saturday, October 12. All proceeds will support the local food bank. Registration costs $15 for adults and $5 for students with a valid ID. You can register online until October 10 or in person on race day starting at 7:00 a.m. The race itself begins at 8:30 a.m. sharp.\n\nAll participants will receive a T-shirt, a water bottle, and breakfast after the run. Free childcare will be available at the community center for children aged 3 to 10 during the event. Parking is limited near the start line, so we strongly encourage runners to use the free shuttle from the high school parking lot, which will operate between 7:00 and 10:00 a.m.",
+      "questions": [
+        {
+          "question_id": "t2q1",
+          "type": "factual",
+          "prompt": "How much does it cost a student to register for the race?",
+          "options": { "A": "$5", "B": "$10", "C": "$15", "D": "It is free with an ID." },
+          "correct": ["A"],
+          "explanation": "The notice says: 'Registration costs $15 for adults and $5 for students with a valid ID.'"
+        },
+        {
+          "question_id": "t2q2",
+          "type": "inference",
+          "prompt": "Why does the notice recommend the shuttle from the high school?",
+          "options": {
+            "A": "Because the race begins at the high school",
+            "B": "Because parking near the start line is limited",
+            "C": "Because the shuttle is faster than running",
+            "D": "Because students get a discount on the shuttle"
+          },
+          "correct": ["B"],
+          "explanation": "The text explicitly says 'Parking is limited near the start line, so we strongly encourage runners to use the free shuttle.'"
+        },
+        {
+          "question_id": "t2q3",
+          "type": "negative_factual",
+          "prompt": "Which of the following is NOT mentioned as something participants will receive?",
+          "options": { "A": "A T-shirt", "B": "A water bottle", "C": "Breakfast", "D": "A finisher's medal" },
+          "correct": ["D"],
+          "explanation": "The notice lists T-shirt, water bottle, and breakfast. A medal is never mentioned."
+        }
+      ]
+    },
+    {
+      "task_id": "t3",
+      "type": "daily_life",
+      "title": "Task 3 — Daily Life Reading",
+      "context_label": "Apartment building memo",
+      "passage": "TO: All Residents of Building C\nFROM: Building Management\nSUBJECT: Elevator Maintenance — Monday, May 6\n\nDear Residents,\n\nPlease be aware that our main elevator will be out of service from 9:00 a.m. to 4:00 p.m. on Monday, May 6 for required annual maintenance. The smaller service elevator at the back of the building will remain operational throughout the day, but it can only carry up to four people at a time, so please expect short waits during peak hours.\n\nResidents who need to move large items (such as furniture or appliances) are kindly asked to schedule this for another day. If you have a delivery scheduled for Monday, we recommend asking the courier to leave the package at the front desk. Thank you for your patience.",
+      "questions": [
+        {
+          "question_id": "t3q1",
+          "type": "factual",
+          "prompt": "What will happen on Monday, May 6?",
+          "options": {
+            "A": "Both elevators will be closed all day.",
+            "B": "The main elevator will be out of service for several hours.",
+            "C": "All deliveries will be refused.",
+            "D": "Residents will be moved to another building."
+          },
+          "correct": ["B"],
+          "explanation": "The memo states the main elevator will be out of service from 9:00 a.m. to 4:00 p.m."
+        },
+        {
+          "question_id": "t3q2",
+          "type": "rhetorical_purpose",
+          "prompt": "Why does management mention the four-person limit on the service elevator?",
+          "options": {
+            "A": "To warn residents that there may be short waits",
+            "B": "To explain why the maintenance is needed",
+            "C": "To advertise a new building rule",
+            "D": "To complain about the size of the elevator"
+          },
+          "correct": ["A"],
+          "explanation": "The text directly follows the limit with 'so please expect short waits during peak hours.'"
+        }
+      ]
+    },
+    {
+      "task_id": "t4",
+      "type": "academic",
+      "title": "Task 4 — Academic Reading: The Birth of Modern Astronomy",
+      "passage": "For most of human history, people believed that the Earth sat motionless at the center of the universe. This view, defended by ancient Greek thinkers and later by the medieval Church, seemed to match daily experience: the Sun and stars appeared to move across the sky, while the ground beneath one's feet stayed perfectly still. [[1]] In the sixteenth century, however, the Polish astronomer Nicolaus Copernicus proposed a radically different model. He argued that the Sun, not the Earth, lay at the center of the system, and that the Earth was simply one of several planets orbiting around it.\n\nAt first, Copernicus's idea attracted little attention. [[2]] His book was technical, and he himself was cautious, presenting the new model as a mathematical convenience rather than a description of reality. The situation changed dramatically with the invention of the telescope in the early 1600s. [[3]] Using one of the first such instruments, the Italian scientist Galileo Galilei observed mountains on the Moon, spots on the Sun, and four moons orbiting the planet Jupiter. These discoveries strongly suggested that the heavens were neither perfect nor unchanging, and that not everything revolved around the Earth.\n\nGalileo's findings provoked fierce opposition. [[4]] Religious authorities saw a threat to long-standing teachings, and many scholars refused to accept observations that contradicted ancient texts. Despite the controversy, the new ideas could not be suppressed for long. Later in the same century, Johannes Kepler showed that planets move in ellipses, and Isaac Newton explained these motions through a universal law of gravity. Together, these advances replaced the old Earth-centered universe with a vast, mathematically described cosmos in which our planet was merely one small participant.",
+      "questions": [
+        {
+          "question_id": "t4q1",
+          "type": "vocabulary",
+          "prompt": "The word 'radically' in paragraph 1 is closest in meaning to",
+          "target_word": "radically",
+          "options": { "A": "slightly", "B": "fundamentally", "C": "secretly", "D": "incorrectly" },
+          "correct": ["B"],
+          "explanation": "'Radically different' here means fundamentally different — at the root."
+        },
+        {
+          "question_id": "t4q2",
+          "type": "factual",
+          "prompt": "According to paragraph 2, why did Copernicus's idea attract little attention at first?",
+          "options": {
+            "A": "It was written in a language nobody could read.",
+            "B": "His book was technical and presented the model cautiously.",
+            "C": "The Church immediately banned all copies of his work.",
+            "D": "Telescopes had not yet been invented."
+          },
+          "correct": ["B"],
+          "explanation": "The paragraph states: 'His book was technical, and he himself was cautious...'"
+        },
+        {
+          "question_id": "t4q3",
+          "type": "negative_factual",
+          "prompt": "All of the following are mentioned as observations made by Galileo EXCEPT",
+          "options": {
+            "A": "Mountains on the Moon",
+            "B": "Spots on the Sun",
+            "C": "Moons orbiting Jupiter",
+            "D": "Rings around Saturn"
+          },
+          "correct": ["D"],
+          "explanation": "The passage lists the first three. Rings around Saturn are not mentioned."
+        },
+        {
+          "question_id": "t4q4",
+          "type": "insert_text",
+          "prompt": "Where would the following sentence best fit in paragraph 2 and 3? \"This new tool allowed scientists to look more closely at the heavens than ever before.\"",
+          "options": {
+            "A": "Position [[1]]",
+            "B": "Position [[2]]",
+            "C": "Position [[3]]",
+            "D": "Position [[4]]"
+          },
+          "correct": ["C"],
+          "explanation": "Position [[3]] immediately follows the mention of the telescope's invention; the sentence about a 'new tool' fits there naturally."
+        },
+        {
+          "question_id": "t4q5",
+          "type": "prose_summary",
+          "prompt": "An introductory sentence for a brief summary is provided below. Complete the summary by selecting the THREE answer choices that express the most important ideas in the passage.\n\nIntroductory sentence: The shift from an Earth-centered to a Sun-centered view of the universe took place gradually between the 1500s and 1700s.",
+          "select_count": 3,
+          "options": {
+            "A": "Copernicus proposed that the Earth orbits the Sun, but his idea initially attracted little attention.",
+            "B": "Galileo's telescopic discoveries provided strong evidence against the older Earth-centered model.",
+            "C": "Ancient Greek thinkers had already proven that the Earth orbited the Sun.",
+            "D": "Kepler and Newton later explained planetary motion with mathematics and gravity.",
+            "E": "Most early telescopes were too weak to show anything useful in the night sky.",
+            "F": "The Sun is now known to be the largest object in the Milky Way galaxy."
+          },
+          "correct": ["A", "B", "D"],
+          "explanation": "A, B, and D capture the main historical progression. C is factually wrong in the passage's context, E is contradicted by Galileo's discoveries, and F is unrelated to the passage."
+        }
+      ]
+    },
+    {
+      "task_id": "t5",
+      "type": "academic",
+      "title": "Task 5 — Academic Reading: Reading the Cave Walls",
+      "passage": "The walls of caves in southern Europe contain some of the oldest known paintings ever made by human beings. [[1]] In sites such as Lascaux in France and Altamira in Spain, prehistoric artists used charcoal, iron oxide, and other natural pigments to depict bison, horses, deer, and occasional human figures. Many of these images are remarkably detailed: animals are shown in motion, with carefully observed muscles and accurate proportions. The earliest of them are at least 17,000 years old, and some recent dating suggests that simpler markings in nearby caves may be even older.\n\nWhy these images were created is far from clear. [[2]] One popular early theory held that the paintings were a form of 'hunting magic,' intended to bring success in the hunt. Another idea suggests that the caves served as ceremonial spaces for initiation rituals, while a more recent proposal connects the images to early forms of storytelling and shared memory. [[3]] None of these explanations can be confirmed, since the people who made the art left no written records.\n\nWhat is clear is that creating the paintings was not a casual activity. [[4]] Many of the images are located deep inside caves, far from any natural light, which means the artists had to bring their own light sources and work in tight, dangerous spaces. Some pigments came from sources hundreds of kilometers away, suggesting trade or long journeys. Whatever their purpose, the paintings show that the people who made them possessed not only artistic skill but also planning, cooperation, and a strong reason to leave a lasting mark on the walls around them.",
+      "questions": [
+        {
+          "question_id": "t5q1",
+          "type": "vocabulary",
+          "prompt": "The word 'depict' in paragraph 1 is closest in meaning to",
+          "target_word": "depict",
+          "options": { "A": "destroy", "B": "represent", "C": "hunt", "D": "compare" },
+          "correct": ["B"],
+          "explanation": "To depict is to show or represent something in a picture."
+        },
+        {
+          "question_id": "t5q2",
+          "type": "reference",
+          "prompt": "The word 'them' in paragraph 1 refers to",
+          "target_word": "them",
+          "options": { "A": "the cave walls", "B": "the prehistoric artists", "C": "the paintings", "D": "the natural pigments" },
+          "correct": ["C"],
+          "explanation": "'The earliest of them are at least 17,000 years old' — 'them' refers to the images/paintings just described."
+        },
+        {
+          "question_id": "t5q3",
+          "type": "inference",
+          "prompt": "What can be inferred from paragraph 3 about the artists who made the paintings?",
+          "options": {
+            "A": "They worked alone and without preparation.",
+            "B": "They had organized social and practical resources.",
+            "C": "They lived inside the caves all year round.",
+            "D": "They could write down their reasons for painting."
+          },
+          "correct": ["B"],
+          "explanation": "The mention of long journeys for pigments, light sources, and tight spaces suggests planning and cooperation."
+        },
+        {
+          "question_id": "t5q4",
+          "type": "sentence_simplification",
+          "prompt": "Which of the following best expresses the essential information in the highlighted sentence? \"Whatever their purpose, the paintings show that the people who made them possessed not only artistic skill but also planning, cooperation, and a strong reason to leave a lasting mark on the walls around them.\"",
+          "options": {
+            "A": "The paintings prove that prehistoric artists were better than modern artists.",
+            "B": "Regardless of why they were made, the paintings reveal that their creators were skilled, organized, and deeply motivated.",
+            "C": "Nobody knows the purpose of the paintings, so we cannot say anything about the artists.",
+            "D": "The artists left marks on cave walls only because they had no other surfaces."
+          },
+          "correct": ["B"],
+          "explanation": "Option B preserves the three core ideas: purpose is unknown, but the artists were skilled, organized, and motivated."
+        },
+        {
+          "question_id": "t5q5",
+          "type": "insert_text",
+          "prompt": "Where would the following sentence best fit? \"Researchers have proposed several explanations over the years.\"",
+          "options": {
+            "A": "Position [[1]]",
+            "B": "Position [[2]]",
+            "C": "Position [[3]]",
+            "D": "Position [[4]]"
+          },
+          "correct": ["B"],
+          "explanation": "Position [[2]] introduces the list of theories that follows ('hunting magic,' 'ceremonial spaces,' 'storytelling')."
+        }
+      ]
+    },
+    {
+      "task_id": "t6",
+      "type": "academic",
+      "title": "Task 6 — Academic Reading: How People Really Make Choices",
+      "passage": "Traditional economic theory long assumed that human beings are rational decision-makers. [[1]] According to this view, people carefully consider all available information, weigh the costs and benefits of each option, and choose whatever brings the greatest satisfaction. While this assumption made economic models easier to build, it did not always match how people actually behave in everyday life.\n\nStarting in the 1970s, a new field called behavioral economics began to challenge the rational-decision-maker model. [[2]] Researchers such as Daniel Kahneman and Amos Tversky demonstrated through experiments that people regularly make systematic mistakes. For example, most participants in their studies were more afraid of losing $100 than they were excited about gaining $100, even though the amounts were equal. This pattern, known as loss aversion, helps explain why investors often hold on to failing stocks too long: selling would force them to admit a loss.\n\nBehavioral economists have also shown that small changes in how a choice is presented can strongly influence what people decide. [[3]] In one famous study, organ-donation rates were dramatically higher in countries where citizens were automatically enrolled and had to opt out than in countries where they had to actively opt in. The actual decision required almost no effort in either case, yet the default option made an enormous difference. [[4]] Findings like these have led both governments and companies to redesign forms, websites, and policies in order to gently 'nudge' people toward better outcomes — for themselves and for society.",
+      "questions": [
+        {
+          "question_id": "t6q1",
+          "type": "factual",
+          "prompt": "According to paragraph 1, what did traditional economic theory assume about people?",
+          "options": {
+            "A": "That they always make emotional decisions",
+            "B": "That they carefully weigh costs and benefits to maximize satisfaction",
+            "C": "That they cannot understand financial information",
+            "D": "That they ignore prices when shopping"
+          },
+          "correct": ["B"],
+          "explanation": "Paragraph 1 states people are assumed to 'weigh the costs and benefits of each option' and choose what brings the greatest satisfaction."
+        },
+        {
+          "question_id": "t6q2",
+          "type": "rhetorical_purpose",
+          "prompt": "Why does the author mention investors holding on to failing stocks?",
+          "options": {
+            "A": "To suggest that the stock market is unfair",
+            "B": "To give a real-life example of loss aversion",
+            "C": "To prove that behavioral economists are usually wrong",
+            "D": "To recommend a particular investment strategy"
+          },
+          "correct": ["B"],
+          "explanation": "It is offered as a concrete illustration of the loss-aversion pattern just defined."
+        },
+        {
+          "question_id": "t6q3",
+          "type": "vocabulary",
+          "prompt": "The word 'dramatically' in paragraph 3 is closest in meaning to",
+          "target_word": "dramatically",
+          "options": { "A": "slightly", "B": "secretly", "C": "significantly", "D": "accidentally" },
+          "correct": ["C"],
+          "explanation": "'Dramatically higher' means very or significantly higher."
+        },
+        {
+          "question_id": "t6q4",
+          "type": "insert_text",
+          "prompt": "Where would the following sentence best fit? \"In other words, the way a question is framed often matters as much as the question itself.\"",
+          "options": {
+            "A": "Position [[1]]",
+            "B": "Position [[2]]",
+            "C": "Position [[3]]",
+            "D": "Position [[4]]"
+          },
+          "correct": ["D"],
+          "explanation": "Position [[4]] follows the organ-donation example and naturally summarizes its lesson about framing."
+        },
+        {
+          "question_id": "t6q5",
+          "type": "prose_summary",
+          "prompt": "An introductory sentence for a brief summary is provided below. Complete the summary by selecting the THREE answer choices that express the most important ideas in the passage.\n\nIntroductory sentence: Behavioral economics has challenged the older view that people always make fully rational choices.",
+          "select_count": 3,
+          "options": {
+            "A": "Traditional economics assumed people maximize satisfaction by carefully weighing options.",
+            "B": "Research by Kahneman and Tversky showed that people fear losses more than they value equal gains.",
+            "C": "Small changes in how options are presented, such as default settings, can strongly influence decisions.",
+            "D": "Most people in modern societies have stopped using money entirely.",
+            "E": "Organ donation is illegal in countries where people must opt in.",
+            "F": "Behavioral economics proves that economic models should never use mathematics."
+          },
+          "correct": ["A", "B", "C"],
+          "explanation": "A, B, and C capture the three main ideas of the passage. D, E, and F are contradicted by or unrelated to the text."
+        }
+      ]
+    }
+  ],
+  "scoring": {
+    "max_raw_score": 30,
+    "band_estimate": [
+      { "min_raw": 28, "label": "Excellent", "approx_band": "6 / Advanced (C1+)" },
+      { "min_raw": 23, "label": "Very Good", "approx_band": "5 / Upper-Intermediate (B2+)" },
+      { "min_raw": 17, "label": "Good", "approx_band": "4 / Intermediate (B2)" },
+      { "min_raw": 11, "label": "Developing", "approx_band": "3 / Lower-Intermediate (B1)" },
+      { "min_raw": 6, "label": "Basic", "approx_band": "2 / Elementary (A2)" },
+      { "min_raw": 0, "label": "Beginner", "approx_band": "1 / Beginner (A1)" }
+    ]
+  }
+}

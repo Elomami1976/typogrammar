@@ -1,5 +1,6 @@
-
+﻿
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Quiz as QuizType } from '../types';
 
 interface QuizProps {
@@ -13,6 +14,8 @@ const Quiz: React.FC<QuizProps> = ({ quizData, onQuizComplete }) => {
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [isAnswered, setIsAnswered] = useState(false);
   const [showScore, setShowScore] = useState(false);
+  const [wrongAnswers, setWrongAnswers] = useState<Array<{ index: number; chosen: number }>>([]);
+  const [reviewMode, setReviewMode] = useState(false);
 
   if (!quizData || !quizData.questions || quizData.questions.length === 0) {
     return (
@@ -35,6 +38,8 @@ const Quiz: React.FC<QuizProps> = ({ quizData, onQuizComplete }) => {
     setIsAnswered(true);
     if (selectedAnswer === currentQuestion.correctAnswer) {
       setScore(prevScore => prevScore + 1);
+    } else {
+      setWrongAnswers(prev => [...prev, { index: currentQuestionIndex, chosen: selectedAnswer }]);
     }
   };
   
@@ -60,22 +65,106 @@ const Quiz: React.FC<QuizProps> = ({ quizData, onQuizComplete }) => {
     setSelectedAnswer(null);
     setIsAnswered(false);
     setShowScore(false);
+    setWrongAnswers([]);
+    setReviewMode(false);
   };
 
   if (showScore) {
     const percentage = Math.round((score / quizData.questions.length) * 100);
+
+    if (reviewMode && wrongAnswers.length > 0) {
+      return (
+        <div className="p-6 md:p-8 bg-slate-50 rounded-xl border border-slate-200 dark:bg-slate-800 dark:border-slate-700">
+          <div className="flex justify-between items-center mb-6 flex-wrap gap-3">
+            <h3 className="font-heading text-2xl font-bold text-slate-800 dark:text-slate-200">
+              Review: Your {wrongAnswers.length} Missed {wrongAnswers.length === 1 ? 'Question' : 'Questions'}
+            </h3>
+            <button
+              onClick={() => setReviewMode(false)}
+              className="text-sm font-semibold text-blue-600 hover:underline dark:text-blue-400"
+            >
+              ← Back to results
+            </button>
+          </div>
+          <div className="space-y-6">
+            {wrongAnswers.map(({ index, chosen }) => {
+              const q = quizData.questions[index];
+              return (
+                <div key={index} className="p-4 bg-white dark:bg-slate-700/50 rounded-lg border border-slate-200 dark:border-slate-600">
+                  <p className="font-semibold text-slate-800 dark:text-slate-100 mb-3">{q.question}</p>
+                  <p className="text-sm text-red-700 dark:text-red-300 mb-1">
+                    <span className="font-bold">Your answer:</span> {q.options[chosen]}
+                  </p>
+                  <p className="text-sm text-green-700 dark:text-green-300 mb-2">
+                    <span className="font-bold">Correct answer:</span> {q.options[q.correctAnswer]}
+                  </p>
+                  <p className="text-sm text-slate-600 dark:text-slate-300 italic">{q.explanation}</p>
+                </div>
+              );
+            })}
+          </div>
+          <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+            <button
+              onClick={handleRetakeQuiz}
+              className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors"
+            >
+              Retake Full Quiz
+            </button>
+          </div>
+        </div>
+      );
+    }
+
     return (
       <div className="text-center p-8 bg-slate-50 rounded-lg border border-slate-200 dark:bg-slate-800 dark:border-slate-700">
         <h3 className="font-heading text-3xl font-bold text-slate-800 mb-4 dark:text-slate-200">Quiz Complete!</h3>
         <p className="font-body text-xl text-slate-600 mb-6 dark:text-slate-400">
           You got <span className="font-bold text-blue-600 dark:text-blue-400">{score}</span> out of <span className="font-bold text-blue-600 dark:text-blue-400">{quizData.questions.length}</span> correct! ({percentage}%)
         </p>
-        <button
-          onClick={handleRetakeQuiz}
-          className="bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors text-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-offset-slate-800"
-        >
-          Retake Quiz
-        </button>
+        <div className="flex flex-col sm:flex-row gap-3 justify-center mb-8">
+          <button
+            onClick={handleRetakeQuiz}
+            className="bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors text-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-offset-slate-800"
+          >
+            Retake Quiz
+          </button>
+          {wrongAnswers.length > 0 && (
+            <button
+              onClick={() => setReviewMode(true)}
+              className="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-6 rounded-lg transition-colors text-lg"
+            >
+              Review {wrongAnswers.length} Missed {wrongAnswers.length === 1 ? 'Question' : 'Questions'}
+            </button>
+          )}
+        </div>
+        <div className="text-left bg-white dark:bg-slate-700/40 p-5 rounded-xl border border-slate-200 dark:border-slate-600">
+          <p className="text-sm font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 mb-3">
+            Recommended next
+          </p>
+          <div className="space-y-2">
+            <Link
+              to="/quizzes/verb-tenses-quiz/"
+              className="flex items-center justify-between gap-2 p-3 bg-slate-50 dark:bg-slate-800 rounded-lg hover:bg-blue-50 dark:hover:bg-slate-600 transition-colors"
+            >
+              <span className="font-semibold text-slate-800 dark:text-slate-100">Free 50-Question Verb Tenses Quiz</span>
+              <span className="text-blue-600 dark:text-blue-400">→</span>
+            </Link>
+            <Link
+              to="/grammar-checker/"
+              className="flex items-center justify-between gap-2 p-3 bg-slate-50 dark:bg-slate-800 rounded-lg hover:bg-blue-50 dark:hover:bg-slate-600 transition-colors"
+            >
+              <span className="font-semibold text-slate-800 dark:text-slate-100">Try the Free Grammar Checker</span>
+              <span className="text-blue-600 dark:text-blue-400">→</span>
+            </Link>
+            <Link
+              to="/ielts/english-grammar-pdf/"
+              className="flex items-center justify-between gap-2 p-3 bg-slate-50 dark:bg-slate-800 rounded-lg hover:bg-blue-50 dark:hover:bg-slate-600 transition-colors"
+            >
+              <span className="font-semibold text-slate-800 dark:text-slate-100">Download Free Grammar PDF</span>
+              <span className="text-blue-600 dark:text-blue-400">→</span>
+            </Link>
+          </div>
+        </div>
       </div>
     );
   }

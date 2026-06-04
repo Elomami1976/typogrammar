@@ -1,4 +1,4 @@
-
+﻿
 import React, { useState, useRef, useLayoutEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { PHRASAL_VERBS_CATEGORIES } from '../constants/phrasalVerbs';
@@ -135,10 +135,10 @@ const PhrasalVerbsPage: React.FC = () => {
       <section className="mb-10 p-6 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl border border-blue-100 dark:from-slate-700/50 dark:to-slate-700/30 dark:border-slate-600">
         <h2 className="font-heading text-2xl font-bold text-slate-800 mb-4 dark:text-slate-200">What Are Phrasal Verbs?</h2>
         <p className="font-body text-slate-700 mb-4 dark:text-slate-300">
-          <strong>Phrasal verbs</strong> are combinations of a verb and one or more particles (prepositions or adverbs) that create a completely new meaning. For example, "<em>give up</em>" doesn't mean "give" + "up" literally—it means to stop trying or quit something.
+          <strong>Phrasal verbs</strong> are combinations of a verb and one or more particles (prepositions or adverbs) that create a completely new meaning. For example, "<em>give up</em>" doesn't mean "give" + "up" literally-it means to stop trying or quit something.
         </p>
         <p className="font-body text-slate-700 mb-4 dark:text-slate-300">
-          This comprehensive guide contains <strong>{totalPhrasalVerbsCount}+ carefully curated phrasal verbs</strong> organized into {PHRASAL_VERBS_CATEGORIES.length} practical categories including <strong>communication, work, relationships, travel, health,</strong> and more—essential for IELTS, TOEFL, and everyday conversation.
+          This comprehensive guide contains <strong>{totalPhrasalVerbsCount}+ carefully curated phrasal verbs</strong> organized into {PHRASAL_VERBS_CATEGORIES.length} practical categories including <strong>communication, work, relationships, travel, health,</strong> and more-essential for IELTS, TOEFL, and everyday conversation.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
           <div className="bg-white/70 dark:bg-slate-800/50 p-4 rounded-lg text-center">
@@ -218,16 +218,16 @@ const PhrasalVerbsPage: React.FC = () => {
           <div>
             <h3 className="font-semibold text-slate-800 mb-2 dark:text-slate-200">✅ Best Practices</h3>
             <ul className="space-y-2 text-slate-700 dark:text-slate-300">
-              <li>• <strong>Learn in context</strong> – Study phrasal verbs through example sentences, not just definitions</li>
-              <li>• <strong>Group by topic</strong> – Learn related verbs together (all work verbs, all travel verbs)</li>
-              <li>• <strong>Practice actively</strong> – Use new phrasal verbs in your writing and speaking</li>
-              <li>• <strong>Note separability</strong> – Learn whether objects can go between the verb and particle</li>
+              <li>• <strong>Learn in context</strong> - Study phrasal verbs through example sentences, not just definitions</li>
+              <li>• <strong>Group by topic</strong> - Learn related verbs together (all work verbs, all travel verbs)</li>
+              <li>• <strong>Practice actively</strong> - Use new phrasal verbs in your writing and speaking</li>
+              <li>• <strong>Note separability</strong> - Learn whether objects can go between the verb and particle</li>
             </ul>
           </div>
           <div>
             <h3 className="font-semibold text-slate-800 mb-2 dark:text-slate-200">⚠️ Common Mistakes to Avoid</h3>
             <ul className="space-y-2 text-slate-700 dark:text-slate-300">
-              <li>• Don't memorize long lists without context—you'll forget them quickly</li>
+              <li>• Don't memorize long lists without context-you'll forget them quickly</li>
               <li>• Avoid separating inseparable phrasal verbs ("look after him" ✓, not "look him after")</li>
               <li>• Be aware that the same phrasal verb can have multiple meanings</li>
               <li>• Don't overuse phrasal verbs in formal academic writing</li>
@@ -237,7 +237,7 @@ const PhrasalVerbsPage: React.FC = () => {
       </section>
 
       {/* Separable vs Inseparable explanation */}
-      <section className="mt-8 p-6 bg-amber-50 rounded-xl border border-amber-100 dark:bg-slate-700/50 dark:border-slate-600">
+      <section className="mt-8 p-6 bg-teal-50 rounded-xl border border-teal-100 dark:bg-slate-700/50 dark:border-slate-600">
         <h2 className="font-heading text-xl font-bold text-slate-800 mb-4 dark:text-slate-200">Separable vs. Inseparable Phrasal Verbs</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
@@ -294,22 +294,22 @@ const PhrasalVerbsPage: React.FC = () => {
       <aside className="mt-12 p-6 bg-blue-50 rounded-xl border border-blue-100 dark:bg-slate-700/50 dark:border-slate-600">
         <h2 className="font-heading text-xl font-bold text-slate-800 mb-4 dark:text-slate-200">Related Vocabulary Resources</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          <Link to="/idioms" className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow dark:bg-slate-800 dark:hover:bg-slate-700">
+          <Link to="/idioms/" className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow dark:bg-slate-800 dark:hover:bg-slate-700">
             <span className="text-2xl">💬</span>
             <h3 className="font-semibold text-slate-800 mt-2 dark:text-slate-200">Idioms & Expressions</h3>
             <p className="text-sm text-slate-600 dark:text-slate-400">300+ common English idioms</p>
           </Link>
-          <Link to="/collocations" className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow dark:bg-slate-800 dark:hover:bg-slate-700">
+          <Link to="/collocations/" className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow dark:bg-slate-800 dark:hover:bg-slate-700">
             <span className="text-2xl">🔗</span>
             <h3 className="font-semibold text-slate-800 mt-2 dark:text-slate-200">Collocations</h3>
             <p className="text-sm text-slate-600 dark:text-slate-400">Natural word combinations</p>
           </Link>
-          <Link to="/irregular-verbs" className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow dark:bg-slate-800 dark:hover:bg-slate-700">
+          <Link to="/irregular-verbs/" className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow dark:bg-slate-800 dark:hover:bg-slate-700">
             <span className="text-2xl">📝</span>
             <h3 className="font-semibold text-slate-800 mt-2 dark:text-slate-200">Irregular Verbs</h3>
             <p className="text-sm text-slate-600 dark:text-slate-400">Complete verb forms list</p>
           </Link>
-          <Link to="/preposition-combinations" className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow dark:bg-slate-800 dark:hover:bg-slate-700">
+          <Link to="/preposition-combinations/" className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow dark:bg-slate-800 dark:hover:bg-slate-700">
             <span className="text-2xl">🎯</span>
             <h3 className="font-semibold text-slate-800 mt-2 dark:text-slate-200">Preposition Combinations</h3>
             <p className="text-sm text-slate-600 dark:text-slate-400">Verb + preposition patterns</p>

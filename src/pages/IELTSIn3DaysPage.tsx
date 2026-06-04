@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import SchemaMarkup from '../components/SchemaMarkup';
@@ -7,7 +7,7 @@ const IELTSIn3DaysPage: React.FC = () => {
   usePageMetadata({
     title: 'IELTS in 3 Days: What You Should Actually Study (Smart Last-Minute Strategy) | TypoGrammar',
     description: 'Prepare for IELTS in 3 days with a smart last-minute study plan. Focus on test format, writing structure, and common mistakes to maximize your band score.',
-    canonical: 'https://typogrammar.com/ielts/ielts-in-3-days'
+    canonical: 'https://typogrammar.com/ielts/ielts-in-3-days/'
   });
 
   const articleSchema = {
@@ -45,7 +45,7 @@ const IELTSIn3DaysPage: React.FC = () => {
         <nav className="text-sm text-slate-600 dark:text-slate-400 mb-6">
           <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
           <span className="mx-2">›</span>
-          <Link to="/ielts/ielts-writing-task-2-essay-types" className="hover:text-blue-600 dark:hover:text-blue-400">IELTS</Link>
+          <Link to="/ielts/ielts-writing-task-2-essay-types/" className="hover:text-blue-600 dark:hover:text-blue-400">IELTS</Link>
           <span className="mx-2">›</span>
           <span className="text-slate-900 dark:text-slate-100">IELTS in 3 Days</span>
         </nav>
@@ -398,17 +398,17 @@ const IELTSIn3DaysPage: React.FC = () => {
             If you want to understand how examiners evaluate your performance, read these guides:
           </p>
           <ul className="space-y-2">
-            <li><Link to="/ielts/task-achievement-in-ielts" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Task Achievement in IELTS</Link></li>
-            <li><Link to="/ielts/lexical-resource-in-ielts" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Lexical Resource in IELTS</Link></li>
-            <li><Link to="/ielts/common-grammar-mistakes-ielts-writing" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Common Grammar Mistakes in IELTS Writing</Link></li>
-            <li><Link to="/ielts/ielts-writing-task-2-essay-types" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">IELTS Writing Task 2 Essay Types</Link></li>
+            <li><Link to="/ielts/task-achievement-in-ielts/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Task Achievement in IELTS</Link></li>
+            <li><Link to="/ielts/lexical-resource-in-ielts/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Lexical Resource in IELTS</Link></li>
+            <li><Link to="/ielts/common-grammar-mistakes-ielts-writing/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Common Grammar Mistakes in IELTS Writing</Link></li>
+            <li><Link to="/ielts/ielts-writing-task-2-essay-types/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">IELTS Writing Task 2 Essay Types</Link></li>
           </ul>
         </nav>
 
         {/* Editorial Attribution */}
         <div className="bg-slate-100 dark:bg-slate-700 border border-slate-300 dark:border-slate-600 p-6 rounded-lg">
           <p className="text-slate-700 dark:text-slate-300 mb-4">
-            By <Link to="/about" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">TypoGrammar</Link>
+            By <Link to="/about/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">TypoGrammar</Link>
           </p>
           <p className="text-slate-700 dark:text-slate-300 mb-4">
             TypoGrammar creates clear, accurate grammar and IELTS preparation guides for English learners worldwide.

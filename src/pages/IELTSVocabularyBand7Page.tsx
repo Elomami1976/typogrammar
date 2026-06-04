@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading } from '../components/ArticleComponents';
@@ -228,7 +228,7 @@ const IELTSVocabularyBand7Page: React.FC = () => {
           <div className="flex flex-wrap items-center gap-4 text-sm text-slate-600 dark:text-slate-400 mb-6">
             <span className="flex items-center gap-1">
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"/></svg>
-              By <Link to="/about" className="text-blue-600 dark:text-blue-400 hover:underline">Typogrammar Team</Link>
+              By <Link to="/about/" className="text-blue-600 dark:text-blue-400 hover:underline">Typogrammar Team</Link>
             </span>
             <span className="flex items-center gap-1">
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd"/></svg>
@@ -416,7 +416,7 @@ const IELTSVocabularyBand7Page: React.FC = () => {
         {/* Navigation to Other Bands */}
         <div className="mt-8 grid md:grid-cols-2 gap-6">
           <Link
-            to="/ielts/vocabulary/band-6"
+            to="/ielts/vocabulary/band-6/"
             className="bg-gradient-to-r from-blue-500 to-indigo-600 rounded-2xl shadow-xl p-6 text-white hover:from-blue-600 hover:to-indigo-700 transition-all"
           >
             <div className="text-sm font-semibold mb-2 opacity-90">← Previous Level</div>
@@ -425,12 +425,12 @@ const IELTSVocabularyBand7Page: React.FC = () => {
           </Link>
           
           <Link
-            to="/ielts/vocabulary/band-8"
-            className="bg-gradient-to-r from-orange-500 to-amber-600 rounded-2xl shadow-xl p-6 text-white hover:from-orange-600 hover:to-amber-700 transition-all"
+            to="/ielts/vocabulary/band-8/"
+            className="bg-gradient-to-r from-teal-500 to-teal-600 rounded-2xl shadow-xl p-6 text-white hover:from-teal-600 hover:to-teal-700 transition-all"
           >
             <div className="text-sm font-semibold mb-2 opacity-90 text-right">Next Level →</div>
             <h3 className="text-xl font-bold mb-2 text-right">Band 8 Vocabulary</h3>
-            <p className="text-orange-100 text-sm text-right">Master advanced precision words</p>
+            <p className="text-teal-100 text-sm text-right">Master advanced precision words</p>
           </Link>
         </div>
 
@@ -438,19 +438,19 @@ const IELTSVocabularyBand7Page: React.FC = () => {
         <div className="mt-8 bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-8">
           <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">Related IELTS Preparation</h3>
           <div className="grid md:grid-cols-2 gap-4">
-            <Link to="/ielts/vocabulary/band-8" className="p-4 border-2 border-orange-200 dark:border-orange-800 rounded-lg hover:border-orange-400 dark:hover:border-orange-600 transition-colors">
-              <h4 className="font-bold text-orange-600 dark:text-orange-400 mb-2">Band 8 Advanced Vocabulary</h4>
+            <Link to="/ielts/vocabulary/band-8/" className="p-4 border-2 border-teal-200 dark:border-teal-800 rounded-lg hover:border-teal-400 dark:hover:border-teal-600 transition-colors">
+              <h4 className="font-bold text-teal-600 dark:text-teal-400 mb-2">Band 8 Advanced Vocabulary</h4>
               <p className="text-slate-600 dark:text-slate-400 text-sm">Take your vocabulary to examiner level</p>
             </Link>
-            <Link to="/ielts/discussion-essay-ielts-band-7-9" className="p-4 border-2 border-purple-200 dark:border-purple-800 rounded-lg hover:border-purple-400 dark:hover:border-purple-600 transition-colors">
+            <Link to="/ielts/discussion-essay-ielts-band-7-9/" className="p-4 border-2 border-purple-200 dark:border-purple-800 rounded-lg hover:border-purple-400 dark:hover:border-purple-600 transition-colors">
               <h4 className="font-bold text-purple-600 dark:text-purple-400 mb-2">Discussion Essays</h4>
               <p className="text-slate-600 dark:text-slate-400 text-sm">Write balanced essays for Band 7-9</p>
             </Link>
-            <Link to="/writing/how-to-paraphrase" className="p-4 border-2 border-indigo-200 dark:border-indigo-800 rounded-lg hover:border-indigo-400 dark:hover:border-indigo-600 transition-colors">
+            <Link to="/writing/how-to-paraphrase/" className="p-4 border-2 border-indigo-200 dark:border-indigo-800 rounded-lg hover:border-indigo-400 dark:hover:border-indigo-600 transition-colors">
               <h4 className="font-bold text-indigo-600 dark:text-indigo-400 mb-2">Paraphrasing Skills</h4>
               <p className="text-slate-600 dark:text-slate-400 text-sm">Learn to rephrase effectively for IELTS</p>
             </Link>
-            <Link to="/vocabulary/collocations" className="p-4 border-2 border-slate-200 dark:border-slate-700 rounded-lg hover:border-slate-400 dark:hover:border-slate-600 transition-colors">
+            <Link to="/vocabulary/collocations/" className="p-4 border-2 border-slate-200 dark:border-slate-700 rounded-lg hover:border-slate-400 dark:hover:border-slate-600 transition-colors">
               <h4 className="font-bold text-slate-600 dark:text-slate-400 mb-2">Common Collocations</h4>
               <p className="text-slate-600 dark:text-slate-400 text-sm">Natural word combinations for fluency</p>
             </Link>

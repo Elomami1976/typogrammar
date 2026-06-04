@@ -1,4 +1,4 @@
-
+﻿
 import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { ArticleParagraph } from '../components/ArticleComponents';
@@ -300,27 +300,27 @@ const PronunciationPage: React.FC = () => {
       <section className="mt-12 p-6 bg-slate-50 rounded-xl border border-slate-200 dark:bg-slate-800/50 dark:border-slate-700">
         <h3 className="font-heading text-xl font-bold text-slate-800 mb-4 dark:text-slate-200">Related Pronunciation Resources</h3>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <Link to="/pronunciation-of-ed" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
+          <Link to="/pronunciation-of-ed/" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
             <h4 className="font-semibold text-slate-800 dark:text-slate-200">-ED Pronunciation</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">Master the 3 sounds of past tense</p>
           </Link>
-          <Link to="/homophones-homonyms-homographs" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
+          <Link to="/homophones-homonyms-homographs/" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
             <h4 className="font-semibold text-slate-800 dark:text-slate-200">Homophones</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">Words that sound the same</p>
           </Link>
-          <Link to="/confused-words" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
+          <Link to="/commonly-confused-words/" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
             <h4 className="font-semibold text-slate-800 dark:text-slate-200">Confused Words</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">Similar words often mixed up</p>
           </Link>
-          <Link to="/irregular-verbs" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
+          <Link to="/irregular-verbs/" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
             <h4 className="font-semibold text-slate-800 dark:text-slate-200">Irregular Verbs</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">Verbs with unique forms</p>
           </Link>
-          <Link to="/prefixes-suffixes" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
+          <Link to="/prefixes-suffixes/" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
             <h4 className="font-semibold text-slate-800 dark:text-slate-200">Prefixes & Suffixes</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">Word building patterns</p>
           </Link>
-          <Link to="/basic-grammar-terminology" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
+          <Link to="/basic-grammar-terminology/" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
             <h4 className="font-semibold text-slate-800 dark:text-slate-200">Grammar Terms</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">Essential terminology explained</p>
           </Link>

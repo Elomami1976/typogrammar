@@ -1,11 +1,13 @@
-import React from 'react';
+﻿import React from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 
 const NotFoundPage: React.FC = () => {
   usePageMetadata({
     title: '404 - Page Not Found | TypoGrammar',
-    description: 'The page you are looking for does not exist. Browse our grammar topics, blog posts, and learning resources.'
+    description: 'The page you are looking for does not exist. Browse our grammar topics, blog posts, and learning resources.',
+    // Prevent soft-404s from being indexed or treated as duplicates in Google Search Console
+    robots: 'noindex, follow'
   });
 
   return (
@@ -30,7 +32,7 @@ const NotFoundPage: React.FC = () => {
             Go Home
           </Link>
           <Link
-            to="/grammar-guide"
+            to="/grammar-guide/"
             className="inline-flex items-center justify-center px-6 py-3 bg-slate-200 hover:bg-slate-300 dark:bg-slate-700 dark:hover:bg-slate-600 text-slate-800 dark:text-slate-200 font-medium rounded-lg transition-colors"
           >
             Browse Grammar Topics
@@ -39,13 +41,13 @@ const NotFoundPage: React.FC = () => {
         <div className="mt-10 text-sm text-slate-500 dark:text-slate-500">
           <p>Looking for something specific? Try these popular pages:</p>
           <div className="mt-3 flex flex-wrap justify-center gap-3">
-            <Link to="/grammar/verb-tenses" className="text-blue-600 dark:text-blue-400 hover:underline">Verb Tenses</Link>
+            <Link to="/grammar/verb-tenses/" className="text-blue-600 dark:text-blue-400 hover:underline">Verb Tenses</Link>
             <span className="text-slate-300 dark:text-slate-600">•</span>
-            <Link to="/blog" className="text-blue-600 dark:text-blue-400 hover:underline">Blog</Link>
+            <Link to="/blog/" className="text-blue-600 dark:text-blue-400 hover:underline">Blog</Link>
             <span className="text-slate-300 dark:text-slate-600">•</span>
-            <Link to="/irregular-verbs" className="text-blue-600 dark:text-blue-400 hover:underline">Irregular Verbs</Link>
+            <Link to="/irregular-verbs/" className="text-blue-600 dark:text-blue-400 hover:underline">Irregular Verbs</Link>
             <span className="text-slate-300 dark:text-slate-600">•</span>
-            <Link to="/idioms" className="text-blue-600 dark:text-blue-400 hover:underline">Idioms</Link>
+            <Link to="/idioms/" className="text-blue-600 dark:text-blue-400 hover:underline">Idioms</Link>
           </div>
         </div>
       </div>

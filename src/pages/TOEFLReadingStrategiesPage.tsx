@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading, BulletList } from '../components/ArticleComponents';
@@ -101,7 +101,7 @@ const TOEFLReadingStrategiesPage: React.FC = () => {
             </tr>
             <tr className="bg-slate-50 dark:bg-slate-800/50">
               <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">Score range</td>
-              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">0–30 points</td>
+              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">0-30 points</td>
             </tr>
           </tbody>
         </table>
@@ -301,7 +301,7 @@ const TOEFLReadingStrategiesPage: React.FC = () => {
         </table>
       </div>
 
-      <div className="bg-amber-50 dark:bg-amber-900/20 border-l-4 border-amber-500 p-4 my-6">
+      <div className="bg-teal-50 dark:bg-teal-900/20 border-l-4 border-teal-500 p-4 my-6">
         <p className="text-slate-700 dark:text-slate-300">
           If you spend too long on one question, skip it and return later.
         </p>
@@ -407,17 +407,17 @@ const TOEFLReadingStrategiesPage: React.FC = () => {
         </h3>
         <ul className="space-y-2">
           <li>
-            <Link to="/toefl/toefl-reading/toefl-reading-section-explained" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
+            <Link to="/toefl/toefl-reading/toefl-reading-section-explained/" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
               → TOEFL Reading Section Explained: Format, Question Types, and Tips
             </Link>
           </li>
           <li>
-            <Link to="/toefl/toefl-reading/toefl-reading-question-types" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
+            <Link to="/toefl/toefl-reading/toefl-reading-question-types/" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
               → TOEFL Reading Question Types: Complete Guide with Examples
             </Link>
           </li>
           <li>
-            <Link to="/toefl/toefl-reading/toefl-reading-time-management" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
+            <Link to="/toefl/toefl-reading/toefl-reading-time-management/" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
               → TOEFL Reading Time Management: How to Finish on Time
             </Link>
           </li>

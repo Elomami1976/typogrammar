@@ -1,12 +1,12 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading, CodeBlock, BulletList } from '../components/ArticleComponents';
 
 const ProblemSolutionEssayIELTSPage: React.FC = () => {
   usePageMetadata({
-    title: 'IELTS Problem and Solution Essay – Band 7–9 Model Answer | TypoGrammar',
-    description: 'Learn how to write IELTS problem and solution essays with causes, solutions, and a Band 7–9 sample answer.'
+    title: 'IELTS Problem and Solution Essay - Band 7-9 Model Answer | TypoGrammar',
+    description: 'Learn how to write IELTS problem and solution essays with causes, solutions, and a Band 7-9 sample answer.'
   });
 
   const faqSchema = {
@@ -70,7 +70,7 @@ const ProblemSolutionEssayIELTSPage: React.FC = () => {
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="mb-6">
           <Link 
-            to="/ielts/ielts-writing-task-2-essay-types" 
+            to="/ielts/ielts-writing-task-2-essay-types/" 
             className="text-blue-600 dark:text-blue-400 hover:underline text-sm"
           >
             ← Back to IELTS Writing Task 2 Essay Types
@@ -78,7 +78,7 @@ const ProblemSolutionEssayIELTSPage: React.FC = () => {
         </div>
 
         <h1 className="text-4xl font-bold mb-6 text-slate-900 dark:text-slate-100">
-          IELTS Problem and Solution Essay – Band 7–9 Model Answer
+          IELTS Problem and Solution Essay - Band 7-9 Model Answer
         </h1>
 
         {/* Featured Snippet Box */}
@@ -130,7 +130,7 @@ const ProblemSolutionEssayIELTSPage: React.FC = () => {
             </div>
             <div>
               <p className="font-medium text-slate-900 dark:text-slate-100">
-                2. Body Paragraph 1 – Causes/Problems (4-5 sentences)
+                2. Body Paragraph 1 - Causes/Problems (4-5 sentences)
               </p>
               <p className="text-sm text-slate-700 dark:text-slate-300 ml-4">
                 • Topic sentence about causes<br />
@@ -140,7 +140,7 @@ const ProblemSolutionEssayIELTSPage: React.FC = () => {
             </div>
             <div>
               <p className="font-medium text-slate-900 dark:text-slate-100">
-                3. Body Paragraph 2 – Solutions (4-5 sentences)
+                3. Body Paragraph 2 - Solutions (4-5 sentences)
               </p>
               <p className="text-sm text-slate-700 dark:text-slate-300 ml-4">
                 • Topic sentence about solutions<br />
@@ -436,7 +436,7 @@ In conclusion, traffic congestion is caused by poor transport planning and over-
           <p className="text-slate-800 dark:text-slate-200">
             📚 <strong>This article is part of our complete</strong>{' '}
             <Link 
-              to="/ielts/ielts-writing-task-2-essay-types" 
+              to="/ielts/ielts-writing-task-2-essay-types/" 
               className="text-green-700 dark:text-green-400 hover:underline font-medium"
             >
               IELTS Writing Task 2 Essay Types guide

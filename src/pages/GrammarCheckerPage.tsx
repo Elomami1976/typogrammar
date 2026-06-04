@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useCallback } from 'react';
+﻿import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import SchemaMarkup from '../components/SchemaMarkup';
@@ -31,7 +31,7 @@ const faqData = [
   },
   {
     question: "Can I check grammar on my phone or tablet?",
-    answer: "Yes, our grammar checker is fully responsive and works on all devices including smartphones, tablets, and desktop computers. No app download is required—just visit the page in your browser."
+    answer: "Yes, our grammar checker is fully responsive and works on all devices including smartphones, tablets, and desktop computers. No app download is required-just visit the page in your browser."
   },
   {
     question: "What is the character limit for checking text?",
@@ -41,9 +41,9 @@ const faqData = [
 
 const GrammarCheckerPage: React.FC = () => {
   usePageMetadata({
-    title: 'Free AI Grammar Checker Online – Instant & Accurate | Typogrammar',
+    title: 'Free AI Grammar Checker Online - Instant & Accurate | Typogrammar',
     description: 'Check your grammar instantly with our free AI grammar checker. Perfect for IELTS, academic writing, and professional emails. No sign-up required. Fix grammar mistakes online now.',
-    canonical: 'https://typogrammar.com/grammar-checker'
+    canonical: 'https://typogrammar.com/grammar-checker/'
   });
 
   interface HistoryEntry {
@@ -76,11 +76,11 @@ const GrammarCheckerPage: React.FC = () => {
   const estimateIELTSBand = useCallback((resultText: string): string => {
     const patterns = [/\bcorrect(?:ion|ed)\b/gi, /\bshould be\b/gi, /\bchange\b/gi, /\bmistake\b/gi, /\berror\b/gi, /\bincorrect\b/gi, /\bfix\b/gi];
     const total = patterns.reduce((sum, p) => sum + (resultText.match(p)?.length ?? 0), 0);
-    if (total === 0) return '8.0–9.0';
-    if (total <= 2) return '7.0–8.0';
-    if (total <= 5) return '6.0–7.0';
-    if (total <= 9) return '5.5–6.5';
-    return '4.5–5.5';
+    if (total === 0) return '8.0-9.0';
+    if (total <= 2) return '7.0-8.0';
+    if (total <= 5) return '6.0-7.0';
+    if (total <= 9) return '5.5-6.5';
+    return '4.5-5.5';
   }, []);
 
   const clearText = () => {
@@ -265,7 +265,7 @@ const GrammarCheckerPage: React.FC = () => {
           
           {/* Intro Paragraph - 150-200 words */}
           <p className="text-lg text-slate-700 dark:text-slate-300 max-w-3xl mx-auto leading-relaxed mb-6">
-            Welcome to Typogrammar's <strong>free AI grammar checker</strong>—your instant solution for polishing essays, 
+            Welcome to Typogrammar's <strong>free AI grammar checker</strong>-your instant solution for polishing essays, 
             professional emails, and academic writing. Whether you're preparing for <strong>IELTS</strong>, <strong>TOEFL</strong>, 
             or crafting important business correspondence, our advanced AI technology detects and corrects grammar mistakes in seconds. 
             Unlike basic spell checkers, our tool analyzes sentence structure, verb tense consistency, subject-verb agreement, 
@@ -274,7 +274,7 @@ const GrammarCheckerPage: React.FC = () => {
           <p className="text-base text-slate-600 dark:text-slate-400 max-w-3xl mx-auto mb-8">
             <strong>No sign-up required</strong>. Simply paste your text below and get instant corrections. 
             Perfect for students, professionals, non-native English speakers, and anyone who wants to communicate more effectively. 
-            Start improving your writing today—it's 100% free and processes your text securely without storing any data.
+            Start improving your writing today-it's 100% free and processes your text securely without storing any data.
           </p>
 
           {/* CTA Button */}
@@ -285,7 +285,7 @@ const GrammarCheckerPage: React.FC = () => {
             <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
-            Start Checking Your Grammar Now – It's 100% Free
+            Start Checking Your Grammar Now - It's 100% Free
             <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
             </svg>
@@ -318,7 +318,7 @@ const GrammarCheckerPage: React.FC = () => {
             <div className="flex justify-between items-center mt-2 text-sm">
               <div className="text-slate-600 dark:text-slate-400">
                 <span className="font-medium">{wordCount}</span> words · {' '}
-                <span className={characterCount > CHARACTER_LIMIT * 0.9 ? 'text-orange-600 dark:text-orange-400 font-medium' : ''}>
+                <span className={characterCount > CHARACTER_LIMIT * 0.9 ? 'text-teal-600 dark:text-teal-400 font-medium' : ''}>
                   {characterCount}/{CHARACTER_LIMIT}
                 </span> characters
               </div>
@@ -420,7 +420,7 @@ const GrammarCheckerPage: React.FC = () => {
                   </p>
                   <p className="text-lg font-extrabold text-blue-700 dark:text-blue-300">
                     {estimateIELTSBand(result!)}
-                    <span className="ml-2 text-xs font-normal text-slate-500 dark:text-slate-400">(rough estimate – fix errors to improve)</span>
+                    <span className="ml-2 text-xs font-normal text-slate-500 dark:text-slate-400">(rough estimate - fix errors to improve)</span>
                   </p>
                 </div>
               </div>
@@ -464,7 +464,7 @@ const GrammarCheckerPage: React.FC = () => {
                     className="w-full text-left bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg px-4 py-3 hover:border-blue-300 dark:hover:border-blue-600 transition-colors"
                     type="button"
                   >
-                    <p className="text-sm text-slate-700 dark:text-slate-300 truncate">{entry.text}…</p>
+                    <p className="text-sm text-slate-700 dark:text-slate-300 truncate">{entry.text}...</p>
                     <p className="text-xs text-slate-400 dark:text-slate-500 mt-0.5">
                       {i === 0 ? 'Most recent' : `${Math.round((Date.now() - entry.timestamp) / 60000)} min ago`}
                     </p>
@@ -488,7 +488,7 @@ const GrammarCheckerPage: React.FC = () => {
           <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
             Modern AI grammar checkers can detect complex errors like subject-verb disagreement, incorrect verb tenses, 
             misplaced modifiers, and awkward phrasing. They learn from vast amounts of text data to provide suggestions 
-            that help you write more clearly and professionally—whether you're composing an email, essay, or academic paper.
+            that help you write more clearly and professionally-whether you're composing an email, essay, or academic paper.
           </p>
         </section>
 
@@ -562,7 +562,7 @@ const GrammarCheckerPage: React.FC = () => {
             onClick={scrollToTool}
             className="inline-flex items-center px-6 py-3 bg-white text-blue-700 font-bold rounded-lg hover:bg-blue-50 transition-colors shadow-lg"
           >
-            Check Grammar Now – It's Free
+            Check Grammar Now - It's Free
             <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
             </svg>
@@ -582,7 +582,7 @@ const GrammarCheckerPage: React.FC = () => {
               { title: "IELTS Students", desc: "Prepare for Writing Task 1 and Task 2 by eliminating common grammar errors that lower your band score. Our tool focuses on academic English standards tested in IELTS." },
               { title: "TOEFL Test Takers", desc: "Polish your integrated and independent writing tasks with instant grammar feedback tailored for academic English proficiency exams." },
               { title: "University Students", desc: "Submit error-free essays, research papers, and dissertations. Perfect for ESL students and native speakers alike who want to improve their academic writing." },
-              { title: "Working Professionals", desc: "Write professional emails, reports, and presentations with confidence. First impressions matter—ensure your business communication is polished." },
+              { title: "Working Professionals", desc: "Write professional emails, reports, and presentations with confidence. First impressions matter-ensure your business communication is polished." },
               { title: "Non-Native English Speakers", desc: "Build confidence in your English writing skills with real-time corrections and explanations that help you learn while you write." }
             ].map((item, index) => (
               <div key={index} className="bg-white dark:bg-slate-800 rounded-lg p-5 border border-slate-200 dark:border-slate-700">
@@ -687,7 +687,7 @@ const GrammarCheckerPage: React.FC = () => {
           </p>
           <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
             Additionally, Typogrammar's grammar checker is <strong>completely free</strong> with no premium tiers, 
-            and it integrates with our comprehensive library of grammar lessons, vocabulary resources, and practice exercises—giving you 
+            and it integrates with our comprehensive library of grammar lessons, vocabulary resources, and practice exercises-giving you 
             a complete learning ecosystem rather than just a standalone tool.
           </p>
         </section>
@@ -725,8 +725,8 @@ const GrammarCheckerPage: React.FC = () => {
               </h3>
               <p className="text-slate-700 dark:text-slate-300">Your text is never stored. We process it securely and delete it immediately after checking.</p>
             </div>
-            <div className="bg-orange-50 dark:bg-orange-900/20 rounded-lg p-6 border border-orange-200 dark:border-orange-800">
-              <h3 className="font-bold text-orange-900 dark:text-orange-100 mb-2 flex items-center gap-2">
+            <div className="bg-teal-50 dark:bg-teal-900/20 rounded-lg p-6 border border-teal-200 dark:border-teal-800">
+              <h3 className="font-bold text-teal-900 dark:text-teal-100 mb-2 flex items-center gap-2">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" />
                 </svg>
@@ -741,7 +741,7 @@ const GrammarCheckerPage: React.FC = () => {
                 </svg>
                 Integrated Learning Resources
               </h3>
-              <p className="text-slate-700 dark:text-slate-300">Access comprehensive grammar lessons, vocabulary builders, and practice exercises alongside your grammar checking—a complete learning ecosystem.</p>
+              <p className="text-slate-700 dark:text-slate-300">Access comprehensive grammar lessons, vocabulary builders, and practice exercises alongside your grammar checking-a complete learning ecosystem.</p>
             </div>
           </div>
         </section>
@@ -755,27 +755,27 @@ const GrammarCheckerPage: React.FC = () => {
             Grammar checking is just the first step. To truly master English writing, explore our comprehensive learning resources:
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <Link to="/grammar/verb-tenses" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
+            <Link to="/grammar/verb-tenses/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
               <h3 className="font-bold text-slate-900 dark:text-slate-100 mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Master Verb Tenses</h3>
               <p className="text-sm text-slate-600 dark:text-slate-400">Learn all 12 English tenses with examples and exercises.</p>
             </Link>
-            <Link to="/ielts/ielts-writing-task-2-essay-types" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
+            <Link to="/ielts/ielts-writing-task-2-essay-types/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
               <h3 className="font-bold text-slate-900 dark:text-slate-100 mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">IELTS Writing Task 2</h3>
               <p className="text-sm text-slate-600 dark:text-slate-400">Complete guide to all IELTS essay types with sample answers.</p>
             </Link>
-            <Link to="/commonly-confused-words" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
+            <Link to="/commonly-confused-words/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
               <h3 className="font-bold text-slate-900 dark:text-slate-100 mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Common Grammar Mistakes</h3>
               <p className="text-sm text-slate-600 dark:text-slate-400">Avoid the most frequently confused words in English.</p>
             </Link>
-            <Link to="/ielts/vocabulary/band-7" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
+            <Link to="/ielts/vocabulary/band-7/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
               <h3 className="font-bold text-slate-900 dark:text-slate-100 mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">IELTS Vocabulary</h3>
               <p className="text-sm text-slate-600 dark:text-slate-400">Build your academic vocabulary for Band 7+ scores.</p>
             </Link>
-            <Link to="/writing/how-to-paraphrase" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
+            <Link to="/writing/how-to-paraphrase/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
               <h3 className="font-bold text-slate-900 dark:text-slate-100 mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">How to Paraphrase</h3>
               <p className="text-sm text-slate-600 dark:text-slate-400">Learn effective paraphrasing techniques for academic writing.</p>
             </Link>
-            <Link to="/interactive-exercises" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
+            <Link to="/interactive-exercises/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
               <h3 className="font-bold text-slate-900 dark:text-slate-100 mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Interactive Exercises</h3>
               <p className="text-sm text-slate-600 dark:text-slate-400">Practice grammar with fill-in-the-blank and matching exercises.</p>
             </Link>
@@ -791,7 +791,7 @@ const GrammarCheckerPage: React.FC = () => {
             Explore more free tools to enhance your English writing and learning:
           </p>
           <div className="grid sm:grid-cols-2 gap-4">
-            <Link to="/writing/how-to-paraphrase" className="flex items-center gap-4 p-4 bg-gradient-to-r from-purple-50 to-purple-100 dark:from-purple-900/30 dark:to-purple-800/30 rounded-lg border border-purple-200 dark:border-purple-700 hover:border-purple-400 dark:hover:border-purple-500 transition-colors">
+            <Link to="/writing/how-to-paraphrase/" className="flex items-center gap-4 p-4 bg-gradient-to-r from-purple-50 to-purple-100 dark:from-purple-900/30 dark:to-purple-800/30 rounded-lg border border-purple-200 dark:border-purple-700 hover:border-purple-400 dark:hover:border-purple-500 transition-colors">
               <div className="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center flex-shrink-0">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
@@ -802,7 +802,7 @@ const GrammarCheckerPage: React.FC = () => {
                 <p className="text-sm text-purple-700 dark:text-purple-300">Learn techniques to rewrite text in your own words.</p>
               </div>
             </Link>
-            <Link to="/writing-assistant" className="flex items-center gap-4 p-4 bg-gradient-to-r from-green-50 to-green-100 dark:from-green-900/30 dark:to-green-800/30 rounded-lg border border-green-200 dark:border-green-700 hover:border-green-400 dark:hover:border-green-500 transition-colors">
+            <Link to="/writing-assistant/" className="flex items-center gap-4 p-4 bg-gradient-to-r from-green-50 to-green-100 dark:from-green-900/30 dark:to-green-800/30 rounded-lg border border-green-200 dark:border-green-700 hover:border-green-400 dark:hover:border-green-500 transition-colors">
               <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center flex-shrink-0">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
@@ -813,7 +813,7 @@ const GrammarCheckerPage: React.FC = () => {
                 <p className="text-sm text-green-700 dark:text-green-300">Get AI-powered help with your writing projects.</p>
               </div>
             </Link>
-            <Link to="/ielts/ielts-writing-task-2-essay-types" className="flex items-center gap-4 p-4 bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/30 rounded-lg border border-blue-200 dark:border-blue-700 hover:border-blue-400 dark:hover:border-blue-500 transition-colors">
+            <Link to="/ielts/ielts-writing-task-2-essay-types/" className="flex items-center gap-4 p-4 bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/30 rounded-lg border border-blue-200 dark:border-blue-700 hover:border-blue-400 dark:hover:border-blue-500 transition-colors">
               <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -824,15 +824,15 @@ const GrammarCheckerPage: React.FC = () => {
                 <p className="text-sm text-blue-700 dark:text-blue-300">Master all 5 IELTS Writing Task 2 essay types.</p>
               </div>
             </Link>
-            <Link to="/quizzes/verb-tenses-quiz" className="flex items-center gap-4 p-4 bg-gradient-to-r from-orange-50 to-orange-100 dark:from-orange-900/30 dark:to-orange-800/30 rounded-lg border border-orange-200 dark:border-orange-700 hover:border-orange-400 dark:hover:border-orange-500 transition-colors">
-              <div className="w-12 h-12 bg-orange-600 rounded-lg flex items-center justify-center flex-shrink-0">
+            <Link to="/quizzes/verb-tenses-quiz/" className="flex items-center gap-4 p-4 bg-gradient-to-r from-teal-50 to-teal-100 dark:from-teal-900/30 dark:to-teal-800/30 rounded-lg border border-teal-200 dark:border-teal-700 hover:border-teal-400 dark:hover:border-teal-500 transition-colors">
+              <div className="w-12 h-12 bg-teal-600 rounded-lg flex items-center justify-center flex-shrink-0">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
               <div>
-                <h3 className="font-bold text-orange-900 dark:text-orange-100">Verb Tenses Quiz</h3>
-                <p className="text-sm text-orange-700 dark:text-orange-300">Test your knowledge of English verb tenses.</p>
+                <h3 className="font-bold text-teal-900 dark:text-teal-100">Verb Tenses Quiz</h3>
+                <p className="text-sm text-teal-700 dark:text-teal-300">Test your knowledge of English verb tenses.</p>
               </div>
             </Link>
           </div>
@@ -870,7 +870,7 @@ const GrammarCheckerPage: React.FC = () => {
           <h3 className="text-2xl font-bold text-white mb-3">Start Writing Better English Today</h3>
           <p className="text-slate-300 mb-6 max-w-2xl mx-auto">
             Our free AI grammar checker has helped thousands of students and professionals improve their writing. 
-            No sign-up, no fees—just accurate grammar checking in seconds.
+            No sign-up, no fees-just accurate grammar checking in seconds.
           </p>
           <button
             onClick={scrollToTool}
@@ -879,7 +879,7 @@ const GrammarCheckerPage: React.FC = () => {
             <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
-            Check Your Grammar Now – It's 100% Free
+            Check Your Grammar Now - It's 100% Free
           </button>
         </section>
 
@@ -887,7 +887,7 @@ const GrammarCheckerPage: React.FC = () => {
         <section className="text-center">
           <p className="text-sm text-slate-500 dark:text-slate-400">
             <strong>Trusted by students worldwide</strong> · Used for IELTS, TOEFL, and academic writing preparation · 
-            Built by <Link to="/about/editorial-team" className="text-blue-600 dark:text-blue-400 hover:underline">language experts</Link> at Typogrammar
+            Built by <Link to="/about/editorial-team/" className="text-blue-600 dark:text-blue-400 hover:underline">language experts</Link> at Typogrammar
           </p>
         </section>
       </article>

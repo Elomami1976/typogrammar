@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import GoogleAd from '../components/GoogleAd';
 import { ArticleParagraph, ArticleHeading, BulletList, InlineCode } from '../components/ArticleComponents';
 import usePageMetadata from '../hooks/usePageMetadata';
@@ -107,7 +107,7 @@ const EssayTypesPage: React.FC = () => {
         <div className="flex flex-wrap items-center gap-4 text-sm text-slate-600 dark:text-slate-400 mb-8">
           <span className="flex items-center gap-1">
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"/></svg>
-            By <Link to="/about" className="text-blue-600 dark:text-blue-400 hover:underline">Typogrammar Team</Link>
+            By <Link to="/about/" className="text-blue-600 dark:text-blue-400 hover:underline">Typogrammar Team</Link>
           </span>
           <span className="flex items-center gap-1">
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd"/></svg>
@@ -128,12 +128,12 @@ const EssayTypesPage: React.FC = () => {
       </div>
       
       <ArticleParagraph>
-        Not all essays are created equal. Depending on your purpose, you might need to tell a story, persuade a reader, or explain a topic. Understanding the three main types of essays—narrative, argumentative, and expository—is a crucial first step to becoming a more effective and versatile writer. Each type has a distinct purpose, structure, and style.
+        Not all essays are created equal. Depending on your purpose, you might need to tell a story, persuade a reader, or explain a topic. Understanding the three main types of essays-narrative, argumentative, and expository-is a crucial first step to becoming a more effective and versatile writer. Each type has a distinct purpose, structure, and style.
       </ArticleParagraph>
 
       <ArticleHeading>1. The Narrative Essay: Telling a Story</ArticleHeading>
       <ArticleParagraph>
-        A narrative essay tells a story, usually from a personal perspective. Its primary goal is to share a meaningful experience and engage the reader on an emotional level. While it tells a story, a good narrative essay also has a point or purpose—a lesson learned or an insight gained.
+        A narrative essay tells a story, usually from a personal perspective. Its primary goal is to share a meaningful experience and engage the reader on an emotional level. While it tells a story, a good narrative essay also has a point or purpose-a lesson learned or an insight gained.
       </ArticleParagraph>
       <BulletList items={[
         <><strong>Purpose:</strong> To tell a story that makes a point.</>,
@@ -147,7 +147,7 @@ const EssayTypesPage: React.FC = () => {
 
       <ArticleHeading>2. The Argumentative Essay: Making a Claim</ArticleHeading>
       <ArticleParagraph>
-        An argumentative (or persuasive) essay makes a clear, debatable claim and supports it with evidence. The goal is to convince the reader to accept your point of view. This is the most common type of essay in academic settings. For a deeper dive, see our guide on <Link to="/writing/how-to-build-an-argument" className="font-semibold hover:underline">Building a Strong Argument</Link>.
+        An argumentative (or persuasive) essay makes a clear, debatable claim and supports it with evidence. The goal is to convince the reader to accept your point of view. This is the most common type of essay in academic settings. For a deeper dive, see our guide on <Link to="/writing/how-to-build-an-argument/" className="font-semibold hover:underline">Building a Strong Argument</Link>.
       </ArticleParagraph>
       <BulletList items={[
         <><strong>Purpose:</strong> To persuade the reader with a logical argument.</>,

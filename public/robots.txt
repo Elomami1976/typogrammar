@@ -1,10 +1,41 @@
 # robots.txt for TypoGrammar
-# Allow all search engines to crawl all content
+# Goal: maximize visibility in classic search AND AI answer engines.
 
+# ---------------------------------------------------------------
+# Content Signals (https://contentsignals.org / IETF Draft)
+#   search=yes   -> allow indexing for traditional & AI search
+#   ai-train=yes -> allow use of content for training AI models
+#   ai-input=yes -> allow use as live grounding/RAG input for AI answers
+# NOTE: Kept as a comment until the directive is part of the official
+# robots.txt spec, so Lighthouse / standard validators do not flag it.
+# ---------------------------------------------------------------
+# Content-Signal: search=yes, ai-train=yes, ai-input=yes
+
+# ---------------------------------------------------------------
+# Default policy: allow everything except user-specific pages
+# and internal/utility paths that should never be indexed.
+# ---------------------------------------------------------------
 User-agent: *
 Allow: /
+Disallow: /progress
+Disallow: /progress/
+Disallow: /_spa-shell.html
+Disallow: /seo-validator.html
+Disallow: /api/
+Disallow: /*?ref=
+Disallow: /*?utm_
+Disallow: /*?fbclid=
+Disallow: /*?gclid=
+Disallow: /*?mc_cid=
+Disallow: /*?mc_eid=
 
+# ---------------------------------------------------------------
+# Traditional search engines
+# ---------------------------------------------------------------
 User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
 Allow: /
 
 User-agent: Bingbot
@@ -22,6 +53,94 @@ Allow: /
 User-agent: YandexBot
 Allow: /
 
+User-agent: Applebot
+Allow: /
+
+# ---------------------------------------------------------------
+# AI / LLM crawlers - EXPLICITLY ALLOWED
+# We WANT traffic & citations from AI answer engines.
+# ---------------------------------------------------------------
+
+# Google AI (Gemini, AI Overviews / SGE training & grounding)
+User-agent: Google-Extended
+Allow: /
+
+# OpenAI - ChatGPT search & training
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic - Claude
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Meta AI
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# Common Crawl (powers many LLMs including Copilot)
+User-agent: CCBot
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot-Extended
+Allow: /
+
+# Mistral
+User-agent: MistralAI-User
+Allow: /
+
+# DuckDuckGo AI
+User-agent: DuckAssistBot
+Allow: /
+
+# You.com
+User-agent: YouBot
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+# Diffbot
+User-agent: Diffbot
+Allow: /
+
+# Bytedance / Doubao
+User-agent: Bytespider
+Allow: /
+
+# Amazon
+User-agent: Amazonbot
+Allow: /
+
+# ---------------------------------------------------------------
+# Social previews
+# ---------------------------------------------------------------
 User-agent: facebot
 Allow: /
 
@@ -31,9 +150,12 @@ Allow: /
 User-agent: LinkedInBot
 Allow: /
 
-# Sitemap location
+# ---------------------------------------------------------------
+# Sitemaps & AI documentation
+# ---------------------------------------------------------------
 Sitemap: https://typogrammar.com/sitemap.xml
 
-# AI Language Models - Documentation
-# For AI/LLM context about site content
-# See: https://typogrammar.com/llms.txt
+# AI-readable site summary (Markdown index for LLMs)
+# See: https://llmstxt.org
+# - https://typogrammar.com/llms.txt        (curated index)
+# - https://typogrammar.com/llms-full.txt   (expanded content)

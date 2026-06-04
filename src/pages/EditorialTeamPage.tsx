@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 
@@ -73,7 +73,7 @@ const EditorialTeamPage: React.FC = () => {
         <nav className="mb-6 text-slate-600 dark:text-slate-400">
           <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
           {' › '}
-          <Link to="/about" className="hover:text-blue-600 dark:hover:text-blue-400">About</Link>
+          <Link to="/about/" className="hover:text-blue-600 dark:hover:text-blue-400">About</Link>
           {' › '}
           <span className="text-slate-900 dark:text-slate-100">Editorial Team</span>
         </nav>
@@ -87,7 +87,7 @@ const EditorialTeamPage: React.FC = () => {
           <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-xl p-6 mb-8">
             <h2 className="text-xl font-bold text-blue-900 dark:text-blue-100 mb-3">Our Mission</h2>
             <p className="text-lg text-blue-800 dark:text-blue-200">
-              To provide accurate, accessible, and practical English grammar education for learners worldwide—completely free.
+              To provide accurate, accessible, and practical English grammar education for learners worldwide-completely free.
             </p>
           </div>
 
@@ -235,13 +235,13 @@ const EditorialTeamPage: React.FC = () => {
             TypoGrammar is an independent educational platform. All trademarks (IELTS, TOEFL, etc.) belong to their respective owners. We are not affiliated with ETS, British Council, IDP, or any testing organization.
           </p>
           <div className="flex flex-wrap gap-4 text-sm">
-            <Link to="/about" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+            <Link to="/about/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
               About TypoGrammar
             </Link>
-            <Link to="/contact" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+            <Link to="/contact/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
               Contact Us
             </Link>
-            <Link to="/privacy-policy" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+            <Link to="/privacy-policy/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
               Privacy Policy
             </Link>
           </div>

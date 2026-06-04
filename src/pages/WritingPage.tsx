@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import GoogleAd from '../components/GoogleAd';
 import SchemaMarkup from '../components/SchemaMarkup';
 import { Link } from 'react-router-dom';
@@ -9,7 +9,7 @@ const WritingPage: React.FC = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
 
   usePageMetadata({
-    title: 'How to Write a Perfect Essay – Step-by-Step Guide (2025) | TypoGrammar',
+    title: 'How to Write a Perfect Essay - Step-by-Step Guide (2025) | TypoGrammar',
     description: 'Master essay writing with our comprehensive 6-step guide. Learn how to craft strong thesis statements, develop body paragraphs using the PEEL method, and write compelling conclusions. Includes templates and examples.'
   });
 
@@ -126,7 +126,7 @@ const WritingPage: React.FC = () => {
       <div className="my-6 p-4 bg-blue-50 border-l-4 border-blue-400 text-blue-800 dark:bg-blue-900/30 dark:border-blue-500 dark:text-blue-300">
         <p className="text-lg">
           Before you begin, it's important to know what kind of essay you're writing. For a detailed breakdown, see our guide on{' '}
-          <Link to="/essay-types" className="font-bold hover:underline">
+          <Link to="/essay-types/" className="font-bold hover:underline">
             the main types of essays.
           </Link>
         </p>
@@ -297,27 +297,27 @@ V. Conclusion
       <section className="mt-12 p-6 bg-slate-50 rounded-xl border border-slate-200 dark:bg-slate-800/50 dark:border-slate-700">
         <h3 className="font-heading text-xl font-bold text-slate-800 mb-4 dark:text-slate-200">Related Writing Resources</h3>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <Link to="/essay-types" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
+          <Link to="/essay-types/" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
             <h4 className="font-semibold text-slate-800 dark:text-slate-200">Types of Essays</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">Argumentative, expository, narrative & more</p>
           </Link>
-          <Link to="/ielts/advantages-disadvantages-essay" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
+          <Link to="/ielts/advantages-disadvantages-essay/" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
             <h4 className="font-semibold text-slate-800 dark:text-slate-200">IELTS Essay Writing</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">Advantages/disadvantages essays</p>
           </Link>
-          <Link to="/punctuation-guide" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
+          <Link to="/punctuation-guide/" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
             <h4 className="font-semibold text-slate-800 dark:text-slate-200">Punctuation Guide</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">Master commas, colons, and more</p>
           </Link>
-          <Link to="/sentence-structure" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
+          <Link to="/sentence-structure/" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
             <h4 className="font-semibold text-slate-800 dark:text-slate-200">Sentence Structure</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">Build clear, effective sentences</p>
           </Link>
-          <Link to="/collocations" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
+          <Link to="/collocations/" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
             <h4 className="font-semibold text-slate-800 dark:text-slate-200">Collocations</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">Natural word combinations</p>
           </Link>
-          <Link to="/ai-writing-tools" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
+          <Link to="/ai-writing-tools/" className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-600">
             <h4 className="font-semibold text-slate-800 dark:text-slate-200">AI Writing Tools</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">Tools to improve your writing</p>
           </Link>

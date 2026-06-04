@@ -1,5 +1,5 @@
-import React, { lazy, Suspense } from 'react';
-import { Routes, Route } from 'react-router-dom';
+﻿import React, { lazy, Suspense } from 'react';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
 import { ProgressProvider } from './contexts/ProgressContext';
@@ -18,6 +18,7 @@ const BlogPostPage = lazy(() => import('./pages/BlogPostPage'));
 const FaqPage = lazy(() => import('./pages/FaqPage'));
 const CommonlyConfusedWordsPage = lazy(() => import('./pages/CommonlyConfusedWordsPage'));
 const ReadingPage = lazy(() => import('./pages/ReadingPage'));
+const DailyEnglishReadsPage = lazy(() => import('./pages/DailyEnglishReadsPage'));
 const TeacherPage = lazy(() => import('./pages/TeacherPage'));
 const ProfessionalEmailPage = lazy(() => import('./pages/ProfessionalEmailPage'));
 const BuildingArgumentPage = lazy(() => import('./pages/BuildingArgumentPage'));
@@ -53,6 +54,7 @@ const TwoPartQuestionEssayIELTSPage = lazy(() => import('./pages/TwoPartQuestion
 const MixedEssayTypesIELTSPage = lazy(() => import('./pages/MixedEssayTypesIELTSPage'));
 const Band8IELTSSampleAnswersPage = lazy(() => import('./pages/Band8IELTSSampleAnswersPage'));
 const Band9IELTSEssaysPage = lazy(() => import('./pages/Band9IELTSEssaysPage'));
+const IELTSSpeakingQuestionsPage = lazy(() => import('./pages/IELTSSpeakingQuestionsPage'));
 const ConditionalsInIELTSPage = lazy(() => import('./pages/ConditionalsInIELTSPage'));
 const PassiveVoiceIELTSPage = lazy(() => import('./pages/PassiveVoiceIELTSPage'));
 const ComplexSentencesIELTSPage = lazy(() => import('./pages/ComplexSentencesIELTSPage'));
@@ -73,17 +75,24 @@ const EnglishGrammarPDFPage = lazy(() => import('./pages/EnglishGrammarPDFPage')
 const IsIELTSGettingHarderPage = lazy(() => import('./pages/IsIELTSGettingHarderPage'));
 const WhyStuckAt65Page = lazy(() => import('./pages/WhyStuckAt65Page'));
 const IELTSIn3DaysPage = lazy(() => import('./pages/IELTSIn3DaysPage'));
+const IELTSScoreRequirementsPage = lazy(() => import('./pages/IELTSScoreRequirementsPage'));
+const CountriesWithoutIELTSPage = lazy(() => import('./pages/CountriesWithoutIELTSPage'));
 const WhatIsTypogrammarPage = lazy(() => import('./pages/WhatIsTypogrammarPage'));
 const EditorialTeamPage = lazy(() => import('./pages/EditorialTeamPage'));
 const VerbTensesQuizPage = lazy(() => import('./pages/quizzes/VerbTensesQuizPage'));
 const IELTSTestsPage = lazy(() => import('./pages/IELTSTestsPage'));
 const IELTSListeningMockTest1Section1Page = lazy(() => import('./pages/IELTSListeningMockTest1Section1Page'));
+const IELTSAcademicReadingTest01Page = lazy(() => import('./pages/ielts-tests/IELTSAcademicReadingTest01Page'));
+const IELTSGeneralReadingTest01Page = lazy(() => import('./pages/ielts-tests/IELTSGeneralReadingTest01Page'));
 const GrammarCheckerPage = lazy(() => import('./pages/GrammarCheckerPage'));
 const ParaphrasingToolPage = lazy(() => import('./pages/ParaphrasingToolPage'));
 const FreeParaphrasingToolWithoutLoginPage = lazy(() => import('./pages/FreeParaphrasingToolWithoutLoginPage'));
 const IELTSBandScoreCalculatorPage = lazy(() => import('./pages/IELTSBandScoreCalculatorPage'));
+const IELTSReadingScoreConversionPage = lazy(() => import('./pages/IELTSReadingScoreConversionPage'));
+const Is75IELTSScoreGoodEnoughPage = lazy(() => import('./pages/Is75IELTSScoreGoodEnoughPage'));
 const EssayTopicGeneratorPage = lazy(() => import('./pages/EssayTopicGeneratorPage'));
 const AIWritingToolsPage = lazy(() => import('./pages/AIWritingToolsPage'));
+const TypoGrammarWriteExtensionPage = lazy(() => import('./pages/TypoGrammarWriteExtensionPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 
 // TOEFL Preparation Pages
@@ -97,16 +106,24 @@ const TOEFLDailyLifeReadingTaskPage = lazy(() => import('./pages/TOEFLDailyLifeR
 const TOEFLReadingPracticePDFPage = lazy(() => import('./pages/TOEFLReadingPracticePDFPage'));
 const TOEFLVocabularyPDFPage = lazy(() => import('./pages/TOEFLVocabularyPDFPage'));
 const TOEFLWritingPDFPage = lazy(() => import('./pages/TOEFLWritingPDFPage'));
+const TOEFL1000SpeakingQuestionsPage = lazy(() => import('./pages/TOEFL1000SpeakingQuestionsPage'));
 // TOEFL Strategy & Success
 const OldTOEFLvsNewTOEFL2026Page = lazy(() => import('./pages/OldTOEFLvsNewTOEFL2026Page'));
 const TOEFLCompleteTheWordsPage = lazy(() => import('./pages/TOEFLCompleteTheWordsPage'));
 const TOEFL2026ScoringPage = lazy(() => import('./pages/TOEFL2026ScoringPage'));
+const TOEFLiBTvsLTPPage = lazy(() => import('./pages/TOEFLiBTvsLTPPage'));
+const TOEFLSpeakingAverageVsHighScoringPage = lazy(() => import('./pages/TOEFLSpeakingAverageVsHighScoringPage'));
 // TOEFL Writing
 const TOEFLWritingTask1ExplainedPage = lazy(() => import('./pages/TOEFLWritingTask1ExplainedPage'));
 const TOEFLWritingTask2ExplainedPage = lazy(() => import('./pages/TOEFLWritingTask2ExplainedPage'));
 const TOEFLWritingTemplatesPage = lazy(() => import('./pages/TOEFLWritingTemplatesPage'));
 const TOEFLWritingTopicsPage = lazy(() => import('./pages/TOEFLWritingTopicsPage'));
 const TOEFLWritingPracticeQuestionsPage = lazy(() => import('./pages/TOEFLWritingPracticeQuestionsPage'));
+
+// TOEFL Reading Practice Tests (2026 format)
+const TOEFLReadingTest01Page = lazy(() => import('./pages/toefl-tests/TOEFLReadingTest01Page'));
+const TOEFLReadingTest02Page = lazy(() => import('./pages/toefl-tests/TOEFLReadingTest02Page'));
+const TOEFLReadingTest03Page = lazy(() => import('./pages/toefl-tests/TOEFLReadingTest03Page'));
 
 // Grammar Mistakes Pillar Pages
 const GrammarMistakesPage = lazy(() => import('./pages/GrammarMistakesPage'));
@@ -207,6 +224,20 @@ const EndResultPage = lazy(() => import('./pages/grammar-mistakes/EndResultPage'
 const FinalOutcomePage = lazy(() => import('./pages/grammar-mistakes/FinalOutcomePage'));
 const PastHistoryPage = lazy(() => import('./pages/grammar-mistakes/PastHistoryPage'));
 const CloseProximityPage = lazy(() => import('./pages/grammar-mistakes/CloseProximityPage'));
+// Word Confusion (new)
+const VeryVsTooVsSoPage = lazy(() => import('./pages/grammar-mistakes/VeryVsTooVsSoPage'));
+const SoVsSuchPage = lazy(() => import('./pages/grammar-mistakes/SoVsSuchPage'));
+const StillVsYetVsAlreadyPage = lazy(() => import('./pages/grammar-mistakes/StillVsYetVsAlreadyPage'));
+// Verb Form Errors (new)
+const UsedToVsBeUsedToPage = lazy(() => import('./pages/grammar-mistakes/UsedToVsBeUsedToPage'));
+// Preposition Errors (new)
+const SinceVsForPage = lazy(() => import('./pages/grammar-mistakes/SinceVsForPage'));
+const DuringVsForVsWhilePage = lazy(() => import('./pages/grammar-mistakes/DuringVsForVsWhilePage'));
+const InVsOnVsAtTimeAndPlacePage = lazy(() => import('./pages/grammar-mistakes/InVsOnVsAtTimeAndPlacePage'));
+const InVsOnVsAtPlacePage = lazy(() => import('./pages/grammar-mistakes/InVsOnVsAtPlacePage'));
+const ToVsForPage = lazy(() => import('./pages/grammar-mistakes/ToVsForPage'));
+const ByVsWithPage = lazy(() => import('./pages/grammar-mistakes/ByVsWithPage'));
+const AboutVsOfPage = lazy(() => import('./pages/grammar-mistakes/AboutVsOfPage'));
 
 // Verb Tenses Hub and Individual Tense Pages
 const VerbTensesHubPage = lazy(() => import('./pages/VerbTensesHubPage'));
@@ -270,6 +301,7 @@ const App: React.FC = () => {
             <Route path="phrasal-verbs" element={<Suspense fallback={<PageLoader />}><PhrasalVerbsPage /></Suspense>} />
             <Route path="prefixes-suffixes" element={<Suspense fallback={<PageLoader />}><PrefixesSuffixesPage /></Suspense>} />
             <Route path="commonly-confused-words" element={<Suspense fallback={<PageLoader />}><CommonlyConfusedWordsPage /></Suspense>} />
+            <Route path="vocabulary" element={<Navigate to="/vocabulary/collocations/" replace />} />
             <Route path="vocabulary/collocations" element={<Suspense fallback={<PageLoader />}><CollocationsPage /></Suspense>} />
             <Route path="vocabulary/homophones-homonyms-homographs" element={<Suspense fallback={<PageLoader />}><HomophonesHomonymsHomographsPage /></Suspense>} />
             <Route path="writing/how-to-write-an-essay" element={<Suspense fallback={<PageLoader />}><WritingPage /></Suspense>} />
@@ -279,6 +311,7 @@ const App: React.FC = () => {
             <Route path="writing/how-to-paraphrase" element={<Suspense fallback={<PageLoader />}><ParaphrasingPage /></Suspense>} />
             <Route path="writing/how-to-vary-sentence-structure" element={<Suspense fallback={<PageLoader />}><VaryingSentenceStructurePage /></Suspense>} />
             <Route path="reading/how-to-read-efficiently" element={<Suspense fallback={<PageLoader />}><ReadingPage /></Suspense>} />
+            <Route path="daily-english-reads" element={<Suspense fallback={<PageLoader />}><DailyEnglishReadsPage /></Suspense>} />
             <Route path="reading/reading-comprehension-practice" element={<Suspense fallback={<PageLoader />}><ReadingComprehensionPage /></Suspense>} />
             <Route path="reading/how-to-read-critically" element={<Suspense fallback={<PageLoader />}><CriticalReadingPage /></Suspense>} />
             <Route path="about" element={<Suspense fallback={<PageLoader />}><AboutPage /></Suspense>} />
@@ -297,6 +330,7 @@ const App: React.FC = () => {
             <Route path="practice-tools" element={<Suspense fallback={<PageLoader />}><PracticeToolsPage /></Suspense>} />
             <Route path="interactive-exercises" element={<Suspense fallback={<PageLoader />}><InteractiveExercisesPage /></Suspense>} />
             <Route path="ai-writing-tools" element={<Suspense fallback={<PageLoader />}><AIWritingToolsPage /></Suspense>} />
+            <Route path="typogrammar-write" element={<Suspense fallback={<PageLoader />}><TypoGrammarWriteExtensionPage /></Suspense>} />
             <Route path="grammar-checker" element={<Suspense fallback={<PageLoader />}><GrammarCheckerPage /></Suspense>} />
             <Route path="paraphrasing-tool" element={<Suspense fallback={<PageLoader />}><ParaphrasingToolPage /></Suspense>} />
             <Route path="free-paraphrasing-tool-without-login" element={<Suspense fallback={<PageLoader />}><FreeParaphrasingToolWithoutLoginPage /></Suspense>} />
@@ -316,6 +350,7 @@ const App: React.FC = () => {
             <Route path="ielts/mixed-essay-types-ielts" element={<Suspense fallback={<PageLoader />}><MixedEssayTypesIELTSPage /></Suspense>} />
             <Route path="ielts/band-8-ielts-sample-answers" element={<Suspense fallback={<PageLoader />}><Band8IELTSSampleAnswersPage /></Suspense>} />
             <Route path="ielts/50-band-9-ielts-writing-task-2-sample-essays" element={<Suspense fallback={<PageLoader />}><Band9IELTSEssaysPage /></Suspense>} />
+            <Route path="ielts/1000-ielts-speaking-questions" element={<Suspense fallback={<PageLoader />}><IELTSSpeakingQuestionsPage /></Suspense>} />
             <Route path="ielts/conditionals-in-ielts" element={<Suspense fallback={<PageLoader />}><ConditionalsInIELTSPage /></Suspense>} />
             <Route path="ielts/passive-voice-ielts-writing" element={<Suspense fallback={<PageLoader />}><PassiveVoiceIELTSPage /></Suspense>} />
             <Route path="ielts/how-to-write-complex-sentences" element={<Suspense fallback={<PageLoader />}><ComplexSentencesIELTSPage /></Suspense>} />
@@ -323,6 +358,10 @@ const App: React.FC = () => {
             <Route path="ielts/task-achievement-in-ielts" element={<Suspense fallback={<PageLoader />}><TaskAchievementIELTSPage /></Suspense>} />
             <Route path="ielts/lexical-resource-in-ielts" element={<Suspense fallback={<PageLoader />}><LexicalResourceIELTSPage /></Suspense>} />
             
+            {/* IELTS High-Intent Guides */}
+            <Route path="ielts/reading-raw-score-to-band-conversion" element={<Suspense fallback={<PageLoader />}><IELTSReadingScoreConversionPage /></Suspense>} />
+            <Route path="ielts/is-7-5-ielts-score-good-enough" element={<Suspense fallback={<PageLoader />}><Is75IELTSScoreGoodEnoughPage /></Suspense>} />
+
             {/* IELTS Vocabulary Routes */}
             <Route path="ielts/vocabulary/band-6" element={<Suspense fallback={<PageLoader />}><IELTSVocabularyBand6Page /></Suspense>} />
             <Route path="ielts/vocabulary/band-7" element={<Suspense fallback={<PageLoader />}><IELTSVocabularyBand7Page /></Suspense>} />
@@ -342,10 +381,14 @@ const App: React.FC = () => {
             <Route path="ielts/is-ielts-getting-harder-2026" element={<Suspense fallback={<PageLoader />}><IsIELTSGettingHarderPage /></Suspense>} />
             <Route path="ielts/why-stuck-at-6-5" element={<Suspense fallback={<PageLoader />}><WhyStuckAt65Page /></Suspense>} />
             <Route path="ielts/ielts-in-3-days" element={<Suspense fallback={<PageLoader />}><IELTSIn3DaysPage /></Suspense>} />
+            <Route path="ielts/ielts-score-requirements-by-country" element={<Suspense fallback={<PageLoader />}><IELTSScoreRequirementsPage /></Suspense>} />
+            <Route path="ielts/countries-without-ielts" element={<Suspense fallback={<PageLoader />}><CountriesWithoutIELTSPage /></Suspense>} />
             
             {/* IELTS Tests Routes */}
             <Route path="ielts/tests" element={<Suspense fallback={<PageLoader />}><IELTSTestsPage /></Suspense>} />
             <Route path="ielts/tests/listening/mock-test-1/section-1" element={<Suspense fallback={<PageLoader />}><IELTSListeningMockTest1Section1Page /></Suspense>} />
+            <Route path="ielts/tests/reading/academic/test-1" element={<Suspense fallback={<PageLoader />}><IELTSAcademicReadingTest01Page /></Suspense>} />
+            <Route path="ielts/tests/reading/general/test-1" element={<Suspense fallback={<PageLoader />}><IELTSGeneralReadingTest01Page /></Suspense>} />
             
             {/* TOEFL Preparation Routes */}
             <Route path="toefl/toefl-reading/toefl-reading-section-explained" element={<Suspense fallback={<PageLoader />}><TOEFLReadingSectionExplainedPage /></Suspense>} />
@@ -354,6 +397,10 @@ const App: React.FC = () => {
             <Route path="toefl/toefl-reading/toefl-reading-time-management" element={<Suspense fallback={<PageLoader />}><TOEFLReadingTimeManagementPage /></Suspense>} />
             <Route path="toefl/toefl-reading/toefl-reading-practice-questions" element={<Suspense fallback={<PageLoader />}><TOEFLReadingPracticeQuestionsPage /></Suspense>} />
             <Route path="toefl/toefl-reading/toefl-daily-life-reading-task" element={<Suspense fallback={<PageLoader />}><TOEFLDailyLifeReadingTaskPage /></Suspense>} />
+            {/* TOEFL Reading Practice Tests */}
+            <Route path="toefl/tests/reading/test-1" element={<Suspense fallback={<PageLoader />}><TOEFLReadingTest01Page /></Suspense>} />
+            <Route path="toefl/tests/reading/test-2" element={<Suspense fallback={<PageLoader />}><TOEFLReadingTest02Page /></Suspense>} />
+            <Route path="toefl/tests/reading/test-3" element={<Suspense fallback={<PageLoader />}><TOEFLReadingTest03Page /></Suspense>} />
             {/* TOEFL Writing Routes */}
             <Route path="toefl/toefl-writing/toefl-writing-task-1-explained" element={<Suspense fallback={<PageLoader />}><TOEFLWritingTask1ExplainedPage /></Suspense>} />
             <Route path="toefl/toefl-writing/toefl-writing-task-2-explained" element={<Suspense fallback={<PageLoader />}><TOEFLWritingTask2ExplainedPage /></Suspense>} />
@@ -364,10 +411,13 @@ const App: React.FC = () => {
             <Route path="toefl/toefl-reading-practice-pdf" element={<Suspense fallback={<PageLoader />}><TOEFLReadingPracticePDFPage /></Suspense>} />
             <Route path="toefl/toefl-vocabulary-pdf" element={<Suspense fallback={<PageLoader />}><TOEFLVocabularyPDFPage /></Suspense>} />
             <Route path="toefl/toefl-writing-pdf" element={<Suspense fallback={<PageLoader />}><TOEFLWritingPDFPage /></Suspense>} />
+            <Route path="toefl/1000-toefl-speaking-questions" element={<Suspense fallback={<PageLoader />}><TOEFL1000SpeakingQuestionsPage /></Suspense>} />
             {/* TOEFL Strategy & Success Routes */}
             <Route path="toefl/strategy-success/old-toefl-vs-new-toefl" element={<Suspense fallback={<PageLoader />}><OldTOEFLvsNewTOEFL2026Page /></Suspense>} />
             <Route path="toefl/strategy-success/toefl-complete-the-words" element={<Suspense fallback={<PageLoader />}><TOEFLCompleteTheWordsPage /></Suspense>} />
             <Route path="toefl/strategy-success/toefl-2026-scoring" element={<Suspense fallback={<PageLoader />}><TOEFL2026ScoringPage /></Suspense>} />
+            <Route path="toefl/strategy-success/toefl-ibt-vs-toefl-ltp" element={<Suspense fallback={<PageLoader />}><TOEFLiBTvsLTPPage /></Suspense>} />
+            <Route path="toefl/strategy-success/toefl-speaking-average-vs-high-scoring-answer" element={<Suspense fallback={<PageLoader />}><TOEFLSpeakingAverageVsHighScoringPage /></Suspense>} />
             
             {/* Grammar Mistakes Pillar Routes */}
             <Route path="grammar-mistakes" element={<Suspense fallback={<PageLoader />}><GrammarMistakesPage /></Suspense>} />
@@ -462,6 +512,20 @@ const App: React.FC = () => {
             <Route path="grammar-mistakes/final-outcome" element={<Suspense fallback={<PageLoader />}><FinalOutcomePage /></Suspense>} />
             <Route path="grammar-mistakes/past-history" element={<Suspense fallback={<PageLoader />}><PastHistoryPage /></Suspense>} />
             <Route path="grammar-mistakes/close-proximity" element={<Suspense fallback={<PageLoader />}><CloseProximityPage /></Suspense>} />
+            {/* Word Confusion (new) */}
+            <Route path="grammar-mistakes/very-vs-too-vs-so" element={<Suspense fallback={<PageLoader />}><VeryVsTooVsSoPage /></Suspense>} />
+            <Route path="grammar-mistakes/so-vs-such" element={<Suspense fallback={<PageLoader />}><SoVsSuchPage /></Suspense>} />
+            <Route path="grammar-mistakes/still-vs-yet-vs-already" element={<Suspense fallback={<PageLoader />}><StillVsYetVsAlreadyPage /></Suspense>} />
+            {/* Verb Form Errors (new) */}
+            <Route path="grammar-mistakes/used-to-vs-be-used-to" element={<Suspense fallback={<PageLoader />}><UsedToVsBeUsedToPage /></Suspense>} />
+            {/* Preposition Errors (new) */}
+            <Route path="grammar-mistakes/since-vs-for" element={<Suspense fallback={<PageLoader />}><SinceVsForPage /></Suspense>} />
+            <Route path="grammar-mistakes/during-vs-for-vs-while" element={<Suspense fallback={<PageLoader />}><DuringVsForVsWhilePage /></Suspense>} />
+            <Route path="grammar-mistakes/in-vs-on-vs-at-time-and-place" element={<Suspense fallback={<PageLoader />}><InVsOnVsAtTimeAndPlacePage /></Suspense>} />
+            <Route path="grammar-mistakes/in-vs-on-vs-at-place" element={<Suspense fallback={<PageLoader />}><InVsOnVsAtPlacePage /></Suspense>} />
+            <Route path="grammar-mistakes/to-vs-for" element={<Suspense fallback={<PageLoader />}><ToVsForPage /></Suspense>} />
+            <Route path="grammar-mistakes/by-vs-with" element={<Suspense fallback={<PageLoader />}><ByVsWithPage /></Suspense>} />
+            <Route path="grammar-mistakes/about-vs-of" element={<Suspense fallback={<PageLoader />}><AboutVsOfPage /></Suspense>} />
             
             {/* 404 Catch-all Route */}
             <Route path="*" element={<Suspense fallback={<PageLoader />}><NotFoundPage /></Suspense>} />

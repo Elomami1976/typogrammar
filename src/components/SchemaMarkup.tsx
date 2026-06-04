@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { normalizeUrlsInSchema } from '../seo/normalizeSeoSignals';
 
 interface SchemaMarkupProps {
   type: 'Organization' | 'EducationalOrganization' | 'Course' | 'Article' | 'Quiz' | 'FAQPage';
@@ -9,12 +10,13 @@ const SchemaMarkup: React.FC<SchemaMarkupProps> = ({ type, data }) => {
   useEffect(() => {
     const script = document.createElement('script');
     script.type = 'application/ld+json';
-    
-    let schema: Record<string, any> = {
+
+    const rawSchema: Record<string, any> = {
       '@context': 'https://schema.org',
       '@type': type,
       ...data
     };
+    const schema = normalizeUrlsInSchema(rawSchema);
 
     script.text = JSON.stringify(schema);
     document.head.appendChild(script);

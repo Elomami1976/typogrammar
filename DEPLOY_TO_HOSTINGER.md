@@ -7,7 +7,7 @@ This document shows how to prepare and upload your static site build (Vite) to H
 - `scripts/zip-dist.sh`: Bash helper to create `dist-deploy.zip` (macOS / WSL / Linux)
 - `public/.htaccess` is already present and will be copied to `dist/` by the build; the `dist/` folder includes `.htaccess`.
 
-## Step 1 — Build (if not already built)
+## Step 1, Build (if not already built)
 Run from project root:
 
 ```powershell
@@ -15,7 +15,7 @@ npm install
 npm run build
 ```
 
-## Step 2 — Create the deployment zip
+## Step 2, Create the deployment zip
 Choose one of the scripts below depending on your environment.
 
 Windows PowerShell (run in project root):
@@ -32,7 +32,7 @@ bash scripts/zip-dist.sh
 
 After running the script you should have `dist-deploy.zip` in the project root. This zip contains the *contents* of `dist/` (not a parent `dist` folder).
 
-## Step 3 — Upload to Hostinger (File Manager recommended)
+## Step 3, Upload to Hostinger (File Manager recommended)
 1. Log into Hostinger hPanel.
 2. Go to Files → File Manager.
 3. Open `public_html`.
@@ -41,9 +41,9 @@ After running the script you should have `dist-deploy.zip` in the project root. 
 6. Select the uploaded `dist-deploy.zip` and use the `Extract` action so files are extracted into `public_html`.
 7. Confirm that `index.html`, `assets/`, `.htaccess`, and other files are directly inside `public_html`.
 
-> Important: Do NOT upload the `dist/` folder itself—upload its contents (the zip we created does this).
+> Important: Do NOT upload the `dist/` folder itself-upload its contents (the zip we created does this).
 
-## Step 4 — Verify
+## Step 4, Verify
 - Visit your domain (e.g., https://yourdomain.com). The site should load.
 - Test internal routes (e.g., `/topics/present-simple`) and refresh to confirm SPA routing. If you get 404s on refresh, ensure `.htaccess` exists in `public_html` and contains the rewrite rules.
 - Open Developer Tools (F12) → Console to check for JavaScript errors and Network tab to see any missing files.

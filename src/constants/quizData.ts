@@ -901,7 +901,7 @@ const BASE_QUIZZES: Quiz[] = [
         question: 'Identify the type of ellipsis: "She can play piano and [can play] guitar too."',
         options: ['Nominal ellipsis', 'Verbal ellipsis', 'Clausal ellipsis', 'No ellipsis'],
         correctAnswer: 1,
-        explanation: 'This is verbal ellipsis—the verb phrase "can play" is omitted in the second part.'
+        explanation: 'This is verbal ellipsis-the verb phrase "can play" is omitted in the second part.'
       },
       {
         question: 'Complete with ellipsis: "I have more books than you ___."',
@@ -1125,7 +1125,7 @@ const BASE_QUIZZES: Quiz[] = [
         question: 'Remember RAVEN: What does it stand for?',
         options: ['Remember Affect Verb, Effect Noun', 'Remember All Verbs End Nicely', 'Recall Affect Very Easily Now', 'None'],
         correctAnswer: 0,
-        explanation: 'RAVEN: Remember Affect Verb, Effect Noun—a helpful memory trick.'
+        explanation: 'RAVEN: Remember Affect Verb, Effect Noun-a helpful memory trick.'
       }
     ]
   },

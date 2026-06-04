@@ -232,8 +232,8 @@ const BasicGrammarTerminologyPage: React.FC = () => {
        <div className="my-8 p-6 bg-slate-50 rounded-lg border border-slate-200 dark:bg-slate-800 dark:border-slate-700">
           <p className="font-semibold text-center text-slate-600 mb-4 dark:text-slate-400">Breakdown of a Prepositional Phrase:</p>
           <div className="flex justify-center items-center gap-2 flex-wrap text-lg font-semibold">
-              <div className="p-2 px-4 bg-orange-100 text-orange-800 rounded-md text-center dark:bg-orange-900/50 dark:text-orange-300">
-                  <span className="text-xs uppercase font-semibold tracking-wider text-orange-500 dark:text-orange-400">Preposition</span>
+              <div className="p-2 px-4 bg-teal-100 text-teal-800 rounded-md text-center dark:bg-teal-900/50 dark:text-teal-300">
+                  <span className="text-xs uppercase font-semibold tracking-wider text-teal-500 dark:text-teal-400">Preposition</span>
                   <p>in</p>
               </div>
               <div className="p-2 px-4 bg-sky-100 text-sky-800 rounded-md text-center dark:bg-sky-900/50 dark:text-sky-300">

@@ -1,4 +1,4 @@
-
+﻿
 import React, { useState, useMemo } from 'react';
 import { CONFUSED_WORDS } from '../constants/confusedWords';
 import { ConfusedWordSet } from '../types';
@@ -33,7 +33,7 @@ const CommonlyConfusedWordsPage: React.FC = () => {
       <div className="text-center mb-12">
         <h1 className="font-heading text-5xl font-extrabold text-slate-900 mb-4 tracking-tight dark:text-slate-100">Commonly Confused Words in English</h1>
         <p className="font-body text-xl text-slate-600 max-w-3xl mx-auto dark:text-slate-400">
-          A complete reference of <strong>100+ English word pairs</strong> that look or sound alike but have different meanings — including affect/effect, their/there/they're, then/than, and more.
+          A complete reference of <strong>100+ English word pairs</strong> that look or sound alike but have different meanings, including affect/effect, their/there/they're, then/than, and more.
         </p>
       </div>
 
@@ -126,13 +126,13 @@ const CommonlyConfusedWordsPage: React.FC = () => {
         <p className="text-slate-600 dark:text-slate-400 mb-6">Want a more detailed explanation? Explore our in-depth lessons on the most commonly confused pairs:</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {[
-            { to: '/topics/affect-vs-effect', label: 'Affect vs Effect' },
-            { to: '/topics/its-vs-its', label: "It's vs Its" },
-            { to: '/topics/lay-vs-lie', label: 'Lay vs Lie' },
-            { to: '/topics/make-vs-do', label: 'Make vs Do' },
-            { to: '/topics/few-little-less-fewer', label: 'Few vs Little, Less vs Fewer' },
-            { to: '/topics/used-to-vs-would', label: 'Used To vs Would' },
-            { to: '/topics/wish-vs-hope', label: 'Wish vs Hope' },
+            { to: '/topics/affect-vs-effect/', label: 'Affect vs Effect' },
+            { to: '/topics/its-vs-its/', label: "It's vs Its" },
+            { to: '/topics/lay-vs-lie/', label: 'Lay vs Lie' },
+            { to: '/topics/make-vs-do/', label: 'Make vs Do' },
+            { to: '/topics/few-little-less-fewer/', label: 'Few vs Little, Less vs Fewer' },
+            { to: '/topics/used-to-vs-would/', label: 'Used To vs Would' },
+            { to: '/topics/wish-vs-hope/', label: 'Wish vs Hope' },
           ].map((item) => (
             <Link key={item.to} to={item.to} className="block p-4 bg-slate-50 dark:bg-slate-700/50 border border-slate-200 dark:border-slate-600 rounded-lg hover:bg-blue-50 hover:border-blue-300 dark:hover:bg-slate-700 dark:hover:border-blue-500 transition-colors">
               <span className="font-semibold text-blue-600 dark:text-blue-400">{item.label}</span>

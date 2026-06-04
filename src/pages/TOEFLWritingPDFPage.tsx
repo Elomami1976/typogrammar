@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading, BulletList } from '../components/ArticleComponents';
+import MiniQuiz from '../components/MiniQuiz';
 
 const TOEFLWritingPDFPage: React.FC = () => {
   usePageMetadata({
@@ -34,7 +35,7 @@ const TOEFLWritingPDFPage: React.FC = () => {
         "name": "How many words should I write?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Task 1: 150–225 words. Task 2: At least 100 words (ideally 120–180)."
+          "text": "Task 1: 150-225 words. Task 2: At least 100 words (ideally 120-180)."
         }
       },
       {
@@ -58,7 +59,7 @@ const TOEFLWritingPDFPage: React.FC = () => {
         "name": "How long should I practice writing daily?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "At least 20–30 minutes per day for best results."
+          "text": "At least 20-30 minutes per day for best results."
         }
       }
     ]
@@ -77,11 +78,11 @@ const TOEFLWritingPDFPage: React.FC = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
       <h1 className="text-4xl font-bold mb-4 text-slate-900 dark:text-slate-100">
-        TOEFL Writing PDF (Task 1 & Task 2) – Templates + High-Scoring Examples
+        TOEFL Writing PDF (Task 1 & Task 2) - Templates + High-Scoring Examples
       </h1>
 
       <p className="text-xl text-blue-600 dark:text-blue-400 font-medium mb-8">
-        Improve Your TOEFL Writing Score (0–30) with Proven Templates
+        Improve Your TOEFL Writing Score (0-30) with Proven Templates
       </p>
 
       <ArticleParagraph>
@@ -143,7 +144,7 @@ const TOEFLWritingPDFPage: React.FC = () => {
           { icon: '🧩', text: 'Task 1 & Task 2 explained clearly' },
           { icon: '🧱', text: 'Sentence-by-sentence templates' },
           { icon: '📝', text: 'High-scoring sample essays (5/5 level)' },
-          { icon: '📊', text: 'Scoring rubrics (0–30 scale)' },
+          { icon: '📊', text: 'Scoring rubrics (0-30 scale)' },
           { icon: '🔗', text: '50+ academic phrases & transitions' },
           { icon: '📅', text: '7-day study plan' },
         ].map((item, index) => (
@@ -171,7 +172,7 @@ const TOEFLWritingPDFPage: React.FC = () => {
           'Write a summary explaining how the lecture challenges the reading'
         ]} />
         <div className="mt-4 space-y-2">
-          <p className="text-blue-700 dark:text-blue-300">✔️ Word count: <strong>150–225 words</strong></p>
+          <p className="text-blue-700 dark:text-blue-300">✔️ Word count: <strong>150-225 words</strong></p>
           <p className="text-blue-700 dark:text-blue-300">✔️ Focus: <strong>Lecture (NOT your opinion)</strong></p>
         </div>
       </div>
@@ -190,7 +191,7 @@ const TOEFLWritingPDFPage: React.FC = () => {
           'Engage with other students\' ideas'
         ]} />
         <div className="mt-4 space-y-2">
-          <p className="text-purple-700 dark:text-purple-300">✔️ Minimum: <strong>100 words (aim for 120–180)</strong></p>
+          <p className="text-purple-700 dark:text-purple-300">✔️ Minimum: <strong>100 words (aim for 120-180)</strong></p>
           <p className="text-purple-700 dark:text-purple-300">✔️ Focus: <strong>Clear opinion + strong examples</strong></p>
         </div>
       </div>
@@ -234,12 +235,12 @@ const TOEFLWritingPDFPage: React.FC = () => {
       </ArticleParagraph>
       <div className="space-y-2 my-4">
         {[
-          '"It is widely acknowledged that…"',
-          '"However, the professor challenges…"',
-          '"For instance…"'
+          '"It is widely acknowledged that..."',
+          '"However, the professor challenges..."',
+          '"For instance..."'
         ].map((phrase, index) => (
-          <div key={index} className="flex items-center gap-2 p-3 bg-amber-50 dark:bg-amber-900/20 rounded-lg">
-            <span className="text-amber-600 dark:text-amber-400">→</span>
+          <div key={index} className="flex items-center gap-2 p-3 bg-teal-50 dark:bg-teal-900/20 rounded-lg">
+            <span className="text-teal-600 dark:text-teal-400">→</span>
             <span className="text-slate-700 dark:text-slate-300 italic">{phrase}</span>
           </div>
         ))}
@@ -264,7 +265,7 @@ const TOEFLWritingPDFPage: React.FC = () => {
 
       <div className="space-y-6 my-8">
         {[
-          { step: 1, title: 'Learn the Templates', desc: 'Memorize structure first — this saves time during the test.' },
+          { step: 1, title: 'Learn the Templates', desc: 'Memorize structure first, this saves time during the test.' },
           { step: 2, title: 'Practice Daily', desc: 'Write at least 1 Task 1 and 1 Task 2 per day.' },
           { step: 3, title: 'Use Advanced Vocabulary', desc: 'Replace simple words: ❌ good → ✅ beneficial, ❌ show → ✅ demonstrate' },
           { step: 4, title: 'Review and Improve', desc: 'Compare your answers with sample responses.' },
@@ -333,15 +334,15 @@ const TOEFLWritingPDFPage: React.FC = () => {
           </thead>
           <tbody>
             <tr>
-              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300 font-medium">Day 1–2</td>
+              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300 font-medium">Day 1-2</td>
               <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">Learn templates</td>
             </tr>
             <tr className="bg-slate-50 dark:bg-slate-800/50">
-              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300 font-medium">Day 3–4</td>
+              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300 font-medium">Day 3-4</td>
               <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">Practice Task 1</td>
             </tr>
             <tr>
-              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300 font-medium">Day 5–6</td>
+              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300 font-medium">Day 5-6</td>
               <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">Practice Task 2</td>
             </tr>
             <tr className="bg-slate-50 dark:bg-slate-800/50">
@@ -360,10 +361,10 @@ const TOEFLWritingPDFPage: React.FC = () => {
       </ArticleParagraph>
 
       <BulletList items={[
-        <Link to="/toefl/toefl-reading-practice-pdf" className="text-blue-600 dark:text-blue-400 hover:underline">TOEFL Reading Practice PDF</Link>,
-        <Link to="/toefl/toefl-vocabulary-pdf" className="text-blue-600 dark:text-blue-400 hover:underline">TOEFL Vocabulary PDF (500 Words)</Link>,
-        <Link to="/toefl/toefl-writing/toefl-writing-templates" className="text-blue-600 dark:text-blue-400 hover:underline">TOEFL Writing Templates</Link>,
-        <Link to="/toefl/toefl-reading/toefl-reading-strategies" className="text-blue-600 dark:text-blue-400 hover:underline">TOEFL Reading Strategies</Link>,
+        <Link to="/toefl/toefl-reading-practice-pdf/" className="text-blue-600 dark:text-blue-400 hover:underline">TOEFL Reading Practice PDF</Link>,
+        <Link to="/toefl/toefl-vocabulary-pdf/" className="text-blue-600 dark:text-blue-400 hover:underline">TOEFL Vocabulary PDF (500 Words)</Link>,
+        <Link to="/toefl/toefl-writing/toefl-writing-templates/" className="text-blue-600 dark:text-blue-400 hover:underline">TOEFL Writing Templates</Link>,
+        <Link to="/toefl/toefl-reading/toefl-reading-strategies/" className="text-blue-600 dark:text-blue-400 hover:underline">TOEFL Reading Strategies</Link>,
       ]} />
 
       {/* Final CTA */}
@@ -383,6 +384,47 @@ const TOEFLWritingPDFPage: React.FC = () => {
         </a>
       </div>
 
+      {/* TRY-BEFORE-DOWNLOAD MINI QUIZ */}
+      <MiniQuiz
+        title="TOEFL Writing: Quick Self-Check"
+        intro="Three sample questions in the style of feedback you'll see inside the PDF."
+        questions={[
+          {
+            question: 'In a TOEFL Integrated Writing task, your job is to:',
+            options: [
+              'Argue your personal opinion using outside examples',
+              'Summarise the lecture and explain how it relates to the reading',
+              'Memorise and reproduce the reading word for word',
+              'Translate the reading and lecture into your own language',
+            ],
+            correctAnswer: 1,
+            explanation: 'Integrated Writing requires you to synthesise the reading and lecture — not give a personal opinion.',
+          },
+          {
+            question: 'Which transition is BEST to introduce a contrasting idea in a TOEFL essay?',
+            options: ['Furthermore', 'In addition', 'However', 'For example'],
+            correctAnswer: 2,
+            explanation: '"However" signals contrast; the others signal addition or examples.',
+          },
+          {
+            question: 'For a strong Independent Writing essay, the introduction should:',
+            options: [
+              'List every example you plan to discuss in detail',
+              'Restate the prompt verbatim and stop',
+              'Paraphrase the prompt, take a clear position, and preview your reasons',
+              'Be a single short sentence to save time for the body',
+            ],
+            correctAnswer: 2,
+            explanation: 'A strong intro paraphrases, states a clear thesis, and previews reasons — a hallmark of high-scoring essays.',
+          },
+        ]}
+        cta={{
+          to: '/toefl-writing-templates/',
+          label: 'See Full TOEFL Writing Templates',
+          subtitle: 'Step-by-step structures for Task 1 & Task 2.',
+        }}
+      />
+
       {/* FAQ Section */}
       <ArticleHeading>Frequently Asked Questions (FAQ)</ArticleHeading>
 
@@ -398,7 +440,7 @@ const TOEFLWritingPDFPage: React.FC = () => {
           },
           {
             q: 'How many words should I write?',
-            a: 'Task 1: 150–225 words. Task 2: At least 100 words (ideally 120–180).'
+            a: 'Task 1: 150-225 words. Task 2: At least 100 words (ideally 120-180).'
           },
           {
             q: 'Can this help me get a high TOEFL score?',
@@ -410,7 +452,7 @@ const TOEFLWritingPDFPage: React.FC = () => {
           },
           {
             q: 'How long should I practice writing daily?',
-            a: 'At least 20–30 minutes per day for best results.'
+            a: 'At least 20-30 minutes per day for best results.'
           }
         ].map((faq, index) => (
           <div key={index} className="border border-slate-200 dark:border-slate-700 rounded-lg overflow-hidden">

@@ -81,7 +81,7 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ title, questions }) => {
             </p>
           )}
           {percentage < 60 && (
-            <p className="font-body text-lg text-orange-600 mb-6 dark:text-orange-400">
+            <p className="font-body text-lg text-teal-600 mb-6 dark:text-teal-400">
               📚 Keep studying! Review the material and try again.
             </p>
           )}

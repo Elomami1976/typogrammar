@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading, BulletList } from '../components/ArticleComponents';
@@ -102,7 +102,7 @@ const TOEFLReadingSectionExplainedPage: React.FC = () => {
             </tr>
             <tr>
               <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">Score range</td>
-              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">0–30 points</td>
+              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">0-30 points</td>
             </tr>
             <tr className="bg-slate-50 dark:bg-slate-800/50">
               <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">Text difficulty</td>
@@ -259,16 +259,16 @@ const TOEFLReadingSectionExplainedPage: React.FC = () => {
               <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">30</td>
             </tr>
             <tr className="bg-slate-50 dark:bg-slate-800/50">
-              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">17–19</td>
-              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">25–29</td>
+              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">17-19</td>
+              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">25-29</td>
             </tr>
             <tr>
-              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">14–16</td>
-              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">20–24</td>
+              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">14-16</td>
+              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">20-24</td>
             </tr>
             <tr className="bg-slate-50 dark:bg-slate-800/50">
-              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">10–13</td>
-              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">15–19</td>
+              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">10-13</td>
+              <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">15-19</td>
             </tr>
             <tr>
               <td className="border border-slate-300 dark:border-slate-600 px-4 py-3 text-slate-700 dark:text-slate-300">Below 10</td>
@@ -279,7 +279,7 @@ const TOEFLReadingSectionExplainedPage: React.FC = () => {
       </div>
 
       <ArticleParagraph>
-        A strong TOEFL Reading score for top universities is typically <strong>22–26+</strong>.
+        A strong TOEFL Reading score for top universities is typically <strong>22-26+</strong>.
       </ArticleParagraph>
 
       {/* Common Problems */}
@@ -386,17 +386,17 @@ const TOEFLReadingSectionExplainedPage: React.FC = () => {
         </h3>
         <ul className="space-y-2">
           <li>
-            <Link to="/toefl/toefl-reading/toefl-reading-strategies" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
+            <Link to="/toefl/toefl-reading/toefl-reading-strategies/" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
               → TOEFL Reading Strategies: 10 Proven Tips to Score Higher
             </Link>
           </li>
           <li>
-            <Link to="/toefl/toefl-reading/toefl-reading-question-types" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
+            <Link to="/toefl/toefl-reading/toefl-reading-question-types/" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
               → TOEFL Reading Question Types: Complete Guide with Examples
             </Link>
           </li>
           <li>
-            <Link to="/toefl/toefl-reading/toefl-reading-time-management" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
+            <Link to="/toefl/toefl-reading/toefl-reading-time-management/" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
               → TOEFL Reading Time Management: How to Finish on Time
             </Link>
           </li>

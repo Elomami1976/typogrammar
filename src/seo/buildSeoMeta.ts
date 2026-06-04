@@ -42,13 +42,14 @@ export interface SeoOutput {
 
 /**
  * Normalize URL path for canonical:
- * - Remove trailing slashes (except root)
+ * - Ensure trailing slash (Hostinger Apache serves pre-rendered directories at slash URLs)
  * - Remove query parameters and hash fragments
  */
 const normalizeCanonicalPath = (path: string): string => {
   let cleanPath = path.split('?')[0].split('#')[0];
-  if (cleanPath.length > 1 && cleanPath.endsWith('/')) {
-    cleanPath = cleanPath.slice(0, -1);
+  if (cleanPath === '/') return cleanPath;
+  if (!cleanPath.endsWith('/')) {
+    cleanPath = cleanPath + '/';
   }
   return cleanPath;
 };
@@ -59,8 +60,11 @@ const normalizeCanonicalPath = (path: string): string => {
 export function buildSeoMeta(input: SeoInput): SeoOutput {
   const { path, title, description, ogImage, noindex, faq, article } = input;
 
+  // Strip trailing slash for pageSeoMap lookup (keys stored without trailing slash)
+  const lookupPath = path.split('?')[0].split('#')[0].replace(/\/$/, '') || '/';
+
   // Check if page has custom overrides in pageSeoMap
-  const pageOverrides = (pageSeoMap as Record<string, any>)[path] || {};
+  const pageOverrides = (pageSeoMap as Record<string, any>)[lookupPath] || {};
 
   // Build canonical URL - normalize to prevent duplicates
   const normalizedPath = normalizeCanonicalPath(path);
@@ -84,7 +88,7 @@ export function buildSeoMeta(input: SeoInput): SeoOutput {
   }
 
   // Robots meta
-  const robots = noindex ? 'noindex,nofollow' : 'index,follow';
+  const robots = noindex ? 'noindex,nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
 
   // OG Image
   const finalOgImage = ogImage || pageOverrides.ogImage || seoDefaults.defaultOgImage;

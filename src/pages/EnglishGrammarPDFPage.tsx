@@ -1,13 +1,14 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import GoogleAd from '../components/GoogleAd';
+import MiniQuiz from '../components/MiniQuiz';
 
 const EnglishGrammarPDFPage: React.FC = () => {
   usePageMetadata({
     title: 'Free English Grammar PDF Workbook (Download) | TypoGrammar',
     description: 'Download our free English Grammar PDF workbook. Learn parts of speech, verb tenses, sentence structure, and common grammar mistakes with examples and exercises.',
-    canonical: 'https://typogrammar.com/ielts/english-grammar-pdf',
+    canonical: 'https://typogrammar.com/ielts/english-grammar-pdf/',
     ogTitle: 'Free English Grammar PDF Workbook (Download)',
     ogDescription: 'Download our free English Grammar PDF workbook. Learn parts of speech, verb tenses, sentence structure, and common grammar mistakes with examples and exercises.',
     ogUrl: 'https://typogrammar.com/ielts/english-grammar-pdf',
@@ -207,7 +208,7 @@ const EnglishGrammarPDFPage: React.FC = () => {
               </button>
             </div>
             <p className="text-sm text-slate-500 dark:text-slate-400 italic">
-              Free download — no signup required.
+              Free download, no signup required.
             </p>
           </div>
           <div className="flex justify-center">
@@ -420,7 +421,7 @@ const EnglishGrammarPDFPage: React.FC = () => {
             </div>
           ))}
         </div>
-        <p className="text-slate-700 dark:text-slate-300 bg-amber-50 dark:bg-amber-900/20 p-4 rounded-lg border-l-4 border-amber-500">
+        <p className="text-slate-700 dark:text-slate-300 bg-teal-50 dark:bg-teal-900/20 p-4 rounded-lg border-l-4 border-teal-500">
           It is also helpful for learners preparing for academic exams because grammar accuracy is essential for strong writing performance.
         </p>
       </section>
@@ -539,6 +540,52 @@ const EnglishGrammarPDFPage: React.FC = () => {
         </div>
       </section>
 
+      {/* TRY-BEFORE-DOWNLOAD MINI QUIZ */}
+      <MiniQuiz
+        title="Try a Sample Before You Download"
+        intro="A quick taste of the kind of grammar exercises inside the PDF."
+        questions={[
+          {
+            question: 'Choose the correct sentence:',
+            options: [
+              'She don’t like coffee in the morning.',
+              'She doesn’t likes coffee in the morning.',
+              'She doesn’t like coffee in the morning.',
+              'She not like coffee in the morning.',
+            ],
+            correctAnswer: 2,
+            explanation: 'In the present simple negative, third person singular uses "doesn\'t" + the base form of the verb.',
+          },
+          {
+            question: 'Pick the correctly punctuated sentence:',
+            options: [
+              'Although it was raining we went for a walk.',
+              'Although, it was raining, we went for a walk.',
+              'Although it was raining, we went for a walk.',
+              'Although it was raining; we went for a walk.',
+            ],
+            correctAnswer: 2,
+            explanation: 'A subordinate clause beginning with "Although" is followed by a comma when it appears at the start of the sentence.',
+          },
+          {
+            question: 'Which sentence uses the correct article?',
+            options: [
+              'He is honest man who works at a hospital.',
+              'He is an honest man who works at a hospital.',
+              'He is a honest man who works at an hospital.',
+              'He is the honest man who works at the hospital.',
+            ],
+            correctAnswer: 1,
+            explanation: '"Honest" starts with a vowel sound (the H is silent), so it takes "an". "Hospital" begins with a consonant sound, so it takes "a".',
+          },
+        ]}
+        cta={{
+          to: '/grammar-guide/',
+          label: 'Explore the Full Grammar Guide',
+          subtitle: 'Hundreds more interactive lessons just like the PDF.',
+        }}
+      />
+
       <div className="my-8">
         <GoogleAd adSlot="6406598038" />
       </div>
@@ -567,32 +614,32 @@ const EnglishGrammarPDFPage: React.FC = () => {
         </h2>
         <div className="grid md:grid-cols-2 gap-6">
           <Link
-            to="/ielts/50-complex-sentences-for-ielts-pdf"
+            to="/ielts/50-complex-sentences-for-ielts-pdf/"
             className="block p-6 bg-blue-50 dark:bg-blue-900/20 rounded-xl hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors border border-blue-200 dark:border-blue-800"
           >
             <h3 className="font-semibold text-lg text-blue-900 dark:text-blue-200 mb-2">50 Complex Sentences for IELTS (PDF)</h3>
-            <p className="text-sm text-blue-700 dark:text-blue-300">Band 7–9 examples with explanations and practice exercises.</p>
+            <p className="text-sm text-blue-700 dark:text-blue-300">Band 7-9 examples with explanations and practice exercises.</p>
           </Link>
           <Link
-            to="/ielts/academic-vocabulary-book"
+            to="/ielts/academic-vocabulary-book/"
             className="block p-6 bg-purple-50 dark:bg-purple-900/20 rounded-xl hover:bg-purple-100 dark:hover:bg-purple-900/30 transition-colors border border-purple-200 dark:border-purple-800"
           >
             <h3 className="font-semibold text-lg text-purple-900 dark:text-purple-200 mb-2">IELTS Academic Vocabulary Book</h3>
-            <p className="text-sm text-purple-700 dark:text-purple-300">Essential vocabulary for Band 6–9 with examples and exercises.</p>
+            <p className="text-sm text-purple-700 dark:text-purple-300">Essential vocabulary for Band 6-9 with examples and exercises.</p>
           </Link>
           <Link
-            to="/ielts/idioms-book"
+            to="/ielts/idioms-book/"
             className="block p-6 bg-green-50 dark:bg-green-900/20 rounded-xl hover:bg-green-100 dark:hover:bg-green-900/30 transition-colors border border-green-200 dark:border-green-800"
           >
             <h3 className="font-semibold text-lg text-green-900 dark:text-green-200 mb-2">100 Most Used English Idioms</h3>
             <p className="text-sm text-green-700 dark:text-green-300">Master common English idioms with meanings and examples.</p>
           </Link>
           <Link
-            to="/ielts/writing-task-2-band-9-essays-book"
-            className="block p-6 bg-amber-50 dark:bg-amber-900/20 rounded-xl hover:bg-amber-100 dark:hover:bg-amber-900/30 transition-colors border border-amber-200 dark:border-amber-800"
+            to="/ielts/writing-task-2-band-9-essays-book/"
+            className="block p-6 bg-teal-50 dark:bg-teal-900/20 rounded-xl hover:bg-teal-100 dark:hover:bg-teal-900/30 transition-colors border border-teal-200 dark:border-teal-800"
           >
-            <h3 className="font-semibold text-lg text-amber-900 dark:text-amber-200 mb-2">Band 9 Essays Book (PDF)</h3>
-            <p className="text-sm text-amber-700 dark:text-amber-300">Collection of Band 9 model essays for IELTS Writing Task 2.</p>
+            <h3 className="font-semibold text-lg text-teal-900 dark:text-teal-200 mb-2">Band 9 Essays Book (PDF)</h3>
+            <p className="text-sm text-teal-700 dark:text-teal-300">Collection of Band 9 model essays for IELTS Writing Task 2.</p>
           </Link>
         </div>
       </section>

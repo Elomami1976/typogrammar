@@ -6,7 +6,7 @@ const IeltsIdiomsBookPage: React.FC = () => {
   usePageMetadata({
     title: '100 Most Used English Idioms PDF (Free Download) | TypoGrammar',
     description: 'Free PDF with 100 most used English idioms with meanings and examples. Ideal for IELTS, TOEFL, and everyday English.',
-    canonical: 'https://typogrammar.com/ielts/idioms-book',
+    canonical: 'https://typogrammar.com/ielts/idioms-book/',
     ogTitle: '100 Most Used English Idioms PDF (Free Download) | TypoGrammar',
     ogDescription: 'Free PDF with 100 most used English idioms with meanings and examples. Ideal for IELTS, TOEFL, and everyday English.',
     ogUrl: 'https://typogrammar.com/ielts/idioms-book',
@@ -195,7 +195,7 @@ const IeltsIdiomsBookPage: React.FC = () => {
               </button>
             </div>
             <p className="text-sm text-slate-500 dark:text-slate-400 italic">
-              Free download — no signup required.
+              Free download, no signup required.
             </p>
           </div>
           <div className="flex justify-center">
@@ -493,9 +493,9 @@ const IeltsIdiomsBookPage: React.FC = () => {
         <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-100 mb-8">
           What's Inside
         </h2>
-        <div className="bg-gradient-to-br from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 rounded-xl p-8 shadow-md border-2 border-yellow-200 dark:border-yellow-700">
+        <div className="bg-gradient-to-br from-yellow-50 to-teal-50 dark:from-yellow-900/20 dark:to-teal-900/20 rounded-xl p-8 shadow-md border-2 border-yellow-200 dark:border-yellow-700">
           <div className="flex items-center mb-6">
-            <div className="w-16 h-16 bg-gradient-to-r from-yellow-500 to-orange-500 text-white rounded-lg flex items-center justify-center font-bold text-2xl mr-6">
+            <div className="w-16 h-16 bg-gradient-to-r from-yellow-500 to-teal-500 text-white rounded-lg flex items-center justify-center font-bold text-2xl mr-6">
               100
             </div>
             <div>

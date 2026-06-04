@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading, CodeBlock } from '../components/ArticleComponents';
@@ -1667,7 +1667,7 @@ const Band9IELTSEssaysPage: React.FC = () => {
           Achieving Band 9 in IELTS Writing Task 2 requires more than advanced vocabulary. It demands clear structure, fully developed arguments, logical coherence, and grammatical precision. Examiners assess your ability to present ideas clearly, support them with relevant examples, and maintain consistent reasoning throughout your response.
         </ArticleParagraph>
         <ArticleParagraph>
-          On this page, you will find <strong>50 fully written Band 9 sample essays</strong> covering all major IELTS topics, including education, environment, technology, government, health, and global issues. Each essay demonstrates the exact techniques top scorers use—from precise vocabulary choices to seamless paragraph transitions.
+          On this page, you will find <strong>50 fully written Band 9 sample essays</strong> covering all major IELTS topics, including education, environment, technology, government, health, and global issues. Each essay demonstrates the exact techniques top scorers use-from precise vocabulary choices to seamless paragraph transitions.
         </ArticleParagraph>
       </section>
 
@@ -1751,7 +1751,7 @@ const Band9IELTSEssaysPage: React.FC = () => {
                     {essay.vocabulary.map((v, idx) => (
                       <li key={idx} className="flex">
                         <span className="font-medium text-blue-600 dark:text-blue-400 min-w-[200px]">{v.term}</span>
-                        <span className="text-slate-600 dark:text-slate-400">– {v.definition}</span>
+                        <span className="text-slate-600 dark:text-slate-400">, {v.definition}</span>
                       </li>
                     ))}
                   </ul>
@@ -1832,7 +1832,7 @@ const Band9IELTSEssaysPage: React.FC = () => {
         </ArticleParagraph>
         <div className="grid md:grid-cols-2 gap-4 mt-4">
           <Link
-            to="/ielts-preparation"
+            to="/ielts-preparation/"
             className="block p-4 bg-white dark:bg-slate-700 rounded-lg border border-slate-200 dark:border-slate-600 hover:border-blue-500 dark:hover:border-blue-400 transition-colors"
           >
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">IELTS Preparation Hub</h4>
@@ -1841,7 +1841,7 @@ const Band9IELTSEssaysPage: React.FC = () => {
             </p>
           </Link>
           <Link
-            to="/band-8-ielts-sample-answers"
+            to="/band-8-ielts-sample-answers/"
             className="block p-4 bg-white dark:bg-slate-700 rounded-lg border border-slate-200 dark:border-slate-600 hover:border-blue-500 dark:hover:border-blue-400 transition-colors"
           >
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">Band 8 Sample Answers</h4>
@@ -1850,7 +1850,7 @@ const Band9IELTSEssaysPage: React.FC = () => {
             </p>
           </Link>
           <Link
-            to="/advantages-disadvantages-essay-ielts"
+            to="/advantages-disadvantages-essay-ielts/"
             className="block p-4 bg-white dark:bg-slate-700 rounded-lg border border-slate-200 dark:border-slate-600 hover:border-blue-500 dark:hover:border-blue-400 transition-colors"
           >
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">Advantages/Disadvantages Essays</h4>
@@ -1859,7 +1859,7 @@ const Band9IELTSEssaysPage: React.FC = () => {
             </p>
           </Link>
           <Link
-            to="/ielts-vocabulary-booster"
+            to="/ielts-vocabulary-booster/"
             className="block p-4 bg-white dark:bg-slate-700 rounded-lg border border-slate-200 dark:border-slate-600 hover:border-blue-500 dark:hover:border-blue-400 transition-colors"
           >
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">IELTS Vocabulary Booster</h4>
@@ -1868,16 +1868,16 @@ const Band9IELTSEssaysPage: React.FC = () => {
             </p>
           </Link>
           <Link
-            to="/paraphrasing-tool"
+            to="/paraphrasing-tool/"
             className="block p-4 bg-white dark:bg-slate-700 rounded-lg border border-slate-200 dark:border-slate-600 hover:border-blue-500 dark:hover:border-blue-400 transition-colors"
           >
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">Paraphrasing Practice</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">
-              Learn to paraphrase effectively—a crucial skill for Task 2 introductions.
+              Learn to paraphrase effectively-a crucial skill for Task 2 introductions.
             </p>
           </Link>
           <Link
-            to="/grammar-guide"
+            to="/grammar-guide/"
             className="block p-4 bg-white dark:bg-slate-700 rounded-lg border border-slate-200 dark:border-slate-600 hover:border-blue-500 dark:hover:border-blue-400 transition-colors"
           >
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">Grammar Guide</h4>
@@ -1895,31 +1895,31 @@ const Band9IELTSEssaysPage: React.FC = () => {
           <li className="flex items-start">
             <span className="text-green-500 mr-2">✓</span>
             <span className="text-slate-700 dark:text-slate-300">
-              <strong>Clear thesis statement</strong> – State your position in the introduction and maintain it throughout.
+              <strong>Clear thesis statement</strong> - State your position in the introduction and maintain it throughout.
             </span>
           </li>
           <li className="flex items-start">
             <span className="text-green-500 mr-2">✓</span>
             <span className="text-slate-700 dark:text-slate-300">
-              <strong>Logical paragraph structure</strong> – Each body paragraph develops one main idea with examples.
+              <strong>Logical paragraph structure</strong> - Each body paragraph develops one main idea with examples.
             </span>
           </li>
           <li className="flex items-start">
             <span className="text-green-500 mr-2">✓</span>
             <span className="text-slate-700 dark:text-slate-300">
-              <strong>Cohesive devices</strong> – Use linking words naturally: However, Moreover, Nevertheless, Therefore.
+              <strong>Cohesive devices</strong> - Use linking words naturally: However, Moreover, Nevertheless, Therefore.
             </span>
           </li>
           <li className="flex items-start">
             <span className="text-green-500 mr-2">✓</span>
             <span className="text-slate-700 dark:text-slate-300">
-              <strong>Topic-specific vocabulary</strong> – Learn collocations and academic expressions for common themes.
+              <strong>Topic-specific vocabulary</strong> - Learn collocations and academic expressions for common themes.
             </span>
           </li>
           <li className="flex items-start">
             <span className="text-green-500 mr-2">✓</span>
             <span className="text-slate-700 dark:text-slate-300">
-              <strong>Complex grammar</strong> – Use a variety of sentence structures with accurate control.
+              <strong>Complex grammar</strong> - Use a variety of sentence structures with accurate control.
             </span>
           </li>
         </ul>
@@ -1939,13 +1939,13 @@ const Band9IELTSEssaysPage: React.FC = () => {
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <Link
-            to="/ielts-preparation"
+            to="/ielts-preparation/"
             className="inline-block px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-colors"
           >
             IELTS Preparation Hub
           </Link>
           <Link
-            to="/band-8-ielts-sample-answers"
+            to="/band-8-ielts-sample-answers/"
             className="inline-block px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-400 transition-colors border border-blue-400"
           >
             More Sample Essays

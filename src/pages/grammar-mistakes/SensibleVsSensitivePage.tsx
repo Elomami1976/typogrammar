@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../../hooks/usePageMetadata';
 import SchemaMarkup from '../../components/SchemaMarkup';
@@ -7,7 +7,7 @@ const SensibleVsSensitivePage: React.FC = () => {
   usePageMetadata({
     title: 'Sensible vs Sensitive: What Is the Difference? | TypoGrammar',
     description: 'Learn the difference between "sensible" and "sensitive." Sensible means practical and reasonable. Sensitive means easily affected emotionally or physically.',
-    canonical: 'https://typogrammar.com/grammar-mistakes/sensible-vs-sensitive'
+    canonical: 'https://typogrammar.com/grammar-mistakes/sensible-vs-sensitive/'
   });
 
   const [showAnswer, setShowAnswer] = useState(false);
@@ -41,7 +41,7 @@ const SensibleVsSensitivePage: React.FC = () => {
       {
         "@type": "Question",
         "name": "Is 'sensible' positive or negative?",
-        "acceptedAnswer": { "@type": "Answer", "text": "'Sensible' is generally positive — it means practical and reasonable. 'Sensitive' can be positive (empathetic, emotionally aware) or negative (overly emotional, easily upset), depending on context." }
+        "acceptedAnswer": { "@type": "Answer", "text": "'Sensible' is generally positive, it means practical and reasonable. 'Sensitive' can be positive (empathetic, emotionally aware) or negative (overly emotional, easily upset), depending on context." }
       }
     ]
   };
@@ -54,7 +54,7 @@ const SensibleVsSensitivePage: React.FC = () => {
       <nav className="mb-6 text-slate-600 dark:text-slate-400">
         <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
         {' › '}
-        <Link to="/grammar-mistakes" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
+        <Link to="/grammar-mistakes/" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
         {' › '}
         <span className="text-slate-900 dark:text-slate-100">Sensible vs Sensitive</span>
       </nav>
@@ -101,8 +101,8 @@ const SensibleVsSensitivePage: React.FC = () => {
             </div>
           </div>
 
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-4 rounded-lg">
-            <p className="text-lg text-amber-800 dark:text-amber-200">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-4 rounded-lg">
+            <p className="text-lg text-teal-800 dark:text-teal-200">
               <strong>Memory trick:</strong> <strong>Sensible</strong> = makes <strong>sense</strong> (rational decisions). <strong>Sensitive</strong> = <strong>senses</strong> everything (feelings/stimuli).
             </p>
           </div>
@@ -145,7 +145,7 @@ const SensibleVsSensitivePage: React.FC = () => {
             </div>
             <div className="flex items-start">
               <span className="text-green-600 dark:text-green-400 mr-3 text-xl">✔</span>
-              <span className="text-lg text-slate-700 dark:text-slate-300">This is a <strong>sensitive</strong> topic — handle it carefully.</span>
+              <span className="text-lg text-slate-700 dark:text-slate-300">This is a <strong>sensitive</strong> topic, handle it carefully.</span>
             </div>
             <div className="flex items-start">
               <span className="text-green-600 dark:text-green-400 mr-3 text-xl">✔</span>
@@ -162,10 +162,10 @@ const SensibleVsSensitivePage: React.FC = () => {
           <div className="space-y-4">
             <div>
               <div className="bg-red-50 dark:bg-red-900/20 p-4 rounded-lg mb-2">
-                <p className="text-lg text-red-800 dark:text-red-200"><strong>Incorrect:</strong> He is a very sensitive person — he always makes the right choice.</p>
+                <p className="text-lg text-red-800 dark:text-red-200"><strong>Incorrect:</strong> He is a very sensitive person, he always makes the right choice.</p>
               </div>
               <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg">
-                <p className="text-lg text-green-800 dark:text-green-200"><strong>Correct:</strong> He is a very <strong>sensible</strong> person — he always makes the right choice. (making good decisions = sensible)</p>
+                <p className="text-lg text-green-800 dark:text-green-200"><strong>Correct:</strong> He is a very <strong>sensible</strong> person, he always makes the right choice. (making good decisions = sensible)</p>
               </div>
             </div>
             <div>
@@ -201,12 +201,12 @@ const SensibleVsSensitivePage: React.FC = () => {
           <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
             Practice
           </h2>
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-6 rounded-lg">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-6 rounded-lg">
             <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
               <strong>Choose the correct word:</strong>
             </p>
             <p className="text-lg text-slate-800 dark:text-slate-200 italic mb-4">
-              "Don't joke about his weight — he is very _____ about it." (sensible / sensitive)
+              "Don't joke about his weight, he is very _____ about it." (sensible / sensitive)
             </p>
             <button
               onClick={() => setShowAnswer(!showAnswer)}
@@ -217,7 +217,7 @@ const SensibleVsSensitivePage: React.FC = () => {
             {showAnswer && (
               <div className="mt-4 p-4 bg-green-100 dark:bg-green-900/30 rounded-lg">
                 <p className="text-lg text-green-800 dark:text-green-200">
-                  <strong>Answer:</strong> sensitive — he is very <strong>sensitive</strong> about it.
+                  <strong>Answer:</strong> sensitive, he is very <strong>sensitive</strong> about it.
                 </p>
                 <p className="text-green-700 dark:text-green-300 mt-1">
                   He is easily hurt or upset about it → <strong>sensitive</strong>.
@@ -234,22 +234,22 @@ const SensibleVsSensitivePage: React.FC = () => {
           </h2>
           <ul className="space-y-2 text-lg">
             <li>
-              <Link to="/grammar-mistakes/efficient-vs-effective" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/efficient-vs-effective/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Efficient vs Effective
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/advice-vs-advise" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/advice-vs-advise/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Advice vs Advise
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/do-vs-make" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/do-vs-make/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Do vs Make
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → All Grammar Mistakes
               </Link>
             </li>

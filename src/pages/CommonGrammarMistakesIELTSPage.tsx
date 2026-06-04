@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading, BulletList } from '../components/ArticleComponents';
@@ -11,10 +11,10 @@ const CommonGrammarMistakesIELTSPage: React.FC = () => {
   const datePublished = '2026-03-01';
 
   usePageMetadata({
-    title: 'Common Grammar Mistakes in IELTS Writing (15–20 Errors + Fixes)',
-    description: 'Struggling with grammar in IELTS Writing? Discover the 20 most common grammar mistakes that lower your band score — with clear explanations and corrected examples.',
-    ogTitle: 'Common Grammar Mistakes in IELTS Writing (15–20 Errors + Fixes)',
-    ogDescription: 'Discover the 20 most common grammar mistakes that lower your IELTS band score — with clear explanations and corrected examples.',
+    title: 'Common Grammar Mistakes in IELTS Writing (15-20 Errors + Fixes)',
+    description: 'Struggling with grammar in IELTS Writing? Discover the 20 most common grammar mistakes that lower your band score, with clear explanations and corrected examples.',
+    ogTitle: 'Common Grammar Mistakes in IELTS Writing (15-20 Errors + Fixes)',
+    ogDescription: 'Discover the 20 most common grammar mistakes that lower your IELTS band score, with clear explanations and corrected examples.',
     ogType: 'article',
     ogUrl: pageUrl,
   });
@@ -23,7 +23,7 @@ const CommonGrammarMistakesIELTSPage: React.FC = () => {
   const faqData = [
     {
       question: 'What grammar mistakes lower IELTS score the most?',
-      answer: 'Subject–verb agreement errors, incorrect tense usage, article mistakes, and sentence fragments significantly reduce your band score. These basic errors signal weak grammatical control to examiners.'
+      answer: 'Subject-verb agreement errors, incorrect tense usage, article mistakes, and sentence fragments significantly reduce your band score. These basic errors signal weak grammatical control to examiners.'
     },
     {
       question: 'How many grammar mistakes are allowed in IELTS?',
@@ -31,7 +31,7 @@ const CommonGrammarMistakesIELTSPage: React.FC = () => {
     },
     {
       question: 'Can grammar mistakes reduce my band score by 1 point?',
-      answer: 'Yes. Frequent grammar errors can reduce your score by 0.5–1 band depending on severity and frequency. Grammar directly affects 25% of your Writing score.'
+      answer: 'Yes. Frequent grammar errors can reduce your score by 0.5-1 band depending on severity and frequency. Grammar directly affects 25% of your Writing score.'
     },
     {
       question: 'What is the difference between Band 6 and Band 7 grammar?',
@@ -63,8 +63,8 @@ const CommonGrammarMistakesIELTSPage: React.FC = () => {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "Common Grammar Mistakes in IELTS Writing (15–20 Errors + Fixes)",
-    "description": "Struggling with grammar in IELTS Writing? Discover the 20 most common grammar mistakes that lower your band score — with clear explanations and corrected examples.",
+    "headline": "Common Grammar Mistakes in IELTS Writing (15-20 Errors + Fixes)",
+    "description": "Struggling with grammar in IELTS Writing? Discover the 20 most common grammar mistakes that lower your band score, with clear explanations and corrected examples.",
     "author": {
       "@type": "Organization",
       "name": "TypoGrammar"
@@ -167,7 +167,7 @@ const CommonGrammarMistakesIELTSPage: React.FC = () => {
           </li>
           <li className="text-slate-400">/</li>
           <li>
-            <Link to="/ielts/ielts-writing-task-2-essay-types" className="text-blue-600 dark:text-blue-400 hover:underline">IELTS Writing Task 2</Link>
+            <Link to="/ielts/ielts-writing-task-2-essay-types/" className="text-blue-600 dark:text-blue-400 hover:underline">IELTS Writing Task 2</Link>
           </li>
           <li className="text-slate-400">/</li>
           <li className="text-slate-600 dark:text-slate-400">Common Grammar Mistakes</li>
@@ -175,14 +175,14 @@ const CommonGrammarMistakesIELTSPage: React.FC = () => {
       </nav>
 
       <h1 className="text-4xl font-bold mb-6 text-slate-900 dark:text-slate-100">
-        Common Grammar Mistakes in IELTS Writing (15–20 Errors + Fixes)
+        Common Grammar Mistakes in IELTS Writing (15-20 Errors + Fixes)
       </h1>
 
       {/* E-E-A-T Signals */}
       <div className="flex flex-wrap items-center gap-4 text-sm text-slate-600 dark:text-slate-400 mb-6">
         <span className="flex items-center gap-1">
           <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"/></svg>
-          By <Link to="/about" className="text-blue-600 dark:text-blue-400 hover:underline">Typogrammar Team</Link>
+          By <Link to="/about/" className="text-blue-600 dark:text-blue-400 hover:underline">Typogrammar Team</Link>
         </span>
         <span className="flex items-center gap-1">
           <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd"/></svg>
@@ -211,7 +211,7 @@ const CommonGrammarMistakesIELTSPage: React.FC = () => {
       </ArticleParagraph>
 
       <ArticleParagraph>
-        In this guide, you'll discover the <strong>20 most common grammar mistakes in IELTS Writing</strong> — along with clear corrections and explanations.
+        In this guide, you'll discover the <strong>20 most common grammar mistakes in IELTS Writing</strong>, along with clear corrections and explanations.
       </ArticleParagraph>
 
       <GoogleAd adSlot="6406598038" />
@@ -221,7 +221,7 @@ const CommonGrammarMistakesIELTSPage: React.FC = () => {
 
       <GrammarMistake
         number={1}
-        title="Subject–Verb Agreement Errors"
+        title="Subject-Verb Agreement Errors"
         incorrect="He go to university every day."
         correct="He goes to university every day."
         explanation="Examiners immediately notice basic agreement errors. Third-person singular requires -s/-es."
@@ -264,7 +264,7 @@ const CommonGrammarMistakesIELTSPage: React.FC = () => {
         title="Misuse of Complex Sentences"
         incorrect="Although technology improves education but it creates distraction."
         correct="Although technology improves education, it also creates distractions."
-        explanation="Do not use 'although' and 'but' together — choose one subordinating structure."
+        explanation="Do not use 'although' and 'but' together, choose one subordinating structure."
       />
 
       <GrammarMistake
@@ -385,7 +385,7 @@ const CommonGrammarMistakesIELTSPage: React.FC = () => {
       <ArticleHeading>📊 Why Grammar Is So Important for IELTS</ArticleHeading>
       
       <ArticleParagraph>
-        Grammar directly affects your score under <strong>Grammatical Range and Accuracy</strong> — one of four scoring criteria (25% of your Writing score).
+        Grammar directly affects your score under <strong>Grammatical Range and Accuracy</strong>, one of four scoring criteria (25% of your Writing score).
       </ArticleParagraph>
 
       <ArticleParagraph>
@@ -400,7 +400,7 @@ const CommonGrammarMistakesIELTSPage: React.FC = () => {
 
       <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-6 my-8 rounded-r-lg">
         <p className="text-green-800 dark:text-green-300 font-semibold">
-          💡 Improving grammar can raise your band score by 0.5–1.0 immediately.
+          💡 Improving grammar can raise your band score by 0.5-1.0 immediately.
         </p>
       </div>
 
@@ -442,10 +442,10 @@ const CommonGrammarMistakesIELTSPage: React.FC = () => {
       <ArticleHeading>How to Avoid Grammar Mistakes in IELTS</ArticleHeading>
 
       <BulletList items={[
-        <>Review <Link to="/topics/subject-verb-agreement" className="text-blue-600 dark:text-blue-400 hover:underline font-semibold">subject–verb agreement</Link> daily</>,
-        <>Practice <Link to="/ielts/how-to-write-complex-sentences" className="text-blue-600 dark:text-blue-400 hover:underline font-semibold">complex sentences</Link> correctly</>,
-        <>Check <Link to="/topics/articles" className="text-blue-600 dark:text-blue-400 hover:underline font-semibold">articles</Link> carefully</>,
-        <>Use a <Link to="/grammar-checker" className="text-blue-600 dark:text-blue-400 hover:underline font-semibold">grammar checker</Link> before submitting practice essays</>,
+        <>Review <Link to="/topics/subject-verb-agreement/" className="text-blue-600 dark:text-blue-400 hover:underline font-semibold">subject-verb agreement</Link> daily</>,
+        <>Practice <Link to="/ielts/how-to-write-complex-sentences/" className="text-blue-600 dark:text-blue-400 hover:underline font-semibold">complex sentences</Link> correctly</>,
+        <>Check <Link to="/topics/articles/" className="text-blue-600 dark:text-blue-400 hover:underline font-semibold">articles</Link> carefully</>,
+        <>Use a <Link to="/grammar-checker/" className="text-blue-600 dark:text-blue-400 hover:underline font-semibold">grammar checker</Link> before submitting practice essays</>,
         <>Avoid writing overly long sentences</>
       ]} />
 
@@ -495,21 +495,21 @@ const CommonGrammarMistakesIELTSPage: React.FC = () => {
       <ArticleHeading>Related IELTS Grammar Resources</ArticleHeading>
 
       <div className="grid md:grid-cols-2 gap-4 mt-6">
-        <Link to="/ielts/how-to-write-complex-sentences" className="block p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800 hover:border-blue-400 dark:hover:border-blue-600 transition-colors">
+        <Link to="/ielts/how-to-write-complex-sentences/" className="block p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800 hover:border-blue-400 dark:hover:border-blue-600 transition-colors">
           <h4 className="font-semibold text-blue-900 dark:text-blue-200">Complex Sentences for IELTS</h4>
-          <p className="text-sm text-blue-700 dark:text-blue-300">Learn how to write complex sentences for Band 7–9.</p>
+          <p className="text-sm text-blue-700 dark:text-blue-300">Learn how to write complex sentences for Band 7-9.</p>
         </Link>
-        <Link to="/ielts/conditionals-in-ielts" className="block p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800 hover:border-purple-400 dark:hover:border-purple-600 transition-colors">
+        <Link to="/ielts/conditionals-in-ielts/" className="block p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800 hover:border-purple-400 dark:hover:border-purple-600 transition-colors">
           <h4 className="font-semibold text-purple-900 dark:text-purple-200">Conditionals in IELTS</h4>
           <p className="text-sm text-purple-700 dark:text-purple-300">Master conditional structures for Writing and Speaking.</p>
         </Link>
-        <Link to="/ielts/passive-voice-ielts-writing" className="block p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800 hover:border-green-400 dark:hover:border-green-600 transition-colors">
+        <Link to="/ielts/passive-voice-ielts-writing/" className="block p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800 hover:border-green-400 dark:hover:border-green-600 transition-colors">
           <h4 className="font-semibold text-green-900 dark:text-green-200">Passive Voice for IELTS</h4>
           <p className="text-sm text-green-700 dark:text-green-300">Use passive voice effectively in Task 1 and Task 2.</p>
         </Link>
-        <Link to="/ielts/vocabulary/band-7" className="block p-4 bg-orange-50 dark:bg-orange-900/20 rounded-lg border border-orange-200 dark:border-orange-800 hover:border-orange-400 dark:hover:border-orange-600 transition-colors">
-          <h4 className="font-semibold text-orange-900 dark:text-orange-200">Band 7 Vocabulary</h4>
-          <p className="text-sm text-orange-700 dark:text-orange-300">Essential vocabulary to boost your IELTS score.</p>
+        <Link to="/ielts/vocabulary/band-7/" className="block p-4 bg-teal-50 dark:bg-teal-900/20 rounded-lg border border-teal-200 dark:border-teal-800 hover:border-teal-400 dark:hover:border-teal-600 transition-colors">
+          <h4 className="font-semibold text-teal-900 dark:text-teal-200">Band 7 Vocabulary</h4>
+          <p className="text-sm text-teal-700 dark:text-teal-300">Essential vocabulary to boost your IELTS score.</p>
         </Link>
       </div>
 

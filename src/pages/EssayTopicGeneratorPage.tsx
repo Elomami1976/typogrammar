@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 
 // SEO Meta:
-// Title: Free Essay Topic Generator – IELTS & Academic Writing Prompts | Typogrammar
+// Title: Free Essay Topic Generator - IELTS & Academic Writing Prompts | Typogrammar
 // Description: Generate random essay topics for IELTS Writing Task 2 and academic essays. Practice with argumentative, opinion, and discussion essay prompts. Free, no sign-up required.
 
 // FAQ Data for SEO and rendering
@@ -26,7 +26,7 @@ const faqData = [
   },
   {
     question: "What types of essay topics are included?",
-    answer: "Our generator produces various essay types including opinion essays, discussion essays, advantages/disadvantages essays, problem-solution essays, and two-part question essays—all common formats in IELTS and academic writing."
+    answer: "Our generator produces various essay types including opinion essays, discussion essays, advantages/disadvantages essays, problem-solution essays, and two-part question essays-all common formats in IELTS and academic writing."
   },
   {
     question: "Is this tool free to use?",
@@ -54,9 +54,9 @@ const commonThemes = [
 
 const EssayTopicGeneratorPage: React.FC = () => {
   usePageMetadata({
-    title: 'Free Essay Topic Generator – IELTS & Academic Writing Prompts | Typogrammar',
+    title: 'Free Essay Topic Generator - IELTS & Academic Writing Prompts | Typogrammar',
     description: 'Generate random essay topics for IELTS Writing Task 2 and academic essays. Practice with argumentative, opinion, and discussion essay prompts. Free, no sign-up required.',
-    canonical: 'https://typogrammar.com/essay-topic-generator'
+    canonical: 'https://typogrammar.com/essay-topic-generator/'
   });
 
   const [category, setCategory] = useState<string>('all');
@@ -219,7 +219,7 @@ const EssayTopicGeneratorPage: React.FC = () => {
           <p className="text-lg text-slate-700 dark:text-slate-300 max-w-3xl mx-auto leading-relaxed mb-6">
             Generate random <strong>essay topics</strong> for <strong>IELTS Writing Task 2</strong>, academic essays, and argumentative 
             writing practice. Our AI-powered generator creates unique, exam-relevant prompts covering education, technology, 
-            environment, society, and more—matching the style and difficulty of real IELTS questions.
+            environment, society, and more-matching the style and difficulty of real IELTS questions.
           </p>
           <p className="text-base text-slate-600 dark:text-slate-400 max-w-3xl mx-auto mb-8">
             Brainstorming essay ideas shouldn't be the hard part. Use our generator to get instant writing prompts and focus your 
@@ -235,7 +235,7 @@ const EssayTopicGeneratorPage: React.FC = () => {
             <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
             </svg>
-            Generate Essay Topic Now – It's Free
+            Generate Essay Topic Now - It's Free
             <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
             </svg>
@@ -361,7 +361,7 @@ const EssayTopicGeneratorPage: React.FC = () => {
                   Generate Another
                 </button>
                 <Link
-                  to="/ielts/ielts-writing-task-2-essay-types"
+                  to="/ielts/ielts-writing-task-2-essay-types/"
                   className="inline-flex items-center px-4 py-2 bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 font-medium rounded-lg hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors"
                 >
                   <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -440,7 +440,7 @@ const EssayTopicGeneratorPage: React.FC = () => {
         {/* CTA Section */}
         <section className="mb-12 bg-gradient-to-r from-green-600 to-green-700 rounded-xl p-8 text-center">
           <h3 className="text-2xl font-bold text-white mb-3">Ready to Practice?</h3>
-          <p className="text-green-100 mb-6">Generate a topic and start writing. No excuses—your IELTS score depends on practice!</p>
+          <p className="text-green-100 mb-6">Generate a topic and start writing. No excuses-your IELTS score depends on practice!</p>
           <button
             onClick={scrollToTool}
             className="inline-flex items-center px-6 py-3 bg-white text-green-700 font-bold rounded-lg hover:bg-green-50 transition-colors shadow-lg"
@@ -492,27 +492,27 @@ const EssayTopicGeneratorPage: React.FC = () => {
             Explore our comprehensive writing guides to improve your essay skills:
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <Link to="/ielts/ielts-writing-task-2-essay-types" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
+            <Link to="/ielts/ielts-writing-task-2-essay-types/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
               <h3 className="font-bold text-slate-900 dark:text-slate-100 mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">IELTS Writing Task 2 Guide</h3>
               <p className="text-sm text-slate-600 dark:text-slate-400">Master all 5 essay types with structures and examples.</p>
             </Link>
-            <Link to="/paraphrasing-tool" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
+            <Link to="/paraphrasing-tool/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
               <h3 className="font-bold text-slate-900 dark:text-slate-100 mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Paraphrasing Tool</h3>
               <p className="text-sm text-slate-600 dark:text-slate-400">Learn to paraphrase essay questions effectively.</p>
             </Link>
-            <Link to="/grammar-checker" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
+            <Link to="/grammar-checker/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
               <h3 className="font-bold text-slate-900 dark:text-slate-100 mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Grammar Checker</h3>
               <p className="text-sm text-slate-600 dark:text-slate-400">Check your essays for grammar errors.</p>
             </Link>
-            <Link to="/ielts/vocabulary/band-7" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
+            <Link to="/ielts/vocabulary/band-7/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
               <h3 className="font-bold text-slate-900 dark:text-slate-100 mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">IELTS Vocabulary</h3>
               <p className="text-sm text-slate-600 dark:text-slate-400">Build topic-specific vocabulary for essays.</p>
             </Link>
-            <Link to="/ielts/band-8-ielts-sample-answers" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
+            <Link to="/ielts/band-8-ielts-sample-answers/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
               <h3 className="font-bold text-slate-900 dark:text-slate-100 mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Band 8 Sample Essays</h3>
               <p className="text-sm text-slate-600 dark:text-slate-400">Study high-scoring essay examples.</p>
             </Link>
-            <Link to="/writing/how-to-build-an-argument" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
+            <Link to="/writing/how-to-build-an-argument/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group">
               <h3 className="font-bold text-slate-900 dark:text-slate-100 mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Building Arguments</h3>
               <p className="text-sm text-slate-600 dark:text-slate-400">Learn to structure persuasive arguments.</p>
             </Link>
@@ -525,7 +525,7 @@ const EssayTopicGeneratorPage: React.FC = () => {
             More Writing Tools
           </h2>
           <div className="grid sm:grid-cols-2 gap-4">
-            <Link to="/grammar-checker" className="flex items-center gap-4 p-4 bg-gradient-to-r from-green-50 to-green-100 dark:from-green-900/30 dark:to-green-800/30 rounded-lg border border-green-200 dark:border-green-700 hover:border-green-400 dark:hover:border-green-500 transition-colors">
+            <Link to="/grammar-checker/" className="flex items-center gap-4 p-4 bg-gradient-to-r from-green-50 to-green-100 dark:from-green-900/30 dark:to-green-800/30 rounded-lg border border-green-200 dark:border-green-700 hover:border-green-400 dark:hover:border-green-500 transition-colors">
               <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center flex-shrink-0">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -536,7 +536,7 @@ const EssayTopicGeneratorPage: React.FC = () => {
                 <p className="text-sm text-green-700 dark:text-green-300">Check your essay for grammar and spelling errors.</p>
               </div>
             </Link>
-            <Link to="/paraphrasing-tool" className="flex items-center gap-4 p-4 bg-gradient-to-r from-purple-50 to-purple-100 dark:from-purple-900/30 dark:to-purple-800/30 rounded-lg border border-purple-200 dark:border-purple-700 hover:border-purple-400 dark:hover:border-purple-500 transition-colors">
+            <Link to="/paraphrasing-tool/" className="flex items-center gap-4 p-4 bg-gradient-to-r from-purple-50 to-purple-100 dark:from-purple-900/30 dark:to-purple-800/30 rounded-lg border border-purple-200 dark:border-purple-700 hover:border-purple-400 dark:hover:border-purple-500 transition-colors">
               <div className="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center flex-shrink-0">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
@@ -547,7 +547,7 @@ const EssayTopicGeneratorPage: React.FC = () => {
                 <p className="text-sm text-purple-700 dark:text-purple-300">Rewrite sentences and avoid repetition.</p>
               </div>
             </Link>
-            <Link to="/ielts-band-score-calculator" className="flex items-center gap-4 p-4 bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/30 rounded-lg border border-blue-200 dark:border-blue-700 hover:border-blue-400 dark:hover:border-blue-500 transition-colors">
+            <Link to="/ielts-band-score-calculator/" className="flex items-center gap-4 p-4 bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/30 rounded-lg border border-blue-200 dark:border-blue-700 hover:border-blue-400 dark:hover:border-blue-500 transition-colors">
               <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
@@ -558,15 +558,15 @@ const EssayTopicGeneratorPage: React.FC = () => {
                 <p className="text-sm text-blue-700 dark:text-blue-300">Calculate your overall IELTS band score.</p>
               </div>
             </Link>
-            <Link to="/ielts/ielts-writing-task-2-essay-types" className="flex items-center gap-4 p-4 bg-gradient-to-r from-orange-50 to-orange-100 dark:from-orange-900/30 dark:to-orange-800/30 rounded-lg border border-orange-200 dark:border-orange-700 hover:border-orange-400 dark:hover:border-orange-500 transition-colors">
-              <div className="w-12 h-12 bg-orange-600 rounded-lg flex items-center justify-center flex-shrink-0">
+            <Link to="/ielts/ielts-writing-task-2-essay-types/" className="flex items-center gap-4 p-4 bg-gradient-to-r from-teal-50 to-teal-100 dark:from-teal-900/30 dark:to-teal-800/30 rounded-lg border border-teal-200 dark:border-teal-700 hover:border-teal-400 dark:hover:border-teal-500 transition-colors">
+              <div className="w-12 h-12 bg-teal-600 rounded-lg flex items-center justify-center flex-shrink-0">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
               </div>
               <div>
-                <h3 className="font-bold text-orange-900 dark:text-orange-100">IELTS Essay Guide</h3>
-                <p className="text-sm text-orange-700 dark:text-orange-300">Complete guide to all IELTS essay types.</p>
+                <h3 className="font-bold text-teal-900 dark:text-teal-100">IELTS Essay Guide</h3>
+                <p className="text-sm text-teal-700 dark:text-teal-300">Complete guide to all IELTS essay types.</p>
               </div>
             </Link>
           </div>
@@ -604,7 +604,7 @@ const EssayTopicGeneratorPage: React.FC = () => {
           <h3 className="text-2xl font-bold text-white mb-3">Start Writing Better Essays Today</h3>
           <p className="text-slate-300 mb-6 max-w-2xl mx-auto">
             Our free essay topic generator helps thousands of IELTS students practice every day. 
-            No sign-up, no fees—just unlimited essay prompts at your fingertips.
+            No sign-up, no fees-just unlimited essay prompts at your fingertips.
           </p>
           <button
             onClick={scrollToTool}
@@ -613,7 +613,7 @@ const EssayTopicGeneratorPage: React.FC = () => {
             <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
             </svg>
-            Generate Essay Topic Now – 100% Free
+            Generate Essay Topic Now - 100% Free
           </button>
         </section>
 
@@ -621,7 +621,7 @@ const EssayTopicGeneratorPage: React.FC = () => {
         <section className="text-center">
           <p className="text-sm text-slate-500 dark:text-slate-400">
             <strong>Trusted by IELTS students worldwide</strong> · Designed for IELTS preparation · 
-            Built by <Link to="/about/editorial-team" className="text-blue-600 dark:text-blue-400 hover:underline">language experts</Link> at Typogrammar
+            Built by <Link to="/about/editorial-team/" className="text-blue-600 dark:text-blue-400 hover:underline">language experts</Link> at Typogrammar
           </p>
         </section>
       </article>

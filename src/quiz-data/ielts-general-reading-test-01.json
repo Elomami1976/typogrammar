@@ -1,0 +1,622 @@
+{
+  "id": "ielts-general-reading-test-01",
+  "exam": "IELTS",
+  "module": "general",
+  "section": "reading",
+  "title": "IELTS General Training Reading Practice Test 1",
+  "topic_summary": "Section 1 — community centre programme and public library guide; Section 2 — park ranger job ad and staff handbook; Section 3 — the revival of night trains in Europe",
+  "time_limit_seconds": 3600,
+  "passages": [
+    {
+      "passage_id": "p1",
+      "order": 1,
+      "title": "Section 1 — Social Survival",
+      "context_label": "Section 1, Questions 1–14",
+      "instructions": "You should spend about 20 minutes on Questions 1–14, which are based on the two texts below. Questions 1–7 refer to Text 1A (Riverside Community Centre); Questions 8–14 refer to Text 1B (Greenford Public Library).",
+      "body": "TEXT 1A — RIVERSIDE COMMUNITY CENTRE: AUTUMN PROGRAMME\n\nThe following adult evening and weekend classes will run from 16 September to 22 November.\n\n[A] BEGINNERS' POTTERY\nWednesday evenings, 6.30 pm – 8.30 pm\nFee: £85 per ten-week term (£70 for residents of the Riverside borough)\nTutor: Helena Marsh\nAll clay, tools and materials are provided; you do not need to bring anything. The class is held in the centre's main craft room. Suitable for adults aged 16 and over. Please note: the autumn term is already full, but new applicants may add their name to the wait list.\n\n[B] CONVERSATIONAL SPANISH (INTERMEDIATE)\nTuesday evenings, 7.00 pm – 8.30 pm\nFee: £95 per ten-week term\nTutor: Pablo Reyes\nFor learners with at least one year of previous Spanish study. New students must attend a free 30-minute trial session in week one before formally enrolling, so that the tutor can place them at the right level. Held in classroom 2.\n\n[C] SATURDAY MORNING YOGA — ALL LEVELS\nSaturday mornings, 9.00 am – 10.00 am\nFee: £6 per single session (no term booking, simply pay on arrival)\nTutor: Anya Bell\nSuitable for all ages and abilities. Please bring your own yoga mat — the centre is unable to lend mats. Held in the upstairs studio.\n\n[D] DIGITAL PHOTOGRAPHY FOR BEGINNERS\nThursday evenings, 7.00 pm – 9.00 pm\nFee: £120 per eight-week term\nTutor: Marcus Lee\nYou will need to bring your own camera; any digital camera or modern smartphone is acceptable. The course includes one Saturday morning field trip to Riverside Park (date confirmed in week one). Held in the centre's IT suite.\n\n[E] CHOIR FOR ADULTS\nMonday evenings, 7.30 pm – 9.00 pm\nFee: £60 per term (no resident discount available)\nTutor: Rosa Caine\nOpen to singers aged 18 and over. No auditions — all voices welcome. Rehearsals take place at St Bede's Church Hall on the High Street, NOT at the community centre itself.\n\n---\n\nTEXT 1B — GREENFORD PUBLIC LIBRARY: MEMBER INFORMATION SHEET\n\nJoining the library\nMembership is free for anyone living, working or studying in the Borough of Greenford. To join, please bring one form of photo ID and one document showing your current address (dated within the last three months). New members under 16 must be signed up by a parent or guardian.\n\nBorrowing\n• Adult members may borrow up to 12 books at any one time.\n• The standard loan period is 3 weeks.\n• Books may be renewed twice, either online or in person, provided no other member has reserved the item.\n• Audiobooks and DVDs are loaned for 7 days only and cannot be renewed.\n\nReservations\nYou may reserve any item currently on loan within the borough's library network. A reservation fee of £1 per item is charged when you collect the item, not when you place the request. Reserved items are held at the collection desk for 7 days, after which they are returned to general circulation.\n\nOverdue items\n• Adult borrowers are charged 20 pence per book per day.\n• Children's items (members aged under 16) do not incur fines.\n• Outstanding charges over £15 will block further borrowing until the balance is cleared.\n\nComputers and printing\nMembers may book a computer for up to 90 minutes per day, free of charge. Printing costs 10 pence per black-and-white page and 30 pence per colour page. Wi-Fi is free throughout the building.\n\nOther services\nThe library hosts a free children's storytime every Saturday at 10.30 am, and a free conversation club for adult English learners on the first Thursday of every month at 6.00 pm.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "type": "matching_features",
+          "prompt": "Look at Text 1A. Match the statement to the correct class. Choose from the list of classes A–E. You may use any letter more than once.",
+          "feature_bank": [
+            { "key": "A", "text": "Beginners' Pottery" },
+            { "key": "B", "text": "Conversational Spanish" },
+            { "key": "C", "text": "Saturday Morning Yoga" },
+            { "key": "D", "text": "Digital Photography for Beginners" },
+            { "key": "E", "text": "Choir for Adults" }
+          ],
+          "statement": "This class is fully booked for the autumn term but applicants may join a wait list.",
+          "correct": ["A"],
+          "explanation": "The pottery listing explicitly says 'the autumn term is already full, but new applicants may add their name to the wait list.' None of the other classes mentions being full or having a wait list."
+        },
+        {
+          "question_id": "q2",
+          "type": "matching_features",
+          "prompt": "Match the statement to the correct class (A–E). You may use any letter more than once.",
+          "feature_bank": [
+            { "key": "A", "text": "Beginners' Pottery" },
+            { "key": "B", "text": "Conversational Spanish" },
+            { "key": "C", "text": "Saturday Morning Yoga" },
+            { "key": "D", "text": "Digital Photography for Beginners" },
+            { "key": "E", "text": "Choir for Adults" }
+          ],
+          "statement": "This class takes place at a venue other than the community centre.",
+          "correct": ["E"],
+          "explanation": "The Choir listing says rehearsals take place 'at St Bede's Church Hall on the High Street, NOT at the community centre itself.' All other classes are held inside the centre."
+        },
+        {
+          "question_id": "q3",
+          "type": "matching_features",
+          "prompt": "Match the statement to the correct class (A–E). You may use any letter more than once.",
+          "feature_bank": [
+            { "key": "A", "text": "Beginners' Pottery" },
+            { "key": "B", "text": "Conversational Spanish" },
+            { "key": "C", "text": "Saturday Morning Yoga" },
+            { "key": "D", "text": "Digital Photography for Beginners" },
+            { "key": "E", "text": "Choir for Adults" }
+          ],
+          "statement": "There is a reduced fee for people who live in the local borough.",
+          "correct": ["A"],
+          "explanation": "Pottery costs '£85 per ten-week term (£70 for residents of the Riverside borough).' The choir listing explicitly says 'no resident discount available', so E is wrong."
+        },
+        {
+          "question_id": "q4",
+          "type": "matching_features",
+          "prompt": "Match the statement to the correct class (A–E). You may use any letter more than once.",
+          "feature_bank": [
+            { "key": "A", "text": "Beginners' Pottery" },
+            { "key": "B", "text": "Conversational Spanish" },
+            { "key": "C", "text": "Saturday Morning Yoga" },
+            { "key": "D", "text": "Digital Photography for Beginners" },
+            { "key": "E", "text": "Choir for Adults" }
+          ],
+          "statement": "This class is paid for one session at a time rather than per term.",
+          "correct": ["C"],
+          "explanation": "Yoga costs '£6 per single session (no term booking, simply pay on arrival).' Every other listing gives a per-term fee."
+        },
+        {
+          "question_id": "q5",
+          "type": "matching_features",
+          "prompt": "Match the statement to the correct class (A–E). You may use any letter more than once.",
+          "feature_bank": [
+            { "key": "A", "text": "Beginners' Pottery" },
+            { "key": "B", "text": "Conversational Spanish" },
+            { "key": "C", "text": "Saturday Morning Yoga" },
+            { "key": "D", "text": "Digital Photography for Beginners" },
+            { "key": "E", "text": "Choir for Adults" }
+          ],
+          "statement": "New students must attend a free trial before they can formally enrol.",
+          "correct": ["B"],
+          "explanation": "The Spanish listing states 'New students must attend a free 30-minute trial session in week one before formally enrolling'. No other class mentions a trial."
+        },
+        {
+          "question_id": "q6",
+          "type": "matching_features",
+          "prompt": "Match the statement to the correct class (A–E). You may use any letter more than once.",
+          "feature_bank": [
+            { "key": "A", "text": "Beginners' Pottery" },
+            { "key": "B", "text": "Conversational Spanish" },
+            { "key": "C", "text": "Saturday Morning Yoga" },
+            { "key": "D", "text": "Digital Photography for Beginners" },
+            { "key": "E", "text": "Choir for Adults" }
+          ],
+          "statement": "Students must bring their own mat to this class.",
+          "correct": ["C"],
+          "explanation": "Yoga says 'Please bring your own yoga mat — the centre is unable to lend mats.' Photography requires a camera (D) but not a mat, so the match is C."
+        },
+        {
+          "question_id": "q7",
+          "type": "matching_features",
+          "prompt": "Match the statement to the correct class (A–E). You may use any letter more than once.",
+          "feature_bank": [
+            { "key": "A", "text": "Beginners' Pottery" },
+            { "key": "B", "text": "Conversational Spanish" },
+            { "key": "C", "text": "Saturday Morning Yoga" },
+            { "key": "D", "text": "Digital Photography for Beginners" },
+            { "key": "E", "text": "Choir for Adults" }
+          ],
+          "statement": "This class includes a field trip during the term.",
+          "correct": ["D"],
+          "explanation": "Digital Photography 'includes one Saturday morning field trip to Riverside Park (date confirmed in week one).' No other class mentions a trip or outing."
+        },
+        {
+          "question_id": "q8",
+          "type": "sentence_completion",
+          "prompt": "Complete the sentences below using NO MORE THAN THREE WORDS AND/OR A NUMBER from Text 1B. To join Greenford Public Library, new members must show one photo ID and one document confirming their current ________.",
+          "word_limit": "NO MORE THAN THREE WORDS AND/OR A NUMBER",
+          "correct": ["address"],
+          "explanation": "Text 1B says new members need 'one document showing your current address (dated within the last three months).' The single word 'address' fills the gap within the word limit."
+        },
+        {
+          "question_id": "q9",
+          "type": "sentence_completion",
+          "prompt": "Complete the sentence. An adult member may borrow a maximum of ________ books at any one time.",
+          "word_limit": "NO MORE THAN THREE WORDS AND/OR A NUMBER",
+          "correct": ["12", "twelve"],
+          "explanation": "Text 1B: 'Adult members may borrow up to 12 books at any one time.' Both the numeral '12' and the spelled form 'twelve' are accepted."
+        },
+        {
+          "question_id": "q10",
+          "type": "sentence_completion",
+          "prompt": "Complete the sentence. Audiobooks and DVDs have a loan period of ________ days.",
+          "word_limit": "NO MORE THAN THREE WORDS AND/OR A NUMBER",
+          "correct": ["7", "seven"],
+          "explanation": "Text 1B: 'Audiobooks and DVDs are loaned for 7 days only and cannot be renewed.' The answer is 7 (or 'seven')."
+        },
+        {
+          "question_id": "q11",
+          "type": "sentence_completion",
+          "prompt": "Complete the sentence. The library charges a reservation fee of ________ per item, payable when the item is collected.",
+          "word_limit": "NO MORE THAN THREE WORDS AND/OR A NUMBER",
+          "correct": ["£1", "1 pound", "one pound"],
+          "explanation": "Text 1B: 'A reservation fee of £1 per item is charged when you collect the item.' The numeric form '£1' is most natural; the written equivalent 'one pound' is also accepted."
+        },
+        {
+          "question_id": "q12",
+          "type": "sentence_completion",
+          "prompt": "Complete the sentence. Adult borrowers are fined ________ pence per book for each day an item is overdue.",
+          "word_limit": "NO MORE THAN THREE WORDS AND/OR A NUMBER",
+          "correct": ["20", "twenty"],
+          "explanation": "Text 1B: 'Adult borrowers are charged 20 pence per book per day.' Either '20' or 'twenty' fits the gap."
+        },
+        {
+          "question_id": "q13",
+          "type": "sentence_completion",
+          "prompt": "Complete the sentence. Further borrowing is blocked when outstanding charges exceed ________.",
+          "word_limit": "NO MORE THAN THREE WORDS AND/OR A NUMBER",
+          "correct": ["£15", "15 pounds", "fifteen pounds"],
+          "explanation": "Text 1B: 'Outstanding charges over £15 will block further borrowing.' '£15' is the figure stated; '15 pounds' / 'fifteen pounds' are equivalent."
+        },
+        {
+          "question_id": "q14",
+          "type": "sentence_completion",
+          "prompt": "Complete the sentence. The library's free conversation club for adult English learners meets once a ________.",
+          "word_limit": "NO MORE THAN THREE WORDS AND/OR A NUMBER",
+          "correct": ["month"],
+          "explanation": "Text 1B describes the club as meeting 'on the first Thursday of every month', which is once a month. The single word 'month' fits the gap."
+        }
+      ]
+    },
+    {
+      "passage_id": "p2",
+      "order": 2,
+      "title": "Section 2 — Work",
+      "context_label": "Section 2, Questions 15–27",
+      "instructions": "You should spend about 20 minutes on Questions 15–27. Questions 15–20 are based on Text 2A (a job advertisement). Questions 21–27 are based on Text 2B (an extract from the Northbrook Council Staff Handbook).",
+      "body": "TEXT 2A — JOB ADVERTISEMENT: ASSISTANT PARK RANGER, NORTHBROOK COUNTRY PARK\n\nSalary: £24,800 per year (full-time), plus a uniform allowance.\nHours: 37.5 hours per week, including one weekend in three and occasional evenings during the summer events programme.\nContract: Permanent, with a six-month probationary period.\n\nAbout the role\nNorthbrook Country Park is seeking an Assistant Park Ranger to join its small countryside team. Working alongside two senior rangers, you will help maintain footpaths and signage, lead guided walks for visitors of all ages, support the seasonal volunteer programme, and respond to wildlife and visitor incidents across the park's 480 hectares of woodland and meadow.\n\nEssential requirements\n• A recognised qualification in countryside management, conservation, environmental science or a closely related field; OR at least two years of relevant practical experience.\n• A full UK driving licence (some park vehicles use a manual gearbox).\n• Confidence speaking to groups of up to thirty people, including children on organised school visits.\n• Basic first-aid certification at the start of the post. The park will fund renewal training every three years.\n\nDesirable\n• Experience operating brush-cutters, chainsaws or similar small machinery.\n• Familiarity with biological recording, particularly bird and butterfly survey methods.\n• A second European language for working with international visitors.\n\nWhat we offer\nTwenty-eight days of annual leave (rising to thirty-two after five years of service) plus public holidays; enrolment in the local-government pension scheme; free entry for immediate family to all council-run parks; and the use of a small staff cottage if you wish to live on-site (subject to a market-rate rent).\n\nTo apply, send a CV and a one-page covering letter to recruit@northbrookpark.org by Friday 19 September. Interviews will be held the following week. We aim to make an offer within ten working days of the interview.\n\n---\n\nTEXT 2B — NORTHBROOK COUNCIL STAFF HANDBOOK (EXTRACT)\n\n[A] Annual Leave\nFull-time employees are entitled to 28 days of paid annual leave per leave year, rising by one day for each completed year of service up to a maximum of 32 days. The leave year runs from 1 April to 31 March. A maximum of five days may be carried over to the following leave year, but only with the written permission of your line manager. Leave must be booked at least two weeks in advance using the online HR portal. The Council reserves the right to refuse leave requests during peak operational periods, including the school summer holidays.\n\n[B] Sickness Absence\nIf you are unable to attend work due to illness, you must contact your line manager by telephone — not by email or text message — by 9.00 am on the first day of absence. Absences of seven calendar days or fewer may be self-certified using the form on the HR portal. For longer absences, you must provide a fit note from a GP. Statutory sick pay applies from day four; occupational sick pay (full pay for up to thirteen weeks) is available to employees with more than six months of continuous service.\n\n[C] Training and Development\nEvery employee is entitled to an annual development conversation with their line manager, normally held in May or June. Funded training relevant to your role will be considered on a case-by-case basis. Employees who complete an externally accredited qualification lasting more than one year must agree to remain in post for a further twelve months from the date of completion, or repay a pro-rata share of the course fees.\n\n[D] Code of Conduct\nStaff are expected to treat colleagues, visitors and members of the public with courtesy at all times. Acceptance of personal gifts from contractors or members of the public is restricted to items of nominal value (under £20); larger gifts must be declared in writing to the head of department. Use of the Council's IT systems for political campaigning, gambling, or any private commercial activity is prohibited and may be treated as gross misconduct.\n\n[E] Grievances\nIf you have a concern about your working conditions, the conduct of another employee, or the application of any Council policy, you are encouraged to raise it informally first with your line manager. Where that is not possible or appropriate, a formal grievance may be submitted in writing to the HR team, who will normally arrange a hearing within fifteen working days. You have the right to be accompanied at a grievance hearing by a colleague or a trade-union representative.\n\n[F] Health and Safety\nEvery employee shares a personal responsibility for safe working. Accidents, near-misses and unsafe conditions must be recorded in the incident log within 24 hours, however minor they appear. Personal protective equipment (PPE) supplied by the Council, such as high-visibility jackets and steel-capped boots, must be worn whenever the relevant task is carried out — failure to do so may result in disciplinary action and will invalidate insurance cover in the event of injury.",
+      "questions": [
+        {
+          "question_id": "q15",
+          "type": "true_false_notgiven",
+          "prompt": "The Assistant Park Ranger post pays a fixed salary with no additional payments of any kind.",
+          "options": [
+            { "key": "TRUE", "text": "True" },
+            { "key": "FALSE", "text": "False" },
+            { "key": "NG", "text": "Not Given" }
+          ],
+          "correct": ["FALSE"],
+          "explanation": "Text 2A states the salary is '£24,800 per year (full-time), plus a uniform allowance.' Because the advertisement explicitly mentions an extra allowance on top of salary, the claim of 'no additional payments' is directly contradicted — so the answer is False, not Not Given."
+        },
+        {
+          "question_id": "q16",
+          "type": "true_false_notgiven",
+          "prompt": "The successful applicant will have to work some weekends.",
+          "options": [
+            { "key": "TRUE", "text": "True" },
+            { "key": "FALSE", "text": "False" },
+            { "key": "NG", "text": "Not Given" }
+          ],
+          "correct": ["TRUE"],
+          "explanation": "Text 2A says the hours include 'one weekend in three'. Weekend working is therefore part of the standard pattern of the job."
+        },
+        {
+          "question_id": "q17",
+          "type": "true_false_notgiven",
+          "prompt": "Applicants without a formal qualification will not be considered for the post.",
+          "options": [
+            { "key": "TRUE", "text": "True" },
+            { "key": "FALSE", "text": "False" },
+            { "key": "NG", "text": "Not Given" }
+          ],
+          "correct": ["FALSE"],
+          "explanation": "Text 2A gives an alternative route: 'A recognised qualification ... OR at least two years of relevant practical experience.' That OR means a candidate without a formal qualification CAN still be considered — so the statement is directly contradicted and the answer is False."
+        },
+        {
+          "question_id": "q18",
+          "type": "true_false_notgiven",
+          "prompt": "Experience in using chainsaws is one of the essential requirements for the post.",
+          "options": [
+            { "key": "TRUE", "text": "True" },
+            { "key": "FALSE", "text": "False" },
+            { "key": "NG", "text": "Not Given" }
+          ],
+          "correct": ["FALSE"],
+          "explanation": "Chainsaw experience is listed under 'Desirable', not 'Essential requirements'. The advertisement clearly separates the two lists, so saying chainsaw experience is essential contradicts the text — False, not Not Given."
+        },
+        {
+          "question_id": "q19",
+          "type": "true_false_notgiven",
+          "prompt": "The park will pay for the successful applicant to renew their first-aid training.",
+          "options": [
+            { "key": "TRUE", "text": "True" },
+            { "key": "FALSE", "text": "False" },
+            { "key": "NG", "text": "Not Given" }
+          ],
+          "correct": ["TRUE"],
+          "explanation": "Text 2A says of the first-aid requirement: 'The park will fund renewal training every three years.' That is the same as paying for renewal, so the statement is True."
+        },
+        {
+          "question_id": "q20",
+          "type": "true_false_notgiven",
+          "prompt": "Staff who choose to live in the on-site cottage will receive free accommodation.",
+          "options": [
+            { "key": "TRUE", "text": "True" },
+            { "key": "FALSE", "text": "False" },
+            { "key": "NG", "text": "Not Given" }
+          ],
+          "correct": ["FALSE"],
+          "explanation": "Text 2A says the cottage is available 'subject to a market-rate rent.' A market-rate rent is the opposite of free accommodation, so the statement is contradicted by the passage — False, not Not Given."
+        },
+        {
+          "question_id": "q21",
+          "type": "matching_information",
+          "prompt": "Look at Text 2B. Which paragraph (A–F) contains the following information? You may use any letter more than once.",
+          "feature_bank": [
+            { "key": "A", "text": "Annual Leave" },
+            { "key": "B", "text": "Sickness Absence" },
+            { "key": "C", "text": "Training and Development" },
+            { "key": "D", "text": "Code of Conduct" },
+            { "key": "E", "text": "Grievances" },
+            { "key": "F", "text": "Health and Safety" }
+          ],
+          "statement": "The maximum amount of unused leave that may be carried over to the following year.",
+          "correct": ["A"],
+          "explanation": "Section A: 'A maximum of five days may be carried over to the following leave year, but only with the written permission of your line manager.' This carry-over rule only appears in the Annual Leave section."
+        },
+        {
+          "question_id": "q22",
+          "type": "matching_information",
+          "prompt": "Which paragraph (A–F) contains the following information? You may use any letter more than once.",
+          "feature_bank": [
+            { "key": "A", "text": "Annual Leave" },
+            { "key": "B", "text": "Sickness Absence" },
+            { "key": "C", "text": "Training and Development" },
+            { "key": "D", "text": "Code of Conduct" },
+            { "key": "E", "text": "Grievances" },
+            { "key": "F", "text": "Health and Safety" }
+          ],
+          "statement": "The right to be accompanied by a colleague or union representative at a hearing.",
+          "correct": ["E"],
+          "explanation": "Section E: 'You have the right to be accompanied at a grievance hearing by a colleague or a trade-union representative.' Only the Grievances section mentions this right."
+        },
+        {
+          "question_id": "q23",
+          "type": "matching_information",
+          "prompt": "Which paragraph (A–F) contains the following information? You may use any letter more than once.",
+          "feature_bank": [
+            { "key": "A", "text": "Annual Leave" },
+            { "key": "B", "text": "Sickness Absence" },
+            { "key": "C", "text": "Training and Development" },
+            { "key": "D", "text": "Code of Conduct" },
+            { "key": "E", "text": "Grievances" },
+            { "key": "F", "text": "Health and Safety" }
+          ],
+          "statement": "Conditions under which an employee may have to repay course fees.",
+          "correct": ["C"],
+          "explanation": "Section C explains that employees completing externally accredited qualifications of more than one year 'must agree to remain in post for a further twelve months from the date of completion, or repay a pro-rata share of the course fees.'"
+        },
+        {
+          "question_id": "q24",
+          "type": "matching_information",
+          "prompt": "Which paragraph (A–F) contains the following information? You may use any letter more than once.",
+          "feature_bank": [
+            { "key": "A", "text": "Annual Leave" },
+            { "key": "B", "text": "Sickness Absence" },
+            { "key": "C", "text": "Training and Development" },
+            { "key": "D", "text": "Code of Conduct" },
+            { "key": "E", "text": "Grievances" },
+            { "key": "F", "text": "Health and Safety" }
+          ],
+          "statement": "A time limit within which workplace accidents must be reported.",
+          "correct": ["F"],
+          "explanation": "Section F: 'Accidents, near-misses and unsafe conditions must be recorded in the incident log within 24 hours, however minor they appear.' The 24-hour reporting limit only appears in Health and Safety."
+        },
+        {
+          "question_id": "q25",
+          "type": "matching_information",
+          "prompt": "Which paragraph (A–F) contains the following information? You may use any letter more than once.",
+          "feature_bank": [
+            { "key": "A", "text": "Annual Leave" },
+            { "key": "B", "text": "Sickness Absence" },
+            { "key": "C", "text": "Training and Development" },
+            { "key": "D", "text": "Code of Conduct" },
+            { "key": "E", "text": "Grievances" },
+            { "key": "F", "text": "Health and Safety" }
+          ],
+          "statement": "The maximum value of personal gifts staff may accept without making a formal declaration.",
+          "correct": ["D"],
+          "explanation": "Section D: gifts are restricted to 'items of nominal value (under £20); larger gifts must be declared in writing to the head of department.' The £20 ceiling is the value below which no declaration is needed."
+        },
+        {
+          "question_id": "q26",
+          "type": "matching_information",
+          "prompt": "Which paragraph (A–F) contains the following information? You may use any letter more than once.",
+          "feature_bank": [
+            { "key": "A", "text": "Annual Leave" },
+            { "key": "B", "text": "Sickness Absence" },
+            { "key": "C", "text": "Training and Development" },
+            { "key": "D", "text": "Code of Conduct" },
+            { "key": "E", "text": "Grievances" },
+            { "key": "F", "text": "Health and Safety" }
+          ],
+          "statement": "The method employees must use to notify their manager when they are too ill to work.",
+          "correct": ["B"],
+          "explanation": "Section B: 'You must contact your line manager by telephone — not by email or text message — by 9.00 am on the first day of absence.' Only Sickness Absence specifies the method of notification."
+        },
+        {
+          "question_id": "q27",
+          "type": "matching_information",
+          "prompt": "Which paragraph (A–F) contains the following information? You may use any letter more than once.",
+          "feature_bank": [
+            { "key": "A", "text": "Annual Leave" },
+            { "key": "B", "text": "Sickness Absence" },
+            { "key": "C", "text": "Training and Development" },
+            { "key": "D", "text": "Code of Conduct" },
+            { "key": "E", "text": "Grievances" },
+            { "key": "F", "text": "Health and Safety" }
+          ],
+          "statement": "The length of service required before an employee qualifies for occupational sick pay.",
+          "correct": ["B"],
+          "explanation": "Section B again: 'occupational sick pay (full pay for up to thirteen weeks) is available to employees with more than six months of continuous service.' The six-month service requirement is found here. The instruction allows letters to be reused, so B is correct for both Q26 and Q27."
+        }
+      ]
+    },
+    {
+      "passage_id": "p3",
+      "order": 3,
+      "title": "The Quiet Return of the Night Train",
+      "context_label": "Section 3, Questions 28–40",
+      "instructions": "You should spend about 20 minutes on Questions 28–40, which are based on the article below.",
+      "body": "[A] For most of the late twentieth century, the night train looked like a casualty of progress. Faster daytime trains, cheaper flights and motorways that you could drive all night made the old sleeping-car services seem slow, inconvenient and quaint. Between 2000 and 2017, more than a hundred night-train routes across Europe were withdrawn. Their carriages were sold off, mothballed or scrapped, and the routes themselves were swept from timetable books as if they had been a transcription error.\n\n[B] Then, gradually, something shifted. A handful of operators reported that the few remaining night services were running fuller than before, and that passengers were willing to pay more than expected for a bed on a train rather than a seat on a plane. Climate concern, especially among younger travellers, was clearly part of the story. So was the discomfort of modern airports, the noise of overcrowded high-speed services, and a slow rediscovery of what an overnight crossing actually offers: a sleep, a meal, and a sense of arrival at sunrise in the city you set out for.\n\n[C] Austria's national operator, ÖBB, was the first to move at scale. While other railways were closing night services, ÖBB bought up second-hand sleeping cars from neighbours that were retreating from the market, refurbished them, and re-branded the whole network as 'Nightjet'. By 2019, Nightjet trains were carrying around 1.4 million passengers a year, with new routes added almost every winter timetable change. Other operators began to take notice. By 2023, France, the Netherlands, Sweden and Switzerland had each announced fresh investment in cross-border night services, often in partnership with private start-ups.\n\n[D] The economics, however, remain awkward. A modern sleeping car costs roughly three times as much to buy and maintain as an ordinary day coach, yet carries far fewer passengers. Daytime trains can do several return trips in a day; a night train, by definition, does one. The fuel and electricity for an overnight journey are also higher per seat than for a short-haul flight, even though the per-passenger carbon footprint is much lower because trains run on increasingly clean electricity. Without some form of public subsidy, almost no European night-train operator currently makes a profit on the basic ticket alone.\n\n[E] Travellers, for their part, often seem to weigh comfort against time rather than price. Surveys carried out at Berlin Hauptbahnhof in 2022 found that more than sixty per cent of night-train customers said they had chosen the route 'mainly because it saved a hotel night', and only a quarter cited environmental reasons as their main motivation. That is not to say climate concern is unimportant — many of the same travellers reported choosing trains over planes for both reasons combined. But the convenience argument is doing more of the work than press coverage often suggests.\n\n[F] Reviving night trains is also a question of infrastructure that the public seldom sees. Sleeping cars need to be cleaned, restocked, hooked up to power and water and refilled with bed linen in tightly timed early-morning windows at each terminus, often on platforms not designed for such turnarounds. Skilled maintenance staff, lost when sleepers were withdrawn a generation ago, have had to be retrained. New cross-border timetables must thread through the busy daytime schedules of neighbouring countries, each operating slightly different signalling rules. None of these problems is insurmountable, but each adds weeks to the lead time for any new route.\n\n[G] What seems clear is that the night train is no longer a heritage product, kept alive for nostalgia. The new sleepers being delivered to Austria, Sweden and Switzerland between 2024 and 2027 will feature private compartments with showers, USB charging in every berth, and quiet ventilation designed to allow real sleep. They are aimed squarely at business travellers as well as tourists. Whether the revival will hold against falling air fares and ever-faster daytime rail remains to be seen. But, for the first time in fifty years, the question being asked about the night train in Europe is not which service to cut next, but where to put the next route.",
+      "questions": [
+        {
+          "question_id": "q28",
+          "type": "matching_headings",
+          "prompt": "Choose the correct heading for Paragraph B from the list of headings.",
+          "heading_bank": [
+            { "key": "i", "text": "A surprising shift in passenger demand" },
+            { "key": "ii", "text": "One country leads the revival" },
+            { "key": "iii", "text": "The numbers that do not quite add up" },
+            { "key": "iv", "text": "What travellers actually want" },
+            { "key": "v", "text": "Practical challenges behind the scenes" },
+            { "key": "vi", "text": "Why night trains nearly disappeared" },
+            { "key": "vii", "text": "Equipment built for a new generation of passengers" },
+            { "key": "viii", "text": "The rise and fall of European airlines" }
+          ],
+          "target_paragraph": "B",
+          "correct": ["i"],
+          "explanation": "Paragraph B opens 'Then, gradually, something shifted', and describes services running fuller and passengers paying more than expected. Heading (i) 'A surprising shift in passenger demand' captures this turnaround precisely."
+        },
+        {
+          "question_id": "q29",
+          "type": "matching_headings",
+          "prompt": "Choose the correct heading for Paragraph C from the list of headings.",
+          "heading_bank": [
+            { "key": "i", "text": "A surprising shift in passenger demand" },
+            { "key": "ii", "text": "One country leads the revival" },
+            { "key": "iii", "text": "The numbers that do not quite add up" },
+            { "key": "iv", "text": "What travellers actually want" },
+            { "key": "v", "text": "Practical challenges behind the scenes" },
+            { "key": "vi", "text": "Why night trains nearly disappeared" },
+            { "key": "vii", "text": "Equipment built for a new generation of passengers" },
+            { "key": "viii", "text": "The rise and fall of European airlines" }
+          ],
+          "target_paragraph": "C",
+          "correct": ["ii"],
+          "explanation": "Paragraph C is entirely about Austria's ÖBB taking the lead with its Nightjet brand, and other countries following only later. Heading (ii) 'One country leads the revival' fits exactly."
+        },
+        {
+          "question_id": "q30",
+          "type": "matching_headings",
+          "prompt": "Choose the correct heading for Paragraph D from the list of headings.",
+          "heading_bank": [
+            { "key": "i", "text": "A surprising shift in passenger demand" },
+            { "key": "ii", "text": "One country leads the revival" },
+            { "key": "iii", "text": "The numbers that do not quite add up" },
+            { "key": "iv", "text": "What travellers actually want" },
+            { "key": "v", "text": "Practical challenges behind the scenes" },
+            { "key": "vi", "text": "Why night trains nearly disappeared" },
+            { "key": "vii", "text": "Equipment built for a new generation of passengers" },
+            { "key": "viii", "text": "The rise and fall of European airlines" }
+          ],
+          "target_paragraph": "D",
+          "correct": ["iii"],
+          "explanation": "Paragraph D is about the awkward economics — high costs, few passengers, no profit without subsidy. Heading (iii) 'The numbers that do not quite add up' is the best summary."
+        },
+        {
+          "question_id": "q31",
+          "type": "matching_headings",
+          "prompt": "Choose the correct heading for Paragraph E from the list of headings.",
+          "heading_bank": [
+            { "key": "i", "text": "A surprising shift in passenger demand" },
+            { "key": "ii", "text": "One country leads the revival" },
+            { "key": "iii", "text": "The numbers that do not quite add up" },
+            { "key": "iv", "text": "What travellers actually want" },
+            { "key": "v", "text": "Practical challenges behind the scenes" },
+            { "key": "vi", "text": "Why night trains nearly disappeared" },
+            { "key": "vii", "text": "Equipment built for a new generation of passengers" },
+            { "key": "viii", "text": "The rise and fall of European airlines" }
+          ],
+          "target_paragraph": "E",
+          "correct": ["iv"],
+          "explanation": "Paragraph E reports survey evidence on the real reasons passengers choose night trains: saving a hotel night, comfort, and only secondarily the climate. Heading (iv) 'What travellers actually want' matches the focus on passenger motivation."
+        },
+        {
+          "question_id": "q32",
+          "type": "matching_headings",
+          "prompt": "Choose the correct heading for Paragraph F from the list of headings.",
+          "heading_bank": [
+            { "key": "i", "text": "A surprising shift in passenger demand" },
+            { "key": "ii", "text": "One country leads the revival" },
+            { "key": "iii", "text": "The numbers that do not quite add up" },
+            { "key": "iv", "text": "What travellers actually want" },
+            { "key": "v", "text": "Practical challenges behind the scenes" },
+            { "key": "vi", "text": "Why night trains nearly disappeared" },
+            { "key": "vii", "text": "Equipment built for a new generation of passengers" },
+            { "key": "viii", "text": "The rise and fall of European airlines" }
+          ],
+          "target_paragraph": "F",
+          "correct": ["v"],
+          "explanation": "Paragraph F describes the operational side that the public 'seldom sees': early-morning turnarounds, lost maintenance skills, cross-border signalling. Heading (v) 'Practical challenges behind the scenes' is a direct match."
+        },
+        {
+          "question_id": "q33",
+          "type": "yes_no_notgiven",
+          "prompt": "The writer thinks that climate concern is the single most important reason European travellers now choose night trains.",
+          "options": [
+            { "key": "YES", "text": "Yes" },
+            { "key": "NO", "text": "No" },
+            { "key": "NG", "text": "Not Given" }
+          ],
+          "correct": ["NO"],
+          "explanation": "Paragraph E gives the writer's view directly: surveys show 'more than sixty per cent ... mainly because it saved a hotel night, and only a quarter cited environmental reasons as their main motivation', and the writer concludes 'the convenience argument is doing more of the work than press coverage often suggests.' The writer's view contradicts the claim, so the answer is No, not Not Given."
+        },
+        {
+          "question_id": "q34",
+          "type": "yes_no_notgiven",
+          "prompt": "The writer believes that most European night-train operators need public subsidy in order to make a profit.",
+          "options": [
+            { "key": "YES", "text": "Yes" },
+            { "key": "NO", "text": "No" },
+            { "key": "NG", "text": "Not Given" }
+          ],
+          "correct": ["YES"],
+          "explanation": "Paragraph D states: 'Without some form of public subsidy, almost no European night-train operator currently makes a profit on the basic ticket alone.' The writer's claim and the statement match."
+        },
+        {
+          "question_id": "q35",
+          "type": "yes_no_notgiven",
+          "prompt": "The writer suggests that ÖBB's Nightjet network has been less successful than other European operators expected.",
+          "options": [
+            { "key": "YES", "text": "Yes" },
+            { "key": "NO", "text": "No" },
+            { "key": "NG", "text": "Not Given" }
+          ],
+          "correct": ["NO"],
+          "explanation": "Paragraph C reports 1.4 million Nightjet passengers a year, new routes 'almost every winter timetable change', and other operators following ÖBB's lead — all evidence of success. The writer's view contradicts the claim of being 'less successful than expected', so the answer is No, not Not Given."
+        },
+        {
+          "question_id": "q36",
+          "type": "yes_no_notgiven",
+          "prompt": "The writer predicts that falling air fares will cause the night-train revival to fail.",
+          "options": [
+            { "key": "YES", "text": "Yes" },
+            { "key": "NO", "text": "No" },
+            { "key": "NG", "text": "Not Given" }
+          ],
+          "correct": ["NG"],
+          "explanation": "Paragraph G mentions falling air fares as a pressure but says only that 'Whether the revival will hold against falling air fares and ever-faster daytime rail remains to be seen.' The writer expresses no view about whether it will fail — it is genuinely undecided in the text, so the answer is Not Given (not No, because the writer never disagrees with the prediction either)."
+        },
+        {
+          "question_id": "q37",
+          "type": "summary_completion",
+          "prompt": "Complete the summary using words from the word bank. Modern sleeping cars are roughly three times more expensive to buy and maintain than an ordinary (Q37) ________, and they can carry far fewer passengers per journey. Surveys at Berlin in 2022 found that most night-train passengers were choosing trains mainly to save the cost of a (Q38) ________. Behind the scenes, sleeping cars must be cleaned and restocked in narrow morning windows, and (Q39) ________ staff who were lost a generation ago have had to be retrained. The newest sleepers, due between 2024 and 2027, will offer private compartments with (Q40) ________ in every berth.",
+          "word_limit": "ONE WORD OR PHRASE FROM THE WORD BANK",
+          "word_bank": [
+            "locomotive",
+            "day coach",
+            "hotel night",
+            "return flight",
+            "maintenance",
+            "security",
+            "USB charging",
+            "hot meals",
+            "bed linen",
+            "monitor"
+          ],
+          "correct": ["day coach"],
+          "explanation": "Paragraph D: 'A modern sleeping car costs roughly three times as much to buy and maintain as an ordinary day coach.' The matching phrase in the bank is 'day coach'."
+        },
+        {
+          "question_id": "q38",
+          "type": "summary_completion",
+          "prompt": "See question 37 for the summary text. Choose the correct word or phrase from the bank for gap (Q38).",
+          "word_limit": "ONE WORD OR PHRASE FROM THE WORD BANK",
+          "word_bank": [
+            "locomotive",
+            "day coach",
+            "hotel night",
+            "return flight",
+            "maintenance",
+            "security",
+            "USB charging",
+            "hot meals",
+            "bed linen",
+            "monitor"
+          ],
+          "correct": ["hotel night"],
+          "explanation": "Paragraph E reports more than sixty per cent of customers chose the route 'mainly because it saved a hotel night'. 'Hotel night' is the matching item in the bank."
+        },
+        {
+          "question_id": "q39",
+          "type": "summary_completion",
+          "prompt": "See question 37 for the summary text. Choose the correct word or phrase from the bank for gap (Q39).",
+          "word_limit": "ONE WORD OR PHRASE FROM THE WORD BANK",
+          "word_bank": [
+            "locomotive",
+            "day coach",
+            "hotel night",
+            "return flight",
+            "maintenance",
+            "security",
+            "USB charging",
+            "hot meals",
+            "bed linen",
+            "monitor"
+          ],
+          "correct": ["maintenance"],
+          "explanation": "Paragraph F: 'Skilled maintenance staff, lost when sleepers were withdrawn a generation ago, have had to be retrained.' The single-word match in the bank is 'maintenance'."
+        },
+        {
+          "question_id": "q40",
+          "type": "summary_completion",
+          "prompt": "See question 37 for the summary text. Choose the correct word or phrase from the bank for gap (Q40).",
+          "word_limit": "ONE WORD OR PHRASE FROM THE WORD BANK",
+          "word_bank": [
+            "locomotive",
+            "day coach",
+            "hotel night",
+            "return flight",
+            "maintenance",
+            "security",
+            "USB charging",
+            "hot meals",
+            "bed linen",
+            "monitor"
+          ],
+          "correct": ["USB charging"],
+          "explanation": "Paragraph G: the new sleepers 'will feature private compartments with showers, USB charging in every berth, and quiet ventilation.' 'USB charging' is the matching item in the bank."
+        }
+      ]
+    }
+  ],
+  "scoring": {
+    "total_items": 40,
+    "module": "general",
+    "band_estimate": [
+      { "min_correct": 40, "band": 9.0 },
+      { "min_correct": 39, "band": 8.5 },
+      { "min_correct": 37, "band": 8.0 },
+      { "min_correct": 36, "band": 7.5 },
+      { "min_correct": 34, "band": 7.0 },
+      { "min_correct": 32, "band": 6.5 },
+      { "min_correct": 30, "band": 6.0 },
+      { "min_correct": 27, "band": 5.5 },
+      { "min_correct": 23, "band": 5.0 },
+      { "min_correct": 19, "band": 4.5 },
+      { "min_correct": 15, "band": 4.0 },
+      { "min_correct": 0,  "band": 3.5 }
+    ]
+  }
+}

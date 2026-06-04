@@ -44,14 +44,20 @@ export const SEO: React.FC<SeoInput> = (props) => {
     }
     canonical.setAttribute('href', seoData.canonicalUrl);
 
-    // Always update robots meta
+    // Always update robots meta, but don't clobber a `noindex` already set by
+    // a page-level `usePageMetadata` call (e.g. NotFoundPage). Effect order is
+    // child-before-parent, so the page effect runs first and would otherwise be
+    // overwritten by this Layout-level effect.
     let metaRobots = document.querySelector('meta[name="robots"]');
     if (!metaRobots) {
       metaRobots = document.createElement('meta');
       metaRobots.setAttribute('name', 'robots');
       document.head.appendChild(metaRobots);
     }
-    metaRobots.setAttribute('content', seoData.robots);
+    const existingRobots = metaRobots.getAttribute('content') || '';
+    if (!/noindex/i.test(existingRobots)) {
+      metaRobots.setAttribute('content', seoData.robots);
+    }
 
     // Helper to set/update meta tag
     const setMeta = (property: string, content: string, isProperty = false) => {

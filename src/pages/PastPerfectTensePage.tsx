@@ -1,4 +1,5 @@
-import React from 'react';
+﻿import React from 'react';
+import AIAnswerBox from '../components/AIAnswerBox';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import SchemaMarkup from '../components/SchemaMarkup';
@@ -7,7 +8,7 @@ const PastPerfectTensePage: React.FC = () => {
   usePageMetadata({
     title: 'Past Perfect Tense: Rules, Structure & Examples | TypoGrammar',
     description: 'Learn the past perfect tense with clear rules, structure, examples, signal words, and common mistakes. Simple explanation for English learners.',
-    canonical: 'https://typogrammar.com/grammar/verb-tenses/past-perfect'
+    canonical: 'https://typogrammar.com/grammar/verb-tenses/past-perfect/'
   });
 
   const articleSchema = {
@@ -45,9 +46,9 @@ const PastPerfectTensePage: React.FC = () => {
         <nav className="text-sm text-slate-600 dark:text-slate-400 mb-6">
           <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
           <span className="mx-2">›</span>
-          <Link to="/grammar" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar</Link>
+          <Link to="/grammar/" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar</Link>
           <span className="mx-2">›</span>
-          <Link to="/grammar/verb-tenses" className="hover:text-blue-600 dark:hover:text-blue-400">Verb Tenses</Link>
+          <Link to="/grammar/verb-tenses/" className="hover:text-blue-600 dark:hover:text-blue-400">Verb Tenses</Link>
           <span className="mx-2">›</span>
           <span className="text-slate-900 dark:text-slate-100">Past Perfect Tense</span>
         </nav>
@@ -61,10 +62,18 @@ const PastPerfectTensePage: React.FC = () => {
         </p>
 
         <p className="text-lg text-slate-700 dark:text-slate-300 mb-8">
-          The past perfect tense is often used with the <Link to="/grammar/verb-tenses/past-simple" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">past simple tense</Link> to show which action happened first.
+          The past perfect tense is often used with the <Link to="/grammar/verb-tenses/past-simple/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">past simple tense</Link> to show which action happened first.
         </p>
 
-        {/* Table of Contents */}
+                {/* Quick Answer block — emits DefinedTerm + FAQPage JSON-LD for AI engines */}
+        <AIAnswerBox
+          term={"Past Perfect Tense"}
+          answer={"The past perfect tense describes an action that was completed before another action or time in the past. It is formed with had + the past participle of the verb. Example: \"She had finished her homework before dinner started.\""}
+          keyFacts={["Formula: subject + had + past participle","Use: an earlier past action, the cause of a past situation, reported speech, third conditional","Signal words: before, after, by the time, already, just, when, until","Negative: had + not + past participle","Question: Had + subject + past participle?"]}
+          faqs={[{"q":"When should I use the past perfect instead of the past simple?","a":"Use the past perfect to show that one past action happened BEFORE another past action: \"When I arrived, the meeting had already started.\" If two past actions happen in sequence with \"and\" or \"then\", past simple is enough."},{"q":"Is past perfect required after \"before\" and \"after\"?","a":"No. With \"before\" and \"after\", the time order is already clear, so past simple is often acceptable. Past perfect adds emphasis on the earlier completion."}]}
+        />
+
+{/* Table of Contents */}
         <div className="bg-slate-50 dark:bg-slate-700 p-6 rounded-lg mb-8">
           <h2 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-4">Table of Contents</h2>
           <ul className="space-y-2 text-slate-700 dark:text-slate-300">
@@ -305,17 +314,17 @@ const PastPerfectTensePage: React.FC = () => {
         <div className="bg-slate-50 dark:bg-slate-700 p-6 rounded-lg mb-8">
           <h2 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-4">Related Verb Tenses</h2>
           <ul className="space-y-2 text-slate-700 dark:text-slate-300">
-            <li><Link to="/grammar/verb-tenses/past-progressive" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Past Continuous</Link></li>
-            <li><Link to="/grammar/verb-tenses/past-perfect-progressive" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Past Perfect Continuous</Link></li>
-            <li><Link to="/grammar/verb-tenses/past-simple" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Past Simple</Link></li>
-            <li><Link to="/grammar/verb-tenses" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">All Verb Tenses</Link></li>
+            <li><Link to="/grammar/verb-tenses/past-progressive/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Past Continuous</Link></li>
+            <li><Link to="/grammar/verb-tenses/past-perfect-progressive/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Past Perfect Continuous</Link></li>
+            <li><Link to="/grammar/verb-tenses/past-simple/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Past Simple</Link></li>
+            <li><Link to="/grammar/verb-tenses/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">All Verb Tenses</Link></li>
           </ul>
         </div>
 
         {/* Editorial Attribution Box */}
         <div className="bg-slate-100 dark:bg-slate-700 border border-slate-300 dark:border-slate-600 p-6 my-8 rounded-lg">
           <p className="text-slate-700 dark:text-slate-300 mb-4">
-            By <Link to="/about/editorial-team" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">TypoGrammar Editorial Team</Link>
+            By <Link to="/about/editorial-team/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">TypoGrammar Editorial Team</Link>
           </p>
           <p className="text-slate-700 dark:text-slate-300 mb-4">
             TypoGrammar Editorial Team creates independent, grammar-focused educational content to help English learners improve clarity, structure, and accuracy for academic and real-world use.

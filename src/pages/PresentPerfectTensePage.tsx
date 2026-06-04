@@ -1,4 +1,5 @@
-import React from 'react';
+﻿import React from 'react';
+import AIAnswerBox from '../components/AIAnswerBox';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import SchemaMarkup from '../components/SchemaMarkup';
@@ -7,7 +8,7 @@ const PresentPerfectTensePage: React.FC = () => {
   usePageMetadata({
     title: 'Present Perfect Tense: Rules, Structure & Examples | TypoGrammar',
     description: 'Learn the present perfect tense with rules, structure, examples, signal words, and common mistakes. Clear explanation for English learners.',
-    canonical: 'https://typogrammar.com/grammar/verb-tenses/present-perfect'
+    canonical: 'https://typogrammar.com/grammar/verb-tenses/present-perfect/'
   });
 
   const articleSchema = {
@@ -45,9 +46,9 @@ const PresentPerfectTensePage: React.FC = () => {
         <nav className="text-sm text-slate-600 dark:text-slate-400 mb-6">
           <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
           <span className="mx-2">›</span>
-          <Link to="/grammar" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar</Link>
+          <Link to="/grammar/" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar</Link>
           <span className="mx-2">›</span>
-          <Link to="/grammar/verb-tenses" className="hover:text-blue-600 dark:hover:text-blue-400">Verb Tenses</Link>
+          <Link to="/grammar/verb-tenses/" className="hover:text-blue-600 dark:hover:text-blue-400">Verb Tenses</Link>
           <span className="mx-2">›</span>
           <span className="text-slate-900 dark:text-slate-100">Present Perfect Tense</span>
         </nav>
@@ -61,10 +62,18 @@ const PresentPerfectTensePage: React.FC = () => {
         </p>
 
         <p className="text-lg text-slate-700 dark:text-slate-300 mb-8">
-          The present perfect is often compared with the <Link to="/grammar/verb-tenses/past-simple" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">past simple tense</Link>, which describes actions completed at a specific time in the past.
+          The present perfect is often compared with the <Link to="/grammar/verb-tenses/past-simple/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">past simple tense</Link>, which describes actions completed at a specific time in the past.
         </p>
 
-        {/* Table of Contents */}
+                {/* Quick Answer block — emits DefinedTerm + FAQPage JSON-LD for AI engines */}
+        <AIAnswerBox
+          term={"Present Perfect Tense"}
+          answer={"The present perfect tense connects a past action to the present moment. It is formed with have/has + the past participle of the verb. It is used for life experiences, recent actions with present results, and actions that started in the past and continue now. Example: \"I have lived in London for five years.\""}
+          keyFacts={["Formula: subject + have/has + past participle","Use: life experiences, unfinished time periods, recent actions with present relevance","Signal words: just, already, yet, ever, never, since, for, recently, so far","Negative: have/has + not + past participle","Question: Have/Has + subject + past participle?"]}
+          faqs={[{"q":"What is the difference between present perfect and past simple?","a":"Past simple describes a finished action at a specific past time (\"I visited Paris in 2019\"). Present perfect describes a past action with present relevance or no specific time (\"I have visited Paris three times\")."},{"q":"When do we use \"since\" vs \"for\" with present perfect?","a":"Use \"since\" with a starting point in time (\"since 2020\", \"since Monday\"). Use \"for\" with a duration (\"for five years\", \"for two hours\")."},{"q":"Can I use the present perfect with \"yesterday\" or \"last week\"?","a":"No. Present perfect cannot be used with finished time expressions. Use past simple instead: \"I saw him yesterday\" (not \"I have seen him yesterday\")."}]}
+        />
+
+{/* Table of Contents */}
         <div className="bg-slate-50 dark:bg-slate-700 p-6 rounded-lg mb-8">
           <h2 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-4">Table of Contents</h2>
           <ul className="space-y-2 text-slate-700 dark:text-slate-300">
@@ -316,17 +325,17 @@ const PresentPerfectTensePage: React.FC = () => {
         <div className="bg-slate-50 dark:bg-slate-700 p-6 rounded-lg mb-8">
           <h2 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-4">Related Verb Tenses</h2>
           <ul className="space-y-2 text-slate-700 dark:text-slate-300">
-            <li><Link to="/grammar/verb-tenses/present-progressive" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Present Continuous</Link></li>
-            <li><Link to="/grammar/verb-tenses/present-perfect-progressive" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Present Perfect Continuous</Link></li>
-            <li><Link to="/grammar/verb-tenses/past-simple" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Past Simple</Link></li>
-            <li><Link to="/grammar/verb-tenses" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">All Verb Tenses</Link></li>
+            <li><Link to="/grammar/verb-tenses/present-progressive/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Present Continuous</Link></li>
+            <li><Link to="/grammar/verb-tenses/present-perfect-progressive/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Present Perfect Continuous</Link></li>
+            <li><Link to="/grammar/verb-tenses/past-simple/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Past Simple</Link></li>
+            <li><Link to="/grammar/verb-tenses/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">All Verb Tenses</Link></li>
           </ul>
         </div>
 
         {/* Editorial Attribution Box */}
         <div className="bg-slate-100 dark:bg-slate-700 border border-slate-300 dark:border-slate-600 p-6 my-8 rounded-lg">
           <p className="text-slate-700 dark:text-slate-300 mb-4">
-            By <Link to="/about/editorial-team" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">TypoGrammar Editorial Team</Link>
+            By <Link to="/about/editorial-team/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold">TypoGrammar Editorial Team</Link>
           </p>
           <p className="text-slate-700 dark:text-slate-300 mb-4">
             TypoGrammar Editorial Team creates independent, grammar-focused educational content to help English learners improve clarity, structure, and accuracy for academic and real-world use.

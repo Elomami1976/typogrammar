@@ -1,12 +1,12 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading, CodeBlock, BulletList } from '../components/ArticleComponents';
 
 const MixedEssayTypesIELTSPage: React.FC = () => {
   usePageMetadata({
-    title: 'IELTS Mixed Essay Types – Band 7–9 Strategy & Example | TypoGrammar',
-    description: 'Learn how to identify and answer IELTS mixed essay questions with a Band 7–9 model answer and clear strategy.'
+    title: 'IELTS Mixed Essay Types - Band 7-9 Strategy & Example | TypoGrammar',
+    description: 'Learn how to identify and answer IELTS mixed essay questions with a Band 7-9 model answer and clear strategy.'
   });
 
   const faqSchema = {
@@ -70,7 +70,7 @@ const MixedEssayTypesIELTSPage: React.FC = () => {
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="mb-6">
           <Link 
-            to="/ielts/ielts-writing-task-2-essay-types" 
+            to="/ielts/ielts-writing-task-2-essay-types/" 
             className="text-blue-600 dark:text-blue-400 hover:underline text-sm"
           >
             ← Back to IELTS Writing Task 2 Essay Types
@@ -78,7 +78,7 @@ const MixedEssayTypesIELTSPage: React.FC = () => {
         </div>
 
         <h1 className="text-4xl font-bold mb-6 text-slate-900 dark:text-slate-100">
-          IELTS Mixed Essay Types – Band 7–9 Strategy & Example
+          IELTS Mixed Essay Types - Band 7-9 Strategy & Example
         </h1>
 
         {/* Featured Snippet Box */}
@@ -149,7 +149,7 @@ const MixedEssayTypesIELTSPage: React.FC = () => {
 
         <div className="bg-slate-100 dark:bg-slate-800 p-6 rounded-lg my-6">
           <h4 className="font-semibold mb-4 text-slate-900 dark:text-slate-100">
-            📐 Recommended Structure (Band 7–9)
+            📐 Recommended Structure (Band 7-9)
           </h4>
           <div className="space-y-4">
             <div>
@@ -164,7 +164,7 @@ const MixedEssayTypesIELTSPage: React.FC = () => {
             </div>
             <div>
               <p className="font-medium text-slate-900 dark:text-slate-100">
-                2. Body Paragraph 1 – First Requirement (4-5 sentences)
+                2. Body Paragraph 1 - First Requirement (4-5 sentences)
               </p>
               <p className="text-sm text-slate-700 dark:text-slate-300 ml-4">
                 • Address first task (e.g., advantages)<br />
@@ -174,7 +174,7 @@ const MixedEssayTypesIELTSPage: React.FC = () => {
             </div>
             <div>
               <p className="font-medium text-slate-900 dark:text-slate-100">
-                3. Body Paragraph 2 – Second Requirement (4-5 sentences)
+                3. Body Paragraph 2 - Second Requirement (4-5 sentences)
               </p>
               <p className="text-sm text-slate-700 dark:text-slate-300 ml-4">
                 • Address second task (e.g., your opinion)<br />
@@ -474,7 +474,7 @@ In conclusion, although free university education has clear advantages in promot
           <p className="text-slate-800 dark:text-slate-200">
             📚 <strong>This article is part of our complete</strong>{' '}
             <Link 
-              to="/ielts/ielts-writing-task-2-essay-types" 
+              to="/ielts/ielts-writing-task-2-essay-types/" 
               className="text-green-700 dark:text-green-400 hover:underline font-medium"
             >
               IELTS Writing Task 2 Essay Types guide

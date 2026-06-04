@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import usePageMetadata from '../hooks/usePageMetadata';
 import SchemaMarkup from '../components/SchemaMarkup';
 import { Link } from 'react-router-dom';
@@ -7,7 +7,7 @@ const WhatIsTypogrammarPage: React.FC = () => {
   usePageMetadata({
     title: 'What Is TypoGrammar? | Free Academic English Platform for IELTS & TOEFL',
     description: 'TypoGrammar is a free academic English learning platform that helps IELTS and TOEFL learners improve grammar accuracy, vocabulary, and writing clarity.',
-    canonical: 'https://typogrammar.com/what-is-typogrammar',
+    canonical: 'https://typogrammar.com/what-is-typogrammar/',
     ogTitle: 'What Is TypoGrammar? | Free Academic English Platform for IELTS & TOEFL',
     ogDescription: 'TypoGrammar is a free academic English learning platform that helps IELTS and TOEFL learners improve grammar accuracy, vocabulary, and writing clarity.',
     ogType: 'website',
@@ -100,7 +100,7 @@ const WhatIsTypogrammarPage: React.FC = () => {
           <ul className="space-y-2 text-lg">
             <li>
               <Link 
-                to="/ielts" 
+                to="/ielts/" 
                 className="text-blue-600 dark:text-blue-400 hover:underline"
               >
                 IELTS Preparation Resources
@@ -108,7 +108,7 @@ const WhatIsTypogrammarPage: React.FC = () => {
             </li>
             <li>
               <Link 
-                to="/ielts/vocabulary" 
+                to="/ielts/vocabulary/band-8/" 
                 className="text-blue-600 dark:text-blue-400 hover:underline"
               >
                 Academic Vocabulary by IELTS Band
@@ -116,7 +116,7 @@ const WhatIsTypogrammarPage: React.FC = () => {
             </li>
             <li>
               <Link 
-                to="/ielts/writing" 
+                to="/ielts/ielts-writing-task-2-essay-types/" 
                 className="text-blue-600 dark:text-blue-400 hover:underline"
               >
                 IELTS Writing Guidance

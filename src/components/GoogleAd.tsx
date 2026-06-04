@@ -14,23 +14,24 @@ const GoogleAd: React.FC<Props> = ({ adSlot, style, format = 'auto', fullWidthRe
   const location = useLocation()
 
   useEffect(() => {
-    // Delay ad loading significantly to prioritize main content and LCP
+    // Delay ad loading to let the lazy-loaded AdSense script initialize first.
+    // adsbygoogle is pre-defined as [] in index.html, so pushes queue safely
+    // even on slow mobile connections before the script finishes loading.
     const timer = setTimeout(() => {
-      if (adRef.current && typeof (window as any).adsbygoogle !== 'undefined') {
+      if (adRef.current) {
         try {
-          // Check if this element already has an ad initialized
           const hasAdStatus = adRef.current.getAttribute('data-ad-status')
           const hasAdLoaded = adRef.current.getAttribute('data-adsbygoogle-status')
-          
+
           if (!hasAdStatus && !hasAdLoaded) {
-            const adsbygoogle = (window as any).adsbygoogle || []
-            adsbygoogle.push({})
+            ;(window as any).adsbygoogle = (window as any).adsbygoogle || []
+            ;(window as any).adsbygoogle.push({})
           }
         } catch (e) {
           // Silently handle AdSense errors (they're usually non-critical)
         }
       }
-    }, 7000) // Wait 7s for lazy-loaded AdSense script (after LCP)
+    }, 6500) // 6.5 s — after AdSense script is injected (6 s) but before it's guaranteed ready
 
     return () => clearTimeout(timer)
   }, [location.pathname]) // Re-run when route changes

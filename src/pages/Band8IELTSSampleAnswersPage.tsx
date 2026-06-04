@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading, BulletList, CodeBlock } from '../components/ArticleComponents';
@@ -81,7 +81,7 @@ const Band8IELTSSampleAnswersPage: React.FC = () => {
 
       <div className="mb-6">
         <Link
-          to="/ielts/ielts-writing-task-2-essay-types"
+          to="/ielts/ielts-writing-task-2-essay-types/"
           className="text-blue-600 dark:text-blue-400 hover:underline text-sm"
         >
           ← Back to IELTS Writing Task 2 Essay Types
@@ -156,8 +156,8 @@ const Band8IELTSSampleAnswersPage: React.FC = () => {
             <>Natural collocations</>
           ]} />
         </div>
-        <div className="bg-amber-50 dark:bg-amber-900/20 rounded-xl p-5 border border-amber-200 dark:border-amber-700">
-          <h4 className="font-semibold text-amber-900 dark:text-amber-200 mb-2">4. Grammatical Range and Accuracy</h4>
+        <div className="bg-teal-50 dark:bg-teal-900/20 rounded-xl p-5 border border-teal-200 dark:border-teal-700">
+          <h4 className="font-semibold text-teal-900 dark:text-teal-200 mb-2">4. Grammatical Range and Accuracy</h4>
           <BulletList items={[
             <>Complex sentence structures</>,
             <>Few grammar mistakes</>,
@@ -379,7 +379,7 @@ const Band8IELTSSampleAnswersPage: React.FC = () => {
       <div className="bg-blue-50 dark:bg-blue-900/20 rounded-xl p-6 my-6 border border-blue-200 dark:border-blue-700">
         <p className="text-blue-900 dark:text-blue-200 font-medium">
           ➡ Explore more here:{' '}
-          <Link to="/ielts/ielts-writing-task-2-essay-types" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 underline">
+          <Link to="/ielts/ielts-writing-task-2-essay-types/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 underline">
             IELTS Writing Task 2 Essay Types
           </Link>
         </p>
@@ -443,13 +443,13 @@ const Band8IELTSSampleAnswersPage: React.FC = () => {
 
       {/* Related Links */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-        <Link to="/ielts/ielts-writing-task-2-essay-types" className="block p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800 hover:border-blue-400 dark:hover:border-blue-600 transition-colors">
+        <Link to="/ielts/ielts-writing-task-2-essay-types/" className="block p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800 hover:border-blue-400 dark:hover:border-blue-600 transition-colors">
           <h4 className="font-semibold text-blue-900 dark:text-blue-200 mb-1">IELTS Writing Task 2 Essay Types</h4>
           <p className="text-sm text-blue-700 dark:text-blue-400">Explore all essay types with strategies and sample answers.</p>
         </Link>
-        <Link to="/ielts/opinion-essay-ielts-band-7-9" className="block p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800 hover:border-green-400 dark:hover:border-green-600 transition-colors">
+        <Link to="/ielts/opinion-essay-ielts-band-7-9/" className="block p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800 hover:border-green-400 dark:hover:border-green-600 transition-colors">
           <h4 className="font-semibold text-green-900 dark:text-green-200 mb-1">Opinion Essays Guide</h4>
-          <p className="text-sm text-green-700 dark:text-green-400">Master the IELTS opinion essay with Band 7–9 model answers.</p>
+          <p className="text-sm text-green-700 dark:text-green-400">Master the IELTS opinion essay with Band 7-9 model answers.</p>
         </Link>
       </div>
 

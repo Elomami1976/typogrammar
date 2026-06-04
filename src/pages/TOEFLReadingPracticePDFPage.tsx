@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading, BulletList } from '../components/ArticleComponents';
+import MiniQuiz from '../components/MiniQuiz';
 
 const TOEFLReadingPracticePDFPage: React.FC = () => {
   usePageMetadata({
@@ -105,7 +106,7 @@ const TOEFLReadingPracticePDFPage: React.FC = () => {
       </ArticleParagraph>
 
       <ArticleParagraph>
-        You'll get a full-length academic reading passage, 10 multiple-choice questions, and detailed explanations — just like the real TOEFL exam.
+        You'll get a full-length academic reading passage, 10 multiple-choice questions, and detailed explanations, just like the real TOEFL exam.
       </ArticleParagraph>
 
       <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-4 my-6 rounded-r">
@@ -164,9 +165,9 @@ const TOEFLReadingPracticePDFPage: React.FC = () => {
         ))}
       </div>
 
-      <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-lg p-4 my-6">
-        <p className="text-amber-800 dark:text-amber-200">
-          <strong>The passage topic:</strong> The Decline of Coral Reefs — a real-world academic topic commonly found in TOEFL exams.
+      <div className="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-800 rounded-lg p-4 my-6">
+        <p className="text-teal-800 dark:text-teal-200">
+          <strong>The passage topic:</strong> The Decline of Coral Reefs, a real-world academic topic commonly found in TOEFL exams.
         </p>
       </div>
 
@@ -252,7 +253,7 @@ const TOEFLReadingPracticePDFPage: React.FC = () => {
           { step: 1, title: 'Skim First', desc: 'Quickly read the passage to understand the general idea.' },
           { step: 2, title: 'Read Questions Carefully', desc: 'Focus on what each question is asking before going back to the text.' },
           { step: 3, title: 'Scan for Answers', desc: 'Locate keywords and paraphrased ideas in the passage.' },
-          { step: 4, title: 'Eliminate Wrong Choices', desc: 'Usually, 2 answers are clearly incorrect — remove them first.' },
+          { step: 4, title: 'Eliminate Wrong Choices', desc: 'Usually, 2 answers are clearly incorrect, remove them first.' },
           { step: 5, title: 'Review Explanations', desc: 'Learn from your mistakes to improve faster.' },
         ].map((item) => (
           <div key={item.step} className="flex gap-4">
@@ -327,10 +328,10 @@ const TOEFLReadingPracticePDFPage: React.FC = () => {
       </ArticleParagraph>
 
       <BulletList items={[
-        <Link to="/toefl/toefl-reading/toefl-reading-section-explained" className="text-blue-600 dark:text-blue-400 hover:underline">TOEFL Reading Section Explained</Link>,
-        <Link to="/toefl/toefl-reading/toefl-reading-strategies" className="text-blue-600 dark:text-blue-400 hover:underline">TOEFL Reading Strategies</Link>,
-        <Link to="/toefl/toefl-reading/toefl-reading-question-types" className="text-blue-600 dark:text-blue-400 hover:underline">TOEFL Reading Question Types</Link>,
-        <Link to="/toefl/toefl-writing/toefl-writing-templates" className="text-blue-600 dark:text-blue-400 hover:underline">TOEFL Writing Templates</Link>,
+        <Link to="/toefl/toefl-reading/toefl-reading-section-explained/" className="text-blue-600 dark:text-blue-400 hover:underline">TOEFL Reading Section Explained</Link>,
+        <Link to="/toefl/toefl-reading/toefl-reading-strategies/" className="text-blue-600 dark:text-blue-400 hover:underline">TOEFL Reading Strategies</Link>,
+        <Link to="/toefl/toefl-reading/toefl-reading-question-types/" className="text-blue-600 dark:text-blue-400 hover:underline">TOEFL Reading Question Types</Link>,
+        <Link to="/toefl/toefl-writing/toefl-writing-templates/" className="text-blue-600 dark:text-blue-400 hover:underline">TOEFL Writing Templates</Link>,
       ]} />
 
       {/* Final Thoughts */}
@@ -342,7 +343,7 @@ const TOEFLReadingPracticePDFPage: React.FC = () => {
 
       <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-xl p-6 my-8 text-center">
         <p className="text-green-800 dark:text-green-200 font-semibold text-lg">
-          Start practicing today — your target score is closer than you think.
+          Start practicing today, your target score is closer than you think.
         </p>
         <a 
           href="/downloads/TOEFL_Reading_Practice_Typogrammar.pdf" 
@@ -356,6 +357,42 @@ const TOEFLReadingPracticePDFPage: React.FC = () => {
         </a>
       </div>
 
+      {/* TRY-BEFORE-DOWNLOAD MINI QUIZ */}
+      <MiniQuiz
+        title="Sample TOEFL Reading Skill Check"
+        intro="Three quick questions in the style of the practice PDF."
+        questions={[
+          {
+            question: 'In TOEFL Reading, the word "essential" most nearly means:',
+            options: ['decorative', 'crucial', 'optional', 'expensive'],
+            correctAnswer: 1,
+            explanation: '"Essential" means absolutely necessary or crucial — a frequent TOEFL vocabulary target.',
+          },
+          {
+            question: 'Which strategy is BEST for TOEFL Reading inference questions?',
+            options: [
+              'Pick the answer that uses words directly from the passage',
+              'Choose the most extreme statement',
+              'Pick the answer best supported by the passage but not stated literally',
+              'Always choose the longest option',
+            ],
+            correctAnswer: 2,
+            explanation: 'Inference answers are logically supported by the passage but never stated word-for-word.',
+          },
+          {
+            question: 'Roughly how much time should you spend per TOEFL reading passage?',
+            options: ['About 5 minutes', 'About 10–12 minutes', 'About 20 minutes', 'As long as you need'],
+            correctAnswer: 1,
+            explanation: 'On the new TOEFL iBT, you have ~35 minutes for 2 passages of 10 questions each — around 12 minutes per passage including questions.',
+          },
+        ]}
+        cta={{
+          to: '/toefl/reading-strategies/',
+          label: 'See Full TOEFL Reading Strategies',
+          subtitle: 'Question types, time hacks, and pacing tips.',
+        }}
+      />
+
       {/* FAQ Section */}
       <ArticleHeading>Frequently Asked Questions (FAQ)</ArticleHeading>
 
@@ -363,7 +400,7 @@ const TOEFLReadingPracticePDFPage: React.FC = () => {
         {[
           {
             q: 'What is included in this TOEFL Reading Practice PDF?',
-            a: 'This PDF includes a full-length academic reading passage, 10 multiple-choice questions, and a complete answer key with explanations — designed to match the TOEFL iBT format.'
+            a: 'This PDF includes a full-length academic reading passage, 10 multiple-choice questions, and a complete answer key with explanations, designed to match the TOEFL iBT format.'
           },
           {
             q: 'Is this TOEFL reading practice suitable for beginners?',
@@ -383,7 +420,7 @@ const TOEFLReadingPracticePDFPage: React.FC = () => {
           },
           {
             q: 'How often should I practice TOEFL reading?',
-            a: 'For best results, practice daily or at least 3–4 times per week. Consistency is key to improving your performance.'
+            a: 'For best results, practice daily or at least 3-4 times per week. Consistency is key to improving your performance.'
           },
           {
             q: 'Is this similar to the real TOEFL exam?',

@@ -1,8 +1,21 @@
 import React from 'react';
 import GoogleAd from '../components/GoogleAd';
 import { ArticleParagraph, ArticleHeading, BulletList } from '../components/ArticleComponents';
+import usePageMetadata from '../hooks/usePageMetadata';
 
 const PrivacyPolicyPage: React.FC = () => {
+  usePageMetadata({
+    title: 'Privacy Policy | TypoGrammar',
+    description: 'Read the TypoGrammar privacy policy: what data we collect, how we use cookies, how analytics and ads work, and your rights as a user.',
+    canonical: 'https://typogrammar.com/privacy-policy/',
+    ogTitle: 'Privacy Policy | TypoGrammar',
+    ogDescription: 'How TypoGrammar handles data, cookies, analytics, and your privacy rights.',
+    ogUrl: 'https://typogrammar.com/privacy-policy/',
+    ogType: 'website',
+    twitterCard: 'summary_large_image',
+    twitterTitle: 'Privacy Policy | TypoGrammar',
+    twitterDescription: 'How TypoGrammar handles data, cookies, analytics, and your privacy rights.'
+  });
   return (
     <>
     <article className="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-xl shadow-lg shadow-slate-200/50 border border-slate-200 dark:bg-slate-800/50 dark:border-slate-700 dark:shadow-slate-900/50">
@@ -10,7 +23,7 @@ const PrivacyPolicyPage: React.FC = () => {
         <h1 className="font-heading text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 tracking-tight dark:text-slate-100">Privacy Policy</h1>
       </div>
       
-      <p className="font-body text-slate-500 mb-6 dark:text-slate-400">Last Updated: November 20, 2025</p>
+      <p className="font-body text-slate-500 mb-6 dark:text-slate-400">Last Updated: May 24, 2026</p>
 
       <ArticleParagraph>
         Welcome to TypoGrammar ("we," "our," or "us"). We are committed to protecting your privacy and being transparent about how we handle information on our website. This Privacy Policy explains our data collection practices, how we use cookies, and your rights as a user of our educational platform.
@@ -22,13 +35,30 @@ const PrivacyPolicyPage: React.FC = () => {
 
       <ArticleHeading>Information We Collect</ArticleHeading>
       <ArticleParagraph>
-        TypoGrammar operates on a privacy-first principle. We do not collect personally identifiable information (PII) from our users through our platform.
+        TypoGrammar operates on a privacy-first principle. We minimize data collection wherever possible. You do not need an account to access any of our content.
       </ArticleParagraph>
       <BulletList items={[
-          "We do not require you to create an account or provide your name, email address, or any other personal details to access our content.",
-          "Your progress tracking is stored locally in your browser using HTML5 localStorage and is never transmitted to our servers.",
-          "We do not collect information about your device, IP address, or precise location for our own purposes.",
+          "Browsing our content, quizzes, and grammar articles requires no registration and no personal information.",
+          "Your learning progress (completed topics and quiz scores) is stored locally in your browser using HTML5 localStorage and is never transmitted to our servers.",
+          "We do not collect your IP address or precise location for our own purposes.",
       ]} />
+
+      <ArticleHeading>Newsletter Subscription Data</ArticleHeading>
+      <ArticleParagraph>
+        If you choose to subscribe to our newsletter or updates through the subscription form on our website, we collect the following information:
+      </ArticleParagraph>
+      <BulletList items={[
+          "First name and last name",
+          "Email address",
+          "Phone number (optional — used for SMS updates in your language)",
+          "Country of residence (used to send region-specific content in your language)",
+      ]} />
+      <ArticleParagraph>
+        This data is stored securely in our own database hosted on Hostinger servers. We do not sell, rent, or share your personal information with third parties for marketing purposes. Your data is used solely to send you grammar tips, learning resources, and updates relevant to your country and language.
+      </ArticleParagraph>
+      <ArticleParagraph>
+        You may request deletion of your subscription data at any time by emailing us at <a href="mailto:contact@typogrammar.com" className="text-blue-600 hover:underline dark:text-blue-400">contact@typogrammar.com</a>. We will remove your record within 7 business days.
+      </ArticleParagraph>
 
       <ArticleHeading>Cookies and Local Storage</ArticleHeading>
       <ArticleParagraph>
@@ -53,10 +83,23 @@ const PrivacyPolicyPage: React.FC = () => {
         <strong>Google Analytics:</strong> We use Google Analytics to understand how visitors use our site. This helps us improve our content and user experience. Google Analytics collects information anonymously and reports website trends without identifying individual visitors. You can learn more about Google's privacy practices at <a href="https://policies.google.com/privacy" className="text-blue-600 hover:underline dark:text-blue-400" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.
       </ArticleParagraph>
 
-      <ArticleHeading>How We Use Information</ArticleHeading>
-       <ArticleParagraph>
-        Since we do not collect personal information directly, we do not use it for any purpose. The locally stored progress data in your browser is used solely to enhance your learning experience by tracking your advancement through our content.
+      <ArticleParagraph>
+        <strong>TypoGrammar AI Chatbot:</strong> Our website includes an AI-powered chatbot assistant to help answer grammar questions. The chatbot processes your queries to generate responses but does not store your conversation history on our servers beyond the active session. Please do not submit sensitive personal information through the chatbot.
       </ArticleParagraph>
+
+      <ArticleParagraph>
+        <strong>TypoGrammar Chrome Extension:</strong> If you use our Chrome extension, it operates as a standalone tool to assist with grammar on the web. The extension does not collect or transmit personal data to our servers. Any preferences set within the extension are stored locally in your browser.
+      </ArticleParagraph>
+
+      <ArticleHeading>How We Use Information</ArticleHeading>
+      <ArticleParagraph>
+        The locally stored progress data in your browser is used solely to enhance your learning experience by tracking your advancement through our content. For subscribers, the information you provide through our subscription form is used to:
+      </ArticleParagraph>
+      <BulletList items={[
+          "Send grammar tips, lessons, and educational updates by email",
+          "Send SMS updates tailored to your country and preferred language (if phone number provided)",
+          "Improve the relevance of content we share based on regional language preferences",
+      ]} />
 
       <ArticleParagraph>
         Information collected by third-party services like Google AdSense and Google Analytics is governed by their respective privacy policies. We do not have access to or control over the cookies used by these third parties.
@@ -71,6 +114,7 @@ const PrivacyPolicyPage: React.FC = () => {
           "You can disable cookies in your browser settings, though this may affect some site functionality.",
           "You can opt out of personalized advertising through Google's Ads Settings or use browser extensions that block advertising cookies.",
           "You can use private/incognito browsing mode to prevent any local data storage.",
+          "If you have subscribed to our newsletter, you may request complete deletion of your personal data by emailing contact@typogrammar.com at any time.",
       ]} />
 
       <ArticleHeading>Data Security</ArticleHeading>

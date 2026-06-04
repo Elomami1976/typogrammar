@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading, BulletList, CodeBlock } from '../components/ArticleComponents';
@@ -81,7 +81,7 @@ const PassiveVoiceIELTSPage: React.FC = () => {
 
       <div className="mb-6">
         <Link
-          to="/ielts/ielts-writing-task-2-essay-types"
+          to="/ielts/ielts-writing-task-2-essay-types/"
           className="text-blue-600 dark:text-blue-400 hover:underline text-sm"
         >
           ← Back to IELTS Writing Task 2 Essay Types
@@ -352,7 +352,7 @@ const PassiveVoiceIELTSPage: React.FC = () => {
       </div>
 
       {/* Advanced Passive Voice */}
-      <ArticleHeading>Advanced Passive Voice (Band 8–9)</ArticleHeading>
+      <ArticleHeading>Advanced Passive Voice (Band 8-9)</ArticleHeading>
 
       <ArticleParagraph>These structures increase your score:</ArticleParagraph>
 
@@ -371,8 +371,8 @@ const PassiveVoiceIELTSPage: React.FC = () => {
         </div>
       </div>
 
-      <div className="bg-amber-50 dark:bg-amber-900/20 border-l-4 border-amber-500 p-6 my-6 rounded-r-lg">
-        <p className="text-amber-800 dark:text-amber-300 font-medium">
+      <div className="bg-teal-50 dark:bg-teal-900/20 border-l-4 border-teal-500 p-6 my-6 rounded-r-lg">
+        <p className="text-teal-800 dark:text-teal-300 font-medium">
           💡 These are very high-level IELTS structures.
         </p>
       </div>
@@ -440,7 +440,7 @@ const PassiveVoiceIELTSPage: React.FC = () => {
 
       <div className="space-y-4 my-6">
         <div className="bg-red-50 dark:bg-red-900/20 rounded-lg p-5 border border-red-200 dark:border-red-700">
-          <h4 className="font-semibold text-red-900 dark:text-red-200 mb-3">Mistake 1 – Missing "was"</h4>
+          <h4 className="font-semibold text-red-900 dark:text-red-200 mb-3">Mistake 1 - Missing "was"</h4>
           <div className="space-y-2">
             <p className="text-slate-800 dark:text-slate-200">
               <span className="text-red-600 dark:text-red-400 font-medium">❌ Wrong:</span> <em>The bridge built in 1990.</em>
@@ -452,7 +452,7 @@ const PassiveVoiceIELTSPage: React.FC = () => {
         </div>
 
         <div className="bg-red-50 dark:bg-red-900/20 rounded-lg p-5 border border-red-200 dark:border-red-700">
-          <h4 className="font-semibold text-red-900 dark:text-red-200 mb-3">Mistake 2 – Wrong past participle</h4>
+          <h4 className="font-semibold text-red-900 dark:text-red-200 mb-3">Mistake 2 - Wrong past participle</h4>
           <div className="space-y-2">
             <p className="text-slate-800 dark:text-slate-200">
               <span className="text-red-600 dark:text-red-400 font-medium">❌ Wrong:</span> <em>The product is produce.</em>
@@ -464,7 +464,7 @@ const PassiveVoiceIELTSPage: React.FC = () => {
         </div>
 
         <div className="bg-red-50 dark:bg-red-900/20 rounded-lg p-5 border border-red-200 dark:border-red-700">
-          <h4 className="font-semibold text-red-900 dark:text-red-200 mb-3">Mistake 3 – Wrong past participle</h4>
+          <h4 className="font-semibold text-red-900 dark:text-red-200 mb-3">Mistake 3 - Wrong past participle</h4>
           <div className="space-y-2">
             <p className="text-slate-800 dark:text-slate-200">
               <span className="text-red-600 dark:text-red-400 font-medium">❌ Wrong:</span> <em>The houses are build.</em>
@@ -489,16 +489,16 @@ const PassiveVoiceIELTSPage: React.FC = () => {
         <div className="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-5 border border-slate-200 dark:border-slate-700">
           <h4 className="font-semibold text-slate-900 dark:text-slate-100 mb-3">Active Introductions</h4>
           <BulletList items={[
-            <><em>The graph illustrates…</em></>,
-            <><em>The graph shows…</em></>
+            <><em>The graph illustrates...</em></>,
+            <><em>The graph shows...</em></>
           ]} />
         </div>
         <div className="bg-green-50 dark:bg-green-900/20 rounded-xl p-5 border border-green-200 dark:border-green-700">
           <h4 className="font-semibold text-green-900 dark:text-green-200 mb-3">Passive Introductions</h4>
           <BulletList items={[
-            <><em>The graph is illustrated…</em></>,
-            <><em>The data is presented…</em></>,
-            <><em>The information is given…</em></>
+            <><em>The graph is illustrated...</em></>,
+            <><em>The data is presented...</em></>,
+            <><em>The information is given...</em></>
           ]} />
         </div>
       </div>
@@ -586,14 +586,14 @@ const PassiveVoiceIELTSPage: React.FC = () => {
       </div>
 
       {/* Examiner Tip */}
-      <div className="bg-amber-50 dark:bg-amber-900/20 border-l-4 border-amber-500 p-6 my-6 rounded-r-lg">
-        <h4 className="font-semibold text-amber-900 dark:text-amber-200 mb-3">💡 IELTS Examiner Tip (Important)</h4>
+      <div className="bg-teal-50 dark:bg-teal-900/20 border-l-4 border-teal-500 p-6 my-6 rounded-r-lg">
+        <h4 className="font-semibold text-teal-900 dark:text-teal-200 mb-3">💡 IELTS Examiner Tip (Important)</h4>
         <ArticleParagraph>IELTS examiners look for:</ArticleParagraph>
         <BulletList items={[
           <>Grammatical range</>,
           <>Complex structures</>
         ]} />
-        <p className="text-amber-800 dark:text-amber-300 font-medium mt-2">
+        <p className="text-teal-800 dark:text-teal-300 font-medium mt-2">
           Passive voice helps achieve this.
         </p>
       </div>
@@ -648,8 +648,8 @@ const PassiveVoiceIELTSPage: React.FC = () => {
         <div className="bg-green-50 dark:bg-green-900/20 rounded-xl p-5 border border-green-200 dark:border-green-700">
           <h4 className="font-semibold text-green-900 dark:text-green-200 mb-3">Task 2</h4>
           <BulletList items={[
-            <><em>It is believed that…</em></>,
-            <><em>It is argued that…</em></>
+            <><em>It is believed that...</em></>,
+            <><em>It is argued that...</em></>
           ]} />
         </div>
       </div>
@@ -735,21 +735,21 @@ const PassiveVoiceIELTSPage: React.FC = () => {
       <ArticleHeading>Related Lessons</ArticleHeading>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-        <Link to="/ielts/conditionals-in-ielts" className="block p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800 hover:border-blue-400 dark:hover:border-blue-600 transition-colors">
+        <Link to="/ielts/conditionals-in-ielts/" className="block p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800 hover:border-blue-400 dark:hover:border-blue-600 transition-colors">
           <h4 className="font-semibold text-blue-900 dark:text-blue-200 mb-1">Conditionals in IELTS</h4>
           <p className="text-sm text-blue-700 dark:text-blue-400">Full guide with Band 9 examples.</p>
         </Link>
-        <Link to="/ielts/ielts-writing-task-2-essay-types" className="block p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800 hover:border-green-400 dark:hover:border-green-600 transition-colors">
+        <Link to="/ielts/ielts-writing-task-2-essay-types/" className="block p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800 hover:border-green-400 dark:hover:border-green-600 transition-colors">
           <h4 className="font-semibold text-green-900 dark:text-green-200 mb-1">IELTS Writing Task 2 Essay Types</h4>
-          <p className="text-sm text-green-700 dark:text-green-400">Band 7–9 model answers.</p>
+          <p className="text-sm text-green-700 dark:text-green-400">Band 7-9 model answers.</p>
         </Link>
-        <Link to="/ielts/tests" className="block p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800 hover:border-purple-400 dark:hover:border-purple-600 transition-colors">
-          <h4 className="font-semibold text-purple-900 dark:text-purple-200 mb-1">IELTS Listening – Mock Tests</h4>
+        <Link to="/ielts/tests/" className="block p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800 hover:border-purple-400 dark:hover:border-purple-600 transition-colors">
+          <h4 className="font-semibold text-purple-900 dark:text-purple-200 mb-1">IELTS Listening - Mock Tests</h4>
           <p className="text-sm text-purple-700 dark:text-purple-400">Practice with realistic listening tests.</p>
         </Link>
-        <Link to="/ielts/writing-task-2-band-9-essays-book" className="block p-4 bg-amber-50 dark:bg-amber-900/20 rounded-lg border border-amber-200 dark:border-amber-800 hover:border-amber-400 dark:hover:border-amber-600 transition-colors">
-          <h4 className="font-semibold text-amber-900 dark:text-amber-200 mb-1">IELTS Writing Task 2 Band 9 Essays Book</h4>
-          <p className="text-sm text-amber-700 dark:text-amber-400">Free PDF with Band 9 model essays.</p>
+        <Link to="/ielts/writing-task-2-band-9-essays-book/" className="block p-4 bg-teal-50 dark:bg-teal-900/20 rounded-lg border border-teal-200 dark:border-teal-800 hover:border-teal-400 dark:hover:border-teal-600 transition-colors">
+          <h4 className="font-semibold text-teal-900 dark:text-teal-200 mb-1">IELTS Writing Task 2 Band 9 Essays Book</h4>
+          <p className="text-sm text-teal-700 dark:text-teal-400">Free PDF with Band 9 model essays.</p>
         </Link>
       </div>
 

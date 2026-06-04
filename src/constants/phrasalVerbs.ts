@@ -253,7 +253,7 @@ export const PHRASAL_VERBS_CATEGORIES: PhrasalVerbCategory[] = [
     category: 'Everyday Life & Home',
     verbs: [
         { phrasalVerb: 'clean up', meaning: 'Make a place tidy by removing dirt or mess.', example: 'Can you help me clean up the kitchen after dinner?' },
-        { phrasalVerb: 'throw away', meaning: 'Dispose of something you no longer need.', example: 'Don\'t throw away those boxes—we might need them.' },
+        { phrasalVerb: 'throw away', meaning: 'Dispose of something you no longer need.', example: 'Don\'t throw away those boxes-we might need them.' },
         { phrasalVerb: 'put away', meaning: 'Return something to its proper place.', example: 'Please put away your toys before going to bed.' },
         { phrasalVerb: 'turn on/off', meaning: 'Start or stop the operation of something.', example: 'Can you turn off the lights when you leave?' },
         { phrasalVerb: 'pick up', meaning: 'Lift something from a surface.', example: 'He picked up the book from the floor.' },
@@ -262,7 +262,7 @@ export const PHRASAL_VERBS_CATEGORIES: PhrasalVerbCategory[] = [
         { phrasalVerb: 'move in/out', meaning: 'Start or stop living in a place.', example: 'They\'re moving into their new apartment next month.' },
         { phrasalVerb: 'lock up', meaning: 'Secure a building by locking all doors.', example: 'Don\'t forget to lock up before you leave.' },
         { phrasalVerb: 'settle in', meaning: 'Become comfortable in a new home or situation.', example: 'It took a few weeks to settle in to our new house.' },
-        { phrasalVerb: 'run out of', meaning: 'Have no more of something.', example: 'We\'ve run out of milk—can you buy some?' },
+        { phrasalVerb: 'run out of', meaning: 'Have no more of something.', example: 'We\'ve run out of milk-can you buy some?' },
         { phrasalVerb: 'heat up', meaning: 'Make food or a room warm.', example: 'I\'ll heat up some leftovers for lunch.' },
     ],
   },

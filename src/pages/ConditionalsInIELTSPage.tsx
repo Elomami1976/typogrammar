@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading, BulletList, CodeBlock } from '../components/ArticleComponents';
@@ -125,7 +125,7 @@ const ConditionalsInIELTSPage: React.FC = () => {
 
       <div className="mb-6">
         <Link
-          to="/ielts/ielts-writing-task-2-essay-types"
+          to="/ielts/ielts-writing-task-2-essay-types/"
           className="text-blue-600 dark:text-blue-400 hover:underline text-sm"
         >
           ← Back to IELTS Writing Task 2 Essay Types
@@ -242,8 +242,8 @@ const ConditionalsInIELTSPage: React.FC = () => {
         <>Explain causes and effects</>
       ]} />
 
-      <div className="bg-amber-50 dark:bg-amber-900/20 border-l-4 border-amber-500 p-6 my-6 rounded-r-lg">
-        <p className="text-amber-800 dark:text-amber-300 font-medium">
+      <div className="bg-teal-50 dark:bg-teal-900/20 border-l-4 border-teal-500 p-6 my-6 rounded-r-lg">
+        <p className="text-teal-800 dark:text-teal-300 font-medium">
           💡 Students who use conditionals correctly often achieve <strong>Band 7 or higher</strong>.
         </p>
       </div>
@@ -349,9 +349,9 @@ const ConditionalsInIELTSPage: React.FC = () => {
       </div>
 
       {/* Third Conditional */}
-      <div className="bg-amber-50 dark:bg-amber-900/20 rounded-xl p-6 my-6 border border-amber-200 dark:border-amber-700">
-        <h3 className="text-xl font-bold text-amber-900 dark:text-amber-200 mb-2">Third Conditional in IELTS</h3>
-        <span className="inline-block bg-amber-200 dark:bg-amber-800 text-amber-900 dark:text-amber-200 text-xs font-bold px-3 py-1 rounded-full mb-4">BAND 9 LEVEL</span>
+      <div className="bg-teal-50 dark:bg-teal-900/20 rounded-xl p-6 my-6 border border-teal-200 dark:border-teal-700">
+        <h3 className="text-xl font-bold text-teal-900 dark:text-teal-200 mb-2">Third Conditional in IELTS</h3>
+        <span className="inline-block bg-teal-200 dark:bg-teal-800 text-teal-900 dark:text-teal-200 text-xs font-bold px-3 py-1 rounded-full mb-4">BAND 9 LEVEL</span>
 
         <div className="mb-4">
           <h4 className="font-semibold text-slate-900 dark:text-slate-100 mb-2">Structure</h4>
@@ -388,8 +388,8 @@ const ConditionalsInIELTSPage: React.FC = () => {
           </p>
         </div>
 
-        <div className="mt-4 bg-amber-50 dark:bg-amber-900/20 border-l-4 border-amber-500 p-4 rounded-r-lg">
-          <p className="text-amber-800 dark:text-amber-300 font-medium">
+        <div className="mt-4 bg-teal-50 dark:bg-teal-900/20 border-l-4 border-teal-500 p-4 rounded-r-lg">
+          <p className="text-teal-800 dark:text-teal-300 font-medium">
             💡 This structure is very impressive for IELTS examiners.
           </p>
         </div>
@@ -660,35 +660,35 @@ const ConditionalsInIELTSPage: React.FC = () => {
       <ArticleHeading>Related Guides</ArticleHeading>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-        <Link to="/blog/grammatical-range-and-accuracy-ielts" className="block p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800 hover:border-blue-400 dark:hover:border-blue-600 transition-colors">
+        <Link to="/blog/grammatical-range-and-accuracy-ielts/" className="block p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800 hover:border-blue-400 dark:hover:border-blue-600 transition-colors">
           <h4 className="font-semibold text-blue-900 dark:text-blue-200 mb-1">Grammatical Range and Accuracy in IELTS</h4>
           <p className="text-sm text-blue-700 dark:text-blue-400">Full guide with examples on how grammar affects your IELTS score.</p>
         </Link>
-        <Link to="/ielts/task-achievement-in-ielts" className="block p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800 hover:border-green-400 dark:hover:border-green-600 transition-colors">
+        <Link to="/ielts/task-achievement-in-ielts/" className="block p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800 hover:border-green-400 dark:hover:border-green-600 transition-colors">
           <h4 className="font-semibold text-green-900 dark:text-green-200 mb-1">What Is Task Achievement in IELTS?</h4>
           <p className="text-sm text-green-700 dark:text-green-400">Band 9 guide to answering IELTS questions fully.</p>
         </Link>
-        <Link to="/ielts/lexical-resource-in-ielts" className="block p-4 bg-indigo-50 dark:bg-indigo-900/20 rounded-lg border border-indigo-200 dark:border-indigo-800 hover:border-indigo-400 dark:hover:border-indigo-600 transition-colors">
+        <Link to="/ielts/lexical-resource-in-ielts/" className="block p-4 bg-indigo-50 dark:bg-indigo-900/20 rounded-lg border border-indigo-200 dark:border-indigo-800 hover:border-indigo-400 dark:hover:border-indigo-600 transition-colors">
           <h4 className="font-semibold text-indigo-900 dark:text-indigo-200 mb-1">What Is Lexical Resource in IELTS?</h4>
           <p className="text-sm text-indigo-700 dark:text-indigo-400">Vocabulary scoring guide for Band 7-9.</p>
         </Link>
-        <Link to="/ielts/passive-voice-ielts-writing" className="block p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800 hover:border-purple-400 dark:hover:border-purple-600 transition-colors">
+        <Link to="/ielts/passive-voice-ielts-writing/" className="block p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800 hover:border-purple-400 dark:hover:border-purple-600 transition-colors">
           <h4 className="font-semibold text-purple-900 dark:text-purple-200 mb-1">Passive Voice for IELTS Writing</h4>
           <p className="text-sm text-purple-700 dark:text-purple-400">Full guide with Band 9 examples.</p>
         </Link>
-        <Link to="/ielts/how-to-write-complex-sentences" className="block p-4 bg-teal-50 dark:bg-teal-900/20 rounded-lg border border-teal-200 dark:border-teal-800 hover:border-teal-400 dark:hover:border-teal-600 transition-colors">
+        <Link to="/ielts/how-to-write-complex-sentences/" className="block p-4 bg-teal-50 dark:bg-teal-900/20 rounded-lg border border-teal-200 dark:border-teal-800 hover:border-teal-400 dark:hover:border-teal-600 transition-colors">
           <h4 className="font-semibold text-teal-900 dark:text-teal-200 mb-1">Complex Sentences for IELTS</h4>
           <p className="text-sm text-teal-700 dark:text-teal-400">Write Band 7-9 level sentences.</p>
         </Link>
-        <Link to="/ielts/common-grammar-mistakes-ielts-writing" className="block p-4 bg-red-50 dark:bg-red-900/20 rounded-lg border border-red-200 dark:border-red-800 hover:border-red-400 dark:hover:border-red-600 transition-colors">
+        <Link to="/ielts/common-grammar-mistakes-ielts-writing/" className="block p-4 bg-red-50 dark:bg-red-900/20 rounded-lg border border-red-200 dark:border-red-800 hover:border-red-400 dark:hover:border-red-600 transition-colors">
           <h4 className="font-semibold text-red-900 dark:text-red-200 mb-1">Common Grammar Mistakes in IELTS</h4>
           <p className="text-sm text-red-700 dark:text-red-400">20 errors and how to fix them.</p>
         </Link>
-        <Link to="/ielts/ielts-writing-task-2-essay-types" className="block p-4 bg-amber-50 dark:bg-amber-900/20 rounded-lg border border-amber-200 dark:border-amber-800 hover:border-amber-400 dark:hover:border-amber-600 transition-colors">
-          <h4 className="font-semibold text-amber-900 dark:text-amber-200 mb-1">IELTS Writing Task 2 Essay Types</h4>
-          <p className="text-sm text-amber-700 dark:text-amber-400">Band 7–9 model answers for every essay type.</p>
+        <Link to="/ielts/ielts-writing-task-2-essay-types/" className="block p-4 bg-teal-50 dark:bg-teal-900/20 rounded-lg border border-teal-200 dark:border-teal-800 hover:border-teal-400 dark:hover:border-teal-600 transition-colors">
+          <h4 className="font-semibold text-teal-900 dark:text-teal-200 mb-1">IELTS Writing Task 2 Essay Types</h4>
+          <p className="text-sm text-teal-700 dark:text-teal-400">Band 7-9 model answers for every essay type.</p>
         </Link>
-        <Link to="/ielts/band-8-ielts-sample-answers" className="block p-4 bg-rose-50 dark:bg-rose-900/20 rounded-lg border border-rose-200 dark:border-rose-800 hover:border-rose-400 dark:hover:border-rose-600 transition-colors">
+        <Link to="/ielts/band-8-ielts-sample-answers/" className="block p-4 bg-rose-50 dark:bg-rose-900/20 rounded-lg border border-rose-200 dark:border-rose-800 hover:border-rose-400 dark:hover:border-rose-600 transition-colors">
           <h4 className="font-semibold text-rose-900 dark:text-rose-200 mb-1">Band 8+ IELTS Sample Answers</h4>
           <p className="text-sm text-rose-700 dark:text-rose-400">Writing Task 1 & Task 2 with expert explanation.</p>
         </Link>

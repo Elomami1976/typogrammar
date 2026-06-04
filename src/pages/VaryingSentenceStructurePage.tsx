@@ -1,4 +1,4 @@
-
+﻿
 import React from 'react';
 import { Link } from 'react-router-dom';
 import GoogleAd from '../components/GoogleAd';
@@ -94,11 +94,11 @@ const VaryingSentenceStructurePage: React.FC = () => {
 
       <ArticleHeading>Related Grammar Guides</ArticleHeading>
       <BulletList items={[
-        <><Link to="/topics/simple-and-complex-sentences" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Simple &amp; Complex Sentences</Link> — Master the four sentence types referenced in this guide.</>,
-        <><Link to="/topics/sentence-fragments" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Sentence Fragments</Link> — Avoid accidentally creating fragments when varying structure.</>,
-        <><Link to="/topics/passive-voice" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Passive Voice</Link> — Another tool for adding variety to your writing.</>,
-        <><Link to="/topics/direct-and-indirect-speech" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Direct &amp; Indirect Speech</Link> — Use quoted and reported speech to break up monotony.</>,
-        <><Link to="/topics/question-formation" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Question Formation</Link> — Rhetorical questions add variety to paragraphs.</>,
+        <><Link to="/topics/simple-and-complex-sentences/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Simple &amp; Complex Sentences</Link>, Master the four sentence types referenced in this guide.</>,
+        <><Link to="/topics/sentence-fragments/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Sentence Fragments</Link>, Avoid accidentally creating fragments when varying structure.</>,
+        <><Link to="/topics/passive-voice/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Passive Voice</Link>, Another tool for adding variety to your writing.</>,
+        <><Link to="/topics/direct-and-indirect-speech/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Direct &amp; Indirect Speech</Link>, Use quoted and reported speech to break up monotony.</>,
+        <><Link to="/topics/question-formation/" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800">Question Formation</Link>, Rhetorical questions add variety to paragraphs.</>,
       ]} />
 
       <div className="bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 rounded-xl p-6 mt-10">
@@ -114,7 +114,7 @@ const VaryingSentenceStructurePage: React.FC = () => {
           </div>
           <div>
             <h3 className="font-semibold text-slate-700 dark:text-slate-300">How can I tell if my writing is too repetitive?</h3>
-            <p className="text-slate-600 dark:text-slate-400 mt-1">Read your writing aloud. If it sounds like a list of similar statements, you need more variety. Look at your sentence beginnings — if most start with the subject, try prepositional phrases, adverbs, or dependent clauses instead.</p>
+            <p className="text-slate-600 dark:text-slate-400 mt-1">Read your writing aloud. If it sounds like a list of similar statements, you need more variety. Look at your sentence beginnings, if most start with the subject, try prepositional phrases, adverbs, or dependent clauses instead.</p>
           </div>
         </div>
       </div>

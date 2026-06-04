@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import GoogleAd from '../components/GoogleAd';
@@ -16,19 +16,19 @@ const glossaryTerms: Record<string, GlossaryTerm[]> = {
       term: 'Active Voice',
       definition: 'A sentence structure where the subject performs the action expressed by the verb.',
       example: 'The cat chased the mouse. (The subject "cat" performs the action "chased")',
-      relatedTopics: [{ label: 'Passive Voice', link: '/topics/passive-voice' }]
+      relatedTopics: [{ label: 'Passive Voice', link: '/topics/passive-voice/' }]
     },
     {
       term: 'Adjective',
       definition: 'A word that describes or modifies a noun or pronoun, providing more information about its qualities, quantity, or state.',
       example: 'The beautiful garden has many colorful flowers.',
-      relatedTopics: [{ label: 'Parts of Speech', link: '/grammar-fundamentals/basic-terminology' }]
+      relatedTopics: [{ label: 'Parts of Speech', link: '/grammar-fundamentals/basic-terminology/' }]
     },
     {
       term: 'Adverb',
       definition: 'A word that modifies a verb, adjective, or another adverb, often describing how, when, where, or to what extent something happens.',
       example: 'She speaks quickly and very clearly.',
-      relatedTopics: [{ label: 'Parts of Speech', link: '/grammar-fundamentals/basic-terminology' }]
+      relatedTopics: [{ label: 'Parts of Speech', link: '/grammar-fundamentals/basic-terminology/' }]
     },
     {
       term: 'Antecedent',
@@ -44,13 +44,13 @@ const glossaryTerms: Record<string, GlossaryTerm[]> = {
       term: 'Article',
       definition: 'A word (a, an, the) that comes before a noun to indicate whether it is specific or general.',
       example: 'The book on the table is mine. I need a pen.',
-      relatedTopics: [{ label: 'Articles', link: '/topics/articles' }]
+      relatedTopics: [{ label: 'Articles', link: '/topics/articles/' }]
     },
     {
       term: 'Auxiliary Verb',
       definition: 'A helping verb (be, have, do, will, shall, would, should, can, could, may, might, must) used with a main verb to form tenses, questions, or negatives.',
       example: 'She has finished her work. They are studying now.',
-      relatedTopics: [{ label: 'Modal Verbs', link: '/topics/modal-verbs' }]
+      relatedTopics: [{ label: 'Modal Verbs', link: '/topics/modal-verbs/' }]
     }
   ],
   B: [
@@ -70,7 +70,7 @@ const glossaryTerms: Record<string, GlossaryTerm[]> = {
       term: 'Collocation',
       definition: 'Words that are commonly used together in a natural-sounding way.',
       example: 'make a decision, heavy rain, strong coffee',
-      relatedTopics: [{ label: 'Collocations', link: '/vocabulary/collocations' }]
+      relatedTopics: [{ label: 'Collocations', link: '/vocabulary/collocations/' }]
     },
     {
       term: 'Comma',
@@ -86,7 +86,7 @@ const glossaryTerms: Record<string, GlossaryTerm[]> = {
       term: 'Comparative',
       definition: 'The form of an adjective or adverb used to compare two things.',
       example: 'bigger, more interesting, better, faster',
-      relatedTopics: [{ label: 'Comparatives and Superlatives', link: '/topics/comparatives-superlatives' }]
+      relatedTopics: [{ label: 'Comparatives and Superlatives', link: '/topics/comparatives-superlatives/' }]
     },
     {
       term: 'Compound Sentence',
@@ -97,13 +97,13 @@ const glossaryTerms: Record<string, GlossaryTerm[]> = {
       term: 'Conditional',
       definition: 'A sentence structure that expresses hypothetical situations and their consequences, typically using "if" clauses.',
       example: 'If it rains, we will stay home. (First conditional)',
-      relatedTopics: [{ label: 'Conditionals', link: '/topics/conditionals' }]
+      relatedTopics: [{ label: 'Conditionals', link: '/topics/conditionals/' }]
     },
     {
       term: 'Conjunction',
       definition: 'A word that connects words, phrases, or clauses (and, but, or, because, although, when, etc.).',
       example: 'I like tea and coffee. She studied hard, but she failed the exam.',
-      relatedTopics: [{ label: 'Conjunctions', link: '/topics/conjunctions' }]
+      relatedTopics: [{ label: 'Conjunctions', link: '/topics/conjunctions/' }]
     },
     {
       term: 'Contraction',
@@ -114,7 +114,7 @@ const glossaryTerms: Record<string, GlossaryTerm[]> = {
       term: 'Countable Noun',
       definition: 'A noun that can be counted and has both singular and plural forms.',
       example: 'one book, two books; a cat, three cats',
-      relatedTopics: [{ label: 'Countable vs Uncountable', link: '/topics/countable-uncountable-nouns' }]
+      relatedTopics: [{ label: 'Countable vs Uncountable', link: '/topics/countable-uncountable-nouns/' }]
     }
   ],
   D: [
@@ -122,7 +122,7 @@ const glossaryTerms: Record<string, GlossaryTerm[]> = {
       term: 'Definite Article',
       definition: 'The word "the," used to refer to a specific noun that is known to both the speaker and listener.',
       example: 'The book I mentioned yesterday is on the table.',
-      relatedTopics: [{ label: 'Articles', link: '/topics/articles' }]
+      relatedTopics: [{ label: 'Articles', link: '/topics/articles/' }]
     },
     {
       term: 'Demonstrative Pronoun',
@@ -143,7 +143,7 @@ const glossaryTerms: Record<string, GlossaryTerm[]> = {
       term: 'Direct Speech',
       definition: 'The exact words someone said, enclosed in quotation marks.',
       example: 'He said, "I am going to the store."',
-      relatedTopics: [{ label: 'Reported Speech', link: '/topics/reported-speech' }]
+      relatedTopics: [{ label: 'Reported Speech', link: '/topics/reported-speech/' }]
     }
   ],
   E: [
@@ -158,19 +158,19 @@ const glossaryTerms: Record<string, GlossaryTerm[]> = {
       term: 'Future Continuous',
       definition: 'A verb tense used to describe an action that will be in progress at a specific time in the future.',
       example: 'This time tomorrow, I will be flying to Paris.',
-      relatedTopics: [{ label: 'Future Progressive', link: '/topics/future-progressive' }]
+      relatedTopics: [{ label: 'Future Progressive', link: '/topics/future-progressive/' }]
     },
     {
       term: 'Future Perfect',
       definition: 'A verb tense used to describe an action that will be completed before a specific time in the future.',
       example: 'By next year, I will have graduated from university.',
-      relatedTopics: [{ label: 'Future Perfect', link: '/topics/future-perfect' }]
+      relatedTopics: [{ label: 'Future Perfect', link: '/topics/future-perfect/' }]
     },
     {
       term: 'Future Simple',
       definition: 'A verb tense used to describe actions that will happen in the future.',
       example: 'I will call you tomorrow. She will arrive at 3 PM.',
-      relatedTopics: [{ label: 'Future Simple', link: '/topics/future-simple' }]
+      relatedTopics: [{ label: 'Future Simple', link: '/topics/future-simple/' }]
     }
   ],
   G: [
@@ -178,7 +178,7 @@ const glossaryTerms: Record<string, GlossaryTerm[]> = {
       term: 'Gerund',
       definition: 'The -ing form of a verb used as a noun.',
       example: 'Swimming is good exercise. I enjoy reading.',
-      relatedTopics: [{ label: 'Gerunds and Infinitives', link: '/topics/gerunds-infinitives' }]
+      relatedTopics: [{ label: 'Gerunds and Infinitives', link: '/topics/gerunds-infinitives/' }]
     }
   ],
   H: [
@@ -186,13 +186,13 @@ const glossaryTerms: Record<string, GlossaryTerm[]> = {
       term: 'Homograph',
       definition: 'Words that are spelled the same but have different meanings and sometimes different pronunciations.',
       example: 'lead (metal) vs. lead (to guide); tear (rip) vs. tear (crying)',
-      relatedTopics: [{ label: 'Homophones & Homographs', link: '/vocabulary/homophones-homonyms-homographs' }]
+      relatedTopics: [{ label: 'Homophones & Homographs', link: '/vocabulary/homophones-homonyms-homographs/' }]
     },
     {
       term: 'Homophone',
       definition: 'Words that sound the same but have different meanings and spellings.',
       example: 'their/there/they\'re, to/too/two, write/right',
-      relatedTopics: [{ label: 'Homophones & Homographs', link: '/vocabulary/homophones-homonyms-homographs' }]
+      relatedTopics: [{ label: 'Homophones & Homographs', link: '/vocabulary/homophones-homonyms-homographs/' }]
     }
   ],
   I: [
@@ -200,7 +200,7 @@ const glossaryTerms: Record<string, GlossaryTerm[]> = {
       term: 'Idiom',
       definition: 'A phrase or expression whose meaning cannot be understood from the individual words alone.',
       example: 'It\'s raining cats and dogs. (It\'s raining heavily)',
-      relatedTopics: [{ label: 'Idioms', link: '/idioms' }]
+      relatedTopics: [{ label: 'Idioms', link: '/idioms/' }]
     },
     {
       term: 'Imperative',
@@ -211,7 +211,7 @@ const glossaryTerms: Record<string, GlossaryTerm[]> = {
       term: 'Indefinite Article',
       definition: 'The words "a" or "an," used before singular countable nouns when referring to something general or mentioned for the first time.',
       example: 'I need a pen. She is an engineer.',
-      relatedTopics: [{ label: 'Articles', link: '/topics/articles' }]
+      relatedTopics: [{ label: 'Articles', link: '/topics/articles/' }]
     },
     {
       term: 'Independent Clause',
@@ -227,7 +227,7 @@ const glossaryTerms: Record<string, GlossaryTerm[]> = {
       term: 'Infinitive',
       definition: 'The base form of a verb, usually preceded by "to."',
       example: 'to go, to eat, to write, to speak',
-      relatedTopics: [{ label: 'Gerunds and Infinitives', link: '/topics/gerunds-infinitives' }]
+      relatedTopics: [{ label: 'Gerunds and Infinitives', link: '/topics/gerunds-infinitives/' }]
     },
     {
       term: 'Interjection',
@@ -238,7 +238,7 @@ const glossaryTerms: Record<string, GlossaryTerm[]> = {
       term: 'Irregular Verb',
       definition: 'A verb that does not follow the regular pattern of adding -ed to form past tense and past participle.',
       example: 'go/went/gone, eat/ate/eaten, write/wrote/written',
-      relatedTopics: [{ label: 'Irregular Verbs', link: '/irregular-verbs' }]
+      relatedTopics: [{ label: 'Irregular Verbs', link: '/irregular-verbs/' }]
     }
   ],
   J: [],
@@ -255,7 +255,7 @@ const glossaryTerms: Record<string, GlossaryTerm[]> = {
       term: 'Modal Verb',
       definition: 'An auxiliary verb (can, could, may, might, must, shall, should, will, would) that expresses possibility, ability, permission, or obligation.',
       example: 'You must study. She can swim. They might come.',
-      relatedTopics: [{ label: 'Modal Verbs', link: '/topics/modal-verbs' }]
+      relatedTopics: [{ label: 'Modal Verbs', link: '/topics/modal-verbs/' }]
     },
     {
       term: 'Modifier',
@@ -268,7 +268,7 @@ const glossaryTerms: Record<string, GlossaryTerm[]> = {
       term: 'Noun',
       definition: 'A word that names a person, place, thing, or idea.',
       example: 'teacher, London, happiness, book, freedom',
-      relatedTopics: [{ label: 'Parts of Speech', link: '/grammar-fundamentals/basic-terminology' }]
+      relatedTopics: [{ label: 'Parts of Speech', link: '/grammar-fundamentals/basic-terminology/' }]
     },
     {
       term: 'Noun Clause',
@@ -293,25 +293,25 @@ const glossaryTerms: Record<string, GlossaryTerm[]> = {
       term: 'Passive Voice',
       definition: 'A sentence structure where the subject receives the action rather than performing it.',
       example: 'The mouse was chased by the cat. (The subject "mouse" receives the action)',
-      relatedTopics: [{ label: 'Passive Voice', link: '/topics/passive-voice' }]
+      relatedTopics: [{ label: 'Passive Voice', link: '/topics/passive-voice/' }]
     },
     {
       term: 'Past Continuous',
       definition: 'A verb tense used to describe an action that was in progress at a specific time in the past.',
       example: 'I was studying at 8 PM last night. They were playing football.',
-      relatedTopics: [{ label: 'Past Progressive', link: '/topics/past-progressive' }]
+      relatedTopics: [{ label: 'Past Progressive', link: '/topics/past-progressive/' }]
     },
     {
       term: 'Past Perfect',
       definition: 'A verb tense used to describe an action that was completed before another action in the past.',
       example: 'She had finished her homework before dinner. I had already left when he arrived.',
-      relatedTopics: [{ label: 'Past Perfect', link: '/topics/past-perfect' }]
+      relatedTopics: [{ label: 'Past Perfect', link: '/topics/past-perfect/' }]
     },
     {
       term: 'Past Simple',
       definition: 'A verb tense used to describe completed actions in the past.',
       example: 'I walked to school yesterday. She visited Paris last year.',
-      relatedTopics: [{ label: 'Past Simple', link: '/topics/past-simple' }]
+      relatedTopics: [{ label: 'Past Simple', link: '/topics/past-simple/' }]
     },
     {
       term: 'Personal Pronoun',
@@ -322,7 +322,7 @@ const glossaryTerms: Record<string, GlossaryTerm[]> = {
       term: 'Phrasal Verb',
       definition: 'A verb combined with a preposition or adverb (or both) that creates a meaning different from the original verb.',
       example: 'give up (quit), look after (take care of), put off (postpone)',
-      relatedTopics: [{ label: 'Phrasal Verbs', link: '/phrasal-verbs' }]
+      relatedTopics: [{ label: 'Phrasal Verbs', link: '/phrasal-verbs/' }]
     },
     {
       term: 'Phrase',
@@ -343,37 +343,37 @@ const glossaryTerms: Record<string, GlossaryTerm[]> = {
       term: 'Prefix',
       definition: 'A group of letters added to the beginning of a word to change its meaning.',
       example: 'un- (unhappy), re- (rewrite), pre- (preview), dis- (disagree)',
-      relatedTopics: [{ label: 'Prefixes & Suffixes', link: '/prefixes-suffixes' }]
+      relatedTopics: [{ label: 'Prefixes & Suffixes', link: '/prefixes-suffixes/' }]
     },
     {
       term: 'Preposition',
       definition: 'A word that shows the relationship between a noun or pronoun and other words in a sentence.',
       example: 'in, on, at, by, with, from, to, under, over',
-      relatedTopics: [{ label: 'Prepositions', link: '/topics/prepositions' }]
+      relatedTopics: [{ label: 'Prepositions', link: '/topics/prepositions/' }]
     },
     {
       term: 'Present Continuous',
       definition: 'A verb tense used to describe an action happening now or around the present time.',
       example: 'I am studying now. She is working on a project.',
-      relatedTopics: [{ label: 'Present Progressive', link: '/topics/present-progressive' }]
+      relatedTopics: [{ label: 'Present Progressive', link: '/topics/present-progressive/' }]
     },
     {
       term: 'Present Perfect',
       definition: 'A verb tense used to describe an action that started in the past and continues to the present, or has present relevance.',
       example: 'I have lived here for five years. She has just arrived.',
-      relatedTopics: [{ label: 'Present Perfect', link: '/topics/present-perfect' }]
+      relatedTopics: [{ label: 'Present Perfect', link: '/topics/present-perfect/' }]
     },
     {
       term: 'Present Simple',
       definition: 'A verb tense used to describe habitual actions, general truths, or permanent situations.',
       example: 'I work every day. The sun rises in the east. She speaks three languages.',
-      relatedTopics: [{ label: 'Present Simple', link: '/topics/present-simple' }]
+      relatedTopics: [{ label: 'Present Simple', link: '/topics/present-simple/' }]
     },
     {
       term: 'Pronoun',
       definition: 'A word that replaces a noun to avoid repetition.',
       example: 'he, she, it, they, we, you, who, which, that',
-      relatedTopics: [{ label: 'Parts of Speech', link: '/grammar-fundamentals/basic-terminology' }]
+      relatedTopics: [{ label: 'Parts of Speech', link: '/grammar-fundamentals/basic-terminology/' }]
     },
     {
       term: 'Proper Noun',
@@ -418,7 +418,7 @@ const glossaryTerms: Record<string, GlossaryTerm[]> = {
       term: 'Reported Speech',
       definition: 'Reporting what someone said without using their exact words (also called indirect speech).',
       example: 'Direct: He said, "I am tired." Reported: He said that he was tired.',
-      relatedTopics: [{ label: 'Reported Speech', link: '/topics/reported-speech' }]
+      relatedTopics: [{ label: 'Reported Speech', link: '/topics/reported-speech/' }]
     }
   ],
   S: [
@@ -441,7 +441,7 @@ const glossaryTerms: Record<string, GlossaryTerm[]> = {
       term: 'Subject-Verb Agreement',
       definition: 'The rule that subjects and verbs must agree in number (singular subject takes singular verb; plural subject takes plural verb).',
       example: 'She walks (singular). They walk (plural).',
-      relatedTopics: [{ label: 'Subject-Verb Agreement', link: '/topics/subject-verb-agreement' }]
+      relatedTopics: [{ label: 'Subject-Verb Agreement', link: '/topics/subject-verb-agreement/' }]
     },
     {
       term: 'Subjunctive',
@@ -452,13 +452,13 @@ const glossaryTerms: Record<string, GlossaryTerm[]> = {
       term: 'Suffix',
       definition: 'A group of letters added to the end of a word to change its meaning or grammatical function.',
       example: '-ly (quickly), -ness (happiness), -able (readable), -tion (creation)',
-      relatedTopics: [{ label: 'Prefixes & Suffixes', link: '/prefixes-suffixes' }]
+      relatedTopics: [{ label: 'Prefixes & Suffixes', link: '/prefixes-suffixes/' }]
     },
     {
       term: 'Superlative',
       definition: 'The form of an adjective or adverb used to compare three or more things, indicating the highest degree.',
       example: 'biggest, most interesting, best, fastest',
-      relatedTopics: [{ label: 'Comparatives and Superlatives', link: '/topics/comparatives-superlatives' }]
+      relatedTopics: [{ label: 'Comparatives and Superlatives', link: '/topics/comparatives-superlatives/' }]
     }
   ],
   T: [
@@ -466,7 +466,7 @@ const glossaryTerms: Record<string, GlossaryTerm[]> = {
       term: 'Tense',
       definition: 'The form of a verb that indicates the time of an action or state (past, present, or future).',
       example: 'I walk (present), I walked (past), I will walk (future)',
-      relatedTopics: [{ label: 'Tense Visualizer', link: '/tense-visualizer' }]
+      relatedTopics: [{ label: 'Tense Visualizer', link: '/tense-visualizer/' }]
     },
     {
       term: 'Transitive Verb',
@@ -479,7 +479,7 @@ const glossaryTerms: Record<string, GlossaryTerm[]> = {
       term: 'Uncountable Noun',
       definition: 'A noun that cannot be counted individually and has no plural form.',
       example: 'water, information, advice, furniture, money',
-      relatedTopics: [{ label: 'Countable vs Uncountable', link: '/topics/countable-uncountable-nouns' }]
+      relatedTopics: [{ label: 'Countable vs Uncountable', link: '/topics/countable-uncountable-nouns/' }]
     }
   ],
   V: [
@@ -487,13 +487,13 @@ const glossaryTerms: Record<string, GlossaryTerm[]> = {
       term: 'Verb',
       definition: 'A word that expresses an action, occurrence, or state of being.',
       example: 'run, think, become, exist, have',
-      relatedTopics: [{ label: 'Parts of Speech', link: '/grammar-fundamentals/basic-terminology' }]
+      relatedTopics: [{ label: 'Parts of Speech', link: '/grammar-fundamentals/basic-terminology/' }]
     },
     {
       term: 'Voice',
       definition: 'The form of a verb that shows whether the subject performs the action (active) or receives it (passive).',
       example: 'Active: The dog bit the man. Passive: The man was bitten by the dog.',
-      relatedTopics: [{ label: 'Passive Voice', link: '/topics/passive-voice' }]
+      relatedTopics: [{ label: 'Passive Voice', link: '/topics/passive-voice/' }]
     }
   ],
   W: [],
@@ -626,7 +626,7 @@ const GlossaryPage: React.FC = () => {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <Link
-            to="/grammar-guide"
+            to="/grammar-guide/"
             className="bg-white dark:bg-slate-800 p-4 rounded-lg shadow hover:shadow-lg transition-shadow text-center"
           >
             <div className="text-3xl mb-2">📚</div>
@@ -634,7 +634,7 @@ const GlossaryPage: React.FC = () => {
             <div className="text-sm text-slate-600 dark:text-slate-400">All topics organized</div>
           </Link>
           <Link
-            to="/getting-started"
+            to="/getting-started/"
             className="bg-white dark:bg-slate-800 p-4 rounded-lg shadow hover:shadow-lg transition-shadow text-center"
           >
             <div className="text-3xl mb-2">🚀</div>
@@ -642,7 +642,7 @@ const GlossaryPage: React.FC = () => {
             <div className="text-sm text-slate-600 dark:text-slate-400">Begin your journey</div>
           </Link>
           <Link
-            to="/blog"
+            to="/blog/"
             className="bg-white dark:bg-slate-800 p-4 rounded-lg shadow hover:shadow-lg transition-shadow text-center"
           >
             <div className="text-3xl mb-2">✍️</div>

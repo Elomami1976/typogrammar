@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading, BulletList, CodeBlock, ExampleList } from '../components/ArticleComponents';
@@ -127,7 +127,7 @@ const TOEFLWritingTask2ExplainedPage: React.FC = () => {
               </tr>
               <tr className="bg-slate-50 dark:bg-slate-750">
                 <td className="px-6 py-4 text-slate-700 dark:text-slate-300 border-b border-slate-200 dark:border-slate-700">Word Count</td>
-                <td className="px-6 py-4 text-slate-700 dark:text-slate-300 border-b border-slate-200 dark:border-slate-700">About 100–150 words</td>
+                <td className="px-6 py-4 text-slate-700 dark:text-slate-300 border-b border-slate-200 dark:border-slate-700">About 100-150 words</td>
               </tr>
               <tr>
                 <td className="px-6 py-4 text-slate-700 dark:text-slate-300">Task Type</td>
@@ -357,7 +357,7 @@ const TOEFLWritingTask2ExplainedPage: React.FC = () => {
         </div>
 
         {/* FAQ Section */}
-        <ArticleHeading>TOEFL Writing Task 2 – Frequently Asked Questions (FAQ)</ArticleHeading>
+        <ArticleHeading>TOEFL Writing Task 2 - Frequently Asked Questions (FAQ)</ArticleHeading>
 
         <div className="space-y-6 mb-8">
           <div className="border-b border-slate-200 dark:border-slate-700 pb-4">
@@ -372,7 +372,7 @@ const TOEFLWritingTask2ExplainedPage: React.FC = () => {
 
           <div className="border-b border-slate-200 dark:border-slate-700 pb-4">
             <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">How many words should TOEFL Writing Task 2 be?</h3>
-            <p className="text-slate-600 dark:text-slate-400">Most responses are 100–150 words.</p>
+            <p className="text-slate-600 dark:text-slate-400">Most responses are 100-150 words.</p>
           </div>
 
           <div className="border-b border-slate-200 dark:border-slate-700 pb-4">
@@ -417,22 +417,22 @@ const TOEFLWritingTask2ExplainedPage: React.FC = () => {
         <ArticleHeading>Related TOEFL Writing Resources</ArticleHeading>
         
         <div className="grid md:grid-cols-2 gap-4 mb-8">
-          <Link to="/toefl/toefl-writing/toefl-writing-task-1-explained" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
+          <Link to="/toefl/toefl-writing/toefl-writing-task-1-explained/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">TOEFL Writing Task 1 Explained</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">Complete guide to the Integrated Writing Task with templates.</p>
           </Link>
           
-          <Link to="/toefl/toefl-writing/toefl-writing-templates" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
+          <Link to="/toefl/toefl-writing/toefl-writing-templates/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">TOEFL Writing Templates</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">Ready-to-use templates for both Task 1 and Task 2.</p>
           </Link>
           
-          <Link to="/toefl/toefl-writing/toefl-writing-topics" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
+          <Link to="/toefl/toefl-writing/toefl-writing-topics/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">TOEFL Writing Topics</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">60+ essay questions organized by category for practice.</p>
           </Link>
           
-          <Link to="/toefl/toefl-writing/toefl-writing-practice-questions" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
+          <Link to="/toefl/toefl-writing/toefl-writing-practice-questions/" className="block p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">TOEFL Writing Practice Questions</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">Practice questions with high-scoring sample answers.</p>
           </Link>

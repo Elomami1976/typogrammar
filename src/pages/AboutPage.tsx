@@ -6,7 +6,7 @@ import usePageMetadata from '../hooks/usePageMetadata';
 
 const AboutPage: React.FC = () => {
   usePageMetadata({
-    title: 'About TypoGrammar – Free English Grammar Learning Platform',
+    title: 'About TypoGrammar - Free English Grammar Learning Platform',
     description: 'Learn about TypoGrammar, a free online English grammar resource designed for clarity and beauty. Discover our mission to make grammar learning accessible, intuitive, and effective for everyone.'
   });
 
@@ -59,6 +59,20 @@ const AboutPage: React.FC = () => {
 
       <ArticleParagraph>
         No matter your background or current level, you'll find valuable resources here. Our content is structured to accommodate beginners who are just starting their English learning journey, while also providing the depth and nuance that advanced learners need to perfect their skills.
+      </ArticleParagraph>
+
+      <ArticleHeading>Our Tools & Features</ArticleHeading>
+      <ArticleParagraph>
+        Beyond grammar articles and quizzes, TypoGrammar has grown into a full learning platform with several powerful tools:
+      </ArticleParagraph>
+      <ArticleParagraph>
+        <strong>AI Grammar Chatbot:</strong> Our built-in AI assistant is available on every page. You can ask it any grammar question and get an instant, clear explanation — no searching required. It's designed to feel like having a personal English tutor available around the clock.
+      </ArticleParagraph>
+      <ArticleParagraph>
+        <strong>Chrome Extension:</strong> Take TypoGrammar with you as you browse the web. Our Chrome extension brings grammar help directly into your browser so you can check and improve your writing on any website, from emails to social media posts.
+      </ArticleParagraph>
+      <ArticleParagraph>
+        <strong>Multilingual Updates:</strong> Subscribers receive grammar tips and learning resources tailored to their country and preferred language. We believe effective grammar education works best when delivered in context — and in your language.
       </ArticleParagraph>
 
       <ArticleHeading>Our Commitment to You</ArticleHeading>

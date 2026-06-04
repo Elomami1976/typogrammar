@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../../hooks/usePageMetadata';
 import SchemaMarkup from '../../components/SchemaMarkup';
@@ -7,7 +7,7 @@ const EfficientVsEffectivePage: React.FC = () => {
   usePageMetadata({
     title: 'Efficient vs Effective: What Is the Difference? | TypoGrammar',
     description: 'Learn the difference between "efficient" and "effective." Effective means producing the desired result. Efficient means achieving it with minimum waste of time or resources.',
-    canonical: 'https://typogrammar.com/grammar-mistakes/efficient-vs-effective'
+    canonical: 'https://typogrammar.com/grammar-mistakes/efficient-vs-effective/'
   });
 
   const [showAnswer, setShowAnswer] = useState(false);
@@ -16,7 +16,7 @@ const EfficientVsEffectivePage: React.FC = () => {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "Efficient vs Effective: What Is the Difference?",
-    "description": "'Effective' means producing the desired result — it focuses on outcome. 'Efficient' means achieving results with minimum waste of effort, time, or resources — it focuses on method.",
+    "description": "'Effective' means producing the desired result, it focuses on outcome. 'Efficient' means achieving results with minimum waste of effort, time, or resources, it focuses on method.",
     "author": { "@type": "Organization", "name": "TypoGrammar" },
     "publisher": { "@type": "Organization", "name": "TypoGrammar", "logo": { "@type": "ImageObject", "url": "https://typogrammar.com/logo.png" } },
     "mainEntityOfPage": { "@type": "WebPage", "@id": "https://typogrammar.com/grammar-mistakes/efficient-vs-effective" },
@@ -41,7 +41,7 @@ const EfficientVsEffectivePage: React.FC = () => {
       {
         "@type": "Question",
         "name": "Which is more important: efficiency or effectiveness?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Effectiveness comes first — you must be doing the right thing before optimising how you do it. As management consultant Peter Drucker said: 'Efficiency is doing things right; effectiveness is doing the right things.'" }
+        "acceptedAnswer": { "@type": "Answer", "text": "Effectiveness comes first, you must be doing the right thing before optimising how you do it. As management consultant Peter Drucker said: 'Efficiency is doing things right; effectiveness is doing the right things.'" }
       }
     ]
   };
@@ -54,7 +54,7 @@ const EfficientVsEffectivePage: React.FC = () => {
       <nav className="mb-6 text-slate-600 dark:text-slate-400">
         <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
         {' › '}
-        <Link to="/grammar-mistakes" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
+        <Link to="/grammar-mistakes/" className="hover:text-blue-600 dark:hover:text-blue-400">Grammar Mistakes</Link>
         {' › '}
         <span className="text-slate-900 dark:text-slate-100">Efficient vs Effective</span>
       </nav>
@@ -86,7 +86,7 @@ const EfficientVsEffectivePage: React.FC = () => {
                 <li>• Produces the desired result</li>
                 <li>• Focuses on the <strong>outcome</strong></li>
                 <li>• Something can be slow but still effective</li>
-                <li>• Most important quality — are you doing the right thing?</li>
+                <li>• Most important quality, are you doing the right thing?</li>
               </ul>
             </div>
             <div className="bg-purple-50 dark:bg-purple-900/20 p-5 rounded-lg">
@@ -96,14 +96,14 @@ const EfficientVsEffectivePage: React.FC = () => {
                 <li>• Achieves goals with minimal waste</li>
                 <li>• Focuses on the <strong>process</strong></li>
                 <li>• Saves time, money, or effort</li>
-                <li>• Secondary quality — <em>how well</em> you do the right thing</li>
+                <li>• Secondary quality, <em>how well</em> you do the right thing</li>
               </ul>
             </div>
           </div>
 
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-4 rounded-lg">
-            <p className="text-lg text-amber-800 dark:text-amber-200">
-              <strong>Classic quote:</strong> Peter Drucker — <em>"Efficiency is doing things right; effectiveness is doing the right things."</em>
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-4 rounded-lg">
+            <p className="text-lg text-teal-800 dark:text-teal-200">
+              <strong>Classic quote:</strong> Peter Drucker, <em>"Efficiency is doing things right; effectiveness is doing the right things."</em>
             </p>
           </div>
         </section>
@@ -133,7 +133,7 @@ const EfficientVsEffectivePage: React.FC = () => {
           <div className="space-y-3">
             <div className="flex items-start">
               <span className="text-green-600 dark:text-green-400 mr-3 text-xl">✔</span>
-              <span className="text-lg text-slate-700 dark:text-slate-300">This engine is very <strong>efficient</strong> — it uses very little fuel.</span>
+              <span className="text-lg text-slate-700 dark:text-slate-300">This engine is very <strong>efficient</strong>, it uses very little fuel.</span>
             </div>
             <div className="flex items-start">
               <span className="text-green-600 dark:text-green-400 mr-3 text-xl">✔</span>
@@ -154,15 +154,15 @@ const EfficientVsEffectivePage: React.FC = () => {
           <div className="space-y-4">
             <div className="bg-slate-50 dark:bg-slate-700/50 p-4 rounded-lg">
               <p className="font-semibold text-slate-800 dark:text-slate-200 mb-2">Effective but NOT efficient:</p>
-              <p className="text-slate-700 dark:text-slate-300">A doctor who cures patients but takes 4 hours per consultation. Result achieved ✔ — but wasteful of time ✘</p>
+              <p className="text-slate-700 dark:text-slate-300">A doctor who cures patients but takes 4 hours per consultation. Result achieved ✔, but wasteful of time ✘</p>
             </div>
             <div className="bg-slate-50 dark:bg-slate-700/50 p-4 rounded-lg">
               <p className="font-semibold text-slate-800 dark:text-slate-200 mb-2">Efficient but NOT effective:</p>
-              <p className="text-slate-700 dark:text-slate-300">A salesperson who sends 500 emails per day with no replies. Very fast ✔ — but producing no sales ✘</p>
+              <p className="text-slate-700 dark:text-slate-300">A salesperson who sends 500 emails per day with no replies. Very fast ✔, but producing no sales ✘</p>
             </div>
             <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg">
               <p className="font-semibold text-green-800 dark:text-green-200 mb-2">Both effective AND efficient (ideal):</p>
-              <p className="text-green-700 dark:text-green-300">A manager who achieves team goals on time and within budget. Result achieved ✔ — and minimal waste ✔</p>
+              <p className="text-green-700 dark:text-green-300">A manager who achieves team goals on time and within budget. Result achieved ✔, and minimal waste ✔</p>
             </div>
           </div>
         </section>
@@ -200,7 +200,7 @@ const EfficientVsEffectivePage: React.FC = () => {
           <div className="space-y-4">
             <div className="bg-slate-50 dark:bg-slate-700/50 p-5 rounded-lg">
               <h3 className="font-semibold text-slate-900 dark:text-slate-100 mb-2">Which word is better to use in IELTS writing?</h3>
-              <p className="text-slate-700 dark:text-slate-300">Both are strong academic words. Use "effective" when you mean it achieved results. Use "efficient" when you mean it saved resources. Avoid using them interchangeably — examiners notice the distinction.</p>
+              <p className="text-slate-700 dark:text-slate-300">Both are strong academic words. Use "effective" when you mean it achieved results. Use "efficient" when you mean it saved resources. Avoid using them interchangeably, examiners notice the distinction.</p>
             </div>
             <div className="bg-slate-50 dark:bg-slate-700/50 p-5 rounded-lg">
               <h3 className="font-semibold text-slate-900 dark:text-slate-100 mb-2">What are the nouns for these adjectives?</h3>
@@ -214,7 +214,7 @@ const EfficientVsEffectivePage: React.FC = () => {
           <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 pb-2 border-b border-slate-200 dark:border-slate-700">
             Practice
           </h2>
-          <div className="bg-amber-50 dark:bg-amber-900/20 p-6 rounded-lg">
+          <div className="bg-teal-50 dark:bg-teal-900/20 p-6 rounded-lg">
             <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
               <strong>Choose the correct word:</strong>
             </p>
@@ -233,7 +233,7 @@ const EfficientVsEffectivePage: React.FC = () => {
                   <strong>Answer:</strong> Solar panels are a cost-<strong>effective</strong> way to generate electricity.
                 </p>
                 <p className="text-green-700 dark:text-green-300 mt-1">
-                  "Cost-effective" is a fixed phrase meaning good value for the cost — it focuses on results per cost. "Cost-efficient" is also acceptable but less common in this context.
+                  "Cost-effective" is a fixed phrase meaning good value for the cost, it focuses on results per cost. "Cost-efficient" is also acceptable but less common in this context.
                 </p>
               </div>
             )}
@@ -247,22 +247,22 @@ const EfficientVsEffectivePage: React.FC = () => {
           </h2>
           <ul className="space-y-2 text-lg">
             <li>
-              <Link to="/grammar-mistakes/sensible-vs-sensitive" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/sensible-vs-sensitive/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Sensible vs Sensitive
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/advice-vs-advise" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/advice-vs-advise/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Advice vs Advise
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes/do-vs-make" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/do-vs-make/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → Do vs Make
               </Link>
             </li>
             <li>
-              <Link to="/grammar-mistakes" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <Link to="/grammar-mistakes/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 → All Grammar Mistakes
               </Link>
             </li>
