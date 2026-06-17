@@ -4,7 +4,6 @@ import { useParams, Link } from 'react-router-dom';
 import { BLOG_POSTS } from '../constants/blogPosts';
 import usePageMetadata from '../hooks/usePageMetadata';
 import GoogleAd from '../components/GoogleAd';
-import BlogMetadata from '../components/BlogMetadata';
 import BlogImage from '../components/BlogImage';
 import ShareButtons from '../components/ShareButtons';
 import SchemaMarkup from '../components/SchemaMarkup';
@@ -36,7 +35,15 @@ const BlogPostPage: React.FC = () => {
   usePageMetadata({
     title: metaTitle,
     description: metaDescription,
-    robots: !post ? 'noindex, follow' : undefined
+    robots: !post ? 'noindex, follow' : undefined,
+    ogTitle: metaTitle,
+    ogDescription: metaDescription,
+    ogType: post ? 'article' : undefined,
+    ogUrl: post ? `https://typogrammar.com/blog/${post.slug}/` : undefined,
+    ogImage: post?.image || 'https://typogrammar.com/assets/og-image.png',
+    twitterCard: 'summary_large_image',
+    twitterTitle: metaTitle,
+    twitterDescription: metaDescription
   });
 
   if (!post) {

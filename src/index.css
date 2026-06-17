@@ -10,7 +10,7 @@ body {
 }
 
 ::selection {
-  background-color: #235784;  /* Brand primary (blue-600) */
+  background-color: #4f46e5;  /* indigo-600 */
   color: #ffffff;
 }
 

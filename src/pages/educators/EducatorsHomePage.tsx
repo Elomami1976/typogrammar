@@ -1,0 +1,292 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import usePageMetadata from '../../hooks/usePageMetadata';
+import EducatorsBanner from '../../components/educators/EducatorsBanner';
+import SectionHeading from '../../components/educators/SectionHeading';
+import AuthorCard from '../../components/educators/AuthorCard';
+import ContributorArticleCard from '../../components/educators/ContributorArticleCard';
+import EmptyAuthorsState from '../../components/educators/EmptyAuthorsState';
+import EducatorsBreadcrumb from '../../components/educators/EducatorsBreadcrumb';
+import {
+  CONTRIBUTOR_ARTICLES,
+  EDUCATORS,
+  getFoundingContributors,
+  NETWORK_BANNER,
+} from '../../constants/educators';
+
+const SITE = 'https://typogrammar.com';
+
+const EducatorsHomePage: React.FC = () => {
+  usePageMetadata({
+    title: 'TypoGrammar Educators Network | Expert English Teachers & Linguists',
+    description:
+      'Learn from experienced English teachers, IELTS trainers, linguists, and language professionals contributing original articles to TypoGrammar.',
+    ogType: 'website',
+    ogImage: `${SITE}${NETWORK_BANNER}`,
+    twitterCard: 'summary_large_image',
+  });
+
+  const founding = getFoundingContributors();
+  const latestArticles = [...CONTRIBUTOR_ARTICLES]
+    .sort((a, b) => (a.publishDate > b.publishDate ? -1 : 1))
+    .slice(0, 6);
+
+  const collectionSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'TypoGrammar Educators Network',
+    description:
+      'A publication of original, expert-written English-language articles by verified educators.',
+    url: `${SITE}/educators/`,
+    isPartOf: {
+      '@type': 'WebSite',
+      name: 'TypoGrammar',
+      url: SITE,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'TypoGrammar',
+      url: SITE,
+      logo: { '@type': 'ImageObject', url: `${SITE}/logo.png` },
+    },
+  };
+
+  return (
+    <div className="mx-auto max-w-6xl">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
+      />
+
+      <EducatorsBreadcrumb
+        items={[
+          { label: 'Home', href: '/' },
+          { label: 'Educators Network' },
+        ]}
+      />
+
+      <EducatorsBanner
+        eyebrow="TypoGrammar"
+        title="TypoGrammar Educators Network"
+        subtitle="Learn from experienced English teachers, IELTS trainers, linguists, researchers, and language professionals contributing to TypoGrammar."
+      />
+
+      {/* Hero CTAs */}
+      <div className="-mt-6 mb-12 flex flex-wrap gap-3">
+        <Link
+          to="/authors/"
+          className="inline-flex items-center gap-2 rounded-lg bg-slate-900 px-5 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-red-600 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-red-600 dark:hover:text-white"
+        >
+          Meet Our Educators
+          <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fillRule="evenodd" d="M7.05 4.05a1 1 0 011.41 0l5 5a1 1 0 010 1.41l-5 5a1 1 0 11-1.41-1.41L11.34 10 7.05 5.46a1 1 0 010-1.41z" clipRule="evenodd" />
+          </svg>
+        </Link>
+        <Link
+          to="/contributor-articles/"
+          className="inline-flex items-center gap-2 rounded-lg border border-slate-900 bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition-colors hover:bg-slate-900 hover:text-white dark:border-slate-100 dark:bg-transparent dark:text-slate-100 dark:hover:bg-slate-100 dark:hover:text-slate-900"
+        >
+          Read Articles
+        </Link>
+      </div>
+
+      {/* GROWING NETWORK NOTE */}
+      <div className="mb-12 flex items-start gap-3 rounded-xl border-l-4 border-red-600 bg-red-50 p-4 dark:border-red-500 dark:bg-red-900/10">
+        <span
+          aria-hidden="true"
+          className="mt-0.5 inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-red-600 text-xs font-bold text-white"
+        >
+          +
+        </span>
+        <p className="font-body text-sm leading-relaxed text-slate-700 dark:text-slate-200 md:text-base">
+          <strong className="font-semibold text-slate-900 dark:text-slate-100">
+            The TypoGrammar Educators Network is growing.
+          </strong>{' '}
+          New verified educators and original articles are added regularly.
+        </p>
+      </div>
+
+      {/* WHY THIS NETWORK EXISTS */}
+      <section className="mb-14 rounded-2xl border border-slate-200 bg-white p-6 dark:border-slate-700 dark:bg-slate-800/40 md:p-10">
+        <SectionHeading
+          eyebrow="Why this network exists"
+          title="Real educators. Real expertise. Real classroom experience."
+          description="The TypoGrammar Educators Network exists to bring genuine human insight to English-language education - the kind built from years of teaching, examining, and researching, not generated by a model."
+        />
+
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          {[
+            {
+              title: 'Real educators',
+              body: 'Every contributor is a verified teacher, trainer, examiner, or linguist with a public professional identity.',
+            },
+            {
+              title: 'Real expertise',
+              body: 'Articles are written from lived practice - lesson plans that worked, learners that improved, mistakes that recurred.',
+            },
+            {
+              title: 'Real classroom experience',
+              body: 'Insights come from teaching in actual classrooms and exam centres, not from rewriting a generic outline.',
+            },
+            {
+              title: 'Real language insight',
+              body: 'Founded on the belief that human judgement on language still outperforms generic AI-generated content.',
+            },
+          ].map((item) => (
+            <div
+              key={item.title}
+              className="flex flex-col border-l-4 border-red-600 bg-slate-50 p-5 dark:bg-slate-900/40"
+            >
+              <h3 className="font-heading text-base font-bold text-slate-900 dark:text-slate-100">
+                {item.title}
+              </h3>
+              <p className="mt-2 font-body text-sm text-slate-600 dark:text-slate-300">
+                {item.body}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* FOUNDING CONTRIBUTORS */}
+      <section className="mb-14">
+        <SectionHeading
+          eyebrow="Permanent cohort"
+          title="Founding Contributors"
+          description="The educators who helped launch the TypoGrammar Educators Network. This section is permanent - founding members keep this badge for life."
+        />
+
+        {founding.length > 0 ? (
+          <>
+            <div className="grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-4">
+              {founding.map((author) => (
+                <AuthorCard key={author.slug} author={author} />
+              ))}
+            </div>
+            <p className="mt-6 text-center font-body text-sm italic text-slate-500 dark:text-slate-400">
+              More founding contributors are being verified and onboarded. New profiles are added regularly.
+            </p>
+          </>
+        ) : (
+          <EmptyAuthorsState slots={12} />
+        )}
+      </section>
+
+      {/* LATEST ARTICLES */}
+      <section className="mb-14">
+        <SectionHeading
+          eyebrow="Fresh from the network"
+          title="Latest Articles"
+          description="Original, author-written articles published by verified educators in the network."
+        />
+
+        {latestArticles.length > 0 ? (
+          <>
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {latestArticles.map((article) => (
+                <ContributorArticleCard key={article.slug} article={article} />
+              ))}
+            </div>
+            <div className="mt-8 text-center">
+              <Link
+                to="/contributor-articles/"
+                className="inline-flex items-center gap-2 rounded-lg border border-slate-900 bg-white px-5 py-2.5 text-sm font-semibold text-slate-900 transition-colors hover:bg-slate-900 hover:text-white dark:border-slate-100 dark:bg-transparent dark:text-slate-100 dark:hover:bg-slate-100 dark:hover:text-slate-900"
+              >
+                View all contributor articles
+              </Link>
+            </div>
+          </>
+        ) : (
+          <div className="rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-8 text-center dark:border-slate-600 dark:bg-slate-800/40">
+            <p className="font-body text-slate-600 dark:text-slate-300">
+              The first contributor articles will appear here as soon as our
+              founding cohort publishes.
+            </p>
+          </div>
+        )}
+      </section>
+
+      {/* BECOME A CONTRIBUTOR */}
+      <section className="mb-10 overflow-hidden rounded-2xl border border-slate-900 bg-slate-900 text-white shadow-lg dark:border-slate-700">
+        <div className="grid gap-0 md:grid-cols-5">
+          <div className="md:col-span-3 p-6 md:p-10">
+            <p className="mb-2 inline-flex items-center gap-2 rounded-full bg-red-600 px-3 py-1 text-xs font-bold uppercase tracking-widest text-white">
+              Join the network
+            </p>
+            <h2 className="font-heading text-2xl font-extrabold leading-tight md:text-3xl">
+              Become a Contributor
+            </h2>
+            <p className="mt-3 max-w-xl font-body text-base text-slate-200">
+              The contributor program is open to teachers, examiners, linguists,
+              and language professionals with verifiable experience. Articles
+              must be original, written by you, and add practical value to
+              English learners.
+            </p>
+
+            <ul className="mt-5 grid gap-2 text-sm md:grid-cols-2">
+              {[
+                'Original article',
+                '800 - 1,500 words',
+                'Semi-formal style',
+                'Reader-friendly',
+                'Practical insights',
+                'Author-written content',
+                'AI proofreading allowed',
+                'Fully AI-generated content not accepted',
+              ].map((req) => (
+                <li
+                  key={req}
+                  className="flex items-start gap-2 font-body text-slate-100"
+                >
+                  <span aria-hidden="true" className="mt-0.5 text-red-500">
+                    ▸
+                  </span>
+                  {req}
+                </li>
+              ))}
+            </ul>
+
+            <div className="mt-6">
+              <Link
+                to="/contributor-guidelines/"
+                className="inline-flex items-center gap-2 rounded-lg bg-red-600 px-5 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-red-700"
+              >
+                View Contributor Guidelines
+                <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fillRule="evenodd" d="M7.05 4.05a1 1 0 011.41 0l5 5a1 1 0 010 1.41l-5 5a1 1 0 11-1.41-1.41L11.34 10 7.05 5.46a1 1 0 010-1.41z" clipRule="evenodd" />
+                </svg>
+              </Link>
+            </div>
+          </div>
+          <aside className="hidden border-l border-slate-700 bg-slate-800/60 p-8 md:col-span-2 md:block">
+            <p className="font-heading text-xs font-bold uppercase tracking-widest text-red-400">
+              Network status
+            </p>
+            <dl className="mt-4 space-y-4 text-sm">
+              <div>
+                <dt className="text-slate-400">Educators</dt>
+                <dd className="mt-1 font-heading text-3xl font-extrabold">
+                  {EDUCATORS.length}
+                </dd>
+              </div>
+              <div>
+                <dt className="text-slate-400">Published articles</dt>
+                <dd className="mt-1 font-heading text-3xl font-extrabold">
+                  {CONTRIBUTOR_ARTICLES.length}
+                </dd>
+              </div>
+              <div>
+                <dt className="text-slate-400">Founding cohort</dt>
+                <dd className="mt-1 font-body text-base text-slate-100">
+                  Currently onboarding
+                </dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default EducatorsHomePage;

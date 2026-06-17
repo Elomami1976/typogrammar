@@ -72,7 +72,10 @@ const VerbTensesQuizPage: React.FC = () => {
     ogTitle: 'Free Verb Tenses Quiz: 50 Questions with Answers for IELTS & ESL',
     ogDescription: 'Test your English verb tenses with this free 50-question quiz. Includes answers and explanations covering all 12 tenses from present simple to future perfect.',
     ogType: 'website',
-    ogUrl: 'https://typogrammar.com/quizzes/verb-tenses-quiz'
+    ogUrl: 'https://typogrammar.com/quizzes/verb-tenses-quiz',
+    twitterCard: 'summary_large_image',
+    twitterTitle: 'Free Verb Tenses Quiz: 50 Questions with Answers for IELTS & ESL',
+    twitterDescription: 'Test your English verb tenses with this free 50-question quiz. Includes answers and explanations covering all 12 tenses from present simple to future perfect.'
   });
 
   // Scroll to top on mount
@@ -170,6 +173,22 @@ const VerbTensesQuizPage: React.FC = () => {
         }
       },
       {
+        "@type": "Quiz",
+        "name": "Free Verb Tenses Quiz: 50 Questions with Answers & Explanations",
+        "description": "Test your English verb tenses with 50 multiple-choice questions covering all 12 tenses. Includes answers and detailed explanations for IELTS, TOEFL, and ESL learners.",
+        "url": "https://typogrammar.com/quizzes/verb-tenses-quiz/",
+        "educationalLevel": "intermediate",
+        "numberOfQuestions": 50,
+        "timeRequired": "PT30M",
+        "inLanguage": "en",
+        "isAccessibleForFree": true,
+        "provider": {
+          "@type": "Organization",
+          "name": "TypoGrammar",
+          "url": "https://typogrammar.com"
+        }
+      },
+      {
         "@type": "FAQPage",
         "mainEntity": [
           {
@@ -216,20 +235,6 @@ const VerbTensesQuizPage: React.FC = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
       />
-
-      {/* SEO Meta Tags */}
-      <head>
-        <link rel="canonical" href="https://typogrammar.com/quizzes/verb-tenses-quiz" />
-        <meta name="robots" content="index,follow" />
-        <meta property="og:title" content={data.title} />
-        <meta property="og:description" content={data.description} />
-        <meta property="og:url" content="https://typogrammar.com/quizzes/verb-tenses-quiz" />
-        <meta property="og:site_name" content="TypoGrammar" />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={data.title} />
-        <meta name="twitter:description" content={data.description} />
-      </head>
 
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-800 dark:to-indigo-800 text-white py-16 px-4">
@@ -526,7 +531,7 @@ const VerbTensesQuizPage: React.FC = () => {
           description="Recommended next steps to lock in everything you just practiced."
           items={[
             {
-              to: '/verb-tenses/',
+              to: '/grammar/verb-tenses/',
               title: 'Verb Tenses Hub: All 12 Tenses Explained',
               subtitle: 'Master each tense with examples, timelines, and rules.',
               badge: 'Lesson',

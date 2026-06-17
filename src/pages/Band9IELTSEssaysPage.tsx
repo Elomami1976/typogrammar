@@ -1832,16 +1832,16 @@ const Band9IELTSEssaysPage: React.FC = () => {
         </ArticleParagraph>
         <div className="grid md:grid-cols-2 gap-4 mt-4">
           <Link
-            to="/ielts-preparation/"
+            to="/ielts/ielts-writing-task-2-essay-types/"
             className="block p-4 bg-white dark:bg-slate-700 rounded-lg border border-slate-200 dark:border-slate-600 hover:border-blue-500 dark:hover:border-blue-400 transition-colors"
           >
-            <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">IELTS Preparation Hub</h4>
+            <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">IELTS Writing Task 2 Hub</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">
-              Complete guide to all IELTS sections with tips and strategies.
+              Complete guide to all IELTS Writing Task 2 essay types with tips and strategies.
             </p>
           </Link>
           <Link
-            to="/band-8-ielts-sample-answers/"
+            to="/ielts/band-8-ielts-sample-answers/"
             className="block p-4 bg-white dark:bg-slate-700 rounded-lg border border-slate-200 dark:border-slate-600 hover:border-blue-500 dark:hover:border-blue-400 transition-colors"
           >
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">Band 8 Sample Answers</h4>
@@ -1850,7 +1850,7 @@ const Band9IELTSEssaysPage: React.FC = () => {
             </p>
           </Link>
           <Link
-            to="/advantages-disadvantages-essay-ielts/"
+            to="/ielts/advantages-disadvantages-essay-ielts/"
             className="block p-4 bg-white dark:bg-slate-700 rounded-lg border border-slate-200 dark:border-slate-600 hover:border-blue-500 dark:hover:border-blue-400 transition-colors"
           >
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">Advantages/Disadvantages Essays</h4>
@@ -1859,7 +1859,7 @@ const Band9IELTSEssaysPage: React.FC = () => {
             </p>
           </Link>
           <Link
-            to="/ielts-vocabulary-booster/"
+            to="/ielts/vocabulary/band-8/"
             className="block p-4 bg-white dark:bg-slate-700 rounded-lg border border-slate-200 dark:border-slate-600 hover:border-blue-500 dark:hover:border-blue-400 transition-colors"
           >
             <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-1">IELTS Vocabulary Booster</h4>
@@ -1939,13 +1939,13 @@ const Band9IELTSEssaysPage: React.FC = () => {
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <Link
-            to="/ielts-preparation/"
+            to="/ielts/ielts-writing-task-2-essay-types/"
             className="inline-block px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-colors"
           >
-            IELTS Preparation Hub
+            IELTS Writing Task 2 Hub
           </Link>
           <Link
-            to="/band-8-ielts-sample-answers/"
+            to="/ielts/band-8-ielts-sample-answers/"
             className="inline-block px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-400 transition-colors border border-blue-400"
           >
             More Sample Essays

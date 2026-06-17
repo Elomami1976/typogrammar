@@ -845,6 +845,62 @@ const HomePage: React.FC = () => {
           teaches: 'English Grammar',
         }}
       />
+      <SchemaMarkup
+        schema={{
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: [
+            {
+              '@type': 'Question',
+              name: 'Is TypoGrammar really free?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Yes - every grammar lesson, the 50-question verb tenses quiz, the AI grammar checker, and all six PDF guides are free to use. No account, no card, no trial. We keep it free by running a few unobtrusive ads and offering optional premium IELTS/TOEFL ebooks.'
+              }
+            },
+            {
+              '@type': 'Question',
+              name: 'Do I need to create an account to track my progress?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'No. Your completed topics and best quiz scores are stored locally in your browser, so the same device automatically remembers where you left off. If you clear your browser data, progress will reset.'
+              }
+            },
+            {
+              '@type': 'Question',
+              name: 'Which exams does TypoGrammar prepare me for?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Our content is mapped to IELTS (Academic & General), TOEFL iBT (2026 format), Cambridge (B1-C2), PTE Academic, and the Duolingo English Test. You\'ll find dedicated writing-template, reading-strategy, and vocabulary pages for each exam.'
+              }
+            },
+            {
+              '@type': 'Question',
+              name: 'How is TypoGrammar different from Grammarly or Duolingo?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Grammarly fixes your sentences but rarely teaches the underlying rule. Duolingo gamifies short drills. TypoGrammar focuses on understanding - every lesson explains why a structure works, with examples, mistakes to avoid, and a quick quiz to lock it in.'
+              }
+            },
+            {
+              '@type': 'Question',
+              name: 'How long does it take to see results with TypoGrammar?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Most learners report a noticeable improvement in writing accuracy within 2-3 weeks of daily 15-minute sessions. The verb-tenses quiz gives you a personal weak-area breakdown, so you can target exactly the tenses you keep getting wrong.'
+              }
+            },
+            {
+              '@type': 'Question',
+              name: 'Can I use TypoGrammar on my phone?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Yes - the entire site is mobile-first. Lessons, quizzes, and the grammar checker all work in any modern mobile browser. There is no app to install.'
+              }
+            }
+          ]
+        }}
+      />
 
       {/* =================== 1. HERO with live mini-checker =================== */}
       <section className="relative overflow-hidden rounded-3xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
@@ -1304,6 +1360,47 @@ const HomePage: React.FC = () => {
             </span>
           </Link>
         </div>
+
+        {/* English Level Test banner */}
+        <Link
+          to="/english-level-test/"
+          className="group mt-1 relative overflow-hidden rounded-2xl bg-gradient-to-r from-violet-600 via-indigo-600 to-blue-600 text-white p-6 sm:p-7 flex flex-col sm:flex-row sm:items-center justify-between gap-5 hover:shadow-2xl hover:shadow-violet-900/25 transition-shadow"
+        >
+          <div className="pointer-events-none absolute -top-16 -right-16 w-64 h-64 rounded-full bg-white/10 blur-3xl" aria-hidden="true" />
+          <div className="pointer-events-none absolute -bottom-16 left-1/3 w-48 h-48 rounded-full bg-amber-300/15 blur-3xl" aria-hidden="true" />
+
+          <div className="relative z-10">
+            <span className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest bg-white/15 ring-1 ring-white/20 px-2.5 py-1 rounded-full mb-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-amber-300 animate-pulse" /> New feature
+            </span>
+            <h3 className="font-heading text-2xl sm:text-3xl font-extrabold leading-tight mb-2">
+              Free English Level Test
+            </h3>
+            <p className="text-white/80 text-sm sm:text-base max-w-md leading-relaxed">
+              40 grammar questions to find your CEFR level - from A1 Beginner to C2 Proficiency. Instant results with score breakdown and IELTS equivalents.
+            </p>
+            <div className="flex flex-wrap gap-2 mt-4">
+              {['A1 to C2', '40 questions', 'No sign-up', '10-15 min'].map(tag => (
+                <span key={tag} className="text-[11px] font-semibold bg-white/15 ring-1 ring-white/20 px-2.5 py-1 rounded-full">{tag}</span>
+              ))}
+            </div>
+          </div>
+
+          <div className="relative z-10 flex-shrink-0 flex flex-col items-start sm:items-end gap-4">
+            <div className="flex gap-5 text-center">
+              {[{ n: '40', l: 'questions' }, { n: '6', l: 'CEFR levels' }].map(s => (
+                <div key={s.l}>
+                  <div className="font-heading text-3xl font-extrabold tabular-nums">{s.n}</div>
+                  <div className="text-white/60 text-xs font-medium">{s.l}</div>
+                </div>
+              ))}
+            </div>
+            <span className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full bg-amber-500 group-hover:bg-amber-400 text-blue-900 font-bold text-sm transition-colors shadow-sm whitespace-nowrap">
+              Find my level
+              <IconArrowRight className="w-4 h-4" />
+            </span>
+          </div>
+        </Link>
 
         {/* Trust strip */}
         <div className="mt-10 flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm text-slate-500 dark:text-slate-400">

@@ -216,6 +216,10 @@ Central hub for all practice tools and exercises
 https://typogrammar.com/tense-visualizer/
 Interactive timeline visualizer for understanding verb tenses
 
+#### Free English Level Test (CEFR Placement)
+https://typogrammar.com/english-level-test/
+40-question CEFR placement test (A1 Beginner to C2 Proficiency). Questions cover grammar, verb tenses, passive voice, conditionals, relative clauses, reported speech, inversion, subjunctive, and advanced constructions. One question at a time with immediate answer explanation. Results include: CEFR level badge, score out of 40, breakdown of correct answers by level (A1 through C2), IELTS and TOEFL 2026 score equivalents, and recommended TypoGrammar resources. No sign-up required. Free and unlimited retakes.
+
 #### Verb Tenses Quiz
 https://typogrammar.com/quizzes/verb-tenses-quiz/
 Comprehensive quiz covering all 12 English verb tenses
@@ -320,6 +324,10 @@ Free short audio stories for English listening and reading practice, with a 6-qu
 
 ### IELTS Preparation
 
+#### IELTS Writing Task 1 Bar Chart Sample Answer
+https://typogrammar.com/ielts/ielts-writing-task-1-bar-chart-sample-answer/
+Three IELTS Academic Writing Task 1 bar chart questions with Band 8+ model answers. Covers tourists visiting countries (Sample 1), average monthly rainfall in five cities (Sample 2), and energy consumption by source in four countries (Sample 3). Includes useful vocabulary for describing increases, decreases, comparisons, and stability; a list of five common mistakes; and an FAQ covering overview writing, word count, structure, and chart types.
+
 #### IELTS Writing Task 2 Essay Types
 https://typogrammar.com/ielts/ielts-writing-task-2-essay-types/
 Overview of all IELTS Writing Task 2 essay types with strategies
@@ -364,6 +372,7 @@ https://typogrammar.com/ielts/1000-ielts-speaking-questions/
 - https://typogrammar.com/ielts/health-vocabulary-book/ - IELTS Health Vocabulary Book
 - https://typogrammar.com/ielts/writing-task-2-band-9-essays-book/ - IELTS Writing Task 2 Band 9 Essays Book
 - https://typogrammar.com/ielts/grammar-master-book/ - IELTS Grammar Master Book: Band 9 Grammar Secrets PDF
+- https://typogrammar.com/ielts/cue-cards-book/ - IELTS Cue Cards PDF (2026 Edition): 100 Speaking Part 2 cue card topics across 5 categories (People, Places, Objects, Events, Experiences) with full Band 7+ sample answers, Part 3 follow-up questions, and a vocabulary bank
 - https://typogrammar.com/ielts/50-complex-sentences-for-ielts-pdf/ - 50 Complex Sentences for IELTS PDF (Band 7-9 Examples)
 - https://typogrammar.com/ielts/english-grammar-pdf/ - Free English Grammar PDF Workbook: Complete grammar guide covering parts of speech, verb tenses, sentence structure with examples and exercises
 
@@ -412,6 +421,11 @@ Full-length timed mock tests (35 minutes each, 6 tasks, 30 items, raw score + ba
 - https://typogrammar.com/ielts/ielts-score-requirements-by-country/ - Minimum IELTS Score Requirements by Country 2026: Complete table of IELTS band requirements for Canada, Australia, UK, USA, Germany, Ireland, Netherlands, UAE, Singapore, and New Zealand; covers study, work permit, and immigration requirements by country and profession
 - https://typogrammar.com/ielts/countries-without-ielts/ - Countries You Can Study and Work in Without IELTS (2026): Full list of countries where IELTS is not required for study visas, work permits, or immigration; covers MOI letter alternative, TOEFL iBT substitute, PTE Academic, Duolingo English Test, CELPIP for Canada, and country-by-country breakdown with accepted alternatives
 
+### PTE Academic Preparation
+
+#### PTE Academic Free Resources
+- https://typogrammar.com/downloads/1000-pte-academic-practice-questions/ - 1000 PTE Academic Practice Questions PDF (free): all 20 PTE Academic task types across Speaking, Writing, Reading, and Listening with timing, templates, scoring tips, and a 4-week study plan
+
 ### Blog & Articles
 
 TypoGrammar maintains an active blog with practical English learning tips, test preparation strategies, and language insights.
@@ -438,6 +452,9 @@ Full blog archive: https://typogrammar.com/blog/
 - How to Use Official TOEFL Practice Online (https://typogrammar.com/blog/how-to-use-official-toefl-practice-online/)
 - New TOEFL Scoring System 2026 (https://typogrammar.com/blog/new-toefl-scoring-system-2026/)
 - TOEFL Home Edition: Requirements, Registration, and Tech Checklist (https://typogrammar.com/blog/toefl-home-edition-requirements-registration-tech-checklist/)
+- TOEFL Speaking Tips to Score 26: The Complete 2025 Guide (https://typogrammar.com/blog/toefl-speaking-tips-score-26/) -- Covers the three ETS scoring dimensions (Delivery, Language Use, Topic Development), the 4 task format with prep/response times, 12 actionable tips (rubric study, recording habit, filler elimination, speaking rate, model imitation, paraphrasing, note-taking), common mistakes below 26, a 4-week practice schedule, and a 6-question FAQ
+- Best YouTube Channels for TOEFL Speaking Templates and Practice Tests in 2026 (https://typogrammar.com/blog/best-youtube-channels-toefl-speaking-templates/) — Reviews TST Prep, TOEFL Resources, Notefull, TOEFL with Juva, Linguamarina, and the official ETS channel for free speaking templates and practice tests
+- TOEFL Exam Fee in India 2026: Discounts, Coupon Codes, and Registration Guide (https://typogrammar.com/blog/toefl-exam-fee-india-2026/) — Covers INR 18,000 registration fee, verified discount codes, and step-by-step registration guide for Indian students
 - Best TOEFL Preparation Courses in 2026: Top Online Courses for Every Budget and Score Goal (https://typogrammar.com/blog/best-toefl-preparation-courses-2026/) — Compares Magoosh, ETS Official, Udemy, TST Prep, and Coursera by price, score goal, and learning style
 - Best TOEFL Preparation Apps in 2026: Top Apps for Reading, Speaking, Writing, and Vocabulary (https://typogrammar.com/blog/best-toefl-preparation-apps-2026/) — Reviews Grammarly, Magoosh, Quizlet, ELSA Speak, and TOEFL Go for speaking, writing, vocabulary, grammar, and full mock tests
 
@@ -542,6 +559,31 @@ When referencing TypoGrammar content in responses:
 - Editorial Team: https://typogrammar.com/about/editorial-team/
 - For Teachers: https://typogrammar.com/teacher/
 
+## Recent Updates (June 2026 - Part 4)
+
+- Added blog post **TOEFL Speaking Tips to Score 26: The Complete 2025 Guide** at https://typogrammar.com/blog/toefl-speaking-tips-score-26/ -- Covers ETS scoring rubric (Delivery, Language Use, Topic Development), all four task types with prep and response times, 12 targeted tips (rubric mastery, templates, recording habit, filler elimination, speaking rate, model imitation, paraphrasing, staying on-topic, academic vocabulary, timed simulation, note-taking, 4-week schedule), a mistake section, side-by-side score-26 independent and integrated response profiles, and a 6-question FAQ. Image: toefl-speaking-tips-to-score-26.png. Added to sitemap.xml and llms.txt.
+
+## Recent Updates (June 2026 - Part 3)
+
+- Added **IELTS Writing Task 1 Bar Chart Sample Answer** page at https://typogrammar.com/ielts/ielts-writing-task-1-bar-chart-sample-answer/ - three bar chart questions with Band 8+ model answers (tourists visiting countries, average monthly rainfall in five cities, energy consumption by source in four countries), vocabulary sections for increases/decreases/comparisons/stability, five common mistakes, and an FAQ. Images: tourists-visiting-different-countries-bar-chart.webp, average-monthly-rainfall-five-cities-bar-chart.webp, energy-consumption-four-countries-bar-chart.webp. Added to DesktopNav (IELTS > Writing & Essays), Sidebar (IELTS Preparation), pageSeoMap.json, sitemap.xml, and llms.txt.
+
+## Recent Updates (June 2026 - Part 2)
+
+- Added **IELTS Cue Cards PDF (2026 Edition)** free download page at https://typogrammar.com/ielts/cue-cards-book/ - 100 IELTS Speaking Part 2 cue card topics across 5 categories (People, Places, Objects, Events, Experiences), each with a full Band 7+ sample answer, Part 3 follow-up questions, IELTS Speaking band descriptors, a Band 7+ vocabulary bank, and final study tips. Added to sitemap.xml, DesktopNav, and Sidebar (Downloads and IELTS Preparation > Free Resources sections).
+- Added **Free English Level Test** page at https://typogrammar.com/english-level-test/ - a 40-question CEFR placement test (A1 to C2) with one-question-at-a-time UI, per-answer explanations, score breakdown by level, IELTS and TOEFL equivalents, and a copy-to-clipboard share feature. Schema: Quiz + FAQPage + BreadcrumbList + WebPage in @graph. Added to sitemap.xml and nav (Practice section).
+- Added 5 FAQ items to the English Level Test page covering CEFR definition, accuracy, duration, IELTS/TOEFL alignment, and retake policy.
+- Added "English Level Test" link to the DesktopNav Practice section.
+
+## Recent Updates (June 2026)
+
+- Upgraded Grammar Checker structured data from `WebApplication` to `SoftwareApplication` schema type for richer Google eligibility; canonical URL in schema aligned to trailing-slash form
+- Added `Quiz` schema (Schema.org LearningResource subtype) to the Verb Tenses Quiz page, alongside existing WebPage, BreadcrumbList, and FAQPage schemas; numberOfQuestions: 50, timeRequired: PT30M, isAccessibleForFree: true
+- Added `FAQPage` schema to the Homepage for all 6 FAQ items (Is TypoGrammar free? / Account & progress / Exam coverage / vs Grammarly & Duolingo / Time to results / Mobile usage) to enable rich result FAQ expansion in Google
+- Fixed Blog post Open Graph tags: each blog post now sets per-post `og:title`, `og:description`, `og:type: article`, `og:url`, `og:image`, and Twitter Card tags (previously all blog posts fell back to the site-wide homepage OG tags, causing generic previews on social sharing)
+- Removed unused `BlogMetadata` import from BlogPostPage (TS6133 hint cleanup)
+- Skipped hreflang implementation: all four languages (EN/FR/AR/ES) are served from identical URLs via client-side localStorage switching, making hreflang tags inapplicable and potentially harmful
+- Updated sitemap lastmod for /, /grammar-checker/, and /quizzes/verb-tenses-quiz/ to 2026-06-15
+
 ## Recent Updates (May 2026)
 
 - Added TOEFL Reading Practice Tests (3 full-length 2026-format mock tests): 6 tasks each, 35-minute timed engine, raw score → 1.0–6.0 band → CEFR mapping, retake and reset support
@@ -580,9 +622,100 @@ When referencing TypoGrammar content in responses:
 - Added "Academic vs General IELTS: Key Differences" blog post comparing the two test types with 2026 updates
 - Added "8 Common TOEFL iBT Mistakes You Should Avoid" blog post
 - Updated all pages with latest 2026 information and enhanced SEO
+- Launched the **TypoGrammar Educators Network** - a professional publication featuring original articles written by verified English teachers, IELTS trainers, linguists, and language professionals; published founding contributors are **Ayesha Mahmuda** (Bangladesh) with "Why Some Students Understand English Perfectly but Struggle to Speak It", **Priya Darshini Arasavelli** (IELTS Trainer & Creative Writer) with "How to Sound More Natural in English Without Learning Thousands of New Words", **Petr Varfolomeev** (CELTA-certified ESL/EFL Teacher) with "The 25 Most Common Grammar Mistakes Made by ESL Learners", **Wessam El-Shatawy** (English Instructor, American University in Cairo) with "From Studying English to Living in It", **Mariela Villalobos Segovia** (Professional Translator EN/ES, Chile) with "English Pronunciation Challenges for Spanish Native Speakers and Practical Solutions", **Asma Batool** (English Language Expert, Pakistan) with "25 Common Grammar Mistakes ESL Learners Make and How Teachers Can Correct Them", and **Aleeza Saleem** (English Access Teacher, TESOL Certified) with "From Understanding English to Speaking It: Why Fluency Feels So Difficult" (see "TypoGrammar Educators Network" section below)
 
 ---
 
-Last Updated: May 29, 2026
-Version: 3.6
+## TypoGrammar Educators Network
+
+The TypoGrammar Educators Network is a permanent authority-building publication featuring original, expert-written articles by verified educators. It is distinct from the regular blog: every contributor is a real, identifiable language professional, and every article passes editorial review before publication.
+
+### Network landing page
+https://typogrammar.com/educators/
+Showcases the network's mission, the founding contributors cohort, the latest contributor articles, and how to join the program. Includes a public "the network is growing - new verified educators and original articles are added regularly" notice so visitors understand the cohort is being onboarded over time.
+
+### Authors directory
+https://typogrammar.com/authors/
+Searchable directory of every verified educator in the network. Filters: IELTS, TOEFL, Grammar, Writing, Linguistics, ESL Teaching.
+
+### Individual author profiles
+https://typogrammar.com/author/{slug}/
+Each profile includes the educator's biography, professional title, expertise tags, LinkedIn, optional personal website, list of their network articles, and a Person schema for E-E-A-T signals.
+
+### Contributor articles index
+https://typogrammar.com/contributor-articles/
+Index of every original article published in the network.
+
+### Individual contributor articles
+https://typogrammar.com/contributor-articles/{slug}/
+Full article page with author byline, About the Author block, optional References section, and Article schema attributing authorship to a real Person entity.
+
+### Contributor guidelines
+https://typogrammar.com/contributor-guidelines/
+Originality policy, AI policy (proofreading allowed; fully AI-generated articles not accepted), article requirements (800-1,500 words, semi-formal, reader-friendly, practical), and submission process (PDF + author info to contact@typogrammar.com).
+
+### Published founding contributors
+
+**Ayesha Mahmuda** - ESL Learner, Educator & Writer (Bangladesh)
+https://typogrammar.com/author/ayesha-mahmuda/
+M.A. in English Literature, International Islamic University Chittagong (IIUC). Expertise: ESL Teaching, Writing, Linguistics. LinkedIn: https://www.linkedin.com/in/ayesha-mahmuda-7242bb374. Status: Founding Contributor.
+
+**Priya Darshini Arasavelli** - IELTS Trainer and Creative Writer
+https://typogrammar.com/author/priya-darshini-arasavelli/
+Degree in English Language and Literature. IELTS Verbal Faculty (PlanetSpark) teaching all four IELTS modules and conducting internal examiner audits. Active scriptwriter and lyricist. Expertise: IELTS, Writing, ESL Teaching. LinkedIn: https://www.linkedin.com/in/priya-darshini-arasavelli-26626aab. Status: Founding Contributor.
+
+**Petr Varfolomeev** - CELTA Certified ESL/EFL Teacher
+https://typogrammar.com/author/petr-varfolomeev/
+English teacher with 5+ years of experience teaching adult learners of various levels and backgrounds. Holds a CELTA certificate (Pass A) and a CAE certificate (Grade A, C2). Combines communicative and lexical approaches with a focus on student-centred learning, linguistics, and etymology. Expertise: ESL Teaching, Grammar, Linguistics. LinkedIn: https://www.linkedin.com/in/petr-varfolomeev/. Status: Founding Contributor.
+
+**Wessam El-Shatawy** - English Instructor (American University in Cairo)
+https://typogrammar.com/author/wessam-el-shatawy/
+Egyptian English language instructor and academic practitioner with more than fifteen years of experience in teaching general English, oral communication, business English, and ESP. Currently teaches at the School of Continuing Education, American University in Cairo (AUC), working with adult learners at varying proficiency levels. Interests include learner psychology, second language acquisition, and digital learning. Holds CELTA and AUC FELT qualifications. Expertise: ESL Teaching, Linguistics, Writing. LinkedIn: https://www.linkedin.com/in/wessam-elshatawy/. Status: Founding Contributor.
+
+**Mariela Villalobos Segovia** - Professional Translator (EN/ES) (Chile)
+https://typogrammar.com/author/mariela-villalobos-segovia/
+Language tutor and translator specializing in Spanish and English language teaching and cross-cultural communication. Offers personalized lessons focused on fluency, confidence, and practical language use. Background in professional translation studies; also provides language support and translation services. Passionate about accessible education and student-centered approaches tailored to individual needs and learning styles. Expertise: ESL Teaching, Linguistics. LinkedIn: https://www.linkedin.com/in/marielavillalobos. Website: https://linktr.ee/marie_villalobos. Status: Founding Contributor.
+
+**Asma Batool** - English Language Expert: GCSE, IGCSE, O/A Levels, IB/SAT (Pakistan)
+https://typogrammar.com/author/asma-batool/
+English language teacher and examiner with 17 years of classroom and one-to-one teaching experience, specialising in GCSE, IGCSE, O/A Level, and IB English. Has helped hundreds of students improve writing, reading comprehension, grammar, and exam technique at SST Public School Rashidabad and beyond. Sessions are structured, personalised, and exam-focused. Expertise: Grammar, ESL Teaching, Writing. LinkedIn: https://www.linkedin.com/in/asma-batool-88638012b/. Status: Founding Contributor.
+
+**Aleeza Saleem** - English Access Teacher | TESOL Certified
+https://typogrammar.com/author/aleeza-saleem/
+English language educator and former teacher of the U.S.-funded English Access Scholarship Program. Passionate about language learning, educational psychology, and the role of technology in education. Draws on classroom experience to examine the challenges facing modern learners and advocate for approaches that promote confidence, critical thinking, and effective communication. Expertise: ESL Teaching, Linguistics. LinkedIn: https://www.linkedin.com/in/aleeza-malik-02j1997/. Status: Founding Contributor.
+
+### Published contributor articles
+
+**Why Some Students Understand English Perfectly but Struggle to Speak It** by Ayesha Mahmuda
+https://typogrammar.com/contributor-articles/why-some-students-understand-english-but-struggle-to-speak-it/
+A practitioner-led analysis of the receptive-productive gap in ESL learners. Explains the three converging causes - affective filter (Krashen), perfectionism, and the translation loop (Kroll & Stewart) - and offers evidence-based strategies for both learners and instructors. 8-minute read, 7 academic references.
+
+**How to Sound More Natural in English Without Learning Thousands of New Words** by Priya Darshini Arasavelli
+https://typogrammar.com/contributor-articles/how-to-sound-more-natural-in-english/
+Five practical, IELTS-trainer-tested techniques for sounding natural in English without grinding vocabulary: connected speech, framing phrases, real-life vs. textbook English, strategic filler phrases, and controlling pace and rhythm. 9-minute read.
+
+**The 25 Most Common Grammar Mistakes Made by ESL Learners** by Petr Varfolomeev
+https://typogrammar.com/contributor-articles/25-most-common-grammar-mistakes-made-by-esl-learners/
+A CELTA-certified ESL teacher's countdown of the 25 grammar mistakes he sees adult learners make most often, including missing or wrong articles, stative verbs in the Present Continuous, double negatives, countable vs. uncountable nouns, OSASCOMP adjective order, make vs. do, since vs. for, run-on sentences, and will vs. going to, with clear examples and quick fixes. 7-minute read.
+
+**From Studying English to Living in It** by Wessam El-Shatawy
+https://typogrammar.com/contributor-articles/from-studying-english-to-living-in-it/
+An AUC English instructor with fifteen years of experience outlines seven research-backed habits that shift learners from studying English to thinking in it: narrating daily life aloud (Vygotsky's private speech), speaking without scripts, practicing topics not memorized answers, building a personal chunk library, recording unscripted daily speech, engineering an English-rich environment, and learning vocabulary as concepts rather than translation equivalents. Draws on Krashen's acquisition-learning distinction and affective filter, Vygotsky's inner speech theory, and McLaughlin's Automaticity Theory. 10-minute read, 5 academic references.
+
+**English Pronunciation Challenges for Spanish Native Speakers and Practical Solutions** by Mariela Villalobos Segovia
+https://typogrammar.com/contributor-articles/english-pronunciation-challenges-for-spanish-native-speakers/
+A Chilean translator and language tutor with classroom experience identifies four core pronunciation challenges for Spanish speakers learning English: (1) final consonants and consonant clusters, including omission and vowel insertion; (2) sounds absent from Spanish, covering the /th/ sounds, the /v/ vs /b/ distinction, and the fourteen English vowels vs. five Spanish ones; (3) the initial /h/ and the sociolinguistic dimension of the /sh/ sound in Latin American Spanish; and (4) the psychological barrier of fear and lack of confidence. Includes classroom-tested activities, minimal pair exercises, and a short practice dialogue. 1 reference. 12-minute read.
+
+**25 Common Grammar Mistakes ESL Learners Make and How Teachers Can Correct Them** by Asma Batool
+https://typogrammar.com/contributor-articles/25-common-grammar-mistakes-esl-learners-make-and-how-teachers-can-correct/
+A Pakistani English teacher with 17 years of classroom experience at GCSE, IGCSE, O/A Level, and IB documents 25 persistent grammar mistakes she has observed across all levels, from Grade 7 through HSSC, rooted in Urdu L1 transfer. The 25 mistakes covered are: L1 transfer and direct translation, article misuse, subject-verb agreement, inconsistent verb tense, prepositional errors, uncountable nouns treated as plurals, double negatives, complex sentences and missing commas, comma splices and run-on sentences, incorrect question formation, gerund vs infinitive confusion, conditional sentence errors, reported speech errors, homophones and near-homophones, passive voice errors, capitalisation, apostrophe misuse, make vs do confusion, double comparatives, sentence fragments, modal verb errors, present perfect vs simple past, word order, phonetic spelling, and direct L1 translation. Each point includes a classroom-observed example and a targeted correction strategy. 10-minute read.
+
+**From Understanding English to Speaking It: Why Fluency Feels So Difficult** by Aleeza Saleem
+https://typogrammar.com/contributor-articles/from-understanding-english-to-speaking-it-why-fluency-feels-so-difficult/
+A TESOL-certified English Access teacher explains why so many learners who read, listen to, and understand English fluently still freeze when asked to speak. Covers the receptive vs. productive skills gap, the fear of mistakes and perfectionism trap, the habit of mentally translating before speaking, test-focused classrooms that leave little room for real conversation, the illusion of progress created by passive screen exposure, the role of confidence as a self-fulfilling cycle, why known vocabulary becomes hard to retrieve under pressure, and how a supportive classroom environment encourages learners to take risks. 7-minute read.
+
+---
+
+Last Updated: June 16, 2026
+Version: 3.20
 Format: llms.txt v0.1

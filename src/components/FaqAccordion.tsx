@@ -117,7 +117,6 @@ function extractText(node: React.ReactNode): string {
   if (typeof node === 'string' || typeof node === 'number') return String(node);
   if (Array.isArray(node)) return node.map(extractText).join(' ');
   if (typeof node === 'object' && 'props' in (node as object)) {
-    // @ts-expect-error - traversing children
     return extractText((node as React.ReactElement).props?.children);
   }
   return '';

@@ -201,12 +201,12 @@ const GrammarCheckerPage: React.FC = () => {
     }))
   };
 
-  const webApplicationSchema = {
+  const softwareApplicationSchema = {
     "@context": "https://schema.org",
-    "@type": "WebApplication",
+    "@type": "SoftwareApplication",
     "name": "Typogrammar Grammar Checker",
     "description": "Free AI-powered grammar checker for academic writing, IELTS preparation, and professional emails. Check grammar, spelling, and style instantly.",
-    "url": "https://typogrammar.com/grammar-checker",
+    "url": "https://typogrammar.com/grammar-checker/",
     "applicationCategory": "EducationalApplication",
     "operatingSystem": "Web",
     "offers": {
@@ -244,7 +244,7 @@ const GrammarCheckerPage: React.FC = () => {
     <div className="min-h-screen bg-slate-50 dark:bg-slate-900">
       {/* Schema Markup */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webApplicationSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareApplicationSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

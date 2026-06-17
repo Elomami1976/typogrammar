@@ -5,7 +5,7 @@
     <loc>https://typogrammar.com/</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-06-15</lastmod>
   </url>
   
   <!-- Main Pages -->
@@ -81,6 +81,9 @@
   <url><loc>https://typogrammar.com/blog/how-to-use-official-toefl-practice-online/</loc><changefreq>monthly</changefreq><priority>0.9</priority><lastmod>2026-05-29</lastmod></url>
   <url><loc>https://typogrammar.com/blog/new-toefl-scoring-system-2026/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-05-29</lastmod></url>
   <url><loc>https://typogrammar.com/blog/toefl-home-edition-requirements-registration-tech-checklist/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-05-29</lastmod></url>
+  <url><loc>https://typogrammar.com/blog/toefl-speaking-tips-score-26/</loc><changefreq>monthly</changefreq><priority>0.9</priority><lastmod>2026-06-16</lastmod></url>
+  <url><loc>https://typogrammar.com/blog/best-youtube-channels-toefl-speaking-templates/</loc><changefreq>monthly</changefreq><priority>0.9</priority><lastmod>2026-06-13</lastmod></url>
+  <url><loc>https://typogrammar.com/blog/toefl-exam-fee-india-2026/</loc><changefreq>monthly</changefreq><priority>0.9</priority><lastmod>2026-06-13</lastmod></url>
   <url><loc>https://typogrammar.com/blog/best-toefl-preparation-courses-2026/</loc><changefreq>monthly</changefreq><priority>0.9</priority><lastmod>2026-05-29</lastmod></url>
   <url><loc>https://typogrammar.com/blog/best-toefl-preparation-apps-2026/</loc><changefreq>monthly</changefreq><priority>0.9</priority><lastmod>2026-05-29</lastmod></url>
   <url><loc>https://typogrammar.com/blog/ielts-writing-task-2-grammar-guide-band-8/</loc><changefreq>monthly</changefreq><priority>0.9</priority><lastmod>2026-05-29</lastmod></url>
@@ -150,8 +153,9 @@
   <url><loc>https://typogrammar.com/writing-assistant/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-05-29</lastmod></url>
   
   <!-- Tools & Practice -->
+  <url><loc>https://typogrammar.com/english-level-test/</loc><changefreq>monthly</changefreq><priority>0.9</priority><lastmod>2026-06-15</lastmod></url>
   <url><loc>https://typogrammar.com/ai-writing-tools/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-05-29</lastmod></url>
-  <url><loc>https://typogrammar.com/grammar-checker/</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-05-29</lastmod></url>
+  <url><loc>https://typogrammar.com/grammar-checker/</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-06-15</lastmod></url>
   <url><loc>https://typogrammar.com/paraphrasing-tool/</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-05-29</lastmod></url>
   <url><loc>https://typogrammar.com/free-paraphrasing-tool-without-login/</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-05-29</lastmod></url>
   <url><loc>https://typogrammar.com/ielts-band-score-calculator/</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-05-29</lastmod></url>
@@ -169,8 +173,11 @@
   <url><loc>https://typogrammar.com/teacher/</loc><changefreq>monthly</changefreq><priority>0.6</priority><lastmod>2026-05-29</lastmod></url>
   <url><loc>https://typogrammar.com/worksheets/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-05-29</lastmod></url>
   <url><loc>https://typogrammar.com/tense-visualizer/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-05-29</lastmod></url>
-  <url><loc>https://typogrammar.com/quizzes/verb-tenses-quiz/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-05-29</lastmod></url>
+  <url><loc>https://typogrammar.com/quizzes/verb-tenses-quiz/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-06-15</lastmod></url>
   
+  <!-- IELTS Writing Task 1 -->
+  <url><loc>https://typogrammar.com/ielts/ielts-writing-task-1-bar-chart-sample-answer/</loc><changefreq>monthly</changefreq><priority>0.9</priority><lastmod>2026-06-16</lastmod></url>
+
   <!-- IELTS Writing Task 2 -->
   <url><loc>https://typogrammar.com/ielts/ielts-writing-task-2-essay-types/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-05-29</lastmod></url>
   <url><loc>https://typogrammar.com/ielts/opinion-essay-ielts-band-7-9/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-05-29</lastmod></url>
@@ -201,6 +208,7 @@
   <url><loc>https://typogrammar.com/ielts/health-vocabulary-book/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-05-29</lastmod></url>
   <url><loc>https://typogrammar.com/ielts/writing-task-2-band-9-essays-book/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-05-29</lastmod></url>
   <url><loc>https://typogrammar.com/ielts/grammar-master-book/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-05-29</lastmod></url>
+  <url><loc>https://typogrammar.com/ielts/cue-cards-book/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-06-16</lastmod></url>
   <url><loc>https://typogrammar.com/ielts/50-complex-sentences-for-ielts-pdf/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-05-29</lastmod></url>
   <url><loc>https://typogrammar.com/ielts/english-grammar-pdf/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-05-29</lastmod></url>
   
@@ -242,6 +250,9 @@
   <url><loc>https://typogrammar.com/toefl/toefl-vocabulary-pdf/</loc><changefreq>monthly</changefreq><priority>0.9</priority><lastmod>2026-05-29</lastmod></url>
   <url><loc>https://typogrammar.com/toefl/toefl-writing-pdf/</loc><changefreq>monthly</changefreq><priority>0.9</priority><lastmod>2026-05-29</lastmod></url>
   <url><loc>https://typogrammar.com/toefl/1000-toefl-speaking-questions/</loc><changefreq>monthly</changefreq><priority>0.9</priority><lastmod>2026-06-01</lastmod></url>
+
+  <!-- PTE Academic Free Resources -->
+  <url><loc>https://typogrammar.com/downloads/1000-pte-academic-practice-questions/</loc><changefreq>monthly</changefreq><priority>0.9</priority><lastmod>2026-06-10</lastmod></url>
   
   <!-- TOEFL Strategy & Success -->
   <url><loc>https://typogrammar.com/toefl/strategy-success/old-toefl-vs-new-toefl/</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-05-29</lastmod></url>
@@ -373,4 +384,28 @@
   <url><loc>https://typogrammar.com/blog/common-english-mistakes-arabic-speakers/</loc><changefreq>monthly</changefreq><priority>0.9</priority><lastmod>2026-05-29</lastmod></url>
   <!-- Blog Post: English Phrases for Customer Service Jobs -->
   <url><loc>https://typogrammar.com/blog/english-phrases-for-customer-service-jobs/</loc><changefreq>monthly</changefreq><priority>0.9</priority><lastmod>2026-05-29</lastmod></url>
+
+  <!-- TypoGrammar Educators Network -->
+  <url><loc>https://typogrammar.com/educators/</loc><changefreq>weekly</changefreq><priority>0.9</priority><lastmod>2026-06-15</lastmod></url>
+  <url><loc>https://typogrammar.com/authors/</loc><changefreq>weekly</changefreq><priority>0.8</priority><lastmod>2026-06-15</lastmod></url>
+  <url><loc>https://typogrammar.com/contributor-articles/</loc><changefreq>weekly</changefreq><priority>0.8</priority><lastmod>2026-06-15</lastmod></url>
+  <url><loc>https://typogrammar.com/contributor-guidelines/</loc><changefreq>monthly</changefreq><priority>0.6</priority><lastmod>2026-06-05</lastmod></url>
+
+  <!-- Educators Network - Authors -->
+  <url><loc>https://typogrammar.com/author/ayesha-mahmuda/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-06-05</lastmod></url>
+  <url><loc>https://typogrammar.com/author/priya-darshini-arasavelli/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-06-05</lastmod></url>
+  <url><loc>https://typogrammar.com/author/petr-varfolomeev/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-06-08</lastmod></url>
+  <url><loc>https://typogrammar.com/author/wessam-el-shatawy/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-06-13</lastmod></url>
+  <url><loc>https://typogrammar.com/author/mariela-villalobos-segovia/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-06-14</lastmod></url>
+
+  <!-- Educators Network - Contributor Articles -->
+  <url><loc>https://typogrammar.com/contributor-articles/why-some-students-understand-english-but-struggle-to-speak-it/</loc><changefreq>monthly</changefreq><priority>0.9</priority><lastmod>2026-06-05</lastmod></url>
+  <url><loc>https://typogrammar.com/contributor-articles/how-to-sound-more-natural-in-english/</loc><changefreq>monthly</changefreq><priority>0.9</priority><lastmod>2026-06-05</lastmod></url>
+  <url><loc>https://typogrammar.com/contributor-articles/25-most-common-grammar-mistakes-made-by-esl-learners/</loc><changefreq>monthly</changefreq><priority>0.9</priority><lastmod>2026-06-08</lastmod></url>
+  <url><loc>https://typogrammar.com/contributor-articles/from-studying-english-to-living-in-it/</loc><changefreq>monthly</changefreq><priority>0.9</priority><lastmod>2026-06-13</lastmod></url>
+  <url><loc>https://typogrammar.com/contributor-articles/english-pronunciation-challenges-for-spanish-native-speakers/</loc><changefreq>monthly</changefreq><priority>0.9</priority><lastmod>2026-06-14</lastmod></url>
+  <url><loc>https://typogrammar.com/author/asma-batool/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-06-15</lastmod></url>
+  <url><loc>https://typogrammar.com/contributor-articles/25-common-grammar-mistakes-esl-learners-make-and-how-teachers-can-correct/</loc><changefreq>monthly</changefreq><priority>0.9</priority><lastmod>2026-06-15</lastmod></url>
+  <url><loc>https://typogrammar.com/author/aleeza-saleem/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-06-16</lastmod></url>
+  <url><loc>https://typogrammar.com/contributor-articles/from-understanding-english-to-speaking-it-why-fluency-feels-so-difficult/</loc><changefreq>monthly</changefreq><priority>0.9</priority><lastmod>2026-06-16</lastmod></url>
 </urlset>

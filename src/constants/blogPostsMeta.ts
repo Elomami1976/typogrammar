@@ -14,6 +14,39 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
+    "slug": "toefl-speaking-tips-score-26",
+    "title": "TOEFL Speaking Tips to Score 26: The Complete 2025 Guide",
+    "author": "TypoGrammar Editorial Team",
+    "date": "June 16, 2026",
+    "summary": "Want to score 26 on TOEFL Speaking? This guide covers the rubric, templates, recording habits, delivery tips, and common mistakes -- everything you need to reach 26 systematically.",
+    "category": "Test Preparation",
+    "image": "/images/blog/toefl-speaking-tips-to-score-26.png",
+    "imageAlt": "Student practicing TOEFL speaking with a headset and laptop, featuring expert TOEFL speaking tips to score 26, including clear speech, idea organization, time management, and regular practice.",
+    "readMinutes": 10
+  },
+  {
+    "slug": "best-youtube-channels-toefl-speaking-templates",
+    "title": "Best YouTube Channels for TOEFL Speaking Templates and Practice Tests (2026)",
+    "author": "TypoGrammar Editorial Team",
+    "date": "June 13, 2026",
+    "summary": "Discover the best YouTube channels for TOEFL Speaking templates and practice tests in 2026, including TST Prep, Notefull, TOEFL Resources, and more — all free.",
+    "category": "Test Preparation",
+    "image": "/images/blog/toefl-speaking-youtube-channels-2026.png",
+    "imageAlt": "Best YouTube Channels for TOEFL Speaking Templates and Practice Tests infographic featuring a student studying with a laptop and headphones. The image highlights popular TOEFL preparation channels including TST Prep, TOEFL Test, TOEFL Resources, Notefull, TOEFL with Juva, and Linguamarina, along with tips for improving speaking fluency, practicing daily, using speaking templates, and preparing for the TOEFL Speaking section.",
+    "readMinutes": 6
+  },
+  {
+    "slug": "toefl-exam-fee-india-2026",
+    "title": "TOEFL Exam Fee in India 2026: Discounts, Coupon Codes, and Registration Guide",
+    "author": "TypoGrammar Editorial Team",
+    "date": "June 13, 2026",
+    "summary": "Find out the TOEFL exam fee in India for 2026, available discount codes, verified coupon offers, and a step-by-step registration guide to save money on your TOEFL iBT.",
+    "category": "Test Preparation",
+    "image": "/images/blog/toefl-exam-fee-india-2026-discounts-coupon-codes-registration-guide.png",
+    "imageAlt": "TOEFL Exam Fee in India 2026 infographic featuring an Indian student studying on a laptop, with sections highlighting exam fees, discount offers, coupon codes, and registration guidance. The design includes TOEFL branding, Indian flag elements, fee and discount icons, and a registration checklist for students preparing for the TOEFL exam.",
+    "readMinutes": 5
+  },
+  {
     "slug": "best-toefl-preparation-courses-2026",
     "title": "Best TOEFL Preparation Courses in 2026: Top Online Courses for Every Budget and Score Goal",
     "author": "TypoGrammar Editorial Team",

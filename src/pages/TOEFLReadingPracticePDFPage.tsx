@@ -387,7 +387,7 @@ const TOEFLReadingPracticePDFPage: React.FC = () => {
           },
         ]}
         cta={{
-          to: '/toefl/reading-strategies/',
+          to: '/toefl/toefl-reading/toefl-reading-strategies/',
           label: 'See Full TOEFL Reading Strategies',
           subtitle: 'Question types, time hacks, and pacing tips.',
         }}

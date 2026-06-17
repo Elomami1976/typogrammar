@@ -117,6 +117,20 @@ const SidebarContent: React.FC<{ onClose: () => void }> = ({ onClose }) => {
   const isIELTSPage = location.pathname.startsWith('/ielts/');
   const isTOEFLPage = location.pathname.startsWith('/toefl/');
   const isGrammarMistakesPage = location.pathname.startsWith('/grammar-mistakes');
+  const isDownloadsPage =
+    location.pathname.startsWith('/downloads/') ||
+    location.pathname.startsWith('/ielts/english-grammar-pdf') ||
+    location.pathname.startsWith('/ielts/academic-vocabulary-book') ||
+    location.pathname.startsWith('/ielts/idioms-book') ||
+    location.pathname.startsWith('/ielts/health-vocabulary-book') ||
+    location.pathname.startsWith('/ielts/writing-task-2-band-9-essays-book') ||
+    location.pathname.startsWith('/ielts/grammar-master-book') ||
+    location.pathname.startsWith('/ielts/cue-cards-book') ||
+    location.pathname.startsWith('/ielts/50-complex-sentences-for-ielts-pdf') ||
+    location.pathname.startsWith('/toefl/toefl-vocabulary-pdf') ||
+    location.pathname.startsWith('/toefl/toefl-writing-pdf') ||
+    location.pathname.startsWith('/toefl/toefl-reading-practice-pdf') ||
+    location.pathname.startsWith('/toefl/1000-toefl-speaking-questions');
 
 
   return (
@@ -158,6 +172,7 @@ const SidebarContent: React.FC<{ onClose: () => void }> = ({ onClose }) => {
             <SidebarLink to="/writing-assistant/" text="Writing Assistant" onClick={onClose} />
             <SidebarLink to="/progress/" text="My Progress" onClick={onClose} />
             <SidebarLink to="/blog/" text="Blog" onClick={onClose} />
+            <SidebarLink to="/educators/" text="Educators Network" onClick={onClose} />
             
             <SidebarSection title="Grammar Topics" defaultOpen={isTopicPage}>
               <SidebarLink to="/grammar/verb-tenses/" text="📚 The 12 Verb Tenses (Hub)" onClick={onClose} />
@@ -292,7 +307,26 @@ const SidebarContent: React.FC<{ onClose: () => void }> = ({ onClose }) => {
               <SidebarLink to="/writing/how-to-vary-sentence-structure/" text="Varying Sentence Structure" onClick={onClose} />
             </SidebarSection>
 
+            <SidebarSection title="Downloads" defaultOpen={isDownloadsPage}>
+              <h4 className="px-6 py-2 text-sm font-semibold text-slate-400 dark:text-slate-500">IELTS PDFs</h4>
+              <SidebarLink to="/ielts/english-grammar-pdf/" text="English Grammar PDF" onClick={onClose} />
+              <SidebarLink to="/ielts/academic-vocabulary-book/" text="IELTS Academic Vocabulary Book" onClick={onClose} />
+              <SidebarLink to="/ielts/idioms-book/" text="100 English Idioms PDF" onClick={onClose} />
+              <SidebarLink to="/ielts/health-vocabulary-book/" text="Health Vocabulary Book" onClick={onClose} />
+              <SidebarLink to="/ielts/writing-task-2-band-9-essays-book/" text="Band 9 Essays PDF" onClick={onClose} />
+              <SidebarLink to="/ielts/50-complex-sentences-for-ielts-pdf/" text="50 Complex Sentences PDF" onClick={onClose} />
+              <SidebarLink to="/ielts/grammar-master-book/" text="IELTS Grammar Master Book" onClick={onClose} />
+              <SidebarLink to="/ielts/cue-cards-book/" text="IELTS Cue Cards (2026 Edition)" onClick={onClose} />
+              <h4 className="px-6 py-2 pt-4 text-sm font-semibold text-slate-400 dark:text-slate-500">TOEFL &amp; PTE PDFs</h4>
+              <SidebarLink to="/toefl/toefl-vocabulary-pdf/" text="TOEFL Vocabulary PDF" onClick={onClose} />
+              <SidebarLink to="/toefl/toefl-writing-pdf/" text="TOEFL Writing PDF" onClick={onClose} />
+              <SidebarLink to="/toefl/toefl-reading-practice-pdf/" text="TOEFL Reading Practice PDF" onClick={onClose} />
+              <SidebarLink to="/toefl/1000-toefl-speaking-questions/" text="1000 TOEFL Speaking Questions" onClick={onClose} />
+              <SidebarLink to="/downloads/1000-pte-academic-practice-questions/" text="1000 PTE Academic Practice Questions" onClick={onClose} />
+            </SidebarSection>
+
             <SidebarSection title="IELTS Preparation" defaultOpen={isIELTSPage}>
+              <SidebarLink to="/ielts/ielts-writing-task-1-bar-chart-sample-answer/" text="Task 1 Bar Chart Sample Answers" onClick={onClose} />
               <SidebarLink to="/ielts/ielts-writing-task-2-essay-types/" text="IELTS Writing Task 2 Hub" onClick={onClose} />
               <SidebarLink to="/ielts/opinion-essay-ielts-band-7-9/" text="Opinion Essays" onClick={onClose} />
               <SidebarLink to="/ielts/discussion-essay-ielts-band-7-9/" text="Discussion Essays" onClick={onClose} />
@@ -322,6 +356,7 @@ const SidebarContent: React.FC<{ onClose: () => void }> = ({ onClose }) => {
               <SidebarLink to="/ielts/health-vocabulary-book/" text="Health Vocabulary Book (PDF)" onClick={onClose} />
               <SidebarLink to="/ielts/writing-task-2-band-9-essays-book/" text="Band 9 Essays Book (PDF)" onClick={onClose} />
               <SidebarLink to="/ielts/grammar-master-book/" text="Grammar Master Book (PDF)" onClick={onClose} />
+              <SidebarLink to="/ielts/cue-cards-book/" text="IELTS Cue Cards (PDF)" onClick={onClose} />
               <SidebarLink to="/ielts/50-complex-sentences-for-ielts-pdf/" text="50 Complex Sentences (PDF)" onClick={onClose} />
 <h4 className="px-6 py-2 pt-4 text-sm font-semibold text-slate-400 dark:text-slate-500">IELTS Strategy & Success</h4>
               <SidebarLink to="/ielts/is-ielts-getting-harder-2026/" text="Is IELTS Getting Harder in 2026?" onClick={onClose} />

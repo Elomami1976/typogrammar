@@ -70,6 +70,7 @@ const IeltsIdiomsBookPage = lazy(() => import('./pages/IeltsIdiomsBookPage'));
 const HealthVocabularyBookPage = lazy(() => import('./pages/HealthVocabularyBookPage'));
 const IeltsBand9EssaysBookPage = lazy(() => import('./pages/IeltsBand9EssaysBookPage'));
 const IeltsGrammarMasterBookPage = lazy(() => import('./pages/IeltsGrammarMasterBookPage'));
+const IeltsCueCardsBookPage = lazy(() => import('./pages/IeltsCueCardsBookPage'));
 const ComplexSentencesPDFPage = lazy(() => import('./pages/ComplexSentencesPDFPage'));
 const EnglishGrammarPDFPage = lazy(() => import('./pages/EnglishGrammarPDFPage'));
 const IsIELTSGettingHarderPage = lazy(() => import('./pages/IsIELTSGettingHarderPage'));
@@ -79,7 +80,17 @@ const IELTSScoreRequirementsPage = lazy(() => import('./pages/IELTSScoreRequirem
 const CountriesWithoutIELTSPage = lazy(() => import('./pages/CountriesWithoutIELTSPage'));
 const WhatIsTypogrammarPage = lazy(() => import('./pages/WhatIsTypogrammarPage'));
 const EditorialTeamPage = lazy(() => import('./pages/EditorialTeamPage'));
+
+// TypoGrammar Educators Network
+const EducatorsHomePage = lazy(() => import('./pages/educators/EducatorsHomePage'));
+const AuthorsDirectoryPage = lazy(() => import('./pages/educators/AuthorsDirectoryPage'));
+const AuthorProfilePage = lazy(() => import('./pages/educators/AuthorProfilePage'));
+const ContributorArticlesPage = lazy(() => import('./pages/educators/ContributorArticlesPage'));
+const ContributorArticlePage = lazy(() => import('./pages/educators/ContributorArticlePage'));
+const ContributorGuidelinesPage = lazy(() => import('./pages/educators/ContributorGuidelinesPage'));
 const VerbTensesQuizPage = lazy(() => import('./pages/quizzes/VerbTensesQuizPage'));
+const EnglishLevelTestPage = lazy(() => import('./pages/EnglishLevelTestPage'));
+const IELTSWritingTask1BarChartPage = lazy(() => import('./pages/IELTSWritingTask1BarChartPage'));
 const IELTSTestsPage = lazy(() => import('./pages/IELTSTestsPage'));
 const IELTSListeningMockTest1Section1Page = lazy(() => import('./pages/IELTSListeningMockTest1Section1Page'));
 const IELTSAcademicReadingTest01Page = lazy(() => import('./pages/ielts-tests/IELTSAcademicReadingTest01Page'));
@@ -107,6 +118,8 @@ const TOEFLReadingPracticePDFPage = lazy(() => import('./pages/TOEFLReadingPract
 const TOEFLVocabularyPDFPage = lazy(() => import('./pages/TOEFLVocabularyPDFPage'));
 const TOEFLWritingPDFPage = lazy(() => import('./pages/TOEFLWritingPDFPage'));
 const TOEFL1000SpeakingQuestionsPage = lazy(() => import('./pages/TOEFL1000SpeakingQuestionsPage'));
+// PTE Academic Free Resources
+const PTE1000AcademicPracticeQuestionsPage = lazy(() => import('./pages/PTE1000AcademicPracticeQuestionsPage'));
 // TOEFL Strategy & Success
 const OldTOEFLvsNewTOEFL2026Page = lazy(() => import('./pages/OldTOEFLvsNewTOEFL2026Page'));
 const TOEFLCompleteTheWordsPage = lazy(() => import('./pages/TOEFLCompleteTheWordsPage'));
@@ -316,6 +329,14 @@ const App: React.FC = () => {
             <Route path="reading/how-to-read-critically" element={<Suspense fallback={<PageLoader />}><CriticalReadingPage /></Suspense>} />
             <Route path="about" element={<Suspense fallback={<PageLoader />}><AboutPage /></Suspense>} />
             <Route path="about/editorial-team" element={<Suspense fallback={<PageLoader />}><EditorialTeamPage /></Suspense>} />
+
+            {/* TypoGrammar Educators Network */}
+            <Route path="educators" element={<Suspense fallback={<PageLoader />}><EducatorsHomePage /></Suspense>} />
+            <Route path="authors" element={<Suspense fallback={<PageLoader />}><AuthorsDirectoryPage /></Suspense>} />
+            <Route path="author/:slug" element={<Suspense fallback={<PageLoader />}><AuthorProfilePage /></Suspense>} />
+            <Route path="contributor-articles" element={<Suspense fallback={<PageLoader />}><ContributorArticlesPage /></Suspense>} />
+            <Route path="contributor-articles/:slug" element={<Suspense fallback={<PageLoader />}><ContributorArticlePage /></Suspense>} />
+            <Route path="contributor-guidelines" element={<Suspense fallback={<PageLoader />}><ContributorGuidelinesPage /></Suspense>} />
             <Route path="contact" element={<Suspense fallback={<PageLoader />}><ContactPage /></Suspense>} />
             <Route path="privacy-policy" element={<Suspense fallback={<PageLoader />}><PrivacyPolicyPage /></Suspense>} />
             <Route path="terms-of-service" element={<Suspense fallback={<PageLoader />}><TermsOfServicePage /></Suspense>} />
@@ -337,9 +358,13 @@ const App: React.FC = () => {
             <Route path="ielts-band-score-calculator" element={<Suspense fallback={<PageLoader />}><IELTSBandScoreCalculatorPage /></Suspense>} />
             <Route path="essay-topic-generator" element={<Suspense fallback={<PageLoader />}><EssayTopicGeneratorPage /></Suspense>} />
             
-            {/* Quizzes Routes */}
+            {/* Quizzes & Tests Routes */}
             <Route path="quizzes/verb-tenses-quiz" element={<Suspense fallback={<PageLoader />}><VerbTensesQuizPage /></Suspense>} />
+            <Route path="english-level-test" element={<Suspense fallback={<PageLoader />}><EnglishLevelTestPage /></Suspense>} />
             
+            {/* IELTS Writing Task 1 Routes */}
+            <Route path="ielts/ielts-writing-task-1-bar-chart-sample-answer" element={<Suspense fallback={<PageLoader />}><IELTSWritingTask1BarChartPage /></Suspense>} />
+
             {/* IELTS Writing Task 2 Routes */}
             <Route path="ielts/ielts-writing-task-2-essay-types" element={<Suspense fallback={<PageLoader />}><IELTSWritingTask2Page /></Suspense>} />
             <Route path="ielts/opinion-essay-ielts-band-7-9" element={<Suspense fallback={<PageLoader />}><OpinionEssayIELTSPage /></Suspense>} />
@@ -374,6 +399,7 @@ const App: React.FC = () => {
             <Route path="ielts/health-vocabulary-book" element={<Suspense fallback={<PageLoader />}><HealthVocabularyBookPage /></Suspense>} />
             <Route path="ielts/writing-task-2-band-9-essays-book" element={<Suspense fallback={<PageLoader />}><IeltsBand9EssaysBookPage /></Suspense>} />
             <Route path="ielts/grammar-master-book" element={<Suspense fallback={<PageLoader />}><IeltsGrammarMasterBookPage /></Suspense>} />
+            <Route path="ielts/cue-cards-book" element={<Suspense fallback={<PageLoader />}><IeltsCueCardsBookPage /></Suspense>} />
             <Route path="ielts/50-complex-sentences-for-ielts-pdf" element={<Suspense fallback={<PageLoader />}><ComplexSentencesPDFPage /></Suspense>} />
             <Route path="ielts/english-grammar-pdf" element={<Suspense fallback={<PageLoader />}><EnglishGrammarPDFPage /></Suspense>} />
             
@@ -412,6 +438,8 @@ const App: React.FC = () => {
             <Route path="toefl/toefl-vocabulary-pdf" element={<Suspense fallback={<PageLoader />}><TOEFLVocabularyPDFPage /></Suspense>} />
             <Route path="toefl/toefl-writing-pdf" element={<Suspense fallback={<PageLoader />}><TOEFLWritingPDFPage /></Suspense>} />
             <Route path="toefl/1000-toefl-speaking-questions" element={<Suspense fallback={<PageLoader />}><TOEFL1000SpeakingQuestionsPage /></Suspense>} />
+            {/* PTE Academic Free Resources Routes */}
+            <Route path="downloads/1000-pte-academic-practice-questions" element={<Suspense fallback={<PageLoader />}><PTE1000AcademicPracticeQuestionsPage /></Suspense>} />
             {/* TOEFL Strategy & Success Routes */}
             <Route path="toefl/strategy-success/old-toefl-vs-new-toefl" element={<Suspense fallback={<PageLoader />}><OldTOEFLvsNewTOEFL2026Page /></Suspense>} />
             <Route path="toefl/strategy-success/toefl-complete-the-words" element={<Suspense fallback={<PageLoader />}><TOEFLCompleteTheWordsPage /></Suspense>} />

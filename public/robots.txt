@@ -17,6 +17,14 @@
 # ---------------------------------------------------------------
 User-agent: *
 Allow: /
+# Educators Network - explicitly indexable for E-E-A-T signals.
+Allow: /educators/
+Allow: /authors/
+Allow: /author/
+Allow: /contributor-articles/
+Allow: /contributor-guidelines/
+# Free PDF downloads - explicitly indexable.
+Allow: /downloads/
 Disallow: /progress
 Disallow: /progress/
 Disallow: /_spa-shell.html

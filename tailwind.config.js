@@ -4,6 +4,11 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  // Force class-based dark mode so OS-level "prefers-color-scheme: dark"
+  // does NOT auto-trigger every `dark:` utility. The site renders in light
+  // mode for all users; `dark:` styles only apply when `.dark` is on <html>,
+  // which we never set.
+  darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {

@@ -15,11 +15,8 @@ const Layout: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
 
-  // Force light mode - remove any dark class
-  useEffect(() => {
-    document.documentElement.classList.remove('dark');
-    localStorage.removeItem('theme');
-  }, []);
+  // Site renders in light mode for all viewports. The inline script in
+  // index.html clears any stale `dark` class before React mounts.
 
   // Close mobile menu on route change
   useEffect(() => {

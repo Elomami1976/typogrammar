@@ -252,7 +252,7 @@ const TOEFLWritingTopicsPage: React.FC = () => {
             },
           ]}
           cta={{
-            to: '/toefl-writing-templates/',
+            to: '/toefl/toefl-writing/toefl-writing-templates/',
             label: 'See Step-by-Step TOEFL Templates',
             subtitle: 'Use these structures with the topics above.',
           }}

@@ -76,6 +76,7 @@ const NAV_GROUPS: NavGroup[] = [
       {
         heading: 'Writing & Essays',
         items: [
+          { label: 'Task 1 Bar Chart Answers', to: '/ielts/ielts-writing-task-1-bar-chart-sample-answer/' },
           { label: 'Writing Task 2 Hub', to: '/ielts/ielts-writing-task-2-essay-types/' },
           { label: 'Opinion Essays', to: '/ielts/opinion-essay-ielts-band-7-9/' },
           { label: 'Discussion Essays', to: '/ielts/discussion-essay-ielts-band-7-9/' },
@@ -120,12 +121,6 @@ const NAV_GROUPS: NavGroup[] = [
           { label: 'Band 7 Vocabulary', to: '/ielts/vocabulary/band-7/' },
           { label: 'Band 8 Vocabulary', to: '/ielts/vocabulary/band-8/' },
           { label: 'Band 9 Vocabulary', to: '/ielts/vocabulary/band-9/' },
-          { label: 'Grammar PDF', to: '/ielts/english-grammar-pdf/' },
-          { label: 'Free IELTS Vocabulary Book', to: '/ielts/academic-vocabulary-book/' },
-          { label: '100 English Idioms PDF', to: '/ielts/idioms-book/' },
-          { label: 'Health Vocabulary Book', to: '/ielts/health-vocabulary-book/' },
-          { label: 'Band 9 Essays PDF', to: '/ielts/writing-task-2-band-9-essays-book/' },
-          { label: '50 Complex Sentences PDF', to: '/ielts/50-complex-sentences-for-ielts-pdf/' },
           { label: 'Score Requirements by Country', to: '/ielts/ielts-score-requirements-by-country/' },
           { label: 'Countries Without IELTS', to: '/ielts/countries-without-ielts/' },
         ],
@@ -175,10 +170,6 @@ const NAV_GROUPS: NavGroup[] = [
           { label: 'iBT vs LTP', to: '/toefl/strategy-success/toefl-ibt-vs-toefl-ltp/' },
           { label: 'Speaking: Average vs High-Scoring', to: '/toefl/strategy-success/toefl-speaking-average-vs-high-scoring-answer/' },
           { label: 'Complete the Words', to: '/toefl/strategy-success/toefl-complete-the-words/' },
-          { label: 'Vocabulary PDF', to: '/toefl/toefl-vocabulary-pdf/' },
-          { label: 'Writing PDF', to: '/toefl/toefl-writing-pdf/' },
-          { label: 'Reading Practice PDF', to: '/toefl/toefl-reading-practice-pdf/' },
-          { label: '1000 Speaking Questions', to: '/toefl/1000-toefl-speaking-questions/' },
         ],
       },
     ],
@@ -207,10 +198,42 @@ const NAV_GROUPS: NavGroup[] = [
           { label: 'Grammar Flashcards', to: '/practice-tools/' },
           { label: 'Interactive Exercises', to: '/interactive-exercises/' },
           { label: 'Verb Tenses Quiz', to: '/quizzes/verb-tenses-quiz/' },
+          { label: 'English Level Test', to: '/english-level-test/' },
           { label: 'Pronunciation Guide', to: '/pronunciation/' },
           { label: 'Worksheets & PDFs', to: '/worksheets/' },
           { label: 'For Teachers', to: '/teacher/' },
           { label: 'My Progress', to: '/progress/' },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'downloads',
+    label: 'Downloads',
+    columns: 2,
+    align: 'right',
+    sections: [
+      {
+        heading: 'IELTS PDFs',
+        items: [
+          { label: 'English Grammar PDF', to: '/ielts/english-grammar-pdf/' },
+          { label: 'IELTS Academic Vocabulary Book', to: '/ielts/academic-vocabulary-book/' },
+          { label: '100 English Idioms PDF', to: '/ielts/idioms-book/' },
+          { label: 'Health Vocabulary Book', to: '/ielts/health-vocabulary-book/' },
+          { label: 'Band 9 Essays PDF', to: '/ielts/writing-task-2-band-9-essays-book/' },
+          { label: '50 Complex Sentences PDF', to: '/ielts/50-complex-sentences-for-ielts-pdf/' },
+          { label: 'IELTS Grammar Master Book', to: '/ielts/grammar-master-book/' },
+          { label: 'IELTS Cue Cards (2026 Edition)', to: '/ielts/cue-cards-book/' },
+        ],
+      },
+      {
+        heading: 'TOEFL & PTE PDFs',
+        items: [
+          { label: 'TOEFL Vocabulary PDF', to: '/toefl/toefl-vocabulary-pdf/' },
+          { label: 'TOEFL Writing PDF', to: '/toefl/toefl-writing-pdf/' },
+          { label: 'TOEFL Reading Practice PDF', to: '/toefl/toefl-reading-practice-pdf/' },
+          { label: '1000 TOEFL Speaking Questions', to: '/toefl/1000-toefl-speaking-questions/' },
+          { label: '1000 PTE Academic Practice Questions', to: '/downloads/1000-pte-academic-practice-questions/' },
         ],
       },
     ],
@@ -323,18 +346,18 @@ const DesktopNav: React.FC = () => {
         </div>
       ))}
 
-      {/* Blog, direct link */}
+      {/* Educators Network, direct link */}
       <NavLink
-        to="/blog/"
+        to="/educators/"
         className={({ isActive }) =>
           `px-3 py-2 rounded-md text-sm font-semibold transition-colors duration-150 ${
             isActive
-              ? 'text-blue-600 bg-blue-50'
-              : 'text-slate-700 hover:text-blue-600 hover:bg-slate-100'
+              ? 'text-red-600 bg-red-50 dark:text-red-500 dark:bg-red-900/20'
+              : 'text-slate-700 hover:text-red-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:text-red-500 dark:hover:bg-slate-800'
           }`
         }
       >
-        Blog
+        Educators
       </NavLink>
     </nav>
   );

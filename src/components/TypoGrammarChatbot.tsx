@@ -107,17 +107,15 @@ const TypoGrammarChatbot: React.FC = () => {
           type="button"
           aria-label="Open TypoGrammar AI chat"
           onClick={() => setOpen(true)}
-          className="fixed bottom-5 right-5 z-50 flex items-center gap-2 rounded-full bg-blue-600 text-white shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 px-4 py-3 transition-all"
+          className="fixed bottom-5 right-5 z-50 flex items-center gap-2 rounded-full bg-blue-600 text-white shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 pl-2 pr-4 py-2 transition-all"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            aria-hidden="true"
-          >
-            <path d="M12 3C6.48 3 2 6.94 2 11.5c0 2.05.93 3.92 2.47 5.36-.1.83-.42 2.36-1.36 3.78a.5.5 0 0 0 .6.74c1.93-.55 3.27-1.3 4.02-1.84A11.7 11.7 0 0 0 12 20c5.52 0 10-3.94 10-8.5S17.52 3 12 3z" />
-          </svg>
+          <img
+            src="/typogrammar-ai-icon.png"
+            alt=""
+            width={32}
+            height={32}
+            className="h-8 w-8 rounded-full"
+          />
           <span className="text-sm font-semibold">Ask TypoGrammar AI</span>
         </button>
       )}
