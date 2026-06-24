@@ -2,6 +2,7 @@
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import GoogleAd from '../components/GoogleAd';
+import { Download, Check, BookOpen, Users, HelpCircle, FileText, Star, ChevronRight, AlignLeft } from 'lucide-react';
 
 const ComplexSentencesPDFPage: React.FC = () => {
   usePageMetadata({
@@ -147,20 +148,7 @@ const ComplexSentencesPDFPage: React.FC = () => {
                 download
                 className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 text-center"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 mr-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                  />
-                </svg>
+                <Download className="h-5 w-5 mr-2" />
                 Download Free PDF
               </a>
               <button
@@ -185,6 +173,22 @@ const ComplexSentencesPDFPage: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Stats Strip */}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+        {[
+          { icon: <FileText className="h-6 w-6 text-blue-600" />, value: 'Free', label: 'Download' },
+          { icon: <Download className="h-6 w-6 text-green-600" />, value: 'PDF', label: 'Instant Access' },
+          { icon: <Users className="h-6 w-6 text-violet-600" />, value: '50', label: 'Complex Sentences' },
+          { icon: <Star className="h-6 w-6 text-amber-500" />, value: 'Band 9', label: 'Strategies' },
+        ].map((stat, i) => (
+          <div key={i} className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl p-4 flex flex-col items-center text-center shadow-sm">
+            {stat.icon}
+            <div className="font-bold text-slate-900 dark:text-slate-100 mt-2">{stat.value}</div>
+            <div className="text-xs text-slate-500 dark:text-slate-400">{stat.label}</div>
+          </div>
+        ))}
+      </div>
 
       <div className="my-8">
         <GoogleAd adSlot="6406598038" />
@@ -232,7 +236,7 @@ const ComplexSentencesPDFPage: React.FC = () => {
       {/* WHAT'S INSIDE */}
       <section id="contents" className="mb-16">
         <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-100 mb-8">
-          📖 What's Inside the PDF?
+          <span className="inline-flex items-center gap-2"><BookOpen className="h-7 w-7 text-blue-600" />What's Inside the PDF?</span>
         </h2>
 
         <div className="space-y-6">
@@ -251,7 +255,7 @@ const ComplexSentencesPDFPage: React.FC = () => {
                 'Time Clauses',
               ].map((item, i) => (
                 <li key={i} className="flex items-center text-slate-700 dark:text-slate-300">
-                  <span className="text-green-600 dark:text-green-400 mr-2">•</span>
+                  <ChevronRight className="h-4 w-4 text-green-500 mr-2 shrink-0 mt-0.5" />
                   {item}
                 </li>
               ))}
@@ -289,7 +293,7 @@ const ComplexSentencesPDFPage: React.FC = () => {
                 'IELTS usage tip',
               ].map((item, i) => (
                 <li key={i} className="flex items-center text-slate-700 dark:text-slate-300">
-                  <span className="text-blue-600 dark:text-blue-400 mr-2">•</span>
+                  <ChevronRight className="h-4 w-4 text-blue-500 mr-2 shrink-0 mt-0.5" />
                   {item}
                 </li>
               ))}
@@ -326,20 +330,7 @@ const ComplexSentencesPDFPage: React.FC = () => {
             download
             className="inline-flex items-center justify-center px-10 py-5 bg-white text-blue-600 font-bold rounded-lg shadow-lg hover:shadow-xl hover:bg-blue-50 transition-all duration-200 text-lg"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 mr-3"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-              />
-            </svg>
+            <Download className="h-6 w-6 mr-3" />
             Download 50 Complex Sentences PDF
           </a>
           <p className="text-sm text-blue-200 mt-4">
@@ -351,7 +342,7 @@ const ComplexSentencesPDFPage: React.FC = () => {
       {/* WHO IS THIS FOR */}
       <section className="mb-16">
         <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-100 mb-8">
-          👤 Who Is This For?
+          <span className="inline-flex items-center gap-2"><Users className="h-7 w-7 text-blue-600" />Who Is This For?</span>
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {[
@@ -363,9 +354,7 @@ const ComplexSentencesPDFPage: React.FC = () => {
           ].map((item, i) => (
             <div key={i} className="flex items-center p-4 bg-slate-50 dark:bg-slate-800 rounded-lg">
               <div className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mr-3">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                </svg>
+                <Check className="h-5 w-5" />
               </div>
               <span className="text-slate-700 dark:text-slate-300 font-medium">{item}</span>
             </div>
@@ -376,7 +365,7 @@ const ComplexSentencesPDFPage: React.FC = () => {
       {/* HOW TO USE THIS RESOURCE */}
       <section className="mb-16">
         <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-100 mb-8">
-          📚 How to Use This Resource
+          <span className="inline-flex items-center gap-2"><AlignLeft className="h-7 w-7 text-blue-600" />How to Use This Resource</span>
         </h2>
         <div className="grid md:grid-cols-2 gap-6">
           {[
@@ -405,7 +394,7 @@ const ComplexSentencesPDFPage: React.FC = () => {
       {/* FAQ SECTION */}
       <section className="mb-16">
         <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-100 mb-8">
-          ❓ Frequently Asked Questions
+          <span className="inline-flex items-center gap-2"><HelpCircle className="h-7 w-7 text-blue-600" />Frequently Asked Questions</span>
         </h2>
         <div className="space-y-4">
           {faqItems.map((item, index) => (
@@ -422,7 +411,7 @@ const ComplexSentencesPDFPage: React.FC = () => {
       {/* RELATED RESOURCES */}
       <section className="mb-16">
         <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-100 mb-8">
-          📚 Related Free Resources
+          <span className="inline-flex items-center gap-2"><BookOpen className="h-7 w-7 text-blue-600" />Related Free Resources</span>
         </h2>
         <div className="grid md:grid-cols-3 gap-6">
           <Link

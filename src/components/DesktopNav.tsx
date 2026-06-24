@@ -77,6 +77,8 @@ const NAV_GROUPS: NavGroup[] = [
         heading: 'Writing & Essays',
         items: [
           { label: 'Task 1 Bar Chart Answers', to: '/ielts/ielts-writing-task-1-bar-chart-sample-answer/' },
+          { label: 'Task 1 Vocabulary Guide', to: '/ielts/ielts-writing-task-1-vocabulary/' },
+          { label: 'Informal Letter Guide', to: '/ielts/how-to-write-an-IELTS-letter-informal/' },
           { label: 'Writing Task 2 Hub', to: '/ielts/ielts-writing-task-2-essay-types/' },
           { label: 'Opinion Essays', to: '/ielts/opinion-essay-ielts-band-7-9/' },
           { label: 'Discussion Essays', to: '/ielts/discussion-essay-ielts-band-7-9/' },
@@ -123,6 +125,7 @@ const NAV_GROUPS: NavGroup[] = [
           { label: 'Band 9 Vocabulary', to: '/ielts/vocabulary/band-9/' },
           { label: 'Score Requirements by Country', to: '/ielts/ielts-score-requirements-by-country/' },
           { label: 'Countries Without IELTS', to: '/ielts/countries-without-ielts/' },
+          { label: 'English Language Statistics 2026', to: '/ielts/english-language-statistics-2026/' },
         ],
       },
     ],
@@ -224,6 +227,7 @@ const NAV_GROUPS: NavGroup[] = [
           { label: '50 Complex Sentences PDF', to: '/ielts/50-complex-sentences-for-ielts-pdf/' },
           { label: 'IELTS Grammar Master Book', to: '/ielts/grammar-master-book/' },
           { label: 'IELTS Cue Cards (2026 Edition)', to: '/ielts/cue-cards-book/' },
+          { label: 'Task 1 Master Guide (2026)', to: '/ielts-writing-task-1-master-guide/' },
         ],
       },
       {

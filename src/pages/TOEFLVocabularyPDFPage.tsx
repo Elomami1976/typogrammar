@@ -2,6 +2,7 @@
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import { ArticleParagraph, ArticleHeading, BulletList } from '../components/ArticleComponents';
+import { Download, Check, Users, FileText, Star, Globe, GraduationCap } from 'lucide-react';
 
 const TOEFLVocabularyPDFPage: React.FC = () => {
   usePageMetadata({
@@ -95,6 +96,22 @@ const TOEFLVocabularyPDFPage: React.FC = () => {
       </div>
 
       {/* Download Section */}
+      {/* Stats Strip */}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-8">
+        {[
+          { icon: <FileText className="h-6 w-6 text-blue-600" />, value: 'Free', label: 'Download' },
+          { icon: <Download className="h-6 w-6 text-green-600" />, value: 'PDF', label: 'Instant Access' },
+          { icon: <Globe className="h-6 w-6 text-violet-600" />, value: '500 Words', label: 'Academic Vocab' },
+          { icon: <GraduationCap className="h-6 w-6 text-amber-500" />, value: 'TOEFL', label: 'iBT Ready' },
+        ].map((stat, i) => (
+          <div key={i} className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl p-4 flex flex-col items-center text-center shadow-sm">
+            {stat.icon}
+            <div className="font-bold text-slate-900 dark:text-slate-100 mt-2">{stat.value}</div>
+            <div className="text-xs text-slate-500 dark:text-slate-400">{stat.label}</div>
+          </div>
+        ))}
+      </div>
+
       <div className="bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 border border-green-200 dark:border-green-800 rounded-xl p-8 my-10 text-center">
         <h2 className="text-2xl font-bold text-green-800 dark:text-green-200 mb-4">
           Download TOEFL Vocabulary PDF (Free)
@@ -102,21 +119,19 @@ const TOEFLVocabularyPDFPage: React.FC = () => {
         <p className="text-green-700 dark:text-green-300 mb-6">
           Get instant access to the full PDF here:
         </p>
-        
+
         <div className="flex flex-col md:flex-row items-center justify-center gap-6">
-          <img 
-            src="/images/books/TOEFL-Vocabulary-500-Academic-Word-List.jpg" 
-            alt="TOEFL Vocabulary 500 Academic Words PDF Cover" 
+          <img
+            src="/images/books/TOEFL-Vocabulary-500-Academic-Word-List.jpg"
+            alt="TOEFL Vocabulary 500 Academic Words PDF Cover"
             className="w-48 h-auto rounded-lg shadow-lg"
           />
-          <a 
-            href="/downloads/TOEFL-Vocabulary-500-word.pdf" 
+          <a
+            href="/downloads/TOEFL-Vocabulary-500-word.pdf"
             download
             className="inline-flex items-center px-8 py-4 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg shadow-lg transition-all duration-200 hover:scale-105"
           >
-            <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-            </svg>
+            <Download className="w-6 h-6 mr-2" />
             Download Free PDF
           </a>
         </div>
@@ -347,14 +362,12 @@ const TOEFLVocabularyPDFPage: React.FC = () => {
         <p className="text-green-800 dark:text-green-200 font-semibold text-lg mb-4">
           Start building your TOEFL vocabulary today, your target score is within reach.
         </p>
-        <a 
-          href="/downloads/TOEFL-Vocabulary-500-word.pdf" 
+        <a
+          href="/downloads/TOEFL-Vocabulary-500-word.pdf"
           download
           className="inline-flex items-center px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg shadow transition-colors"
         >
-          <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-          </svg>
+          <Download className="w-5 h-5 mr-2" />
           Download Free PDF Now
         </a>
       </div>

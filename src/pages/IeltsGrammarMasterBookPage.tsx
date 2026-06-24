@@ -2,6 +2,7 @@
 import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import GoogleAd from '../components/GoogleAd';
+import { Download, Check, BookOpen, Target, Users, TrendingUp, HelpCircle, FileText, Award, ChevronRight, Lightbulb, Star, PenLine, AlignLeft } from 'lucide-react';
 
 const IeltsGrammarMasterBookPage: React.FC = () => {
   usePageMetadata({
@@ -218,20 +219,7 @@ const IeltsGrammarMasterBookPage: React.FC = () => {
                 download
                 className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 text-center"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 mr-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                  />
-                </svg>
+                <Download className="h-5 w-5 mr-2" />
                 Download Free PDF
               </a>
               <button
@@ -257,6 +245,22 @@ const IeltsGrammarMasterBookPage: React.FC = () => {
         </div>
       </section>
 
+      {/* Stats Strip */}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+        {[
+          { icon: <FileText className="h-6 w-6 text-blue-600" />, value: 'Free', label: 'Download' },
+          { icon: <Download className="h-6 w-6 text-green-600" />, value: 'PDF', label: 'Instant Access' },
+          { icon: <Users className="h-6 w-6 text-violet-600" />, value: '10,000+', label: 'Learners' },
+          { icon: <Star className="h-6 w-6 text-amber-500" />, value: 'Band 9', label: 'Grammar Secrets' },
+        ].map((stat, i) => (
+          <div key={i} className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl p-4 flex flex-col items-center text-center shadow-sm">
+            {stat.icon}
+            <div className="font-bold text-slate-900 dark:text-slate-100 mt-2">{stat.value}</div>
+            <div className="text-xs text-slate-500 dark:text-slate-400">{stat.label}</div>
+          </div>
+        ))}
+      </div>
+
       <div className="my-8">
         <GoogleAd adSlot="6406598038" />
       </div>
@@ -280,7 +284,7 @@ const IeltsGrammarMasterBookPage: React.FC = () => {
       <section className="mb-16">
         <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-slate-800 dark:to-slate-900 rounded-2xl p-8 md:p-12 shadow-lg">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-100 mb-8">
-            🎯 What You Will Learn
+            <span className="inline-flex items-center gap-2"><Target className="h-7 w-7 text-blue-600" />What You Will Learn</span>
           </h2>
           <p className="text-lg text-slate-700 dark:text-slate-300 mb-6">
             This book unlocks the <strong>IELTS Band 9 grammar secrets</strong> that help you:
@@ -296,9 +300,7 @@ const IeltsGrammarMasterBookPage: React.FC = () => {
             ].map((item, i) => (
               <div key={i} className="flex items-start">
                 <div className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mr-4 mt-1">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
+                  <Check className="h-5 w-5" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg text-slate-900 dark:text-slate-100 mb-1">{item.title}</h3>
@@ -313,7 +315,7 @@ const IeltsGrammarMasterBookPage: React.FC = () => {
       {/* WHAT'S INSIDE */}
       <section id="contents" className="mb-16">
         <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-100 mb-8">
-          📖 What's Inside the Book
+          <span className="inline-flex items-center gap-2"><BookOpen className="h-7 w-7 text-blue-600" />What's Inside the Book</span>
         </h2>
 
         <div className="space-y-6">
@@ -335,7 +337,7 @@ const IeltsGrammarMasterBookPage: React.FC = () => {
                 'Complex sentence structures',
               ].map((item, i) => (
                 <li key={i} className="flex items-center text-slate-700 dark:text-slate-300">
-                  <span className="text-green-600 dark:text-green-400 mr-2">•</span>
+                  <ChevronRight className="h-4 w-4 text-green-500 mr-2 shrink-0 mt-0.5" />
                   {item}
                 </li>
               ))}
@@ -356,7 +358,7 @@ const IeltsGrammarMasterBookPage: React.FC = () => {
                 'IELTS Writing applications',
               ].map((item, i) => (
                 <div key={i} className="flex items-center text-slate-700 dark:text-slate-300">
-                  <span className="text-purple-600 dark:text-purple-400 mr-2">✓</span>
+                  <ChevronRight className="h-4 w-4 text-purple-500 mr-2 shrink-0 mt-0.5" />
                   {item}
                 </div>
               ))}
@@ -397,7 +399,7 @@ const IeltsGrammarMasterBookPage: React.FC = () => {
       <section className="mb-16">
         <div className="bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-slate-800 dark:to-slate-900 rounded-2xl p-8 md:p-12 border border-indigo-200 dark:border-slate-700">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-100 mb-6">
-            🔓 IELTS Band 9 Grammar Secrets Revealed
+            <span className="inline-flex items-center gap-2"><Lightbulb className="h-7 w-7 text-indigo-600" />IELTS Band 9 Grammar Secrets Revealed</span>
           </h2>
           <p className="text-lg text-slate-700 dark:text-slate-300 mb-6">
             Top scorers don't just know grammar rules-they apply them strategically:
@@ -422,7 +424,7 @@ const IeltsGrammarMasterBookPage: React.FC = () => {
       {/* WHO THIS BOOK IS FOR */}
       <section className="mb-16">
         <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-100 mb-8">
-          🎓 Who This Book Is For
+          <span className="inline-flex items-center gap-2"><Award className="h-7 w-7 text-blue-600" />Who This Book Is For</span>
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {[
@@ -443,7 +445,7 @@ const IeltsGrammarMasterBookPage: React.FC = () => {
       {/* HOW IT WILL IMPROVE YOUR SCORE */}
       <section className="mb-16">
         <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-100 mb-8">
-          📈 How This Book Will Improve Your Score
+          <span className="inline-flex items-center gap-2"><TrendingUp className="h-7 w-7 text-blue-600" />How This Book Will Improve Your Score</span>
         </h2>
         <p className="text-lg text-slate-700 dark:text-slate-300 mb-6">By mastering these grammar secrets, you will:</p>
         <div className="space-y-3">
@@ -475,7 +477,7 @@ const IeltsGrammarMasterBookPage: React.FC = () => {
           {peopleAlsoAsk.map((item, idx) => (
             <div key={idx} className="bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg p-4">
               <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-2 flex items-center">
-                <span className="text-blue-500 mr-2">❓</span>
+                <HelpCircle className="h-5 w-5 text-blue-500 mr-2 shrink-0" />
                 {item.question}
               </h3>
               <p className="text-slate-600 dark:text-slate-400 ml-6">{item.answer}</p>
@@ -505,7 +507,7 @@ const IeltsGrammarMasterBookPage: React.FC = () => {
       <section className="mb-16">
         <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl p-8 md:p-12 text-center text-white shadow-xl">
           <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">
-            📥 Download the Book
+            <span className="inline-flex items-center gap-2"><Download className="h-7 w-7" />Download the Book</span>
           </h2>
           <p className="text-lg text-blue-100 mb-8">
             Get the official TypoGrammar IELTS Grammar Master Book, unlock Band 9 grammar secrets today.
@@ -515,20 +517,7 @@ const IeltsGrammarMasterBookPage: React.FC = () => {
             download
             className="inline-flex items-center justify-center px-10 py-5 bg-white text-blue-600 font-bold text-lg rounded-lg shadow-lg hover:shadow-xl hover:bg-blue-50 transition-all duration-200"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 mr-3"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-              />
-            </svg>
+            <Download className="h-6 w-6 mr-3" />
             Download IELTS Grammar Master Book (PDF)
           </a>
           <p className="text-sm text-blue-200 mt-4">PDF, Instant Download, No signup required</p>

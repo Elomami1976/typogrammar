@@ -5,11 +5,12 @@ type Props = {
   adSlot: string
   style?: React.CSSProperties
   format?: string
+  layout?: string
   fullWidthResponsive?: boolean
   adTest?: 'on' | 'off'
 }
 
-const GoogleAd: React.FC<Props> = ({ adSlot, style, format = 'auto', fullWidthResponsive = true, adTest }) => {
+const GoogleAd: React.FC<Props> = ({ adSlot, style, format = 'auto', layout, fullWidthResponsive = true, adTest }) => {
   const adRef = useRef<HTMLModElement>(null)
   const location = useLocation()
 
@@ -38,12 +39,13 @@ const GoogleAd: React.FC<Props> = ({ adSlot, style, format = 'auto', fullWidthRe
 
   const attrs: any = {
     className: 'adsbygoogle',
-    style: style || (format === 'auto' ? { display: 'block' } : undefined),
+    style: style || (layout === 'in-article' ? { display: 'block', textAlign: 'center' } : format === 'auto' ? { display: 'block' } : undefined),
     'data-ad-client': 'ca-pub-4709657806016589',
     'data-ad-slot': adSlot,
   }
+  if (layout) attrs['data-ad-layout'] = layout
   if (format) attrs['data-ad-format'] = format
-  if (fullWidthResponsive) attrs['data-full-width-responsive'] = 'true'
+  if (!layout && fullWidthResponsive) attrs['data-full-width-responsive'] = 'true'
   if (adTest) attrs['data-adtest'] = adTest
 
   return <ins ref={adRef} {...attrs} key={`${adSlot}-${location.pathname}`} />

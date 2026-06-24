@@ -213,6 +213,10 @@ const TopicPage: React.FC = () => {
 
       <div>{topic.content}</div>
 
+      <div className="my-6">
+        <GoogleAd adSlot="5227262163" format="fluid" layout="in-article" />
+      </div>
+
       {quizForTopic && (
         <div className="mt-12 pt-8 border-t border-slate-200 dark:border-slate-700">
           <div className="flex justify-between items-baseline mb-2">
@@ -346,6 +350,12 @@ const TopicPage: React.FC = () => {
     )}
         <div className="mt-8">
           <GoogleAd adSlot="6406598038" />
+        </div>
+        <div className="mt-6">
+          <GoogleAd adSlot="1564604936" />
+        </div>
+        <div className="mt-6">
+          <GoogleAd adSlot="2686114912" format="autorelaxed" fullWidthResponsive={false} />
         </div>
     </>
   );

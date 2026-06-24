@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import usePageMetadata from '../hooks/usePageMetadata';
 import GoogleAd from '../components/GoogleAd';
 import MiniQuiz from '../components/MiniQuiz';
+import { Download, Check, BookOpen, Users, HelpCircle, FileText, Award, ChevronRight, Star, PenLine, AlignLeft } from 'lucide-react';
 
 const EnglishGrammarPDFPage: React.FC = () => {
   usePageMetadata({
@@ -184,20 +185,7 @@ const EnglishGrammarPDFPage: React.FC = () => {
                 download
                 className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 text-center"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 mr-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                  />
-                </svg>
+                <Download className="h-5 w-5 mr-2" />
                 Download Free PDF
               </a>
               <button
@@ -222,6 +210,22 @@ const EnglishGrammarPDFPage: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Stats Strip */}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+        {[
+          { icon: <FileText className="h-6 w-6 text-blue-600" />, value: 'Free', label: 'Download' },
+          { icon: <Download className="h-6 w-6 text-green-600" />, value: 'PDF', label: 'Instant Access' },
+          { icon: <Users className="h-6 w-6 text-violet-600" />, value: '10,000+', label: 'Learners' },
+          { icon: <PenLine className="h-6 w-6 text-amber-500" />, value: '8 Topics', label: 'Grammar Chapters' },
+        ].map((stat, i) => (
+          <div key={i} className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl p-4 flex flex-col items-center text-center shadow-sm">
+            {stat.icon}
+            <div className="font-bold text-slate-900 dark:text-slate-100 mt-2">{stat.value}</div>
+            <div className="text-xs text-slate-500 dark:text-slate-400">{stat.label}</div>
+          </div>
+        ))}
+      </div>
 
       <div className="my-8">
         <GoogleAd adSlot="6406598038" />
@@ -285,7 +289,7 @@ const EnglishGrammarPDFPage: React.FC = () => {
       {/* WHAT'S INSIDE THE PDF */}
       <section id="contents" className="mb-16">
         <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-100 mb-8">
-          📖 What Is Inside the PDF
+          <span className="inline-flex items-center gap-2"><BookOpen className="h-7 w-7 text-blue-600" />What Is Inside the PDF</span>
         </h2>
 
         <p className="text-lg text-slate-700 dark:text-slate-300 mb-6">
@@ -323,7 +327,7 @@ const EnglishGrammarPDFPage: React.FC = () => {
       {/* GRAMMAR TOPICS INCLUDED */}
       <section className="mb-16">
         <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-100 mb-4">
-          📚 Grammar Topics Included
+          <span className="inline-flex items-center gap-2"><AlignLeft className="h-7 w-7 text-blue-600" />Grammar Topics Included</span>
         </h2>
         <p className="text-lg text-slate-700 dark:text-slate-300 mb-8">
           This PDF covers the most important grammar topics that every English learner should master.
@@ -398,7 +402,7 @@ const EnglishGrammarPDFPage: React.FC = () => {
       {/* WHO THIS PDF IS FOR */}
       <section className="mb-16">
         <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-100 mb-4">
-          👤 Who This Grammar PDF Is For
+          <span className="inline-flex items-center gap-2"><Users className="h-7 w-7 text-blue-600" />Who This Grammar PDF Is For</span>
         </h2>
         <p className="text-lg text-slate-700 dark:text-slate-300 mb-6">
           This grammar workbook is perfect for:
@@ -413,9 +417,7 @@ const EnglishGrammarPDFPage: React.FC = () => {
           ].map((item, i) => (
             <div key={i} className="flex items-center p-4 bg-slate-50 dark:bg-slate-800 rounded-lg">
               <div className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mr-3">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                </svg>
+                <Check className="h-5 w-5" />
               </div>
               <span className="text-slate-700 dark:text-slate-300 font-medium">{item}</span>
             </div>
@@ -433,7 +435,7 @@ const EnglishGrammarPDFPage: React.FC = () => {
       {/* WHY STUDY GRAMMAR WITH EXAMPLES */}
       <section className="mb-16">
         <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-100 mb-4">
-          💡 Why Study Grammar With Examples and Exercises
+          <span className="inline-flex items-center gap-2"><Star className="h-7 w-7 text-blue-600" />Why Study Grammar With Examples and Exercises</span>
         </h2>
         <p className="text-lg text-slate-700 dark:text-slate-300 mb-6">
           Many learners try to memorize grammar rules without practicing them. However, grammar improves faster when you:
@@ -478,7 +480,7 @@ const EnglishGrammarPDFPage: React.FC = () => {
                 'Professional workbook design',
               ].map((item, i) => (
                 <li key={i} className="flex items-center text-white">
-                  <span className="text-green-300 mr-2">✓</span>
+                  <ChevronRight className="h-4 w-4 text-green-300 mr-2 shrink-0" />
                   {item}
                 </li>
               ))}
@@ -489,21 +491,8 @@ const EnglishGrammarPDFPage: React.FC = () => {
             download
             className="inline-flex items-center justify-center px-10 py-5 bg-white text-blue-600 font-bold rounded-lg shadow-lg hover:shadow-xl hover:bg-blue-50 transition-all duration-200 text-lg"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 mr-3"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-              />
-            </svg>
-            📥 Download Free English Grammar PDF
+            <Download className="h-6 w-6 mr-3" />
+            Download Free English Grammar PDF
           </a>
           <p className="text-sm text-blue-200 mt-4">
             Start mastering English grammar and improve your writing and communication skills.
@@ -514,7 +503,7 @@ const EnglishGrammarPDFPage: React.FC = () => {
       {/* WHERE TO LEARN MORE */}
       <section className="mb-16">
         <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-100 mb-4">
-          🌐 Where Can I Learn More English Grammar?
+          <span className="inline-flex items-center gap-2"><BookOpen className="h-7 w-7 text-blue-600" />Where Can I Learn More English Grammar?</span>
         </h2>
         <p className="text-lg text-slate-700 dark:text-slate-300 mb-6">
           You can find more grammar lessons, exercises, and English learning resources on <strong>Typogrammar.com</strong>.
@@ -529,7 +518,7 @@ const EnglishGrammarPDFPage: React.FC = () => {
               'Practice exercises',
             ].map((item, i) => (
               <div key={i} className="flex items-center">
-                <span className="text-blue-600 dark:text-blue-400 mr-2">•</span>
+                <ChevronRight className="h-4 w-4 text-blue-500 mr-2 shrink-0" />
                 <span className="text-slate-700 dark:text-slate-300">{item}</span>
               </div>
             ))}
@@ -593,7 +582,7 @@ const EnglishGrammarPDFPage: React.FC = () => {
       {/* FAQ SECTION */}
       <section className="mb-16">
         <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-100 mb-8">
-          ❓ Frequently Asked Questions (FAQ)
+          <span className="inline-flex items-center gap-2"><HelpCircle className="h-7 w-7 text-blue-600" />Frequently Asked Questions (FAQ)</span>
         </h2>
         <div className="space-y-4">
           {faqItems.map((item, index) => (
@@ -610,7 +599,7 @@ const EnglishGrammarPDFPage: React.FC = () => {
       {/* RELATED RESOURCES */}
       <section className="mb-16">
         <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-100 mb-8">
-          📚 Related Free Resources
+          <span className="inline-flex items-center gap-2"><BookOpen className="h-7 w-7 text-blue-600" />Related Free Resources</span>
         </h2>
         <div className="grid md:grid-cols-2 gap-6">
           <Link
@@ -658,20 +647,7 @@ const EnglishGrammarPDFPage: React.FC = () => {
             download
             className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5 mr-2"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-              />
-            </svg>
+            <Download className="h-5 w-5 mr-2" />
             Download Free PDF Now
           </a>
         </div>

@@ -70,6 +70,7 @@ const IeltsIdiomsBookPage = lazy(() => import('./pages/IeltsIdiomsBookPage'));
 const HealthVocabularyBookPage = lazy(() => import('./pages/HealthVocabularyBookPage'));
 const IeltsBand9EssaysBookPage = lazy(() => import('./pages/IeltsBand9EssaysBookPage'));
 const IeltsGrammarMasterBookPage = lazy(() => import('./pages/IeltsGrammarMasterBookPage'));
+const IeltsWritingTask1MasterGuidePage = lazy(() => import('./pages/IeltsWritingTask1MasterGuidePage'));
 const IeltsCueCardsBookPage = lazy(() => import('./pages/IeltsCueCardsBookPage'));
 const ComplexSentencesPDFPage = lazy(() => import('./pages/ComplexSentencesPDFPage'));
 const EnglishGrammarPDFPage = lazy(() => import('./pages/EnglishGrammarPDFPage'));
@@ -78,6 +79,8 @@ const WhyStuckAt65Page = lazy(() => import('./pages/WhyStuckAt65Page'));
 const IELTSIn3DaysPage = lazy(() => import('./pages/IELTSIn3DaysPage'));
 const IELTSScoreRequirementsPage = lazy(() => import('./pages/IELTSScoreRequirementsPage'));
 const CountriesWithoutIELTSPage = lazy(() => import('./pages/CountriesWithoutIELTSPage'));
+const EnglishLanguageStatistics2026Page = lazy(() => import('./pages/EnglishLanguageStatistics2026Page'));
+const IELTSInformalLetterPage = lazy(() => import('./pages/IELTSInformalLetterPage'));
 const WhatIsTypogrammarPage = lazy(() => import('./pages/WhatIsTypogrammarPage'));
 const EditorialTeamPage = lazy(() => import('./pages/EditorialTeamPage'));
 
@@ -91,6 +94,7 @@ const ContributorGuidelinesPage = lazy(() => import('./pages/educators/Contribut
 const VerbTensesQuizPage = lazy(() => import('./pages/quizzes/VerbTensesQuizPage'));
 const EnglishLevelTestPage = lazy(() => import('./pages/EnglishLevelTestPage'));
 const IELTSWritingTask1BarChartPage = lazy(() => import('./pages/IELTSWritingTask1BarChartPage'));
+const IELTSWritingTask1VocabularyPage = lazy(() => import('./pages/IELTSWritingTask1VocabularyPage'));
 const IELTSTestsPage = lazy(() => import('./pages/IELTSTestsPage'));
 const IELTSListeningMockTest1Section1Page = lazy(() => import('./pages/IELTSListeningMockTest1Section1Page'));
 const IELTSAcademicReadingTest01Page = lazy(() => import('./pages/ielts-tests/IELTSAcademicReadingTest01Page'));
@@ -364,6 +368,7 @@ const App: React.FC = () => {
             
             {/* IELTS Writing Task 1 Routes */}
             <Route path="ielts/ielts-writing-task-1-bar-chart-sample-answer" element={<Suspense fallback={<PageLoader />}><IELTSWritingTask1BarChartPage /></Suspense>} />
+            <Route path="ielts/ielts-writing-task-1-vocabulary" element={<Suspense fallback={<PageLoader />}><IELTSWritingTask1VocabularyPage /></Suspense>} />
 
             {/* IELTS Writing Task 2 Routes */}
             <Route path="ielts/ielts-writing-task-2-essay-types" element={<Suspense fallback={<PageLoader />}><IELTSWritingTask2Page /></Suspense>} />
@@ -399,6 +404,7 @@ const App: React.FC = () => {
             <Route path="ielts/health-vocabulary-book" element={<Suspense fallback={<PageLoader />}><HealthVocabularyBookPage /></Suspense>} />
             <Route path="ielts/writing-task-2-band-9-essays-book" element={<Suspense fallback={<PageLoader />}><IeltsBand9EssaysBookPage /></Suspense>} />
             <Route path="ielts/grammar-master-book" element={<Suspense fallback={<PageLoader />}><IeltsGrammarMasterBookPage /></Suspense>} />
+            <Route path="ielts-writing-task-1-master-guide" element={<Suspense fallback={<PageLoader />}><IeltsWritingTask1MasterGuidePage /></Suspense>} />
             <Route path="ielts/cue-cards-book" element={<Suspense fallback={<PageLoader />}><IeltsCueCardsBookPage /></Suspense>} />
             <Route path="ielts/50-complex-sentences-for-ielts-pdf" element={<Suspense fallback={<PageLoader />}><ComplexSentencesPDFPage /></Suspense>} />
             <Route path="ielts/english-grammar-pdf" element={<Suspense fallback={<PageLoader />}><EnglishGrammarPDFPage /></Suspense>} />
@@ -409,7 +415,9 @@ const App: React.FC = () => {
             <Route path="ielts/ielts-in-3-days" element={<Suspense fallback={<PageLoader />}><IELTSIn3DaysPage /></Suspense>} />
             <Route path="ielts/ielts-score-requirements-by-country" element={<Suspense fallback={<PageLoader />}><IELTSScoreRequirementsPage /></Suspense>} />
             <Route path="ielts/countries-without-ielts" element={<Suspense fallback={<PageLoader />}><CountriesWithoutIELTSPage /></Suspense>} />
-            
+            <Route path="ielts/english-language-statistics-2026" element={<Suspense fallback={<PageLoader />}><EnglishLanguageStatistics2026Page /></Suspense>} />
+            <Route path="ielts/how-to-write-an-IELTS-letter-informal" element={<Suspense fallback={<PageLoader />}><IELTSInformalLetterPage /></Suspense>} />
+
             {/* IELTS Tests Routes */}
             <Route path="ielts/tests" element={<Suspense fallback={<PageLoader />}><IELTSTestsPage /></Suspense>} />
             <Route path="ielts/tests/listening/mock-test-1/section-1" element={<Suspense fallback={<PageLoader />}><IELTSListeningMockTest1Section1Page /></Suspense>} />

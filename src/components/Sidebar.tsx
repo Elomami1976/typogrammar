@@ -130,7 +130,8 @@ const SidebarContent: React.FC<{ onClose: () => void }> = ({ onClose }) => {
     location.pathname.startsWith('/toefl/toefl-vocabulary-pdf') ||
     location.pathname.startsWith('/toefl/toefl-writing-pdf') ||
     location.pathname.startsWith('/toefl/toefl-reading-practice-pdf') ||
-    location.pathname.startsWith('/toefl/1000-toefl-speaking-questions');
+    location.pathname.startsWith('/toefl/1000-toefl-speaking-questions') ||
+    location.pathname.startsWith('/ielts-writing-task-1-master-guide');
 
 
   return (
@@ -317,6 +318,7 @@ const SidebarContent: React.FC<{ onClose: () => void }> = ({ onClose }) => {
               <SidebarLink to="/ielts/50-complex-sentences-for-ielts-pdf/" text="50 Complex Sentences PDF" onClick={onClose} />
               <SidebarLink to="/ielts/grammar-master-book/" text="IELTS Grammar Master Book" onClick={onClose} />
               <SidebarLink to="/ielts/cue-cards-book/" text="IELTS Cue Cards (2026 Edition)" onClick={onClose} />
+              <SidebarLink to="/ielts-writing-task-1-master-guide/" text="Task 1 Master Guide (2026)" onClick={onClose} />
               <h4 className="px-6 py-2 pt-4 text-sm font-semibold text-slate-400 dark:text-slate-500">TOEFL &amp; PTE PDFs</h4>
               <SidebarLink to="/toefl/toefl-vocabulary-pdf/" text="TOEFL Vocabulary PDF" onClick={onClose} />
               <SidebarLink to="/toefl/toefl-writing-pdf/" text="TOEFL Writing PDF" onClick={onClose} />
@@ -327,6 +329,8 @@ const SidebarContent: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 
             <SidebarSection title="IELTS Preparation" defaultOpen={isIELTSPage}>
               <SidebarLink to="/ielts/ielts-writing-task-1-bar-chart-sample-answer/" text="Task 1 Bar Chart Sample Answers" onClick={onClose} />
+              <SidebarLink to="/ielts/ielts-writing-task-1-vocabulary/" text="Task 1 Vocabulary Guide" onClick={onClose} />
+              <SidebarLink to="/ielts/how-to-write-an-IELTS-letter-informal/" text="Informal Letter Guide" onClick={onClose} />
               <SidebarLink to="/ielts/ielts-writing-task-2-essay-types/" text="IELTS Writing Task 2 Hub" onClick={onClose} />
               <SidebarLink to="/ielts/opinion-essay-ielts-band-7-9/" text="Opinion Essays" onClick={onClose} />
               <SidebarLink to="/ielts/discussion-essay-ielts-band-7-9/" text="Discussion Essays" onClick={onClose} />

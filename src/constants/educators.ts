@@ -98,6 +98,8 @@ import FromStudyingEnglishToLivingInIt from '../content/contributor-articles/fro
 import EnglishPronunciationChallengesForSpanishSpeakers from '../content/contributor-articles/english-pronunciation-challenges-for-spanish-native-speakers';
 import TwentyFiveGrammarMistakesTeachersCorrect from '../content/contributor-articles/25-common-grammar-mistakes-esl-learners-make-and-how-teachers-can-correct';
 import FromUnderstandingEnglishToSpeakingIt from '../content/contributor-articles/from-understanding-english-to-speaking-it-why-fluency-feels-so-difficult';
+import HowToStopTranslatingAndStartCommunicating from '../content/contributor-articles/how-to-stop-translating-and-start-communicating';
+import ThePsychologyOfLanguageLearning from '../content/contributor-articles/the-psychology-of-language-learning-why-students-forget-vocabulary-so-quickly';
 
 export const EDUCATORS: ContributorAuthor[] = [
   {
@@ -202,6 +204,38 @@ Through her classroom experience, she examines the challenges facing modern lear
     linkedinUrl: 'https://www.linkedin.com/in/aleeza-malik-02j1997/',
     expertise: ['ESL Teaching', 'Linguistics'],
     joinDate: '2026-06-16',
+    foundingContributor: true,
+  },
+  {
+    fullName: 'Sabine Schumann',
+    slug: 'sabine-schumann',
+    title: 'Business English and Intercultural Communication Trainer',
+    bio: `I am a Business English and Communication Trainer with extensive experience helping professionals and international teams communicate more clearly and confidently in English.
+
+My work spans corporate settings, universities, and professional training institutions, where I design and deliver tailored programmes focused on practical language use, intercultural communication, and developing the fluency that professionals actually need in the workplace.
+
+I am also a published ELT author. My particular interest is in helping learners move beyond translation and begin thinking directly in English -- a shift that transforms not just language use, but professional confidence.`,
+    photo: '/images/educators%20network/Sabine%20Schumann.png',
+    linkedinUrl: 'https://www.linkedin.com/in/sabine-schumann-1621a031b',
+    websiteUrl: 'https://www.bet-professional.de/',
+    expertise: ['ESL Teaching', 'Writing', 'Linguistics'],
+    joinDate: '2026-06-17',
+    foundingContributor: true,
+  },
+  {
+    fullName: 'Ravshan Khujakulov',
+    slug: 'ravshan-khujakulov',
+    title: 'EFL Teacher and Applied Linguistics Researcher',
+    bio: `Ravshan Khujakulov is a dedicated and results-oriented EFL teacher with a Master's degree in TESOL and more than a decade of experience teaching English at university level in Uzbekistan.
+
+He specialises in creating engaging and effective learning environments for students of all levels, with a particular focus on the cognitive and psychological dimensions of vocabulary acquisition. His research in applied linguistics informs a teaching approach grounded in evidence from memory science.
+
+Fluent in English and Uzbek, he is committed to fostering intercultural understanding and empowering learners to achieve their language goals through strategies that work with, rather than against, how the brain actually learns.`,
+    photo: '/images/educators%20network/Ravshan%20Khujakulov.png',
+    linkedinUrl: 'https://www.linkedin.com/in/ravshan-khujakulov-2549b521a/',
+    country: 'Uzbekistan',
+    expertise: ['ESL Teaching', 'Linguistics'],
+    joinDate: '2026-06-17',
     foundingContributor: true,
   },
 ];
@@ -406,6 +440,65 @@ export const CONTRIBUTOR_ARTICLES: ContributorArticle[] = [
         'From Understanding English to Speaking It: Why Fluency Feels So Difficult | TypoGrammar Educators Network',
       description:
         'English Access teacher Aleeza Saleem explains why ESL learners who understand English well still struggle to speak it, from fear and perfectionism to the translation loop and passive screen exposure.',
+    },
+  },
+  {
+    title: 'Thinking in English: How to Stop Translating and Start Communicating',
+    slug: 'how-to-stop-translating-and-start-communicating',
+    authorSlug: 'sabine-schumann',
+    featuredImage:
+      '/images/educators%20network/typogrammar-educators-network-banner.png',
+    excerpt:
+      'A Business English trainer and published ELT author explains how to stop mentally translating and start thinking directly in English, through regular input, regular output, learning vocabulary in context, tolerating uncertainty, and focusing on collocations over isolated words.',
+    content: HowToStopTranslatingAndStartCommunicating,
+    readingTime: 8,
+    publishDate: '2026-06-17',
+    seo: {
+      title:
+        'Thinking in English: How to Stop Translating and Start Communicating | TypoGrammar Educators Network',
+      description:
+        'Business English trainer Sabine Schumann explains how to stop mentally translating and start thinking directly in English, with practical strategies for input, output, vocabulary in context, and collocation learning.',
+    },
+  },
+  {
+    title:
+      'The Psychology of Language Learning: Why Students Forget Vocabulary So Quickly',
+    slug: 'the-psychology-of-language-learning-why-students-forget-vocabulary-so-quickly',
+    authorSlug: 'ravshan-khujakulov',
+    featuredImage:
+      '/images/educators%20network/typogrammar-educators-network-banner.png',
+    excerpt:
+      'A university EFL teacher and applied linguistics researcher explains why students forget vocabulary so fast, drawing on the Ebbinghaus Forgetting Curve, levels of processing, interference theory, the spacing effect, and retrieval practice -- with classroom strategies adapted to real teaching conditions.',
+    content: ThePsychologyOfLanguageLearning,
+    readingTime: 10,
+    publishDate: '2026-06-17',
+    references: [
+      {
+        citation:
+          'Cepeda, N. J., Pashler, H., Vul, E., Wixted, J. T., & Rohrer, D. (2006). Distributed practice in verbal recall tasks: A review and quantitative synthesis. Psychological Bulletin, 132(2), 354-380.',
+      },
+      {
+        citation:
+          'Craik, F. I. M., & Lockhart, R. S. (1972). Levels of processing: A framework for memory research. Journal of Verbal Learning and Verbal Behavior, 11(6), 671-684.',
+      },
+      {
+        citation:
+          'Ebbinghaus, H. (1913). Memory: A contribution to experimental psychology (H. A. Ruger & C. E. Bussenius, Trans.). Teachers College, Columbia University. (Original work published 1885)',
+      },
+      {
+        citation:
+          'Jiang, N. (2000). Lexical representation and development in a second language. Applied Linguistics, 21(1), 47-77.',
+      },
+      {
+        citation:
+          'Roediger, H. L., & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3), 249-255.',
+      },
+    ],
+    seo: {
+      title:
+        'The Psychology of Language Learning: Why Students Forget Vocabulary So Quickly | TypoGrammar Educators Network',
+      description:
+        'University EFL teacher Ravshan Khujakulov explains the cognitive science behind vocabulary forgetting -- the Forgetting Curve, shallow processing, interference, the spacing effect, and retrieval practice -- with practical classroom strategies for EFL and ESL teachers.',
     },
   },
 ];

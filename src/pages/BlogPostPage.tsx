@@ -136,8 +136,16 @@ const BlogPostPage: React.FC = () => {
         />
       </div>
       
+      <div className="my-6">
+        <GoogleAd adSlot="5227262163" format="fluid" layout="in-article" />
+      </div>
+
       <div className="prose prose-lg max-w-none">
         {post.content}
+      </div>
+
+      <div className="my-6">
+        <GoogleAd adSlot="5227262163" format="fluid" layout="in-article" />
       </div>
 
       {/* Generic post-content engagement: 3-question mini-quiz */}
@@ -194,6 +202,14 @@ const BlogPostPage: React.FC = () => {
 
       <div className="my-8">
         <GoogleAd adSlot="6406598038" />
+      </div>
+
+      <div className="my-8">
+        <GoogleAd adSlot="1564604936" />
+      </div>
+
+      <div className="my-8">
+        <GoogleAd adSlot="2686114912" format="autorelaxed" fullWidthResponsive={false} />
       </div>
 
       <div className="mt-12 pt-8 border-t border-slate-200 dark:border-slate-700">

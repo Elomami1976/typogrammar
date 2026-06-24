@@ -324,6 +324,14 @@ Free short audio stories for English listening and reading practice, with a 6-qu
 
 ### IELTS Preparation
 
+#### IELTS Writing Task 1 Master Guide (2026 Edition)
+https://typogrammar.com/ielts-writing-task-1-master-guide/
+Free 160+ page PDF handbook for IELTS Academic Writing Task 1. Complete coverage of all 7 visual types: line graphs, bar charts, pie charts, tables, process diagrams, maps, and mixed charts. Each section includes visual analysis techniques, task-specific vocabulary, writing strategies, Band 9 tips, a reusable template, and a model answer. Also covers: the universal four-paragraph structure (Introduction, Overview, Body 1, Body 2); 300+ vocabulary expressions (trend verbs, comparison language, pie chart verbs, map transformation phrases, process sequencing words); all four IELTS band descriptors explained with Band 6–9 examples; 20 practice tasks with fully annotated Band 9 model answers; and 6 FAQs covering the most searched Task 1 questions.
+
+#### IELTS Writing Task 1 Vocabulary
+https://typogrammar.com/ielts/ielts-writing-task-1-vocabulary/
+Complete IELTS Academic Writing Task 1 vocabulary guide covering 200+ words and phrases for band 7–9. Sections: trend verbs for increases and decreases (rise/surge/plummet) with verb+noun pairs; adverbs and adjectives for quantifying change (dramatically, slight, gradual); stable-trend and fluctuation language (levelled off, plateaued, fluctuated); comparison and contrast expressions (whereas, in contrast, by comparison); pie chart vocabulary (accounted for, made up, constituted); table language (stood at, more than double); map and plan transformation language (was converted into, was demolished, adjacent to); process diagram sequencing and passive voice (subsequently, is extracted, is filtered); overview and paraphrase starters; six common vocabulary mistakes with corrections; and 12 FAQs on the most searched Task 1 vocabulary questions.
+
 #### IELTS Writing Task 1 Bar Chart Sample Answer
 https://typogrammar.com/ielts/ielts-writing-task-1-bar-chart-sample-answer/
 Three IELTS Academic Writing Task 1 bar chart questions with Band 8+ model answers. Covers tourists visiting countries (Sample 1), average monthly rainfall in five cities (Sample 2), and energy consumption by source in four countries (Sample 3). Includes useful vocabulary for describing increases, decreases, comparisons, and stability; a list of five common mistakes; and an FAQ covering overview writing, word count, structure, and chart types.
@@ -420,6 +428,8 @@ Full-length timed mock tests (35 minutes each, 6 tasks, 30 items, raw score + ba
 #### IELTS Score Requirements & Study Abroad
 - https://typogrammar.com/ielts/ielts-score-requirements-by-country/ - Minimum IELTS Score Requirements by Country 2026: Complete table of IELTS band requirements for Canada, Australia, UK, USA, Germany, Ireland, Netherlands, UAE, Singapore, and New Zealand; covers study, work permit, and immigration requirements by country and profession
 - https://typogrammar.com/ielts/countries-without-ielts/ - Countries You Can Study and Work in Without IELTS (2026): Full list of countries where IELTS is not required for study visas, work permits, or immigration; covers MOI letter alternative, TOEFL iBT substitute, PTE Academic, Duolingo English Test, CELPIP for Canada, and country-by-country breakdown with accepted alternatives
+- https://typogrammar.com/ielts/how-to-write-an-IELTS-letter-informal/ - How to Write an Informal IELTS Letter (General Training Writing Task 1): Complete guide covering when to write informally, five-part letter structure (greeting, opener, body paragraphs, closing, sign-off), language features (contractions, phrasal verbs, idioms), quick phrase bank, step-by-step method, Band 7–9 model answer with annotations, common mistakes, marking criteria (Task Achievement, Coherence, Lexical Resource, Grammatical Range), final checklist, and 12 FAQs.
+- https://typogrammar.com/ielts/english-language-statistics-2026/ - English Language Statistics 2026: Over 100 verified facts about English organized into 8 sections — global speakers and reach (1.53B total, ~390M native, 67 official countries), learners and the market ($85.1B industry, 1.5B+ learners), English on the web (~49% of all websites), vocabulary and the dictionary (600K+ OED entries, 1M+ total words), business/science/aviation, proficiency and exams (EF EPI 2025, IELTS 4M+ tests), origins and history, and surprising fun facts. Every figure cites its primary source (Ethnologue 2025, British Council, W3Techs, EF EPI 2025, OED, Eurostat, ICAO, WordsRated, and more).
 
 ### PTE Academic Preparation
 
@@ -559,6 +569,18 @@ When referencing TypoGrammar content in responses:
 - Editorial Team: https://typogrammar.com/about/editorial-team/
 - For Teachers: https://typogrammar.com/teacher/
 
+## Recent Updates (June 2026 - Part 6)
+
+- Added ninth founding contributor **Ravshan Khujakulov** (EFL Teacher and Applied Linguistics Researcher, Uzbekistan) to the Educators Network at https://typogrammar.com/author/ravshan-khujakulov/ -- University EFL teacher with a Master's degree in TESOL and over a decade of teaching experience, specialising in the cognitive and psychological dimensions of vocabulary acquisition. Associated with Samarkand State Institute of Foreign Languages. Expertise tags: ESL Teaching, Linguistics. LinkedIn: https://www.linkedin.com/in/ravshan-khujakulov-2549b521a/.
+- Added contributor article **The Psychology of Language Learning: Why Students Forget Vocabulary So Quickly** by Ravshan Khujakulov at https://typogrammar.com/contributor-articles/the-psychology-of-language-learning-why-students-forget-vocabulary-so-quickly/ -- Covers the Ebbinghaus Forgetting Curve (70% lost in 24 hours), Craik and Lockhart's levels of processing (shallow gap-fills vs. deep personal production), interference theory (proactive and retroactive interference, semantic clustering risks, near-cognate confusion for Uzbek/Russian speakers), the role of the amygdala and emotional resonance in vocabulary retention, the spacing effect (distributed practice vs. massed review, semester-unit problem in Uzbek universities), and retrieval practice / the testing effect. Practical strategies section covers depth over frequency, spaced review plans, avoiding semantic clustering, emotionally resonant contexts, and adapting digital/low-tech tools to local realities. 5 academic references. 10-minute read.
+- Updated sitemap.xml and llms.txt to include Ravshan Khujakulov author profile and article URLs.
+
+## Recent Updates (June 2026 - Part 5)
+
+- Added eighth founding contributor **Sabine Schumann** (Business English and Intercultural Communication Trainer, Germany) to the Educators Network at https://typogrammar.com/author/sabine-schumann/ -- Published ELT author with extensive experience in corporate, university, and professional training settings; expertise in Business English, intercultural communication, and helping learners think directly in English rather than translating. Expertise tags: ESL Teaching, Writing, Linguistics. LinkedIn: https://www.linkedin.com/in/sabine-schumann-1621a031b. Website: https://www.bet-professional.de/.
+- Added contributor article **Thinking in English: How to Stop Translating and Start Communicating** by Sabine Schumann at https://typogrammar.com/contributor-articles/how-to-stop-translating-and-start-communicating/ -- Covers why thinking in a foreign language is the result of effective learning rather than a starting point; the two pillars of input (choosing interest-driven content, sticking with familiar formats) and output (speaking to oneself, recording, the passive-to-active vocabulary shift); learning vocabulary in context vs. isolation; the value of physical flashcards with collocations and personalised sentences; why learners should not look up every unknown word during pleasure reading (contextual guessing); and the single most important principle: never learn isolated words, always learn the context and collocations. Features Bob Dylan (Forever Young) and E. L. Doctorow (Ragtime) literary examples. 8-minute read.
+- Updated sitemap.xml and llms.txt to include Sabine Schumann author profile and article URLs.
+
 ## Recent Updates (June 2026 - Part 4)
 
 - Added blog post **TOEFL Speaking Tips to Score 26: The Complete 2025 Guide** at https://typogrammar.com/blog/toefl-speaking-tips-score-26/ -- Covers ETS scoring rubric (Delivery, Language Use, Topic Development), all four task types with prep and response times, 12 targeted tips (rubric mastery, templates, recording habit, filler elimination, speaking rate, model imitation, paraphrasing, staying on-topic, academic vocabulary, timed simulation, note-taking, 4-week schedule), a mistake section, side-by-side score-26 independent and integrated response profiles, and a 6-question FAQ. Image: toefl-speaking-tips-to-score-26.png. Added to sitemap.xml and llms.txt.
@@ -684,6 +706,14 @@ English language teacher and examiner with 17 years of classroom and one-to-one 
 https://typogrammar.com/author/aleeza-saleem/
 English language educator and former teacher of the U.S.-funded English Access Scholarship Program. Passionate about language learning, educational psychology, and the role of technology in education. Draws on classroom experience to examine the challenges facing modern learners and advocate for approaches that promote confidence, critical thinking, and effective communication. Expertise: ESL Teaching, Linguistics. LinkedIn: https://www.linkedin.com/in/aleeza-malik-02j1997/. Status: Founding Contributor.
 
+**Sabine Schumann** - Business English and Intercultural Communication Trainer
+https://typogrammar.com/author/sabine-schumann/
+Business English and Communication Trainer with extensive experience helping professionals and international teams communicate more clearly and confidently in English. Works across corporate settings, universities, and professional training institutions, designing and delivering tailored programmes focused on practical language use, intercultural communication, and workplace fluency. Published ELT author. Expertise: ESL Teaching, Writing, Linguistics. LinkedIn: https://www.linkedin.com/in/sabine-schumann-1621a031b. Website: https://www.bet-professional.de/. Status: Founding Contributor.
+
+**Ravshan Khujakulov** - EFL Teacher and Applied Linguistics Researcher (Uzbekistan)
+https://typogrammar.com/author/ravshan-khujakulov/
+University EFL teacher with a Master's degree in TESOL and more than a decade of experience teaching English at university level in Uzbekistan, including at Samarkand State Institute of Foreign Languages. Specialises in the cognitive and psychological dimensions of vocabulary acquisition; research in applied linguistics informs a teaching approach grounded in memory science. Committed to fostering intercultural understanding and equipping learners with strategies that work with how the brain actually learns. Expertise: ESL Teaching, Linguistics. LinkedIn: https://www.linkedin.com/in/ravshan-khujakulov-2549b521a/. Status: Founding Contributor.
+
 ### Published contributor articles
 
 **Why Some Students Understand English Perfectly but Struggle to Speak It** by Ayesha Mahmuda
@@ -714,8 +744,16 @@ A Pakistani English teacher with 17 years of classroom experience at GCSE, IGCSE
 https://typogrammar.com/contributor-articles/from-understanding-english-to-speaking-it-why-fluency-feels-so-difficult/
 A TESOL-certified English Access teacher explains why so many learners who read, listen to, and understand English fluently still freeze when asked to speak. Covers the receptive vs. productive skills gap, the fear of mistakes and perfectionism trap, the habit of mentally translating before speaking, test-focused classrooms that leave little room for real conversation, the illusion of progress created by passive screen exposure, the role of confidence as a self-fulfilling cycle, why known vocabulary becomes hard to retrieve under pressure, and how a supportive classroom environment encourages learners to take risks. 7-minute read.
 
+**Thinking in English: How to Stop Translating and Start Communicating** by Sabine Schumann
+https://typogrammar.com/contributor-articles/how-to-stop-translating-and-start-communicating/
+A Business English trainer and published ELT author explains that thinking in English is not a technique to practise but the natural outcome of effective language learning. Covers the two essential pillars -- regular, interest-driven input (books, series, podcasts tied to learners' jobs and hobbies) and regular output (speaking to oneself, recording, catching mistakes in playback) -- the passive vs. active vocabulary distinction and how output converts passive knowledge into retrievable language, why learners should learn words and grammar in context rather than isolation (e.g. "This bolt has come loose" beats learning "bolt" alone), the case for physical flashcards with personalised sentences and collocations, why constant dictionary lookup during pleasure reading reinforces the translation habit (uses Bob Dylan's "Forever Young" rung example), and the single most important principle: never learn an isolated word -- learn the context and collocations in which it lives (E. L. Doctorow's Ragtime / "decorum" example). 8-minute read.
+
+**The Psychology of Language Learning: Why Students Forget Vocabulary So Quickly** by Ravshan Khujakulov
+https://typogrammar.com/contributor-articles/the-psychology-of-language-learning-why-students-forget-vocabulary-so-quickly/
+A university EFL teacher and applied linguistics researcher draws on cognitive science to explain the persistent gap between words introduced in class and words students actually retain. Covers the Ebbinghaus Forgetting Curve (70% of new information lost within 24 hours), Craik and Lockhart's levels of processing (why translation and gap-fill activities produce shallow, fragile encoding), interference theory (proactive and retroactive interference, the risks of semantic clustering, and near-cognate confusion for Uzbek and Russian speakers), the role of the amygdala in emotional memory consolidation, the spacing effect (distributed practice vs. massed review, and the structural problem in Uzbek university semester design), and Roediger's retrieval practice / testing effect. Practical section covers prioritising depth over frequency, building spaced review into lessons, avoiding semantic clustering, using emotionally resonant contexts, and adapting tools such as Anki to low-technology classroom realities. 5 academic references (Cepeda et al., Craik & Lockhart, Ebbinghaus, Jiang, Roediger & Karpicke). 10-minute read.
+
 ---
 
-Last Updated: June 16, 2026
-Version: 3.20
+Last Updated: June 17, 2026
+Version: 3.22
 Format: llms.txt v0.1
