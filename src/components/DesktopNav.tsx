@@ -213,7 +213,7 @@ const NAV_GROUPS: NavGroup[] = [
   {
     id: 'downloads',
     label: 'Downloads',
-    columns: 2,
+    columns: 3,
     align: 'right',
     sections: [
       {
@@ -238,6 +238,12 @@ const NAV_GROUPS: NavGroup[] = [
           { label: 'TOEFL Reading Practice PDF', to: '/toefl/toefl-reading-practice-pdf/' },
           { label: '1000 TOEFL Speaking Questions', to: '/toefl/1000-toefl-speaking-questions/' },
           { label: '1000 PTE Academic Practice Questions', to: '/downloads/1000-pte-academic-practice-questions/' },
+        ],
+      },
+      {
+        heading: 'General English PDFs',
+        items: [
+          { label: '3000 Most Common English Words', to: '/downloads/3000-most-common-english-words-pdf/' },
         ],
       },
     ],
@@ -350,19 +356,6 @@ const DesktopNav: React.FC = () => {
         </div>
       ))}
 
-      {/* Educators Network, direct link */}
-      <NavLink
-        to="/educators/"
-        className={({ isActive }) =>
-          `px-3 py-2 rounded-md text-sm font-semibold transition-colors duration-150 ${
-            isActive
-              ? 'text-red-600 bg-red-50 dark:text-red-500 dark:bg-red-900/20'
-              : 'text-slate-700 hover:text-red-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:text-red-500 dark:hover:bg-slate-800'
-          }`
-        }
-      >
-        Educators
-      </NavLink>
     </nav>
   );
 };

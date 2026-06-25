@@ -173,7 +173,6 @@ const SidebarContent: React.FC<{ onClose: () => void }> = ({ onClose }) => {
             <SidebarLink to="/writing-assistant/" text="Writing Assistant" onClick={onClose} />
             <SidebarLink to="/progress/" text="My Progress" onClick={onClose} />
             <SidebarLink to="/blog/" text="Blog" onClick={onClose} />
-            <SidebarLink to="/educators/" text="Educators Network" onClick={onClose} />
             
             <SidebarSection title="Grammar Topics" defaultOpen={isTopicPage}>
               <SidebarLink to="/grammar/verb-tenses/" text="📚 The 12 Verb Tenses (Hub)" onClick={onClose} />
@@ -325,6 +324,8 @@ const SidebarContent: React.FC<{ onClose: () => void }> = ({ onClose }) => {
               <SidebarLink to="/toefl/toefl-reading-practice-pdf/" text="TOEFL Reading Practice PDF" onClick={onClose} />
               <SidebarLink to="/toefl/1000-toefl-speaking-questions/" text="1000 TOEFL Speaking Questions" onClick={onClose} />
               <SidebarLink to="/downloads/1000-pte-academic-practice-questions/" text="1000 PTE Academic Practice Questions" onClick={onClose} />
+              <h4 className="px-6 py-2 pt-4 text-sm font-semibold text-slate-400 dark:text-slate-500">General English PDFs</h4>
+              <SidebarLink to="/downloads/3000-most-common-english-words-pdf/" text="3000 Most Common English Words" onClick={onClose} />
             </SidebarSection>
 
             <SidebarSection title="IELTS Preparation" defaultOpen={isIELTSPage}>

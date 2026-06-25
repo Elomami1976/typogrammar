@@ -124,6 +124,8 @@ const TOEFLWritingPDFPage = lazy(() => import('./pages/TOEFLWritingPDFPage'));
 const TOEFL1000SpeakingQuestionsPage = lazy(() => import('./pages/TOEFL1000SpeakingQuestionsPage'));
 // PTE Academic Free Resources
 const PTE1000AcademicPracticeQuestionsPage = lazy(() => import('./pages/PTE1000AcademicPracticeQuestionsPage'));
+// General English Free Resources
+const CommonEnglishWordsPDFPage = lazy(() => import('./pages/CommonEnglishWordsPDFPage'));
 // TOEFL Strategy & Success
 const OldTOEFLvsNewTOEFL2026Page = lazy(() => import('./pages/OldTOEFLvsNewTOEFL2026Page'));
 const TOEFLCompleteTheWordsPage = lazy(() => import('./pages/TOEFLCompleteTheWordsPage'));
@@ -448,6 +450,8 @@ const App: React.FC = () => {
             <Route path="toefl/1000-toefl-speaking-questions" element={<Suspense fallback={<PageLoader />}><TOEFL1000SpeakingQuestionsPage /></Suspense>} />
             {/* PTE Academic Free Resources Routes */}
             <Route path="downloads/1000-pte-academic-practice-questions" element={<Suspense fallback={<PageLoader />}><PTE1000AcademicPracticeQuestionsPage /></Suspense>} />
+            {/* General English Free Resources Routes */}
+            <Route path="downloads/3000-most-common-english-words-pdf" element={<Suspense fallback={<PageLoader />}><CommonEnglishWordsPDFPage /></Suspense>} />
             {/* TOEFL Strategy & Success Routes */}
             <Route path="toefl/strategy-success/old-toefl-vs-new-toefl" element={<Suspense fallback={<PageLoader />}><OldTOEFLvsNewTOEFL2026Page /></Suspense>} />
             <Route path="toefl/strategy-success/toefl-complete-the-words" element={<Suspense fallback={<PageLoader />}><TOEFLCompleteTheWordsPage /></Suspense>} />
