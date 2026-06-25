@@ -43,14 +43,16 @@ const CHAT_TEMPERATURE = 0.4;
 const MAX_MESSAGE_CHARS = 500;
 const RATE_LIMIT_PER_MIN = 20;
 
-const HIGH_SCORE_THRESHOLD = 6; // direct-answer (no LLM)
-const LOW_SCORE_THRESHOLD = 2;  // grounded LLM call below high, generic below low
+const HIGH_SCORE_THRESHOLD = 6;     // direct-answer (no LLM) — must ALSO pass coverage/phrase gate
+const LOW_SCORE_THRESHOLD = 2;      // grounded LLM call below high, generic below low
+const DIRECT_MIN_COVERAGE = 0.75;   // fraction of query tokens that must hit the entry
+const DIRECT_MIN_QUERY_TOKENS = 2;  // require at least 2 meaningful tokens before allowing direct mode
 
 // ---------------------------------------------------------------------------
 // Module-scope caches (per Worker isolate)
 // ---------------------------------------------------------------------------
 
-let INDEX_CACHE = null;            // { entries, fetchedAt }
+let INDEX_CACHE = null;            // { entries, fetchedAt, idf }
 const RESPONSE_CACHE = new Map();  // normalizedQuestion -> { value, expires }
 const RATE_BUCKETS = new Map();    // ip -> { count, resetAt }
 
@@ -72,17 +74,18 @@ const STOPWORDS = new Set([
 
 async function loadIndex() {
   if (INDEX_CACHE && Date.now() - INDEX_CACHE.fetchedAt < 10 * 60 * 1000) {
-    return INDEX_CACHE.entries;
+    return INDEX_CACHE;
   }
   try {
     const res = await fetch(INDEX_URL, { cf: { cacheTtl: 600 } });
     if (!res.ok) throw new Error(`index fetch ${res.status}`);
     const data = await res.json();
-    INDEX_CACHE = { entries: data.entries || [], fetchedAt: Date.now() };
-    return INDEX_CACHE.entries;
+    const entries = data.entries || [];
+    INDEX_CACHE = { entries, idf: computeIdf(entries), fetchedAt: Date.now() };
+    return INDEX_CACHE;
   } catch (err) {
-    if (INDEX_CACHE) return INDEX_CACHE.entries; // serve stale on error
-    return [];
+    if (INDEX_CACHE) return INDEX_CACHE; // serve stale on error
+    return { entries: [], idf: {} };
   }
 }
 
@@ -94,25 +97,64 @@ function tokenize(s) {
     .filter((t) => t.length > 1 && !STOPWORDS.has(t));
 }
 
-function scoreEntry(entry, qTokens) {
-  if (!qTokens.length) return 0;
+// Inverse document frequency across the index, so generic tokens like
+// "english", "common", "words", "grammar" don't dominate scoring.
+function computeIdf(entries) {
+  const df = Object.create(null);
+  for (const e of entries) {
+    const seen = new Set(tokenize(`${e.title || ""} ${e.searchText || ""}`));
+    for (const t of seen) df[t] = (df[t] || 0) + 1;
+  }
+  const N = Math.max(entries.length, 1);
+  const idf = Object.create(null);
+  for (const t in df) {
+    // Smoothed IDF, clamped to a sensible range so a unique token isn't
+    // unbeatable and an omnipresent token still contributes a little.
+    idf[t] = Math.max(0.2, Math.min(3, Math.log((N + 1) / (df[t] + 1)) + 0.3));
+  }
+  return idf;
+}
+
+function scoreEntry(entry, qTokens, idf) {
+  if (!qTokens.length) return { score: 0, matched: 0 };
   const titleLower = (entry.title || "").toLowerCase();
   const text = entry.searchText || "";
   let score = 0;
+  let matched = 0;
   for (const t of qTokens) {
-    if (titleLower.includes(t)) score += 3;
-    else if (text.includes(t)) score += 1;
+    const w = idf[t] != null ? idf[t] : 1;
+    if (titleLower.includes(t)) {
+      score += 3 * w;
+      matched++;
+    } else if (text.includes(t)) {
+      score += 1 * w;
+      matched++;
+    }
   }
-  return score;
+  return { score, matched };
 }
 
-function findBestMatch(message, entries) {
+function findBestMatch(message, entries, idf) {
   const qTokens = tokenize(message);
   if (!qTokens.length || !entries.length) return null;
+  const normalizedMsg = message.toLowerCase().replace(/\s+/g, " ").trim();
   let best = null;
   for (const entry of entries) {
-    const score = scoreEntry(entry, qTokens);
-    if (!best || score > best.score) best = { entry, score };
+    const { score, matched } = scoreEntry(entry, qTokens, idf);
+    if (!best || score > best.score) {
+      const titleLower = (entry.title || "").toLowerCase();
+      const phraseHit =
+        normalizedMsg.length >= 6 &&
+        (titleLower.includes(normalizedMsg) ||
+          normalizedMsg.includes(titleLower));
+      best = {
+        entry,
+        score,
+        coverage: matched / qTokens.length,
+        qTokenCount: qTokens.length,
+        phraseHit,
+      };
+    }
   }
   return best;
 }
@@ -227,11 +269,20 @@ async function handleChat(env, body, ip) {
   if (cached) return { status: 200, json: { ...cached, cached: true } };
 
   // Search index
-  const entries = await loadIndex();
-  const best = findBestMatch(message, entries);
+  const { entries, idf } = await loadIndex();
+  const best = findBestMatch(message, entries, idf);
 
-  // CASE 1 — Very strong match: return snippet directly, no LLM call
-  if (best && best.score >= HIGH_SCORE_THRESHOLD) {
+  // CASE 1 — Very strong, *specific* match: return snippet directly, no LLM call.
+  // Require either an actual phrase overlap with the title, or that the title/
+  // body covers most of the meaningful query tokens. This prevents 3 generic
+  // shared words (e.g. "common", "english", "words") from hijacking the answer.
+  const directOk =
+    best &&
+    best.score >= HIGH_SCORE_THRESHOLD &&
+    best.qTokenCount >= DIRECT_MIN_QUERY_TOKENS &&
+    (best.phraseHit || best.coverage >= DIRECT_MIN_COVERAGE);
+
+  if (directOk) {
     const e = best.entry;
     const result = {
       result:
@@ -243,12 +294,23 @@ async function handleChat(env, body, ip) {
     return { status: 200, json: result };
   }
 
-  // CASE 2 — Medium match: ask LLM with grounding context
-  if (best && best.score >= LOW_SCORE_THRESHOLD) {
+  // CASE 2 — Medium match: ask LLM with grounding context.
+  // Require at least *some* coverage of the query (or a phrase hit) before we
+  // trust the matched page enough to recommend its link. Without this, a stray
+  // shared word like "english" would get us to confidently link to an unrelated
+  // page.
+  const groundedOk =
+    best &&
+    best.score >= LOW_SCORE_THRESHOLD &&
+    (best.phraseHit || best.coverage >= 0.5);
+
+  if (groundedOk) {
     const e = best.entry;
     const system =
-      "You are TypoGrammar's helpful English-learning assistant. Answer ONLY using the TypoGrammar content provided below. Keep the answer under 120 words, friendly, and accurate. End your answer with: Read more on TypoGrammar: " +
-      e.title + " — " + SITE_BASE + e.url;
+      "You are TypoGrammar's helpful English-learning assistant. Use the TypoGrammar content provided below as your primary source if it actually answers the user's question. Keep the answer under 120 words, friendly, and accurate. " +
+      "Only if the provided content is genuinely relevant, end your answer with this exact line: Read more on TypoGrammar: " +
+      e.title + " — " + SITE_BASE + e.url +
+      ". If the provided content does not match the user's question, ignore it, answer briefly from general English-learning knowledge, and do NOT include any links.";
     const userPrompt =
       "TypoGrammar content:\n" +
       `Title: ${e.title}\n` +
